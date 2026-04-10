@@ -29,4 +29,15 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 
 ### 1.2.2.3. Lean UX Hypothesis Statements
 
+**Creemos** que digitalizar el proceso de inspeccion mediante la aplicacion web ... evolucionará la captura de datos en planta. 
+**Sabremos** que lo propuesto es cierto 
+**Cuando** los reportes diarios se incrementen en un 40% debido a la facilidad de uso frente al registro en hojas de calculos o papel
+
+**Creemos** que integrar un motor de reglas en la aplicacion web permitira predecir accidentes antes de que ocurran. 
+**Sabremos** que lo propuesto es cierto
+**Cuando** el sistema identifique correctamente al menos el 70% de las áreas de alta criticidad antes de que se registre un siniestro real
+
+**Creemos** que ofrecer Dashboards visuales con indicadores predictivos potenciara la toma de decisiones gerenciales
+**Sabremos** que lo propuesto es cierto 
+
 ### 1.2.2.4. Lean UX Canvas
