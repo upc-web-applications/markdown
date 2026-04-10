@@ -39,5 +39,10 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 
 **Creemos** que ofrecer Dashboards visuales con indicadores predictivos potenciara la toma de decisiones gerenciales
 **Sabremos** que lo propuesto es cierto 
+**Cuando** se reporte una reduccion del 50% en el tiempo dedicado a elaborar informes mensuales de gestion.
+
+**Creemos** que ofrecer una plataforma ligera y accesible desde navegadores web permitirá la adopción de ... en empresas con baja infraestructura tecnológica. 
+**Sabremos** que esto es cierto 
+**Cuando** logremos mantener una tasa de disponibilidad del sistema superior al 70% sin requerir hardware especializado del lado del cliente.
 
 ### 1.2.2.4. Lean UX Canvas
