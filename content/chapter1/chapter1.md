@@ -12,7 +12,20 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 
 #### Features
 
+- Interfaz grafica para el registro rápido de incidentes, permitiendo adjuntar evidencia fotográfica de condiciones inseguras en tiempo real.
+- Algoritmos que aplican modelos matematicos de riesgo para categorizar la urgencia de cada hallazgo.
+- Panel visual con mapas de calor y gráficas de tendencia que se actualizan sin necesidad de recargar la página, facilitando el monitoreo continuo de la planta.
+- Funcionalidad para exportar documentos de auditoría que cumplan con los formatos referenciales de la ley peruana.
+
 #### Needings
+
+- Las empresas presentan una deficiencia en la capacidad de prevención de riesgos, causada por el uso de métodos de registro que no permiten un análisis estadístico oportuno.
+- Los Usuarios necesitan superar esta deficiencia aprendiendo a identificar y registrar peligros de manera digital, confiando en que el sistema procesará esa información para alertar sobre riesgos inminentes.
+- Empresas de manufactura y logistica estan interesados en optimizar sus sistemas de gestion de la seguridad con el fin de reducir la tasa de accidentes.
+- Los administradores desean ver una grafica de tendencia en base a los datos de ingresados.
+- Corregir la brecha entre el hallazgo de un peligro y su mitigación mediante una plataforma accesible y predictiva que prepare a la organización para actuar ante situaciones críticas antes de que ocurran accidentes.
+- La falta de veracidad en el llenado de datos por parte del personal operativo, lo cual se abordará con interfaces simplificadas y validaciones automáticas de integridad en el frontend.
+- Sistemas de gestión documental genéricos o formularios en Excel, que carecen de la capacidad reactiva y del motor predictivo propuesto en ....
 
 ### 1.2.2.3. Lean UX Hypothesis Statements
 
