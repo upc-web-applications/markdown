@@ -46,3 +46,89 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 **Cuando** logremos mantener una tasa de disponibilidad del sistema superior al 70% sin requerir hardware especializado del lado del cliente.
 
 ### 1.2.2.4. Lean UX Canvas
+
+## 1.3. Segmentos Objetivo
+
+Los segmentos objetivo comprenden a los usuarios finales a los que nuestra solución busca atender. Para el caso de nuestra plataforma se han determinado los siguientes perfiles prioritarios:
+
+### Segmento objetivo #1: Operarios de Planta
+
+**Descripción general**
+
+Este segmento está constituido por el personal operativo de primera línea responsable de la ejecución de procesos productivos, mantenimiento de maquinaria y manipulación de insumos en entornos industriales.
+
+**Aspectos demográficos:**
+
+*   **Edad:** 20 a 55 años.
+*   **Género:** Masculino y femenino.
+*   **Nivel Educativo:** Técnico o secundaria completa con certificaciones operativas específicas.
+*   **Ubicación:** Zonas de alta actividad industrial (Lima, Callao) o enclaves mineros/energéticos.
+*   **Nivel digital:** Básico; usuarios de smartphones para redes sociales y mensajería, pero requieren herramientas laborales simplificadas.
+
+**Aspectos conductuales:**
+
+Su prioridad es el trabajo de campo y suelen usar el celular solo para consultas rápidas o reportes breves. No les gusta perder tiempo en formularios largos; prefieren herramientas sencillas que les den alertas claras y los ayuden a evitar accidentes sin interrumpir su ritmo de producción.
+
+**Información estadística de sustento**
+
+La investigación demuestra que cuando el personal operativo utiliza herramientas de identificación de actos inseguros (como cartillas de reporte), se logra una reducción del 50% en los accidentes de trabajo (de 37 a 18 casos en el periodo de estudio) (Escudero, 2022).
+
+**Necesidad**
+
+El operario requiere un medio de reporte inmediato para registrar "casi-accidentes" sin interrumpir su flujo de trabajo, asegurando que esta información genere alertas preventivas en tiempo real sobre zonas de riesgo. Su prioridad es una herramienta que garantice que sus reportes sean gestionados por los supervisores, transformando los datos capturados en soluciones operativas que protejan su integridad física.
+
+---
+
+### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
+
+**Descripción general**
+
+Este segmento está formado por mandos medios responsables de la seguridad y el mantenimiento preventivo.
+
+**Aspectos demográficos**
+
+*   **Edad:** 28 a 50 años.
+*   **Género:** Masculino y femenino.
+*   **Nivel Educativo:** Universitario o técnico superior (Ingeniería Industrial, Seguridad, Mantenimiento o afines).
+*   **Ubicación:** Plantas industriales, almacenes o sedes administrativas de operaciones.
+*   **Nivel digital:** Medio-Alto; habituados al uso de laptops, tablets, hojas de cálculo y sistemas de gestión (ERP/EAM).
+
+**Aspectos conductuales**
+
+Supervisan métricas a diario para planificar el mantenimiento y la seguridad con un enfoque en la eficiencia normativa. Buscan centralizar la información de campo en herramientas digitales que les permitan reaccionar rápido ante anomalías, eliminando procesos manuales y brechas de comunicación con el personal.
+
+**Información estadística de sustento**
+
+Según una investigación antes de contar con herramientas de gestión adecuadas, el 39% de los trabajadores percibía que la labor del supervisor no influía en la prevención; sin embargo, tras implementar reportes y seguimiento, el 83% de los colaboradores reconoció una mejora significativa en el liderazgo y compromiso de sus jefaturas (Escudero 2022).
+
+**Necesidad**
+
+El supervisor necesita centralizar los reportes de campo en un dashboard de visualización que le permita identificar patrones de riesgo mediante mapas de calor y alertas automáticas. Su prioridad es contar con una herramienta que automatice la gestión de actos y condiciones inseguras, asegurando que el motor de reglas del sistema priorice los peligros críticos para intervenir proactivamente antes de que ocurra una falla mayor.
+
+---
+
+### Segmento objetivo #3: Gerentes y Administradores
+
+**Descripción general**
+
+Este segmento está constituido por la alta dirección, jefaturas de planta y responsables administrativos encargados de asegurar la continuidad del negocio, la rentabilidad y el cumplimiento estricto de la Ley.
+
+**Aspectos demográficos**
+
+*   **Edad:** 35 a 60 años.
+*   **Género:** Masculino y femenino.
+*   **Nivel Educativo:** Postgrado o Especialización (Maestrías en Gestión de Operaciones, MBA, Derecho Laboral o Seguridad Industrial).
+*   **Ubicación:** Sedes corporativas u oficinas administrativas de empresas industriales y logísticas.
+*   **Nivel digital:** Alto; usuarios de herramientas de reporte ejecutivo, software de gestión (ERP) y tableros de control (Dashboards).
+
+**Aspectos conductuales**
+
+Toman decisiones basadas en indicadores macro y tendencias de largo plazo. Su prioridad es la eficiencia operativa y la reputación de la empresa; buscan herramientas que automaticen la burocracia legal y les den una "foto" clara del estado de la planta sin necesidad de bajar al campo. Valoran la veracidad de los datos y la capacidad de anticiparse a crisis reputacionales o paradas de planta costosas.
+
+**Información estadística de sustento**
+
+Un estudio de la Sociedad Nacional de Industrias mostró que el 45% de los empresarios industriales incrementó sus gastos en seguridad; mientras que el 15% tuvo que reducir, postergar o cancelar inversiones debido a incidentes y riesgos que afectaron la continuidad del negocio.
+
+**Necesidad**
+
+El administrador y el gerente necesitan una visión consolidada y predictiva que justifique la inversión en seguridad. Su prioridad es contar con un sistema que exporte automáticamente formatos de auditoría legales y muestre Dashboards con indicadores predictivos, permitiéndoles identificar brechas de seguridad antes de que se conviertan en siniestros reales o sanciones legales que afecten la rentabilidad.
