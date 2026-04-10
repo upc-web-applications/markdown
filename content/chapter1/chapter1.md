@@ -46,6 +46,15 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 **Cuando** logremos mantener una tasa de disponibilidad del sistema superior al 70% sin requerir hardware especializado del lado del cliente.
 
 ### 1.2.2.4. Lean UX Canvas
+<div align="center">
+  <p>
+    <b>Grafico 2</b>: Lean UX Canvas
+  </p>
+  <img src="../assets/images/chapter-1/leanuxcanvas-app-web.png" alt="Grafico 2" />
+  <p>
+    <i><b>Fuente</b>: Elaboración propia</i>
+  </p>
+</div>
 
 ## 1.3. Segmentos Objetivo
 
