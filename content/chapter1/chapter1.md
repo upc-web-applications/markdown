@@ -10,6 +10,10 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 
 ### 1.2.2.2. Lean UX Assumptions
 
+#### Features
+
+#### Needings
+
 ### 1.2.2.3. Lean UX Hypothesis Statements
 
 ### 1.2.2.4. Lean UX Canvas
