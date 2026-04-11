@@ -167,10 +167,29 @@ Project Report URL: https://github.com/upc-web-applications
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
-RiskGuard Solutions es una iniciativa concebida por estudiantes de Ingeniería de Sistemas de Software, cuyo objetivo primordial es la aplicación de la tecnología para la optimización de la seguridad en entornos industriales.  Nuestro proyecto, RiskGuard, surge de la imperiosa necesidad de mitigar los riesgos laborales en fábricas, donde una cantidad considerable de incidentes y casi-accidentes no son debidamente registrados ni analizados. 
-La propuesta se materializa en una aplicación web diseñada para facilitar el registro y procesamiento de información de seguridad ingresada por operarios, supervisores y personal de recursos humanos.  A partir del análisis exhaustivo de estos datos, el sistema genera alertas y visualizaciones estratégicas que contribuyen a la identificación de riesgos potenciales y a la prevención de accidentes laborales.
+RiskGuard Solutions es una iniciativa concebida por estudiantes 
+de Ingeniería de Sistemas de Software, cuyo objetivo primordial es 
+la aplicación de la tecnología para la optimización de la seguridad 
+en entornos industriales.  Nuestro proyecto, RiskGuard, surge de la 
+imperiosa necesidad de mitigar los riesgos laborales en fábricas, 
+donde una cantidad considerable de incidentes y casi-accidentes no 
+son debidamente registrados ni analizados.
 
-RiskGuard Solutions se presenta como una solución práctica, accesible y de fácil uso, orientada a la mejora de la toma de decisiones y a la protección integral de la salud y el bienestar de los trabajadores.
+La propuesta se materializa en una aplicación web diseñada para 
+facilitar el registro y procesamiento de información de seguridad 
+ingresada por operarios, supervisores y personal de recursos humanos.  
+A partir del análisis exhaustivo de estos datos, el sistema genera 
+alertas y visualizaciones estratégicas que contribuyen a la identificación 
+de riesgos potenciales y a la prevención de accidentes laborales.tar el 
+registro y procesamiento de información de seguridad ingresada por operarios, 
+supervisores y personal de recursos humanos.  A partir del análisis 
+exhaustivo de estos datos, el sistema genera alertas y visualizaciones 
+estratégicas que contribuyen a la identificación de riesgos potenciales 
+y a la prevención de accidentes laborales.
+
+RiskGuard Solutions se presenta como una solución práctica, accesible 
+y de fácil uso, orientada a la mejora de la toma de decisiones y a la 
+protección integral de la salud y el bienestar de los trabajadores.
 
 ### 1.1.1. Descripción del startup
 
