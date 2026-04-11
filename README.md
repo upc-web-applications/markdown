@@ -167,29 +167,7 @@ Project Report URL: https://github.com/upc-web-applications
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
-RiskGuard Solutions es una iniciativa concebida por estudiantes 
-de Ingeniería de Sistemas de Software, cuyo objetivo primordial es 
-la aplicación de la tecnología para la optimización de la seguridad 
-en entornos industriales.  Nuestro proyecto, RiskGuard, surge de la 
-imperiosa necesidad de mitigar los riesgos laborales en fábricas, 
-donde una cantidad considerable de incidentes y casi-accidentes no 
-son debidamente registrados ni analizados.
 
-La propuesta se materializa en una aplicación web diseñada para 
-facilitar el registro y procesamiento de información de seguridad 
-ingresada por operarios, supervisores y personal de recursos humanos.  
-A partir del análisis exhaustivo de estos datos, el sistema genera 
-alertas y visualizaciones estratégicas que contribuyen a la identificación 
-de riesgos potenciales y a la prevención de accidentes laborales.tar el 
-registro y procesamiento de información de seguridad ingresada por operarios, 
-supervisores y personal de recursos humanos.  A partir del análisis 
-exhaustivo de estos datos, el sistema genera alertas y visualizaciones 
-estratégicas que contribuyen a la identificación de riesgos potenciales 
-y a la prevención de accidentes laborales.
-
-RiskGuard Solutions se presenta como una solución práctica, accesible 
-y de fácil uso, orientada a la mejora de la toma de decisiones y a la 
-protección integral de la salud y el bienestar de los trabajadores.
 
 ### 1.1.1. Descripción del startup
 
@@ -200,31 +178,18 @@ NOMBRESTARTUP
 **Descripción**
 
 
+
 **Visión**
-Aspiramos a ser una startup reconocida a nivel nacional por brindar soluciones 
-innovadoras y de alto impacto en el ámbito de la seguridad industrial.  Nuestro 
-objetivo es destacarnos por nuestra capacidad para reducir significativamente 
-los accidentes laborales y mejorar sustancialmente las condiciones de trabajo 
-en las empresas.
+
+
 
 
 **Misión**
-Nuestra misión consiste en desarrollar soluciones tecnológicas avanzadas 
-que permitan a las empresas industriales gestionar y prevenir riesgos laborales 
-de manera eficiente.  A través del uso estratégico de herramientas digitales, 
-contribuimos a la protección integral de la salud de los trabajadores, priorizando 
-su bienestar en el entorno laboral.
+
+
 
 
 **Propuesta de Valor**
-En nuestra empresa, la innovación constituye el motor fundamental para el progreso 
-y la mejora continua de la seguridad en los entornos industriales.  Priorizamos la 
-protección de la salud y el bienestar de los trabajadores, considerándolos el eje 
-central de nuestras acciones.  Además, nos comprometemos a ofrecer soluciones accesibles, 
-diseñadas para que cualquier usuario pueda utilizarlas sin dificultad.  La colaboración 
-es la base sólida sobre la que construimos el trabajo en equipo, y la escalabilidad 
-representa la clave para adaptarnos eficazmente a las necesidades cambiantes y 
-dinámicas de las empresas.
 
 
 
@@ -237,8 +202,8 @@ dinámicas de las empresas.
 | Foto | Nombre | Descripción |
 | -------- | -------- | -------- |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241e158, Aponte Pablo, Isabel Luisa| |
+| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241a322, Blancas Chávez, Carlos Franco | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
-| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | Flores Siguas, Marlon ALessandro (u202415412) | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | Laura Acosta, Victor Jhosuef (u202418655) | |
 
@@ -265,25 +230,196 @@ dinámicas de las empresas.
 
 
 ## 1.3. Segmentos objetivo
+Los segmentos objetivo comprenden a los usuarios finales a los que nuestra solución busca atender. Para el caso de nuestra plataforma se han determinado los siguientes perfiles prioritarios:
 
+### Segmento objetivo #1: Operarios de Planta
+
+**Descripción general**
+
+Este segmento está constituido por el personal operativo de primera línea responsable de la ejecución de procesos productivos, mantenimiento de maquinaria y manipulación de insumos en entornos industriales.
+
+**Aspectos demográficos:**
+
+*   **Edad:** 20 a 55 años.
+*   **Género:** Masculino y femenino.
+*   **Nivel Educativo:** Técnico o secundaria completa con certificaciones operativas específicas.
+*   **Ubicación:** Zonas de alta actividad industrial (Lima, Callao) o enclaves mineros/energéticos.
+*   **Nivel digital:** Básico; usuarios de smartphones para redes sociales y mensajería, pero requieren herramientas laborales simplificadas.
+
+**Aspectos conductuales:**
+
+Su prioridad es el trabajo de campo y suelen usar el celular solo para consultas rápidas o reportes breves. No les gusta perder tiempo en formularios largos; prefieren herramientas sencillas que les den alertas claras y los ayuden a evitar accidentes sin interrumpir su ritmo de producción.
+
+**Información estadística de sustento**
+
+La investigación demuestra que cuando el personal operativo utiliza herramientas de identificación de actos inseguros (como cartillas de reporte), se logra una reducción del 50% en los accidentes de trabajo (de 37 a 18 casos en el periodo de estudio) (Escudero, 2022).
+
+**Necesidad**
+
+El operario requiere un medio de reporte inmediato para registrar "casi-accidentes" sin interrumpir su flujo de trabajo, asegurando que esta información genere alertas preventivas en tiempo real sobre zonas de riesgo. Su prioridad es una herramienta que garantice que sus reportes sean gestionados por los supervisores, transformando los datos capturados en soluciones operativas que protejan su integridad física.
+
+---
+
+### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
+
+**Descripción general**
+
+Este segmento está formado por mandos medios responsables de la seguridad y el mantenimiento preventivo.
+
+**Aspectos demográficos**
+
+*   **Edad:** 28 a 50 años.
+*   **Género:** Masculino y femenino.
+*   **Nivel Educativo:** Universitario o técnico superior (Ingeniería Industrial, Seguridad, Mantenimiento o afines).
+*   **Ubicación:** Plantas industriales, almacenes o sedes administrativas de operaciones.
+*   **Nivel digital:** Medio-Alto; habituados al uso de laptops, tablets, hojas de cálculo y sistemas de gestión (ERP/EAM).
+
+**Aspectos conductuales**
+
+Supervisan métricas a diario para planificar el mantenimiento y la seguridad con un enfoque en la eficiencia normativa. Buscan centralizar la información de campo en herramientas digitales que les permitan reaccionar rápido ante anomalías, eliminando procesos manuales y brechas de comunicación con el personal.
+
+**Información estadística de sustento**
+
+Según una investigación antes de contar con herramientas de gestión adecuadas, el 39% de los trabajadores percibía que la labor del supervisor no influía en la prevención; sin embargo, tras implementar reportes y seguimiento, el 83% de los colaboradores reconoció una mejora significativa en el liderazgo y compromiso de sus jefaturas (Escudero 2022).
+
+**Necesidad**
+
+El supervisor necesita centralizar los reportes de campo en un dashboard de visualización que le permita identificar patrones de riesgo mediante mapas de calor y alertas automáticas. Su prioridad es contar con una herramienta que automatice la gestión de actos y condiciones inseguras, asegurando que el motor de reglas del sistema priorice los peligros críticos para intervenir proactivamente antes de que ocurra una falla mayor.
+
+---
+
+### Segmento objetivo #3: Gerentes y Administradores
+
+**Descripción general**
+
+Este segmento está constituido por la alta dirección, jefaturas de planta y responsables administrativos encargados de asegurar la continuidad del negocio, la rentabilidad y el cumplimiento estricto de la Ley.
+
+**Aspectos demográficos**
+
+*   **Edad:** 35 a 60 años.
+*   **Género:** Masculino y femenino.
+*   **Nivel Educativo:** Postgrado o Especialización (Maestrías en Gestión de Operaciones, MBA, Derecho Laboral o Seguridad Industrial).
+*   **Ubicación:** Sedes corporativas u oficinas administrativas de empresas industriales y logísticas.
+*   **Nivel digital:** Alto; usuarios de herramientas de reporte ejecutivo, software de gestión (ERP) y tableros de control (Dashboards).
+
+**Aspectos conductuales**
+
+Toman decisiones basadas en indicadores macro y tendencias de largo plazo. Su prioridad es la eficiencia operativa y la reputación de la empresa; buscan herramientas que automaticen la burocracia legal y les den una "foto" clara del estado de la planta sin necesidad de bajar al campo. Valoran la veracidad de los datos y la capacidad de anticiparse a crisis reputacionales o paradas de planta costosas.
+
+**Información estadística de sustento**
+
+Un estudio de la Sociedad Nacional de Industrias mostró que el 45% de los empresarios industriales incrementó sus gastos en seguridad; mientras que el 15% tuvo que reducir, postergar o cancelar inversiones debido a incidentes y riesgos que afectaron la continuidad del negocio.
+
+**Necesidad**
+
+El administrador y el gerente necesitan una visión consolidada y predictiva que justifique la inversión en seguridad. Su prioridad es contar con un sistema que exporte automáticamente formatos de auditoría legales y muestre Dashboards con indicadores predictivos, permitiéndoles identificar brechas de seguridad antes de que se conviertan en siniestros reales o sanciones legales que afecten la rentabilidad.
 
 
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
+#### 1. SafetyCulture
+Es una plataforma digital de seguridad y operaciones que permite realizar inspecciones, auditorías, capacitaciones y reportes de incidentes desde una sola aplicación. Incluye listas de verificación, gestión de activos y alertas en tiempo real, ayudando a las empresas a mejorar la seguridad, optimizar procesos y cumplir normas.
+
+#### 2. Cority
+
+Cority es una plataforma web de gestión EHS (medio ambiente, salud y seguridad) orientada principalmente a grandes empresas de sectores como minería, manufactura, salud y gobierno. Permite centralizar datos, estandarizar procesos, controlar el cumplimiento normativo e identificar riesgos. Además, cuenta con módulos de salud ocupacional, seguridad, medio ambiente e higiene industrial, y cumple normas como OSHA, HIPAA y ADA.
+
+#### 3. EHS Insight
+
+EHS Insight es una plataforma de gestión EHS en la nube que permite automatizar procesos de seguridad, salud y medio ambiente. Incluye módulos de gestión de incidentes, auditorías, riesgos, impacto ambiental y desempeño empresarial. Además, ofrece acceso desde celular y modo sin conexión, permitiendo registrar datos incluso en zonas sin internet y sincronizarlos después.
+
+#### 4. GOSST - Gestor Online de Seguridad y Salud en el Trabajo
+
+GOSST es una plataforma peruana de Seguridad y Salud en el Trabajo desarrollada para ayudar a las empresas a cumplir la legislación peruana y estándares internacionales mediante una solución 100 % web. La plataforma integra módulos de inspecciones, capacitaciones, participación de trabajadores, gestión de contratistas y control de evaluaciones, facilitando la colaboración entre operarios, supervisores y comités de seguridad.
 
 ### 2.1.1. Análisis competitivo
+|  | Competitive Analysis Landscape |
+|---|---|
+| ¿Por qué llevar a cabo este análisis? | Llevamos a cabo este análisis con la finalidad de conocer a los competidores, identificar sus fortalezas y debilidades, y definir estrategias de diferenciación y posicionamiento para nuestra solución. |
 
+|  |  | ![RiskGuard](https://images.sftcdn.net/images/t_app-icon-m/p/17f992df-3f4f-4a3c-9411-023c3c50f12d/1802301640/riskguard-logo) <br> **RiskGuard** | ![SafetyCulture](https://i.ytimg.com/vi/kFNgcmRQHA4/maxresdefault.jpg) <br> **SafetyCulture** | ![Cority](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS03O5GPkno9GdHswHiCjxRk8_ey2XkujZLKQ&s) <br> **Cority** | ![EHS Insight](https://www.levelequity.com/wp-content/uploads/level-ehs-logo.jpg) <br> **EHS Insight** | ![GOSST](https://www.gosst.io/sstweb/imagenes/nuevoLogoGosst.png) <br> **GOSST** |
+|---|---|---|---|---|---|---|
+| **Perfil** | Overview | Plataforma web de seguridad industrial con alertas predictivas, motor de reglas y mapas de calor. | Plataforma de inspecciones y reportes de seguridad orientada a digitalizar procesos. | Software empresarial (EHS) de alto nivel para grandes corporaciones. | Plataforma integral de gestión de seguridad, salud y ambiente. | Software peruano especializado en el cumplimiento de la Ley 29783. |
+|  | Ventaja competitiva | Predice riesgos antes de que ocurran usando datos de incidentes, fallas y fatiga. | Global; PYMES y grandes empresas de cualquier sector. | Muy robusta y completa para grandes corporaciones. | Modularidad: las empresas pagan solo por los módulos que usan y reportes automatizados. | Alineación total y directa con los formatos legales peruanos. |
+| **Perfil de marketing** | Mercado objetivo | Empresas manufactureras y logísticas del Perú. | PYMES y grandes empresas de distintos sectores a nivel global. | Grandes empresas de minería, manufactura, salud y gobierno. | Empresas medianas y grandes con enfoque en cumplimiento e ISO. | Empresas peruanas pequeñas y medianas de diversos sectores. |
+|  | Estrategias de marketing | Demostraciones, alianzas con consultoras SST y ventas directas. | Marketing de contenidos, prueba gratuita y estrategia freemium. | Venta consultiva B2B y presencia en eventos corporativos. | Marketing técnico, demostraciones guiadas y webinars. | Venta directa y asesoría legal sobre cumplimiento normativo. |
+|  | Productos y servicios | Registro de incidentes, alertas, mapas de calor, reportes y dashboards. | Inspecciones, checklists, gestión de activos y reportes. | Módulos de seguridad, salud, medio ambiente e higiene industrial. | Gestión de incidentes, auditorías, riesgos y desempeño. | Gestión de inspecciones, capacitaciones e IPERC. |
+|  | Precios y costos | Suscripción mensual accesible para empresas medianas. | Plan gratuito y planes pagados por usuario. | Costos elevados y fuerte inversión inicial. | Costo intermedio con módulos opcionales. | Bajo costo frente a competidores internacionales. |
+|  | Canales de distribución | Plataforma web y venta directa. | Aplicación web, iOS y Android. | Venta directa con implementación personalizada. | Plataforma web y móvil con acceso offline. | Plataforma web con soporte local en Perú. |
+| **Análisis SWOT** | Fortalezas | Analítica predictiva, personalización y facilidad de uso. | Reconocimiento de marca y rápida implementación. | Alto nivel de cumplimiento normativo y funcionalidad. | Fácil implementación y flexibilidad. | Conocimiento profundo del mercado peruano. |
+|  | Debilidades | Menor reconocimiento de marca y menos datos históricos. | Menor capacidad predictiva y analítica avanzada. | Complejidad de uso y alto costo. | Menor profundidad funcional frente a plataformas enterprise. | Escalabilidad limitada y menos funcionalidades. |
+|  | Oportunidades | Crecimiento de la industria 4.0 y necesidad de prevención de riesgos. | Incorporar inteligencia artificial y analítica predictiva. | Expandirse hacia empresas medianas. | Ingresar a mercados emergentes. | Mayor demanda por cumplimiento normativo en el Perú. |
+|  | Amenazas | Competidores globales con mayor inversión y trayectoria. | Aparición de nuevas plataformas más avanzadas. | Soluciones más económicas y fáciles de implementar. | Competidores con mayor posicionamiento internacional. | Ingreso de plataformas extranjeras al mercado peruano. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+#### Estrategias:
+
+1. **Prevención predictiva y no solo registro:** RiskGuard se diferenciará de competidores como **SafetyCulture**, **EHS Insight** y **GOSST** porque no solo almacenará incidentes, sino que analizará los datos para anticipar accidentes antes de que ocurran. La plataforma utilizará reglas de negocio y variables como fallas de maquinaria, fatiga y falta de capacitación para calcular niveles de riesgo.
+2. **Adaptación al contexto peruano:** A diferencia de **Cority** y **SafetyCulture**, RiskGuard estará diseñado específicamente para empresas manufactureras y logísticas del Perú, incorporando formatos de auditoría, terminología y procesos alineados con la **Ley N.° 29783** y las necesidades locales.
+3. **Accesibilidad y facilidad de uso:** La plataforma será web, ligera e intuitiva, permitiendo que supervisores, operarios y personal de RR. HH. registren incidentes y riesgos de forma rápida, incluso desde dispositivos de baja gama.
+
+#### Tácticas:
+
+* **Desarrollo de alertas y mapas de calor predictivos**  
+  Implementación de dashboards con zonas de riesgo representadas por colores y alertas automáticas cuando el sistema detecte patrones peligrosos.
+
+* **Registro rápido y simplificado**  
+  Creación de formularios breves con opciones predeterminadas, carga de fotografías y validaciones automáticas, de modo que un incidente pueda registrarse de manera rápida.
+
+* **Planes accesibles y soporte local**
+
+  Planes de bajo costo para empresas medianas. Además, se brindará soporte técnico local y capacitación inicial, lo que facilitará la adopción frente a competidores internacionales.
+
+
+#### Aprovechamiento de debilidades de la competencia:
+
+1. Frente a **SafetyCulture**, que se centra principalmente en listas de verificación e inspecciones, RiskGuard ofrecerá un análisis más avanzado y predictivo, capaz de identificar áreas de alto riesgo antes de que ocurra un accidente.
+2. En comparación con **Cority**, que está orientado a grandes corporaciones y tiene un costo elevado, RiskGuard será más económico, simple de implementar y accesible para empresas medianas peruanas.
+3. Frente a **EHS Insight**, que se limita principalmente al registro y seguimiento de incidentes, RiskGuard incorporará un motor de reglas y probabilidad que permitirá anticipar riesgos y generar alertas automáticas.
+4. En comparación con **GOSST**, que está enfocado principalmente en el cumplimiento normativo y la gestión documental, RiskGuard combinará ese cumplimiento con visualizaciones dinámicas, mapas de calor y análisis predictivo en tiempo real.
 
 
 
 ## 2.2. Entrevistas
-
 ### 2.2.1. Diseño de entrevistas
+Las entrevistas se diseñaron con un enfoque cualitativo semiestructurado, orientado a comprender las necesidades reales, frustraciones y comportamientos de los dos segmentos objetivo de RiskGuard. Se definió un protocolo de preguntas dividido por segmento, considerando preguntas de apertura, exploración y cierre sobre disposición de adopción tecnológica.
+
+**Guía de preguntas — Segmento 1: Operarios y supervisores de seguridad industrial**
+
+*Preguntas de apertura:*
+- ¿Podría contarme brevemente en qué consiste su trabajo diario?
+- ¿Cuántos años lleva trabajando en este rol y en este sector?
+
+*Preguntas de exploración:*
+- ¿Cómo registran actualmente los incidentes o casi-accidentes que ocurren en su área de trabajo?
+- ¿Con qué frecuencia ocurren situaciones de riesgo que no llegan a reportarse formalmente? ¿Por qué cree que sucede eso?
+- Cuando detecta una condición de riesgo, ¿qué proceso sigue para comunicarlo o registrarlo?
+- ¿Qué tan accesibles son los formatos o herramientas que usan para registrar incidentes? ¿Los considera prácticos?
+- ¿Ha tenido situaciones en las que un incidente que no se registró derivó en un accidente más grave?
+- ¿Estaría dispuesto a usar una aplicación web para registrar condiciones de riesgo desde su área de trabajo? ¿Qué dificultades anticipa?
+
+*Preguntas de cierre:*
+- Si existiera una aplicación sencilla que le permitiera registrar incidentes en segundos y que el sistema generara alertas automáticas para prevenir accidentes, ¿la usaría? ¿Qué características serían imprescindibles para usted?
 
 
+**Guía de preguntas — Segmento 2: Personal de Recursos Humanos y gestores de SST**
+
+*Preguntas de apertura:*
+- ¿Cuál es su rol en la gestión de seguridad y salud en el trabajo dentro de su empresa?
+- ¿Qué tan prioritaria es la SST dentro de la cultura organizacional de su empresa?
+
+*Preguntas de exploración:*
+- ¿Cómo gestionan actualmente el registro y seguimiento de incidentes laborales?
+- ¿Qué tan frecuente es que los incidentes o casi-accidentes no sean reportados por los operarios? ¿A qué lo atribuye?
+- ¿Tienen algún sistema digital para el análisis de datos de seguridad o todo se maneja de manera manual?
+- ¿Cómo gestionan el cumplimiento de la Ley N° 29783 y las inspecciones del SUNAFIL?
+- ¿Han recibido multas o amonestaciones por deficiencias en el registro o monitoreo de riesgos? ¿Cuál fue el impacto?
+- ¿Qué dificultades enfrentan para identificar patrones de riesgo a partir de los datos que recogen?
+
+*Preguntas de cierre:*
+- Si una solución tecnológica centralizara toda la información de seguridad, analizara los datos automáticamente y generara alertas predictivas antes de que ocurran accidentes, ¿la adoptaría? ¿Qué barreras anticipa para su implementación?
 
 ### 2.2.2. Registro de entrevistas
 
