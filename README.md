@@ -238,7 +238,7 @@ dinámicas de las empresas.
 | -------- | -------- | -------- |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241e158, Aponte Pablo, Isabel Luisa| |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
-| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
+| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | Flores Siguas, Marlon ALessandro (u202415412) | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | Laura Acosta, Victor Jhosuef (u202418655) | |
 
