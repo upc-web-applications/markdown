@@ -200,18 +200,31 @@ NOMBRESTARTUP
 **Descripción**
 
 
-
 **Visión**
-
-
+Aspiramos a ser una startup reconocida a nivel nacional por brindar soluciones 
+innovadoras y de alto impacto en el ámbito de la seguridad industrial.  Nuestro 
+objetivo es destacarnos por nuestra capacidad para reducir significativamente 
+los accidentes laborales y mejorar sustancialmente las condiciones de trabajo 
+en las empresas.
 
 
 **Misión**
-
-
+Nuestra misión consiste en desarrollar soluciones tecnológicas avanzadas 
+que permitan a las empresas industriales gestionar y prevenir riesgos laborales 
+de manera eficiente.  A través del uso estratégico de herramientas digitales, 
+contribuimos a la protección integral de la salud de los trabajadores, priorizando 
+su bienestar en el entorno laboral.
 
 
 **Propuesta de Valor**
+En nuestra empresa, la innovación constituye el motor fundamental para el progreso 
+y la mejora continua de la seguridad en los entornos industriales.  Priorizamos la 
+protección de la salud y el bienestar de los trabajadores, considerándolos el eje 
+central de nuestras acciones.  Además, nos comprometemos a ofrecer soluciones accesibles, 
+diseñadas para que cualquier usuario pueda utilizarlas sin dificultad.  La colaboración 
+es la base sólida sobre la que construimos el trabajo en equipo, y la escalabilidad 
+representa la clave para adaptarnos eficazmente a las necesidades cambiantes y 
+dinámicas de las empresas.
 
 
 
