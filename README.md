@@ -168,32 +168,33 @@ Project Report URL: https://github.com/upc-web-applications
 
 ## 1.1. Startup Profile
 
-
 ### 1.1.1. Descripción del startup
 
-**Nombre de la startup**
+RiskGuard Solutions es una iniciativa concebida por estudiantes de Ingeniería de Sistemas de Software, cuyo objetivo primordial es la aplicación de la tecnología para la optimización de la seguridad en entornos industriales.  Nuestro proyecto, RiskGuard, surge de la imperiosa necesidad de mitigar los riesgos laborales en fábricas, donde una cantidad considerable de incidentes y casi-accidentes no son debidamente registrados ni analizados.
 
-NOMBRESTARTUP
+La propuesta se materializa en una aplicación web diseñada para facilitar el registro y procesamiento de información de seguridad ingresada por operarios, supervisores y personal de recursos humanos.  A partir del análisis exhaustivo de estos datos, el sistema genera alertas y visualizaciones estratégicas que contribuyen a la identificación de riesgos potenciales y a la prevención de accidentes laborales.
 
-**Descripción**
-
-
-
-**Visión**
+RiskGuard Solutions se presenta como una solución práctica, accesible y de fácil uso, orientada a la mejora de la toma de decisiones y a la protección integral de la salud y el bienestar de los trabajadores.
 
 
 
+**Misión:**
 
-**Misión**
-
-
-
-
-**Propuesta de Valor**
+Nuestra misión consiste en desarrollar soluciones tecnológicas avanzadas que permitan a las empresas industriales gestionar y prevenir riesgos laborales de manera eficiente.  A través del uso estratégico de herramientas digitales, contribuimos a la protección integral de la salud de los trabajadores, priorizando su bienestar en el entorno laboral.
 
 
+**Visión:**
 
-**Características principales**
+Aspiramos a ser una startup reconocida a nivel nacional por brindar soluciones innovadoras y de alto impacto en el ámbito de la seguridad industrial.  Nuestro objetivo es destacarnos por nuestra capacidad para reducir significativamente los accidentes laborales y mejorar sustancialmente las condiciones de trabajo en las empresas.
+
+**Valores:**
+
+En nuestra empresa, la innovación constituye el motor fundamental para el progreso y la mejora continua de la seguridad en los entornos industriales.  Priorizamos la protección de la salud y el bienestar de los trabajadores, considerándolos el eje central de nuestras acciones.  Además, nos comprometemos a ofrecer soluciones accesibles, diseñadas para que cualquier usuario pueda utilizarlas sin dificultad.  La colaboración es la base sólida sobre la que construimos el trabajo en equipo, y la escalabilidad representa la clave para adaptarnos eficazmente a las necesidades cambiantes y dinámicas de las empresas.
+
+
+**Características principales:**
+
+La solución RiskGuard se caracteriza por su capacidad para registrar y centralizar incidentes y condiciones de riesgo mediante una plataforma web de acceso universal, diseñada para satisfacer las necesidades de diversos perfiles de usuario, incluyendo operarios, supervisores y personal administrativo.  A través de la integración de información proveniente de estas fuentes, el sistema realiza un análisis exhaustivo que facilita la identificación de patrones de riesgo y la generación de alertas preventivas, apoyando así la toma de decisiones estratégicas y oportunas.  Adicionalmente, RiskGuard incorpora visualizaciones avanzadas, tales como reportes detallados y dashboards interactivos, que optimizan la comprensión integral del estado de la seguridad organizacional.  La facilidad de uso intuitiva, la accesibilidad universal y la capacidad de adaptación a las necesidades específicas de las empresas consolidan a RiskGuard como una herramienta esencial para la gestión proactiva del riesgo.
 
 
 
@@ -203,13 +204,25 @@ NOMBRESTARTUP
 | -------- | -------- | -------- |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241e158, Aponte Pablo, Isabel Luisa| |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241a322, Blancas Chávez, Carlos Franco | |
-| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
+| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u202415412, Flores Siguas, Marlon Alessandro | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | Laura Acosta, Victor Jhosuef (u202418655) | |
 
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
+En el Perú, la gestión de la seguridad y salud en el trabajo (SST) enfrenta limitaciones considerables en la prevención y control de riesgos laborales. El Informe Anual de Gestión de SST - 2020 evidencia incumplimientos como la omisión de exámenes médicos ocupacionales y la ausencia de monitoreos de riesgos en sus diversas categorías: químicos, biológicos, físicos, psicosociales y ergonómicos (Provías Descentralizado, 2020).  Esta situación pone de manifiesto una brecha persistente entre la normativa vigente y su implementación efectiva en las organizaciones, lo que incrementa la exposición de los trabajadores a condiciones inseguras.
+
+Este escenario impacta principalmente a los sectores industriales, donde los peligros ocupacionales constituyen un componente integral de la dinámica laboral diaria. La carencia de mecanismos de supervisión continua, así como de herramientas eficientes para el registro de incidentes y condiciones de riesgo, dificulta la detección temprana de situaciones que podrían derivar en accidentes laborales o enfermedades ocupacionales.
+
+El sector minero, reconocido como un pilar fundamental de la economía nacional, presenta un panorama preocupante en cuanto a la salud ocupacional de sus trabajadores. Un estudio exhaustivo que abarca el periodo 2011-2020 documenta un total de 37,899 casos de enfermedades ocupacionales en este sector, con la hipoacusia emergiendo como la afección más prevalente, representando el 90.74% de los casos. Le siguen en frecuencia la neumoconiosis, con un 4.94%, y la intoxicación por mercurio, con un 0.03% (Aquino Canchari et al., 2022).  Estos datos evidencian la persistencia de factores de riesgo inherentes a la exposición prolongada a ruido, polvo y sustancias químicas, los cuales continúan impactando negativamente la salud de los trabajadores mineros.
+
+Las deficiencias en la gestión de la información relacionada con la seguridad laboral representan un obstáculo considerable para la implementación de estrategias preventivas eficaces.  En numerosas organizaciones, el registro de incidentes y eventos peligrosos carece de sistematización y se realiza mediante procesos manuales, lo que limita el análisis oportuno de la información y la identificación de patrones de riesgo recurrentes.
+
+Desde una perspectiva organizacional, la gestión inadecuada de la Seguridad y Salud en el Trabajo (SST) no solo impacta la salud y bienestar de los trabajadores, sino que también afecta el desempeño y la competitividad empresarial.  Diversos estudios han demostrado que la inversión estratégica en SST contribuye a la reducción de accidentes laborales, sanciones económicas, niveles de estrés y ausentismo, al tiempo que favorece la productividad y la eficiencia operativa (Vargas & Gutiérrez, 2021).  En este contexto, resulta imperativo implementar soluciones integrales que optimicen la gestión preventiva de la SST.
+
+En respuesta a esta problemática, el proyecto RiskGuard propone el desarrollo de una aplicación web robusta y escalable, diseñada para centralizar la información relacionada con la seguridad laboral.  Esta plataforma facilitará el registro eficiente de incidentes y condiciones de riesgo, y empleará reglas de negocio avanzadas para el análisis de datos y la generación de alertas predictivas.  De esta manera, se busca fortalecer la toma de decisiones estratégicas, anticipar posibles riesgos y contribuir a la reducción de accidentes en entornos industriales complejos.
+
 
 ### 1.2.2. Lean UX Process
 
@@ -648,6 +661,19 @@ Las entrevistas se diseñaron con un enfoque cualitativo semiestructurado, orien
 
 # Bibliografía
 
+- Christian Aquino Canchari et al. Enfermedades ocupacionales en minería en el
+Perú, 2011-2020. Revista de la Asociación Española de Especialistas en
+Medicina del Trabajo, 31(3), 275–282.
+https://scielo.isciii.es/pdf/medtra/v31n3/1132-6255-medtra-31-03-275.pdf
 
+- Provías Descentralizado. (2020). Informe anual de gestión de seguridad y salud
+en el trabajo 2020. Ministerio de Transportes y Comunicaciones.
+https://www.pvd.gob.pe/wp-content/uploads/2021/02/Informe-anual-de-
+SST2020_compressed.pdf
+
+- Vargas, J., & Gutiérrez, L. (2021). Un estudio bibliométrico sobre seguridad y
+salud en el trabajo en el Perú. Revista de ciencias económicas, jurídicas y
+administrativas, 116–135.
+https://doi.org/10.37135/kai.03.09.07
 
 # Anexos
