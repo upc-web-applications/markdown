@@ -440,42 +440,91 @@ GOSST es una plataforma peruana de Seguridad y Salud en el Trabajo desarrollada 
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
-Las entrevistas se diseñaron con un enfoque cualitativo semiestructurado, orientado a comprender las necesidades reales, frustraciones y comportamientos de los dos segmentos objetivo de RiskGuard. Se definió un protocolo de preguntas dividido por segmento, considerando preguntas de apertura, exploración y cierre sobre disposición de adopción tecnológica.
+Las entrevistas se diseñaron con un enfoque cualitativo semiestructurado,
+orientado a comprender las necesidades reales, frustraciones y comportamientos
+de los tres segmentos objetivo de RiskGuard. Se definió un protocolo de
+preguntas dividido por segmento, considerando preguntas de apertura,
+exploración y cierre sobre disposición de adopción tecnológica.
 
-**Guía de preguntas — Segmento 1: Operarios y supervisores de seguridad industrial**
-
-*Preguntas de apertura:*
-- ¿Podría contarme brevemente en qué consiste su trabajo diario?
-- ¿Cuántos años lleva trabajando en este rol y en este sector?
-
-*Preguntas de exploración:*
-- ¿Cómo registran actualmente los incidentes o casi-accidentes que ocurren en su área de trabajo?
-- ¿Con qué frecuencia ocurren situaciones de riesgo que no llegan a reportarse formalmente? ¿Por qué cree que sucede eso?
-- Cuando detecta una condición de riesgo, ¿qué proceso sigue para comunicarlo o registrarlo?
-- ¿Qué tan accesibles son los formatos o herramientas que usan para registrar incidentes? ¿Los considera prácticos?
-- ¿Ha tenido situaciones en las que un incidente que no se registró derivó en un accidente más grave?
-- ¿Estaría dispuesto a usar una aplicación web para registrar condiciones de riesgo desde su área de trabajo? ¿Qué dificultades anticipa?
-
-*Preguntas de cierre:*
-- Si existiera una aplicación sencilla que le permitiera registrar incidentes en segundos y que el sistema generara alertas automáticas para prevenir accidentes, ¿la usaría? ¿Qué características serían imprescindibles para usted?
-
-
-**Guía de preguntas — Segmento 2: Personal de Recursos Humanos y gestores de SST**
+**Segmento 1: Operarios de planta**
 
 *Preguntas de apertura:*
-- ¿Cuál es su rol en la gestión de seguridad y salud en el trabajo dentro de su empresa?
-- ¿Qué tan prioritaria es la SST dentro de la cultura organizacional de su empresa?
+- ¿Podría describirme brevemente en qué consiste su trabajo diario en planta?
+- ¿Cuántos años lleva trabajando en este tipo de entorno industrial?
 
 *Preguntas de exploración:*
-- ¿Cómo gestionan actualmente el registro y seguimiento de incidentes laborales?
-- ¿Qué tan frecuente es que los incidentes o casi-accidentes no sean reportados por los operarios? ¿A qué lo atribuye?
-- ¿Tienen algún sistema digital para el análisis de datos de seguridad o todo se maneja de manera manual?
-- ¿Cómo gestionan el cumplimiento de la Ley N° 29783 y las inspecciones del SUNAFIL?
-- ¿Han recibido multas o amonestaciones por deficiencias en el registro o monitoreo de riesgos? ¿Cuál fue el impacto?
-- ¿Qué dificultades enfrentan para identificar patrones de riesgo a partir de los datos que recogen?
+- ¿Ha presenciado o experimentado algún casi-accidente en su área de trabajo?
+  ¿Lo reportó? ¿Por qué sí o por qué no?
+- ¿Cómo es el proceso actual para reportar un incidente o condición insegura
+  en su planta? ¿Lo considera práctico?
+- ¿Con qué frecuencia deja de reportar situaciones de riesgo por falta de
+  tiempo o por la complejidad del proceso?
+- ¿Usa el celular durante su jornada laboral? ¿Estaría dispuesto a usarlo
+  para registrar un incidente si el proceso fuera rápido y sencillo?
+- ¿Alguna vez reportó algo y nunca supo qué pasó con ese reporte?
+  ¿Cómo le hizo sentir eso?
+- ¿Qué tan seguido identifica condiciones inseguras en su zona que nadie
+  más parece notar o reportar?
 
 *Preguntas de cierre:*
-- Si una solución tecnológica centralizara toda la información de seguridad, analizara los datos automáticamente y generara alertas predictivas antes de que ocurran accidentes, ¿la adoptaría? ¿Qué barreras anticipa para su implementación?
+- Si existiera una app que le permitiera registrar un casi-accidente en
+  menos de 30 segundos desde su celular y le confirmara que fue atendido,
+  ¿la usaría? ¿Qué necesitaría para confiar en ella?
+
+**Segmento 2: Supervisores de seguridad y mantenimiento**
+
+*Preguntas de apertura:*
+- ¿Cuál es su rol específico dentro de la planta y cuántas personas
+  supervisa actualmente?
+- ¿Cómo describiría el nivel de cultura de seguridad en su empresa hoy?
+
+*Preguntas de exploración:*
+- ¿Cómo centraliza actualmente la información de incidentes y condiciones
+  inseguras reportadas por los operarios?
+- ¿Con qué herramientas identifica las zonas o turnos con mayor incidencia
+  de riesgo en su planta?
+- ¿Qué tan frecuente es que los operarios no reporten incidentes? ¿A qué
+  lo atribuye principalmente?
+- Cuando ocurre un incidente, ¿cuánto tiempo le toma enterarse y tomar
+  una acción correctiva?
+- ¿Ha tenido situaciones en las que un accidente ocurrió y usted ya había
+  detectado señales previas pero no contaba con herramientas para actuar
+  a tiempo?
+- ¿Qué tan útil sería para usted contar con alertas automáticas que
+  prioricen los riesgos críticos antes de que escalen?
+
+*Preguntas de cierre:*
+- Si un sistema le mostrara en un dashboard los patrones de riesgo por zona
+  y turno, y le enviara alertas automáticas antes de que ocurra un accidente,
+  ¿qué impacto tendría eso en su trabajo diario?
+
+** Segmento 3: Gerentes y administradores**
+
+*Preguntas de apertura:*
+- ¿Cuál es su rol en la empresa y qué nivel de responsabilidad tiene sobre
+  la seguridad y salud en el trabajo?
+- ¿Cómo evalúa actualmente el desempeño en seguridad de su planta?
+
+*Preguntas de exploración:*
+- ¿Ha tenido que enfrentar multas, sanciones o inspecciones del SUNAFIL
+  relacionadas con deficiencias en el registro o monitoreo de riesgos?
+  ¿Cuál fue el impacto económico?
+- ¿Cuenta con indicadores de seguridad que le permitan anticipar riesgos
+  o solo se entera de los problemas cuando ya ocurrió el accidente?
+- ¿Cómo justifica ante la dirección o la junta la inversión en seguridad
+  ocupacional? ¿Qué datos utiliza?
+- ¿Qué tan frecuente es que los reportes de seguridad que recibe sean
+  incompletos, tardíos o poco confiables?
+- ¿Ha tenido que cancelar o postergar inversiones en su empresa a causa
+  de incidentes o paradas de planta por problemas de seguridad?
+- ¿Qué información necesitaría ver en un dashboard ejecutivo para tomar
+  decisiones preventivas de manera oportuna?
+
+*Preguntas de cierre:*
+- Si el sistema exportara automáticamente los formatos de auditoría
+  exigidos por la Ley N° 29783 y le mostrara indicadores predictivos
+  de riesgo en tiempo real, ¿qué valor tendría eso para su gestión
+  y para la continuidad del negocio?
 
 ### 2.2.2. Registro de entrevistas
 
