@@ -795,3 +795,7 @@ administrativas, 116–135.
 https://doi.org/10.37135/kai.03.09.07
 
 # Anexos
+
+- Entrevista a Operarios de Planta
+  * Entrevista N°1: https://www.youtube.com/watch?v=ck4b-DECTs4&sttick=0 
+
