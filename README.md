@@ -527,8 +527,35 @@ exploración y cierre sobre disposición de adopción tecnológica.
   y para la continuidad del negocio?
 
 ### 2.2.2. Registro de entrevistas
+Para consultar las entrevistas realizadas , visitar Anexo A
 
-
+### Segmento objetivo #1: Operarios de Planta
+*Entrevistado N°1: Fabrizio Vacca Crisostomo*
+-Sexo: Masculino
+-Edad: 26
+-Ubicación: Miraflores
+-Cargo: Operario en Grupo Pacasmayo
+*Resumen de Entrevista:* Fabrizzio lleva cerca de un año y medio trabajando como operario en una 
+planta de producción de alimentos, donde opera maquinaria para garantizar 
+que los insumos estén listos y la producción no se detenga. Confirmó haber 
+presenciado múltiples casi-accidentes, entre ellos una carga que casi se 
+suelta de un montacargas cerca de un compañero, el cual no fue reportado 
+formalmente debido a la presión del tiempo y la complejidad del proceso. 
+Describió el sistema de reporte actual como poco práctico: requiere buscar 
+al supervisor, solicitar un formato físico, llenarlo a mano y entregarlo, 
+proceso que puede tomar días si el supervisor no está disponible. Estimó 
+que deja de reportar condiciones inseguras una o dos veces por semana por 
+la pesadez del proceso, optando por avisar verbalmente a sus compañeros y 
+continuar trabajando. Mencionó haber reportado una rejilla suelta en el 
+conducto de ventilación del almacén de químicos sin recibir nunca respuesta 
+ni retroalimentación, lo que generó en él y sus compañeros la percepción de 
+que los reportes no sirven para nada real. Señaló observar condiciones 
+inseguras casi a diario, como sensores fallidos y palés mal apilados, y que 
+con el tiempo uno se acostumbra al peligro porque nadie actúa. Mostró alta 
+disposición a usar RiskGuard, condicionando su confianza en la app a ver 
+resultados concretos: que los problemas reportados sean atendidos en días 
+y que el sistema confirme la recepción del reporte con una notificación
+  
 
 ### 2.2.3. Análisis de entrevistas
 
