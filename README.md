@@ -531,11 +531,13 @@ Para consultar las entrevistas realizadas , visitar Anexo A
 
 ### Segmento objetivo #1: Operarios de Planta
 *Entrevistado N°1: Fabrizio Vacca Crisostomo*
--Sexo: Masculino
--Edad: 26
--Ubicación: Miraflores
--Cargo: Operario en Grupo Pacasmayo
-*Resumen de Entrevista:* Fabrizzio lleva cerca de un año y medio trabajando como operario en una 
+  *Sexo: Masculino
+  *Edad: 26
+  *Ubicación: Miraflores
+  *Cargo: Operario en Grupo Pacasmayo
+  
+*Resumen de Entrevista:*
+Fabrizzio lleva cerca de un año y medio trabajando como operario en una 
 planta de producción de alimentos, donde opera maquinaria para garantizar 
 que los insumos estén listos y la producción no se detenga. Confirmó haber 
 presenciado múltiples casi-accidentes, entre ellos una carga que casi se 
