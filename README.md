@@ -278,7 +278,7 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
   <p>
     <b>Grafico 2</b>: Lean UX Canvas
   </p>
-  <img src="../../assets/images/leanuxcanvas-app-web.png" alt="Grafico 2" />
+  <img src="https://i.postimg.cc/TYtDkfz2/leanuxcanvas-app-web.png" alt="Grafico 2" />
   <p>
     <i><b>Fuente</b>: Elaboración propia</i>
   </p>
