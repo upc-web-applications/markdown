@@ -30,6 +30,8 @@ u202418655 - Laura Acosta, Victor Jhosuef
 
 u202415412 - Flores Siguas, Marlon Alessandro
 
+u20241a322 - Blancas Chávez, Carlos Franco
+
 Abril 2026
 
 </div>
