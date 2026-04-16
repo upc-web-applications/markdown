@@ -598,9 +598,11 @@ Mostró alto interés en soluciones tecnológicas como RiskGuard, destacando que
 
 #### Segmento objetivo #3: Gerentes y Administradores
 *Entrevistado N°1: Tiziano Nicoletti*
+
 <p align="center">
   <img src="https://i.postimg.cc/SQ2SKyCY/Diseno-sin-titulo.jpg" width="300"/>
 </p>
+
 - Sexo: Masculino
 - Edad: 23
 - Ubicación: Perú
@@ -858,7 +860,8 @@ https://doi.org/10.37135/kai.03.09.07
   * Entrevista N°2: https://youtu.be/Oma6FsvGv_Y
     
 - Entrevista Supervisores de Seguridad y Mantenimiento
-* Entrevista N°1: https://youtu.be/3Ph0PE3lbC8
+  * Entrevista N°1: https://youtu.be/3Ph0PE3lbC8
+  
 - Entrevista Gerentes y administradores
-* Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
+  * Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
 
