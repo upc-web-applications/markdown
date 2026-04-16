@@ -288,7 +288,7 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 ## 1.3. Segmentos objetivo
 Los segmentos objetivo comprenden a los usuarios finales a los que nuestra solución busca atender. Para el caso de nuestra plataforma se han determinado los siguientes perfiles prioritarios:
 
-### Segmento objetivo #1: Operarios de Planta
+#### Segmento objetivo #1: Operarios de Planta
 
 **Descripción general**
 
@@ -316,7 +316,7 @@ El operario requiere un medio de reporte inmediato para registrar "casi-accident
 
 ---
 
-### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
+#### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
 
 **Descripción general**
 
@@ -324,7 +324,7 @@ Este segmento está formado por mandos medios responsables de la seguridad y el 
 
 **Aspectos demográficos**
 
-*   **Edad:** 28 a 50 años.
+*   **Edad:** 25 a 50 años.
 *   **Género:** Masculino y femenino.
 *   **Nivel Educativo:** Universitario o técnico superior (Ingeniería Industrial, Seguridad, Mantenimiento o afines).
 *   **Ubicación:** Plantas industriales, almacenes o sedes administrativas de operaciones.
@@ -344,7 +344,7 @@ El supervisor necesita centralizar los reportes de campo en un dashboard de visu
 
 ---
 
-### Segmento objetivo #3: Gerentes y Administradores
+#### Segmento objetivo #3: Gerentes y Administradores
 
 **Descripción general**
 
@@ -498,7 +498,7 @@ exploración y cierre sobre disposición de adopción tecnológica.
   y turno, y le enviara alertas automáticas antes de que ocurra un accidente,
   ¿qué impacto tendría eso en su trabajo diario?
 
-** Segmento 3: Gerentes y administradores**
+**Segmento 3: Gerentes y administradores**
 
 *Preguntas de apertura:*
 - ¿Cuál es su rol en la empresa y qué nivel de responsabilidad tiene sobre
@@ -537,11 +537,31 @@ Para consultar las entrevistas realizadas , visitar Anexo A
 - Ubicación: Miraflores
 - Cargo: Operario en Grupo Pacasmayo
 
-*Resumen de Entrevista:*
+**Resumen:**
 
 Fabrizio lleva cerca de un año y medio trabajando como operario en una planta de producción de alimentos, donde opera maquinaria para garantizar que los insumos estén listos y la producción no se detenga. Confirmó haber presenciado múltiples casi-accidentes, entre ellos una carga que casi se suelta de un montacargas cerca de un compañero, el cual no fue reportado formalmente debido a la presión del tiempo y la complejidad del proceso. Describió el sistema de reporte actual como poco práctico: requiere buscar al supervisor, solicitar un formato físico, llenarlo a mano y entregarlo, proceso que puede tomar días si el supervisor no está disponible. Estimó que deja de reportar condiciones inseguras una o dos veces por semana por la pesadez del proceso, optando por avisar verbalmente a sus compañeros y continuar trabajando. Mencionó haber reportado una rejilla suelta en el conducto de ventilación del almacén de químicos sin recibir nunca respuesta ni retroalimentación, lo que generó en él y sus compañeros la percepción de que los reportes no sirven para nada real. Señaló observar condiciones inseguras casi a diario, como sensores fallidos y palés mal apilados, y que con el tiempo uno se acostumbra al peligro porque nadie actúa. Mostró alta disposición a usar RiskGuard, condicionando su confianza en la app a ver resultados concretos: que los problemas reportados sean atendidos en días y que el sistema confirme la recepción del reporte con una notificación.
 
-  ###Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
+---
+
+*Entrevistado N°2: Rocío Acosta*
+
+<p align="center">
+  <img src="https://i.postimg.cc/BnkPRMFT/Whats-App-Image-2026-04-15-at-10-16-50-PM-(1).jpg" width="300"/>
+</p>
+
+- Sexo: Femenino  
+- Edad: 21  
+- Ubicación: Pueblo Libre  
+- Cargo: Operaria de producción  
+
+**Resumen:**  
+
+Rocío trabaja desde hace aproximadamente seis meses en una planta de producción, donde opera principalmente una máquina de corte y apoya en tareas básicas de mantenimiento. Su principal responsabilidad es cumplir con la producción y evitar fallas en los procesos. Durante su experiencia, ha presenciado múltiples casi-accidentes, principalmente relacionados con herramientas mal ubicadas y pisos resbalosos, los cuales considera frecuentes en su entorno laboral.  
+Indicó que el proceso actual de reporte no es práctico, ya que implica avisar al supervisor o llenar formularios en papel, lo cual interrumpe su trabajo y consume tiempo. Debido a esto, reconoce que en varias ocasiones deja de reportar situaciones de riesgo, especialmente cuando hay presión por cumplir con la producción o cuando el incidente parece menor.  
+Además, mencionó que ha reportado problemas anteriormente sin recibir seguimiento ni retroalimentación, lo que genera desmotivación y la percepción de que reportar no tiene impacto real. Aun así, identifica con frecuencia condiciones inseguras como cables sueltos o equipos en mal estado que muchas veces no son reportados por otros trabajadores.  
+Mostró disposición a utilizar una solución como RiskGuard, siempre que sea rápida, sencilla y no interrumpa su trabajo. Señaló que confiaría en la herramienta si esta confirma la recepción del reporte y demuestra que se toman acciones concretas en base a los incidentes reportados.  
+
+  #### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
   
   *Entrevistado N°1: Jorge Surva Villazante*
 - Sexo: Masculino
@@ -549,12 +569,32 @@ Fabrizio lleva cerca de un año y medio trabajando como operario en una planta d
 - Ubicacion: Magdalena
 - Cargo: Supervisor
 
-  **Resumen:**
+**Resumen:**
 
 El entrevistado se desempeña como supervisor y diseñador textil, supervisando a 3 operadores de maquinaria. Describe la cultura de seguridad de su empresa como manejable dado el tamaño reducido del equipo, aunque reconoce que esto podría cambiar conforme la empresa crezca.
 Respecto a la gestión de incidentes, el proceso actual es completamente manual: los reportes se anotan en una libreta y luego se trasladan a Excel, sin ninguna herramienta digital para identificar zonas o turnos de mayor riesgo. Señala que los operarios con más de un año de experiencia tienden a dejar de reportar incidentes, atribuyéndolo a la confianza ganada con el tiempo.
 Ante un fallo de maquinaria, el supervisor tarda entre 1 y 2 minutos en reaccionar. Además, admite haber detectado señales previas de accidentes sin contar con herramientas para actuar a tiempo, lo que valida directamente la propuesta de RiskGuard.
 Considera que las alertas automáticas serían muy útiles, siempre que el costo sea accesible para empresas pequeñas. Finalmente, señala que un dashboard con patrones de riesgo facilitaría su trabajo, aunque de forma humorística reconoce que extrañaría su rutina de recorridos por el taller.
+
+---
+
+*Entrevistado N°2: Álvaro Pablo*
+
+<p align="center">
+  <img src="https://i.postimg.cc/Jhj0vmm2/Whats-App-Image-2026-04-15-at-10-37-27-PM.jpg" width="300"/>
+</p>
+
+- Sexo: Masculino
+- Edad: 25
+- Ubicación: Barranca
+- Cargo: Supervisor de seguridad y mantenimiento  
+
+**Resumen:**  
+
+Álvaro es supervisor de seguridad y mantenimiento en una planta de manufactura, donde lidera a más de 20 personas. Su rol se centra en prevenir accidentes, asegurar el correcto funcionamiento de las operaciones y mantener condiciones seguras en las áreas de trabajo. Considera que el nivel de seguridad en su empresa es aceptable, aunque identifica oportunidades de mejora, especialmente en el uso de indicadores visuales que orienten mejor a los operarios.  
+Actualmente, la información sobre incidentes se gestiona mediante fichas o formatos que registran datos del accidente, los cuales son enviados al área de seguridad para su evaluación. Asimismo, utilizan herramientas como matrices de riesgo (IPER/IPCH) y planes de estandarización para identificar zonas críticas y mejorar procesos.  
+Álvaro reconoce que muchos operarios no reportan incidentes menores, ya sea porque los consideran poco relevantes o por falta de cultura de seguridad, lo cual representa un problema, ya que todos los eventos deberían ser registrados. También comentó que, en algunos casos, ya se habían detectado fallas en maquinaria antes de que ocurrieran accidentes, pero no se contaba con herramientas para actuar a tiempo.  
+Mostró alto interés en soluciones tecnológicas como RiskGuard, destacando que herramientas con alertas automáticas y dashboards de riesgos mejorarían significativamente su capacidad de prevención. Considera que este tipo de sistema optimizaría su trabajo, permitiría actuar antes de que ocurran accidentes y facilitaría una gestión más eficiente de la seguridad en planta.
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -797,5 +837,9 @@ https://doi.org/10.37135/kai.03.09.07
 # Anexos
 
 - Entrevista a Operarios de Planta
-  * Entrevista N°1: https://www.youtube.com/watch?v=ck4b-DECTs4&sttick=0 
+  * Entrevista N°1: https://www.youtube.com/watch?v=ck4b-DECTs4&sttick=0
+  * Entrevista N°2: https://youtu.be/Oma6FsvGv_Y
+    
+- Entrevista Supervisores de Seguridad y Mantenimiento
+* Entrevista N°1: https://youtu.be/3Ph0PE3lbC8
 
