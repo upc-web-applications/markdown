@@ -96,7 +96,7 @@ Este segmento está formado por mandos medios responsables de la seguridad y el 
 
 **Aspectos demográficos**
 
-*   **Edad:** 28 a 50 años.
+*   **Edad:** 25 a 50 años.
 *   **Género:** Masculino y femenino.
 *   **Nivel Educativo:** Universitario o técnico superior (Ingeniería Industrial, Seguridad, Mantenimiento o afines).
 *   **Ubicación:** Plantas industriales, almacenes o sedes administrativas de operaciones.
