@@ -615,6 +615,22 @@ Su mayor dolor de cabeza es la falta de integridad de datos: los informes mensua
 El año pasado enfrentaron una denuncia anónima de Sunafil por falta de EPP en la zona de hornos, resultando en una pérdida aproximada de 85,000 soles en facturación. Hace dos años, un derrame de material fundido dañó la infraestructura principal, obligando a postergar inversiones clave.
 Señala necesitar tres elementos en un tablero ejecutivo: un mapa de calor de riesgos por zona, seguimiento del cumplimiento del plan anual de seguridad, y alertas de desviación de protocolos en tiempo real. Mostró alta disposición hacia una solución que exporte automáticamente formatos de auditoría exigidos por ley y muestre indicadores predictivos de riesgo, calificándola como de alto valor para su gestión actual.
 
+*Entrevistado N°2: Ysabel Zavala *
+
+<p align="center">
+  <img src="https://i.postimg.cc/15K4pqZ1/Whats-App-Image-2026-04-16-at-16-00-27.jpg" width="300"/>
+</p>
+
+- Sexo: Femenino
+- Edad: 45
+- Ubicación: Perú
+- Cargo: Gerente de Operaciones
+
+**Resumen:**
+La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú, lidera la gestión de seguridad y salud laboral, asegurando el cumplimiento normativo, supervisando los controles de riesgo y reportando indicadores clave a la alta dirección. Ha identificado que el sistema actual de gestión de riesgos es reactivo, basado en indicadores rezagados como la frecuencia e intensidad de accidentes, lo que impide la anticipación y mitigación proactiva de riesgos. Un desafío significativo es la calidad y oportunidad de la información, afectada por procesos manuales y falta de integración de sistemas, lo que ha generado inspecciones y sanciones de la SUNAFIL, impactando la continuidad operativa y generando costos imprevistos que postergaron inversiones estratégicas. La inversión actual en seguridad y salud laboral se basa en costos de incidentes y cumplimiento de la Ley N° 29783, pero la Sra. Zavala destaca la necesidad de indicadores predictivos para una gestión más eficaz.  Recalca la importancia de un dashboard ejecutivo con información en tiempo real, alertas de riesgo, cumplimiento de inspecciones SUNAFIL y proyecciones de incidentes, considerando que reportes automatizados y análisis predictivo aportarían alto valor estratégico, permitiendo una gestión más proactiva y fortaleciendo la continuidad del negocio.
+
+
+
 ### 2.2.3. Análisis de entrevistas
 
 
@@ -864,4 +880,5 @@ https://doi.org/10.37135/kai.03.09.07
   
 - Entrevista Gerentes y administradores
   * Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
+  * Entrevista N°2: https://youtu.be/_SFBg8LDJSo
 
