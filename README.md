@@ -596,6 +596,23 @@ Actualmente, la información sobre incidentes se gestiona mediante fichas o form
 Álvaro reconoce que muchos operarios no reportan incidentes menores, ya sea porque los consideran poco relevantes o por falta de cultura de seguridad, lo cual representa un problema, ya que todos los eventos deberían ser registrados. También comentó que, en algunos casos, ya se habían detectado fallas en maquinaria antes de que ocurrieran accidentes, pero no se contaba con herramientas para actuar a tiempo.  
 Mostró alto interés en soluciones tecnológicas como RiskGuard, destacando que herramientas con alertas automáticas y dashboards de riesgos mejorarían significativamente su capacidad de prevención. Considera que este tipo de sistema optimizaría su trabajo, permitiría actuar antes de que ocurran accidentes y facilitaría una gestión más eficiente de la seguridad en planta.
 
+#### Segmento objetivo #3: Gerentes y Administradores
+*Entrevistado N°1: Tiziano Nicoletti*
+<p align="center">
+  <img src="https://i.postimg.cc/SQ2SKyCY/Diseno-sin-titulo.jpg" width="300"/>
+</p>
+- Sexo: Masculino
+- Edad: 23
+- Ubicación: Perú
+- Cargo: Gerente de Operaciones
+
+**Resumen:**
+
+Tiziano es un joven gerente de operaciones en una planta industrial en Perú, de nacionalidad argentina, con un jefe de seguridad, salud ocupacional y medio ambiente bajo su cargo. Reconoce que su sistema de evaluación de seguridad es reactivo, midiendo el éxito en base a días sin accidentes mediante índices de frecuencia y severidad.
+Su mayor dolor de cabeza es la falta de integridad de datos: los informes mensuales llegan con 10 días de retraso y frecuentemente son copia del mes anterior. Además, los supervisores en campo suelen ocultar incidentes peligrosos para no afectar sus bonos, impidiendo una visión real del riesgo.
+El año pasado enfrentaron una denuncia anónima de Sunafil por falta de EPP en la zona de hornos, resultando en una pérdida aproximada de 85,000 soles en facturación. Hace dos años, un derrame de material fundido dañó la infraestructura principal, obligando a postergar inversiones clave.
+Señala necesitar tres elementos en un tablero ejecutivo: un mapa de calor de riesgos por zona, seguimiento del cumplimiento del plan anual de seguridad, y alertas de desviación de protocolos en tiempo real. Mostró alta disposición hacia una solución que exporte automáticamente formatos de auditoría exigidos por ley y muestre indicadores predictivos de riesgo, calificándola como de alto valor para su gestión actual.
+
 ### 2.2.3. Análisis de entrevistas
 
 
@@ -842,4 +859,6 @@ https://doi.org/10.37135/kai.03.09.07
     
 - Entrevista Supervisores de Seguridad y Mantenimiento
 * Entrevista N°1: https://youtu.be/3Ph0PE3lbC8
+- Entrevista Gerentes y administradores
+* Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
 
