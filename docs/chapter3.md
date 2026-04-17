@@ -42,41 +42,50 @@
         <td><b>User Story ID</b></td>
         <td>US01</b></td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+        <td>EP03</b></td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Autenticación Segura de Supervisor</b></td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero iniciar sesión en la plataforma utilizando mis credenciales preconfiguradas, para acceder a las funciones establecidas de acuerdo mi rol</td>
     </tr>
     <tr>
         <td colspan="4">
             <b>Criterios de aceptación:</b> <br/>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>El acceso debe realizarse obligatoriamente mediante un correo y contraseña previamente establecidos en la base de datos durante el despliegue del sistema.</li>
+                <li>El sistema debe validar en el frontend que el correo tenga un formato válido antes de enviar la petición.</li>
+                <li>En caso de error de autenticación, el sistema debe mostrar el mensaje indicando "Correo o contraseña incorrectos" .</li>
+                <li>Las contraseñas en la base de datos deben estar encriptadas (hasheadas).</li>
+                <li>Tras un inicio de sesión exitoso, el sistema debe generar un token de seguridad y redirigir al supervisor a la pantalla de funciones segun su rol</li>
+                <li>Como medida de seguridad, tras 5 intentos fallidos de inicio de sesión consecutivos, la cuenta debe bloquearse temporalmente por 15 minutos</li>
             </ol>
-            <b>Escenario 1 </b> <br/>
+            <b>Escenario 1:</b> Inicio de sesión exitoso<br/>
             <ul>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
+                <li><b>Given</b> que el Supervisor se encuentra en la pantalla de inicio de sesión de RiskGuard</li>
+                <li><b>When</b> ingresa su correo corporativo preconfigurado y su contraseña correcta,</li>
+                <li><b>And</b> hace clic en el botón "Ingresar",</li>
+                <li><b>Then</b> el sistema valida las credenciales,</li>
+                <li><b>And</b> autoriza el acceso y redirige al usuario a la vista principal en donde se encuentran sus funciones como supervisor</li>
+            </ul>
+            <b>Escenario 2:</b> Intento fallido por credenciales inválidas<br/>
+            <ul>
+                <li><b>Given</b> que el Supervisor se encuentra en la pantalla de inicio de sesión de RiskGuard</li>
+                <li><b>When</b> ingresa alguna credencial de manera incorrecta</li>
+                <li><b>And</b> hace clic en el botón "Ingresar",</li>
+                <li><b>Then</b> el sistema deniega el acceso a la plataforma,</li>
+                <li><b>And</b> muestra una mensaje indicando "Correo o contraseña incorrectos", manteniendo los campos limpios para un nuevo intento.</li>
+            </ul>
+            <b>Escenario 3:</b> Bloqueo preventivo por múltiples intentos fallidos consecutivos<br/>
+            <ul>
+                <li><b>Given</b> que el Supervisor intenta acceder al sistema,</li>
+                <li><b>When</b> acumula 5 intentos de autenticación fallidos consecutivos,</li>
+                <li><b>And</b> hace clic en el botón "Ingresar",</li>
+                <li><b>Then</b> el sistema bloquea temporalmente las peticiones para ese usuario,</li>
+                <li><b>And</b> muestra el mensaje indicando "Demasiados intentos fallidos. Por favor, intente nuevamente en 15 minutos".</li>
             </ul>
         </b></td>
     </tr>
