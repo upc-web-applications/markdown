@@ -187,11 +187,7 @@ Project Report URL: https://github.com/upc-web-applications
 
 
 
-# Conclusiones
 
-
-
-# Recomendaciones
 
 
 
