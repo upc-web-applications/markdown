@@ -685,7 +685,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
   <p>
     <b>Grafico 5</b>: Segmento Objetivo 3
   </p>
-  <img src="https://i.postimg.cc/ZK551kK0/Irma-Gonzales-Rodriguez-(1).png" alt="Grafico 5" />
+    ![Foto de Irma](./content/images/Irma Gonzales Rodriguez (1).png)
   <p>
     <i><b>Fuente</b>: Elaboración propia. Versión en alta resolución disponible en el Anexo</i>
   </p>
