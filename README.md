@@ -847,7 +847,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US01</b></td>
+        <td>US02</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
@@ -891,7 +891,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US01</b></td>
+        <td>US03</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
@@ -935,7 +935,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US01</b></td>
+        <td>US04</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
@@ -979,7 +979,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US01</b></td>
+        <td>US05</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
@@ -1023,7 +1023,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US01</b></td>
+        <td>US06</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
