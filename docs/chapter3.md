@@ -1744,7 +1744,9 @@
         </b></td>
     </tr>
 </table>
+
 ---
+
 <table align="center">
   <tr>
     <td><b>User Story ID</b></td><td>US36</td>
