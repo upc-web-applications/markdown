@@ -422,6 +422,51 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 
 ### 2.3.4. Empathy Mapping
 
+ #### Segmento Objetivo 1: Operarios de Planta
+  
+  <div align="center">
+  <p>
+    <b>Grafico 9</b>: Segmento Objetivo 1
+  </p>
+
+![Foto](images/juan-em.png)
+
+  <p>
+    <i><b>Fuente</b>: Elaboración propia. </i>
+  </p>
+</div>
+
+---
+
+ #### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
+  
+  <div align="center">
+  <p>
+    <b>Grafico 10</b>: Segmento Objetivo 2
+  </p>
+
+![Foto](images/martina-em.png)
+   
+  <p>
+    <i><b>Fuente</b>: Elaboración propia. </i>
+  </p>
+</div>
+
+---
+
+ #### Segmento Objetivo 3: Gerentes y Administradores
+  
+  <div align="center">
+  <p>
+    <b>Grafico 11</b>: Segmento Objetivo 3
+  </p>
+    
+![Foto](images/irma-em.png)
+  
+  <p>
+    <i><b>Fuente</b>: Elaboración propia. </i>
+  </p>
+</div>
 
 
 ## 2.4. Big Picture EventStorming
