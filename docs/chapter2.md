@@ -374,7 +374,51 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 
 ### 2.3.3. User Journey Mapping
 
+ #### Segmento Objetivo 1: Operarios de Planta
+  
+  <div align="center">
+  <p>
+    <b>Grafico 6</b>: Segmento Objetivo 1
+  </p>
 
+![Foto](images/juan-jm.png)
+
+  <p>
+    <i><b>Fuente</b>: Elaboración propia. </i>
+  </p>
+</div>
+
+---
+
+ #### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
+  
+  <div align="center">
+  <p>
+    <b>Grafico 7</b>: Segmento Objetivo 2
+  </p>
+
+![Foto](images/martina-jm.png)
+   
+  <p>
+    <i><b>Fuente</b>: Elaboración propia. </i>
+  </p>
+</div>
+
+---
+
+ #### Segmento Objetivo 3: Gerentes y Administradores
+  
+  <div align="center">
+  <p>
+    <b>Grafico 8</b>: Segmento Objetivo 3
+  </p>
+    
+![Foto](images/irma-jm.png)
+  
+  <p>
+    <i><b>Fuente</b>: Elaboración propia. </i>
+  </p>
+</div>
 
 ### 2.3.4. Empathy Mapping
 
