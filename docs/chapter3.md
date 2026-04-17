@@ -291,41 +291,46 @@
         <td><b>User Story ID</b></td>
         <td>US06</b></td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+        <td>EP03</b></td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Exploración Sectorizada y Filtrado de Alertas Activas</b></td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero acceder a las alertas activas seleccionando previamente un sector específico, para enfocar mi análisis en un sector a la vez y aplicar filtros de riesgo sobre sus incidentes correspondientes.</td>
     </tr>
     <tr>
         <td colspan="4">
             <b>Criterios de aceptación:</b> <br/>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>El sistema requiere la selección de un sector físico válido (previamente registrado) antes de desplegar la lista de alertas activas.</li>
+                <li>El sistema recupera y despliega exclusivamente los tickets de incidentes que están referenciados al sector previamente seleccionado.</li>
+                <li>El sistema permite aplicar filtros secundarios sobre los resultados del sector, basándose en el nivel de riesgo y el estado de resolución del ticket </li>
+                <li>El sistema actualiza el conjunto de resultados del sector en evaluación cuando se modifican los parámetros de filtrado secundario.</li>
+                <li>El sistema retorna un mensaje de estado informativo cuando el sector seleccionado no posee alertas activas o cuando los filtros secundarios aplicados no producen coincidencias</li>
             </ol>
-            <b>Escenario 1 </b> <br/>
+            <b>Escenario 1:</b> Acceso a un sector con múltiples alertas<br/>
             <ul>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
+                <li><b>Given</b> que el supervisor necesita evaluar una zona específica de la planta,</li>
+                <li><b>When</b> selecciona un sector en especifico para su exploración,</li>
+                <li><b>Then</b> el sistema procesa la solicitud y retorna únicamente los tickets de incidentes asociados a dicho sector,</li>
+                <li><b>And</b> mantiene ocultas las alertas pertenecientes a otras áreas operativas</li>
+            </ul>
+            <b>Escenario 2:</b> Filtrado dentro de un sector específicos<br/>
+            <ul>
+                <li><b>Given</b> que el sistema muestra todas las alertas correspondientes a un sector en especifico,</li>
+                <li><b>When</b> el supervisor aplica algun filtro secundario,</li>
+                <li><b>Then</b> el sistema filtra los resultados internos del sector</li>
+                <li><b>And</b> retorna exclusivamente los tickets basados en los filtros secundarios aplicados</li>
+            </ul>
+            <b>Escenario 3:</b> Exploración de un sector sin incidentes<br/>
+            <ul>
+                <li><b>Given</b> que el supervisor explora el estado operativo de un sector específico,</li>
+                <li><b>When</b> selecciona un sector el cual posee un historial reciente limpio,</li>
+                <li><b>Then</b> el sistema procesa la consulta sin retornar tickets de incidentes,</li>
+                <li><b>And</b> emite el mensaje informativo indicando que el sector opera dentro de los parámetros seguros y no posee alertas activas</li>
             </ul>
         </b></td>
     </tr>
