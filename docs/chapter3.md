@@ -1704,6 +1704,47 @@
     </tr>
 </table>
 
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US09</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b></td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3">Notificación Externa Automática por Incidentes Críticos</b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero recibir notificaciones automáticas a través de canales externos cuando el sistema registre un incidente de riesgo crítico, para garantizar un tiempo de respuesta inmediato ante emergencias sin requerir un monitoreo activo de la plataforma</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li>El sistema ejecuta el envío automático de un mensaje de alerta a la dirección de correo configurada del supervisor inmediatamente después de la creación de un ticket con nivel de riesgo "Critico"</li>
+                <li>El sistema incluye en el cuerpo del mensaje el identificador del ticket, la clasificación del riesgo, el nombre del sector afectado y la marca de tiempo del incidente.</li>
+                <li>El sistema omite la ejecución del protocolo de notificación externa cuando los incidentes evaluados poseen un nivel de riesgo diferente a "Critico"</li>
+            </ol>
+            <b>Escenario 1:</b> Emisión exitosa de alerta por riesgo crítico<br/>
+            <ul>
+                <li><b>Given</b> que se registra un nuevo incidente que supera el umbral máximo de peligro,</li>
+                <li><b>When</b> el sistema genera formalmente el ticket de acción correctiva,</li>
+                <li><b>Then</b> el sistema extrae los datos principales del incidente,</li>
+                <li><b>And</b> envía un mensaje de correo electrónico al supervisor registrado indicando la existencia de la emergencia.</li>
+            </ul>
+            <b>Escenario 2:</b> Omisión de notificación por riesgo operativo<br/>
+            <ul>
+                <li><b>Given</b> que el sistema evalúa un reporte de incidencia,</li>
+                <li><b>When</b> el sistema registra el evento con un nivel de riesgo inferior al umbral de criticidad,</li>
+                <li><b>Then</b> el sistema almacena el incidente para su revisión en la plataforma,</li>
+                <li><b>And</b> omite el disparo del evento de notificación hacia el correo electrónico externo del supervisor.</li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+
 
 
 ## 3.2. Impact Mapping
