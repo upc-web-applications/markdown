@@ -243,41 +243,45 @@
         <td><b>User Story ID</b></td>
         <td>US05</b></td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+        <td>EP03</b></td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Asignación de Tickets de Acción Correctiva</b></td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero asignar un ticket de incidente a un técnico de mantenimiento específico, para delegar la responsabilidad de la reparación y cambiar el estado de la alerta a un proceso de mitigación activo.</b></td>
     </tr>
     <tr>
         <td colspan="4">
             <b>Criterios de aceptación:</b> <br/>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>El sistema requiere obligatoriamente el identificador de un técnico de mantenimiento con estado "Activo" para procesar la asignación del ticket</li>
+                <li>El sistema actualiza automáticamente el estado del ticket de "Pendiente" a "En Progreso" una vez que la asignación es procesada con éxito</li>
+                <li>El sistema registra de forma inmutable la fecha, hora y el identificador del técnico asignado en el historial de trazabilidad del ticket.</li>
+                <li>El sistema permite la reasignación de un ticket que se encuentra "En Progreso" hacia un técnico diferente, registrando el cambio en el historial.</li>
             </ol>
-            <b>Escenario 1 </b> <br/>
+            <b>Escenario 1:</b> Asignación inicial exitosa<br/>
             <ul>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
+                <li><b>Given</b> que existe un ticket de acción correctiva en estado "Pendiente",</li>
+                <li><b>When</b> el supervisor envía la solicitud de asignación vinculando a un técnico de mantenimiento en estado activo,</li>
+                <li><b>Then</b> el sistema procesa la vinculación en la base de datos</li>
+                <li><b>And</b> actualiza el estado del ticket a "En Progreso".</li>
+            </ul>
+            <b>Escenario 2:</b> Validación por datos incompletos<br/>
+            <ul>
+                <li><b>Given</b> que el supervisor intenta delegar la responsabilidad de un incidente,</li>
+                <li><b>When</b> envía la solicitud de asignación sin especificar el identificador de un técnico válido,</li>
+                <li><b>Then</b> el sistema rechaza la operación,</li>
+                <li><b>And</b> retorna un mensaje de error indicando que se requiere un responsable para continuar.</li>
+            </ul>
+            <b>Escenario 3:</b> Reasignación de ticket activo<br/>
+            <ul>
+                <li><b>Given</b> que un ticket se encuentra "En Progreso" asignado previamente a un técnico en específico,</li>
+                <li><b>When</b> el supervisor emite una nueva solicitud de asignación para el mismo ticket vinculando a un técnico diferente,</li>
+                <li><b>Then</b> el sistema actualiza al responsable activo de la tarea,</li>
+                <li><b>And</b> añade un registro en el historial detallando la transferencia de responsabilidad entre ambos técnicos.</li>
             </ul>
         </b></td>
     </tr>
