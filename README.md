@@ -1014,3 +1014,8 @@ https://doi.org/10.37135/kai.03.09.07
   * Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
   * Entrevista N°2: https://youtu.be/_SFBg8LDJSo
 
+---
+
+- Enlace a los User Personas: https://drive.google.com/drive/folders/1H6bh1jSc-Vebdd4DlA80DFFn6ZA6Lt6b?usp=drive_link
+
+
