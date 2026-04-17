@@ -659,7 +659,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
   </p>
   <img src="https://i.postimg.cc/rs65fVL5/Juan-Jimenez-Fernandez.png" alt="Grafico 3" />
   <p>
-    <i><b>Fuente</b>: Elaboración propia. Versión en alta resolución disponible en el Anexo</i>
+    <i><b>Fuente</b>: Elaboración propia. </i>
   </p>
 </div>
 
@@ -673,7 +673,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
   </p>
   <img src="https://i.postimg.cc/Y9QvqQJY/Martina-Rojas-Huaman-(1).png" alt="Grafico 4" />
   <p>
-    <i><b>Fuente</b>: Elaboración propia. Versión en alta resolución disponible en el Anexo</i>
+    <i><b>Fuente</b>: Elaboración propia. </i>
   </p>
 </div>
 
@@ -689,7 +689,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](content/images/irma-gonzales-rodriguez.png)
   
   <p>
-    <i><b>Fuente</b>: Elaboración propia. Versión en alta resolución disponible en el Anexo</i>
+    <i><b>Fuente</b>: Elaboración propia. </i>
   </p>
 </div>
 
@@ -1016,8 +1016,5 @@ https://doi.org/10.37135/kai.03.09.07
   * Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
   * Entrevista N°2: https://youtu.be/_SFBg8LDJSo
 
----
-
-- Enlace a los User Personas: https://drive.google.com/drive/folders/1H6bh1jSc-Vebdd4DlA80DFFn6ZA6Lt6b?usp=drive_link
 
 
