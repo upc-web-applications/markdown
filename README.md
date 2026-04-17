@@ -36,11 +36,15 @@ Abril 2026
 
 </div>
 
+<div align="center">
+
 # Registro de Versiones del Informe
 
 | Version | Fecha | Autor | Descripción de modificación |
-| -------- | -------- | -------- | -------- |
-| AV1    | 03/04/2026     | Todos los integrantes     | Primera Version
+|:------:|:------:|:------:|:---------------------------:|
+| AV1 | 03/04/2026 | Todos los integrantes | Primera Version |
+
+</div>
 
 
 # Projet Report Collaboration Insights
