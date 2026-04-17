@@ -778,7 +778,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
     </tr>
     <tr>
         <td align="center"><b>EP01</b></td>
-        <td align="center"></td>
+        <td align="center">Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
     <tr>
         <td align="center"><b>EP02</b></td>
