@@ -19,7 +19,7 @@
     </tr>
     <tr>
         <td align="center"><b>EP02</b></td>
-        <td align="center"></td>
+        <td align="center">Motor Predictivo y Análisis de Riesgos</td>
     </tr>
     <tr>
         <td align="center"><b>EP03</b></td>
@@ -34,6 +34,7 @@
         <td align="center"></td>
     </tr>
 </table>
+
 
 ## User Stories
 <table align="center">
