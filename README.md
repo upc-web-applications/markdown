@@ -700,7 +700,50 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 
 ### 2.3.2. User Task Matrix
 
+#### Segmento 1: Operarios de planta
 
+| Tarea | Frecuencia | Importancia | Dificultad actual | ¿RiskGuard la soporta? |
+|---|---|---|---|---|
+| Identificar condiciones inseguras en su zona | Alta | Alta | Baja | Sí — alerta push en zonas conocidas |
+| Reportar un casi-accidente o condición de riesgo | Media | Muy alta | Muy alta | Sí — formulario rápido ≤ 3 campos + foto |
+| Notificar verbalmente al supervisor | Alta | Media | Baja | Parcial — reemplazado por reporte digital |
+| Consultar el estado de un reporte enviado | Baja | Alta | Muy alta | Sí — estado en tiempo real por notificación |
+| Recibir confirmación de que el riesgo fue atendido | Baja | Muy alta | Muy alta | Sí — notificación de cierre con acción tomada |
+| Evitar zonas de riesgo ya conocidas | Alta | Alta | Media | Sí — mapa de riesgos visible en la app |
+| Registrar uso de EPP o condiciones de trabajo | Baja | Media | Alta | Sí — checklist de turno configurable |
+| Capacitarse en procedimientos de seguridad | Baja | Media | Media | Parcial — módulo de alertas educativas |
+
+---
+
+#### Segmento 2: Supervisores de seguridad y mantenimiento
+
+| Tarea | Frecuencia | Importancia | Dificultad actual | ¿RiskGuard la soporta? |
+|---|---|---|---|---|
+| Revisar incidentes reportados por operarios | Alta | Muy alta | Muy alta | Sí — bandeja centralizada con clasificación |
+| Identificar zonas o turnos con mayor frecuencia de riesgos | Media | Muy alta | Muy alta | Sí — mapa de calor filtrable por zona y turno |
+| Asignar acciones correctivas al equipo de mantenimiento | Alta | Muy alta | Alta | Sí — asignación de tareas con plazo y notificación |
+| Verificar cierre de acciones correctivas | Media | Alta | Alta | Sí — trazabilidad y estado de cada tarea |
+| Elaborar informe de turno o semanal | Alta | Alta | Muy alta | Sí — generación automática de reporte con un clic |
+| Recibir alertas de riesgo crítico en tiempo real | Alta | Muy alta | Muy alta | Sí — alertas automáticas por nivel de criticidad |
+| Analizar tendencias de riesgo en el tiempo | Baja | Alta | Muy alta | Sí — gráficas de tendencia en el dashboard |
+| Coordinar con gerencia sobre el estado de seguridad | Media | Alta | Alta | Sí — exportación de reportes consolidados |
+| Supervisar cumplimiento del plan anual de SST | Baja | Alta | Alta | Sí — indicador de avance del plan SST |
+
+---
+
+#### Segmento 3: Gerentes y administradores
+
+| Tarea | Frecuencia | Importancia | Dificultad actual | ¿RiskGuard la soporta? |
+|---|---|---|---|---|
+| Revisar indicadores de desempeño de SST | Alta | Muy alta | Muy alta | Sí — dashboard ejecutivo en tiempo real |
+| Identificar brechas de seguridad por área | Media | Muy alta | Muy alta | Sí — alertas de tendencia creciente por zona |
+| Justificar inversión en seguridad ante el directorio | Baja | Alta | Alta | Sí — KPIs predictivos exportables |
+| Preparar documentación para auditorías de Sunafil | Baja | Muy alta | Muy alta | Sí — exportación automática en formatos Ley N.° 29783 |
+| Evaluar el cumplimiento del plan anual de SST | Baja | Alta | Alta | Sí — indicador de cumplimiento por área |
+| Detectar patrones de riesgo antes de un accidente | Baja | Muy alta | Muy alta | Sí — motor de reglas con alertas predictivas |
+| Aprobar inversiones preventivas de mantenimiento | Baja | Alta | Media | Parcial — datos de soporte para la decisión |
+| Hacer seguimiento de sanciones o acciones legales | Baja | Alta | Alta | Parcial — registro histórico de incidentes |
+| Comunicar resultados de SST a socios o clientes | Muy baja | Media | Alta | Sí — reportes formateados para terceros |
 
 ### 2.3.3. User Journey Mapping
 
