@@ -51,7 +51,7 @@ Project Report URL: https://github.com/upc-web-applications
 
 **Capítulo I: Introducción**  
 1.1. [Startup Profile](docs/chapter1.md#11-startup-profile)  
-1.1.1. [Descripción del startup](docs/chapter1.md#111-descripcion-del-startup)  
+1.1.1. [Descripción del startup](docs/chapter1.md#111-descripción-del-startup)  
 1.1.2. [Perfiles de integrantes del equipo](docs/chapter1.md#112-perfiles-de-integrantes-del-equipo)  
 
 1.2. [Solution Profile](docs/chapter1.md#12-solution-profile)  
