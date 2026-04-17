@@ -672,6 +672,39 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 
 ## 3.1. User Stories
 
+## Epics
+
+<table align="center">
+    <tr>
+        <td align="center">
+        <b>Epic ID</b>
+        </td>
+        <td align="center">
+        <b>Descripción de la épica</b>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><b>EP01</b></td>
+        <td align="center">Onboarding y Accesibilidad</td>
+    </tr>
+    <tr>
+        <td align="center"><b>EP02</b></td>
+        <td align="center">Simulaciones de Emergencias</td>
+    </tr>
+    <tr>
+        <td align="center"><b>EP03</b></td>
+        <td align="center">Retroalimentación y Aprendizaje Progresivo</td>
+    </tr>
+    <tr>
+        <td align="center"><b>EP04</b></td>
+        <td align="center">Comercio electrónico</td>
+    </tr>
+    <tr>
+        <td align="center"><b>EP05</b></td>
+        <td align="center">Gamificación y recompensas</td>
+    </tr>
+</table>
+
 
 
 ## 3.2. Impact Mapping
