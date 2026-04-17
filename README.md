@@ -67,13 +67,13 @@ Project Report URL: https://github.com/upc-web-applications
 
 **Capítulo II: Requirements Elicitation & Analysis**  
 2.1. [Competidores](docs/chapter2.md#21-competidores)  
-2.1.1. [Análisis competitivo](docs/chapter2.md#211-analisis-competitivo)  
-2.1.2. [Estrategias y tácticas frente a competidores](docs/chapter2.md#212-estrategias-y-tacticas-frente-a-competidores)  
+2.1.1. [Análisis competitivo](docs/chapter2.md#211-análisis-competitivo)  
+2.1.2. [Estrategias y tácticas frente a competidores](docs/chapter2.md#212-estrategias-y-tácticas-frente-a-competidores)  
 
 2.2. [Entrevistas](docs/chapter2.md#22-entrevistas)  
-2.2.1. [Diseño de entrevistas](docs/chapter2.md#221-diseno-de-entrevistas)  
+2.2.1. [Diseño de entrevistas](docs/chapter2.md#221-diseño-de-entrevistas)  
 2.2.2. [Registro de entrevistas](docs/chapter2.md#222-registro-de-entrevistas)  
-2.2.3. [Análisis de entrevistas](docs/chapter2.md#223-analisis-de-entrevistas)  
+2.2.3. [Análisis de entrevistas](docs/chapter2.md#223-análisis-de-entrevistas)  
 
 2.3. [Needfinding](docs/chapter2.md#23-needfinding)  
 2.3.1. [User Personas](docs/chapter2.md#231-user-personas)  
@@ -147,9 +147,9 @@ Project Report URL: https://github.com/upc-web-applications
 5.2.1.8. [Team Collaboration Insights during Sprint](docs/chapter5.md#5218-team-collaboration-insights-during-sprint)  
 
 5.3. [Validation Interviews](docs/chapter5.md#53-validation-interviews)  
-5.3.1. [Diseño de Entrevistas](docs/chapter5.md#531-diseno-entrevistas)  
+5.3.1. [Diseño de Entrevistas](docs/chapter5.md#531-diseño-entrevistas)  
 5.3.2. [Registro de Entrevistas](docs/chapter5.md#532-registro-entrevistas)  
-5.3.3. [Evaluaciones según heurísticas](docs/chapter5.md#533-evaluacion-heuristicas)  
+5.3.3. [Evaluaciones según heurísticas](docs/chapter5.md#533-evaluacion-heurísticas)  
 
 5.4. [Video About-the-Product](docs/chapter5.md#54-video-about-the-product)  
 
@@ -158,7 +158,7 @@ Project Report URL: https://github.com/upc-web-applications
 **Final**  
 - [Conclusiones](docs/conclusiones.md#conclusiones)  
 - [Recomendaciones](docs/conclusiones.md#recomendaciones)  
-- [Bibliografía](docs/bibliografia.md)  
+- [Bibliografía](docs/bibliografía.md)  
 - [Anexos](docs/anexos.md)  
 
 # Student Outcome
