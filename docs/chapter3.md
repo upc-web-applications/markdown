@@ -1295,7 +1295,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US01</b></td>
+        <td>US27</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1351,7 +1351,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US02</b></td>
+        <td>US28</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1403,7 +1403,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US03</b></td>
+        <td>US29</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1456,7 +1456,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US04</b></td>
+        <td>US30</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1508,7 +1508,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US05</b></td>
+        <td>US31</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1559,7 +1559,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US06</b></td>
+        <td>US32</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1609,7 +1609,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US07</b></td>
+        <td>US33</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1657,7 +1657,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US08</b></td>
+        <td>US34</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1707,7 +1707,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US09</b></td>
+        <td>US35</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
