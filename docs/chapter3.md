@@ -15,7 +15,7 @@
     </tr>
     <tr>
         <td align="center"><b>EP01</b></td>
-        <td align="center"></td>
+        <td align="center">Operario de Planta</td>
     </tr>
     <tr>
         <td align="center"><b>EP02</b></td>
