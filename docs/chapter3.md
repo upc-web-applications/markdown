@@ -198,37 +198,42 @@
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Gestión y Administración de Personal Técnico</b></td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero registrar y administrar al personal de mantenimiento en el sistema, para disponer de una lista actualizada de técnicos calificados a quienes delegar los tickets de acción correctiva</b></td>
     </tr>
     <tr>
         <td colspan="4">
             <b>Criterios de aceptación:</b> <br/>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>El sistema requiere obligatoriamente el número de documento de identidad, nombres completos, especialidad técnica y estado operativo ("Activo" o "Inactivo") para procesar el registro de un nuevo técnico.</li>
+                <li>El sistema rechaza el registro de un nuevo técnico si el número de documento de identidad ingresado ya existe en la base de datos.</li>
+                <li>El sistema permite la actualización de los datos de contacto y la especialidad del personal técnico registrado.</li>
+                <li>El sistema cambia de estado a "Inactivo" en lugar de una eliminación total cuando el supervisor da de baja a un técnico, preservando la integridad del historial de los tickets que resolvió en el pasado.</li>
+                <li>El sistema filtra y expone exclusivamente al personal en estado "Activo" durante el proceso de asignación de tickets de acción correctiva</li>
             </ol>
-            <b>Escenario 1 </b> <br/>
+            <b>Escenario 1:</b> Registro exitoso de un nuevo técnico<br/>
             <ul>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
+                <li><b>Given</b> que el supervisor dispone de los datos de un nuevo colaborador de mantenimiento,</li>
+                <li><b>When</b> envía la solicitud de registro con el número de documento, nombre y especialidad,</li>
+                <li><b>Then</b> el sistema almacena el perfil del técnico en la base de datos</li>
+                <li><b>And</b> le asigna el estado predeterminado de "Activo" para habilitar su disponibilidad en la asignación de tickets</li>
+            </ul>
+            <b>Escenario 2:</b> Validación por documento de identidad duplicado<br/>
+            <ul>
+                <li><b>Given</b> que un técnico ya se encuentra registrado activamente en la plataforma,</li>
+                <li><b>When</b> el supervisor intenta registrar un nuevo perfil utilizando el mismo número de documento de identidad,</li>
+                <li><b>Then</b> el sistema rechaza la solicitud de inserción,</li>
+                <li><b>And</b> retorna un mensaje de error validando la duplicidad del documento</li>
+            </ul>
+            <b>Escenario 3:</b> Inhabilitación de personal<br/>
+            <ul>
+                <li><b>Given</b> que un técnico registrado finaliza su vínculo laboral con la empresa y posee un historial de mitigación de riesgos,</li>
+                <li><b>When</b> el supervisor emite la solicitud para dar de baja dicho perfil,</li>
+                <li><b>Then</b> el sistema actualiza el estado del técnico a "Inactivo",</li>
+                <li><b>And</b> lo oculta de la lista de personal disponible para nuevas asignaciones, manteniendo intactos los registros de sus trabajos previos</li>
             </ul>
         </b></td>
     </tr>
