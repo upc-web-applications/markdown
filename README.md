@@ -532,6 +532,11 @@ Para consultar las entrevistas realizadas , visitar Anexo A
 #### Segmento objetivo #1: Operarios de Planta
 
 *Entrevistado N°1: Fabrizio Vacca Crisostomo*
+
+<p align="center">
+  <img src="https://i.postimg.cc/grFDfcym/Diseno-sin-titulo-(1).jpg" width="300"/>
+</p>
+
 - Sexo: Masculino
 - Edad: 26
 - Ubicación: Miraflores
