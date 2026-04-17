@@ -569,6 +569,11 @@ Mostr처 disposici처n a utilizar una soluci처n como RiskGuard, siempre que sea r�
   #### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
   
   *Entrevistado N째1: Jorge Surco Villazante*
+
+<p align="center">
+  <img src="https://i.postimg.cc/fbRxqqt6/Diseno-sin-titulo-(2).jpg" width="300"/>
+</p>
+  
 - Sexo: Masculino
 - Edad: 25
 - Ubicacion: Magdalena
@@ -964,7 +969,7 @@ https://doi.org/10.37135/kai.03.09.07
     
 - Entrevista Supervisores de Seguridad y Mantenimiento
   * Entrevista N째1: https://www.youtube.com/watch?v=OHCKcoEPPtM
-  * Entrevistas N째2: https://youtu.be/3Ph0PE3lbC8
+  * Entrevista N째2: https://youtu.be/3Ph0PE3lbC8
    
 - Entrevista Gerentes y administradores
   * Entrevista N째1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
