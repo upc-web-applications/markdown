@@ -40,7 +40,7 @@ Abril 2026
 
 | Version | Fecha | Autor | Descripción de modificación |
 | -------- | -------- | -------- | -------- |
-| 1.0.0    | Text     | Text     |
+| AV1    | 03/04/2026     | Todos los integrantes     | Primera Version
 
 
 # Projet Report Collaboration Insights
