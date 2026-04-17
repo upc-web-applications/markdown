@@ -568,7 +568,7 @@ Mostró disposición a utilizar una solución como RiskGuard, siempre que sea r�
 
   #### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
   
-  *Entrevistado N°1: Jorge Surva Villazante*
+  *Entrevistado N°1: Jorge Surco Villazante*
 - Sexo: Masculino
 - Edad: 25
 - Ubicacion: Magdalena
@@ -883,8 +883,9 @@ https://doi.org/10.37135/kai.03.09.07
   * Entrevista N°2: https://youtu.be/Oma6FsvGv_Y
     
 - Entrevista Supervisores de Seguridad y Mantenimiento
-  * Entrevista N°1: https://youtu.be/3Ph0PE3lbC8
-  
+  * Entrevista N°1: https://www.youtube.com/watch?v=OHCKcoEPPtM
+  * Entrevistas N°2: https://youtu.be/3Ph0PE3lbC8
+   
 - Entrevista Gerentes y administradores
   * Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
   * Entrevista N°2: https://youtu.be/_SFBg8LDJSo
