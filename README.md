@@ -36,9 +36,11 @@ Abril 2026
 
 </div>
 
-<div align="center">
+
 
 # Registro de Versiones del Informe
+
+<div align="center">
 
 | Version | Fecha | Autor | Descripción de modificación |
 |:------:|:------:|:------:|:---------------------------:|
