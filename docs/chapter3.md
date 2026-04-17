@@ -1744,7 +1744,707 @@
         </b></td>
     </tr>
 </table>
-
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US36</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Autenticación Segura de Gerente o Administrador</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente o Administrador, quiero iniciar sesión en RiskGuard con mis credenciales preconfiguradas, para acceder al dashboard ejecutivo y a las funciones correspondientes a mi rol de alta dirección.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El acceso debe realizarse mediante correo y contraseña preconfigurados en la base de datos.</li>
+        <li>El sistema valida que el correo tenga formato válido antes de enviar la petición.</li>
+        <li>En caso de error, muestra el mensaje "Correo o contraseña incorrectos".</li>
+        <li>Tras inicio de sesión exitoso, redirige al gerente a su vista de dashboard ejecutivo.</li>
+        <li>Tras 5 intentos fallidos consecutivos, la cuenta se bloquea por 15 minutos.</li>
+      </ol>
+      <b>Escenario 1:</b> Inicio de sesión exitoso<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente se encuentra en la pantalla de inicio de sesión,</li>
+        <li><b>When</b> ingresa su correo y contraseña correctos y hace clic en "Ingresar",</li>
+        <li><b>Then</b> el sistema valida las credenciales,</li>
+        <li><b>And</b> redirige al gerente a su dashboard ejecutivo.</li>
+      </ul>
+      <b>Escenario 2:</b> Credenciales inválidas<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente se encuentra en la pantalla de inicio de sesión,</li>
+        <li><b>When</b> ingresa alguna credencial incorrecta y hace clic en "Ingresar",</li>
+        <li><b>Then</b> el sistema deniega el acceso,</li>
+        <li><b>And</b> muestra el mensaje "Correo o contraseña incorrectos".</li>
+      </ul>
+      <b>Escenario 3:</b> Bloqueo por intentos fallidos<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente acumula 5 intentos fallidos consecutivos,</li>
+        <li><b>When</b> intenta ingresar nuevamente,</li>
+        <li><b>Then</b> el sistema bloquea la cuenta temporalmente,</li>
+        <li><b>And</b> muestra el mensaje "Demasiados intentos fallidos. Intente en 15 minutos".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US37</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización del Dashboard Ejecutivo de Seguridad</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero ver un dashboard ejecutivo con los indicadores clave de seguridad de la planta al ingresar a la plataforma, para tener una visión consolidada del estado de la SST sin necesidad de bajar al campo.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El dashboard muestra: total de incidentes activos, incidentes resueltos en el mes, sectores en estado crítico y cumplimiento del plan anual de SST.</li>
+        <li>Los indicadores se actualizan en tiempo real sin recargar la página.</li>
+        <li>Cada indicador está diferenciado visualmente por color según su estado (verde, amarillo, rojo).</li>
+        <li>El gerente puede acceder al detalle de cada indicador haciendo clic sobre él.</li>
+        <li>El dashboard carga en menos de 3 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Dashboard con incidentes activos<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente inicia sesión en la plataforma,</li>
+        <li><b>When</b> el sistema carga su dashboard ejecutivo,</li>
+        <li><b>Then</b> muestra todos los indicadores clave con su estado actual,</li>
+        <li><b>And</b> los sectores críticos aparecen resaltados en rojo.</li>
+      </ul>
+      <b>Escenario 2:</b> Dashboard sin incidentes activos<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente ingresa al dashboard y no existen incidentes activos,</li>
+        <li><b>When</b> el sistema carga los indicadores,</li>
+        <li><b>Then</b> todos los indicadores aparecen en verde,</li>
+        <li><b>And</b> muestra el mensaje "La planta opera dentro de los parámetros seguros".</li>
+      </ul>
+      <b>Escenario 3:</b> Acceso al detalle de un indicador<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente visualiza el dashboard ejecutivo,</li>
+        <li><b>When</b> hace clic sobre el indicador de "Sectores en estado crítico",</li>
+        <li><b>Then</b> el sistema muestra el listado de sectores con sus alertas activas,</li>
+        <li><b>And</b> el gerente puede volver al dashboard con un solo clic.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US38</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización de Tendencias de Accidentabilidad</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero ver gráficas de tendencia de incidentes y accidentes por mes, para identificar si la accidentabilidad de la planta está mejorando o empeorando y tomar decisiones estratégicas a tiempo.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema muestra una gráfica de línea con la evolución mensual de incidentes de los últimos 12 meses.</li>
+        <li>La gráfica diferencia visualmente entre incidentes por tipo: condición insegura, casi-accidente, falla de equipo y otros.</li>
+        <li>El gerente puede filtrar la gráfica por sector específico o ver la tendencia global de la planta.</li>
+        <li>Si hay un mes con incremento significativo respecto al anterior, el sistema lo resalta con un indicador visual.</li>
+        <li>La gráfica es exportable en formato PNG con un solo clic.</li>
+      </ol>
+      <b>Escenario 1:</b> Visualización de tendencia global<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede a la sección de tendencias,</li>
+        <li><b>When</b> el sistema carga la gráfica,</li>
+        <li><b>Then</b> muestra la evolución mensual de los últimos 12 meses diferenciada por tipo de incidente,</li>
+        <li><b>And</b> resalta los meses con incrementos significativos.</li>
+      </ul>
+      <b>Escenario 2:</b> Filtrado por sector<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente visualiza la gráfica de tendencias global,</li>
+        <li><b>When</b> selecciona un sector específico del filtro,</li>
+        <li><b>Then</b> el sistema actualiza la gráfica mostrando solo los datos de ese sector,</li>
+        <li><b>And</b> el título de la gráfica refleja el sector seleccionado.</li>
+      </ul>
+      <b>Escenario 3:</b> Exportar gráfica<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente visualiza una gráfica de tendencias,</li>
+        <li><b>When</b> hace clic en "Exportar imagen",</li>
+        <li><b>Then</b> el sistema descarga la gráfica en formato PNG,</li>
+        <li><b>And</b> el archivo incluye el rango de fechas y el sector consultado en el nombre del archivo.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US39</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Exportación de Formatos de Auditoría para SUNAFIL</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero exportar automáticamente los formatos de auditoría exigidos por la Ley N° 29783 con los datos reales del sistema, para prepararme ante inspecciones de SUNAFIL sin depender de reportes manuales tardíos o incompletos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema genera el documento con los datos reales registrados en la plataforma hasta la fecha de exportación.</li>
+        <li>El formato exportado es compatible con los formatos referenciales de la Ley N° 29783.</li>
+        <li>El gerente puede seleccionar el rango de fechas del reporte antes de exportar.</li>
+        <li>El documento se descarga en formato PDF o Excel según selección del gerente.</li>
+        <li>El sistema muestra un mensaje de error si no hay datos en el rango seleccionado.</li>
+      </ol>
+      <b>Escenario 1:</b> Exportación exitosa en PDF<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede a la sección de exportación de auditoría,</li>
+        <li><b>When</b> selecciona un rango de fechas válido y el formato PDF,</li>
+        <li><b>Then</b> el sistema genera el documento con los datos del período,</li>
+        <li><b>And</b> lo descarga automáticamente en el dispositivo del gerente.</li>
+      </ul>
+      <b>Escenario 2:</b> Rango sin datos registrados<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente selecciona un rango de fechas sin incidentes registrados,</li>
+        <li><b>When</b> hace clic en "Exportar",</li>
+        <li><b>Then</b> el sistema muestra el mensaje "No hay datos registrados en el período seleccionado",</li>
+        <li><b>And</b> no genera ningún archivo de descarga.</li>
+      </ul>
+      <b>Escenario 3:</b> Exportación en Excel<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente prefiere el formato Excel para análisis posterior,</li>
+        <li><b>When</b> selecciona el formato Excel y hace clic en "Exportar",</li>
+        <li><b>Then</b> el sistema genera el archivo con los datos estructurados en columnas,</li>
+        <li><b>And</b> lo descarga con el nombre "RiskGuard_Auditoria_[fecha_inicio]_[fecha_fin].xlsx".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US40</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Seguimiento del Cumplimiento del Plan Anual de SST</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero ver el porcentaje de cumplimiento del plan anual de Seguridad y Salud en el Trabajo en tiempo real, para detectar brechas de ejecución antes de que se conviertan en observaciones durante una inspección de SUNAFIL.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema muestra el porcentaje de cumplimiento del plan anual de SST calculado en base a los tickets cerrados versus los planificados en el período.</li>
+        <li>El indicador se diferencia visualmente: verde (≥80%), amarillo (50–79%), rojo (&lt;50%).</li>
+        <li>El gerente puede ver el detalle de las actividades cumplidas e incumplidas por sector.</li>
+        <li>Si el cumplimiento cae por debajo del 50%, el sistema genera una alerta visible en el dashboard.</li>
+      </ol>
+      <b>Escenario 1:</b> Cumplimiento en nivel aceptable<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede al indicador de cumplimiento del plan anual,</li>
+        <li><b>When</b> el sistema calcula el porcentaje actual,</li>
+        <li><b>Then</b> muestra el indicador en verde si es igual o mayor al 80%,</li>
+        <li><b>And</b> no genera ninguna alerta de desviación.</li>
+      </ul>
+      <b>Escenario 2:</b> Cumplimiento crítico con alerta<br/>
+      <ul>
+        <li><b>Given</b> que el cumplimiento del plan cae por debajo del 50%,</li>
+        <li><b>When</b> el sistema recalcula el indicador,</li>
+        <li><b>Then</b> muestra el indicador en rojo en el dashboard ejecutivo,</li>
+        <li><b>And</b> genera una alerta con el mensaje "El cumplimiento del plan de SST está por debajo del umbral mínimo".</li>
+      </ul>
+      <b>Escenario 3:</b> Detalle por sector<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente quiere identificar qué sector tiene mayor brecha,</li>
+        <li><b>When</b> hace clic sobre el indicador de cumplimiento,</li>
+        <li><b>Then</b> el sistema muestra el porcentaje de cumplimiento desglosado por sector,</li>
+        <li><b>And</b> ordena los sectores de menor a mayor cumplimiento.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US41</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización de Indicadores Predictivos de Riesgo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero ver indicadores predictivos que anticipen posibles accidentes en la planta antes de que ocurran, para justificar inversiones preventivas ante el directorio con datos concretos y no solo registros reactivos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El dashboard ejecutivo muestra al menos tres indicadores predictivos: sectores con tendencia creciente de riesgo, tipos de incidente recurrentes y sectores con mayor tiempo promedio de resolución.</li>
+        <li>Cada indicador predictivo incluye una descripción breve de la proyección de riesgo.</li>
+        <li>Los indicadores se calculan con base en los datos de los últimos 30 días.</li>
+        <li>El gerente puede exportar los indicadores predictivos junto con su interpretación en un resumen ejecutivo en PDF.</li>
+      </ol>
+      <b>Escenario 1:</b> Indicadores con proyección de riesgo alto<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede a la sección de indicadores predictivos,</li>
+        <li><b>When</b> el motor de reglas detecta un sector con tendencia creciente de incidentes,</li>
+        <li><b>Then</b> el sistema resalta ese sector como zona de atención prioritaria,</li>
+        <li><b>And</b> muestra la proyección de riesgo con su descripción interpretativa.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin sectores con tendencia creciente<br/>
+      <ul>
+        <li><b>Given</b> que en los últimos 30 días no existe ningún sector con tendencia creciente de incidentes,</li>
+        <li><b>When</b> el sistema calcula los indicadores predictivos,</li>
+        <li><b>Then</b> muestra el mensaje "No se detectaron tendencias de riesgo creciente en el período consultado".</li>
+      </ul>
+      <b>Escenario 3:</b> Exportar resumen ejecutivo predictivo<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente necesita presentar los indicadores al directorio,</li>
+        <li><b>When</b> hace clic en "Exportar resumen ejecutivo",</li>
+        <li><b>Then</b> el sistema genera un PDF con los indicadores predictivos y su interpretación,</li>
+        <li><b>And</b> lo descarga con el nombre "RiskGuard_Resumen_Ejecutivo_[fecha].pdf".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US42</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Notificación de Alerta Crítica No Resuelta a Gerencia</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero recibir una notificación cuando un riesgo crítico lleve más de 48 horas sin ser resuelto por el supervisor, para escalar el problema internamente y evitar sanciones legales o paradas de planta.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema evalúa periódicamente los riesgos críticos y verifica si superaron las 48 horas sin resolución.</li>
+        <li>La notificación al gerente se activa solo si el riesgo también supera las 24 horas sin acción correctiva asignada por el supervisor.</li>
+        <li>La notificación indica sector, tipo de riesgo, tiempo transcurrido sin resolución y supervisor responsable.</li>
+        <li>El gerente puede ver el detalle del ticket directamente desde la notificación.</li>
+      </ol>
+      <b>Escenario 1:</b> Notificación de escalamiento enviada<br/>
+      <ul>
+        <li><b>Given</b> que existe un riesgo crítico sin resolución por más de 48 horas,</li>
+        <li><b>When</b> el sistema evalúa los riesgos activos pendientes,</li>
+        <li><b>Then</b> el Gerente recibe una notificación en su centro de notificaciones,</li>
+        <li><b>And</b> la notificación detalla el sector, tipo de riesgo, horas transcurridas y supervisor responsable.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin notificación cuando el riesgo fue resuelto a tiempo<br/>
+      <ul>
+        <li><b>Given</b> que un riesgo crítico fue resuelto antes de las 48 horas,</li>
+        <li><b>When</b> el sistema evalúa los riesgos activos,</li>
+        <li><b>Then</b> el sistema no genera ninguna notificación de escalamiento al gerente.</li>
+      </ul>
+      <b>Escenario 3:</b> Acceso al ticket desde la notificación<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente recibe una notificación de escalamiento,</li>
+        <li><b>When</b> hace clic sobre la notificación,</li>
+        <li><b>Then</b> el sistema lo redirige al detalle del ticket crítico sin resolver,</li>
+        <li><b>And</b> puede ver el historial completo del ticket incluyendo el supervisor asignado.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US43</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Registro Histórico de Incidentes para Trazabilidad Legal</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero acceder al historial completo e inmutable de todos los incidentes registrados en la plataforma, para contar con evidencia documentada ante auditorías de SUNAFIL o procesos legales derivados de accidentes laborales.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema muestra el historial de todos los incidentes con fecha, sector, tipo, nivel de criticidad, operario que reportó y estado final.</li>
+        <li>Los registros históricos son de solo lectura y no pueden ser modificados ni eliminados desde ningún rol.</li>
+        <li>El gerente puede filtrar el historial por sector, tipo de incidente, rango de fechas y estado final.</li>
+        <li>El historial es exportable en PDF o Excel con los filtros aplicados.</li>
+      </ol>
+      <b>Escenario 1:</b> Consulta del historial completo<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede a la sección de historial de incidentes,</li>
+        <li><b>When</b> el sistema carga los registros,</li>
+        <li><b>Then</b> muestra todos los incidentes ordenados del más reciente al más antiguo,</li>
+        <li><b>And</b> cada registro muestra: fecha, sector, tipo, criticidad y estado final.</li>
+      </ul>
+      <b>Escenario 2:</b> Filtrado del historial<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente necesita revisar los incidentes de un sector específico en un período concreto,</li>
+        <li><b>When</b> aplica los filtros de sector y rango de fechas,</li>
+        <li><b>Then</b> el sistema muestra únicamente los registros que cumplen ambos criterios,</li>
+        <li><b>And</b> actualiza el contador total de resultados filtrados.</li>
+      </ul>
+      <b>Escenario 3:</b> Intento de modificar un registro histórico<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente visualiza el detalle de un incidente cerrado,</li>
+        <li><b>When</b> intenta editar cualquier campo del registro,</li>
+        <li><b>Then</b> el sistema no habilita ningún campo de edición,</li>
+        <li><b>And</b> muestra el mensaje "Los registros históricos son de solo lectura".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US44</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Gestión de Cuentas de Usuario desde Administración</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Administrador, quiero crear, editar y desactivar cuentas de usuario para operarios, supervisores y otros gerentes, para mantener el control de acceso a la plataforma y asegurar que solo el personal autorizado pueda ingresar.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite crear cuentas con los campos: nombre completo, correo corporativo, rol (Operario, Supervisor, Gerente) y sector asignado.</li>
+        <li>El sistema valida que no existan dos cuentas con el mismo correo corporativo.</li>
+        <li>Al crear una cuenta, el sistema genera una contraseña temporal y la muestra al administrador para su entrega al usuario.</li>
+        <li>Las cuentas pueden desactivarse sin eliminarse, conservando el historial de actividad del usuario.</li>
+        <li>Las cuentas desactivadas no pueden iniciar sesión en la plataforma.</li>
+      </ol>
+      <b>Escenario 1:</b> Creación exitosa de cuenta<br/>
+      <ul>
+        <li><b>Given</b> que el Administrador accede al módulo de gestión de usuarios,</li>
+        <li><b>When</b> completa el formulario con los datos del nuevo usuario y hace clic en "Crear cuenta",</li>
+        <li><b>Then</b> el sistema registra la cuenta en la base de datos,</li>
+        <li><b>And</b> muestra la contraseña temporal generada para su entrega al usuario.</li>
+      </ul>
+      <b>Escenario 2:</b> Correo ya registrado<br/>
+      <ul>
+        <li><b>Given</b> que el Administrador intenta crear una cuenta con un correo ya existente,</li>
+        <li><b>When</b> hace clic en "Crear cuenta",</li>
+        <li><b>Then</b> el sistema bloquea el registro,</li>
+        <li><b>And</b> muestra el mensaje "El correo ingresado ya está registrado en el sistema".</li>
+      </ul>
+      <b>Escenario 3:</b> Desactivación de cuenta<br/>
+      <ul>
+        <li><b>Given</b> que el Administrador necesita retirar el acceso a un usuario,</li>
+        <li><b>When</b> selecciona la opción "Desactivar" sobre la cuenta,</li>
+        <li><b>Then</b> el sistema cambia el estado de la cuenta a "Inactiva",</li>
+        <li><b>And</b> el usuario no puede iniciar sesión desde ese momento, conservando su historial de actividad.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US45</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Generación de Reporte Mensual de Gestión de SST</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como Gerente, quiero generar un reporte mensual consolidado de la gestión de seguridad con un solo clic, para reducir el tiempo dedicado a elaborar informes manuales y tener siempre datos actualizados para presentar al directorio.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El reporte mensual incluye: total de incidentes por tipo y sector, porcentaje de resolución, tiempo promedio de resolución, sectores más críticos y cumplimiento del plan de SST.</li>
+        <li>El gerente puede seleccionar el mes y año del reporte antes de generarlo.</li>
+        <li>El reporte se genera en menos de 10 segundos y se descarga en PDF.</li>
+        <li>El sistema muestra un mensaje de error si el mes seleccionado no tiene datos suficientes para generar el reporte.</li>
+      </ol>
+      <b>Escenario 1:</b> Generación exitosa del reporte mensual<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede a la sección de reportes,</li>
+        <li><b>When</b> selecciona el mes y año y hace clic en "Generar reporte",</li>
+        <li><b>Then</b> el sistema genera el PDF con los datos consolidados del período,</li>
+        <li><b>And</b> lo descarga con el nombre "RiskGuard_Reporte_Mensual_[mes]_[año].pdf".</li>
+      </ul>
+      <b>Escenario 2:</b> Mes sin datos suficientes<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente selecciona un mes sin incidentes registrados,</li>
+        <li><b>When</b> hace clic en "Generar reporte",</li>
+        <li><b>Then</b> el sistema muestra el mensaje "No hay datos registrados para el período seleccionado",</li>
+        <li><b>And</b> no genera ningún archivo.</li>
+      </ul>
+      <b>Escenario 3:</b> Reporte del mes en curso<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente necesita un reporte del mes en curso,</li>
+        <li><b>When</b> selecciona el mes actual y genera el reporte,</li>
+        <li><b>Then</b> el sistema incluye todos los datos registrados hasta la fecha de generación,</li>
+        <li><b>And</b> el reporte indica claramente que corresponde al período parcial del mes en curso.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS46</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Indicadores del Dashboard Ejecutivo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/ejecutivo que retorne los indicadores clave de SST consolidados, para alimentar el dashboard ejecutivo del gerente en tiempo real.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint retorna: total de incidentes activos, total de incidentes resueltos en el mes en curso, cantidad de sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST.</li>
+        <li>El endpoint no requiere parámetros y retorna siempre el estado actual de la planta.</li>
+        <li>Si no hay datos registrados, el endpoint retorna HTTP 200 con todos los indicadores en valor cero y un mensaje descriptivo.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+        <li>El endpoint requiere autenticación con token de rol Gerente o Administrador; en caso contrario retorna HTTP 403.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con datos disponibles<br/>
+      <ul>
+        <li><b>Given</b> que existen datos de incidentes y sectores registrados en el sistema,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/ejecutivo con token válido de rol Gerente,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y los cuatro indicadores calculados con sus valores actuales.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin datos registrados en el sistema<br/>
+      <ul>
+        <li><b>Given</b> que el sistema no tiene incidentes ni sectores con alertas registradas,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/ejecutivo,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200, todos los indicadores en cero y el mensaje "No hay datos de seguridad registrados en el sistema".</li>
+      </ul>
+      <b>Escenario 3:</b> Acceso sin rol autorizado<br/>
+      <ul>
+        <li><b>Given</b> que el token de autenticación corresponde a un usuario con rol Operario,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/ejecutivo,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 403 con el mensaje "No tienes permisos para acceder a este recurso".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS47</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Tendencias Históricas de Accidentabilidad</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/tendencias que retorne la evolución mensual de incidentes agrupados por tipo, para alimentar las gráficas de tendencia del dashboard ejecutivo del gerente.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint acepta como parámetros opcionales el identificador de sector y el número de meses hacia atrás (por defecto 12).</li>
+        <li>El endpoint retorna un arreglo con la cantidad de incidentes por mes desglosados por tipo de incidente.</li>
+        <li>Si se indica un sector que no existe, el endpoint retorna HTTP 404.</li>
+        <li>Si el número de meses enviado es menor a 1 o mayor a 24, el endpoint retorna HTTP 400 indicando el rango permitido.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud global exitosa<br/>
+      <ul>
+        <li><b>Given</b> que el sistema tiene incidentes registrados en los últimos meses,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/tendencias?meses=12 sin especificar sector,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de datos mensuales desglosados por tipo de toda la planta.</li>
+      </ul>
+      <b>Escenario 2:</b> Solicitud filtrada por sector<br/>
+      <ul>
+        <li><b>Given</b> que el sector consultado existe y tiene registros históricos,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/tendencias?sector=almacen&meses=6,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de datos mensuales exclusivamente de ese sector.</li>
+      </ul>
+      <b>Escenario 3:</b> Parámetro de meses fuera de rango<br/>
+      <ul>
+        <li><b>Given</b> que el desarrollador envía un valor de meses fuera del rango permitido,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> retorna HTTP 400 con el mensaje "El parámetro 'meses' debe estar entre 1 y 24".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS48</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Generación de Reporte de Auditoría</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/reportes/auditoria que reciba un rango de fechas y el formato de salida, para generar y retornar el documento de auditoría con los datos reales del sistema compatibles con la Ley N° 29783.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint acepta los parámetros: fecha_inicio, fecha_fin y formato (pdf o excel).</li>
+        <li>El endpoint retorna el archivo binario del documento generado con el Content-Type correspondiente al formato solicitado.</li>
+        <li>Si no hay datos en el rango indicado, retorna HTTP 204 sin contenido.</li>
+        <li>Si el formato enviado no es "pdf" ni "excel", retorna HTTP 400 indicando los formatos válidos.</li>
+        <li>Si fecha_inicio es posterior a fecha_fin, retorna HTTP 400 con mensaje descriptivo.</li>
+        <li>El tiempo de generación del documento es menor a 10 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Generación exitosa en PDF<br/>
+      <ul>
+        <li><b>Given</b> que existen incidentes registrados en el rango de fechas indicado,</li>
+        <li><b>When</b> el desarrollador realiza POST /api/v1/reportes/auditoria con fecha_inicio, fecha_fin y formato "pdf",</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el archivo PDF generado con los datos del período.</li>
+      </ul>
+      <b>Escenario 2:</b> Rango de fechas sin datos<br/>
+      <ul>
+        <li><b>Given</b> que no existen incidentes en el rango de fechas enviado,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> retorna HTTP 204 sin contenido indicando que no hay datos para el período.</li>
+      </ul>
+      <b>Escenario 3:</b> Rango de fechas inválido<br/>
+      <ul>
+        <li><b>Given</b> que el desarrollador envía una fecha_inicio posterior a fecha_fin,</li>
+        <li><b>When</b> el endpoint valida los parámetros,</li>
+        <li><b>Then</b> retorna HTTP 400 con el mensaje "La fecha de inicio no puede ser posterior a la fecha de fin".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS49</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Cuentas de Usuario</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints POST /api/v1/usuarios y PATCH /api/v1/usuarios/{id}/estado para la creación y desactivación de cuentas, para que el módulo de administración pueda gestionar el acceso de todo el personal a la plataforma.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint POST /api/v1/usuarios requiere: nombre, correo corporativo, rol y sector asignado para procesar el registro.</li>
+        <li>El sistema valida la unicidad del correo antes de registrar; si ya existe retorna HTTP 409.</li>
+        <li>Al crear la cuenta, el sistema genera y retorna una contraseña temporal hasheada en base de datos.</li>
+        <li>El endpoint PATCH /api/v1/usuarios/{id}/estado acepta los valores "activo" o "inactivo" para el campo estado.</li>
+        <li>Ambos endpoints requieren token con rol Administrador; de lo contrario retornan HTTP 403.</li>
+      </ol>
+      <b>Escenario 1:</b> Creación de cuenta exitosa<br/>
+      <ul>
+        <li><b>Given</b> que el correo corporativo enviado no existe en la base de datos,</li>
+        <li><b>When</b> el desarrollador realiza POST /api/v1/usuarios con los datos requeridos y token de Administrador,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 201 y retorna los datos de la cuenta creada junto con la contraseña temporal generada.</li>
+      </ul>
+      <b>Escenario 2:</b> Correo duplicado en el registro<br/>
+      <ul>
+        <li><b>Given</b> que el correo enviado ya pertenece a una cuenta registrada,</li>
+        <li><b>When</b> el endpoint procesa la solicitud de creación,</li>
+        <li><b>Then</b> retorna HTTP 409 con el mensaje "El correo corporativo ya está registrado en el sistema".</li>
+      </ul>
+      <b>Escenario 3:</b> Desactivación de cuenta exitosa<br/>
+      <ul>
+        <li><b>Given</b> que la cuenta con el id indicado existe y está activa,</li>
+        <li><b>When</b> el desarrollador realiza PATCH /api/v1/usuarios/{id}/estado con el valor "inactivo",</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y actualiza el estado de la cuenta en la base de datos,</li>
+        <li><b>And</b> la cuenta queda inhabilitada para iniciar sesión desde ese momento.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS50</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener el Indicador de Cumplimiento del Plan Anual de SST</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/cumplimiento-sst que retorne el porcentaje de cumplimiento del plan anual de SST desglosado por sector, para alimentar el indicador ejecutivo del dashboard del gerente en tiempo real.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint retorna el porcentaje de cumplimiento global del plan anual de SST calculado en base a tickets cerrados versus planificados en el año en curso.</li>
+        <li>El endpoint también retorna el desglose de cumplimiento por sector ordenado de menor a mayor porcentaje.</li>
+        <li>Si el año en curso no tiene plan de SST registrado, el endpoint retorna HTTP 404 indicando que no se encontró el plan.</li>
+        <li>El endpoint requiere token con rol Gerente o Administrador; de lo contrario retorna HTTP 403.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con plan registrado<br/>
+      <ul>
+        <li><b>Given</b> que el año en curso tiene un plan anual de SST registrado con actividades planificadas,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/cumplimiento-sst con token válido,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200, el porcentaje global de cumplimiento y el desglose por sector ordenado de menor a mayor.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin plan de SST registrado para el año<br/>
+      <ul>
+        <li><b>Given</b> que no existe un plan anual de SST registrado para el año en curso,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> retorna HTTP 404 con el mensaje "No se encontró el plan anual de SST para el año en curso".</li>
+      </ul>
+      <b>Escenario 3:</b> Acceso con rol no autorizado<br/>
+      <ul>
+        <li><b>Given</b> que el token corresponde a un usuario con rol Supervisor,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/cumplimiento-sst,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 403 con el mensaje "No tienes permisos para acceder a este recurso".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+---
 
 
 ## 3.2. Impact Mapping
