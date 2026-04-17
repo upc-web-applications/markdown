@@ -1610,6 +1610,55 @@
         </b></td>
     </tr>
 </table>
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US08</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b></td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3">Visualización del Mapa de Calor Operativo</b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero visualizar la distribución de los niveles de riesgo de los sectores de la planta, para identificar de forma inmediata qué sectores requieren intervención prioritaria</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li>El sistema recupera el último nivel de criticidad (IPERC) calculado por el motor predictivo para todos los sectores físicos registrados en estado "Activo"</li>
+                <li>El sistema clasifica cada sector evaluado cruzando su puntaje de riesgo con los umbrales del sistema</li>
+                <li>El sistema asigna un indicador paramétrico de estado (clasificación visual) a cada sector basándose exclusivamente en el nivel de riesgo más alto de los incidentes activos en esa ubicación.</li>
+                <li>El sistema permite la selección de un sector específico dentro de la visualización espacial para recuperar y exponer el listado de tickets activos que originan su estado actual</li>
+                <li>El sistema procesa la disminución del nivel de alerta de un sector automáticamente cuando todos los tickets críticos asociados a dicha ubicación alcanzan el estado "Cerrado"</li>
+            </ol>
+            <b>Escenario 1:</b> Identificación de sector en estado crítico<br/>
+            <ul>
+                <li><b>Given</b> que el motor predictivo registra un nuevo incidente que supera el umbral de criticidad máxima en un sector específico,</li>
+                <li><b>When</b> el supervisor solicita la visualización del mapa de calor operativo,</li>
+                <li><b>Then</b> el sistema procesa la clasificación de riesgo actualizada,</li>
+                <li><b>And</b> expone el sector afectado con el indicador de estado de máxima alerta.</li>
+            </ul>
+            <b>Escenario 2:</b> Exploración de contexto desde el mapa<br/>
+            <ul>
+                <li><b>Given</b> que un sector específico presenta un indicador de riesgo activo en el mapa de calor,</li>
+                <li><b>When</b> el supervisor emite la solicitud de selección sobre dicho sector,</li>
+                <li><b>Then</b> el sistema recupera la información de la base de datos,</li>
+                <li><b>And</b> expone los datos de los incidentes que justifican el estado de alerta de la zona</li>
+            </ul>
+            <b>Escenario 3:</b> Normalización del estado del sector<br/>
+            <ul>
+                <li><b>Given</b> que un sector se encuentra en estado de alerta debido a un ticket de incidente activo,</li>
+                <li><b>When</b> el sistema registra el cierre definitivo de dicho ticket y no existen otras alertas pendientes en la zona,</li>
+                <li><b>Then</b> el sistema recalcula el estado general del sector,</li>
+                <li><b>And</b> actualiza el indicador hacia un estado de riesgo tolerable o normal.</li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
 
 
 
