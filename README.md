@@ -55,7 +55,7 @@ Project Report URL: https://github.com/upc-web-applications
 1.1.2. [Perfiles de integrantes del equipo](docs/chapter1.md#112-perfiles-de-integrantes-del-equipo)  
 
 1.2. [Solution Profile](docs/chapter1.md#12-solution-profile)  
-1.2.1. [Antecedentes y problemática](docs/chapter1.md#121-antecedentes-y-problematica)  
+1.2.1. [Antecedentes y problemática](docs/chapter1.md#121-antecedentes-y-problemática)  
 1.2.2. [Lean UX Process](docs/chapter1.md#122-lean-ux-process)  
 1.2.2.1. [Lean UX Problem Statements](docs/chapter1.md#1221-lean-ux-problem-statements)  
 1.2.2.2. [Lean UX Assumptions](docs/chapter1.md#1222-lean-ux-assumptions)  
