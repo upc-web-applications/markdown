@@ -657,7 +657,9 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
   <p>
     <b>Grafico 3</b>: Segmento Objetivo 1
   </p>
-  <img src="https://i.postimg.cc/rs65fVL5/Juan-Jimenez-Fernandez.png" alt="Grafico 3" />
+
+![Foto](content/images/Juan-Jimenez.png)
+
   <p>
     <i><b>Fuente</b>: Elaboración propia. </i>
   </p>
@@ -671,7 +673,9 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
   <p>
     <b>Grafico 4</b>: Segmento Objetivo 2
   </p>
-  <img src="https://i.postimg.cc/Y9QvqQJY/Martina-Rojas-Huaman-(1).png" alt="Grafico 4" />
+
+![Foto](content/images/Martina-Rojas.png)
+   
   <p>
     <i><b>Fuente</b>: Elaboración propia. </i>
   </p>
