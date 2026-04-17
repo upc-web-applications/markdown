@@ -45,6 +45,7 @@ La solución RiskGuard se caracteriza por su capacidad para registrar y centrali
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
+
 En el Perú, la gestión de la seguridad y salud en el trabajo (SST) enfrenta limitaciones considerables en la prevención y control de riesgos laborales. El Informe Anual de Gestión de SST - 2020 evidencia incumplimientos como la omisión de exámenes médicos ocupacionales y la ausencia de monitoreos de riesgos en sus diversas categorías: químicos, biológicos, físicos, psicosociales y ergonómicos (Provías Descentralizado, 2020).  Esta situación pone de manifiesto una brecha persistente entre la normativa vigente y su implementación efectiva en las organizaciones, lo que incrementa la exposición de los trabajadores a condiciones inseguras.
 
 Este escenario impacta principalmente a los sectores industriales, donde los peligros ocupacionales constituyen un componente integral de la dinámica laboral diaria. La carencia de mecanismos de supervisión continua, así como de herramientas eficientes para el registro de incidentes y condiciones de riesgo, dificulta la detección temprana de situaciones que podrían derivar en accidentes laborales o enfermedades ocupacionales.
