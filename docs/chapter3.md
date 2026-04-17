@@ -27,7 +27,7 @@
     </tr>
     <tr>
         <td align="center"><b>EP04</b></td>
-        <td align="center"></td>
+        <td align="center">Dashboard Ejecutivo y Reportes de Cumplimiento</td>
     </tr>
     <tr>
         <td align="center"><b>EP05</b></td>
