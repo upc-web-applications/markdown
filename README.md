@@ -153,7 +153,7 @@ Project Report URL: https://github.com/upc-web-applications
     - 5.2.1.8. [Team Collaboration Insights during Sprint](docs/chapter5.md#5218-team-collaboration-insights-during-sprint)  
 
 - 5.3. [Validation Interviews](docs/chapter5.md#53-validation-interviews)  
-  - 5.3.1. [Diseño de Entrevistas](docs/chapter5.md#531-diseño-entrevistas)  
+  - 5.3.1. [Diseño de Entrevistas](docs/chapter5.md#531-diseño-de-entrevistas)  
   - 5.3.2. [Registro de Entrevistas](docs/chapter5.md#532-registro-entrevistas)  
   - 5.3.3. [Evaluaciones según heurísticas](docs/chapter5.md#533-evaluacion-heurísticas)  
 
