@@ -95,41 +95,46 @@
         <td><b>User Story ID</b></td>
         <td>US02</b></td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+        <td>EP03</b></td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Configuración de Sectores y Áreas Operativas</b></td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero administrar y gestionar los sectores fisicos de la planta, para georreferenciar correctamente las incidencias reportadas y organizar el catálogo de activos.</b></td>
     </tr>
     <tr>
         <td colspan="4">
             <b>Criterios de aceptación:</b> <br/>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>El sistema debe contar con un módulo de "Gestión de Sectores" accesible desde el apartado de funciones de Supervisor de seguridad</li>
+                <li>El formulario de creación debe solicitar obligatoriamente nombre del sector y descripcion</li>
+                <li>El sistema debe validar que no se puedan registrar dos sectores con el mismo nombre exacto para evitar conflictos en la base de datos</li>
+                <li>Los sectores creados deben listarse en una tabla con opciones para "Editar" o "Desactivar".</li>
+                <li>Un sector no se puede eliminar definitivamente si tiene historial de riesgos asociados; solo se puede cambiar su estado a "Inactivo" para que no aparezca en los nuevos formularios de los operarios</li>
             </ol>
-            <b>Escenario 1 </b> <br/>
+            <b>Escenario 1:</b> Registro exitoso de nuevo scetor<br/>
             <ul>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
+                <li><b>Given</b> que el Supervisor se encuentra en el módulo de "Gestión de Sectores",</li>
+                <li><b>When</b> hace clic en "Nuevo Sector", ingresa un nombre en especifico y una descripcion,</li>
+                <li><b>Then</b> el sistema registra el nuevo sector en la base de datos con estado "Activo",</li>
+                <li><b>And</b> actualiza la tabla de sectores mostrando el nuevo sector en la primera fila</li>
+            </ul>
+            <b>Escenario 2:</b> Validación de sector duplicado<br/>
+            <ul>
+                <li><b>Given</b> que el Supervisor se encuentra en el módulo de "Gestión de Sectores",</li>
+                <li><b>When</b> hace clic en "Nuevo Sector", ingresa un nombre en especifico y una descripcion,</li>
+                <li><b>Then</b> el sistema bloquea la creación del registro,</li>
+                <li><b>And</b> muestra un mensaje indicando: "El nombre del área ya existe. Por favor, elija un nombre diferente"</li>
+            </ul>
+            <b>Escenario 3:</b> Desactivación de un área con historial<br/>
+            <ul>
+                <li><b>Given</b> que el Supervisor necesita retirar un sector que ya no se usa en la planta,</li>
+                <li><b>When</b> selecciona la opción "Desactivar" sobre el sector</li>
+                <li><b>Then</b> el sistema cambia el estado del sector a "Inactivo", conservando sus datos históricos de incidencias,</li>
+                <li><b>And</b> el sector aparece como "Inactivo" en la lista de sectores</li>
             </ul>
         </b></td>
     </tr>
@@ -139,41 +144,47 @@
         <td><b>User Story ID</b></td>
         <td>US03</b></td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+        <td>EP03</b></td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Configuración y Gestión de Activos Industriales</b></td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero registrar y administrar la maquinaria y equipos de la planta, para vincularlos a su scetor operativo correspondiente y permitir la asignación precisa de reportes de inspección a cada activo</b></td>
     </tr>
     <tr>
         <td colspan="4">
             <b>Criterios de aceptación:</b> <br/>
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>El sistema requiere obligatoriamente un código identificador único, nombre, descripción y el identificador de un sector previamente registrado para crear un nuevo activo</li>
+                <li>El sistema rechaza el registro o actualización de un activo si el sector de destino se encuentra en estado "Inactivo"</li>
+                <li>El sistema valida la unicidad del código identificador en toda la base de datos antes de procesar el registro de un nuevo activo.</li>
+                <li>El sistema permite la actualización de los datos del activo, incluyendo su transferencia o reubicación hacia un sector diferente que se encuentre activo</li>
+                <li>El sistema cambio de estado a "Inactivo" en lugar de una eliminación total cuando se solicita remover un activo que posee historial de inspecciones previas</li>
             </ol>
-            <b>Escenario 1 </b> <br/>
+            <b>Escenario 1:</b> Registro exitoso de un activo vinculado a un sector<br/>
             <ul>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
-                <li><b></b> </li>
+                <li><b>Given</b> que el supervisor cuenta con la información de una nueva maquinaria y tiene identificado el sector activo al cual asignara la maquinaria,</li>
+                <li><b>When</b> envía la solicitud de registro del activo con su respectivo código único,</li>
+                <li><b>Then</b> el sistema almacena el activo en la base de datos,</li>
+                <li><b>And</b> establece la relación referencial entre el activo y el sector especificado</li>
+                <li><b>And</b> muestra el activo en la lista de activos con estado "Activo"</li>
+            </ul>
+            <b>Escenario 2:</b> Validación por sector inactivo<br/>
+            <ul>
+                <li><b>Given</b> que un sector específico se encuentra con estado "Inactivo" en la base de datos,</li>
+                <li><b>When</b> el supervisor envía una solicitud para registrar o trasladar un activo hacia dicho sector,</li>
+                <li><b>Then</b> el sistema rechaza la operación,</li>
+                <li><b>And</b> retorna un error de validación indicando que el sector de destino no es válido para asignaciones</li>
+            </ul>
+            <b>Escenario 3:</b> Reubicación de un activo existente<br/>
+            <ul>
+                <li><b>Given</b> que un activo se encuentra registrado y asociado a un sector,</li>
+                <li><b>When</b> el supervisor envía una solicitud de actualización modificando la asociación hacia un sector,</li>
+                <li><b>Then</b> el sistema actualiza la ubicación del activo en los registros,</li>
+                <li><b>And</b> mantiene intacto el historial de reportes previos generados en su ubicación original</li>
             </ul>
         </b></td>
     </tr>
@@ -183,7 +194,7 @@
         <td><b>User Story ID</b></td>
         <td>US04</b></td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+        <td>EP03</b></td>
     </tr>
     <tr>
         <td><b>Título</b></td>
