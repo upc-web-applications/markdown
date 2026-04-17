@@ -778,7 +778,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
     </tr>
     <tr>
         <td align="center"><b>EP01</b></td>
-        <td align="center">Gestión de Alertas y Mitigación de Incidentes</td>
+        <td align="center"></td>
     </tr>
     <tr>
         <td align="center"><b>EP02</b></td>
@@ -786,7 +786,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
     </tr>
     <tr>
         <td align="center"><b>EP03</b></td>
-        <td align="center"></td>
+        <td align="center">Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
     <tr>
         <td align="center"><b>EP04</b></td>
@@ -805,7 +805,227 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
         <td><b>User Story ID</b></td>
         <td>US01</b></td>
         <td><b>Epic ID</b></td>
-        <td>EP01</b></td>
+        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <b>Escenario 1 </b> <br/>
+            <ul>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US01</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <b>Escenario 1 </b> <br/>
+            <ul>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US01</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <b>Escenario 1 </b> <br/>
+            <ul>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US01</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <b>Escenario 1 </b> <br/>
+            <ul>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US01</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <b>Escenario 1 </b> <br/>
+            <ul>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US01</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b>Gestión de Alertas y Mitigación de Incidentes</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
