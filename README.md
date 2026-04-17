@@ -651,6 +651,45 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 
 ### 2.3.1. User Personas
 
+  #### Segmento Objetivo 1: Operarios de Planta
+  
+  <div align="center">
+  <p>
+    <b>Grafico 3</b>: Segmento Objetivo 1
+  </p>
+  <img src="https://i.postimg.cc/rs65fVL5/Juan-Jimenez-Fernandez.png" alt="Grafico 3" />
+  <p>
+    <i><b>Fuente</b>: Elaboración propia</i>
+  </p>
+</div>
+
+---
+
+ #### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
+  
+  <div align="center">
+  <p>
+    <b>Grafico 4</b>: Segmento Objetivo 2
+  </p>
+  <img src="https://i.postimg.cc/Y9QvqQJY/Martina-Rojas-Huaman-(1).png" alt="Grafico 4" />
+  <p>
+    <i><b>Fuente</b>: Elaboración propia</i>
+  </p>
+</div>
+
+---
+
+ #### Segmento Objetivo 3: Gerentes y Administradores
+  
+  <div align="center">
+  <p>
+    <b>Grafico 5</b>: Segmento Objetivo 3
+  </p>
+  <img src="https://i.postimg.cc/ZK551kK0/Irma-Gonzales-Rodriguez-(1).png" alt="Grafico 5" />
+  <p>
+    <i><b>Fuente</b>: Elaboración propia</i>
+  </p>
+</div>
 
 
 ### 2.3.2. User Task Matrix
