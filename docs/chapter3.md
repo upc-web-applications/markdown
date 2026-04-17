@@ -773,6 +773,481 @@
   </tr>
 </table>
 
+---
+
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US16</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización de Métricas de Impacto Predictivo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como visitante, quiero visualizar indicadores reales de siniestralidad y beneficios del sistema en la Landing Page de RiskGuard, para comprender el impacto de la analítica predictiva en la reducción de riesgos industriales.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema muestra métricas reales como 50%, 83% y 90.7% relacionadas a reducción de accidentes y mejora del clima laboral.</li>
+        <li>Las métricas se presentan en formato visual mediante tarjetas o gráficos.</li>
+        <li>La sección está ubicada dentro del flujo principal del landing.</li>
+        <li>El contenido es visible sin necesidad de autenticación.</li>
+        <li>La visualización es responsive para desktop y dispositivos móviles.</li>
+      </ol>
+      <b>Escenario 1:</b> Visualización de métricas<br/>
+      <ul>
+        <li><b>Given</b> que el visitante se encuentra navegando en la Landing Page,</li>
+        <li><b>When</b> se desplaza hasta la sección “La realidad de la industria peruana”,</li>
+        <li><b>Then</b> el sistema muestra métricas de reducción de accidentes, clima laboral,mejoras</li>
+        <li><b>And</b> estas métricas se visualizan de forma clara y destacada.</li>
+      </ul>
+      <b>Escenario 2:</b> Carga de la sección<br/>
+      <ul>
+        <li><b>Given</b> que el visitante accede al landing,</li>
+        <li><b>When</b> la sección de métricas se renderiza,</li>
+        <li><b>Then</b> el contenido carga en menos de 3 segundos,</li>
+        <li><b>And</b> no presenta errores visuales.</li>
+      </ul>
+      <b>Escenario 3:</b> Acceso sin autenticación<br/>
+      <ul>
+        <li><b>Given</b> que el visitante no ha iniciado sesión,</li>
+        <li><b>When</b> navega por la landing,</li>
+        <li><b>Then</b> puede visualizar las métricas sin restricciones,</li>
+        <li><b>And</b> el sistema no solicita autenticación.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US17</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Interacción con Botones de Conversión</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como visitante, quiero interactuar con los botones “Iniciar prueba gratuita” y “Hablar con ventas”, para contactar con el servicio de RiskGuard.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>Debe existir al menos un CTA visible en el landing.</li>
+        <li>El sistema redirige correctamente al hacer clic.</li>
+        <li>Funciona en desktop y móvil.</li>
+        <li>Registra la interacción del usuario.</li>
+        <li>Debe permitir múltiples clics sin error.</li>
+      </ol>
+      <b>Escenario 1:</b> Redirección correcta<br/>
+      <ul>
+        <li><b>Given</b> que el visitante está en el landing,</li>
+        <li><b>When</b> hace clic en “Iniciar prueba gratuita”,</li>
+        <li><b>Then</b> el sistema redirige al formulario,</li>
+      </ul>
+      <b>Escenario 2:</b> Registro de interacción<br/>
+      <ul>
+        <li><b>Given</b> que el usuario hace clic,</li>
+        <li><b>When</b> se ejecuta la acción,</li>
+        <li><b>Then</b> el sistema registra el evento,</li>
+      </ul>
+      <b>Escenario 3:</b> Compatibilidad móvil<br/>
+      <ul>
+        <li><b>Given</b> que el usuario accede desde móvil,</li>
+        <li><b>When</b> presiona el botón,</li>
+        <li><b>Then</b> responde correctamente,</li>
+        <li><b>And</b> mantiene diseño adaptado.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US18</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización de Alerta por Riesgo Recurrente en sector</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como supervisor de seguridad, quiero recibir una alerta cuando el mismo tipo de riesgo se repita más de 3 veces en 30 días en una misma sector, para intervenir antes de que ocurra un accidente.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema detecta automáticamente cuando un mismo tipo de riesgo supera 3 ocurrencias en una misma sector dentro de los últimos 30 días.</li>
+        <li>La alerta muestra el tipo de riesgo, el sector afectada, el número de ocurrencias y la fecha del primer reporte del período.</li>
+        <li>La alerta es visible en el dashboard principal sin necesidad de buscarla.</li>
+        <li>Si el riesgo tiene menos de 3 ocurrencias en el período, el sistema no genera ninguna alerta de recurrencia.</li>
+      </ol>
+      <b>Escenario 1:</b> Patrón recurrente detectado<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad se encuentra en el dashboard de monitoreo de RiskGuard,</li>
+        <li><b>When</b> el sistema detecta que el mismo tipo de riesgo ha ocurrido por cuarta vez en el sector de Almacén dentro de los últimos 30 días,</li>
+        <li><b>Then</b> el sistema muestra una alerta de patrón recurrente en el dashboard,</li>
+        <li><b>And</b> la alerta indica el tipo de riesgo, el sector afectada, el número de ocurrencias y la fecha del primer reporte del período.</li>
+      </ul>
+      <b>Escenario 2:</b> Riesgo sin patrón recurrente<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad se encuentra en el dashboard de monitoreo,</li>
+        <li><b>When</b> el riesgo registrado tiene menos de 3 ocurrencias en los últimos 30 días en esa sector,</li>
+        <li><b>Then</b> el sistema no genera ninguna alerta de recurrencia para ese riesgo.</li>
+      </ul>
+      <b>Escenario 3:</b> Ver detalle de la alerta de recurrencia<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad visualiza una alerta de patrón recurrente en el dashboard,</li>
+        <li><b>When</b> hace clic sobre la alerta,</li>
+        <li><b>Then</b> el sistema muestra el historial de ocurrencias del riesgo en esa sector con fechas y detalles de cada reporte,</li>
+        <li><b>And</b> el supervisor puede volver al dashboard con un solo clic.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US19</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización de Mapa de Calor de Riesgos de la Planta</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como supervisor de seguridad, quiero ver un mapa de calor actualizado de la planta con la concentración de riesgos activos por zona, para priorizar mis recursos de inspección donde más se necesitan.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El mapa muestra todas las sectors de la planta con un color que representa su nivel de concentración de riesgos activos</li>
+        <li>Las sectors con mayor concentración de riesgos críticos se destacan con la intensidad de color más alta.</li>
+        <li>Al hacer clic en un sector del mapa, el sistema muestra el detalle de los riesgos activos de esa zona.</li>
+        <li>El mapa se actualiza automáticamente cuando se registra un nuevo riesgo o se resuelve uno existente.</li>
+        <li>Si ninguna sector tiene riesgos activos, todas las zonas aparecen en el nivel de intensidad más bajo con un mensaje informativo.</li>
+      </ol>
+      <b>Escenario 1:</b> Zona crítica identificada en el mapa<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad se encuentra en la pantalla del mapa de calor de RiskGuard,</li>
+        <li><b>When</b> el sector de Almacén tiene 4 riesgos activos de criticidad alta sin resolver,</li>
+        <li><b>Then</b> el sistema resalta el sector de Almacén con la intensidad de color más alta del mapa,</li>
+        <li><b>And</b> la diferencia visual con las zonas de menor concentración es clara y distinguible.</li>
+      </ul>
+      <b>Escenario 2:</b> Planta sin riesgos activos<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad accede al mapa de calor,</li>
+        <li><b>When</b> ninguna sector de la planta tiene riesgos activos registrados,</li>
+        <li><b>Then</b> el sistema muestra todas las sectors en el nivel de intensidad más bajo,</li>
+        <li><b>And</b> muestra el mensaje "No hay riesgos activos registrados en la planta".</li>
+      </ul>
+      <b>Escenario 3:</b> Ver detalle de sector desde el mapa<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad visualiza el mapa de calor con sectors resaltadas,</li>
+        <li><b>When</b> hace clic sobre el sector de Producción,</li>
+        <li><b>Then</b> el sistema muestra la lista de riesgos activos de ese sector con su tipo, criticidad y estado,</li>
+        <li><b>And</b> el supervisor puede volver al mapa con un solo clic.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US20</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Notificación de Riesgo Crítico Sin Atender</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como supervisor de seguridad, quiero que el sistema me notifique cuando un riesgo crítico lleve más de 24 horas sin ser atendido, para escalar la situación a gerencia a tiempo.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema evalúa periódicamente los riesgos críticos activos y verifica si tienen acción correctiva asignada.</li>
+        <li>Cuando un riesgo crítico supera las 24 horas sin acción correctiva asignada, el sistema envía una notificación al supervisor de seguridad.</li>
+        <li>La notificación indica el nombre del sector, el tipo de riesgo y el tiempo transcurrido desde su registro.</li>
+        <li>Si el riesgo tiene acción correctiva asignada dentro del plazo, no se genera ninguna notificación de escalamiento.</li>
+      </ol>
+      <b>Escenario 1:</b> Notificación de escalamiento enviada<br/>
+      <ul>
+        <li><b>Given</b> que existe un riesgo crítico registrado hace más de 24 horas sin acción correctiva asignada,</li>
+        <li><b>When</b> el sistema evalúa los riesgos activos pendientes,</li>
+        <li><b>Then</b> el supervisor de seguridad recibe una notificación de escalamiento en su centro de notificaciones,</li>
+        <li><b>And</b> la notificación detalla el sector afectada, el tipo de riesgo y el tiempo transcurrido sin atención.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin notificación cuando el riesgo fue atendido a tiempo<br/>
+      <ul>
+        <li><b>Given</b> que un riesgo crítico tiene acción correctiva asignada dentro de las primeras 24 horas de su registro,</li>
+        <li><b>When</b> el sistema evalúa los riesgos activos,</li>
+        <li><b>Then</b> el sistema no genera ninguna notificación de escalamiento para ese riesgo.</li>
+      </ul>
+      <b>Escenario 3:</b> Ver detalle del riesgo desde la notificación<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad recibió una notificación de escalamiento,</li>
+        <li><b>When</b> hace clic sobre la notificación,</li>
+        <li><b>Then</b> el sistema lo redirige al detalle del ticket del riesgo crítico sin atender,</li>
+        <li><b>And</b> puede asignar una acción correctiva directamente desde esa pantalla.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US21</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Filtrado de Patrones de Riesgo por Tipo de Peligro</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como supervisor de seguridad, quiero filtrar los patrones de riesgo detectados por tipo de peligro (físico, químico, ergonómico, otros), para analizar de forma segmentada cuál categoría representa mayor amenaza en la planta.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El panel de patrones incluye un filtro por tipo de peligro con las categorías: físico, químico, ergonómico, otros.</li>
+        <li>Al aplicar el filtro, el sistema muestra únicamente los patrones recurrentes de la categoría seleccionada.</li>
+        <li>Si no existen patrones de la categoría seleccionada en el período, el sistema muestra un mensaje informativo.</li>
+        <li>El supervisor de seguridad puede combinar el filtro de tipo de peligro con el selector de sector.</li>
+      </ol>
+      <b>Escenario 1:</b> Filtro aplicado con resultados<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad se encuentra en el panel de patrones de riesgo de RiskGuard,</li>
+        <li><b>When</b> selecciona el filtro de tipo de peligro "Ergonómico",</li>
+        <li><b>Then</b> el sistema muestra únicamente los patrones recurrentes de tipo ergonómico,</li>
+        <li><b>And</b> oculta los patrones de las demás categorías de peligro.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin patrones para el tipo seleccionado<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad aplica el filtro de tipo de peligro "Quimico",</li>
+        <li><b>When</b> el sistema busca patrones de esa categoría en el período actual,</li>
+        <li><b>Then</b> el sistema muestra el mensaje "No hay patrones recurrentes de tipo químico en el período consultado".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS22</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Servicio de Notificaciones Push</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a los dispositivos móviles.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema envía notificaciones push en tiempo real.</li>
+        <li>Integra servicios externos (Firebase, etc.).</li>
+        <li>Maneja reintentos automáticos.</li>
+        <li>Permite cola de mensajes si el usuario está offline.</li>
+        <li>Registra cada envío en logs.</li>
+      </ol>
+      <b>Escenario 1:</b> Envío exitoso<br/>
+      <ul>
+        <li><b>Given</b> que existe una alerta crítica,</li>
+        <li><b>When</b> el sistema envía la notificación,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 202,</li>
+        <li><b>And</b> la notificación es entregada al dispositivo del usuario.</li>
+      </ul>
+      <b>Escenario 2:</b> Error en servicio externo<br/>
+      <ul>
+        <li><b>Given</b> que falla el proveedor de notificaciones,</li>
+        <li><b>When</b> el sistema intenta enviar el mensaje,</li>
+        <li><b>Then</b> se ejecuta un reintento automático,</li>
+        <li><b>And</b> el error queda registrado en logs.</li>
+      </ul>
+      <b>Escenario 3:</b> Usuario offline<br/>
+      <ul>
+        <li><b>Given</b> que el usuario no tiene conexión,</li>
+        <li><b>When</b> se envía la notificación,</li>
+        <li><b>Then</b> el sistema la almacena en cola,</li>
+        <li><b>And</b> la envía cuando el usuario se reconecta.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS23</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Patrones de Riesgo Recurrentes</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones que devuelva los patrones de riesgo recurrentes por sector y período, para mostrar las alertas predictivas en el dashboard del supervisor de seguridad.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/predictivo/patrones acepta el identificador del sector y el número de días como parámetros de consulta obligatorios.</li>
+        <li>El endpoint retorna los patrones detectados con tipo de riesgo, frecuencia de ocurrencia y fecha de primera ocurrencia en el período.</li>
+        <li>Si el sector no tiene registros suficientes, el endpoint retorna una respuesta HTTP 200 con lista vacía y un mensaje descriptivo.</li>
+        <li>Si el sector enviada no existe en el sistema, el endpoint retorna HTTP 404 indicando que el recurso no fue encontrado.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con patrones detectados<br/>
+      <ul>
+        <li><b>Given</b> que el sector consultada tiene registros suficientes en el período indicado,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones?area=almacen&dias=30,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de patrones detectados con tipo de riesgo, frecuencia y fecha de primera ocurrencia.</li>
+      </ul>
+      <b>Escenario 2:</b> Sector sin datos suficientes para detectar patrones<br/>
+      <ul>
+        <li><b>Given</b> que el sector consultada tiene menos de 3 registros en el período indicado,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones con esos parámetros,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200, lista vacía y el mensaje "Datos insuficientes para detectar patrones en el período indicado".</li>
+      </ul>
+      <b>Escenario 3:</b> Sector no encontrada en el sistema<br/>
+      <ul>
+        <li><b>Given</b> que el desarrollador envía un identificador de sector que no existe en el sistema,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 404 con el mensaje "sector no encontrada en el sistema".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS24</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Datos del Mapa de Calor</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor que retorne la concentración de riesgos activos por sector clasificada por nivel de intensidad, para alimentar el mapa de calor del dashboard en tiempo real.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/predictivo/mapa-calor retorna todas las sectores registradas con su nivel de intensidad calculado</li>
+        <li>El nivel de intensidad se calcula en base a la cantidad de riesgos activos sin resolver de cada sector.</li>
+        <li>Si ninguna sector tiene riesgos activos, el endpoint retorna todas las sectors con nivel de intensidad bajo y HTTP 200.</li>
+        <li>El endpoint no requiere parámetros adicionales y retorna siempre el estado actual de toda la planta.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con riesgos activos registrados<br/>
+      <ul>
+        <li><b>Given</b> que al menos un sector de la planta tiene riesgos activos registrados,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 con cada sector y su nivel de intensidad calculado según la concentración de riesgos activos.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin riesgos activos en ningun sector de la planta<br/>
+      <ul>
+        <li><b>Given</b> que ninguna sector tiene riesgos activos registrados en ese momento,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 con todas las sectors en nivel de intensidad "bajo".</li>
+      </ul>
+      <b>Escenario 3:</b> Sector recién actualizada reflejada en el mapa<br/>
+      <ul>
+        <li><b>Given</b> que se acaba de registrar un nuevo riesgo crítico en el sector de Producción,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor inmediatamente después,</li>
+        <li><b>Then</b> el endpoint retorna el sector de Producción con el nivel de intensidad actualizado reflejando el nuevo riesgo.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS25</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Riesgos Críticos Sin Atender</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos que retorne los riesgos críticos sin acción correctiva asignada que superen el tiempo indicado, para que el módulo de notificaciones escale automáticamente al supervisor de seguridad.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/predictivo/no-atendidos acepta el número de horas como parámetro obligatorio para definir el umbral de tiempo sin atención.</li>
+        <li>El endpoint retorna los riesgos críticos activos sin acción correctiva que superen el umbral, incluyendo sector, tipo de riesgo, nivel de criticidad y horas transcurridas sin atención.</li>
+        <li>Si todos los riesgos han sido atendidos dentro del plazo, el endpoint retorna HTTP 200 con lista vacía.</li>
+        <li>Si el parámetro de horas no es enviado o tiene un valor inválido, el endpoint retorna HTTP 400 indicando que el parámetro es requerido.</li>
+      </ol>
+      <b>Escenario 1:</b> Riesgos sin atender encontrados en el sistema<br/>
+      <ul>
+        <li><b>Given</b> que existen riesgos críticos sin acción correctiva asignada por más de 24 horas,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de riesgos que superaron el umbral con sector, tipo, criticidad y horas transcurridas sin atención.</li>
+      </ul>
+      <b>Escenario 2:</b> Todos los riesgos críticos fueron atendidos a tiempo<br/>
+      <ul>
+        <li><b>Given</b> que todos los riesgos críticos activos tienen acción correctiva asignada dentro del plazo,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y lista vacía confirmando que no hay riesgos sin atender.</li>
+      </ul>
+      <b>Escenario 3:</b> Parámetro de horas no enviado en la solicitud<br/>
+      <ul>
+        <li><b>Given</b> que el desarrollador realiza GET /api/v1/predictivo/no-atendidos sin enviar el parámetro de horas,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 400 con el mensaje "El parámetro 'horas' es requerido para procesar esta solicitud".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
@@ -826,6 +1301,9 @@
         </b></td>
     </tr>
 </table>
+
+---
+
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
@@ -875,6 +1353,9 @@
         </b></td>
     </tr>
 </table>
+
+---
+
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
@@ -925,6 +1406,9 @@
         </b></td>
     </tr>
 </table>
+
+---
+
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
@@ -974,6 +1458,9 @@
         </b></td>
     </tr>
 </table>
+
+---
+
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
@@ -1022,6 +1509,9 @@
         </b></td>
     </tr>
 </table>
+
+---
+
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
