@@ -716,73 +716,37 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Registro de nuevo usuario</b></td>
+        <td colspan="3"></b></td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3">Como nuevo usuario, quiero registrarme en SafeStep de forma rápida y segura utilizando mi correo electrónico, número de teléfono o cuentas de redes sociales (Google, Facebook, Apple), para crear mi perfil personalizado, acceder a todas las funcionalidades de la plataforma y comenzar mi aprendizaje en primeros auxilios sin demoras innecesarias.</b></td>
+        <td colspan="3"></b></td>
     </tr>
     <tr>
         <td colspan="4">
             <b>Criterios de aceptación:</b> <br/>
             <ol>
-                <li>El sistema debe ofrecer múltiples opciones de registro: correo electrónico + contraseña, número de teléfono + SMS, o autenticación mediante OAuth (Google, Facebook, Apple).</li>
-                <li>Para registro con correo, debe validar que el correo no esté previamente registrado y que la contraseña cumpla requisitos mínimos (mínimo 8 caracteres, al menos una letra mayúscula, un número y un carácter especial).</li>
-                <li>Para registro con teléfono, debe enviar un código de verificación SMS de 6 dígitos con vigencia de 5 minutos, y solicitar al usuario que lo ingrese para activar la cuenta.</li>
-                <li>Para registro con OAuth, debe completarse en menos de 10 segundos, solicitando solo los permisos mínimos necesarios (nombre, correo electrónico, foto de perfil).</li>
-                <li>Durante el registro, el sistema debe solicitar información básica del perfil: nombre completo (obligatorio), fecha de nacimiento (opcional, para personalizar contenido por edad), país y ciudad (opcional, para recomendar eventos locales).</li>
-                <li>El usuario debe aceptar los términos y condiciones y la política de privacidad antes de completar el registro, con enlaces visibles y legibles.</li>
-                <li>En caso de error (correo duplicado, teléfono ya registrado, contraseña débil), la aplicación debe mostrar mensajes claros y específicos, indicando cómo corregir el problema.</li>
-                <li>Después del registro exitoso, el sistema debe enviar un correo electrónico de bienvenida con un enlace de verificación (opcional, para confirmar la dirección) y mostrar un tour guiado opcional del dashboard.</li>
-                <li>Los datos del usuario deben almacenarse cumpliendo con los lineamientos de protección de datos personales (GDPR, CCPA o equivalentes locales), con opción de solicitar la eliminación de la cuenta en cualquier momento.</li>
-                <li>El sistema debe implementar mecanismos anti-bots (reCAPTCHA o similar) en el formulario de registro para prevenir registros automatizados.</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ol>
-            <b>Escenario 1 (Registro exitoso con correo electrónico):</b> <br/>
+            <b>Escenario 1 </b> <br/>
             <ul>
-                <li><b>Given</b> que una persona abre la aplicación SafeStep por primera vez en su dispositivo,</li>
-                <li><b>And</b> selecciona la opción "Registrarse" en la pantalla de bienvenida,</li>
-                <li><b>When</b> completa el formulario con nombre completo "Juan Pérez", correo "juan@example.com", teléfono opcional y contraseña segura "Juan2024*",</li>
-                <li><b>And</b> acepta los términos y condiciones,</li>
-                <li><b>Then</b> el sistema valida que el correo no existe previamente,</li>
-                <li><b>And</b> crea la cuenta exitosamente,</li>
-                <li><b>And</b> redirige al usuario al dashboard principal ya autenticado,</li>
-                <li><b>And</b> envía un correo de bienvenida a juan@example.com con un enlace de verificación.</li>
-            </ul>
-            <b>Escenario 2 (Registro con Google OAuth):</b> <br/>
-            <ul>
-                <li><b>Given</b> que el usuario está en la pantalla de registro,</li>
-                <li><b>When</b> selecciona la opción "Continuar con Google",</li>
-                <li><b>Then</b> el sistema abre la ventana emergente de autenticación de Google,</li>
-                <li><b>When</b> el usuario selecciona su cuenta y autoriza el acceso,</li>
-                <li><b>Then</b> el sistema recibe los datos básicos (nombre, correo, foto de perfil),</li>
-                <li><b>And</b> crea automáticamente la cuenta asociada a ese correo,</li>
-                <li><b>And</b> redirige al usuario al dashboard principal ya autenticado,</li>
-                <li><b>And</b> el proceso completo dura menos de 10 segundos.</li>
-            </ul>
-            <b>Escenario 3 (Registro con número de teléfono y SMS):</b> <br/>
-            <ul>
-                <li><b>Given</b> que el usuario selecciona la opción "Registrarse con teléfono",</li>
-                <li><b>When</b> ingresa su número "+51 987654321" y presiona "Enviar código",</li>
-                <li><b>Then</b> el sistema envía un código SMS de 6 dígitos al número proporcionado,</li>
-                <li><b>When</b> el usuario ingresa el código correctamente dentro de los 5 minutos,</li>
-                <li><b>Then</b> el sistema completa el registro, solicita el nombre completo del usuario,</li>
-                <li><b>And</b> crea la cuenta exitosamente,</li>
-                <li><b>And</b> redirige al dashboard principal ya autenticado.</li>
-            </ul>
-            <b>Escenario 4 (Error - correo ya registrado):</b> <br/>
-            <ul>
-                <li><b>Given</b> que un usuario intenta registrarse con un correo que ya existe en la base de datos,</li>
-                <li><b>When</b> completa el formulario y presiona "Registrarse",</li>
-                <li><b>Then</b> el sistema detecta el correo duplicado,</li>
-                <li><b>And</b> muestra un mensaje claro: "Este correo electrónico ya está registrado. ¿Deseas iniciar sesión o recuperar tu contraseña?",</li>
-                <li><b>And</b> ofrece enlaces directos a "Iniciar sesión" y "¿Olvidaste tu contraseña?" para ayudar al usuario a recuperar el acceso.</li>
-            </ul>
-            <b>Escenario 5 (Error - contraseña débil):</b> <br/>
-            <ul>
-                <li><b>Given</b> que el usuario intenta registrarse con una contraseña débil,</li>
-                <li><b>When</b> ingresa "12345" en el campo de contraseña,</li>
-                <li><b>Then</b> el sistema muestra un mensaje de error en tiempo real: "La contraseña debe tener al menos 8 caracteres, una mayúscula, un número y un carácter especial",</li>
-                <li><b>And</b> el botón "Registrarse" permanece deshabilitado hasta que la contraseña cumpla los requisitos.</li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
+                <li><b></b> </li>
             </ul>
         </b></td>
     </tr>
