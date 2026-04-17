@@ -615,7 +615,9 @@ Su mayor dolor de cabeza es la falta de integridad de datos: los informes mensua
 El año pasado enfrentaron una denuncia anónima de Sunafil por falta de EPP en la zona de hornos, resultando en una pérdida aproximada de 85,000 soles en facturación. Hace dos años, un derrame de material fundido dañó la infraestructura principal, obligando a postergar inversiones clave.
 Señala necesitar tres elementos en un tablero ejecutivo: un mapa de calor de riesgos por zona, seguimiento del cumplimiento del plan anual de seguridad, y alertas de desviación de protocolos en tiempo real. Mostró alta disposición hacia una solución que exporte automáticamente formatos de auditoría exigidos por ley y muestre indicadores predictivos de riesgo, calificándola como de alto valor para su gestión actual.
 
-*Entrevistado N°2: Ysabel Zavala *
+---
+
+*Entrevistado N°2: Ysabel Zavala*
 
 <p align="center">
   <img src="https://i.postimg.cc/15K4pqZ1/Whats-App-Image-2026-04-16-at-16-00-27.jpg" width="300"/>
