@@ -1071,6 +1071,55 @@
     </tr>
 </table>
 
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US07</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b></td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3">Verificación y Cierre de Medidas de Control</b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero evaluar la efectividad de las medidas correctivas implementadas, para garantizar que el riesgo ha sido mitigado satisfactoriamente antes de proceder al cierre definitivo del incidente en el sistema</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li>El sistema permite el proceso de verificación exclusivamente para aquellos tickets que se encuentran en estado "Medida Implementada".</li>
+                <li>El sistema requiere la selección de un veredicto final (Aprobación o Rechazo) para completar la evaluación de la medida de control.</li>
+                <li>El sistema valida el ingreso de un comentario de justificación técnica únicamente cuando el veredicto seleccionado es un rechazo</li>
+                <li>El sistema actualiza el estado del ticket a "Cerrado" y registra la marca de tiempo final cuando se procesa una aprobación.</li>
+                <li>El sistema revierte el estado del ticket a "En Progreso" cuando se procesa un rechazo, manteniendo la vinculación con el técnico responsable para su reevaluación.</li>
+            </ol>
+            <b>Escenario 1:</b> Aprobación de medida y cierre de ticket<br/>
+            <ul>
+                <li><b>Given</b> que un ticket de acción correctiva se encuentra en estado "Medida Implementada",</li>
+                <li><b>When</b> el supervisor emite un veredicto de aprobación tras la inspección del riesgo,</li>
+                <li><b>Then</b> el sistema registra el cierre definitivo del ticket,</li>
+                <li><b>And</b> procede a la actualización del nivel de riesgo del sector correspondiente en la base de datos</li>
+            </ul>
+            <b>Escenario 2:</b> Rechazo de medida por persistencia de riesgo<br/>
+            <ul>
+                <li><b>Given</b> que el supervisor inspecciona una medida de control implementada y determina que la falla persiste,</li>
+                <li><b>When</b> envía un veredicto de rechazo junto con la justificación técnica del hallazgo,</li>
+                <li><b>Then</b> el sistema cambia el estado del ticket nuevamente a "En Progreso",</li>
+            </ul>
+            <b>Escenario 3:</b> Validación de datos obligatorios en el rechazo<br/>
+            <ul>
+                <li><b>Given</b> que el supervisor decide rechazar una medida de control implementada,</li>
+                <li><b>When</b> intenta procesar el veredicto de rechazo sin registrar el comentario de justificación,</li>
+                <li><b>Then</b> el sistema impide la actualización del estado del ticket,</li>
+                <li><b>And</b> emite una mensaje indicando que le falto sustentar el motivo del rechazo.</li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+
 
 
 ## 3.2. Impact Mapping
