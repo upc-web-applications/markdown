@@ -1248,6 +1248,50 @@
 </table>
 
 ---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS26</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint de Cálculo de Matriz IPERC</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc que reciba los índices de probabilidad y severidad, para calcular el nivel de criticidad del riesgo según la lógica IPERC del sistema.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint recibe los parámetros <b>probability_index</b> y <b>severity_index</b>.</li>
+        <li>El sistema valida que los valores estén dentro del rango permitido.</li>
+        <li>Se calcula el nivel de riesgo.</li>
+        <li>Se retorna el color asociado al nivel de riesgo.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+        <li>Se manejan errores de validación y errores internos.</li>
+      </ol>
+      <b>Escenario 1:</b> Cálculo de riesgo exitoso<br/>
+      <ul>
+        <li><b>Given</b> se procesa el request válido con probability_index y severity_index,</li>
+        <li><b>When</b> el API procesa la solicitud en el endpoint POST /api/v1/predictivo/iperc,</li>
+        <li><b>Then</b> el sistema calcula correctamente el nivel de criticidad del riesgo,</li>
+        <li><b>And</b> retorna un HTTP 200 OK</li>
+      </ul>
+      <b>Escenario 2:</b> Valores fuera de rango<br/>
+      <ul>
+        <li><b>Given</b> que los valores enviados están fuera del rango permitido,</li>
+        <li><b>When</b> el API valida la solicitud,</li>
+        <li><b>Then</b> responde con HTTP 400 Bad Request,</li>
+        <li><b>And</b> retorna un mensaje de error de validación de parámetros.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
