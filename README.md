@@ -26,7 +26,7 @@ Integrantes:
 
 u20241e158 - Aponte Pablo, Isabel Luisa
 
-u202418655 - Laura Acosta, Victor Jhosuef
+u202418655 - Laura Acosta, Victor Jhosef
 
 u202415412 - Flores Siguas, Marlon Alessandro
 
