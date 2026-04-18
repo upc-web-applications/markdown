@@ -132,7 +132,17 @@ La interfaz web de RiskGuard está diseñada con un enfoque *responsive*, garant
 - **Scroll:** Navbar fijo para navegación rápida en todo momento.
 - **Feedback:** Estados activos resaltados con cambio de borde o intensidad de color. Sin uso de sombras decorativas.
 
-///
+ <div align="center">
+  <p>
+    <b>Grafico 13</b>: Web Styles Guidlines - RiskGuard
+  </p>
+    
+![Foto](images/Exhibición.png)
+  
+  <p>
+    <i><b>Fuente</b>: Elaboración propia en Figma </i>
+  </p>
+</div>
 
 ---
 
