@@ -30,8 +30,8 @@
         <td align="center">Dashboard Ejecutivo y Reportes de Cumplimiento</td>
     </tr>
     <tr>
-        <td align="center"><b>EP05</b>Configuración del Sistema</td>
-        <td align="center"></td>
+        <td align="center"><b>EP05</b></td>
+        <td align="center">Configuración del Sistema</td>
     </tr>
 </table>
 
