@@ -1745,6 +1745,49 @@
     </tr>
 </table>
 
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US36</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b></td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3">Escalamiento Automático por Incumplimiento de SLA</b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero que el sistema escale automáticamente los tickets de incidentes que superen su tiempo máximo de resolución permitido (SLA), para alertar a la gerencia sobre posibles negligencias operativas y evitar la materialización de accidentes graves</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li>El sistema asigna internamente un límite de tiempo (SLA) a cada ticket generado basándose estrictamente en su nivel de riesgo</li>
+                <li>El sistema monitorea en segundo plano el tiempo transcurrido desde la creación del ticket hasta su cierre.</li>
+                <li>El sistema marca automáticamente el ticket con una etiqueta de "SLA Incumplido" si el tiempo transcurrido supera el límite establecido y el estado del ticket no es "Cerrado" o "Mitigado".</li>
+                <li>El sistema dispara automáticamente un evento de notificación de escalamiento hacia los roles gerenciales preconfigurados al momento de registrarse un incumplimiento.</li>
+                <li>El sistema registra el evento de incumplimiento de forma inmutable en el historial del ticket para fines de auditoría.</li>
+            </ol>
+            <b>Escenario 1:</b> Incumplimiento de SLA en incidente crítico<br/>
+            <ul>
+                <li><b>Given</b> que un ticket de nivel "Crítico" se encuentra "En Progreso" y se acerca a su límite de tiempo permitido (SLA),</li>
+                <li><b>When</b> el reloj del sistema determina que el tiempo transcurrido ha superado el umbral máximo sin registrar un cierre,</li>
+                <li><b>Then</b> el sistema actualiza la prioridad del ticket a "SLA Incumplido" o "Escalado",</li>
+                <li><b>And</b> envía la notificación de alerta a la gerencia reportando la demora en la mitigación.</li>
+            </ul>
+            <b>Escenario 2:</b> Resolución dentro del tiempo permitido<br/>
+            <ul>
+                <li><b>Given</b> que un técnico se encuentra mitigando un incidente con un SLA activo,</li>
+                <li><b>When</b> el supervisor aprueba la medida de control y el ticket pasa a estado "Cerrado" antes de vencer el límite de tiempo,</li>
+                <li><b>Then</b> el sistema detiene el contador de SLA para dicho ticket,</li>
+                <li><b>And</b> omite cualquier protocolo de escalamiento o notificación gerencial.</li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+
 ---
 
 <table align="center">
