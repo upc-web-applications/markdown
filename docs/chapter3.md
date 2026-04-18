@@ -1251,7 +1251,162 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS26</td>
+    <td><b>User Story ID</b></td><td>US26</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización de Resumen de Riesgos del Día</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como supervisor de seguridad, quiero ver cuántos riesgos nuevos se registraron hoy en cada sector, para tener una visión rápida del estado de la planta al inicio de mi turno.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El dashboard muestra el total de riesgos registrados en el día actual agrupados por sector.</li>
+        <li>Cada sector indica cuántos riesgos son nuevos, cuántos están en progreso y cuántos fueron resueltos en el día.</li>
+        <li>Si no se registraron riesgos en el día, el sistema muestra el mensaje "No se han reportado riesgos hoy".</li>
+      </ol>
+      <b>Escenario 1:</b> Resumen del día con riesgos registrados<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad se encuentra en el dashboard de RiskGuard,</li>
+        <li><b>When</b> accede al panel,</li>
+        <li><b>Then</b> el sistema muestra el total de riesgos registrados hoy agrupados por sector,</li>
+        <li><b>And</b> cada sector indica la cantidad de riesgos nuevos, en progreso y resueltos.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin riesgos registrados en el día<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad accede al dashboard al inicio del turno,</li>
+        <li><b>When</b> no se han registrado riesgos durante el día actual,</li>
+        <li><b>Then</b> el sistema muestra el mensaje "No se han reportado riesgos hoy".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US27</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Marcar Alerta de Patrón Recurrente como Revisada</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como supervisor de seguridad, quiero marcar una alerta de patrón recurrente como revisada, para indicar que ya tomé conocimiento de ella y mantener el dashboard organizado.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>Cada alerta de patrón recurrente en el dashboard incluye una opción de "Marcar como revisada".</li>
+        <li>Al marcar una alerta como revisada, esta se mueve a la sección de alertas revisadas y deja de aparecer en el panel principal.</li>
+        <li>El supervisor puede consultar el historial de alertas revisadas desde la misma pantalla.</li>
+      </ol>
+      <b>Escenario 1:</b> Marcar alerta como revisada exitosamente<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad visualiza una alerta de patrón recurrente en el dashboard,</li>
+        <li><b>When</b> hace clic en "Marcar como revisada",</li>
+        <li><b>Then</b> el sistema mueve la alerta fuera del panel principal,</li>
+      </ul>
+      <b>Escenario 2:</b> Sin alertas pendientes en el panel<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor de seguridad marcó todas las alertas de patrón como revisadas,</li>
+        <li><b>When</b> accede al panel principal de alertas,</li>
+        <li><b>Then</b> el sistema muestra el mensaje "No hay alertas de patrón pendientes por revisar".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS28</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Marcar Alerta de Patrón como Revisada</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada que permita marcar una alerta de patrón recurrente como revisada, para retirarla del panel principal y registrar quién la atendió.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint acepta el identificador de la alerta en la URL y actualiza su estado a "revisada".</li>
+        <li>Si la alerta no existe en el sistema, el endpoint retorna HTTP 404.</li>
+        <li>El endpoint requiere token con rol Supervisor o superior; de lo contrario retorna HTTP 403.</li>
+      </ol>
+      <b>Escenario 1:</b> Alerta marcada como revisada exitosamente<br/>
+      <ul>
+        <li><b>Given</b> que existe una alerta de patrón recurrente en estado pendiente,</li>
+        <li><b>When</b> el desarrollador realiza PATCH /api/v1/predictivo/alertas/{id}/revisada con token válido,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y actualiza el estado de la alerta a "revisada" registrando la fecha y el usuario.</li>
+      </ul>
+      <b>Escenario 2:</b> Alerta no encontrada en el sistema<br/>
+      <ul>
+        <li><b>Given</b> que el identificador de alerta enviado no existe en el sistema,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 404 indicando que la alerta no fue encontrada.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS29</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Resumen Diario de Riesgos por Sector</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario que retorne el total de riesgos registrados en el día agrupados por sector, para alimentar el panel de resumen del dashboard del supervisor.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint retorna todos los sectores con el total de riesgos nuevos, en progreso y resueltos del día actual.</li>
+        <li>Si no se han registrado riesgos en el día, el endpoint retorna HTTP 200 con lista vacía.</li>
+        <li>El endpoint no requiere parámetros y calcula automáticamente el día actual.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con riesgos del día<br/>
+      <ul>
+        <li><b>Given</b> que se han registrado riesgos durante el día actual en al menos un sector,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/resumen-diario con token válido,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el listado de sectores con sus conteos de riesgos nuevos, en progreso y resueltos del día.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin riesgos registrados en el día<br/>
+      <ul>
+        <li><b>Given</b> que no se han registrado riesgos durante el día actual,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/resumen-diario,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y lista vacía.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS30</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -1295,7 +1450,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US27</b></td>
+        <td>US31</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1351,7 +1506,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US28</b></td>
+        <td>US32</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1403,7 +1558,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US29</b></td>
+        <td>US33</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1456,7 +1611,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US30</b></td>
+        <td>US34</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1508,7 +1663,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US31</b></td>
+        <td>US35</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1559,7 +1714,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US32</b></td>
+        <td>US36</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1609,7 +1764,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US33</b></td>
+        <td>US37</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1657,7 +1812,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US34</b></td>
+        <td>US38</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1707,7 +1862,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US35</b></td>
+        <td>US39</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1748,7 +1903,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US36</b></td>
+        <td>US40</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1791,7 +1946,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US37</b></td>
+        <td>US41</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1841,7 +1996,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US37</b></td>
+        <td>US42</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1892,7 +2047,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US36</td>
+    <td><b>User Story ID</b></td><td>US43</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -1942,7 +2097,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US37</td>
+    <td><b>User Story ID</b></td><td>US44</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -1992,7 +2147,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US38</td>
+    <td><b>User Story ID</b></td><td>US45</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2042,7 +2197,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US39</td>
+    <td><b>User Story ID</b></td><td>US46</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2092,7 +2247,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US40</td>
+    <td><b>User Story ID</b></td><td>US47</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2141,7 +2296,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US41</td>
+    <td><b>User Story ID</b></td><td>US48</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2189,7 +2344,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US42</td>
+    <td><b>User Story ID</b></td><td>US49</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2237,7 +2392,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US43</td>
+    <td><b>User Story ID</b></td><td>US50</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2286,7 +2441,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US44</td>
+    <td><b>User Story ID</b></td><td>US51</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2336,7 +2491,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US45</td>
+    <td><b>User Story ID</b></td><td>US52</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2385,7 +2540,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS46</td>
+    <td><b>User Story ID</b></td><td>TS53</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2432,7 +2587,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS47</td>
+    <td><b>User Story ID</b></td><td>TS54</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2479,7 +2634,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS48</td>
+    <td><b>User Story ID</b></td><td>TS55</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2527,7 +2682,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS49</td>
+    <td><b>User Story ID</b></td><td>TS56</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2575,7 +2730,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS50</td>
+    <td><b>User Story ID</b></td><td>TS57</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2621,7 +2776,7 @@
 ---
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US51</td>
+    <td><b>User Story ID</b></td><td>US58</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2673,7 +2828,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US52</td>
+    <td><b>User Story ID</b></td><td>US59</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2725,7 +2880,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US53</td>
+    <td><b>User Story ID</b></td><td>US60</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2777,7 +2932,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US54</td>
+    <td><b>User Story ID</b></td><td>US61</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2829,7 +2984,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US55</td>
+    <td><b>User Story ID</b></td><td>US62</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2881,7 +3036,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US56</td>
+    <td><b>User Story ID</b></td><td>US63</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2933,7 +3088,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US57</td>
+    <td><b>User Story ID</b></td><td>US64</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2985,7 +3140,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US58</td>
+    <td><b>User Story ID</b></td><td>US65</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3037,7 +3192,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US59</td>
+    <td><b>User Story ID</b></td><td>US66</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3089,7 +3244,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US60</td>
+    <td><b>User Story ID</b></td><td>US67</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3141,7 +3296,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US61</td>
+    <td><b>User Story ID</b></td><td>US68</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3193,7 +3348,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US62</td>
+    <td><b>User Story ID</b></td><td>US69</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3245,7 +3400,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US63</td>
+    <td><b>User Story ID</b></td><td>US70</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3297,7 +3452,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US64</td>
+    <td><b>User Story ID</b></td><td>US71</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3349,7 +3504,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US65</td>
+    <td><b>User Story ID</b></td><td>US72</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
