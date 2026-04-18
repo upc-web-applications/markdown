@@ -146,54 +146,6 @@ La interfaz web de RiskGuard está diseñada con un enfoque *responsive*, garant
 
 ---
 
-### 4.1.3. Mobile Style Guidelines
-
-**Estructura general:**
-
-La app sigue principios de Material Design (Android) e Human Interface Guidelines (iOS) para mantener consistencia y usabilidad en cada plataforma:
-
-- **iOS:**
-  Paleta oscura con fondos predominantemente `#0A0C0F` y `#111418`. El header superior incluye logo y acceso al perfil con separación visual respecto al contenido mediante un borde sutil. La barra inferior contiene 4 ítems de navegación (Panel, Alertas, Reportes, Ajustes), cada uno con ícono y label. El texto sigue jerarquía: 20 px títulos, 16 px subtítulos, 14 px texto simple.
-
-- **Android:**
-  El header mantiene logo y acceso al usuario en la parte superior. La navegación principal se ubica como pestañas superiores siguiendo el estándar Material Design. Los botones de acción rápida se posicionan ligeramente más abajo que en iOS.
-
-**Componentes básicos en Mobile:**
-
-- **Botones:**
-  Primarios en naranja `#FF5B00` con texto blanco, esquinas redondeadas de 8 px. Secundarios en fondo transparente con borde naranja.
-
-- **Inputs:**
-  Minimalistas con línea inferior naranja `#FF5B00` en Android y borde suave `#2A2F38` en iOS. Texto en blanco sobre fondo `#1A1E24`.
-
-- **Cards de alerta / incidencia:**
-  Fondo `#1A1E24`, badge de nivel de riesgo (rojo/naranja/verde), descripción del evento y timestamp. Divisores en `#2A2F38`.
-
-- **Panel de métricas:**
-  Valores numéricos grandes en naranja o verde, label descriptivo en gris, agrupados en grilla de 2 columnas.
-
-**Tipografía en Mobile:**
-
-- Títulos (H1): 20 px SemiBold, color `#FFFFFF`.
-- Subtítulos (H2/H3): 16 px Regular, color `#FFFFFF`.
-- Texto simple / descripción: 14 px Regular, color `#8A8F9A`.
-- Botones: 14 px SemiBold, blanco sobre fondo naranja.
-- Tags / Badges: 10 px Uppercase, color según nivel de alerta.
-
-#### 4.1.3.1. iOS Mobile Style Guidelines
-
-La versión iOS de RiskGuard prioriza la claridad y la velocidad de lectura en condiciones de uso industrial. Los elementos de la interfaz se presentan sobre fondos oscuros profundos con acentos naranjas precisos que guían la atención del operario hacia las alertas críticas. La barra inferior fija garantiza acceso constante a las cuatro funciones principales sin interrumpir el flujo de monitoreo.
-
-///
-
-#### 4.1.3.2. Android Mobile Style Guidelines
-
-La versión Android de RiskGuard adopta los patrones de navegación de Material Design, con pestañas superiores y un FAB (botón de acción flotante) naranja para reportes de incidencias rápidas. La barra de navegación inferior se reemplaza por las pestañas superiores estándar de Material You, manteniendo la paleta oscura y los acentos naranjas de la identidad de marca.
-
-///
-
----
-
 ## 4.2. Information Architecture
 
 La arquitectura de información de RiskGuard está organizada para que operarios, supervisores y gerencia puedan acceder, monitorear y gestionar alertas de seguridad industrial de forma rápida y consistente en web y móvil. La estructura se apoya en cuatro sistemas: Organization, Labeling, Searching y Navigation.
