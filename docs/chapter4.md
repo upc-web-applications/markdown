@@ -10,7 +10,17 @@
 
 El logo de RiskGuard combina robustez visual y autoridad técnica a través de un diseño que evoca un escudo de protección integrado con elementos industriales. La tipografía fuerte y geométrica transmite precisión y control, mientras que el uso del color naranja sobre fondo oscuro genera un contraste inmediato que comunica alerta y acción. La disposición compacta del logotipo junto al nombre asegura reconocimiento rápido en entornos de alta densidad informativa como dashboards industriales.
 
-///
+  <div align="center">
+  <p>
+    <b>Grafico 12</b>: RiskGuard Logo
+  </p>
+    
+![Foto](images/icon.png)
+  
+  <p>
+    <i><b>Fuente</b>: Elaboración propia en Figma </i>
+  </p>
+</div>
 
 **Branding:**
 
