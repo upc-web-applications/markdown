@@ -2519,7 +2519,55 @@
 </table>
 
 ---
-
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US51</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de niveles de riesgo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero definir los niveles de riesgo del sistema, para clasificar correctamente los incidentes detectados.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite crear niveles de riesgo (bajo, medio, alto).</li>
+        <li>El sistema valida que no existan nombres duplicados.</li>
+        <li>El sistema permite editar los niveles existentes.</li>
+        <li>El sistema guarda correctamente la configuración.</li>
+        <li>El sistema muestra un mensaje de confirmación al guardar.</li>
+      </ol>
+      <b>Escenario 1:</b> Creación de nivel de riesgo<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de configuración,</li>
+        <li><b>When</b> registra un nuevo nivel de riesgo y hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema valida los datos ingresados,</li>
+        <li><b>And</b> guarda el nuevo nivel correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Edición de nivel de riesgo<br/>
+      <ul>
+        <li><b>Given</b> que existen niveles de riesgo registrados,</li>
+        <li><b>When</b> el administrador modifica un nivel existente,</li>
+        <li><b>Then</b> el sistema guarda los cambios correctamente,</li>
+        <li><b>And</b> actualiza la información en el sistema.</li>
+      </ul>
+      <b>Escenario 3:</b> Validación de duplicados<br/>
+      <ul>
+        <li><b>Given</b> que el administrador intenta crear un nivel con nombre repetido,</li>
+        <li><b>When</b> hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema rechaza la operación,</li>
+        <li><b>And</b> muestra el mensaje "El nivel de riesgo ya existe".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## 3.2. Impact Mapping
 
