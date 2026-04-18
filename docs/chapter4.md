@@ -178,7 +178,13 @@ La organización visual del dashboard está diseñada para guiar al usuario a tr
   - Configuración de notificaciones y canales de alerta.
   - Historial de incidencias y auditoría.
 
-  ///foto
+<div align="center">
+  <img src="images/diagramaA.drawio.png" width="500"/>
+
+  <p>
+    <i><b>Fuente</b>: Elaboración propia en Draw.io</i>
+  </p>
+</div>
 
 **Landing Page:**
 
@@ -192,7 +198,13 @@ La landing page sigue una estructura de bloques verticales con jerarquía visual
 - CTA final: Llamada a la acción con dos botones (iniciar prueba / hablar con ventas).
 - Footer: Links institucionales, contacto y créditos.
 
-///foto
+<div align="center">
+  <img src="images/diagramaB.drawio.png" width="500"/>
+
+  <p>
+    <i><b>Fuente</b>: Elaboración propia en Draw.io</i>
+  </p>
+</div>
 
 ---
 
