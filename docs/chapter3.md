@@ -2569,6 +2569,734 @@
   </tr>
 </table>
 
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US52</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de umbrales de alerta</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero definir los umbrales de alerta del sistema, para que se generen notificaciones cuando se superen ciertos valores.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite ingresar valores numéricos para los umbrales.</li>
+        <li>El sistema valida que los valores ingresados sean positivos.</li>
+        <li>El sistema permite editar umbrales existentes.</li>
+        <li>El sistema guarda correctamente la configuración.</li>
+        <li>El sistema muestra un mensaje de confirmación al guardar.</li>
+      </ol>
+      <b>Escenario 1:</b> Configuración de umbral válida<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de configuración,</li>
+        <li><b>When</b> ingresa un valor válido de umbral y hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema valida el valor ingresado,</li>
+        <li><b>And</b> guarda la configuración correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Ingreso de valor inválido<br/>
+      <ul>
+        <li><b>Given</b> que el administrador se encuentra configurando umbrales,</li>
+        <li><b>When</b> ingresa un valor negativo o inválido,</li>
+        <li><b>Then</b> el sistema rechaza el valor,</li>
+        <li><b>And</b> muestra un mensaje de error.</li>
+      </ul>
+      <b>Escenario 3:</b> Edición de umbral<br/>
+      <ul>
+        <li><b>Given</b> que existen umbrales previamente configurados,</li>
+        <li><b>When</b> el administrador modifica un umbral existente,</li>
+        <li><b>Then</b> el sistema guarda los cambios,</li>
+        <li><b>And</b> actualiza la configuración en el sistema.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US53</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de reglas de alertas</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero configurar reglas de generación de alertas, para adaptar el comportamiento del sistema a distintos escenarios operativos.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite crear reglas personalizadas de alerta.</li>
+        <li>El sistema permite definir condiciones (ej: valores, eventos, zonas).</li>
+        <li>El sistema permite editar reglas existentes.</li>
+        <li>El sistema permite eliminar reglas configuradas.</li>
+        <li>El sistema guarda correctamente las reglas definidas.</li>
+      </ol>
+      <b>Escenario 1:</b> Creación de regla de alerta<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de reglas,</li>
+        <li><b>When</b> define una nueva regla con condiciones específicas y hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema valida los datos ingresados,</li>
+        <li><b>And</b> registra la regla correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Edición de regla existente<br/>
+      <ul>
+        <li><b>Given</b> que existen reglas previamente configuradas,</li>
+        <li><b>When</b> el administrador modifica una regla,</li>
+        <li><b>Then</b> el sistema guarda los cambios,</li>
+        <li><b>And</b> actualiza la configuración.</li>
+      </ul>
+      <b>Escenario 3:</b> Eliminación de regla<br/>
+      <ul>
+        <li><b>Given</b> que el administrador selecciona una regla existente,</li>
+        <li><b>When</b> hace clic en "Eliminar",</li>
+        <li><b>Then</b> el sistema solicita confirmación,</li>
+        <li><b>And</b> elimina la regla del sistema.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US54</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Activación y desactivación de módulos del sistema</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero activar o desactivar módulos del sistema, para personalizar su funcionamiento según las necesidades de la organización.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema muestra la lista de módulos disponibles.</li>
+        <li>El sistema permite activar módulos inactivos.</li>
+        <li>El sistema permite desactivar módulos activos.</li>
+        <li>El sistema guarda correctamente el estado de cada módulo.</li>
+        <li>Los cambios se reflejan inmediatamente en el sistema.</li>
+      </ol>
+      <b>Escenario 1:</b> Activación de módulo<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de configuración,</li>
+        <li><b>When</b> selecciona un módulo inactivo y hace clic en "Activar",</li>
+        <li><b>Then</b> el sistema cambia el estado del módulo a activo,</li>
+        <li><b>And</b> habilita sus funcionalidades.</li>
+      </ul>
+      <b>Escenario 2:</b> Desactivación de módulo<br/>
+      <ul>
+        <li><b>Given</b> que existe un módulo activo,</li>
+        <li><b>When</b> el administrador hace clic en "Desactivar",</li>
+        <li><b>Then</b> el sistema cambia su estado a inactivo,</li>
+        <li><b>And</b> deshabilita sus funcionalidades.</li>
+      </ul>
+      <b>Escenario 3:</b> Persistencia de cambios<br/>
+      <ul>
+        <li><b>Given</b> que el administrador realiza cambios en los módulos,</li>
+        <li><b>When</b> guarda la configuración,</li>
+        <li><b>Then</b> el sistema almacena los cambios correctamente,</li>
+        <li><b>And</b> mantiene el estado actualizado.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US55</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de horarios operativos</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero configurar los horarios de operación del sistema, para adaptarlo a los turnos y jornadas laborales de la planta.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite definir horarios por día (inicio y fin).</li>
+        <li>El sistema valida el formato de hora ingresado.</li>
+        <li>El sistema no permite solapamiento de horarios.</li>
+        <li>El sistema permite editar horarios existentes.</li>
+        <li>El sistema guarda correctamente la configuración.</li>
+      </ol>
+      <b>Escenario 1:</b> Configuración de horario válido<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de horarios,</li>
+        <li><b>When</b> define un horario con hora de inicio y fin válidas y hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema valida los datos,</li>
+        <li><b>And</b> registra el horario correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Validación de formato incorrecto<br/>
+      <ul>
+        <li><b>Given</b> que el administrador ingresa un formato de hora inválido,</li>
+        <li><b>When</b> intenta guardar la configuración,</li>
+        <li><b>Then</b> el sistema rechaza el registro,</li>
+        <li><b>And</b> muestra un mensaje de error.</li>
+      </ul>
+      <b>Escenario 3:</b> Edición de horario<br/>
+      <ul>
+        <li><b>Given</b> que existen horarios configurados,</li>
+        <li><b>When</b> el administrador modifica un horario existente,</li>
+        <li><b>Then</b> el sistema guarda los cambios,</li>
+        <li><b>And</b> actualiza la información.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US56</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Registro de dispositivos</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero registrar dispositivos (sensores o cámaras), para integrarlos al sistema de monitoreo.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite ingresar datos del dispositivo (nombre, tipo, ubicación).</li>
+        <li>El sistema valida que los campos obligatorios estén completos.</li>
+        <li>El sistema no permite registrar dispositivos duplicados.</li>
+        <li>El sistema guarda correctamente la información del dispositivo.</li>
+        <li>El sistema muestra un mensaje de confirmación al registrar.</li>
+      </ol>
+      <b>Escenario 1:</b> Registro exitoso de dispositivo<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de dispositivos,</li>
+        <li><b>When</b> ingresa los datos del dispositivo y hace clic en "Registrar",</li>
+        <li><b>Then</b> el sistema valida la información,</li>
+        <li><b>And</b> registra el dispositivo correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Campos incompletos<br/>
+      <ul>
+        <li><b>Given</b> que el administrador deja campos obligatorios vacíos,</li>
+        <li><b>When</b> intenta registrar el dispositivo,</li>
+        <li><b>Then</b> el sistema rechaza el registro,</li>
+        <li><b>And</b> muestra un mensaje de error indicando los campos faltantes.</li>
+      </ul>
+      <b>Escenario 3:</b> Registro duplicado<br/>
+      <ul>
+        <li><b>Given</b> que ya existe un dispositivo registrado con los mismos datos,</li>
+        <li><b>When</b> el administrador intenta registrarlo nuevamente,</li>
+        <li><b>Then</b> el sistema bloquea la acción,</li>
+        <li><b>And</b> muestra el mensaje "El dispositivo ya existe".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US57</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Edición de dispositivos</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero editar la información de los dispositivos registrados, para mantener actualizados sus datos dentro del sistema.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite seleccionar un dispositivo registrado.</li>
+        <li>El sistema permite modificar los datos del dispositivo.</li>
+        <li>El sistema valida los campos obligatorios antes de guardar.</li>
+        <li>El sistema guarda correctamente los cambios realizados.</li>
+        <li>El sistema muestra un mensaje de confirmación.</li>
+      </ol>
+      <b>Escenario 1:</b> Edición exitosa de dispositivo<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede a la lista de dispositivos,</li>
+        <li><b>When</b> selecciona un dispositivo, modifica sus datos y hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema valida la información,</li>
+        <li><b>And</b> actualiza el dispositivo correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Campos inválidos<br/>
+      <ul>
+        <li><b>Given</b> que el administrador ingresa datos incompletos o inválidos,</li>
+        <li><b>When</b> intenta guardar los cambios,</li>
+        <li><b>Then</b> el sistema rechaza la operación,</li>
+        <li><b>And</b> muestra un mensaje de error.</li>
+      </ul>
+      <b>Escenario 3:</b> Cancelación de edición<br/>
+      <ul>
+        <li><b>Given</b> que el administrador está editando un dispositivo,</li>
+        <li><b>When</b> decide cancelar la operación,</li>
+        <li><b>Then</b> el sistema no guarda cambios,</li>
+        <li><b>And</b> mantiene la información original.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US58</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Eliminación de dispositivos</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero eliminar dispositivos registrados, para mantener el sistema actualizado y sin información innecesaria.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite seleccionar un dispositivo registrado.</li>
+        <li>El sistema solicita confirmación antes de eliminar.</li>
+        <li>El sistema elimina correctamente el dispositivo seleccionado.</li>
+        <li>El sistema actualiza la lista de dispositivos.</li>
+        <li>El sistema muestra un mensaje de confirmación tras la eliminación.</li>
+      </ol>
+      <b>Escenario 1:</b> Eliminación exitosa de dispositivo<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede a la lista de dispositivos,</li>
+        <li><b>When</b> selecciona un dispositivo y hace clic en "Eliminar",</li>
+        <li><b>Then</b> el sistema solicita confirmación,</li>
+        <li><b>And</b> elimina el dispositivo correctamente tras la confirmación.</li>
+      </ul>
+      <b>Escenario 2:</b> Cancelación de eliminación<br/>
+      <ul>
+        <li><b>Given</b> que el administrador inicia el proceso de eliminación,</li>
+        <li><b>When</b> decide cancelar la acción,</li>
+        <li><b>Then</b> el sistema no elimina el dispositivo,</li>
+        <li><b>And</b> mantiene la información sin cambios.</li>
+      </ul>
+      <b>Escenario 3:</b> Eliminación de dispositivo inexistente<br/>
+      <ul>
+        <li><b>Given</b> que el dispositivo ya no existe en el sistema,</li>
+        <li><b>When</b> el administrador intenta eliminarlo,</li>
+        <li><b>Then</b> el sistema muestra un mensaje de error,</li>
+        <li><b>And</b> evita la operación.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US59</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de zonas de monitoreo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero definir zonas de monitoreo dentro de la planta, para segmentar las áreas según niveles de riesgo.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite crear nuevas zonas de monitoreo.</li>
+        <li>El sistema permite asignar nombre y ubicación a cada zona.</li>
+        <li>El sistema permite editar zonas existentes.</li>
+        <li>El sistema valida que no existan zonas duplicadas.</li>
+        <li>El sistema guarda correctamente la configuración.</li>
+      </ol>
+      <b>Escenario 1:</b> Creación de zona<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de zonas,</li>
+        <li><b>When</b> registra una nueva zona con datos válidos,</li>
+        <li><b>Then</b> el sistema valida la información,</li>
+        <li><b>And</b> guarda la zona correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Edición de zona<br/>
+      <ul>
+        <li><b>Given</b> que existen zonas previamente registradas,</li>
+        <li><b>When</b> el administrador modifica una zona,</li>
+        <li><b>Then</b> el sistema guarda los cambios,</li>
+        <li><b>And</b> actualiza la información en el sistema.</li>
+      </ul>
+      <b>Escenario 3:</b> Zona duplicada<br/>
+      <ul>
+        <li><b>Given</b> que el administrador intenta registrar una zona con un nombre ya existente,</li>
+        <li><b>When</b> hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema rechaza la operación,</li>
+        <li><b>And</b> muestra el mensaje "La zona ya existe".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US60</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de parámetros del motor predictivo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero configurar los parámetros del motor predictivo, para mejorar la precisión en la detección de riesgos.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite visualizar los parámetros actuales del motor.</li>
+        <li>El sistema permite modificar valores de configuración.</li>
+        <li>El sistema valida que los valores ingresados estén dentro de rangos permitidos.</li>
+        <li>El sistema guarda correctamente los cambios realizados.</li>
+        <li>El sistema muestra un mensaje de confirmación al guardar.</li>
+      </ol>
+      <b>Escenario 1:</b> Configuración válida de parámetros<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo del motor predictivo,</li>
+        <li><b>When</b> modifica parámetros dentro de los rangos permitidos y hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema valida los valores ingresados,</li>
+        <li><b>And</b> guarda la configuración correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Valores fuera de rango<br/>
+      <ul>
+        <li><b>Given</b> que el administrador ingresa valores inválidos,</li>
+        <li><b>When</b> intenta guardar la configuración,</li>
+        <li><b>Then</b> el sistema rechaza los valores,</li>
+        <li><b>And</b> muestra un mensaje de error indicando el rango permitido.</li>
+      </ul>
+      <b>Escenario 3:</b> Visualización de parámetros<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo,</li>
+        <li><b>When</b> visualiza los parámetros configurados,</li>
+        <li><b>Then</b> el sistema muestra los valores actuales,</li>
+        <li><b>And</b> permite su edición.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US61</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de prioridad de alertas</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero definir la prioridad de las alertas, para atender primero las más críticas.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite asignar niveles de prioridad (alta, media, baja).</li>
+        <li>El sistema permite modificar prioridades existentes.</li>
+        <li>El sistema valida que cada alerta tenga una prioridad asignada.</li>
+        <li>El sistema guarda correctamente la configuración.</li>
+        <li>El sistema muestra un mensaje de confirmación.</li>
+      </ol>
+      <b>Escenario 1:</b> Asignación de prioridad<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de alertas,</li>
+        <li><b>When</b> asigna una prioridad a una alerta y guarda los cambios,</li>
+        <li><b>Then</b> el sistema registra la prioridad,</li>
+        <li><b>And</b> la aplica en el sistema.</li>
+      </ul>
+      <b>Escenario 2:</b> Modificación de prioridad<br/>
+      <ul>
+        <li><b>Given</b> que existen prioridades configuradas,</li>
+        <li><b>When</b> el administrador modifica una prioridad,</li>
+        <li><b>Then</b> el sistema guarda los cambios,</li>
+        <li><b>And</b> actualiza la información.</li>
+      </ul>
+      <b>Escenario 3:</b> Validación de prioridad obligatoria<br/>
+      <ul>
+        <li><b>Given</b> que una alerta no tiene prioridad asignada,</li>
+        <li><b>When</b> se intenta guardar la configuración,</li>
+        <li><b>Then</b> el sistema bloquea la acción,</li>
+        <li><b>And</b> solicita asignar una prioridad.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US62</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Configuración de notificaciones</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero configurar los canales de notificación del sistema, para recibir alertas de forma oportuna.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite seleccionar tipos de notificación (correo, sistema, etc.).</li>
+        <li>El sistema permite activar o desactivar cada canal de notificación.</li>
+        <li>El sistema valida que al menos un canal esté activo.</li>
+        <li>El sistema guarda correctamente la configuración.</li>
+        <li>El sistema muestra un mensaje de confirmación.</li>
+      </ol>
+      <b>Escenario 1:</b> Configuración de notificación válida<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de notificaciones,</li>
+        <li><b>When</b> selecciona un canal y guarda la configuración,</li>
+        <li><b>Then</b> el sistema registra el canal seleccionado,</li>
+        <li><b>And</b> activa las notificaciones correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin canales activos<br/>
+      <ul>
+        <li><b>Given</b> que el administrador desactiva todos los canales,</li>
+        <li><b>When</b> intenta guardar la configuración,</li>
+        <li><b>Then</b> el sistema bloquea la acción,</li>
+        <li><b>And</b> muestra un mensaje indicando que debe activar al menos uno.</li>
+      </ul>
+      <b>Escenario 3:</b> Modificación de configuración<br/>
+      <ul>
+        <li><b>Given</b> que existen configuraciones previas,</li>
+        <li><b>When</b> el administrador modifica los canales,</li>
+        <li><b>Then</b> el sistema guarda los cambios,</li>
+        <li><b>And</b> actualiza la configuración.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US63</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Guardado de configuración del sistema</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero guardar los cambios realizados en la configuración, para asegurar que los datos se mantengan persistentes en el sistema.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite guardar los cambios realizados en la configuración.</li>
+        <li>El sistema valida que no existan errores antes de guardar.</li>
+        <li>El sistema almacena la configuración de forma persistente.</li>
+        <li>El sistema muestra un mensaje de confirmación tras guardar.</li>
+        <li>El sistema mantiene los cambios al recargar la aplicación.</li>
+      </ol>
+      <b>Escenario 1:</b> Guardado exitoso<br/>
+      <ul>
+        <li><b>Given</b> que el administrador ha realizado cambios en la configuración,</li>
+        <li><b>When</b> hace clic en "Guardar",</li>
+        <li><b>Then</b> el sistema valida los datos,</li>
+        <li><b>And</b> guarda la configuración correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Error en la configuración<br/>
+      <ul>
+        <li><b>Given</b> que existen datos inválidos en la configuración,</li>
+        <li><b>When</b> el administrador intenta guardar,</li>
+        <li><b>Then</b> el sistema bloquea la acción,</li>
+        <li><b>And</b> muestra un mensaje de error.</li>
+      </ul>
+      <b>Escenario 3:</b> Persistencia de datos<br/>
+      <ul>
+        <li><b>Given</b> que la configuración ha sido guardada correctamente,</li>
+        <li><b>When</b> el sistema se recarga,</li>
+        <li><b>Then</b> los datos permanecen almacenados,</li>
+        <li><b>And</b> se muestran correctamente en la interfaz.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US64</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Restaurar configuración por defecto</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero restaurar la configuración del sistema a sus valores por defecto, para recuperar el funcionamiento original en caso de errores.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema permite restaurar la configuración a valores por defecto.</li>
+        <li>El sistema solicita confirmación antes de ejecutar la acción.</li>
+        <li>El sistema elimina configuraciones personalizadas.</li>
+        <li>El sistema aplica correctamente los valores por defecto.</li>
+        <li>El sistema muestra un mensaje de confirmación.</li>
+      </ol>
+      <b>Escenario 1:</b> Restauración exitosa<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de configuración,</li>
+        <li><b>When</b> selecciona la opción "Restaurar configuración" y confirma la acción,</li>
+        <li><b>Then</b> el sistema elimina las configuraciones personalizadas,</li>
+        <li><b>And</b> restablece los valores por defecto correctamente.</li>
+      </ul>
+      <b>Escenario 2:</b> Cancelación de restauración<br/>
+      <ul>
+        <li><b>Given</b> que el administrador inicia el proceso de restauración,</li>
+        <li><b>When</b> decide cancelar la acción,</li>
+        <li><b>Then</b> el sistema no realiza cambios,</li>
+        <li><b>And</b> mantiene la configuración actual.</li>
+      </ul>
+      <b>Escenario 3:</b> Confirmación de restauración<br/>
+      <ul>
+        <li><b>Given</b> que el administrador selecciona restaurar configuración,</li>
+        <li><b>When</b> el sistema solicita confirmación,</li>
+        <li><b>Then</b> se muestra un mensaje de advertencia,</li>
+        <li><b>And</b> requiere confirmación explícita para continuar.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US65</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Visualización de configuración del sistema</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero visualizar la configuración actual del sistema, para tener un control general de todos los parámetros definidos.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema muestra todos los parámetros configurados.</li>
+        <li>El sistema organiza la información por categorías.</li>
+        <li>El sistema permite visualizar datos en tiempo real.</li>
+        <li>El sistema refleja los cambios realizados inmediatamente.</li>
+        <li>El sistema presenta la información de forma clara y ordenada.</li>
+      </ol>
+      <b>Escenario 1:</b> Visualización general<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de configuración,</li>
+        <li><b>When</b> ingresa a la vista general,</li>
+        <li><b>Then</b> el sistema muestra todos los parámetros configurados,</li>
+        <li><b>And</b> los organiza de manera clara.</li>
+      </ul>
+      <b>Escenario 2:</b> Actualización en tiempo real<br/>
+      <ul>
+        <li><b>Given</b> que se realizan cambios en la configuración,</li>
+        <li><b>When</b> el administrador visualiza la información,</li>
+        <li><b>Then</b> el sistema refleja los cambios actualizados,</li>
+        <li><b>And</b> muestra los datos en tiempo real.</li>
+      </ul>
+      <b>Escenario 3:</b> Organización de la información<br/>
+      <ul>
+        <li><b>Given</b> que existen múltiples configuraciones en el sistema,</li>
+        <li><b>When</b> el administrador accede a la vista,</li>
+        <li><b>Then</b> el sistema organiza la información por categorías,</li>
+        <li><b>And</b> facilita su comprensión.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## 3.2. Impact Mapping
 
 
