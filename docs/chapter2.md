@@ -288,7 +288,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/Juan-Jimenez.png)
 
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -304,7 +304,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/Martina-Rojas.png)
    
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -320,7 +320,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/irma-gonzales-rodriguez.png)
   
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -384,7 +384,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/juan-jm.png)
 
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -400,7 +400,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/martina-jm.png)
    
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -416,7 +416,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/irma-jm.png)
   
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -432,7 +432,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/juan-em.png)
 
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -448,7 +448,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/martina-em.png)
    
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
@@ -464,7 +464,7 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 ![Foto](images/irma-em.png)
   
   <p>
-    <i><b>Fuente</b>: Elaboración propia. </i>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
 
