@@ -1838,6 +1838,56 @@
     </tr>
 </table>
 
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US37</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b></td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3">Generación y Exportación de Reportes de Cumplimiento</b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero generar y exportar reportes consolidados sobre el historial de incidentes y el rendimiento operativo, para documentar el cumplimiento normativo de la planta y sustentar la toma de decisiones gerenciales</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li>El sistema requiere obligatoriamente la definición de un rango de fechas válido para procesar la consulta del reporte.</li>
+                <li>El sistema permite la aplicación de filtrar por sectores en especifico</li>
+                <li>El sistema calcula e incluye automáticamente en el reporte métricas clave como el volumen total de incidentes, el nivel de riesgo promedio y la tasa de cumplimiento de los tiempos de resolución (SLA).</li>
+                <li>El sistema consolida la información y genera un archivo descargable en formatos estándar respetando los filtros aplicados.</li>
+                <li>El sistema bloquea la consulta y retorna un error de validación si la fecha de inicio ingresada es cronológicamente posterior a la fecha de fin.</li>
+            </ol>
+            <b>Escenario 1:</b> Generación exitosa de reporte global<br/>
+            <ul>
+                <li><b>Given</b> que el supervisor necesita el consolidado de incidentes de un intervalo de fechas en especifico,</li>
+                <li><b>When</b> envía la solicitud de generación ingresando el rango de fechas correspondiente sin aplicar filtros de sector,</li>
+                <li><b>Then</b> el sistema extrae la data histórica de toda la planta desde la base de datos</li>
+                <li><b>And</b> compila y retorna un archivo descargable con las métricas operativas.</li>
+            </ul>
+            <b>Escenario 2:</b> Validación de consistencia en el rango de fechas<br/>
+            <ul>
+                <li><b>Given</b> que el supervisor configura los parámetros para la extracción de un reporte,</li>
+                <li><b>When</b> ingresa una fecha de inicio que es lógicamente posterior a la fecha de fin de la consulta,</li>
+                <li><b>Then</b> el sistema rechaza la ejecución del cálculo,</li>
+                <li><b>And</b> emite un mensaje de error indicando que el rango temporal estructurado es inválido.</li>
+            </ul>
+            <b>Escenario 3:</b> Generación de reporte filtrado por sector crítico<br/>
+            <ul>
+                <li><b>Given</b> que la gerencia solicita una auditoría específica sobre el área operativa más vulnerable,</li>
+                <li><b>When</b> el supervisor ejecuta la generación del reporte aplicando el filtro secundario de un sector físico específico</li>
+                <li><b>Then</b> el sistema extrae los registros correspondientes,</li>
+                <li><b>And</b> exporta un documento que contiene exclusivamente el historial de tickets y mantenimientos asociados a dicha ubicación.</li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+
 ---
 
 <table align="center">
