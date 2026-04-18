@@ -248,7 +248,11 @@ Etiquetas principales del sistema:
 
 ---
 
-### 4.2.3. Searching Systems
+### 4.2.3. SEO Tags and Meta Tags
+
+///falta
+
+### 4.2.4. Searching Systems
 
 En RiskGuard, el sistema de búsqueda está diseñado para brindar acceso rápido y eficiente a incidencias, protocolos, zonas y reportes, evitando que el usuario pierda tiempo navegando en entornos de urgencia operativa.
 
@@ -271,7 +275,7 @@ En RiskGuard, el sistema de búsqueda está diseñado para brindar acceso rápid
 ///foto
 ---
 
-### 4.2.4. Navigation Systems
+### 4.2.5. Navigation Systems
 
 RiskGuard ha sido diseñada como una plataforma de monitoreo industrial que ofrece una experiencia de navegación fluida, técnica y profesional. La plataforma transmite control y precisión a través de un diseño oscuro y minimalista donde predominan los colores negro profundo, naranja de acción y verde operativo, evitando excesos visuales y manteniendo una identidad moderna y de alta confiabilidad. La tipografía geométrica refuerza esta estética aportando legibilidad en condiciones de alta densidad informativa.
 
