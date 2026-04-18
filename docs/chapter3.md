@@ -1788,6 +1788,56 @@
     </tr>
 </table>
 
+<table align="center">
+    <tr>
+        <td><b>User Story ID</b></td>
+        <td>US37</b></td>
+        <td><b>Epic ID</b></td>
+        <td>EP03</b></td>
+    </tr>
+    <tr>
+        <td><b>Título</b></td>
+        <td colspan="3">Programación de Mantenimiento Preventivo de Activos</b></td>
+    </tr>
+    <tr>
+        <td><b>Descripción</b></td>
+        <td colspan="3"></b>Como Supervisor de Seguridad, quiero programar tickets de mantenimiento preventivo sobre máquinas específicas independientes de su nivel de riesgo actual, para aislar temporalmente el activo y realizar revisiones periódicas que eviten fallas críticas futuras</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <b>Criterios de aceptación:</b> <br/>
+            <ol>
+                <li>El sistema permite la creación de un ticket preventivo seleccionando un activo industrial específico, independientemente de si dicho activo posee o no incidentes activos en su historial.</li>
+                <li>El sistema requiere obligatoriamente la asignación de un técnico responsable, una descripción y la definición de una ventana de tiempo futura  para procesar el registro.</li>
+                <li>El sistema actualiza automáticamente el estado del activo a "En Mantenimiento" al llegar la fecha y hora programada, notificando este cambio en el registro del sector.</li>
+                <li>El sistema bloquea la creación de alertas predictivas regulares para dicho activo mientras se encuentre bajo el estado de "En Mantenimiento".</li>
+                <li>El sistema retorna el activo a su estado operativo normal  una vez que el supervisor verifica y cierra el ticket de mantenimiento preventivo.</li>
+            </ol>
+            <b>Escenario 1:</b> Programación exitosa sobre una máquina<br/>
+            <ul>
+                <li><b>Given</b> que un activo industrial opera con un nivel de riesgo tolerable y requiere una revisión de rutina,</li>
+                <li><b>When</b> el supervisor envía el formulario de mantenimiento asignando una fecha futura y un técnico responsable,</li>
+                <li><b>Then</b> el sistema registra el ticket preventivo,</li>
+                <li><b>And</b> lo mantiene en estado de espera hasta alcanzar la fecha programada.</li>
+            </ul>
+            <b>Escenario 2:</b> Clausura temporal del activo<br/>
+            <ul>
+                <li><b>Given</b> que un ticket de mantenimiento preventivo ha alcanzado su fecha y hora programada de ejecución,</li>
+                <li><b>When</b> el sistema actualiza el estado del ticket a "En Progreso",</li>
+                <li><b>Then</b> el sistema cambia simultáneamente el estado del activo industrial a "En Mantenimiento",</li>
+                <li><b>And</b> aísla el equipo temporalmente para evitar que el motor predictivo genere alertas de inoperatividad sobre esa máquina.</li>
+            </ul>
+            <b>Escenario 3:</b> Reactivación tras el cierre del mantenimiento<br/>
+            <ul>
+                <li><b>Given</b> que un técnico ha culminado las labores de rutina sobre una máquina clausurada temporalmente,</li>
+                <li><b>When</b> el supervisor registra la verificación y el cierre definitivo del ticket preventivo,</li>
+                <li><b>Then</b> el sistema actualiza el estado del activo devolviéndolo a operativo,</li>
+                <li><b>And</b> rehabilita la generación de alertas sobre el equipo.</li>
+            </ul>
+        </b></td>
+    </tr>
+</table>
+
 ---
 
 <table align="center">
