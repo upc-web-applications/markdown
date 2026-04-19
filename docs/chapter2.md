@@ -272,7 +272,76 @@ La Sra. Ysabel Zavala, Gerente de Operaciones en una planta industrial en Perú,
 
 ### 2.2.3. Análisis de entrevistas
 
+A partir de las entrevistas realizadas a los tres segmentos objetivo se  identificaron los siguientes hallazgos y patrones comunes por segmento:
 
+
+**Segmento 1: Operarios de planta**
+
+- El 100% de los entrevistados confirmó haber presenciado casi-accidentes en su área de trabajo que no fueron reportados formalmente, principalmente 
+  por la complejidad y el tiempo que demanda el proceso actual
+
+- El proceso de reporte vigente en ambas plantas es manual: implica buscar al supervisor, solicitar un formato físico, llenarlo a mano y entregarlo, 
+  lo que puede tomar días si el supervisor no está disponible. Ninguno de los entrevistados lo considera práctico
+
+- Ambos operarios reconocieron dejar de reportar condiciones inseguras de manera frecuente  entre una y dos veces por semana  optando por avisar verbalmente a sus compañeros y continuar trabajando para no interrumpir 
+  la producción
+
+- Los dos entrevistados mencionaron haber reportado incidentes en el pasado sin recibir ninguna retroalimentación ni confirmación de que el reporte fue atendido, lo que generó desmotivación y la percepción de que reportar 
+  no tiene impacto real en la seguridad
+
+- Ambos identifican condiciones inseguras con alta frecuencia en sus zonas de trabajo — cables sueltos, pisos resbalosos, sensores fallidos, palés 
+  mal apilados — que nadie más reporta. Con el tiempo, se normalizan estas condiciones peligrosas
+
+- Los dos entrevistados mostraron alta disposición a usar RiskGuard, condicionando su confianza a dos factores concretos: que el sistema confirme la recepción del reporte con una notificación y que los problemas 
+  reportados sean atendidos en un plazo visible
+
+- El uso del celular durante la jornada es habitual en ambos casos. Coincidieron en que usarían la app si el proceso fuera rápido, 
+  de pocos pasos y no interrumpiera su ritmo de trabajo
+
+**Segmento 2: Supervisores de seguridad y mantenimiento**
+
+- Ambos supervisores gestionan la información de incidentes de forma completamente manual: uno mediante libreta y Excel, y el otro mediante 
+  fichas físicas enviadas al área de seguridad. Ninguno cuenta con herramientas digitales especializadas para el análisis de datos de 
+  seguridad
+
+- Los dos entrevistados identificaron el subregistro de incidentes por parte de los operarios como un problema frecuente. Las causas atribuidas fueron la confianza excesiva de los operarios con más experiencia, 
+  la falta de cultura de seguridad y la percepción de que los incidentes menores no merecen ser reportados
+
+- Ambos supervisores admitieron haber detectado señales previas de accidentes sin contar con herramientas para actuar a tiempo, validando directamente la necesidad de un sistema de alertas predictivas 
+  como el que propone RiskGuard
+
+- No existe en ninguno de los dos casos una herramienta que permita identificar zonas o turnos con mayor incidencia de riesgo de forma automatizada. La identificación de patrones depende exclusivamente 
+  del criterio y la experiencia del supervisor
+
+- El tiempo de reacción ante un incidente varía entre 1 y 2 minutos en el mejor caso, pero esto asume que el supervisor está físicamente presente o cerca. En ausencia del supervisor, el tiempo se extiende 
+  de manera indeterminada
+
+- Ambos mostraron alto interés en un dashboard con patrones de riesgo y alertas automáticas, destacando que este tipo de herramienta mejoraría significativamente su capacidad de prevención y les 
+  permitiría actuar antes de que ocurran accidentes. La accesibilidad económica fue mencionada como condición importante para la adopción, 
+  especialmente en empresas pequeñas
+
+
+
+**Segmento 3: Gerentes y administradores**
+
+- Ambos gerentes reconocieron que su sistema actual de gestión de seguridad es reactivo: miden el desempeño en base a indicadores rezagados como días sin accidentes, índices de frecuencia y severidad, 
+  en lugar de indicadores predictivos que permitan anticipar riesgos
+
+- Los dos entrevistados señalaron que la calidad y oportunidad de la información de seguridad que reciben es deficiente. Los reportes llegan con retraso, frecuentemente están incompletos o son poco 
+  confiables, y en algunos casos los supervisores ocultan incidentes para no afectar sus indicadores o bonos de desempeño
+
+- Ambos gerentes han enfrentado consecuencias legales y económicas directas por deficiencias en el registro y monitoreo de riesgos: 
+  inspecciones del SUNAFIL, sanciones, pérdidas de facturación y postergación de inversiones estratégicas. Uno de los casos reportó una pérdida aproximada de 85,000 soles en facturación 
+  a raíz de una denuncia ante el SUNAFIL.
+
+- Ninguno de los dos cuenta actualmente con indicadores predictivos de seguridad. La toma de decisiones preventivas se ve limitada  por la falta de datos en tiempo real y la ausencia de herramientas 
+  de análisis integradas
+
+- Los dos entrevistados coincidieron en los elementos que necesitarían en un dashboard ejecutivo: mapa de calor de riesgos por zona, seguimiento del cumplimiento del plan anual de seguridad, alertas 
+  de desviación de protocolos en tiempo real y proyecciones de  incidentes
+
+- Ambos gerentes mostraron alta valoración hacia una solución que exporte automáticamente los formatos de auditoría exigidos por la Ley N° 29783 y muestre indicadores predictivos de riesgo, considerándola de alto valor estratégico para mejorar la continuidad 
+  del negocio y reducir la exposición a sanciones legales
 
 ## 2.3. Needfinding
 
