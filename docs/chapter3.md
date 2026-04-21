@@ -1487,7 +1487,7 @@
                 <li><b>When</b> ingresa alguna credencial de manera incorrecta</li>
                 <li><b>And</b> hace clic en el botón "Ingresar",</li>
                 <li><b>Then</b> el sistema deniega el acceso a la plataforma,</li>
-                <li><b>And</b> muestra una mensaje indicando "Correo o contraseña incorrectos", manteniendo los campos limpios para un nuevo intento.</li>
+                <li><b>And</b> muestra una mensaje indicando "Correo o contraseña incorrectos, intentelo nuevamente", manteniendo los campos limpios para un nuevo intento.</li>
             </ul>
             <b>Escenario 3:</b> Bloqueo preventivo por múltiples intentos fallidos consecutivos<br/>
             <ul>
