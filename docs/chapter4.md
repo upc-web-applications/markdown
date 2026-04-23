@@ -379,7 +379,7 @@ El sistema RiskGuard establece relaciones estratégicas con actores y sistemas e
 
 El diagrama de contexto permite identificar de manera clara los límites del sistema RiskGuard, los actores involucrados y las dependencias externas críticas. Este nivel de representación facilita la comprensión integral del sistema antes de profundizar en su arquitectura interna, la cual será desarrollada en los siguientes niveles del modelo C4.
 
-
+---
 
 ### 4.6.3. Software Architecture Container Diagrams
 El Container Level Diagram del modelo C4 describe la arquitectura interna de un sistema identificando sus principales contenedores, que representan aplicaciones o servicios independientes con responsabilidades específicas.  Este diagrama facilita la comprensión de la organización, distribución de funciones e interacción de componentes del sistema.  En RiskGuard, ilustra la estructura de la plataforma para el monitoreo, análisis y mitigación de riesgos industriales en tiempo real, asegurando una adecuada separación de responsabilidades y una arquitectura escalable.
@@ -463,7 +463,50 @@ El diagrama de contenedores de RiskGuard presenta una arquitectura modular y esc
 
 
 ### 4.6.4. Software Architecture Components Diagrams
+En esta sección se presentan los diagramas de componentes del sistema RiskGuard, los cuales muestran la descomposición interna de cada contenedor, identificando sus principales bloques funcionales, responsabilidades y tecnologías. Esto permite entender cómo se implementa la lógica del sistema y cómo interactúan sus partes internas.
 
+<img width="5610" height="4458" alt="ComponentDiagramFinal-dark copia 2" src="https://github.com/user-attachments/assets/e3209216-6f29-45c7-9d70-4209d1ddfffa" />
+
+**Backend API**
+El Backend API (Node.js + Express) centraliza la lógica del sistema.
+Componentes principales:
+* API Controllers: gestionan las solicitudes del frontend.
+* Auth Component (JWT): controla autenticación y permisos.
+* Incident Service: gestiona incidencias.
+* Monitoring Service: monitorea zonas.
+* Risk Service: analiza riesgos.
+* Mitigation Service: gestiona acciones correctivas.
+* Reporting Service: genera reportes y KPIs.
+* Notification Service: envía alertas.
+* Repository Layer (MongoDB): maneja la persistencia de datos.
+Interacción: Los controladores reciben solicitudes, los servicios procesan la lógica y el repositorio gestiona el acceso a la base de datos.
+
+**Web Application**
+La Web App (React) permite el monitoreo y gestión del sistema.
+Componentes:
+* UI Components: estructura visual.
+* Dashboard: muestra métricas y estado general.
+* Alert Module: gestiona alertas.
+* Reports Module: consulta reportes.
+* API Client: comunica con el backend.
+
+**Mobile Application**
+La Mobile App (Flutter) permite el registro de incidencias en campo.
+Componentes:
+* Mobile UI: interfaz principal.
+* Form Handler: registro de incidencias.
+* Media Component: captura de evidencia.
+* API Client: comunicación con backend.
+
+**Motor de Riesgo**
+
+El Motor de Riesgo (Python) realiza el análisis avanzado.
+Componentes:
+* Risk Calculator: calcula niveles de riesgo.
+* IPERC Processor: evalúa riesgos.
+* Pattern Detection: detecta patrones.
+
+Los diagramas de componentes muestran la estructura interna del sistema, permitiendo entender cómo se distribuyen las responsabilidades y cómo interactúan los módulos para garantizar el funcionamiento de RiskGuard.
 
 
 ## 4.7. Software Object-Oriented Design
