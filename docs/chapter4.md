@@ -357,10 +357,108 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 
 ### 4.6.2. Software Architecture Context Diagram
+El Context Level Diagram del modelo C4 permite visualizar el sistema como una caja negra dentro de su entorno, mostrando los actores que interactúan con él y los sistemas externos con los que se integra. Este nivel de abstracción es fundamental para comprender el alcance del sistema, sus límites y las relaciones principales sin entrar en detalles técnicos internos.
+
+En este caso, se presenta el sistema RiskGuard, una plataforma inteligente orientada a la prevención, monitoreo y mitigación de riesgos industriales en plantas productivas. El diagrama muestra cómo diferentes tipos de usuarios interactúan con el sistema, así como las integraciones necesarias para su correcto funcionamiento.
+
+<img width="2378" height="2454" alt="Operarte" src="https://github.com/user-attachments/assets/b30a4f6e-94c9-42a5-9ae8-f8a6107dc074" />
+￼
+El sistema RiskGuard constituye el núcleo de la solución, representado centralmente en el diagrama.  A su alrededor se encuentran los diversos actores y sistemas externos con los que interactúa, estableciendo una red de relaciones que optimizan su funcionamiento.
+
+**Usuarios del Sistema**
+
+El sistema RiskGuard se adapta a las necesidades de cinco perfiles de usuario distintos, cada uno con funciones específicas dentro del flujo de trabajo. El Operario detecta y reporta incidencias, registrando condiciones inseguras y adjuntando evidencias fotográficas o de video. El Supervisor monitorea las zonas de trabajo, analiza alertas y gestiona acciones correctivas. RRHH/Gerencia utiliza el sistema para consultar KPIs, generar reportes ejecutivos y verificar el cumplimiento normativo. El Administrador gestiona usuarios, roles y permisos, asegurando el control de acceso y la confidencialidad. Finalmente, el Visitante accede únicamente a información pública, como la presentada en la landing page, sin interacción con datos internos.
+
+**Sistemas Externos**
+
+RiskGuard se integra con diversos sistemas externos para optimizar sus capacidades y funcionalidades.  Los sensores IoT proporcionan datos en tiempo real sobre las condiciones operativas de la planta, permitiendo un monitoreo continuo y la detección temprana de anomalías.  Un sistema de IA externo procesa estos datos mediante algoritmos de inteligencia artificial para la detección de patrones, la predicción de riesgos y el cálculo de indicadores clave como el Índice de Potencial de Riesgo de Accidentes (IPERC).  Además, un servicio de notificaciones garantiza la rápida difusión de alertas críticas a través de SMS, correo electrónico y notificaciones push.  Finalmente, el sistema se integra con SUNAFIL para facilitar la supervisión y el cumplimiento de las regulaciones laborales mediante el envío de reportes de cumplimiento normativo y auditorías.
+
+**Relaciones Principales**
+
+El sistema RiskGuard establece relaciones estratégicas con actores y sistemas externos para optimizar la gestión de riesgos y la seguridad operativa.  Los usuarios interactúan directamente con RiskGuard para la captura de información, monitoreo de riesgos y toma de decisiones informadas.  RiskGuard procesa datos en tiempo real de sensores IoT para generar alertas, que son enviadas a los usuarios mediante el servicio de notificaciones.  Además, el sistema envía información al sistema de inteligencia artificial para obtener análisis predictivos y recomendaciones estratégicas.  Finalmente, RiskGuard exporta reportes a sistemas regulatorios para el cumplimiento de normativas legales.
+
+El diagrama de contexto permite identificar de manera clara los límites del sistema RiskGuard, los actores involucrados y las dependencias externas críticas. Este nivel de representación facilita la comprensión integral del sistema antes de profundizar en su arquitectura interna, la cual será desarrollada en los siguientes niveles del modelo C4.
 
 
 
 ### 4.6.3. Software Architecture Container Diagrams
+El Container Level Diagram del modelo C4 describe la arquitectura interna de un sistema identificando sus principales contenedores, que representan aplicaciones o servicios independientes con responsabilidades específicas.  Este diagrama facilita la comprensión de la organización, distribución de funciones e interacción de componentes del sistema.  En RiskGuard, ilustra la estructura de la plataforma para el monitoreo, análisis y mitigación de riesgos industriales en tiempo real, asegurando una adecuada separación de responsabilidades y una arquitectura escalable.
+
+<img width="7849" height="3392" alt="ContainerDiagram-dark copia" src="https://github.com/user-attachments/assets/90a55378-ff18-452c-ae89-83b796f87f53" />
+
+
+**Descripción del Diagrama de Contenedores**
+
+El sistema RiskGuard se organiza en capas para separar responsabilidades y facilitar la escalabilidad.
+
+**Tipos de Usuarios**
+
+* Operario: Reporta incidencias y registra condiciones inseguras.
+* Supervisor: Monitorea zonas y gestiona acciones correctivas.
+* RRHH / Gerencia: Consulta KPIs y reportes ejecutivos.
+* Administrador: Gestiona usuarios y permisos.
+* Visitante: Accede a información pública.
+
+**Capa de Presentación (Frontend)**
+
+* Web Application (React): Dashboard interactivo para monitoreo y alertas.
+* Mobile Application (Flutter): Registro de incidencias y alertas en tiempo real.
+* Comunicación: Servicios REST con el backend.
+
+**Capa de Aplicación (Backend)**
+
+* Backend API (Node.js): Núcleo del sistema, gestiona la lógica de negocio.
+
+**Capa de Servicios Funcionales**
+
+* Gestión de Incidentes: Registro de incidencias y evidencias.
+* Monitoreo de Zonas: Visualización del estado de las áreas.
+* Motor de Riesgo (IPERC): Análisis de riesgo (probabilidad, severidad, criticidad).
+* Gestión de Mitigación: Acciones correctivas y control de riesgos.
+* Reportes y KPIs: Indicadores y reportes para la toma de decisiones.
+* Servicio de Notificaciones: Envío de alertas.
+
+**Capa de Datos**
+
+* Base de Datos (MongoDB): Almacenamiento y consulta eficiente de información.
+
+**Sistemas Externos**
+
+* Sensores IoT: Datos en tiempo real sobre condiciones operativas.
+* Sistema de IA externo: Análisis predictivo y detección de patrones.
+* Sistema regulatorio (SUNAFIL): Recibe reportes de cumplimiento normativo.
+
+**Comunicación entre Contenedores**
+
+* Usuarios interactúan con frontend.
+* Frontend envía solicitudes al backend API.
+* Backend distribuye solicitudes a servicios funcionales.
+* Servicios acceden a la base de datos.
+* Motor de Riesgo se integra con IA.
+* Sensores IoT envían datos al backend.
+* Servicio de notificaciones comunica alertas.
+* Sistema exporta información a plataformas regulatorias.
+
+**Decisiones de Arquitectura y Tecnología**
+
+* Arquitectura modular basada en contenedores: Separación de responsabilidades y escalabilidad.
+* Node.js: Manejo eficiente de solicitudes concurrentes.
+* React y Flutter: Interfaces modernas y adaptadas a dispositivos.
+* MongoDB: Flexibilidad en manejo de datos.
+* Integración con sistemas externos: Análisis predictivo y monitoreo en tiempo real.
+
+**Elementos de alto nivel de la arquitectura**
+
+La arquitectura de RiskGuard se compone de los siguientes elementos principales:
+
+* Capa de Presentación (Frontend):  Incluye la aplicación web y móvil para la interacción directa con los usuarios.
+* Backend API:  Núcleo del sistema, centraliza la lógica de negocio y coordina la comunicación entre componentes.
+* Servicios Funcionales:  Módulos especializados que implementan funcionalidades clave como gestión de incidencias, monitoreo, análisis de riesgo, mitigación, reportes y notificaciones.
+* Base de Datos (MongoDB):  Persiste la información del sistema, incluyendo usuarios, incidencias, reportes y configuraciones.
+* Sistemas Externos:  Componentes externos como sensores IoT, IA y plataformas regulatorias que complementan el sistema.
+
+
+El diagrama de contenedores de RiskGuard presenta una arquitectura modular y escalable, con componentes específicos para cada función. La distribución de responsabilidades y la integración con sistemas externos garantizan un funcionamiento eficiente en entornos industriales.
 
 
 
