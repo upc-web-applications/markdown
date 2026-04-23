@@ -543,3 +543,47 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 
 ## 2.5. Ubiquitous Language
+
+En esta sección se define el lenguaje ubicuo del dominio de negocio de RiskGuard, con el fin de asegurar una comunicación clara y sin ambigüedades entre todos los stakeholders.
+
+**Incident (Incidente):** Evento no planificado que puede causar daño a una persona, equipo o proceso dentro de la planta.
+
+**Near Miss (Casi-accidente):** Situación riesgosa que no causó daño, pero tenía el potencial de hacerlo.
+
+**Unsafe Condition (Condición insegura):** Estado del entorno laboral que incrementa la probabilidad de un accidente.
+
+**Risk (Riesgo):** Probabilidad de ocurrencia de un evento peligroso combinada con su impacto.
+
+**Risk Level (Nivel de riesgo):** Clasificación del riesgo según su gravedad (bajo, medio, alto).
+
+**Alert (Alerta):** Notificación generada por el sistema ante un riesgo o incidente.
+
+**Critical Alert (Alerta crítica):** Alerta de alta prioridad que requiere atención inmediata.
+
+**Report (Reporte):** Registro formal de un incidente o condición insegura en el sistema.
+
+**Ticket (Ticket):** Identificador único asignado a cada reporte para su seguimiento.
+
+**Sector (Sector):** Área específica de la planta donde ocurre un incidente.
+
+**Asset (Activo):** Máquina o equipo relacionado con un incidente o riesgo.
+
+**Supervisor (Supervisor):** Usuario encargado de monitorear riesgos y gestionar alertas.
+
+**Operator (Operario):** Usuario que reporta incidentes o condiciones inseguras.
+
+**Dashboard (Panel de control):** Interfaz visual que muestra métricas y alertas en tiempo real.
+
+**Heat Map (Mapa de calor):** Representación visual de zonas de riesgo mediante colores.
+
+**Predictive Analysis (Análisis predictivo):** Uso de datos para anticipar riesgos futuros.
+
+**Safety Compliance (Cumplimiento de seguridad):** Nivel de cumplimiento de normas de seguridad laboral.
+
+**Mitigation (Mitigación):** Acción para reducir o eliminar un riesgo.
+
+**Notification (Notificación):** Mensaje que informa cambios en reportes o alertas.
+
+**Status (Estado):** Situación actual de un reporte (pendiente, en progreso, resuelto).
+
+**Evidence (Evidencia):** Información adicional como imágenes que respaldan un reporte.
