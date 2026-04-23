@@ -219,8 +219,6 @@ El sistema de etiquetado está diseñado para ser inmediatamente comprensible en
 - **Etiquetas de rol:** Las vistas y módulos accesibles se etiquetan claramente según el rol del usuario (Operario, Supervisor, Gerencia) para evitar confusión en interfaces compartidas.
 - **Coherencia visual:** Se mantiene un estilo uniforme de etiquetado en el menú lateral, las cards de alerta y la barra inferior de navegación móvil, reforzando una experiencia operativa consistente.
 
-///foto
-
 Etiquetas principales del sistema:
 
 - _Barra de navegación:_ Panel, Alertas, Informes, Zonas, Configuración.
@@ -228,13 +226,37 @@ Etiquetas principales del sistema:
 - _Secciones del dashboard:_ "Alertas activas", "Cobertura de zona", "Tendencias de riesgo", "Protocolos pendientes".
 - _Tags de features en landing:_ "NUEVO", "IA", "CRÍTICO", "MULTI-CANAL" en uppercase con color de acento según categoría.
 
-///foto
-
----
-
 ### 4.2.3. SEO Tags and Meta Tags
 
-///falta
+En esta sección se definen los SEO Tags y Meta Tags implementados en RiskGuard, tanto en la Landing Page como en la Web Application. Estas etiquetas permiten mejorar la indexación en motores de búsqueda, optimizar la visibilidad del sitio y comunicar el contenido de cada página.
+
+La Landing Page utiliza la directiva `index, follow` para permitir su posicionamiento en buscadores, mientras que la Web Application emplea `noindex, nofollow` para proteger información privada. En ambos casos se incluyen etiquetas esenciales como Title, Description, Keywords y Author.
+
+**Implementación de Meta Tags**
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FF5B00">
+
+<title>RiskGuard — Plataforma de Seguridad Industrial Predictiva para Empresas del Perú</title>
+
+<meta name="description" content="Plataforma que registra incidentes, analiza riesgos y genera alertas predictivas para prevenir accidentes laborales.">
+<meta name="keywords" content="seguridad industrial Perú, riesgos laborales, alertas predictivas, SST digital">
+<meta name="author" content="RiskGuard Solutions — UPC">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://ris-guard-lading.vercel.app/">
+
+<meta property="og:title" content="RiskGuard — Seguridad Industrial Predictiva">
+<meta property="og:description" content="Previene riesgos antes de que ocurran.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ris-guard-lading.vercel.app/">
+<meta property="og:image" content="https://ris-guard-lading.vercel.app/preview.png"> 
+```
+
+Estas etiquetas permiten que la página sea correctamente indexada, mejore su posicionamiento en motores de búsqueda y tenga una presentación adecuada al compartirse en redes sociales.
+
+Por otro lado, en la Web Application las páginas son de acceso restringido, por lo que utilizan la directiva noindex, nofollow para evitar la indexación de contenido privado o sensible. Sin embargo, mantienen los elementos básicos como Title, Description, Keywords y Author para asegurar coherencia en la estructura del sistema.
 
 ### 4.2.4. Searching Systems
 
@@ -256,9 +278,6 @@ En RiskGuard, el sistema de búsqueda está diseñado para brindar acceso rápid
 - **Menú hamburguesa:** Acceso a módulos secundarios: Ver perfil, Ajustes de notificaciones, Preferencias de zona asignada, Historial personal de reportes.
 - **Filtros en listado de alertas:** Selector rápido por nivel de riesgo y turno actual, optimizado para uso con guantes industriales (áreas táctiles mínimas de 48 px).
 
-///foto
----
-
 ### 4.2.5. Navigation Systems
 
 RiskGuard ha sido diseñada como una plataforma de monitoreo industrial que ofrece una experiencia de navegación fluida, técnica y profesional. La plataforma transmite control y precisión a través de un diseño oscuro y minimalista donde predominan los colores negro profundo, naranja de acción y verde operativo, evitando excesos visuales y manteniendo una identidad moderna y de alta confiabilidad. La tipografía geométrica refuerza esta estética aportando legibilidad en condiciones de alta densidad informativa.
@@ -277,9 +296,6 @@ En la versión web, el navbar se ubica en la parte superior de forma fija, aline
 - _Estadísticas:_ Datos de impacto y métricas de adopción en la industria peruana.
 - _Contáctanos (CTA):_ Botón naranja destacado que lleva al formulario de contacto o inicio de prueba gratuita.
 
-
-///foto
-
 **Mobile Landing:**
 
 La versión móvil de la landing condensa el navbar en un menú hamburguesa ubicado en la esquina superior derecha. Al desplegarse, muestra los mismos links principales en disposición vertical con separación generosa y área táctil amplia.
@@ -296,8 +312,6 @@ La app móvil de RiskGuard prioriza la eficiencia y la claridad visual en entorn
 
 El menú hamburguesa en la esquina superior derecha agrupa acciones secundarias: ver perfil, configuración de notificaciones y preferencias de zona.
 
-///foto
-
 **Navegación y Acceso a Información:**
 
 RiskGuard permite a operarios y supervisores monitorear el estado de seguridad industrial con el mínimo número de pasos posibles. Desde el panel principal, el usuario puede visualizar alertas activas, acceder a protocolos aplicables y generar reportes sin salir del flujo principal. La navegación entre secciones usa transiciones inmediatas sin animaciones innecesarias que puedan ralentizar la respuesta en contextos de urgencia.
@@ -313,10 +327,6 @@ La plataforma opera con datos actualizados en tiempo real, asegurando que los pa
 **Experiencia General:**
 
 En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad operativa, accesibilidad en condiciones industriales y estética técnica profesional, asegurando que operarios, supervisores y gerencia puedan actuar con rapidez y precisión. Su diseño, tanto en web como en aplicación móvil, consolida una experiencia confiable, moderna y eficiente que refuerza el propósito central de la plataforma: predecir y prevenir riesgos industriales antes de que ocurran.
-
-///foto
-
-
 
 ## 4.3. Landing Page UI Design
 
