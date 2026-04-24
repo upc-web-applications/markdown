@@ -362,9 +362,114 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 ## 4.6. Domain-Driven Software Architecture
 
-### 4.6.1. Design-Level EventStorming
 
+### 4.6.1. Design-Level Event Storming
 
+A continuación, se presentan los distintos Bounded Contexts identificados a partir del Event Storming de RiskGuard, junto con sus respectivos diagramas y BC Canvas.
+
+#### Generación y Autenticación de Cuenta BC
+<p align="center">
+  <img src="images/ev/ev-57.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/bc/1_bc.png" width="500"/>
+</p>
+
+Este Bounded Context gestiona la creación de cuentas de usuario y el control de acceso a la plataforma. El flujo contempla el registro de nuevos usuarios mediante correo electrónico vinculado a través del servicio de email, así como métodos de autenticación alternativos vía GoogleOAuth. Las reglas de negocio establecen que se permite autenticación con proveedores externos, que el sistema debe ofrecer recuperación de contraseña y que las sesiones deben gestionarse de forma segura mediante tokens temporales. Como salida, se actualizan los datos de usuario en MySQL, se notifica al BC de Perfil y Configuración, y se muestra el panel principal al usuario autenticado en el frontend.
+
+---
+
+#### Sede / Área y Activo Industrial BC
+
+<p align="center">
+  <img src="images/ev/ev-58.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/bc/2_bc.png" width="500"/>
+</p>
+
+Este Bounded Context gestiona la configuración de las sedes, sectores físicos y activos industriales (máquinas y equipos) registrados en la plataforma. El flujo incluye la activación e inactivación de sectores, el traslado de activos entre zonas y la preservación del historial mediante baja lógica. Es un contexto de soporte esencial para los módulos de inspección y mitigación, ya que provee la lista de sectores activos y los activos disponibles por sector.
+
+---
+
+#### Inspección / Condición Insegura BC
+<p align="center">
+  <img src="images/ev/ev-59.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/bc/3_bc.png" width="500"/>
+</p>
+
+Este Bounded Context gestiona el registro de incidentes, casi-accidentes y condiciones inseguras reportados principalmente por operarios desde dispositivos móviles. El flujo comienza con el envío de un nuevo reporte (con foto adjunta como evidencia), que genera automáticamente un ticket con número único. Se aplican reglas de negocio orientadas a la agilidad: máximo 4 campos obligatorios, registro automático de fecha, hora y usuario, y almacenamiento local si falla la conexión. Al concluir, se notifica al operario y se envía el ticket al BC de Evaluación de Riesgo.
+
+---
+
+#### Evaluación de Riesgo (IPERC) BC
+<p align="center">
+  <img src="images/ev/ev-60.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/bc/4_bc.png" width="500"/>
+</p>
+
+Este Bounded Context aplica la metodología IPERC (Identificación de Peligros y Evaluación de Riesgos y Controles) sobre cada ticket recibido desde el BC de Inspección. El motor predictivo calcula automáticamente el nivel de criticidad (Bajo, Medio, Alto o Crítico) a partir de índices de probabilidad y severidad. Cuando el mismo tipo de riesgo se detecta más de 3 veces en 30 días, se identifica un patrón recurrente y se genera una alerta de patrón. Un nivel crítico activa una notificación inmediata. Como salida, se actualizan el mapa de calor y se notifica al BC de Mitigación y al BC Dashboard.
+
+---
+
+#### Mitigación BC
+<p align="center">
+  <img src="images/ev/61.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/bc/5_bc.png" width="500"/>
+</p>
+
+Este Bounded Context gestiona la asignación y seguimiento de acciones correctivas sobre los tickets clasificados por el motor de riesgo. El supervisor asigna un técnico de mantenimiento y define una medida de control; el SLA se determina automáticamente según el nivel de criticidad del ticket. Si el ticket supera su tiempo máximo sin cerrarse, se genera un escalamiento automático hacia roles gerenciales. El sistema puede apoyarse en un sistema de IA externo para generar instrucciones de mitigación complejas. Como salida, se producen el ticket cerrado, la alerta escalada y la actualización del área segura hacia el BC Dashboard y el BC Reportes.
+
+---
+
+#### Monitoreo / Dashboard BC
+
+<p align="center">
+  <img src="images/ev/ev-62.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/bc/6_bc.png" width="500"/>
+</p>
+
+Este Bounded Context centraliza la visualización en tiempo real del estado de seguridad de la planta. Recibe alertas de patrón desde el BC de Evaluación de Riesgo y tickets cerrados desde el BC de Mitigación, y los consolida en un dashboard con mapa de calor por zona, alertas activas ordenadas por urgencia y resumen diario de KPIs. Un activo en mantenimiento preventivo activo no genera alertas en este contexto. Como salida, el dashboard renderizado se envía al frontend, y puede generar tickets preventivos hacia el BC de Mitigación.
+
+---
+
+#### Reportes / Cumplimiento BC
+
+<p align="center">
+  <img src="images/ev/ev-63.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="images/bc/7_bc.png" width="500"/>
+</p>
+
+Este Bounded Context genera los reportes gerenciales, indicadores de cumplimiento del plan anual de SST y documentos de auditoría compatibles con los formatos referenciales de la Ley N° 29783 para inspecciones de SUNAFIL. Recibe alertas escaladas del BC de Mitigación, historial de incidentes de MySQL y gráficas de tendencia generadas con Google Charts. Un sistema de IA externo apoya el cálculo de KPIs predictivos. Como salida produce el reporte gerencial, el KPI calculado y el reporte archivado, accesibles desde el frontend y el BC Reportes.
+
+---
+
+#### Unión de Bounded Contexts
+
+<p align="center">
+  <img src="images/bc/todo_bc.png" width="700"/>
+</p>
+
+Este diagrama muestra la integración y comunicación entre todos los Bounded Contexts de RiskGuard, evidenciando el flujo completo desde el registro de un incidente por parte de un operario hasta la generación de reportes ejecutivos para gerencia, pasando por la evaluación de riesgo automática, la mitigación supervisada y el monitoreo en tiempo real.
+
+---
 
 ### 4.6.2. Software Architecture Context Diagram
 El Context Level Diagram del modelo C4 permite visualizar el sistema como una caja negra dentro de su entorno, mostrando los actores que interactúan con él y los sistemas externos con los que se integra. Este nivel de abstracción es fundamental para comprender el alcance del sistema, sus límites y las relaciones principales sin entrar en detalles técnicos internos.
