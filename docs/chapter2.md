@@ -558,7 +558,35 @@ En esta etapa inicial, el equipo realizó una lluvia de ideas identificando los 
 
 No se aplicaron filtros ni ordenamiento en esta fase, con el objetivo de maximizar la cantidad de eventos y capturar el conocimiento del equipo respecto a la gestión de riesgos laborales.
 
-[fotos]
+ <div align="center">
+   
+![Foto](images/ev/ev-1.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-2.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-3.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-4.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-5.png)
+
+</div>
 
 ---
 
