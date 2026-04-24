@@ -770,7 +770,48 @@ Se identificaron *policies* que automatizan el comportamiento del sistema, conec
 
 Por ejemplo, cuando ocurre el evento “Riesgo alto detectado”, se activa automáticamente el comando “Generar alerta crítica”, modelando así la lógica de automatización del sistema.
 
-[fotos]
+<div align="center">
+   
+![Foto](images/ev/ev-29.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-30.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-31.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-32.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-33.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-34.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-35.png)
+
+</div>
+
 
 ---
 
@@ -780,7 +821,48 @@ Se definieron los *read models* que los actores utilizan para tomar decisiones d
 
 Entre ellos destacan dashboards de seguridad, mapas de calor de riesgos y reportes de incidentes, los cuales permiten evaluar la situación en tiempo real.
 
-[fotos]
+<div align="center">
+   
+![Foto](images/ev/ev-36.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-37.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-38.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-39.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-40.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-41.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-42.png)
+
+</div>
+
 
 ---
 
@@ -790,7 +872,48 @@ Se identificaron sistemas externos que interactúan con la plataforma, como sist
 
 Estos sistemas pueden enviar información o recibir notificaciones del sistema.
 
-[fotos]
+<div align="center">
+   
+![Foto](images/ev/ev-43.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-44.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-45.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-46.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-47.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-48.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-49.png)
+
+</div>
+
 
 ---
 
@@ -800,7 +923,48 @@ Se agruparon los comandos y eventos relacionados en *aggregates*, organizando el
 
 Se identificaron agregados como “Gestión de Incidentes”, “Gestión de Riesgos” y “Gestión de Alertas”.
 
-[fotos]
+<div align="center">
+   
+![Foto](images/ev/ev-50.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-51.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-52.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-53.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-54.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-55.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-56.png)
+
+</div>
+
 
 ---
 
@@ -810,7 +974,48 @@ Finalmente, se definieron posibles *bounded contexts* agrupando agregados relaci
 
 Se identificaron contextos como “Registro de Incidentes”, “Análisis de Riesgos” y “Gestión de Seguridad”, los cuales representan divisiones claras dentro del dominio y sirven como base para el diseño de la arquitectura del sistema.
 
-[fotos]
+<div align="center">
+   
+![Foto](images/ev/ev-57.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-58.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-59.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-60.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/61.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-62.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-63.png)
+
+</div>
+
 
 ---
 
