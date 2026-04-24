@@ -3576,3 +3576,78 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 
 
 ## 3.3. Product Backlog
+
+| # | ID | Título | Descripción | SP |
+|---|---|---|---|---|
+| 1 | US16 | Visualización de métricas de impacto predictivo | Como visitante, quiero visualizar indicadores reales de siniestralidad en la landing page para comprender el impacto de la analítica predictiva. | 2 |
+| 2 | US17 | Interacción con botones de conversión | Como visitante, quiero interactuar con los botones "Iniciar prueba gratuita" y "Hablar con ventas" para contactar con el servicio de RiskGuard. | 2 |
+| 3 | US01 | Autenticación de Operario | Como Operario de Planta, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
+| 4 | US02 | Cierre de Sesión del Operario | Como Operario de Planta, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
+| 5 | US31 | Autenticación Segura de Supervisor | Como Supervisor de Seguridad, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
+| 6 | US43 | Autenticación Segura de Gerente o Administrador | Como Gerente o Administrador, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
+| 7 | US03 | Registro Rápido de Casi-Accidente | Como Operario de Planta, quiero registrar un casi-accidente desde mi celular en menos de 30 segundos para no interrumpir mi flujo de trabajo. | 5 |
+| 8 | US04 | Adjuntar Evidencia Fotográfica al Reporte | Como Operario de Planta, quiero adjuntar una foto al momento de reportar un incidente para proporcionar evidencia visual al supervisor. | 3 |
+| 9 | US05 | Selección de Sector al Registrar Incidente | Como Operario de Planta, quiero seleccionar el sector donde ocurrió el incidente para georreferenciar correctamente el riesgo. | 3 |
+| 10 | US06 | Selección del Nivel de Urgencia del Incidente | Como Operario de Planta, quiero indicar el nivel de urgencia del incidente para que el sistema priorice correctamente la alerta. | 3 |
+| 11 | US07 | Selección del Tipo de Incidente | Como Operario de Planta, quiero seleccionar el tipo de incidente de una lista predefinida para categorizar correctamente el riesgo. | 3 |
+| 12 | US08 | Registro de Condición Insegura Vinculada a un Activo | Como Operario de Planta, quiero vincular mi reporte a un activo específico para indicar qué máquina presenta la condición insegura. | 3 |
+| 13 | US09 | Descripción de Texto Libre en el Reporte | Como Operario de Planta, quiero ingresar una descripción en texto libre para dar más contexto al supervisor. | 2 |
+| 14 | US10 | Confirmación de Recepción del Reporte | Como Operario de Planta, quiero recibir una confirmación visible después de enviar mi reporte para saber que la información llegó correctamente. | 3 |
+| 15 | US15 | Edición de Reporte Antes del Envío | Como Operario de Planta, quiero poder revisar y corregir los datos de mi reporte antes de enviarlo para asegurar que la información es precisa. | 2 |
+| 16 | US11 | Notificación de Atención del Reporte | Como Operario de Planta, quiero recibir una notificación cuando mi reporte haya sido revisado para saber que tuvo impacto real. | 3 |
+| 17 | US12 | Historial de Reportes del Operario | Como Operario de Planta, quiero consultar el historial de mis reportes para hacer seguimiento del estado de cada uno. | 3 |
+| 18 | US13 | Consulta del Detalle de un Reporte Enviado | Como Operario de Planta, quiero ver el detalle completo de un reporte que envié para conocer su estado actual y la acción tomada. | 2 |
+| 19 | US14 | Visualización de Alertas Activas en el Sector | Como Operario de Planta, quiero ver las alertas activas en mi sector al ingresar a la aplicación para estar informado antes de iniciar mi turno. | 3 |
+| 20 | US32 | Configuración de Sectores y Áreas Operativas | Como Supervisor de Seguridad, quiero administrar los sectores físicos de la planta para georreferenciar correctamente las incidencias reportadas. | 5 |
+| 21 | US33 | Configuración y Gestión de Activos Industriales | Como Supervisor de Seguridad, quiero registrar y administrar la maquinaria de la planta para vincularla a su sector correspondiente. | 5 |
+| 22 | US34 | Gestión y Administración de Personal Técnico | Como Supervisor de Seguridad, quiero registrar y administrar al personal de mantenimiento para disponer de técnicos calificados a quienes delegar tickets. | 5 |
+| 23 | US35 | Asignación de Tickets de Acción Correctiva | Como Supervisor de Seguridad, quiero asignar un ticket de incidente a un técnico de mantenimiento para delegar la responsabilidad de la reparación. | 5 |
+| 24 | US36 | Exploración Sectorizada y Filtrado de Alertas Activas | Como Supervisor de Seguridad, quiero acceder a las alertas activas seleccionando un sector específico para enfocar mi análisis por zona. | 5 |
+| 25 | US37 | Verificación y Cierre de Medidas de Control | Como Supervisor de Seguridad, quiero evaluar la efectividad de las medidas correctivas implementadas para garantizar que el riesgo fue mitigado. | 5 |
+| 26 | US18 | Visualización de Alerta por Riesgo Recurrente en Sector | Como Supervisor de Seguridad, quiero recibir una alerta cuando el mismo tipo de riesgo se repita más de 3 veces en 30 días para intervenir a tiempo. | 8 |
+| 27 | US19 | Visualización de Mapa de Calor de Riesgos de la Planta | Como Supervisor de Seguridad, quiero ver un mapa de calor actualizado de la planta para priorizar mis recursos de inspección. | 8 |
+| 28 | US38 | Visualización del Mapa de Calor Operativo | Como Supervisor de Seguridad, quiero visualizar la distribución de niveles de riesgo por sector para identificar qué áreas requieren intervención prioritaria. | 8 |
+| 29 | US26 | Visualización de Resumen de Riesgos del Día | Como Supervisor de Seguridad, quiero ver cuántos riesgos nuevos se registraron hoy en cada sector para tener una visión rápida al inicio de mi turno. | 3 |
+| 30 | US20 | Notificación de Riesgo Crítico Sin Atender | Como Supervisor de Seguridad, quiero que el sistema me notifique cuando un riesgo crítico lleve más de 24 horas sin ser atendido para escalarlo a tiempo. | 5 |
+| 31 | US39 | Notificación Externa Automática por Incidentes Críticos | Como Supervisor de Seguridad, quiero recibir notificaciones automáticas por correo cuando el sistema registre un incidente crítico para garantizar respuesta inmediata. | 5 |
+| 32 | US40 | Escalamiento Automático por Incumplimiento de SLA | Como Supervisor de Seguridad, quiero que el sistema escale automáticamente los tickets que superen su tiempo máximo de resolución para alertar a gerencia. | 8 |
+| 33 | US21 | Filtrado de Patrones de Riesgo por Tipo de Peligro | Como Supervisor de Seguridad, quiero filtrar los patrones de riesgo detectados por tipo de peligro para analizar de forma segmentada cada categoría. | 3 |
+| 34 | US27 | Marcar Alerta de Patrón Recurrente como Revisada | Como Supervisor de Seguridad, quiero marcar una alerta de patrón recurrente como revisada para mantener el dashboard organizado. | 2 |
+| 35 | US41 | Programación de Mantenimiento Preventivo de Activos | Como Supervisor de Seguridad, quiero programar tickets de mantenimiento preventivo sobre máquinas específicas para evitar fallas críticas futuras. | 8 |
+| 36 | US42 | Generación y Exportación de Reportes de Cumplimiento | Como Supervisor de Seguridad, quiero generar y exportar reportes consolidados del historial de incidentes para documentar el cumplimiento normativo. | 8 |
+| 37 | US44 | Visualización del Dashboard Ejecutivo de Seguridad | Como Gerente, quiero ver un dashboard ejecutivo con los indicadores clave de seguridad para tener una visión consolidada del estado de la SST. | 8 |
+| 38 | US45 | Visualización de Tendencias de Accidentabilidad | Como Gerente, quiero ver gráficas de tendencia de incidentes por mes para identificar si la accidentabilidad está mejorando o empeorando. | 5 |
+| 39 | US47 | Seguimiento del Cumplimiento del Plan Anual de SST | Como Gerente, quiero ver el porcentaje de cumplimiento del plan anual de SST en tiempo real para detectar brechas antes de una inspección. | 5 |
+| 40 | US48 | Visualización de Indicadores Predictivos de Riesgo | Como Gerente, quiero ver indicadores predictivos que anticipen posibles accidentes para justificar inversiones preventivas con datos concretos. | 8 |
+| 41 | US46 | Exportación de Formatos de Auditoría para SUNAFIL | Como Gerente, quiero exportar automáticamente los formatos de auditoría exigidos por la Ley N° 29783 para prepararme ante inspecciones de SUNAFIL. | 8 |
+| 42 | US52 | Generación de Reporte Mensual de Gestión de SST | Como Gerente, quiero generar un reporte mensual consolidado de seguridad con un solo clic para reducir el tiempo dedicado a informes manuales. | 5 |
+| 43 | US49 | Notificación de Alerta Crítica No Resuelta a Gerencia | Como Gerente, quiero recibir una notificación cuando un riesgo crítico lleve más de 48 horas sin resolver para escalar el problema internamente. | 5 |
+| 44 | US50 | Registro Histórico de Incidentes para Trazabilidad Legal | Como Gerente, quiero acceder al historial completo e inmutable de todos los incidentes para contar con evidencia ante auditorías de SUNAFIL. | 5 |
+| 45 | US51 | Gestión de Cuentas de Usuario desde Administración | Como Administrador, quiero crear, editar y desactivar cuentas de usuario para mantener el control de acceso a la plataforma. | 5 |
+| 46 | US58 | Configuración de niveles de riesgo | Como Administrador, quiero definir los niveles de riesgo del sistema para clasificar correctamente los incidentes detectados. | 3 |
+| 47 | US59 | Configuración de umbrales de alerta | Como Administrador, quiero definir los umbrales de alerta del sistema para que se generen notificaciones cuando se superen ciertos valores. | 3 |
+| 48 | US60 | Configuración de reglas de alertas | Como Administrador, quiero configurar reglas de generación de alertas para adaptar el comportamiento del sistema a distintos escenarios operativos. | 5 |
+| 49 | US61 | Activación y desactivación de módulos del sistema | Como Administrador, quiero activar o desactivar módulos del sistema para personalizar su funcionamiento según las necesidades de la organización. | 3 |
+| 50 | US62 | Configuración de horarios operativos | Como Administrador, quiero configurar los horarios de operación del sistema para adaptarlo a los turnos y jornadas laborales de la planta. | 3 |
+| 51 | US63 | Registro de dispositivos | Como Administrador, quiero registrar dispositivos como sensores o cámaras para integrarlos al sistema de monitoreo. | 3 |
+| 52 | US64 | Edición de dispositivos | Como Administrador, quiero editar la información de los dispositivos registrados para mantener sus datos actualizados. | 2 |
+| 53 | US65 | Eliminación de dispositivos | Como Administrador, quiero eliminar dispositivos registrados para mantener el sistema sin información innecesaria. | 2 |
+| 54 | US66 | Configuración de zonas de monitoreo | Como Administrador, quiero definir zonas de monitoreo dentro de la planta para segmentar las áreas según niveles de riesgo. | 3 |
+| 55 | US67 | Configuración de parámetros del motor predictivo | Como Administrador, quiero configurar los parámetros del motor predictivo para mejorar la precisión en la detección de riesgos. | 5 |
+| 56 | US68 | Configuración de prioridad de alertas | Como Administrador, quiero definir la prioridad de las alertas para atender primero las más críticas. | 3 |
+| 57 | US69 | Configuración de notificaciones | Como Administrador, quiero configurar los canales de notificación del sistema para recibir alertas de forma oportuna. | 3 |
+| 58 | US70 | Guardado de configuración del sistema | Como Administrador, quiero guardar los cambios realizados en la configuración para asegurar que los datos se mantengan persistentes. | 2 |
+| 59 | US71 | Restaurar configuración por defecto | Como Administrador, quiero restaurar la configuración del sistema a sus valores por defecto para recuperar el funcionamiento original en caso de errores. | 2 |
+| 60 | US72 | Visualización de configuración del sistema | Como Administrador, quiero visualizar la configuración actual del sistema para tener un control general de todos los parámetros definidos. | 2 |
+| 61 | TS22 | Servicio de Notificaciones Push | Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a dispositivos móviles. | 8 |
+| 62 | TS23 | Endpoint para Obtener Patrones de Riesgo Recurrentes | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones para mostrar alertas predictivas en el dashboard del supervisor. | 8 |
+| 63 | TS24 | Endpoint para Obtener Datos del Mapa de Calor | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor para alimentar el mapa de calor del dashboard en tiempo real. | 8 |
+| 64 | TS25 | Endpoint para Obtener Riesgos Críticos Sin Atender | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos para que el módulo de notificaciones escale automáticamente al supervisor. | 5 |
+| 65 | TS28 | Endpoint para Marcar Alerta de Patrón como Revisada | Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada para retirar alertas del panel principal. | 3 |
+| 66 | TS29 | Endpoint para Obtener Resumen Diario de Riesgos por Sector | Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario para alimentar el panel de resumen del dashboard del supervisor. | 5 |
+| 67 | TS30 | Endpoint de Cálculo de Matriz IPERC | Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc para calcular el nivel de criticidad del riesgo según la lógica IPERC. | 8 |
+| 68 | TS53 | Endpoint para Obtener Indicadores del Dashboard Ejecutivo | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/ejecutivo para alimentar el dashboard ejecutivo del gerente en tiempo real. | 8 |
+| 69 | TS54 | Endpoint para Obtener Tendencias Históricas de Accidentabilidad | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/tendencias para alimentar las gráficas de tendencia del dashboard ejecutivo. | 8 |
+| 70 | TS55 | Endpoint para Generación de Reporte de Auditoría | Como desarrollador, quiero implementar el endpoint POST /api/v1/reportes/auditoria para generar documentos compatibles con la Ley N° 29783. | 8 |
+| 71 | TS56 | Endpoint para Gestión de Cuentas de Usuario | Como desarrollador, quiero implementar los endpoints POST /api/v1/usuarios y PATCH /api/v1/usuarios/{id}/estado para gestionar el acceso del personal. | 5 |
+| 72 | TS57 | Endpoint para Obtener el Indicador de Cumplimiento del Plan Anual de SST | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/cumplimiento-sst para alimentar el indicador ejecutivo del dashboard del gerente. | 5 |
