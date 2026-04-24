@@ -596,7 +596,30 @@ Posteriormente, los eventos identificados fueron organizados cronológicamente s
 
 Se definió inicialmente el *happy path*, que describe el escenario ideal desde la detección de una condición insegura hasta su mitigación. Luego, se incorporaron escenarios alternativos como la falta de reporte o la demora en la atención.
 
-[fotos]
+
+<div align="center">
+   
+![Foto](images/ev/ev-6.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-7.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-8.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-9.png)
+
+</div>
 
 ---
 
@@ -606,7 +629,36 @@ Una vez estructurado el flujo, el equipo identificó los principales problemas d
 
 Entre los más relevantes se encontraron el subregistro de incidentes, la falta de retroalimentación a los operarios, la ausencia de análisis de datos y la demora en la toma de decisiones, evidenciando oportunidades claras de mejora.
 
-[fotos]
+
+<div align="center">
+   
+![Foto](images/ev/ev-10.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-11.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-12.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-13.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-14.png)
+
+</div>
 
 ---
 
@@ -616,7 +668,49 @@ Se identificaron eventos clave que representan cambios significativos en el proc
 
 Estos eventos permitieron dividir el flujo en etapas claras y facilitar la comprensión del ciclo de vida de la gestión de riesgos.
 
-[fotos]
+
+<div align="center">
+   
+![Foto](images/ev/ev-15.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-16.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-17.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-18.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-19.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-20.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-21.png)
+
+</div>
+
 
 ---
 
@@ -626,7 +720,47 @@ Se definieron los *commands* que desencadenan los eventos, formulados en modo im
 
 Además, se asociaron estos comandos con los actores correspondientes, como operarios, supervisores y gerentes.
 
-[fotos]
+<div align="center">
+   
+![Foto](images/ev/ev-22.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-23.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-24.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-25.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-26.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-27.png)
+
+</div>
+
+<div align="center">
+   
+![Foto](images/ev/ev-28.png)
+
+</div>
 
 ---
 
