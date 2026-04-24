@@ -3554,6 +3554,22 @@
 
 ## 3.2. Impact Mapping
 
+El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.
+
+A continuación se presenta el Impact Map elaborado en UXPressia para RiskGuard:
+
+  <div align="center">
+![Foto](images/imp_map.png)
+  <p>
+    <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
+  </p>
+</div>
+
+El Impact Map parte de un único objetivo de negocio: incrementar la prevención de accidentes laborales en entornos industriales mediante la digitalización del registro de incidentes y el uso de analítica predictiva en tiempo real. Para lograr este objetivo, se identificaron tres actores clave dentro del ecosistema de la seguridad laboral: el operario de planta, el supervisor de seguridad y mantenimiento, y el gerente o administrador.
+
+A partir de estos actores se definieron los impactos esperados en su comportamiento. En el caso del operario, se busca que registre incidentes y condiciones inseguras de manera constante y que confíe en el sistema al recibir retroalimentación sobre sus reportes. En el caso del supervisor, se espera que identifique patrones de riesgo de forma automática y que actúe de manera proactiva ante situaciones críticas. Finalmente, en el caso del gerente, se pretende que tome decisiones estratégicas basadas en información confiable y que anticipe riesgos antes de que se conviertan en incidentes que afecten la operación.
+
+Cada uno de estos impactos se traduce en entregables concretos, tales como formularios de registro rápido, dashboards con mapas de calor, sistemas de alertas automáticas y reportes ejecutivos, los cuales corresponden a las funcionalidades principales de la plataforma. Estos entregables están respaldados por las User Stories definidas en la sección correspondiente, garantizando la trazabilidad entre el objetivo de negocio, los cambios de comportamiento esperados y las soluciones implementadas en el sistema.
 
 
 ## 3.3. Product Backlog
