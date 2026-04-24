@@ -426,7 +426,7 @@ Este Bounded Context aplica la metodología IPERC (Identificación de Peligros y
 </p>
 
 <p align="center">
-  <img src="images/bc/6_bc.png" width="500"/>
+  <img src="images/bc/5_bc.png" width="500"/>
 </p>
 
 Este Bounded Context gestiona la asignación y seguimiento de acciones correctivas sobre los tickets clasificados por el motor de riesgo. El supervisor asigna un técnico de mantenimiento y define una medida de control; el SLA se determina automáticamente según el nivel de criticidad del ticket. Si el ticket supera su tiempo máximo sin cerrarse, se genera un escalamiento automático hacia roles gerenciales. El sistema puede apoyarse en un sistema de IA externo para generar instrucciones de mitigación complejas. Como salida, se producen el ticket cerrado, la alerta escalada y la actualización del área segura hacia el BC Dashboard y el BC Reportes.
@@ -440,7 +440,7 @@ Este Bounded Context gestiona la asignación y seguimiento de acciones correctiv
 </p>
 
 <p align="center">
-  <img src="images/bc/5_bc.png" width="500"/>
+  <img src="images/bc/6_bc.png" width="500"/>
 </p>
 
 Este Bounded Context centraliza la visualización en tiempo real del estado de seguridad de la planta. Recibe alertas de patrón desde el BC de Evaluación de Riesgo y tickets cerrados desde el BC de Mitigación, y los consolida en un dashboard con mapa de calor por zona, alertas activas ordenadas por urgencia y resumen diario de KPIs. Un activo en mantenimiento preventivo activo no genera alertas en este contexto. Como salida, el dashboard renderizado se envía al frontend, y puede generar tickets preventivos hacia el BC de Mitigación.
