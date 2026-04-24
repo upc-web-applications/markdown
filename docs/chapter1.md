@@ -37,10 +37,7 @@ La solución RiskGuard se caracteriza por su capacidad para registrar y centrali
 | Foto | Nombre | Descripción |
 | -------- | -------- | -------- |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241e158, Aponte Pablo, Isabel Luisa| |
-| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241a322, Blancas Chávez, Carlos Franco |Me interesa mucho el desarrollo de software ya que desde siempre me ha interesado conocer cómo funcionan las cosas por dentro y esa curiosidad fue lo que me motivó a elegir esta profesión. Me gustaría desempeñarme en el área de bases de datos o desarrollador backend, porque me atrae la lógica que hay detrás de los sistemas y la forma en la que se organiza y gestiona la información
-
-Habilidades: C++, Python, Js,React, Html, css, JavaScript, MySql
- |
+| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241a322, Blancas Chávez, Carlos Franco |Me interesa mucho el desarrollo de software ya que desde siempre me ha interesado conocer cómo funcionan las cosas por dentro y esa curiosidad fue lo que me motivó a elegir esta profesión. Me gustaría desempeñarme en el área de bases de datos o desarrollador backend, porque me atrae la lógica que hay detrás de los sistemas y la forma en la que se organiza y gestiona la información. Habilidades: C++, Python, Js,React, Html, css, JavaScript, MySql|
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u202415412, Flores Siguas, Marlon Alessandro | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | Laura Acosta, Victor Jhosuef (u202418655) | |
