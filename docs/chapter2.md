@@ -544,46 +544,45 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ## 2.5. Ubiquitous Language
 
-En esta sección se define el lenguaje ubicuo del dominio de negocio de RiskGuard, con el fin de asegurar una comunicación clara y sin ambigüedades entre todos los stakeholders.
+A continuación se presenta el vocabulario compartido del dominio de negocio de RiskGuard. La definición precisa de estos términos garantiza que el equipo de desarrollo, los diseñadores y los stakeholders trabajen bajo un mismo marco conceptual a lo largo de todas las fases del proyecto, desde el modelado de la landing page hasta la especificación de los endpoints del backend.
 
-**Incident (Incidente):** Evento no planificado que puede causar daño a una persona, equipo o proceso dentro de la planta.
+Los términos se listan en inglés, idioma base del dominio, junto con su descripción funcional en español.
 
-**Near Miss (Casi-accidente):** Situación riesgosa que no causó daño, pero tenía el potencial de hacerlo.
+*Glosario del Dominio*
 
-**Unsafe Condition (Condición insegura):** Estado del entorno laboral que incrementa la probabilidad de un accidente.
-
-**Risk (Riesgo):** Probabilidad de ocurrencia de un evento peligroso combinada con su impacto.
-
-**Risk Level (Nivel de riesgo):** Clasificación del riesgo según su gravedad (bajo, medio, alto).
-
-**Alert (Alerta):** Notificación generada por el sistema ante un riesgo o incidente.
-
-**Critical Alert (Alerta crítica):** Alerta de alta prioridad que requiere atención inmediata.
-
-**Report (Reporte):** Registro formal de un incidente o condición insegura en el sistema.
-
-**Ticket (Ticket):** Identificador único asignado a cada reporte para su seguimiento.
-
-**Sector (Sector):** Área específica de la planta donde ocurre un incidente.
-
-**Asset (Activo):** Máquina o equipo relacionado con un incidente o riesgo.
-
-**Supervisor (Supervisor):** Usuario encargado de monitorear riesgos y gestionar alertas.
-
-**Operator (Operario):** Usuario que reporta incidentes o condiciones inseguras.
-
-**Dashboard (Panel de control):** Interfaz visual que muestra métricas y alertas en tiempo real.
-
-**Heat Map (Mapa de calor):** Representación visual de zonas de riesgo mediante colores.
-
-**Predictive Analysis (Análisis predictivo):** Uso de datos para anticipar riesgos futuros.
-
-**Safety Compliance (Cumplimiento de seguridad):** Nivel de cumplimiento de normas de seguridad laboral.
-
-**Mitigation (Mitigación):** Acción para reducir o eliminar un riesgo.
-
-**Notification (Notificación):** Mensaje que informa cambios en reportes o alertas.
-
-**Status (Estado):** Situación actual de un reporte (pendiente, en progreso, resuelto).
-
-**Evidence (Evidencia):** Información adicional como imágenes que respaldan un reporte.
+| Término | Definición |
+|---|---|
+| **User** | Entidad del sistema que representa a una persona registrada en la plataforma. Se clasifica en cuatro roles: Operator, Supervisor, Manager y Administrator, cada uno con permisos y vistas diferenciadas. |
+| **Operator** | Usuario de primera línea que opera maquinaria o procesos productivos en planta. Es el actor principal del flujo de reporte de incidentes y condiciones inseguras. Accede a la plataforma desde dispositivos móviles o web para registrar eventos de riesgo en tiempo real. |
+| **Supervisor** | Usuario de mando medio responsable de monitorear zonas de planta, gestionar alertas activas, asignar acciones correctivas y verificar el cierre de tickets. Accede al dashboard de monitoreo y al mapa de calor operativo. |
+| **Manager** | Usuario de alta dirección que consulta el dashboard ejecutivo, revisa indicadores predictivos, aprueba inversiones en seguridad y exporta reportes de cumplimiento normativo. No interviene en la gestión operativa directa de tickets. |
+| **Administrator** | Usuario con acceso completo al sistema. Gestiona cuentas de usuario, roles, sectores, activos, configuración de reglas de alerta y parámetros del motor predictivo. |
+| **Incident** | Evento no planificado registrado en el sistema que puede causar o ha causado daño a una persona, equipo o proceso dentro de la planta. Origen principal de los tickets de acción correctiva. |
+| **Near Miss** | Situación riesgosa registrada como incidente que no causó daño pero tenía el potencial de hacerlo. Su registro es clave para la detección temprana de patrones de riesgo. |
+| **Unsafe Condition** | Estado del entorno laboral registrado en el sistema que incrementa la probabilidad de un accidente. Se clasifica por tipo de peligro: físico, químico, ergonómico u otro. |
+| **Risk** | Combinación de la probabilidad de ocurrencia de un evento peligroso y su impacto potencial, calculada automáticamente por el motor de reglas del sistema. |
+| **Risk Level** | Clasificación del riesgo calculada por el sistema según su gravedad: Bajo, Medio, Alto o Crítico. Determina la prioridad de atención y el flujo de escalamiento del ticket. |
+| **IPERC** | Identificación de Peligros y Evaluación de Riesgos y Controles. Metodología peruana de análisis de riesgo implementada en el motor predictivo del sistema para calcular el nivel de criticidad de cada incidente a partir de índices de probabilidad y severidad. |
+| **Risk Engine** | Motor de reglas del backend que procesa los datos de incidentes reportados para calcular niveles de criticidad mediante la lógica IPERC, detectar patrones recurrentes y generar alertas predictivas automáticas. |
+| **Ticket** | Unidad de gestión del sistema asignada a cada incidente reportado. Contiene el historial completo del incidente, su nivel de riesgo, el técnico asignado, las acciones correctivas aplicadas y el estado actual. Es inmutable una vez cerrado. |
+| **Ticket Status** | Estado actual de un ticket dentro de su ciclo de vida: Pendiente, En Progreso, Medida Implementada o Cerrado. Determina las acciones disponibles para cada rol. |
+| **Corrective Action** | Medida técnica asignada a un técnico de mantenimiento para mitigar o eliminar el riesgo identificado en un ticket. Queda registrada en el historial del ticket para trazabilidad legal. |
+| **SLA** | Acuerdo de nivel de servicio interno que define el tiempo máximo permitido para resolver un ticket según su nivel de riesgo. El incumplimiento del SLA genera un escalamiento automático hacia los roles gerenciales. |
+| **SLA Breach** | Evento que ocurre cuando un ticket supera su tiempo máximo de resolución sin alcanzar el estado Cerrado. Genera una notificación de escalamiento inmutable registrada en el historial del ticket. |
+| **Alert** | Notificación generada automáticamente por el sistema ante un riesgo, patrón recurrente o incumplimiento de SLA. Clasificada por prioridad: operativa, de advertencia o crítica. |
+| **Critical Alert** | Alerta de máxima prioridad generada cuando el sistema registra un incidente con nivel de riesgo Crítico. Activa el protocolo de notificación externa por correo electrónico al supervisor responsable. |
+| **Recurrent Pattern** | Patrón detectado por el motor predictivo cuando el mismo tipo de riesgo supera un umbral de ocurrencias dentro de un período definido en una misma zona. Genera una alerta de patrón recurrente en el dashboard del supervisor. |
+| **Heat Map** | Representación visual del dashboard que muestra la concentración de riesgos activos por sector de la planta mediante codificación por intensidad de color. Se actualiza automáticamente al registrarse o resolverse un incidente. |
+| **Sector** | Área física delimitada de la planta registrada en el sistema. Unidad geográfica base para la georreferenciación de incidentes, la visualización del mapa de calor y la generación de reportes segmentados. |
+| **Asset** | Máquina o equipo industrial registrado en el sistema y vinculado a un sector activo. Puede asociarse a tickets de incidentes o a planes de mantenimiento preventivo. |
+| **Technician** | Personal de mantenimiento registrado en el sistema con una especialidad técnica asignada. Es el responsable de ejecutar las acciones correctivas delegadas mediante tickets. |
+| **Preventive Maintenance** | Ticket de mantenimiento programado sobre un activo específico, independiente de incidentes activos. Pone el activo en estado En Mantenimiento durante su ejecución, bloqueando la generación de alertas predictivas sobre ese equipo. |
+| **Dashboard** | Interfaz visual del sistema que centraliza métricas, alertas activas, mapa de calor y tendencias de accidentabilidad. Disponible en versión operativa para supervisores y en versión ejecutiva para gerentes. |
+| **Executive Dashboard** | Vista del dashboard reservada para el rol Manager. Muestra indicadores consolidados de SST, porcentaje de cumplimiento del plan anual, tendencias históricas y acceso a exportación de reportes de auditoría. |
+| **Predictive Indicator** | Indicador calculado por el motor de reglas a partir de datos históricos de los últimos 30 días. Anticipa tendencias de riesgo creciente, tipos de incidente recurrentes y sectores con mayor tiempo promedio de resolución. |
+| **SST Compliance** | Porcentaje de cumplimiento del Plan Anual de Seguridad y Salud en el Trabajo, calculado en base a tickets cerrados versus actividades planificadas. Se diferencia visualmente por semáforo: verde (≥80%), amarillo (50–79%) y rojo (<50%). |
+| **Audit Report** | Documento generado automáticamente por el sistema con los datos reales de incidentes registrados en un período seleccionado. Compatible con los formatos referenciales de la Ley N° 29783 y exportable en PDF o Excel para inspecciones de SUNAFIL. |
+| **Notification** | Mensaje interno del sistema enviado al centro de notificaciones del usuario cuando cambia el estado de un ticket, se genera una alerta o se produce un escalamiento. Puede marcarse como leída. |
+| **Escalation** | Proceso automático por el cual el sistema notifica a roles superiores cuando un riesgo crítico supera su umbral de tiempo sin atención, garantizando que la gerencia tenga visibilidad sobre incidentes no resueltos dentro del SLA. |
+| **Evidence** | Archivo adjunto, generalmente fotográfico, vinculado a un ticket de incidente al momento de su registro. Sirve como respaldo visual para la evaluación del riesgo por parte del supervisor. |
+| **Report** | Registro formal de un incidente o condición insegura creado por un operario a través del formulario de reporte. Genera automáticamente un ticket con número único de seguimiento. |
