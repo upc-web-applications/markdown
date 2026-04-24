@@ -523,6 +523,26 @@ Los diagramas de componentes muestran la estructura interna del sistema, permiti
 
 ### 4.7.1. Class Diagrams
 
+<p align="center">Usuario y Autenticación de Cuenta BC</p>
+<p align="center"><img src="images/bc/dia_bc1.png" width="500"/></p>
+
+<p align="center">Sede / Área y Activo industrial BC</p>
+<p align="center"><img src="images/bc/dia_bc2.png" width="500"/></p>
+
+<p align="center">Inspección / Condición Insegura BC</p>
+<p align="center"><img src="images/bc/dia_bc3.png" width="500"/></p>
+
+<p align="center">Evaluación de Riesgo BC</p>
+<p align="center"><img src="images/bc/dia_bc4.png" width="500"/></p>
+
+<p align="center">Mitigación BC</p>
+<p align="center"><img src="images/bc/dia_bc5.png" width="500"/></p>
+
+<p align="center">Monitoreo y Dashboard BC</p>
+<p align="center"><img src="images/bc/dia_bc6.png" width="500"/></p>
+
+<p align="center">Reportes y Cumplimiento BC</p>
+<p align="center"><img src="images/bc/dia_bc7.png" width="500"/></p>
 
 
 ## 4.8. Database Design
