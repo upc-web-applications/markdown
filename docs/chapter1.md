@@ -90,7 +90,7 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**Creemos** que digitalizar el proceso de inspeccion mediante la aplicacion web ... evolucionará la captura de datos en planta. 
+**Creemos** que digitalizar el proceso de inspeccion mediante la aplicacion web RiskGuard evolucionará la captura de datos en planta. 
 **Sabremos** que lo propuesto es cierto 
 **Cuando** los reportes diarios se incrementen en un 40% debido a la facilidad de uso frente al registro en hojas de calculos o papel
 
@@ -102,7 +102,7 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 **Sabremos** que lo propuesto es cierto 
 **Cuando** se reporte una reduccion del 50% en el tiempo dedicado a elaborar informes mensuales de gestion.
 
-**Creemos** que ofrecer una plataforma ligera y accesible desde navegadores web permitirá la adopción de ... en empresas con baja infraestructura tecnológica. 
+**Creemos** que ofrecer una plataforma ligera y accesible desde navegadores web permitirá la adopción de RiskGuard en empresas con baja infraestructura tecnológica. 
 **Sabremos** que esto es cierto 
 **Cuando** logremos mantener una tasa de disponibilidad del sistema superior al 70% sin requerir hardware especializado del lado del cliente.
 
