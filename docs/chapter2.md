@@ -540,7 +540,119 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ## 2.4. Big Picture EventStorming
 
+El Big Picture Event Storming es una técnica de modelado colaborativo creada por Alberto Brandolini que permite a un equipo explorar y comprender el dominio de un negocio en pocas horas. A diferencia de los enfoques tradicionales de análisis, esta técnica se centra en identificar los *Domain Events* más relevantes del sistema —es decir, los hechos significativos que ocurren en el dominio— y organizarlos cronológicamente para construir una visión compartida del funcionamiento del negocio.
 
+En el caso de RiskGuard, esta técnica fue utilizada para modelar el proceso de gestión de la seguridad y salud en el trabajo dentro de entornos industriales, permitiendo identificar los eventos clave relacionados con el registro de incidentes, la detección de riesgos y la toma de decisiones preventivas. La sesión fue realizada de manera colaborativa por el equipo, utilizando un tablero digital como espacio de trabajo.
+
+---
+
+### Proceso realizado por el equipo
+
+A continuación, se describen las etapas desarrolladas durante la sesión de Event Storming aplicada al dominio de RiskGuard.
+
+---
+
+### Paso 1: Unstructured Exploration
+
+En esta etapa inicial, el equipo realizó una lluvia de ideas identificando los *Domain Events* más relevantes del dominio de seguridad industrial. Cada participante propuso eventos redactados en tiempo pasado, tales como “Incidente reportado”, “Condición insegura detectada”, “Alerta generada” y “Acción correctiva asignada”.
+
+No se aplicaron filtros ni ordenamiento en esta fase, con el objetivo de maximizar la cantidad de eventos y capturar el conocimiento del equipo respecto a la gestión de riesgos laborales.
+
+[fotos]
+
+---
+
+### Paso 2: Timeline (Línea de tiempo)
+
+Posteriormente, los eventos identificados fueron organizados cronológicamente siguiendo el flujo natural del proceso de gestión de seguridad.
+
+Se definió inicialmente el *happy path*, que describe el escenario ideal desde la detección de una condición insegura hasta su mitigación. Luego, se incorporaron escenarios alternativos como la falta de reporte o la demora en la atención.
+
+[fotos]
+
+---
+
+### Paso 3: Pain Points (Puntos críticos)
+
+Una vez estructurado el flujo, el equipo identificó los principales problemas del proceso actual, marcándolos como *pain points*.
+
+Entre los más relevantes se encontraron el subregistro de incidentes, la falta de retroalimentación a los operarios, la ausencia de análisis de datos y la demora en la toma de decisiones, evidenciando oportunidades claras de mejora.
+
+[fotos]
+
+---
+
+### Paso 4: Pivotal Events (Eventos cruciales)
+
+Se identificaron eventos clave que representan cambios significativos en el proceso, como “Incidente reportado”, “Riesgo clasificado” y “Acción correctiva ejecutada”.
+
+Estos eventos permitieron dividir el flujo en etapas claras y facilitar la comprensión del ciclo de vida de la gestión de riesgos.
+
+[fotos]
+
+---
+
+### Paso 5: Commands (Comandos)
+
+Se definieron los *commands* que desencadenan los eventos, formulados en modo imperativo, tales como “Registrar incidente”, “Clasificar riesgo”, “Generar alerta” y “Asignar acción correctiva”.
+
+Además, se asociaron estos comandos con los actores correspondientes, como operarios, supervisores y gerentes.
+
+[fotos]
+
+---
+
+### Paso 6: Policies (Políticas)
+
+Se identificaron *policies* que automatizan el comportamiento del sistema, conectando eventos con comandos.
+
+Por ejemplo, cuando ocurre el evento “Riesgo alto detectado”, se activa automáticamente el comando “Generar alerta crítica”, modelando así la lógica de automatización del sistema.
+
+[fotos]
+
+---
+
+### Paso 7: Read Models (Modelos de lectura)
+
+Se definieron los *read models* que los actores utilizan para tomar decisiones dentro del sistema.
+
+Entre ellos destacan dashboards de seguridad, mapas de calor de riesgos y reportes de incidentes, los cuales permiten evaluar la situación en tiempo real.
+
+[fotos]
+
+---
+
+### Paso 8: External Systems (Sistemas externos)
+
+Se identificaron sistemas externos que interactúan con la plataforma, como sistemas ERP, bases de datos corporativas o dispositivos IoT utilizados en planta.
+
+Estos sistemas pueden enviar información o recibir notificaciones del sistema.
+
+[fotos]
+
+---
+
+### Paso 9: Aggregates (Agregados)
+
+Se agruparon los comandos y eventos relacionados en *aggregates*, organizando el dominio en unidades coherentes.
+
+Se identificaron agregados como “Gestión de Incidentes”, “Gestión de Riesgos” y “Gestión de Alertas”.
+
+[fotos]
+
+---
+
+### Paso 10: Bounded Contexts (Contextos delimitados)
+
+Finalmente, se definieron posibles *bounded contexts* agrupando agregados relacionados.
+
+Se identificaron contextos como “Registro de Incidentes”, “Análisis de Riesgos” y “Gestión de Seguridad”, los cuales representan divisiones claras dentro del dominio y sirven como base para el diseño de la arquitectura del sistema.
+
+[fotos]
+
+---
+
+El Event Storming permitió al equipo construir una visión compartida del dominio de RiskGuard, identificar problemas críticos del proceso actual y definir una base sólida para el diseño del sistema. Más allá del modelo generado, el principal valor de la sesión fue la alineación del equipo y la construcción de un lenguaje común para describir la gestión de la seguridad en entornos industriales.
 
 ## 2.5. Ubiquitous Language
 
