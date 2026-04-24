@@ -3559,11 +3559,14 @@ El Impact Mapping es una técnica de planificación estratégica que permite vin
 A continuación se presenta el Impact Map elaborado en UXPressia para RiskGuard:
 
   <div align="center">
+      
 ![Foto](images/imp_map.png)
   <p>
     <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
   </p>
 </div>
+
+---
 
 El Impact Map parte de un único objetivo de negocio: incrementar la prevención de accidentes laborales en entornos industriales mediante la digitalización del registro de incidentes y el uso de analítica predictiva en tiempo real. Para lograr este objetivo, se identificaron tres actores clave dentro del ecosistema de la seguridad laboral: el operario de planta, el supervisor de seguridad y mantenimiento, y el gerente o administrador.
 
