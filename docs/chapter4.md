@@ -332,6 +332,8 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 ### 4.3.1. Landing Page Wireframe
 
+En esta seccion se presentan los wireframes de la Landing Page del proyecto RiskGuard. El objetivo principal de estos diseños de definir la arquitectura de la informacion y la disposicion estructural de los elementos clave, sin entrar en detalles visuales como colores o tipografias. 
+
 <div align="center">
   <p>
     Landing Page Wireframe RiskGuard
