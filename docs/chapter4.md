@@ -342,7 +342,14 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 ### 4.4.1. Web Applications Wireframes
 
-![Logo del Proyecto](docs/images/mi-imagen.png)
+<div align="center">
+  <p>
+    <b>Grafico 12</b>: Landing Page Wireframe RiskGuard
+  </p>
+    
+![Foto](images/landing-page-riskguard-1.png)
+
+</div>
 
 
 
