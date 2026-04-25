@@ -392,6 +392,12 @@ En esta seccion se presentan los wireframes de la Landing Page del proyecto Risk
 
 </div>
 
+<div align="center">
+    
+  <img src="images/landing-page-riskguard-mockup-4.png" width="500">
+
+</div>
+
 
 
 
