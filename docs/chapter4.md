@@ -472,29 +472,9 @@ Este diagrama muestra la integración y comunicación entre todos los Bounded Co
 ---
 
 ### 4.6.2. Software Architecture Context Diagram
-El Context Level Diagram del modelo C4 permite visualizar el sistema como una caja negra dentro de su entorno, mostrando los actores que interactúan con él y los sistemas externos con los que se integra. Este nivel de abstracción es fundamental para comprender el alcance del sistema, sus límites y las relaciones principales sin entrar en detalles técnicos internos.
+A continuación, se presenta el System Context Diagram del sistema RiskGuard. En este diagrama se identifican los actores principales: Administrador/Gerente, Operario y Supervisor, quienes interactúan con la plataforma para administrar, reportar incidentes y supervisar riesgos. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como Gmail (servicio de correo electrónico), Almacenamiento S3 (para guardar evidencias y reportes), Sistema de Notificaciones (para notificaciones internas y alertas) y WebSocket Server (para comunicación en tiempo real).
 
-En este caso, se presenta el sistema RiskGuard, una plataforma inteligente orientada a la prevención, monitoreo y mitigación de riesgos industriales en plantas productivas. El diagrama muestra cómo diferentes tipos de usuarios interactúan con el sistema, así como las integraciones necesarias para su correcto funcionamiento.
-
-<img width="2378" height="2454" alt="Operarte" src="https://github.com/user-attachments/assets/b30a4f6e-94c9-42a5-9ae8-f8a6107dc074" />
-￼
-El sistema RiskGuard constituye el núcleo de la solución, representado centralmente en el diagrama.  A su alrededor se encuentran los diversos actores y sistemas externos con los que interactúa, estableciendo una red de relaciones que optimizan su funcionamiento.
-
-**Usuarios del Sistema**
-
-El sistema RiskGuard se adapta a las necesidades de cinco perfiles de usuario distintos, cada uno con funciones específicas dentro del flujo de trabajo. El Operario detecta y reporta incidencias, registrando condiciones inseguras y adjuntando evidencias fotográficas o de video. El Supervisor monitorea las zonas de trabajo, analiza alertas y gestiona acciones correctivas. RRHH/Gerencia utiliza el sistema para consultar KPIs, generar reportes ejecutivos y verificar el cumplimiento normativo. El Administrador gestiona usuarios, roles y permisos, asegurando el control de acceso y la confidencialidad. Finalmente, el Visitante accede únicamente a información pública, como la presentada en la landing page, sin interacción con datos internos.
-
-**Sistemas Externos**
-
-RiskGuard se integra con diversos sistemas externos para optimizar sus capacidades y funcionalidades.  Los sensores IoT proporcionan datos en tiempo real sobre las condiciones operativas de la planta, permitiendo un monitoreo continuo y la detección temprana de anomalías.  Un sistema de IA externo procesa estos datos mediante algoritmos de inteligencia artificial para la detección de patrones, la predicción de riesgos y el cálculo de indicadores clave como el Índice de Potencial de Riesgo de Accidentes (IPERC).  Además, un servicio de notificaciones garantiza la rápida difusión de alertas críticas a través de SMS, correo electrónico y notificaciones push.  Finalmente, el sistema se integra con SUNAFIL para facilitar la supervisión y el cumplimiento de las regulaciones laborales mediante el envío de reportes de cumplimiento normativo y auditorías.
-
-**Relaciones Principales**
-
-El sistema RiskGuard establece relaciones estratégicas con actores y sistemas externos para optimizar la gestión de riesgos y la seguridad operativa.  Los usuarios interactúan directamente con RiskGuard para la captura de información, monitoreo de riesgos y toma de decisiones informadas.  RiskGuard procesa datos en tiempo real de sensores IoT para generar alertas, que son enviadas a los usuarios mediante el servicio de notificaciones.  Además, el sistema envía información al sistema de inteligencia artificial para obtener análisis predictivos y recomendaciones estratégicas.  Finalmente, RiskGuard exporta reportes a sistemas regulatorios para el cumplimiento de normativas legales.
-
-El diagrama de contexto permite identificar de manera clara los límites del sistema RiskGuard, los actores involucrados y las dependencias externas críticas. Este nivel de representación facilita la comprensión integral del sistema antes de profundizar en su arquitectura interna, la cual será desarrollada en los siguientes niveles del modelo C4.
-
----
+![System Context](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/SystemContext-001%20(2).png?raw=true)
 
 ### 4.6.3. Software Architecture Container Diagrams
 El Container Level Diagram del modelo C4 describe la arquitectura interna de un sistema identificando sus principales contenedores, que representan aplicaciones o servicios independientes con responsabilidades específicas.  Este diagrama facilita la comprensión de la organización, distribución de funciones e interacción de componentes del sistema.  En RiskGuard, ilustra la estructura de la plataforma para el monitoreo, análisis y mitigación de riesgos industriales en tiempo real, asegurando una adecuada separación de responsabilidades y una arquitectura escalable.
