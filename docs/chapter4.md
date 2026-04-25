@@ -474,7 +474,9 @@ Este diagrama muestra la integración y comunicación entre todos los Bounded Co
 ### 4.6.2. Software Architecture Context Diagram
 A continuación, se presenta el System Context Diagram del sistema RiskGuard. En este diagrama se identifican los actores principales: Administrador/Gerente, Operario y Supervisor, quienes interactúan con la plataforma para administrar, reportar incidentes y supervisar riesgos. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como Gmail (servicio de correo electrónico), Almacenamiento S3 (para guardar evidencias y reportes), Sistema de Notificaciones (para notificaciones internas y alertas) y WebSocket Server (para comunicación en tiempo real).
 
-![System Context](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/SystemContext-001%20(2).png?raw=true)
+<p align="center">
+  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/SystemContext-001%20(2).png?raw=true" width="500"/>
+</p>
 
 ### 4.6.3. Software Architecture Container Diagrams
 A continuación, se presenta el Container Diagram del sistema RiskGuard. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables: el API Gateway (Node.js) como punto de entrada único, siete Bounded Contexts implementados como servicios independientes , sus respectivas bases de datos PostgreSQL (y TimescaleDB para métricas), y los sistemas externos con los que se integra (Gmail, Almacenamiento S3, Sistema de Notificaciones y WebSocket Server). Las flechas indican el flujo de comunicación entre usuarios, API Gateway, BCs, bases de datos y sistemas externos, permitiendo visualizar la distribución de responsabilidades y la estructura general del sistema.
@@ -482,51 +484,73 @@ A continuación, se presenta el Container Diagram del sistema RiskGuard. Este di
 ![Container Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(3).png?raw=true)
 
 ### 4.6.4. Software Architecture Components Diagrams
-En esta sección se presentan los diagramas de componentes del sistema RiskGuard, los cuales muestran la descomposición interna de cada contenedor, identificando sus principales bloques funcionales, responsabilidades y tecnologías. Esto permite entender cómo se implementa la lógica del sistema y cómo interactúan sus partes internas.
 
-<img width="5610" height="4458" alt="ComponentDiagramFinal-dark copia 2" src="https://github.com/user-attachments/assets/e3209216-6f29-45c7-9d70-4209d1ddfffa" />
+A continuación, se presenta el Diagrama de Componentes para cada uno de los siete Bounded Contexts del sistema RiskGuard. Cada diagrama muestra la estructura interna del contenedor, incluyendo el Controller, el Command Side (Command Facade y comandos concretos), el Query Side (Query Service y queries concretas), los Repositories, las Databases y los External Services con los que se integra.
 
-**Backend API**
-El Backend API (Node.js + Express) centraliza la lógica del sistema.
-Componentes principales:
-* API Controllers: gestionan las solicitudes del frontend.
-* Auth Component (JWT): controla autenticación y permisos.
-* Incident Service: gestiona incidencias.
-* Monitoring Service: monitorea zonas.
-* Risk Service: analiza riesgos.
-* Mitigation Service: gestiona acciones correctivas.
-* Reporting Service: genera reportes y KPIs.
-* Notification Service: envía alertas.
-* Repository Layer (MongoDB): maneja la persistencia de datos.
-Interacción: Los controladores reciben solicitudes, los servicios procesan la lógica y el repositorio gestiona el acceso a la base de datos.
+<p align="center">Usuario y Autenticación de Cuenta BC</p>
+<p align="center">
+  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(4).png?raw=true" width="300"/>
+</p>
 
-**Web Application**
-La Web App (React) permite el monitoreo y gestión del sistema.
-Componentes:
-* UI Components: estructura visual.
-* Dashboard: muestra métricas y estado general.
-* Alert Module: gestiona alertas.
-* Reports Module: consulta reportes.
-* API Client: comunica con el backend.
+![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(2).png?raw=true)
 
-**Mobile Application**
-La Mobile App (Flutter) permite el registro de incidencias en campo.
-Componentes:
-* Mobile UI: interfaz principal.
-* Form Handler: registro de incidencias.
-* Media Component: captura de evidencia.
-* API Client: comunicación con backend.
+Este Bounded Context es responsable de la gestión de identidad del usuario dentro del sistema, abarcando tanto el registro como la autenticación. Para ello, integra un servicio externo de correo (Gmail) para el envío de notificaciones de bienvenida, recuperación de contraseña y alertas de bloqueo. A nivel funcional, incluye queries orientados a la validación de token JWT, verificación de roles, consulta de estado de cuenta y conteo de intentos fallidos; y commands destinados a la creación de cuentas, actualización de perfil, cambio de contraseña, bloqueo, desbloqueo y desactivación de cuentas. Finalmente, la información es persistida en bases de datos PostgreSQL de usuarios, sesiones y auditoría, garantizando la consistencia y seguridad de los datos.
 
-**Motor de Riesgo**
+<p align="center">Sede / Área y Activo industrial BC</p>
+<p align="center">
+  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(5).png?raw=true" width="300"/>
+</p>
 
-El Motor de Riesgo (Python) realiza el análisis avanzado.
-Componentes:
-* Risk Calculator: calcula niveles de riesgo.
-* IPERC Processor: evalúa riesgos.
-* Pattern Detection: detecta patrones.
+![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(3).png?raw=true)
 
-Los diagramas de componentes muestran la estructura interna del sistema, permitiendo entender cómo se distribuyen las responsabilidades y cómo interactúan los módulos para garantizar el funcionamiento de RiskGuard.
+Este Bounded Context es responsable de la gestión de la estructura organizacional y los activos industriales dentro del sistema. Para ello, integra un servicio externo de notificaciones para alertar sobre cambios de estado y traslados de activos. A nivel funcional, incluye queries orientados a listar sectores activos, validar nombres duplicados, obtener activos por sector y verificar historial de riesgos; y commands destinados a la creación, edición, activación y desactivación de sectores, así como el registro, actualización, traslado, baja, mantenimiento y reactivación de activos industriales. Finalmente, la información es persistida en bases de datos PostgreSQL de sectores, activos e historial de ubicaciones.
 
+<p align="center">Inspección / Condición Insegura BC</p>
+<p align="center">
+  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(6).png?raw=true" width="300"/>
+</p>
+
+![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(4).png?raw=true)
+
+Este Bounded Context es responsable de la gestión de incidentes y condiciones inseguras reportadas en el entorno laboral. Para ello, integra un servicio externo de almacenamiento S3 para guardar evidencias fotográficas y el sistema de notificaciones para alertar sobre nuevos reportes. A nivel funcional, incluye queries orientados a obtener reportes por ID, sector, estado y nivel de urgencia, así como consultar notificaciones por usuario y evidencias por reporte; y commands destinados a la creación, actualización de estado y cancelación de reportes, gestión de formularios de inspección, evaluación de condiciones inseguras, envío de notificaciones y subida de evidencias. Finalmente, la información es persistida en bases de datos PostgreSQL de incidentes, formularios, notificaciones y evidencias.
+
+<p align="center">Evaluación de Riesgo BC</p>
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(6).png?raw=true" width="300"/>
+</p>
+
+![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(4).png?raw=true)
+
+Este Bounded Context es responsable del cálculo y análisis de riesgos mediante la metodología IPERC. Para ello, integra el sistema de notificaciones para alertar sobre patrones de riesgo recurrentes detectados. A nivel funcional, incluye queries orientados a obtener matrices IPERC por ID y sector, consultar patrones de riesgo por sector, obtener niveles de criticidad por área y listar alertas pendientes; y commands destinados al cálculo y validación de matrices IPERC, detección de patrones de recurrencia, actualización de niveles de criticidad por área, generación de resúmenes diarios y creación de alertas de patrones. Finalmente, la información es persistida en bases de datos PostgreSQL de matrices, patrones, niveles por área, resúmenes y alertas de riesgo.
+
+<p align="center">Mitigación BC</p>
+<p align="center">
+  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(7).png?raw=true" width="300"/>
+</p>
+
+![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(5).png?raw=true)
+
+Este Bounded Context es responsable de la gestión de acciones correctivas y tickets de mitigación. Para ello, integra Gmail para el envío de notificaciones de tickets asignados y el sistema de notificaciones para alertas internas de escalamiento. A nivel funcional, incluye queries orientados a obtener tickets por ID, estado y sector, listar acciones pendientes y verificaciones por acción, así como consultar acciones asignadas por usuario; y commands destinados a la creación, asignación, actualización de estado, escalamiento y cierre de tickets, gestión de acciones correctivas, creación y aprobación de verificaciones, y asignación de acciones a usuarios. Finalmente, la información es persistida en bases de datos PostgreSQL de tickets, verificaciones, acciones asignadas y acciones correctivas.
+
+<p align="center">Monitoreo y Dashboard BC</p>
+<p align="center">
+  <a href="https://postimg.cc/bDJyz295">
+    <img src="https://i.postimg.cc/sXPv4YQ3/Container-001-(11).png" width="300"/>
+  </a>
+</p>
+
+![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(8).png?raw=true)
+
+Este Bounded Context es responsable de la visualización en tiempo real de métricas y alertas del sistema. Para ello, integra un servidor WebSocket para comunicación en tiempo real y Gmail para el envío de alertas críticas por correo. A nivel funcional, incluye queries orientados a obtener alertas por nivel de urgencia, heatmaps por sector, dashboards por usuario, métricas globales y por sector, widgets por dashboard y notificaciones pendientes; y commands destinados a la creación, actualización y resolución de alertas, generación y actualización de mapas de calor, gestión de dashboards y widgets, cálculo de métricas de riesgo y envío de notificaciones. Finalmente, la información es persistida en bases de datos de alertas, heatmaps, dashboards, widgets, notificaciones y métricas (TimescaleDB).
+
+<p align="center">Reportes y Cumplimiento BC</p>
+<p align="center">
+  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(9).png?raw=true" width="300"/>
+</p>
+
+![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(7).png?raw=true)
+Este Bounded Context es responsable de la generación de reportes ejecutivos e indicadores de cumplimiento. Para ello, integra Gmail para el envío de reportes programados y Almacenamiento S3 para la exportación y guardado de reportes generados. A nivel funcional, incluye queries orientados a obtener reportes por rango de fechas, cumplimiento por sector y global, tendencias de cumplimiento, datos históricos y comparación de períodos; y commands destinados a la generación, programación y exportación de reportes ejecutivos, cálculo de indicadores de cumplimiento, análisis histórico, comparación de períodos, registro de auditoría de accesos, verificación de integridad y envío de alertas de cumplimiento. Finalmente, la información es persistida en bases de datos PostgreSQL de reportes, cumplimiento, auditoría, históricos y alertas.
 
 ## 4.7. Software Object-Oriented Design
 
