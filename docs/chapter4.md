@@ -347,7 +347,7 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
     Landing Page Wireframe RiskGuard
   </p>
     
-  <img src="docs/images/landing-page-riskguard-1" width="500">
+  <img src="docs/images/landing-page-riskguard-1.png" width="500">
 
 </div>
 
