@@ -371,6 +371,8 @@ En esta seccion se presentan los wireframes de la Landing Page del proyecto Risk
 
 ### 4.3.2. Landing Page Mock-up
 
+Los mock-ups representan el diseño de alta fidelidad de la Landing Page, integrando la identidad visual del proyecto. En esta etapa se definen los colores corporativos, la tipografía, el estilo de las imágenes y el acabado final de los componentes UI, proporcionando una visión exacta de cómo se verá el producto final una vez implementado.
+
 <div align="center">
   <p>
     Landing Page Mockup RiskGuard
