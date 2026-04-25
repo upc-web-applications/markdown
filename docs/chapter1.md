@@ -36,7 +36,7 @@ La solución RiskGuard se caracteriza por su capacidad para registrar y centrali
 
 | Foto | Nombre | Descripción |
 | -------- | -------- | -------- |
-| ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241e158, Aponte Pablo, Isabel Luisa| |
+| ![](https://i.postimg.cc/wxR9Q4g6/Whats-App-Image-2026-04-17-at-3-05-22-AM.jpg) | u20241e158, Aponte Pablo, Isabel Luisa | Soy estudiante de Ingeniería de Software con interés en la programación y el desarrollo de soluciones prácticas. Disfruto aprender cómo funcionan los sistemas por dentro y aplicar ese conocimiento en proyectos. Poseo conocimientos en C++, Java y HTML, además de otras herramientas tecnológicas. Me caracterizo por ser responsable, organizada y orientada al trabajo en equipo. |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u20241a322, Blancas Chávez, Carlos Franco |Me interesa mucho el desarrollo de software ya que desde siempre me ha interesado conocer cómo funcionan las cosas por dentro y esa curiosidad fue lo que me motivó a elegir esta profesión. Me gustaría desempeñarme en el área de bases de datos o desarrollador backend, porque me atrae la lógica que hay detrás de los sistemas y la forma en la que se organiza y gestiona la información. Habilidades: C++, Python, Js,React, Html, css, JavaScript, MySql|
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | u202415412, Flores Siguas, Marlon Alessandro | |
 | ![](https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png) | APELLIDOS, NOMBRES (CÓDIGO) | |
