@@ -332,16 +332,6 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 ### 4.3.1. Landing Page Wireframe
 
-
-
-### 4.3.2. Landing Page Mock-up
-
-
-
-## 4.4. Web Applications UX/UI Design
-
-### 4.4.1. Web Applications Wireframes
-
 <div align="center">
   <p>
     Landing Page Wireframe RiskGuard
@@ -375,6 +365,15 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 </div>
 
+
+
+### 4.3.2. Landing Page Mock-up
+
+
+
+## 4.4. Web Applications UX/UI Design
+
+### 4.4.1. Web Applications Wireframes
 
 
 ### 4.4.2. Web Applications Wireflow Diagrams
