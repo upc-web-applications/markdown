@@ -353,25 +353,25 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 <div align="center">
     
-![Foto](images/landing-page-riskguard-2.png)
+  <img src="images/landing-page-riskguard-2.png" width="500">
 
 </div>
 
 <div align="center">
     
-![Foto](images/landing-page-riskguard-3.png)
+  <img src="images/landing-page-riskguard-3.png" width="500">
 
 </div>
 
 <div align="center">
     
-![Foto](images/landing-page-riskguard-4.png)
+  <img src="images/landing-page-riskguard-4.png" width="500">
 
 </div>
 
 <div align="center">
     
-![Foto](images/landing-page-riskguard-5.png)
+  <img src="images/landing-page-riskguard-5.png" width="500">
 
 </div>
 
