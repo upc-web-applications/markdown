@@ -371,6 +371,15 @@ En esta seccion se presentan los wireframes de la Landing Page del proyecto Risk
 
 ### 4.3.2. Landing Page Mock-up
 
+<div align="center">
+  <p>
+    Landing Page Mockup RiskGuard
+  </p>
+    
+  <img src="images/landing-page-riskguard-mockup-1.png" width="500">
+
+</div>
+
 
 
 ## 4.4. Web Applications UX/UI Design
