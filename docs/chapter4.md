@@ -477,85 +477,9 @@ A continuación, se presenta el System Context Diagram del sistema RiskGuard. En
 ![System Context](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/SystemContext-001%20(2).png?raw=true)
 
 ### 4.6.3. Software Architecture Container Diagrams
-El Container Level Diagram del modelo C4 describe la arquitectura interna de un sistema identificando sus principales contenedores, que representan aplicaciones o servicios independientes con responsabilidades específicas.  Este diagrama facilita la comprensión de la organización, distribución de funciones e interacción de componentes del sistema.  En RiskGuard, ilustra la estructura de la plataforma para el monitoreo, análisis y mitigación de riesgos industriales en tiempo real, asegurando una adecuada separación de responsabilidades y una arquitectura escalable.
+A continuación, se presenta el Container Diagram del sistema RiskGuard. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables: el API Gateway (Node.js) como punto de entrada único, siete Bounded Contexts implementados como servicios independientes , sus respectivas bases de datos PostgreSQL (y TimescaleDB para métricas), y los sistemas externos con los que se integra (Gmail, Almacenamiento S3, Sistema de Notificaciones y WebSocket Server). Las flechas indican el flujo de comunicación entre usuarios, API Gateway, BCs, bases de datos y sistemas externos, permitiendo visualizar la distribución de responsabilidades y la estructura general del sistema.
 
-<img width="7849" height="3392" alt="ContainerDiagram-dark copia" src="https://github.com/user-attachments/assets/90a55378-ff18-452c-ae89-83b796f87f53" />
-
-
-**Descripción del Diagrama de Contenedores**
-
-El sistema RiskGuard se organiza en capas para separar responsabilidades y facilitar la escalabilidad.
-
-**Tipos de Usuarios**
-
-* Operario: Reporta incidencias y registra condiciones inseguras.
-* Supervisor: Monitorea zonas y gestiona acciones correctivas.
-* RRHH / Gerencia: Consulta KPIs y reportes ejecutivos.
-* Administrador: Gestiona usuarios y permisos.
-* Visitante: Accede a información pública.
-
-**Capa de Presentación (Frontend)**
-
-* Web Application (React): Dashboard interactivo para monitoreo y alertas.
-* Mobile Application (Flutter): Registro de incidencias y alertas en tiempo real.
-* Comunicación: Servicios REST con el backend.
-
-**Capa de Aplicación (Backend)**
-
-* Backend API (Node.js): Núcleo del sistema, gestiona la lógica de negocio.
-
-**Capa de Servicios Funcionales**
-
-* Gestión de Incidentes: Registro de incidencias y evidencias.
-* Monitoreo de Zonas: Visualización del estado de las áreas.
-* Motor de Riesgo (IPERC): Análisis de riesgo (probabilidad, severidad, criticidad).
-* Gestión de Mitigación: Acciones correctivas y control de riesgos.
-* Reportes y KPIs: Indicadores y reportes para la toma de decisiones.
-* Servicio de Notificaciones: Envío de alertas.
-
-**Capa de Datos**
-
-* Base de Datos (MongoDB): Almacenamiento y consulta eficiente de información.
-
-**Sistemas Externos**
-
-* Sensores IoT: Datos en tiempo real sobre condiciones operativas.
-* Sistema de IA externo: Análisis predictivo y detección de patrones.
-* Sistema regulatorio (SUNAFIL): Recibe reportes de cumplimiento normativo.
-
-**Comunicación entre Contenedores**
-
-* Usuarios interactúan con frontend.
-* Frontend envía solicitudes al backend API.
-* Backend distribuye solicitudes a servicios funcionales.
-* Servicios acceden a la base de datos.
-* Motor de Riesgo se integra con IA.
-* Sensores IoT envían datos al backend.
-* Servicio de notificaciones comunica alertas.
-* Sistema exporta información a plataformas regulatorias.
-
-**Decisiones de Arquitectura y Tecnología**
-
-* Arquitectura modular basada en contenedores: Separación de responsabilidades y escalabilidad.
-* Node.js: Manejo eficiente de solicitudes concurrentes.
-* React y Flutter: Interfaces modernas y adaptadas a dispositivos.
-* MongoDB: Flexibilidad en manejo de datos.
-* Integración con sistemas externos: Análisis predictivo y monitoreo en tiempo real.
-
-**Elementos de alto nivel de la arquitectura**
-
-La arquitectura de RiskGuard se compone de los siguientes elementos principales:
-
-* Capa de Presentación (Frontend):  Incluye la aplicación web y móvil para la interacción directa con los usuarios.
-* Backend API:  Núcleo del sistema, centraliza la lógica de negocio y coordina la comunicación entre componentes.
-* Servicios Funcionales:  Módulos especializados que implementan funcionalidades clave como gestión de incidencias, monitoreo, análisis de riesgo, mitigación, reportes y notificaciones.
-* Base de Datos (MongoDB):  Persiste la información del sistema, incluyendo usuarios, incidencias, reportes y configuraciones.
-* Sistemas Externos:  Componentes externos como sensores IoT, IA y plataformas regulatorias que complementan el sistema.
-
-
-El diagrama de contenedores de RiskGuard presenta una arquitectura modular y escalable, con componentes específicos para cada función. La distribución de responsabilidades y la integración con sistemas externos garantizan un funcionamiento eficiente en entornos industriales.
-
-
+![Container Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(3).png?raw=true)
 
 ### 4.6.4. Software Architecture Components Diagrams
 En esta sección se presentan los diagramas de componentes del sistema RiskGuard, los cuales muestran la descomposición interna de cada contenedor, identificando sus principales bloques funcionales, responsabilidades y tecnologías. Esto permite entender cómo se implementa la lógica del sistema y cómo interactúan sus partes internas.
