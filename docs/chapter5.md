@@ -280,7 +280,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Interacción con botones de conversión</td>
       <td>T15</td>
       <td>Eventos botones</td>
-      <td>Configurar redirección y eventos</td>
+      <td>Configurar los botones</td>
       <td>2</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
@@ -515,6 +515,8 @@ A continuación, las vistas principales desarrolladas:
   <img src="https://i.postimg.cc/FH9HVH8J/Whats-App-Image-2026-04-26-at-12-02-23-PM-(3).jpg" width="500"/>
 </p>
 
+* Video de la Ejecución
+[Ver enlace del video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDBzzayTq6kQIJAhP26LMO3Ad0Nf1A-UaCJg4qfbtvTvh8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mg8Nk6)
 
 #### 5.2.1.6. *Services Documentation Evidence for Sprint Review*
 
