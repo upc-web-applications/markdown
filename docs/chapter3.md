@@ -3744,6 +3744,46 @@
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US78</td>
+    <td><b>Epic ID</b></td><td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Cierre y Conversión de Prospectos</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como visitante o posible usuario, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>Debe aparecer el llamado a la acción final: "Protege tu planta industrial hoy".</li>
+        <li>El sistema debe presentar dos botones claros: "Iniciar prueba gratuita" (destacado) y "Hablar con ventas".</li>
+        <li>El footer debe mostrar la afiliación académica a la UPC y enlaces legales/técnicos.</li>
+      </ol>
+      <b>Escenario 1:</b> Intención de inicio de uso del software<br/>
+      <ul>
+        <li><b>Given</b> que un cliente potencial ha terminado de informarse y desea probar la solución,</li>
+        <li><b>When</b> localiza y presiona el botón de "Iniciar prueba gratuita",</li>
+        <li><b>Then</b> el sistema facilita el punto de partida para la conversión, guiando al usuario hacia el siguiente paso de adquisición.</li>
+      </ul>
+      <b>Escenario 2:</b> Verificación de soporte y respaldo institucional<br/>
+      <ul>
+        <li><b>Given</b> que un usuario requiere verificar la procedencia y el soporte técnico del sistema,</li>
+        <li><b>When</b> revisa la sección del footer al final de la navegación,</li>
+        <li><b>Then</b> el sistema muestra claramente la afiliación a la UPC y las opciones de soporte técnico disponibles,</li>
+        <li><b>And</b> genera una percepción de confianza y seriedad institucional sobre el producto.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## 3.2. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.
