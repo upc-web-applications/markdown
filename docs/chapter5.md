@@ -367,7 +367,11 @@ A continuación, las vistas principales desarrolladas:
 
 #### 5.2.1.6. *Services Documentation Evidence for Sprint Review*
 
+En el Sprint 1, el trabajo se enfocó únicamente en el desarrollo del Landing Page de RiskGuard, por lo que no se incluyó la implementación de servicios web ni APIs. Debido a esto, no corresponde presentar documentación de endpoints en esta etapa.
 
+El esfuerzo del equipo estuvo dirigido a la construcción de la interfaz visual y la experiencia de usuario, permitiendo mostrar de forma clara la propuesta de valor, las funcionalidades y los segmentos a los que está orientada la solución. Al tratarse de una página estática, no fue necesario integrar componentes backend.
+
+La incorporación de Web Services y la documentación de endpoints se realizará en Sprints posteriores, cuando se desarrollen funcionalidades más avanzadas que requieran procesamiento de datos y lógica de negocio.
 
 #### 5.2.1.7. *Software Deployment Evidence for Sprint Review*
 
