@@ -283,7 +283,54 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 
 #### 5.2.1.4. *Development Evidence for Sprint Review*
 
+Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del Landing Page de RiskGuard. Se realizaron un total de 4 commits el día 26 de abril de 2026, abarcando desde la carga inicial del proyecto hasta la documentación, correcciones de compilación y el despliegue mediante GitHub Pages. A continuación, se presenta el registro de commits:
 
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Commited on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RiskGuard_LandingPage</td>
+      <td>main</td>
+      <td>5c9b242</td>
+      <td>Add files via upload</td>
+      <td>Implementación completa de la Landing Page (estructura HTML, estilos CSS y secciones: inicio, características, cómo funciona, segmentos, estadísticas y contacto)</td>
+      <td>26 de abril de 2026</td>
+    </tr>
+    <tr>
+      <td>RiskGuard_LandingPage</td>
+      <td>main</td>
+      <td>57e4417</td>
+      <td>docs: deploy github pages</td>
+      <td>Configuración y despliegue del proyecto en GitHub Pages</td>
+      <td>26 de abril de 2026</td>
+    </tr>
+    <tr>
+      <td>RiskGuard_LandingPage</td>
+      <td>main</td>
+      <td>8b240d6</td>
+      <td>fix: build</td>
+      <td>Se corrigieron errores en la compilación del proyecto</td>
+      <td>26 de abril de 2026</td>
+    </tr>
+    <tr>
+      <td>RiskGuard_LandingPage</td>
+      <td>main</td>
+      <td>a5f06db</td>
+      <td>feat: añadir Readme Landing</td>
+      <td>Se agregó el archivo README para la Landing Page de RiskGuard</td>
+      <td>26 de abril de 2026</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.1.5. *Execution Evidence for Sprint Review*
 
