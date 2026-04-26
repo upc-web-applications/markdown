@@ -338,10 +338,14 @@ En esta seccion se presentan los wireframes de la Landing Page del proyecto Risk
   <p>
     Landing Page Wireframe RiskGuard
   </p>
+
+- **Hero section**
     
   <img src="images/landing-page-riskguard-1.png" width="500">
 
 </div>
+
+- **Problem section**
 
 <div align="center">
     
@@ -349,11 +353,15 @@ En esta seccion se presentan los wireframes de la Landing Page del proyecto Risk
 
 </div>
 
+- **Main features section**
+
 <div align="center">
     
   <img src="images/landing-page-riskguard-3.png" width="500">
 
 </div>
+
+- **Client trust section**
 
 <div align="center">
     
@@ -361,6 +369,8 @@ En esta seccion se presentan los wireframes de la Landing Page del proyecto Risk
 
 </div>
 
+- **Next step section**
+  
 <div align="center">
     
   <img src="images/landing-page-riskguard-5.png" width="500">
