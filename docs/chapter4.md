@@ -717,7 +717,7 @@ Login Gerente → Dashboard Ejecutivo → Revisión de KPIs → Clic en indicado
 
 ---
 
-**User Flow 4 – Gestión de sectores, activos y personal técnico**
+**User Flow 4 – Gestión de sectores, activos y personal técnico predictivo**
 
 *User Goal: El supervisor desea configurar la estructura de la planta para que los operarios puedan georreferenciar correctamente sus reportes.*
 
