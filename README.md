@@ -3,25 +3,19 @@
 <br><br>
 <img src="https://marketingperu.beglobal.biz/wp-content/uploads/2025/01/logo-upc-png-transparente-1.png" alt="drawing" width="100"/> <br><br>
 
-**Universidad Peruana de Ciencias Aplicadas (UPC)**
+### Universidad Peruana de Ciencias Aplicadas
 
-Facultad de Ingeniería
-Carrera de Ingeniería de Software
-
-Ciclo 2026-10 <br><br>
+<small>Facultad de Ingeniería &nbsp;·&nbsp; Ingeniería de Software &nbsp;·&nbsp; 5to Ciclo</small>
 
 Aplicaciones Web
 
-NRC:12190
+<small>NRC: 12190 &nbsp;·&nbsp; Profesor: Hugo Allan Mori Paiva</small>
 
-Profesor: Hugo Allan Mori Paiva <br><br>
+### Informe del Trabajo Final
 
-Informe del Trabajo Final
+<small>Startup &nbsp;·&nbsp; GuardSecurity</small>
 
-Startup: NombreStartup
-
-Product: NombreProyecto <br><br>
-
+<small>Producto &nbsp;·&nbsp; RiskGuard</small>
 
 ### Integrantes
 
@@ -29,8 +23,9 @@ Product: NombreProyecto <br><br>
 | :--------: | :--------------------------------: |
 | u20241e158 | Aponte Pablo, Isabel Luisa         |
 | u202418655 | Laura Acosta, Victor Jhosef        |
-| u20241a322 | Blancas Chávez, Carlos Franco      |  
+| u20241a322 | Blancas Chávez, Carlos Franco      |
 | u20231b781 | Flores Eusebio, Angel Thyago       |
+| u202415412 | Flores Siguas, Marlon Alessandro   |
 
 <small>Abril &nbsp;·&nbsp; 2026</small>
 
@@ -44,14 +39,55 @@ Product: NombreProyecto <br><br>
 
 | Version | Fecha | Autor | Descripción de modificación |
 |:------:|:------:|:------:|:---------------------------:|
-| AV1 | 03/04/2026 | Todos los integrantes | Primera Version |
+| AV1 | 26/04/2026 | Todos los integrantes | Primera Version |
 
 </div>
 
 
-# Projet Report Collaboration Insights
+# Project Report Collaboration Insights
 
 Project Report URL: https://github.com/upc-web-applications
+
+Durante la elaboración de la AV1, los integrantes del equipo contribuyeron en la redacción, diseño e implementación del informe y del Landing Page, distribuyendo la carga de trabajo por capítulos y secciones. El trabajo se organizó utilizando GitHub como plataforma de control de versiones, realizando commits continuos sobre la rama principal del repositorio.
+
+## Repositorio del Informe
+
+**URL:** https://github.com/upc-web-applications/markdown
+
+### Distribución de contribuciones por integrante
+
+| Integrante | Secciones principales del informe |
+|---|---|
+| Aponte Pablo, Isabel Luisa | Integración del proyecto · Capítulo V (Sprint 1) · Deployment Evidence |
+| Laura Acosta, Victor Jhosef | Capítulo IV (Style Guidelines, Information Architecture) · Diseño Landing Page |
+| Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page |
+| Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe |
+
+
+
+[foto]
+
+[foto]
+
+## Repositorio del Landing Page
+
+**URL:** https://github.com/upc-web-applications/riskguard-landingpage
+
+Durante el Sprint 1, el equipo realizó commits en el repositorio del Landing Page abarcando desde la estructura inicial hasta el despliegue en producción. A continuación se detalla la participación por integrante:
+
+### Contribuciones por integrante
+
+| Integrante | GitHub Username | Área de contribución |
+|---|---|---|
+| Aponte Pablo, Isabel Luisa | IsabelAponte234 | Diseño visual de secciones · Ajustes de interfaz |
+| Laura Acosta, Victor Jhosef | Zatrynox | Integración y consolidación de secciones · Despliegue |
+| Blancas Chávez, Carlos Franco | CarlosBlancas969 | Implementación de secciones principales · Navbar · Hero · Características |
+| Flores Eusebio, Angel Thyago | angelfdevs | Diseño de secciones · Cómo funciona · Segmentos |
+
+[foto]
+
+[foto]
+
 
 # Tabla de contenidos
 
@@ -169,6 +205,34 @@ Project Report URL: https://github.com/upc-web-applications
 
 # Student Outcome
 
-| Criterio Especifico | Acciones realizadas | Conclusiones |
-| -------- | -------- | -------- |
-| Text     | Text     | Text     |
+**ABET – EAC - Student Outcome 5**
+
+*Criterio completo: "La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos."*
+
+<table>
+  <thead>
+    <tr>
+      <th>Criterio específico</th>
+      <th>Acciones realizadas</th>
+      <th>Conclusiones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Participa activamente en la planificación y cumplimiento de objetivos del equipo, asumiendo responsabilidades de liderazgo o colaboración según las necesidades del sprint.</td>
+      <td>
+        <strong>Aponte Pablo, Isabel Luisa</strong><br>
+        <em>AV1:</em> Participó activamente en la reunión de Sprint Planning 1, contribuyendo a la definición del sprint goal y a la distribución de tareas entre los integrantes. Asumió la responsabilidad del diseño visual de secciones del Landing Page, coordinando con sus compañeros para asegurar la coherencia estética del sitio. Su participación constante en los canales de comunicación del equipo facilitó la resolución de bloqueos durante el desarrollo.<br><br>
+        <strong>Laura Acosta, Victor Jhosef</strong><br>
+        <em>AV1:</em> Lideró la integración y consolidación de las secciones desarrolladas por los distintos integrantes del equipo, asegurando que el Landing Page funcionara de manera cohesionada como producto final. Coordinó el proceso de despliegue en GitHub Pages y Vercel, estableciendo los pasos del pipeline de publicación y comunicándolos al equipo para garantizar que todos comprendieran el flujo de entrega. Su rol de liderazgo técnico en la fase de integración fue clave para cumplir el objetivo del Sprint 1.<br><br>
+        <strong>Blancas Chávez, Carlos Franco</strong><br>
+        <em>AV1:</em> Asumió un rol de liderazgo en la implementación del Landing Page, tomando la iniciativa en la estructuración del navbar, la sección hero y las características del sistema. Coordinó con el resto del equipo la coherencia entre las secciones desarrolladas en paralelo, revisando y apoyando el trabajo de sus compañeros para mantener la consistencia visual y funcional del sitio. Su capacidad para organizar el trabajo colectivo fue determinante para completar el entregable dentro del plazo del Sprint.<br><br>
+        <strong>Flores Eusebio, Angel Thyago</strong><br>
+        <em>AV1:</em> Contribuyó al equipo asumiendo la responsabilidad del diseño e implementación de las secciones "Cómo funciona" y "Segmentos" del Landing Page, trabajando de forma coordinada con los demás integrantes para respetar los lineamientos visuales acordados en las Style Guidelines. Participó en las reuniones de seguimiento del Sprint, reportando su avance y señalando dependencias con otras secciones para facilitar la integración. Su compromiso con los plazos establecidos contribuyó al cumplimiento del objetivo del Sprint 1.
+      </td>
+      <td>
+        Durante la AV1, el equipo de RiskGuard Solutions demostró capacidad para funcionar de manera efectiva como unidad de trabajo colaborativo. La distribución de responsabilidades durante el Sprint Planning, la comunicación continua a través de los canales del equipo y la integración coordinada de las secciones del Landing Page evidencian que los integrantes no solo cumplieron sus tareas individuales, sino que también apoyaron el trabajo colectivo para alcanzar el objetivo común del Sprint. La existencia de roles diferenciados —liderazgo técnico en integración y despliegue, liderazgo en implementación de secciones y colaboración en diseño— refleja un equipo que distribuye el liderazgo de forma situacional, creando un entorno inclusivo donde cada integrante aporta desde sus fortalezas. El cumplimiento del sprint goal dentro del plazo establecido valida que el equipo ha comenzado a desarrollar efectivamente la competencia de trabajo en equipo definida por el Student Outcome 5.
+      </td>
+    </tr>
+  </tbody>
+</table>
