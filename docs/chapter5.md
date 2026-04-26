@@ -79,7 +79,19 @@ Ruta: https://www.markdownguide.org/
 
 #### 5.2.1.1. *Sprint Planning 1*
 
+En este Sprint 1, el equipo se centró en el desarrollo de la Landing Page de RiskGuard, con el objetivo de presentar de manera clara y atractiva la propuesta de valor del sistema. Se trabajaron secciones clave como la sección principal, características, cómo funciona, segmentos, estadísticas y contacto, organizando el trabajo por secciones para facilitar la colaboración entre los integrantes y lograr una integración ordenada del sitio.
 
+| **Campo** | **Detalle** |
+|----------|------------|
+| Sprint # | 1 |
+| Date | 2026-04-05 |
+| Time | 10:00 PM |
+| Location | Reunión virtual (Google Meet) |
+| Prepared By | Flores Eusebio, Angel Thyago |
+| Attendees | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Flores Siguas, Marlon Alessandro / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Sprint Goal | Our focus is on developing a responsive landing page for RiskGuard that clearly presents its value proposition through the main section, along with sections for características, cómo funciona, segmentos, estadísticas y contactar. We believe it delivers a better understanding of how the platform helps organizations manage risks and improve safety. This will be confirmed when users can navigate all sections smoothly and understand the purpose of the system on both desktop and mobile devices. |
+| Sprint n Velocity | 25 SP |
+| Sum of Story Points | 20 SP |
 
 #### 5.2.1.2. *Aspect Leaders and Collaborators*
 
