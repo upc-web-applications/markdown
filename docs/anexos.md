@@ -11,3 +11,7 @@
 - Entrevista Gerentes y administradores
   * Entrevista N°1: https://youtu.be/TjkEO2CkCFc?si=9QzsqC7mHRSWbxx5
   * Entrevista N°2: https://youtu.be/_SFBg8LDJSo
+ 
+- Figma
+  * Link de Figma: https://www.figma.com/design/J4WeOT09XLjSusm6DejV5M/RiskGuard?node-id=0-1&t=TC21RljWTnTwxq25-1
+  
