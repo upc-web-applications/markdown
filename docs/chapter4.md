@@ -1002,3 +1002,9 @@ Este Bounded Context es responsable de la generación de reportes ejecutivos e i
   <img src="images/diagrama-basedatos-riskguard-bc-usuarios.svg" width="500">
 
 </div>
+
+<div align="center">
+    
+  <img src="images/diagram-basedatos-riskguard-bc-areas-activos.svg" width="500">
+
+</div>
