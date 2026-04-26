@@ -375,6 +375,33 @@ La incorporación de Web Services y la documentación de endpoints se realizará
 
 #### 5.2.1.7. *Software Deployment Evidence for Sprint Review*
 
+El despliegue del Landing Page de **RiskGuard** se realizó utilizando dos plataformas: **GitHub Pages** y **Vercel**, ambas orientadas a la publicación de aplicaciones web estáticas sin necesidad de configurar servidores adicionales.
+
+**Procedimiento realizado**
+
+Se verificó que la versión final del proyecto estuviera almacenada y actualizada en la rama **main** del repositorio.
+
+**GitHub Pages**
+
+- Se accedió al repositorio en GitHub y se ingresó a **Settings → Pages**.  
+- En la sección **Source**, se seleccionó la rama **main** y la carpeta raíz.  
+- Se guardó la configuración para generar automáticamente la página pública.  
+- Se validó que el sitio esté disponible en línea.  
+
+**Vercel**
+
+- Se vinculó el repositorio de GitHub con Vercel.  
+- Se configuró el despliegue automático desde la rama **main**.  
+- Se ejecutó el proceso de build y publicación.  
+- Se verificó el acceso al entorno de producción.  
+
+[![Whats-App-Image-2026-04-26-at-12-59-55-PM.jpg](https://i.postimg.cc/VNXz275M/Whats-App-Image-2026-04-26-at-12-59-55-PM.jpg)](https://postimg.cc/3yJMvFXJ)
+
+- **GitHub Pages:**  
+  https://upc-web-applications.github.io/riskguard-landingpage/#  
+
+- **Vercel:**  
+  https://riskguard-landingpage.vercel.app/
 
 
 #### 5.2.1.8. *Team Collaboration Insights during Sprint*
