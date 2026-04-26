@@ -63,8 +63,52 @@ Ruta: https://www.markdownguide.org/
 
 ### 5.1.2. Source Code Management
 
+Para la gestión del código fuente, el equipo utilizó **GitHub** como plataforma de control de versiones, lo que permitió llevar un seguimiento ordenado de los cambios, facilitar la colaboración y mantener control sobre el desarrollo del proyecto durante el Sprint.
 
+**Repositorios del proyecto**
 
+<div align="center">
+
+| Componente                  | Repositorio                                                                 |
+|---------------------------|------------------------------------------------------------------------------|
+| Landing Page              | https://github.com/upc-web-applications/riskguard-landingpage               |
+| Frontend Web Application | https://github.com/upc-web-applications/Frontend                            |
+| Web Services (Backend)   | https://github.com/upc-web-applications/Backend                             |
+
+</div>
+
+**Estrategia de control de versiones (GitFlow)**
+
+Se tomó como base el modelo **GitFlow**, aunque adaptado al alcance del Sprint 1. Se definieron las ramas principales **main**, que contiene la versión estable, y **develop**, destinada a la integración de nuevas funcionalidades (*features*). Cada *feature* será desarrollada de manera independiente antes de su integración. Sin embargo, para este primer Sprint el trabajo se realizó principalmente sobre la rama *main*, ya que el objetivo fue obtener una primera versión funcional del Landing Page.
+
+**Convención de ramas**
+
+Para los siguientes Sprints, se definieron convenciones para organizar el desarrollo:
+
+- **Feature:** desarrollo de nuevas funcionalidades desde `develop`  
+  Convención: `feature/nombre-descriptivo`  
+
+- **Release:** preparación de versiones previas al lanzamiento  
+  Convención: `release/vX.Y.Z`  
+
+- **Hotfix:** corrección de errores críticos en producción  
+  Convención: `hotfix/vX.Y.Z`  
+
+**Versionamiento (Semantic Versioning)**
+
+Se adoptará **Semantic Versioning (SemVer)** con el formato `MAJOR.MINOR.PATCH`.  
+Los cambios **MAJOR** representan modificaciones incompatibles, los **MINOR** nuevas funcionalidades o *features*, y los **PATCH** correcciones o ajustes menores.
+
+**Convención de commits (Conventional Commits)**
+
+Para mantener consistencia en el historial, se utilizó la convención **Conventional Commits**:
+
+- `feat:` nueva funcionalidad  
+- `fix:` corrección de errores  
+- `docs:` cambios en documentación  
+- `style:` formato o estilos sin afectar lógica  
+- `refactor:` mejora interna del código  
+- `chore:` tareas de mantenimiento  
 ### 5.1.3. Source Code Style Guide & Conventions
 
 
