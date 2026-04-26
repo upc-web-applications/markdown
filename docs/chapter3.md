@@ -3671,6 +3671,46 @@
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US76</td>
+    <td><b>Epic ID</b></td><td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Metodología y Validación Social</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como visitante o posible usuario, quiero conocer el proceso de trabajo que realiza la aplicacion web y estadisticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>Se debe explicar el flujo de 3 pasos (Operarios reportan desde la aplicacion web, El sistema analiza los datos, Supervisores toman accion preventiva).</li>
+        <li>Se debe incluir una sección de estadísticas titulada "La realidad de la industria peruana" con datos que respaldan la necesidad de la aplicacion web RiskGuard.</li>
+      </ol>
+      <b>Escenario 1:</b> Comprensión del flujo de trabajo integral<br/>
+      <ul>
+        <li><b>Given</b> que un interesado desea conocer cómo se opera con el software en el día a día,</li>
+        <li><b>When</b> consulta la sección "Diseñado para el piso industrial",</li>
+        <li><b>Then</b> el sistema describe visualmente la secuencia lógica de participación entre el personal de campo y la plataforma,</li>
+        <li><b>And</b> permite al usuario entender cómo se cierra el ciclo desde el reporte hasta la actuación del supervisor.</li>
+      </ul>
+      <b>Escenario 2:</b> Sensibilización mediante datos del rubro<br/>
+      <ul>
+        <li><b>Given</b> que un usuario busca argumentos para priorizar la seguridad en su planta,</li>
+        <li><b>When</b> revisa las estadísticas de la industria peruana presentadas en la página,</li>
+        <li><b>Then</b> el sistema expone cifras relevantes sobre el impacto de la prevención y los riesgos actuales,</li>
+        <li><b>And</b> ayuda al usuario a visualizar la magnitud del problema que RiskGuard ayuda a resolver.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## 3.2. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.
