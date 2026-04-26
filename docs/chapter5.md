@@ -111,7 +111,70 @@ Para mantener consistencia en el historial, se utilizó la convención **Convent
 - `chore:` tareas de mantenimiento  
 ### 5.1.3. Source Code Style Guide & Conventions
 
+Para el desarrollo del proyecto **RiskGuard**, el equipo tomó como referencia guías reconocidas como la **HTML Style Guide and Coding Conventions de W3Schools**, la **Google HTML/CSS Style Guide**, la **Google JavaScript Style Guide** y las **C# Coding Conventions de Microsoft**, con el objetivo de mantener un código consistente, legible y alineado a buenas prácticas. Todo el desarrollo se realizó utilizando nomenclatura en inglés.
 
+**HTML**
+
+Se adoptaron lineamientos de W3Schools para estructurar correctamente el contenido del Landing Page.
+
+- Se emplea HTML5 como estándar, incluyendo la declaración `<!DOCTYPE html>` al inicio del documento.  
+- Los elementos y atributos se escriben en minúsculas para mantener uniformidad.  
+- Los valores de los atributos se definen con comillas dobles.  
+- Se incluye el atributo `lang` en la etiqueta `<html>` para indicar el idioma del sitio.  
+- Todas las imágenes contienen el atributo `alt` con descripciones relevantes.  
+- Se utiliza indentación de 2 espacios para mejorar la lectura del código.  
+- Se evita el uso de estilos en línea, delegando el diseño a hojas de estilo externas.  
+- Se emplean comentarios para identificar secciones principales.
+
+**CSS**
+
+Se siguieron las recomendaciones de la **Google HTML/CSS Style Guide** para organizar los estilos del proyecto.
+
+- Se utilizan nombres de clases en formato `kebab-case`.  
+- Los estilos se agrupan por secciones del Landing Page.  
+- Se prioriza la reutilización de clases para evitar duplicidad.  
+- Se mantiene una estructura ordenada y legible.  
+- Se implementa diseño responsive.  
+- Se utilizan comentarios para separar secciones de estilos.
+
+**JavaScript**
+
+Para la lógica base se consideraron las recomendaciones de la **Google JavaScript Style Guide**.
+
+- Se utiliza `camelCase` para variables y funciones.  
+- Se emplea `const` y `let` en lugar de `var`.  
+- Se utilizan nombres descriptivos para funciones y variables.  
+- Se mantiene el código modular y organizado.  
+- Se separa la lógica de la manipulación del DOM cuando es posible.  
+- Se prioriza un código claro, evitando redundancias innecesarias.  
+
+**React (JSX)**
+
+Para la implementación del frontend se aplicaron buenas prácticas específicas de React.
+
+- Los componentes se nombran en `PascalCase` (`App`, `Header`, `HeroSection`).  
+- Cada componente cumple una única responsabilidad para mejorar la mantenibilidad.  
+- `main.jsx` se encarga de renderizar la aplicación en el DOM.  
+- `App.jsx` organiza la estructura general del Landing Page.  
+- Se promueve la reutilización de componentes.  
+- Se mantiene separación entre lógica y presentación dentro de los componentes.
+
+**C#**
+
+Para el desarrollo backend se adoptarán las **C# Coding Conventions de Microsoft**.
+
+- Clases y métodos en `PascalCase`.  
+- Variables y parámetros en `camelCase`.  
+- Interfaces con prefijo `I`.  
+- Organización por capas (Controllers, Services, Models).  
+- Uso de comentarios XML para documentación.
+
+**Convenciones generales**
+
+- Todo el código se desarrolla en inglés.  
+- Se prioriza la legibilidad y organización.  
+- Se evita la duplicidad de código.  
+- Se mantiene una estructura clara del proyecto.  
 
 ### 5.1.4. Software Deployment Configuration
 
