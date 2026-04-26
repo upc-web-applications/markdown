@@ -3631,6 +3631,46 @@
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US75</td>
+    <td><b>Epic ID</b></td><td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Catálogo de Capacidades Técnicas</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como visitante o posible usuario, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema debe listar 6 capacidades clave: Registro inmediato de incidentes, Alertas predictivas inteligentes, Reportes automáticos para SUNAFIL, Dashboard ejecutivo con mapas de calor, Motor de análisis de patrones y Cumplimiento normativo integrado.</li>
+        <li>Cada capacidad debe tener una descripción breve que explique su utilidad operativa.</li>
+      </ol>
+      <b>Escenario 1:</b> Exploración general de soluciones<br/>
+      <ul>
+        <li><b>Given</b> que un visitante se encuentra navegando por la landing page de RiskGuard,</li>
+        <li><b>When</b> se desplaza hacia la sección de infraestructura de seguridad,</li>
+        <li><b>Then</b> el sistema presenta el catálogo completo de funcionalidades de manera organizada,</li>
+        <li><b>And</b> permite al usuario visualizar todas las herramientas disponibles de un solo vistazo.</li>
+      </ul>
+      <b>Escenario 2:</b> Comprensión del valor por funcionalidad<br/>
+      <ul>
+        <li><b>Given</b> que el usuario está interesado en una funcionalidad específica,</li>
+        <li><b>When</b> lee la descripción breve que acompaña a cada icono,</li>
+        <li><b>Then</b> el sistema proporciona información clara sobre el beneficio operativo de dicha función,</li>
+        <li><b>And</b> ayuda al usuario a determinar si la herramienta se ajusta a las necesidades operativas del sector en el que opera.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## 3.2. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.
