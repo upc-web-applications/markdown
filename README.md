@@ -22,21 +22,21 @@ Startup: NombreStartup
 
 Product: NombreProyecto <br><br>
 
-Integrantes:
 
-u20241e158 - Aponte Pablo, Isabel Luisa
+### Integrantes
 
-u202418655 - Laura Acosta, Victor Jhosef
+| Código     | Alumno                             |
+| :--------: | :--------------------------------: |
+| u20241e158 | Aponte Pablo, Isabel Luisa         |
+| u202418655 | Laura Acosta, Victor Jhosef        |
+| u20241a322 | Blancas Chávez, Carlos Franco      |  
+| u20231b781 | Flores Eusebio, Angel Thyago       |
 
-u202415412 - Flores Siguas, Marlon Alessandro
+<small>Abril &nbsp;·&nbsp; 2026</small>
 
-u20241a322 - Blancas Chávez, Carlos Franco
-
-Abril 2026
+---
 
 </div>
-
-
 
 # Registro de Versiones del Informe
 
