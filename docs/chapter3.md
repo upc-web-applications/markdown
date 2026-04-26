@@ -3556,6 +3556,56 @@
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US73</td>
+    <td><b>Epic ID</b></td><td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Propuesta de Valor e Interactividad</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como administrador, quiero visualizar la configuración actual del sistema, para tener un control general de todos los parámetros definidos.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema muestra todos los parámetros configurados.</li>
+        <li>El sistema organiza la información por categorías.</li>
+        <li>El sistema permite visualizar datos en tiempo real.</li>
+        <li>El sistema refleja los cambios realizados inmediatamente.</li>
+        <li>El sistema presenta la información de forma clara y ordenada.</li>
+      </ol>
+      <b>Escenario 1:</b> Visualización general<br/>
+      <ul>
+        <li><b>Given</b> que el administrador accede al módulo de configuración,</li>
+        <li><b>When</b> ingresa a la vista general,</li>
+        <li><b>Then</b> el sistema muestra todos los parámetros configurados,</li>
+        <li><b>And</b> los organiza de manera clara.</li>
+      </ul>
+      <b>Escenario 2:</b> Actualización en tiempo real<br/>
+      <ul>
+        <li><b>Given</b> que se realizan cambios en la configuración,</li>
+        <li><b>When</b> el administrador visualiza la información,</li>
+        <li><b>Then</b> el sistema refleja los cambios actualizados,</li>
+        <li><b>And</b> muestra los datos en tiempo real.</li>
+      </ul>
+      <b>Escenario 3:</b> Organización de la información<br/>
+      <ul>
+        <li><b>Given</b> que existen múltiples configuraciones en el sistema,</li>
+        <li><b>When</b> el administrador accede a la vista,</li>
+        <li><b>Then</b> el sistema organiza la información por categorías,</li>
+        <li><b>And</b> facilita su comprensión.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## 3.2. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.
