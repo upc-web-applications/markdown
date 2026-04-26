@@ -3711,6 +3711,39 @@
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US77</td>
+    <td><b>Epic ID</b></td><td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Beneficios por Rol Operativo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como visitante o posible usuario, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>Se debe explicar el flujo de 3 pasos (Operarios reportan desde la aplicacion web, El sistema analiza los datos, Supervisores toman accion preventiva).</li>
+        <li>Se debe incluir una sección de estadísticas titulada "La realidad de la industria peruana" con datos que respaldan la necesidad de la aplicacion web RiskGuard.</li>
+      </ol>
+      <b>Escenario 1:</b> Identificación de herramientas por nivel jerárquico<br/>
+      <ul>
+        <li><b>Given</b> que un jefe de planta evalúa cómo distribuir la solución entre sus colaboradores,</li>
+        <li><b>When</b> explora la sección de "Una herramienta unificada para toda la jerarquía",</li>
+        <li><b>Then</b> el sistema presenta las capacidades que recibirá cada perfil (Operarios, Supervisores y Administracion),</li>
+        <li><b>And</b> permite al usuario confirmar que cada rol tiene las herramientas necesarias para cumplir su función.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## 3.2. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.
