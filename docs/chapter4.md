@@ -1008,6 +1008,13 @@ En esta seccion se muestran los diagramas de de base de datos por cada Bounded C
 <div align="center">
     
   <img src="images/diagram-basedatos-riskguard-bc-areas-activos.svg" width="500">
-  <p>Diagrama de base de datos BC 1</p>
+  <p>Diagrama de base de datos BC 2</p>
+
+</div>
+
+<div align="center">
+    
+  <img src="images/diagrama-basedatos-riskguard-bc-inspeccion.svg" width="500">
+  <p>Diagrama de base de datos BC 3</p>
 
 </div>
