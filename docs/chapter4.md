@@ -434,26 +434,374 @@ Los mock-ups representan el diseño de alta fidelidad de la Landing Page, integr
 
 ## 4.4. Web Applications UX/UI Design
 
+El diseño UX/UI de la aplicación web de RiskGuard responde directamente a las necesidades identificadas durante las entrevistas con los tres segmentos objetivo: **operarios de planta**, **supervisores de seguridad y mantenimiento**, y **gerentes y administradores**. Todo el trabajo visual fue desarrollado en Figma.
+
+El proceso de diseño se organizó en dos fases complementarias. En la primera fase se construyeron los **wireframes** en escala de grises, priorizando la estructura, la jerarquía de la información y la disposición espacial de los componentes sin la influencia del color. En la segunda fase se desarrollaron los **mock-ups en color**, aplicando íntegramente el Design System definido en las Style Guidelines del capítulo 4.1. Esta progresión garantiza que cada decisión visual esté fundamentada en la arquitectura de información y en los flujos de usuario validados previamente.
+
+---
+
 ### 4.4.1. Web Applications Wireframes
 
+Los wireframes de RiskGuard representan la estructura esquemática de cada pantalla de la aplicación web, elaborados en escala de grises para separar las decisiones estructurales de las decisiones estéticas. Se aplicaron los principios de **diseño inclusivo** (WCAG 2.1 AA), **jerarquía visual clara**, **proximidad semántica entre elementos relacionados** y **consistencia de patrones** para que cada perfil de usuario pueda operar la plataforma sin necesidad de capacitación técnica avanzada.
+
+La estructura global de la aplicación se organiza en torno a tres zonas funcionales persistentes en todas las pantallas: el **Sidebar de navegación** fijo a la izquierda con acceso a los módulos principales según el rol del usuario, el **encabezado sticky** en la parte superior con información del usuario activo y el centro de notificaciones, y el **área de contenido principal** que se adapta a cada módulo.
+
+#### Wireframes: Pantalla de Login
+
+![Wireframe Login](images/wireframe-login.png)
+
+*Ilustración – Web Application Wireframe: Pantalla de Login*
+
+La pantalla de autenticación es el punto de entrada único para todos los roles de usuario. El wireframe presenta un layout centrado de columna única con el logotipo de RiskGuard en la parte superior, seguido del formulario de credenciales compuesto por dos campos obligatorios (correo y contraseña) y el botón primario "Ingresar". Debajo del formulario se ubica el enlace de recuperación de contraseña. El wireframe especifica los estados de validación inline: borde rojo en el campo inválido y mensaje de error descriptivo debajo del campo afectado. Un indicador de intentos fallidos aparece de forma contextual tras el tercer intento consecutivo, alertando al usuario sobre el bloqueo automático a los cinco intentos.
+
+#### Wireframes: Dashboard del Operario
+
+![Wireframe Dashboard Operario](images/wireframe-dashboard-operario.png)
+
+*Ilustración – Web Application Wireframe: Dashboard del Operario*
+
+La pantalla principal del operario adopta una estructura de columna única dividida en tres bloques. El **bloque superior** presenta un resumen de alertas activas en el sector asignado, con una lista ordenada por nivel de urgencia (Alto, Medio, Bajo) diferenciadas mediante badges de color. Si no existen alertas activas, este bloque muestra el mensaje de estado seguro. El **bloque central** es el acceso directo al formulario de reporte rápido, representado como una tarjeta destacada con el botón "Nuevo Reporte" de gran tamaño para facilitar su uso desde dispositivos móviles en planta. El **bloque inferior** muestra el historial reciente de reportes enviados por el operario, con su número de ticket, estado actual y fecha.
+
+#### Wireframes: Formulario de Reporte Rápido
+
+![Wireframe Formulario Reporte](images/wireframe-formulario-reporte.png)
+
+*Ilustración – Web Application Wireframe: Formulario de Reporte Rápido*
+
+El formulario de reporte está diseñado para completarse en menos de 30 segundos. Presenta cuatro campos obligatorios en disposición vertical: selector de tipo de incidente (lista desplegable), selector de sector (lista filtrada), selector de nivel de urgencia (tres opciones visuales: Bajo, Medio, Alto) y campo de descripción en texto libre con contador de caracteres restantes. Debajo de los campos obligatorios se ubica el área opcional de adjuntar foto, representada como un botón secundario con ícono de cámara. La parte inferior del formulario muestra los botones "Cancelar" y "Enviar" con separación visual clara. El wireframe especifica el comportamiento de validación inline para cada campo y el estado de confirmación post-envío con el número de ticket asignado.
+
+#### Wireframes: Dashboard del Supervisor
+
+![Wireframe Dashboard Supervisor](images/wireframe-dashboard-supervisor.png)
+
+*Ilustración – Web Application Wireframe: Dashboard del Supervisor*
+
+El dashboard del supervisor adopta la estructura de tres zonas funcionales. El área de contenido principal se organiza en dos filas. La **fila superior** presenta cuatro tarjetas KPI: tickets pendientes, tickets en progreso, alertas críticas activas y cumplimiento del plan de SST del día. La **fila inferior** se divide en dos columnas: la columna izquierda muestra el mapa de calor de la planta con los sectores representados como bloques con intensidad de color proporcional al nivel de riesgo acumulado, y la columna derecha muestra el panel de alertas activas con filtros por nivel de criticidad y sector. Cada alerta en el panel derecho incluye el tipo de riesgo, el sector, el tiempo transcurrido desde el reporte y los botones de acción disponibles.
+
+#### Wireframes: Panel de Gestión de Tickets
+
+![Wireframe Gestión Tickets](images/wireframe-gestion-tickets.png)
+
+*Ilustración – Web Application Wireframe: Panel de Gestión de Tickets*
+
+La pantalla de gestión de tickets presenta una tabla principal con las columnas: número de ticket, sector, tipo de incidente, nivel de criticidad (badge de color), técnico asignado, estado actual y tiempo transcurrido. El panel lateral izquierdo contiene los filtros: selector de sector, selector de estado (Pendiente, En Progreso, Medida Implementada, Cerrado), selector de nivel de criticidad y rango de fechas. El botón "Asignar técnico" se ubica en la columna de acciones de cada fila y despliega un drawer lateral con el selector de técnico disponible. El wireframe especifica el comportamiento del indicador de SLA: los tickets que superaron su tiempo máximo muestran una etiqueta de "SLA Incumplido" con borde de alerta visible en la fila correspondiente.
+
+#### Wireframes: Detalle de Ticket
+
+![Wireframe Detalle Ticket](images/wireframe-detalle-ticket.png)
+
+*Ilustración – Web Application Wireframe: Detalle de Ticket*
+
+La pantalla de detalle de ticket presenta el historial completo del incidente en un layout de dos columnas. La columna izquierda (60% del ancho) muestra en orden cronológico descendente: los datos del reporte original (tipo, sector, activo vinculado, descripción y foto adjunta si existe), el historial de cambios de estado con fecha, hora y usuario responsable de cada cambio, y el campo de acción correctiva con su descripción. La columna derecha (40% del ancho) presenta el panel de estado actual con el nivel de criticidad calculado por el motor IPERC, el técnico asignado, el tiempo transcurrido y los botones de acción disponibles según el rol y el estado actual del ticket.
+
+#### Wireframes: Dashboard Ejecutivo del Gerente
+
+![Wireframe Dashboard Ejecutivo](images/wireframe-dashboard-ejecutivo.png)
+
+*Ilustración – Web Application Wireframe: Dashboard Ejecutivo del Gerente*
+
+El dashboard ejecutivo adopta una grilla de cuatro columnas en la fila superior para los indicadores KPI principales: incidentes activos totales, incidentes resueltos en el mes, sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST. Cada KPI presenta la cifra principal en tipografía de gran tamaño, una etiqueta descriptiva y un indicador de tendencia (flecha arriba/abajo respecto al período anterior). La fila central presenta el mapa de calor ejecutivo a pantalla completa con la distribución de riesgos por sector. La fila inferior muestra la gráfica de tendencias de accidentabilidad de los últimos 12 meses y el panel de indicadores predictivos con las zonas de atención prioritaria identificadas por el motor de reglas.
+
+#### Wireframes: Módulo de Reportes y Auditoría
+
+![Wireframe Reportes Auditoría](images/wireframe-reportes-auditoria.png)
+
+*Ilustración – Web Application Wireframe: Módulo de Reportes y Auditoría*
+
+La pantalla de reportes presenta un panel de configuración en la parte superior con los parámetros de generación: selector de tipo de reporte (mensual, auditoría SUNAFIL, resumen ejecutivo), selector de rango de fechas, selector de sector (opcional) y selector de formato de salida (PDF o Excel). Debajo del panel de configuración se ubica el botón primario "Generar reporte". La sección inferior muestra el historial de reportes generados en formato de tabla con columnas de tipo, período, fecha de generación y botón de descarga.
+
+#### Wireframes: Módulo de Configuración del Sistema
+
+![Wireframe Configuración Sistema](images/wireframe-configuracion-sistema.png)
+
+*Ilustración – Web Application Wireframe: Módulo de Configuración del Sistema*
+
+La pantalla de configuración del sistema, accesible únicamente por el rol Administrador, presenta un layout de dos columnas. La columna izquierda muestra un menú de categorías de configuración: gestión de usuarios, sectores y áreas, activos industriales, personal técnico, niveles de riesgo, umbrales de alerta, reglas del motor predictivo y módulos del sistema. La columna derecha carga el formulario correspondiente a la categoría seleccionada. El wireframe especifica los patrones de validación, los estados de error y los modales de confirmación para operaciones destructivas como la desactivación de usuarios o la eliminación de sectores.
+
+---
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+Los Wireflow Diagrams presentan de forma integrada las pantallas de la aplicación web junto con las rutas de navegación que el usuario sigue para alcanzar un objetivo específico. Cada Wireflow define un **User Goal** concreto, detalla las pantallas involucradas, las decisiones del usuario y las respuestas del sistema.
 
+---
+
+**Wireflow 1 – User Goal: Autenticarse e ingresar a la plataforma según rol**
+
+![Wireflow Autenticación](images/wireflow-autenticacion.png)
+
+*Ilustración – Web Application Wireflow Diagram: Autenticación por Rol*
+
+**Descripción del flujo:** Cualquier usuario (operario, supervisor o gerente) accede a RiskGuard con sus credenciales preconfiguradas.
+
+**Pantalla de Login:** El usuario ingresa correo y contraseña. Si las credenciales son válidas (US01, US31, US43, Scenario 1): el sistema valida el rol asignado y redirige a la vista principal correspondiente. Si las credenciales son incorrectas (Scenario 2): aparece el mensaje "Correo o contraseña incorrectos" y los campos quedan limpios. Si se acumulan 5 intentos fallidos consecutivos (Scenario 3): la cuenta se bloquea por 15 minutos y se muestra el mensaje de bloqueo temporal.
+
+**Redirección por rol:** Un operario es redirigido a su dashboard con el formulario de reporte y las alertas de su sector. Un supervisor es redirigido al dashboard de monitoreo con el mapa de calor y el panel de tickets. Un gerente es redirigido al dashboard ejecutivo con los KPIs consolidados.
+
+---
+
+**Wireflow 2 – User Goal: Registrar un incidente y hacer seguimiento del reporte**
+
+![Wireflow Registro Incidente](images/wireflow-registro-incidente.png)
+
+*Ilustración – Web Application Wireflow Diagram: Registro de Incidente*
+
+**Descripción del flujo:** El operario detecta una condición insegura en planta y necesita registrarla en menos de 30 segundos desde su dispositivo.
+
+**Dashboard del Operario:** El operario presiona el botón "Nuevo Reporte". El formulario de reporte rápido se despliega en la misma pantalla.
+
+**Formulario de Reporte (US03 al US10):** El operario selecciona el tipo de incidente, el sector y el nivel de urgencia, e ingresa la descripción. Opcionalmente adjunta una foto. Si todos los campos obligatorios están completos (US10, Scenario 1): al presionar "Enviar" el sistema registra el ticket y muestra la confirmación con el número asignado. Si hay campos obligatorios vacíos (US03, Scenario 2): los campos inválidos quedan resaltados y el envío queda bloqueado. Si falla la conexión (US10, Scenario 2): el sistema conserva los datos e informa el error con opción de reintento.
+
+**Seguimiento (US11, US12):** El operario puede consultar el estado de su reporte desde "Mis Reportes". Al cambiar el estado del ticket, el sistema envía una notificación al operario indicando el nuevo estado.
+
+---
+
+**Wireflow 3 – User Goal: Gestionar alertas activas y asignar acciones correctivas**
+
+![Wireflow Gestión Alertas](images/wireflow-gestion-alertas.png)
+
+*Ilustración – Web Application Wireflow Diagram: Gestión de Alertas y Tickets*
+
+**Descripción del flujo:** El supervisor detecta alertas activas en el dashboard y necesita asignar una acción correctiva a un técnico.
+
+**Dashboard del Supervisor:** Al ingresar, el sistema carga el mapa de calor y el panel de alertas activas ordenadas por criticidad. El supervisor hace clic sobre una alerta crítica.
+
+**Detalle de Ticket (US35):** El sistema carga el detalle completo del ticket. El supervisor revisa la descripción, la foto adjunta y el nivel de criticidad calculado por el motor IPERC. Presiona "Asignar técnico". Si selecciona un técnico activo y confirma (Scenario 1): el ticket pasa a estado "En Progreso" y se registra la asignación en el historial. Si intenta confirmar sin seleccionar técnico (Scenario 2): aparece el mensaje de validación y el botón permanece deshabilitado.
+
+**Cierre del Ticket (US37):** Cuando el técnico marca la medida como implementada, el supervisor recibe una notificación y puede aprobar o rechazar. Si aprueba: el ticket pasa a "Cerrado" y el mapa de calor se actualiza. Si rechaza sin ingresar motivo (Scenario 3): el sistema bloquea la acción y solicita la justificación técnica.
+
+---
+
+**Wireflow 4 – User Goal: Monitorear patrones de riesgo y actuar ante escalamientos**
+
+![Wireflow Monitoreo Predictivo](images/wireflow-monitoreo-predictivo.png)
+
+*Ilustración – Web Application Wireflow Diagram: Monitoreo Predictivo y Escalamiento*
+
+**Descripción del flujo:** El supervisor utiliza el dashboard predictivo para detectar patrones recurrentes y recibe alertas de escalamiento ante SLA incumplidos.
+
+**Panel de Patrones (US18, US21):** El supervisor accede al panel de patrones de riesgo. Aplica el filtro por tipo de peligro. Si existen patrones recurrentes (Scenario 1): el sistema muestra las alertas de patrón con el tipo de riesgo, sector, número de ocurrencias y fecha de primera ocurrencia en el período. Si no existen patrones para el tipo seleccionado (Scenario 2): el sistema muestra el mensaje informativo correspondiente.
+
+**Alerta de SLA Incumplido (US40):** Cuando un ticket crítico supera su tiempo máximo sin cerrarse, el sistema marca el ticket con la etiqueta "SLA Incumplido" y envía una notificación de escalamiento al gerente. El supervisor puede acceder al ticket desde la notificación y ejecutar la reasignación.
+
+---
+
+**Wireflow 5 – User Goal: Generar y exportar reporte de auditoría para SUNAFIL**
+
+![Wireflow Reporte Auditoría](images/wireflow-reporte-auditoria.png)
+
+*Ilustración – Web Application Wireflow Diagram: Generación de Reporte de Auditoría*
+
+**Descripción del flujo:** El gerente necesita generar el reporte de auditoría compatible con la Ley N° 29783 para una inspección de SUNAFIL.
+
+**Módulo de Reportes (US46, US52):** El gerente accede a la sección de reportes. Selecciona el tipo "Auditoría SUNAFIL", configura el rango de fechas y elige el formato (PDF o Excel). Si el rango contiene datos registrados (US46, Scenario 1 y 3): el sistema genera el documento y lo descarga con el nombre estandarizado. Si el rango no contiene datos (US46, Scenario 2): el sistema muestra el mensaje "No hay datos registrados en el período seleccionado" y no genera ningún archivo. Si la fecha de inicio es posterior a la fecha de fin (TS55, Scenario 3): el sistema muestra el error de validación de rango y bloquea la generación.
+
+---
+
+**Wireflow 6 – User Goal: Gestionar usuarios y configurar el sistema**
+
+![Wireflow Administración](images/wireflow-administracion.png)
+
+*Ilustración – Web Application Wireflow Diagram: Administración del Sistema*
+
+**Descripción del flujo:** El administrador necesita crear una nueva cuenta de usuario y configurar los parámetros de alertas del sistema.
+
+**Módulo de Gestión de Usuarios (US51):** El administrador accede al módulo de usuarios. Presiona "Crear cuenta". Completa el formulario con nombre, correo, rol y sector asignado. Si el correo no está registrado (Scenario 1): el sistema crea la cuenta, genera la contraseña temporal y la muestra al administrador. Si el correo ya existe (Scenario 2): el sistema bloquea el registro y muestra el mensaje de duplicidad. Si necesita desactivar un usuario (Scenario 3): el sistema solicita confirmación mediante modal y cambia el estado a "Inactiva" preservando el historial.
+
+**Configuración de Reglas (US60):** El administrador navega a la categoría de reglas de alerta. Crea una nueva regla definiendo las condiciones. Al guardar con datos válidos: el sistema registra la regla. Si intenta eliminar una regla activa: el sistema muestra el modal de confirmación antes de ejecutar.
+
+---
 
 ### 4.4.3. Web Applications Mock-ups
 
+Esta sección presenta los mock-ups de alta fidelidad de la aplicación web de RiskGuard. Los mock-ups reflejan el diseño visual final de cada pantalla, aplicando el Design System del proyecto: paleta de colores institucional (`#0A0C0F`, `#FF5B00`, `#1A1E24`, `#00C97B`, `#FF3B30`), tipografía Geist, componentes, espaciado e iconografía definidos en la sección 4.1.
 
+#### Pantalla de Login
+
+![Mockup Login](images/mockup-login.png)
+
+*Ilustración – Web Application Mock-up: Pantalla de Login*
+
+La pantalla de autenticación aplica el fondo oscuro profundo `#0A0C0F` con el logotipo de RiskGuard centrado en la parte superior. El formulario de credenciales usa inputs con fondo `#1A1E24`, borde `#2A2F38` y texto blanco, con estado focus en borde naranja `#FF5B00`. El botón "Ingresar" aplica el naranja primario `#FF5B00` como fondo con texto blanco en Geist SemiBold. Los mensajes de error se presentan en rojo `#FF3B30` debajo del campo correspondiente, manteniendo consistencia con el sistema de estados definido en las style guidelines.
+
+#### Dashboard del Operario
+
+![Mockup Dashboard Operario](images/mockup-dashboard-operario.png)
+
+*Ilustración – Web Application Mock-up: Dashboard del Operario*
+
+El dashboard del operario presenta el panel de alertas activas del sector con badges de color codificado: rojo `#FF3B30` para alertas críticas, naranja `#FF5B00` para nivel medio y verde `#00C97B` para bajo. El botón "Nuevo Reporte" adopta el naranja primario como color de fondo con tipografía bold de gran tamaño, maximizando su visibilidad en condiciones de uso en planta. El historial de reportes recientes usa tarjetas con fondo `#1A1E24` y borde `#2A2F38`, con el estado del ticket resaltado mediante el badge de color correspondiente.
+
+#### Formulario de Reporte Rápido
+
+![Mockup Formulario Reporte](images/mockup-formulario-reporte.png)
+
+*Ilustración – Web Application Mock-up: Formulario de Reporte Rápido*
+
+El formulario de reporte aplica el Design System completo sobre fondo `#111418`. Los selectores de tipo de incidente y sector usan el componente dropdown con fondo `#1A1E24` y borde de enfoque naranja. Los tres niveles de urgencia se presentan como botones de selección exclusiva con colores de estado diferenciados: verde `#00C97B` para Bajo, naranja `#FF5B00` para Medio y rojo `#FF3B30` para Alto. El área de adjuntar foto es un botón secundario con borde naranja tenue y texto naranja. El contador de caracteres del campo de descripción usa el color gris secundario `#8A8F9A` y cambia a naranja al aproximarse al límite.
+
+#### Dashboard del Supervisor
+
+![Mockup Dashboard Supervisor](images/mockup-dashboard-supervisor.png)
+
+*Ilustración – Web Application Mock-up: Dashboard del Supervisor*
+
+El dashboard del supervisor aplica la paleta oscura del sistema con el mapa de calor como elemento visual central. Los sectores de la planta se representan como bloques rectangulares con intensidad de color proporcional al nivel de riesgo acumulado: desde el gris oscuro `#1A1E24` para sectores sin riesgo hasta el rojo intenso `#FF3B30` para sectores en estado crítico, pasando por naranja `#FF5B00` para nivel alto y amarillo para nivel medio. Las cuatro tarjetas KPI en la fila superior usan el borde izquierdo de color como indicador de estado: verde para valores dentro de parámetros normales y rojo para indicadores críticos.
+
+#### Panel de Gestión de Tickets
+
+![Mockup Gestión Tickets](images/mockup-gestion-tickets.png)
+
+*Ilustración – Web Application Mock-up: Panel de Gestión de Tickets*
+
+La tabla de tickets aplica filas con fondo `#111418` y fondo alterno `#1A1E24` para facilitar la lectura horizontal. Los badges de criticidad usan el color de estado del sistema: Crítico en rojo, Alto en naranja, Medio en amarillo y Bajo en verde. Los tickets con SLA incumplido muestran una etiqueta de alerta en rojo `#FF3B30` en la columna de estado, diferenciándose visualmente de manera inmediata del resto de los tickets. El panel lateral de filtros usa el mismo fondo `#111418` con selectores del Design System.
+
+#### Detalle de Ticket
+
+![Mockup Detalle Ticket](images/mockup-detalle-ticket.png)
+
+*Ilustración – Web Application Mock-up: Detalle de Ticket*
+
+La pantalla de detalle de ticket aplica el layout de dos columnas sobre fondo `#0A0C0F`. La columna izquierda presenta la foto adjunta (si existe) en un contenedor con border-radius de 12 px y borde `#2A2F38`, seguida de la descripción del incidente en texto gris `#8A8F9A` y el historial de cambios de estado en una línea de tiempo vertical con puntos de color según el estado correspondiente. La columna derecha muestra el nivel de criticidad IPERC en una tarjeta con fondo `#1A1E24` y el indicador de color del nivel en el borde superior. El botón "Asignar técnico" aplica el naranja primario y ocupa el ancho completo de la columna para garantizar visibilidad.
+
+#### Dashboard Ejecutivo del Gerente
+
+![Mockup Dashboard Ejecutivo](images/mockup-dashboard-ejecutivo.png)
+
+*Ilustración – Web Application Mock-up: Dashboard Ejecutivo del Gerente*
+
+El dashboard ejecutivo aplica la misma paleta oscura con énfasis en los indicadores predictivos. Las cuatro tarjetas KPI de la fila superior usan cifras en tipografía Geist Bold de 48 px en blanco sobre fondo `#1A1E24`, con el indicador de tendencia en verde `#00C97B` para mejora y rojo `#FF3B30` para deterioro. La gráfica de tendencias de accidentabilidad usa líneas de color diferenciadas por tipo de incidente sobre un fondo de grilla sutil en `#2A2F38`. El panel de indicadores predictivos destaca las zonas de atención prioritaria con un badge naranja "ATENCIÓN PRIORITARIA" en tipografía uppercase de 10 px.
+
+#### Módulo de Reportes y Auditoría
+
+![Mockup Reportes Auditoría](images/mockup-reportes-auditoria.png)
+
+*Ilustración – Web Application Mock-up: Módulo de Reportes y Auditoría*
+
+El módulo de reportes aplica el Design System en el panel de configuración con selectores, inputs de fecha y radio buttons de formato de salida estilizados con el naranja primario como color de selección activa. El historial de reportes generados usa una tabla con filas alternas y badges de tipo de reporte diferenciados por color. El botón "Generar reporte" ocupa el ancho completo del panel de configuración con el naranja primario como fondo, garantizando su visibilidad como la acción principal de la pantalla.
+
+---
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+Esta sección presenta los User Flow Diagrams de la aplicación web de RiskGuard. A diferencia de los Wireflows, los User Flows incluyen los mock-ups de las pantallas junto con los nodos de decisión, condiciones y rutas alternativas que conforman el flujo completo de cada objetivo de usuario.
 
+---
+
+**User Flow 1 – Registro y seguimiento de incidente por el Operario**
+
+*User Goal: El operario desea registrar una condición insegura y confirmar que fue atendida.*
+
+![User Flow 1](images/userflow-1-registro-incidente.png)
+
+*Ilustración – Web Application User Flow Diagram: Registro y Seguimiento de Incidente*
+
+**Happy Path:**
+Dashboard Operario → Clic "Nuevo Reporte" → Formulario desplegado → Completa tipo, sector, urgencia y descripción → Clic "Enviar" → Confirmación con número de ticket → Regresa al dashboard → Recibe notificación cuando el supervisor cambia el estado → Consulta detalle desde "Mis Reportes".
+
+**Unhappy Paths:**
+- Campos obligatorios vacíos (US03, Scenario 2): campos resaltados en rojo → botón "Enviar" bloqueado.
+- Error de conexión al enviar (US10, Scenario 2): mensaje de error con opción "Reintentar" → datos conservados.
+- Foto supera 5 MB (US04, Scenario 2): sistema rechaza el archivo y muestra el límite de tamaño → operario puede seleccionar otra imagen o enviar sin foto.
+
+---
+
+**User Flow 2 – Gestión de tickets y cierre de acciones correctivas por el Supervisor**
+
+*User Goal: El supervisor desea asignar una acción correctiva y verificar su implementación hasta el cierre del ticket.*
+
+![User Flow 2](images/userflow-2-gestion-tickets.png)
+
+*Ilustración – Web Application User Flow Diagram: Gestión de Tickets y Cierre*
+
+**Happy Path:**
+Dashboard Supervisor → Panel de alertas activas → Clic sobre alerta crítica → Detalle del ticket → Clic "Asignar técnico" → Selector de técnico activo → Confirmar → Ticket pasa a "En Progreso" → Técnico implementa la medida → Supervisor recibe notificación → Accede al detalle → Aprueba la medida → Ticket pasa a "Cerrado" → Mapa de calor se actualiza → Operario recibe notificación de resolución.
+
+**Unhappy Paths:**
+- Intento de asignar sin seleccionar técnico (US35, Scenario 2): mensaje de validación → botón deshabilitado.
+- Rechazo de medida sin justificación (US37, Scenario 3): sistema bloquea el rechazo → campo de motivo resaltado en rojo.
+- Ticket supera SLA sin cerrarse (US40, Scenario 1): etiqueta "SLA Incumplido" aparece en la fila → notificación enviada al gerente.
+
+---
+
+**User Flow 3 – Visualización del dashboard ejecutivo y exportación de reporte**
+
+*User Goal: El gerente desea revisar los indicadores predictivos de la planta y exportar el reporte mensual para el directorio.*
+
+![User Flow 3](images/userflow-3-dashboard-ejecutivo.png)
+
+*Ilustración – Web Application User Flow Diagram: Dashboard Ejecutivo y Exportación*
+
+**Happy Path:**
+Login Gerente → Dashboard Ejecutivo → Revisión de KPIs → Clic en indicador de "Sectores en estado crítico" → Detalle de sectores con alertas → Regresa al dashboard → Accede a sección de tendencias → Filtra por sector → Exporta gráfica en PNG → Navega a Módulo de Reportes → Selecciona tipo "Reporte mensual" → Elige período → Clic "Generar reporte" → PDF descargado automáticamente.
+
+**Unhappy Paths:**
+- Período sin datos suficientes (US52, Scenario 2): mensaje "No hay datos registrados para el período seleccionado" → no se genera archivo.
+- Fecha de inicio posterior a fecha de fin (TS55, Scenario 3): error de validación de rango → generación bloqueada.
+- Indicadores predictivos sin tendencias crecientes (US48, Scenario 2): mensaje informativo "No se detectaron tendencias de riesgo creciente en el período consultado".
+
+---
+
+**User Flow 4 – Gestión de sectores, activos y personal técnico**
+
+*User Goal: El supervisor desea configurar la estructura de la planta para que los operarios puedan georreferenciar correctamente sus reportes.*
+
+![User Flow 4](images/userflow-4-configuracion-planta.png)
+
+*Ilustración – Web Application User Flow Diagram: Configuración de Sectores y Activos*
+
+**Happy Path:**
+Login Supervisor → Módulo de Configuración → Categoría "Sectores" → Clic "Nuevo Sector" → Completa nombre y descripción → Guardar → Sector aparece en la lista como "Activo" → Navega a categoría "Activos" → Clic "Nuevo Activo" → Selecciona sector creado → Completa datos del activo → Guardar → Activo aparece vinculado al sector.
+
+**Unhappy Paths:**
+- Nombre de sector duplicado (US32, Scenario 2): sistema bloquea la creación → mensaje "El nombre del área ya existe".
+- Intento de registrar activo en sector inactivo (US33, Scenario 2): sistema rechaza la operación → mensaje de error de validación.
+- Desactivación de sector con historial (US32, Scenario 3): sistema cambia estado a "Inactivo" preservando los datos históricos → sector desaparece de los formularios de los operarios.
+
+---
 
 ## 4.5. Web Applications Prototyping
 
+### Introducción y criterios de diseño
 
+El prototipo interactivo de RiskGuard simula la navegación y los principales flujos de interacción de la aplicación web, permitiendo evaluar la coherencia de la experiencia de usuario antes del desarrollo, identificar puntos de fricción y validar las decisiones de arquitectura de información tomadas a lo largo del capítulo 4. El prototipo fue construido en Figma utilizando conexiones de prototipado entre frames, transiciones y overlays para representar de forma fiel los comportamientos especificados en los User Flow Diagrams.
+
+Los criterios de diseño que guiaron las decisiones de interacción y navegación del prototipo son los siguientes:
+
+**Orientación al rol y al flujo operativo de urgencia:** La arquitectura de navegación prioriza el acceso inmediato a las tareas de mayor frecuencia e importancia definidas en el User Task Matrix del capítulo 2. Para el operario, el botón "Nuevo Reporte" es el elemento más prominente de su pantalla principal. Para el supervisor, el mapa de calor y el panel de alertas activas son los primeros elementos visibles al iniciar sesión. Para el gerente, el dashboard ejecutivo con los KPIs consolidados carga como vista inicial sin necesidad de pasos adicionales.
+
+**Consistencia en los patrones de interacción:** Se emplearon cuatro patrones de navegación a lo largo de toda la aplicación: (1) **Navegación por Sidebar** para el cambio entre módulos principales según el rol activo; (2) **Drawer lateral deslizante** para formularios de creación y edición que no requieren cambio de contexto (asignación de técnico, creación de sectores, registro de activos); (3) **Modal central** para acciones críticas que requieren confirmación del usuario (cierre de ticket, desactivación de usuario, restauración de configuración); y (4) **Toast / Snackbar** para retroalimentación inmediata de resultado sin interrumpir el flujo operativo. Esta consistencia reduce la carga cognitiva del usuario, ya que los patrones aprendidos en un módulo son directamente aplicables a los demás.
+
+**Prevención de errores en acciones de alto impacto:** En operaciones con consecuencias irreversibles o de alto impacto operativo como cerrar un ticket, escalar una alerta, desactivar un usuario o restaurar la configuración por defecto, el prototipo incluye una capa adicional de confirmación mediante modal que describe el impacto de la acción antes de ejecutarla. Esto es especialmente crítico en el contexto de RiskGuard, donde una acción incorrecta puede afectar la trazabilidad de un incidente real.
+
+**Retroalimentación inmediata en tiempo real:** Todos los cambios en el estado del sistema que afectan al usuario se comunican de forma inmediata: el mapa de calor se actualiza al registrarse o resolverse un incidente, el contador de notificaciones no leídas se actualiza al recibir una nueva alerta, y los campos de formulario muestran validación inline sin necesidad de enviar el formulario completo.
+
+**Accesibilidad y objetivos táctiles:** Todos los elementos interactivos del prototipo tienen dimensiones mínimas de 48 × 48 px para cumplir los requisitos de objetivo táctil, especialmente relevantes para operarios que interactúan con la aplicación desde dispositivos móviles en entornos industriales con guantes de trabajo. Los contrastes de color en todos los estados cumplen el mínimo WCAG 2.1 AA.
+
+![Prototipo Vista General](images/prototipo-riskguard.png)
+
+*Ilustración – Web Application Prototyping: Vista general del flujo de navegación*
+
+### Flujos de interacción cubiertos por el prototipo
+
+El prototipo cubre los siguientes flujos principales de interacción, representando tanto las rutas exitosas como las principales rutas alternativas ante errores o condiciones de excepción:
+
+**Flujo 1 – Registro de incidente por operario:** Comprende la pantalla principal del operario, el formulario de reporte rápido con validación inline de campos, la selección de nivel de urgencia con indicadores de color, la adjunción de foto con previsualización, la confirmación post-envío con número de ticket y la pantalla de historial de reportes con filtros por estado.
+
+**Flujo 2 – Gestión de alertas y tickets por supervisor:** Comprende el dashboard del supervisor con el mapa de calor interactivo, el panel de alertas activas con filtros aplicables, el detalle de ticket con el historial completo, el drawer de asignación de técnico, el flujo de aprobación y rechazo de medidas correctivas y la actualización del mapa de calor post-cierre.
+
+**Flujo 3 – Monitoreo predictivo y escalamiento:** Comprende el panel de patrones de riesgo recurrentes con filtros por tipo de peligro, la visualización del mapa de calor con selector de detalle por sector, las notificaciones de SLA incumplido y el flujo de escalamiento hacia gerencia.
+
+**Flujo 4 – Dashboard ejecutivo y reportes:** Comprende el dashboard ejecutivo del gerente con los KPIs interactivos, la gráfica de tendencias filtrable por sector, el panel de indicadores predictivos, el módulo de exportación de reportes de auditoría compatible con la Ley N° 29783 y la generación del reporte mensual de gestión de SST.
+
+**Flujo 5 – Configuración del sistema:** Comprende el módulo de gestión de usuarios con los flujos de creación y desactivación de cuentas, la configuración de sectores y activos industriales, la gestión del personal técnico y la configuración de parámetros del motor predictivo.
+
+---
 
 ## 4.6. Domain-Driven Software Architecture
+
+En esta sección se elaboró el diseño de los Bounded Contexts (BC) y sus conexiones dentro del sistema RiskGuard, basado en el proceso de Event Storming documentado en el capítulo 2.
+
 
 
 ### 4.6.1. Design-Level Event Storming
