@@ -229,7 +229,6 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 |--------------------------------------|---------------|--------------------------|----------------------|--------------------|-----------------|--------------------|-----------------|-------------------|
 | Aponte Pablo, Isabel Luisa           | IsabelAponte234 | C | C | C | C | C | C | C |
 | Laura Acosta, Victor Jhosef          | Zatrynox        | C | C | C | C | C | C | L |
-| Flores Siguas, Marlon Alessandro     | MarlonFS965     | C | C | C | C | C | C | C |
 | Blancas Chávez, Carlos Franco        | CarlosBlancas969 | L | L |L | C | L | C | C |
 | Flores Eusebio, Angel Thyago         | angelfdevs      | C | C | C | C | C | C | C |
 
@@ -563,7 +562,7 @@ Se verificó que la versión final del proyecto estuviera almacenada y actualiza
 
 Durante el Sprint 1, todos los integrantes del equipo participaron en el desarrollo del Landing Page de RiskGuard, lo cual se evidencia en los commits realizados dentro del repositorio riskguard-landingpage. El trabajo se desarrolló de manera colaborativa, abarcando tanto el diseño como la implementación de las distintas secciones.
 
-En particular, Blancas Chávez, Carlos Franco tuvo un rol destacado en la estructuración e integración general del sitio. Laura Acosta, Victor Jhosef se encargó de la integración del proyecto, consolidando las distintas secciones desarrolladas por el equipo. Por su parte, Flores Eusebio, Angel Thyago, Aponte Pablo, Isabel Luisa y Flores Siguas, Marlon Alessandro participaron en el diseño visual  y ajustes de la interfaz para mejorar la experiencia de usuario.
+En particular, Blancas Chávez, Carlos Franco tuvo un rol destacado en la estructuración e integración general del sitio. Laura Acosta, Victor Jhosef se encargó de la integración del proyecto, consolidando las distintas secciones desarrolladas por el equipo. Por su parte, Flores Eusebio, Angel Thyago, Aponte Pablo e Isabel Luisa  participaron en el diseño visual  y ajustes de la interfaz para mejorar la experiencia de usuario.
 
 El equipo trabajó directamente sobre la rama main, realizando commits continuos para avanzar en el desarrollo. Durante este Sprint no se utilizó un flujo formal de Pull Requests, ya que el objetivo principal fue construir una primera versión funcional del Landing Page en el menor tiempo posible.
 
