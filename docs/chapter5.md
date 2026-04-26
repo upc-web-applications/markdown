@@ -95,7 +95,16 @@ En este Sprint 1, el equipo se centró en el desarrollo de la Landing Page de Ri
 
 #### 5.2.1.2. *Aspect Leaders and Collaborators*
 
+En este Sprint, los aspectos corresponden a las secciones de la Landing Page de RiskGuard. 
+Se asignaron roles de liderazgo y colaboración para cada sección con el fin de mejorar la organización del equipo.
 
+| Miembro del equipo (Apellido, Nombre) | Usuario GitHub | Propuesta de Valor (L/C) | Características (L/C) | Cómo funciona (L/C) | Segmentos (L/C) | Estadísticas (L/C) | Contactar (L/C) | Integración (L/C) |
+|--------------------------------------|---------------|--------------------------|----------------------|--------------------|-----------------|--------------------|-----------------|-------------------|
+| Aponte Pablo, Isabel Luisa           | IsabelAponte234 | C | C | C | C | C | C | C |
+| Laura Acosta, Victor Jhosef          | Zatrynox        | C | C | C | C | C | C | C |
+| Flores Siguas, Marlon Alessandro     | MarlonFS965     | C | C | C | C | C | C | C |
+| Blancas Chávez, Carlos Franco        | CarlosBlancas969 | L | L |L | C | L | C | C |
+| Flores Eusebio, Angel Thyago         | angelfdevs      | C | C | C | C | C | C | L |
 
 #### 5.2.1.3. *Sprint Backlog 1*
 
