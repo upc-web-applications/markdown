@@ -108,7 +108,178 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 
 #### 5.2.1.3. *Sprint Backlog 1*
 
+<p><strong>Sprint #:</strong> Sprint 1</p>
 
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US16</td>
+      <td>Visualización de métricas de impacto predictivo</td>
+      <td>T11</td>
+      <td>Diseño Estadísticas</td>
+      <td>Diseñar tarjetas de métricas</td>
+      <td>1</td>
+      <td>Laura Acosta, Victor Jhosef</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US16</td>
+      <td>Visualización de métricas de impacto predictivo</td>
+      <td>T12</td>
+      <td>Implementación Estadísticas</td>
+      <td>Mostrar indicadores visuales</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US17</td>
+      <td>Interacción con botones de conversión</td>
+      <td>T15</td>
+      <td>Eventos botones</td>
+      <td>Configurar redirección y eventos</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US73</td>
+      <td>Identidad y Acceso General</td>
+      <td>T01</td>
+      <td>Diseño Header</td>
+      <td>Diseñar estructura del navbar</td>
+      <td>1</td>
+      <td>Flores Thyago, Angel</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US73</td>
+      <td>Identidad y Acceso General</td>
+      <td>T02</td>
+      <td>Implementación Header</td>
+      <td>Implementar navbar con logo y menú</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US74</td>
+      <td>Propuesta de Valor</td>
+      <td>T03</td>
+      <td>Diseño Hero</td>
+      <td>Diseñar sección principal</td>
+      <td>1</td>
+      <td>Laura Acosta, Victor Jhosef</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US74</td>
+      <td>Propuesta de Valor</td>
+      <td>T04</td>
+      <td>Implementación Hero</td>
+      <td>Agregar texto e imagen principal</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US75</td>
+      <td>Catálogo de Capacidades Técnicas</td>
+      <td>T05</td>
+      <td>Diseño Funciones</td>
+      <td>Diseñar tarjetas de funcionalidades</td>
+      <td>1</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US75</td>
+      <td>Catálogo de Capacidades Técnicas</td>
+      <td>T06</td>
+      <td>Implementación Características</td>
+      <td>Mostrar funcionalidades del sistema</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US76</td>
+      <td>Metodología y Validación Social</td>
+      <td>T07</td>
+      <td>Diseño Cómo funciona</td>
+      <td>Diseñar flujo de pasos</td>
+      <td>1</td>
+      <td>Flores Thyago, Angel</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US76</td>
+      <td>Metodología y Validación Social</td>
+      <td>T08</td>
+      <td>Implementación Cómo funciona</td>
+      <td>Mostrar proceso del sistema</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US77</td>
+      <td>Beneficios por Rol Operativo</td>
+      <td>T09</td>
+      <td>Diseño Segmentos</td>
+      <td>Diseñar tarjetas por rol</td>
+      <td>1</td>
+      <td>Flores Thyago, Angel</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US77</td>
+      <td>Beneficios por Rol Operativo</td>
+      <td>T10</td>
+      <td>Implementación Segmentos</td>
+      <td>Mostrar beneficios por usuario</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US78</td>
+      <td>Cierre y Conversión de Prospectos</td>
+      <td>T13</td>
+      <td>Diseño CTA</td>
+      <td>Diseñar botones de acción</td>
+      <td>1</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US78</td>
+      <td>Cierre y Conversión de Prospectos</td>
+      <td>T14</td>
+      <td>Implementación CTA</td>
+      <td>Agregar botones de contacto</td>
+      <td>2</td>
+      <td>Blancas Chávez, Carlos Franco</td>
+      <td>Completed</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.1.4. *Development Evidence for Sprint Review*
 
