@@ -586,31 +586,6 @@ Los Wireflow Diagrams presentan de forma integrada las pantallas de la aplicaci�
 
 ---
 
-**Wireflow 5 – User Goal: Generar y exportar reporte de auditoría para SUNAFIL**
-
-![Wireflow Reporte Auditoría](images/wireflow-reporte-auditoria.png)
-
-*Ilustración – Web Application Wireflow Diagram: Generación de Reporte de Auditoría*
-
-**Descripción del flujo:** El gerente necesita generar el reporte de auditoría compatible con la Ley N° 29783 para una inspección de SUNAFIL.
-
-**Módulo de Reportes (US46, US52):** El gerente accede a la sección de reportes. Selecciona el tipo "Auditoría SUNAFIL", configura el rango de fechas y elige el formato (PDF o Excel). Si el rango contiene datos registrados (US46, Scenario 1 y 3): el sistema genera el documento y lo descarga con el nombre estandarizado. Si el rango no contiene datos (US46, Scenario 2): el sistema muestra el mensaje "No hay datos registrados en el período seleccionado" y no genera ningún archivo. Si la fecha de inicio es posterior a la fecha de fin (TS55, Scenario 3): el sistema muestra el error de validación de rango y bloquea la generación.
-
----
-
-**Wireflow 6 – User Goal: Gestionar usuarios y configurar el sistema**
-
-![Wireflow Administración](images/wireflow-administracion.png)
-
-*Ilustración – Web Application Wireflow Diagram: Administración del Sistema*
-
-**Descripción del flujo:** El administrador necesita crear una nueva cuenta de usuario y configurar los parámetros de alertas del sistema.
-
-**Módulo de Gestión de Usuarios (US51):** El administrador accede al módulo de usuarios. Presiona "Crear cuenta". Completa el formulario con nombre, correo, rol y sector asignado. Si el correo no está registrado (Scenario 1): el sistema crea la cuenta, genera la contraseña temporal y la muestra al administrador. Si el correo ya existe (Scenario 2): el sistema bloquea el registro y muestra el mensaje de duplicidad. Si necesita desactivar un usuario (Scenario 3): el sistema solicita confirmación mediante modal y cambia el estado a "Inactiva" preservando el historial.
-
-**Configuración de Reglas (US60):** El administrador navega a la categoría de reglas de alerta. Crea una nueva regla definiendo las condiciones. Al guardar con datos válidos: el sistema registra la regla. Si intenta eliminar una regla activa: el sistema muestra el modal de confirmación antes de ejecutar.
-
----
 
 ### 4.4.3. Web Applications Mock-ups
 
