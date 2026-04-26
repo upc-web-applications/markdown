@@ -390,10 +390,17 @@ Los mock-ups representan el diseño de alta fidelidad de la Landing Page, integr
   <p>
     Landing Page Mockup RiskGuard
   </p>
-    
+  </div>
+
+  - **Hero section**
+
+<div align="center">
+
   <img src="images/landing-page-riskguard-mockup-1.png" width="500">
 
 </div>
+
+- **Problem section**
 
 <div align="center">
     
@@ -401,11 +408,15 @@ Los mock-ups representan el diseño de alta fidelidad de la Landing Page, integr
 
 </div>
 
+- **Main features section**
+
 <div align="center">
     
   <img src="images/landing-page-riskguard-mockup-3.png" width="500">
 
 </div>
+
+- **Client trust section**
 
 <div align="center">
     
@@ -413,14 +424,13 @@ Los mock-ups representan el diseño de alta fidelidad de la Landing Page, integr
 
 </div>
 
+- **Next step section**
+
 <div align="center">
     
   <img src="images/landing-page-riskguard-mockup-5.png" width="500">
 
 </div>
-
-
-
 
 ## 4.4. Web Applications UX/UI Design
 
