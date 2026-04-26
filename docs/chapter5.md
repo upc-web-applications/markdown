@@ -287,6 +287,35 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 
 #### 5.2.1.5. *Execution Evidence for Sprint Review*
 
+Este Sprint 1 estuvo enfocado en la construcción inicial de la Landing Page de RiskGuard, logrando una primera versión completamente navegable. Se implementaron las secciones principales:
+* Hero (RiskGuard): Sección principal que presenta la propuesta de valor y el propósito del sistema.
+* Características: Describe las funcionalidades clave de la plataforma y sus beneficios.
+* Cómo funciona: Explica el proceso de uso del sistema desde la recopilación de datos hasta la generación de alertas.
+* Segmentos: Muestra los tipos de usuarios o áreas a las que está dirigida la solución.
+* Estadísticas: Presenta datos relevantes que evidencian la problemática y el impacto del sistema.
+* Contactar: Sección que invita al usuario a proteger su planta industrial, ofreciendo iniciar una prueba gratuita o comunicarse con ventas para implementar RiskGuard rápidamente.
+
+El resultado es una interfaz clara, moderna y responsive que comunica efectivamente la propuesta de valor del sistema: la predicción y prevención de riesgos en entornos industriales.
+
+A continuación, las vistas principales desarrolladas:
+
+* Vista principal del Landing Page con la propuesta de valor y acceso a las funcionalidades principales.
+[![landing.jpg](https://i.postimg.cc/tg3pxQCZ/landing.jpg)](https://postimg.cc/McphCLBq)
+
+* Vista que presenta las caraterísticas clave del sistema y sus beneficios
+![Estadísticas y Contacto](https://i.postimg.cc/2SzS7SM4/Whats-App-Image-2026-04-26-at-12-02-57-PM.jpg)
+
+* Vista que explica el flujo de uso del sistema 
+![RiskGuard](https://i.postimg.cc/Z5T5x52d/Whats-App-Image-2026-04-26-at-12-02-23-PM.jpg)
+
+* Vista que muestra los diferentes tipos de usuarios a los que está dirigida la solución
+![Características](https://i.postimg.cc/MpWpmpNB/Whats-App-Image-2026-04-26-at-12-02-23-PM-(1).jpg)
+
+* Vista que presenta datos relevantes sobre la seguridad industrial y el impacto del sistem
+![Cómo funciona](https://i.postimg.cc/5N5tzC7g/Whats-App-Image-2026-04-26-at-12-02-23-PM-(2).jpg)
+
+* Vista que permite iniciar una prueba gratuita o comunicarse con ventas para implementar la solución.
+![Segmentos](https://i.postimg.cc/FH9HVH8J/Whats-App-Image-2026-04-26-at-12-02-23-PM-(3).jpg)
 
 
 #### 5.2.1.6. *Services Documentation Evidence for Sprint Review*
