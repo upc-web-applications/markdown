@@ -25,7 +25,6 @@ Aplicaciones Web
 | u202418655 | Laura Acosta, Victor Jhosef        |
 | u20241a322 | Blancas Chávez, Carlos Franco      |
 | u20231b781 | Flores Eusebio, Angel Thyago       |
-| u202415412 | Flores Siguas, Marlon Alessandro   |
 
 <small>Abril &nbsp;·&nbsp; 2026</small>
 
