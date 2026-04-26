@@ -3598,6 +3598,39 @@
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>US74</td>
+    <td><b>Epic ID</b></td><td>EP06</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Propuesta de Valor</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">
+      Como visitante o posible usuario, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>La página debe mostrar eslogan "Predice los riesgos antes de que ocurran" de forma prominente.</li>
+        <li>Se debe incluir un gráfico representativo del panel de seguridad con indicadores en tiempo real.</li>
+        <li>Deben ser visibles tres beneficios rápidos: Compatibilidad con Ley 29783, Sin instalación compleja y Alertas en tiempo real.</li>
+      </ol>
+      <b>Escenario 1:</b> Captación de interés inicial<br/>
+      <ul>
+        <li><b>Given</b> que un usuario entra a la Landing Page por primera vez,</li>
+        <li><b>When</b> visualiza la sección principal,</li>
+        <li><b>Then</b> el sistema presenta el titular y el porcentaje de "Precisión Predictiva" para generar impacto inmediato.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 ## 3.2. Impact Mapping
 
 El Impact Mapping es una técnica de planificación estratégica que permite vincular los objetivos de negocio con las funcionalidades del producto, respondiendo las preguntas: ¿por qué construimos esto?, ¿quién nos ayuda a lograrlo?, ¿cómo cambia su comportamiento? y ¿qué entregamos para provocar ese cambio? Su elaboración permite asegurar que cada User Story tenga un propósito claro y directo sobre el objetivo del negocio.
