@@ -63,11 +63,12 @@ Durante la elaboración de la AV1, los integrantes del equipo contribuyeron en l
 | Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page |
 | Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe |
 
+---
+
+![Contri](docs/images/all.png "contri1")
 
 
-[foto]
-
-[foto]
+![Contri](docs/images/commits-all.png "contri1")
 
 ## Repositorio del Landing Page
 
@@ -83,10 +84,6 @@ Durante el Sprint 1, el equipo realizó commits en el repositorio del Landing Pa
 | Laura Acosta, Victor Jhosef | Zatrynox | Integración y consolidación de secciones · Despliegue |
 | Blancas Chávez, Carlos Franco | CarlosBlancas969 | Implementación de secciones principales · Navbar · Hero · Características |
 | Flores Eusebio, Angel Thyago | angelfdevs | Diseño de secciones · Cómo funciona · Segmentos |
-
-[foto]
-
-[foto]
 
 
 # Tabla de contenidos
