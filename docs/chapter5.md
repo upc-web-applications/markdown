@@ -101,10 +101,10 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 | Miembro del equipo (Apellido, Nombre) | Usuario GitHub | Propuesta de Valor (L/C) | Características (L/C) | Cómo funciona (L/C) | Segmentos (L/C) | Estadísticas (L/C) | Contactar (L/C) | Integración (L/C) |
 |--------------------------------------|---------------|--------------------------|----------------------|--------------------|-----------------|--------------------|-----------------|-------------------|
 | Aponte Pablo, Isabel Luisa           | IsabelAponte234 | C | C | C | C | C | C | C |
-| Laura Acosta, Victor Jhosef          | Zatrynox        | C | C | C | C | C | C | C |
+| Laura Acosta, Victor Jhosef          | Zatrynox        | C | C | C | C | C | C | L |
 | Flores Siguas, Marlon Alessandro     | MarlonFS965     | C | C | C | C | C | C | C |
 | Blancas Chávez, Carlos Franco        | CarlosBlancas969 | L | L |L | C | L | C | C |
-| Flores Eusebio, Angel Thyago         | angelfdevs      | C | C | C | C | C | C | L |
+| Flores Eusebio, Angel Thyago         | angelfdevs      | C | C | C | C | C | C | C |
 
 #### 5.2.1.3. *Sprint Backlog 1*
 
@@ -346,23 +346,47 @@ El resultado es una interfaz clara, moderna y responsive que comunica efectivame
 
 A continuación, las vistas principales desarrolladas:
 
-* Vista principal del Landing Page con la propuesta de valor y acceso a las funcionalidades principales.
-[![landing.jpg](https://i.postimg.cc/tg3pxQCZ/landing.jpg)](https://postimg.cc/McphCLBq)
+<h5 align="center">Inicio</h5>
+<p align="center">Vista principal con la propuesta de valor.</p>
 
-* Vista que presenta las caraterísticas clave del sistema y sus beneficios
-![Estadísticas y Contacto](https://i.postimg.cc/2SzS7SM4/Whats-App-Image-2026-04-26-at-12-02-57-PM.jpg)
+<p align="center">
+  <img src="https://i.postimg.cc/tg3pxQCZ/landing.jpg" width="500"/>
+</p>
 
-* Vista que explica el flujo de uso del sistema 
-![RiskGuard](https://i.postimg.cc/Z5T5x52d/Whats-App-Image-2026-04-26-at-12-02-23-PM.jpg)
+<h5 align="center">Características</h5>
+<p align="center">Funciones clave del sistema.</p>
 
-* Vista que muestra los diferentes tipos de usuarios a los que está dirigida la solución
-![Características](https://i.postimg.cc/MpWpmpNB/Whats-App-Image-2026-04-26-at-12-02-23-PM-(1).jpg)
+<p align="center">
+  <img src="https://i.postimg.cc/2SzS7SM4/Whats-App-Image-2026-04-26-at-12-02-57-PM.jpg" width="500"/>
+</p>
 
-* Vista que presenta datos relevantes sobre la seguridad industrial y el impacto del sistem
-![Cómo funciona](https://i.postimg.cc/5N5tzC7g/Whats-App-Image-2026-04-26-at-12-02-23-PM-(2).jpg)
+<h5 align="center">Cómo funciona</h5>
+<p align="center">Flujo de uso del sistema.</p>
 
-* Vista que permite iniciar una prueba gratuita o comunicarse con ventas para implementar la solución.
-![Segmentos](https://i.postimg.cc/FH9HVH8J/Whats-App-Image-2026-04-26-at-12-02-23-PM-(3).jpg)
+<p align="center">
+  <img src="https://i.postimg.cc/Z5T5x52d/Whats-App-Image-2026-04-26-at-12-02-23-PM.jpg" width="500"/>
+</p>
+
+<h5 align="center">Segmentos</h5>
+<p align="center">Usuarios objetivo.</p>
+
+<p align="center">
+  <img src="https://i.postimg.cc/MpWpmpNB/Whats-App-Image-2026-04-26-at-12-02-23-PM-(1).jpg" width="500"/>
+</p>
+
+<h5 align="center">Estadísticas</h5>
+<p align="center">Datos sobre seguridad industrial.</p>
+
+<p align="center">
+  <img src="https://i.postimg.cc/5N5tzC7g/Whats-App-Image-2026-04-26-at-12-02-23-PM-(2).jpg" width="500"/>
+</p>
+
+<h5 align="center">Contactar</h5>
+<p align="center">Prueba gratuita o contacto.</p>
+
+<p align="center">
+  <img src="https://i.postimg.cc/FH9HVH8J/Whats-App-Image-2026-04-26-at-12-02-23-PM-(3).jpg" width="500"/>
+</p>
 
 
 #### 5.2.1.6. *Services Documentation Evidence for Sprint Review*
@@ -395,7 +419,9 @@ Se verificó que la versión final del proyecto estuviera almacenada y actualiza
 - Se ejecutó el proceso de build y publicación.  
 - Se verificó el acceso al entorno de producción.  
 
-[![Whats-App-Image-2026-04-26-at-12-59-55-PM.jpg](https://i.postimg.cc/VNXz275M/Whats-App-Image-2026-04-26-at-12-59-55-PM.jpg)](https://postimg.cc/3yJMvFXJ)
+<p align="center">
+  <img src="https://i.postimg.cc/VNXz275M/Whats-App-Image-2026-04-26-at-12-59-55-PM.jpg" width="500"/>
+</p>
 
 - **GitHub Pages:**  
   https://upc-web-applications.github.io/riskguard-landingpage/#  
@@ -406,3 +432,16 @@ Se verificó que la versión final del proyecto estuviera almacenada y actualiza
 
 #### 5.2.1.8. *Team Collaboration Insights during Sprint*
 
+Durante el Sprint 1, todos los integrantes del equipo participaron en el desarrollo del Landing Page de RiskGuard, lo cual se evidencia en los commits realizados dentro del repositorio riskguard-landingpage. El trabajo se desarrolló de manera colaborativa, abarcando tanto el diseño como la implementación de las distintas secciones.
+
+En particular, Blancas Chávez, Carlos Franco tuvo un rol destacado en la estructuración e integración general del sitio. Laura Acosta, Victor Jhosef se encargó de la integración del proyecto, consolidando las distintas secciones desarrolladas por el equipo. Por su parte, Flores Eusebio, Angel Thyago, Aponte Pablo, Isabel Luisa y Flores Siguas, Marlon Alessandro participaron en el diseño visual  y ajustes de la interfaz para mejorar la experiencia de usuario.
+
+El equipo trabajó directamente sobre la rama main, realizando commits continuos para avanzar en el desarrollo. Durante este Sprint no se utilizó un flujo formal de Pull Requests, ya que el objetivo principal fue construir una primera versión funcional del Landing Page en el menor tiempo posible.
+
+<p align="center">
+  <img src="https://i.postimg.cc/YqJ9VL8Z/Whats-App-Image-2026-04-26-at-1-13-58-PM.jpg" width="500"/>
+</p>
+
+<p align="center">
+  <img src="https://i.postimg.cc/0Q22mY2x/Whats-App-Image-2026-04-26-at-1-13-41-PM.jpg" width="500"/>
+</p>
