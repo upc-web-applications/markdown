@@ -33,6 +33,10 @@
         <td align="center"><b>EP05</b></td>
         <td align="center">Configuración del Sistema</td>
     </tr>
+    <tr>
+        <td align="center"><b>EP06</b></td>
+        <td align="center">Presencia Digital y Estrategia de Conversion de Usuarios</td>
+    </tr>
 </table>
 
 
