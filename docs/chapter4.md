@@ -1022,3 +1022,8 @@ Este Bounded Context es responsable de la generación de reportes ejecutivos e i
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
+<div align="center">
+    
+  <img src="images/diagrama-basedatos-riskguard-bc-usuarios.svg" width="500">
+
+</div>
