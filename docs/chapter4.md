@@ -997,6 +997,7 @@ Este Bounded Context es responsable de la generación de reportes ejecutivos e i
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
+En esta seccion se muestran los diagramas de de base de datos por cada Bounded Context. En estos diagramas se pueden evidenciar tanto las tablas, columnas, constraints y relaciones entre si por cada bounded context
 <div align="center">
     
   <img src="images/diagrama-basedatos-riskguard-bc-usuarios.svg" width="500">
