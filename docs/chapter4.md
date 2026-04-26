@@ -1018,3 +1018,9 @@ En esta seccion se muestran los diagramas de de base de datos por cada Bounded C
   <p>Diagrama de base de datos BC 3</p>
 
 </div>
+<div align="center">
+    
+  <img src="images/diagrama-basedatos-riskguard-bc-iperc.svg" width="500">
+  <p>Diagrama de base de datos BC 4</p>
+
+</div>
