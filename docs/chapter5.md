@@ -177,8 +177,28 @@ Para el desarrollo backend se adoptarán las **C# Coding Conventions de Microsof
 - Se mantiene una estructura clara del proyecto.  
 
 ### 5.1.4. Software Deployment Configuration
+En esta sección se describe la configuración del despliegue del proyecto, detallando los pasos necesarios para lograr la publicación del producto a partir de su repositorio de código fuente.
+Para este Sprint, el alcance se centra en el desarrollo del **Landing Page de RiskGuard**, por lo que la configuración de despliegue se define únicamente para este componente. El objetivo es establecer un proceso que permita publicar el sitio de manera accesible, asegurando su correcta visualización y disponibilidad en línea.
 
+**GitHub Pages**  
+Para la publicación mediante GitHub Pages se definió el siguiente procedimiento:
 
+1. Utilizar la rama `main` como fuente del despliegue.  
+2. Acceder a la configuración del repositorio en GitHub.  
+3. Ingresar a la sección **Pages** dentro de *Settings*.  
+4. Seleccionar la rama `main` como origen de publicación.  
+5. Guardar la configuración para habilitar la generación automática del sitio.
+   
+**Vercel**  
+Para el despliegue en Vercel se definió el siguiente proceso:
+
+1. Vincular el repositorio de GitHub con la cuenta de Vercel.  
+2. Importar el proyecto desde el repositorio.  
+3. Configurar el entorno de despliegue (Vite).  
+4. Definir la rama `main` como fuente.  
+5. Habilitar el despliegue automático del sitio.
+
+Una vez desplegado, el sitio estará disponible para su acceso en línea mediante la URL generada por la plataforma de despliegue. En la fase de mantenimiento, las actualizaciones se gestionarán mediante commits y merges hacia la rama principal (`main`), siguiendo el flujo de control de versiones definido por el equipo. Cada cambio integrado en esta rama generará automáticamente una nueva versión del sitio desplegado, permitiendo que las mejoras y correcciones se reflejen de manera continua.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
