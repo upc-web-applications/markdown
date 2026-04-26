@@ -3563,44 +3563,36 @@
   </tr>
   <tr>
     <td><b>Título</b></td>
-    <td colspan="3">Propuesta de Valor e Interactividad</td>
+    <td colspan="3">Identidad y Acceso General</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como administrador, quiero visualizar la configuración actual del sistema, para tener un control general de todos los parámetros definidos.
+      Como visitante o posible usuario, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada.
     </td>
   </tr>
   <tr>
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>El sistema muestra todos los parámetros configurados.</li>
-        <li>El sistema organiza la información por categorías.</li>
-        <li>El sistema permite visualizar datos en tiempo real.</li>
-        <li>El sistema refleja los cambios realizados inmediatamente.</li>
-        <li>El sistema presenta la información de forma clara y ordenada.</li>
+        <li>El sistema debe ser accesible a través de una URL pública y ser compatible con los navegadores modernos.</li>
+        <li>El Navbar debe mostrar de forma prominente el logotipo y el nombre del producto en la esquina superior izquierda.</li>
+        <li>El menú de navegación debe permitir el acceso rápido a las secciones de Características, Metodología, Sectores y Estadísticas.</li>
+        <li>El tiempo de carga inicial de la página no debe superar los 3 segundos para garantizar una buena experiencia de usuario.</li>
       </ol>
-      <b>Escenario 1:</b> Visualización general<br/>
+      <b>Escenario 1:</b> Acceso exitoso a la Landing Page oficial<br/>
       <ul>
-        <li><b>Given</b> que el administrador accede al módulo de configuración,</li>
-        <li><b>When</b> ingresa a la vista general,</li>
-        <li><b>Then</b> el sistema muestra todos los parámetros configurados,</li>
-        <li><b>And</b> los organiza de manera clara.</li>
+        <li><b>Given</b> que un usuario dispone de la dirección URL oficial de la Landing Page de RiskGuard,</li>
+        <li><b>When</b> ingresa la dirección en su navegador y presiona Enter,</li>
+        <li><b>Then</b> el sistema carga la interfaz principal de la Landing Page,</li>
+        <li><b>And</b> expone correctamente la identidad visual (logo y colores corporativos) en el encabezado.</li>
       </ul>
-      <b>Escenario 2:</b> Actualización en tiempo real<br/>
+      <b>Escenario 2:</b> Navegación interna por anclas<br/>
       <ul>
-        <li><b>Given</b> que se realizan cambios en la configuración,</li>
-        <li><b>When</b> el administrador visualiza la información,</li>
-        <li><b>Then</b> el sistema refleja los cambios actualizados,</li>
-        <li><b>And</b> muestra los datos en tiempo real.</li>
-      </ul>
-      <b>Escenario 3:</b> Organización de la información<br/>
-      <ul>
-        <li><b>Given</b> que existen múltiples configuraciones en el sistema,</li>
-        <li><b>When</b> el administrador accede a la vista,</li>
-        <li><b>Then</b> el sistema organiza la información por categorías,</li>
-        <li><b>And</b> facilita su comprensión.</li>
+        <li><b>Given</b> que un usuario se encuentra en el inicio de la página,</li>
+        <li><b>When</b> hace clic en algun enlace del menu de navegacion,</li>
+        <li><b>Then</b> el sistema realiza un desplazamiento suave hacia la seccion seleccionada,</li>
+        <li><b>And</b> mantiene el Navbar visible para permitir saltar a otras secciones.</li>
       </ul>
     </td>
   </tr>
