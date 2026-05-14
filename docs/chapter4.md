@@ -496,19 +496,12 @@ La pantalla de detalle de ticket presenta el historial completo del incidente en
 
 #### Wireframes: Dashboard Ejecutivo del Gerente
 
-![Wireframe Dashboard Ejecutivo](images/wireframe-dashboard-ejecutivo.png)
+[![Captura de pantalla 2026-05-14 165957](https://i.postimg.cc/j2dWxXdy/Captura-de-pantalla-2026-05-14-165957.png)](https://postimages.org/)
 
 *Ilustración – Web Application Wireframe: Dashboard Ejecutivo del Gerente*
 
-El dashboard ejecutivo adopta una grilla de cuatro columnas en la fila superior para los indicadores KPI principales: incidentes activos totales, incidentes resueltos en el mes, sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST. Cada KPI presenta la cifra principal en tipografía de gran tamaño, una etiqueta descriptiva y un indicador de tendencia (flecha arriba/abajo respecto al período anterior). La fila central presenta el mapa de calor ejecutivo a pantalla completa con la distribución de riesgos por sector. La fila inferior muestra la gráfica de tendencias de accidentabilidad de los últimos 12 meses y el panel de indicadores predictivos con las zonas de atención prioritaria identificadas por el motor de reglas.
+El dashboard ejecutivo adopta una grilla de cuatro columnas en la fila superior para los indicadores KPI principales: incidentes activos totales, incidentes resueltos en el mes, sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST. Cada KPI presenta la cifra principal en tipografía de gran tamaño, una etiqueta descriptiva y un indicador de tendencia (flecha arriba/abajo respecto al período anterior).
 
-#### Wireframes: Módulo de Reportes y Auditoría
-
-![Wireframe Reportes Auditoría](images/wireframe-reportes-auditoria.png)
-
-*Ilustración – Web Application Wireframe: Módulo de Reportes y Auditoría*
-
-La pantalla de reportes presenta un panel de configuración en la parte superior con los parámetros de generación: selector de tipo de reporte (mensual, auditoría SUNAFIL, resumen ejecutivo), selector de rango de fechas, selector de sector (opcional) y selector de formato de salida (PDF o Excel). Debajo del panel de configuración se ubica el botón primario "Generar reporte". La sección inferior muestra el historial de reportes generados en formato de tabla con columnas de tipo, período, fecha de generación y botón de descarga.
 
 #### Wireframes: Módulo de Configuración del Sistema
 
@@ -641,21 +634,11 @@ La pantalla de detalle de ticket aplica el layout de dos columnas sobre fondo `#
 
 #### Dashboard Ejecutivo del Gerente
 
-![Mockup Dashboard Ejecutivo](images/mockup-dashboard-ejecutivo.png)
+[![Captura de pantalla 2026-05-14 164930](https://i.postimg.cc/QdqR5Jjw/Captura-de-pantalla-2026-05-14-164930.png)](https://postimages.org/)
 
 *Ilustración – Web Application Mock-up: Dashboard Ejecutivo del Gerente*
 
-El dashboard ejecutivo aplica la misma paleta oscura con énfasis en los indicadores predictivos. Las cuatro tarjetas KPI de la fila superior usan cifras en tipografía Geist Bold de 48 px en blanco sobre fondo `#1A1E24`, con el indicador de tendencia en verde `#00C97B` para mejora y rojo `#FF3B30` para deterioro. La gráfica de tendencias de accidentabilidad usa líneas de color diferenciadas por tipo de incidente sobre un fondo de grilla sutil en `#2A2F38`. El panel de indicadores predictivos destaca las zonas de atención prioritaria con un badge naranja "ATENCIÓN PRIORITARIA" en tipografía uppercase de 10 px.
-
-#### Módulo de Reportes y Auditoría
-
-![Mockup Reportes Auditoría](images/mockup-reportes-auditoria.png)
-
-*Ilustración – Web Application Mock-up: Módulo de Reportes y Auditoría*
-
-El módulo de reportes aplica el Design System en el panel de configuración con selectores, inputs de fecha y radio buttons de formato de salida estilizados con el naranja primario como color de selección activa. El historial de reportes generados usa una tabla con filas alternas y badges de tipo de reporte diferenciados por color. El botón "Generar reporte" ocupa el ancho completo del panel de configuración con el naranja primario como fondo, garantizando su visibilidad como la acción principal de la pantalla.
-
----
+El dashboard ejecutivo aplica la misma paleta oscura con énfasis en los indicadores predictivos. Las cuatro tarjetas KPI de la fila superior usan cifras en tipografía Geist Bold de 48 px en blanco sobre fondo `#1A1E24`, con el indicador de tendencia en verde `#00C97B` para mejora y rojo `#FF3B30` para deterioro. La gráfica de tendencias de accidentabilidad usa líneas de color 
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
