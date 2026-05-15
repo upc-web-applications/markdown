@@ -2220,6 +2220,8 @@
         <li>El gerente puede seleccionar el rango de fechas del reporte antes de exportar.</li>
         <li>El documento se descarga en formato PDF o Excel según selección del gerente.</li>
         <li>El sistema muestra un mensaje de error si no hay datos en el rango seleccionado.</li>
+        <li>El gerente puede consultar el historial de reportes de auditoría generados anteriormente, filtrarlos por mes, año y tipo, y volver a descargarlos o previsualizarlos.</li>
+        <li>El gerente puede eliminar un reporte del historial con confirmación previa.</li>
       </ol>
       <b>Escenario 1:</b> Exportación exitosa en PDF<br/>
       <ul>
@@ -2231,16 +2233,30 @@
       <b>Escenario 2:</b> Rango sin datos registrados<br/>
       <ul>
         <li><b>Given</b> que el Gerente selecciona un rango de fechas sin incidentes registrados,</li>
-        <li><b>When</b> hace clic en "Exportar",</li>
-        <li><b>Then</b> el sistema muestra el mensaje "No hay datos registrados en el período seleccionado",</li>
+        <li><b>When</b> hace clic en "Generar reporte",</li>
+        <li><b>Then</b> el sistema muestra el mensaje "No hay datos registrados para el período seleccionado",</li>
         <li><b>And</b> no genera ningún archivo de descarga.</li>
       </ul>
       <b>Escenario 3:</b> Exportación en Excel<br/>
       <ul>
         <li><b>Given</b> que el Gerente prefiere el formato Excel para análisis posterior,</li>
-        <li><b>When</b> selecciona el formato Excel y hace clic en "Exportar",</li>
+        <li><b>When</b> selecciona el formato Excel y hace clic en "Generar reporte",</li>
         <li><b>Then</b> el sistema genera el archivo con los datos estructurados en columnas,</li>
-        <li><b>And</b> lo descarga con el nombre "RiskGuard_Auditoria_[fecha_inicio]_[fecha_fin].xlsx".</li>
+        <li><b>And</b> lo descarga con el nombre correspondiente al período seleccionado.</li>
+      </ul>
+      <b>Escenario 4:</b> Consulta y re-descarga desde el historial<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede a la sección "Mis Reportes",</li>
+        <li><b>When</b> aplica filtros por mes, año o tipo para localizar un reporte de auditoría previo,</li>
+        <li><b>Then</b> el sistema muestra la lista de reportes que cumplen el filtro,</li>
+        <li><b>And</b> el gerente puede hacer clic en el ícono de descarga para volver a obtener el archivo o en el ícono de vista previa para previsualizar el PDF.</li>
+      </ul>
+      <b>Escenario 5:</b> Eliminación de reporte del historial<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente visualiza el historial de reportes generados,</li>
+        <li><b>When</b> hace clic en el ícono de eliminar sobre un reporte,</li>
+        <li><b>Then</b> el sistema solicita confirmación antes de proceder,</li>
+        <li><b>And</b> al confirmar, elimina el registro del historial sin recargar la página.</li>
       </ul>
     </td>
   </tr>
@@ -2491,7 +2507,6 @@
 </table>
 
 ---
-
 <table align="center">
   <tr>
     <td><b>User Story ID</b></td><td>US52</td>
@@ -2513,27 +2528,36 @@
         <li>El gerente puede seleccionar el mes y año del reporte antes de generarlo.</li>
         <li>El reporte se genera en menos de 10 segundos y se descarga en PDF.</li>
         <li>El sistema muestra un mensaje de error si el mes seleccionado no tiene datos suficientes para generar el reporte.</li>
+        <li>El gerente puede consultar el historial de reportes mensuales generados, filtrarlos por mes y año, y volver a descargarlos o previsualizarlos.</li>
+        <li>El gerente puede eliminar un reporte mensual del historial con confirmación previa.</li>
       </ol>
       <b>Escenario 1:</b> Generación exitosa del reporte mensual<br/>
       <ul>
-        <li><b>Given</b> que el Gerente accede a la sección de reportes,</li>
+        <li><b>Given</b> que el Gerente accede a la sección de nuevo reporte,</li>
         <li><b>When</b> selecciona el mes y año y hace clic en "Generar reporte",</li>
-        <li><b>Then</b> el sistema genera el PDF con los datos consolidados del período,</li>
-        <li><b>And</b> lo descarga con el nombre "RiskGuard_Reporte_Mensual_[mes]_[año].pdf".</li>
+        <li><b>Then</b> el sistema genera el PDF con los datos consolidados del período con jsPDF,</li>
+        <li><b>And</b> lo descarga automáticamente y registra el reporte en el historial.</li>
       </ul>
       <b>Escenario 2:</b> Mes sin datos suficientes<br/>
       <ul>
         <li><b>Given</b> que el Gerente selecciona un mes sin incidentes registrados,</li>
         <li><b>When</b> hace clic en "Generar reporte",</li>
         <li><b>Then</b> el sistema muestra el mensaje "No hay datos registrados para el período seleccionado",</li>
-        <li><b>And</b> no genera ningún archivo.</li>
+        <li><b>And</b> no genera ningún archivo ni registra el reporte en el historial.</li>
       </ul>
-      <b>Escenario 3:</b> Reporte del mes en curso<br/>
+      <b>Escenario 3:</b> Previsualización de reporte mensual desde el historial<br/>
       <ul>
-        <li><b>Given</b> que el Gerente necesita un reporte del mes en curso,</li>
-        <li><b>When</b> selecciona el mes actual y genera el reporte,</li>
-        <li><b>Then</b> el sistema incluye todos los datos registrados hasta la fecha de generación,</li>
-        <li><b>And</b> el reporte indica claramente que corresponde al período parcial del mes en curso.</li>
+        <li><b>Given</b> que el Gerente accede al historial de reportes y localiza un reporte mensual previo,</li>
+        <li><b>When</b> hace clic en el ícono de vista previa,</li>
+        <li><b>Then</b> el sistema muestra el PDF en un panel emergente dentro de la misma pantalla,</li>
+        <li><b>And</b> el gerente puede cerrarlo o descargarlo directamente desde el panel.</li>
+      </ul>
+      <b>Escenario 4:</b> Eliminación de reporte mensual del historial<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente visualiza el historial de reportes mensuales generados,</li>
+        <li><b>When</b> hace clic en el ícono de eliminar sobre un reporte,</li>
+        <li><b>Then</b> el sistema solicita confirmación antes de proceder,</li>
+        <li><b>And</b> al confirmar, elimina el registro del historial sin recargar la página.</li>
       </ul>
     </td>
   </tr>
