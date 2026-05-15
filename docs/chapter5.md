@@ -260,7 +260,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T11</td>
       <td>Diseño Estadísticas</td>
       <td>Diseñar tarjetas de métricas</td>
-      <td>1</td>
+      <td>3 </td>
       <td>Laura Acosta, Victor Jhosef</td>
       <td>Completed</td>
     </tr>
@@ -270,7 +270,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T12</td>
       <td>Implementación Estadísticas</td>
       <td>Mostrar indicadores visuales</td>
-      <td>2</td>
+      <td>4</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
     </tr>
@@ -290,7 +290,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T01</td>
       <td>Diseño Header</td>
       <td>Diseñar estructura del navbar</td>
-      <td>1</td>
+      <td>3</td>
       <td>Flores Thyago, Angel</td>
       <td>Completed</td>
     </tr>
@@ -300,7 +300,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T02</td>
       <td>Implementación Header</td>
       <td>Implementar navbar con logo y menú</td>
-      <td>2</td>
+      <td>3</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
     </tr>
@@ -310,7 +310,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T03</td>
       <td>Diseño Hero</td>
       <td>Diseñar sección principal</td>
-      <td>1</td>
+      <td>3</td>
       <td>Laura Acosta, Victor Jhosef</td>
       <td>Completed</td>
     </tr>
@@ -320,7 +320,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T04</td>
       <td>Implementación Hero</td>
       <td>Agregar texto e imagen principal</td>
-      <td>2</td>
+      <td>4</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
     </tr>
@@ -330,7 +330,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T05</td>
       <td>Diseño Funciones</td>
       <td>Diseñar tarjetas de funcionalidades</td>
-      <td>1</td>
+      <td>2</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -340,7 +340,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T06</td>
       <td>Implementación Características</td>
       <td>Mostrar funcionalidades del sistema</td>
-      <td>2</td>
+      <td>4</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
     </tr>
@@ -350,7 +350,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T07</td>
       <td>Diseño Cómo funciona</td>
       <td>Diseñar flujo de pasos</td>
-      <td>1</td>
+      <td>2</td>
       <td>Flores Thyago, Angel</td>
       <td>Completed</td>
     </tr>
@@ -360,7 +360,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T08</td>
       <td>Implementación Cómo funciona</td>
       <td>Mostrar proceso del sistema</td>
-      <td>2</td>
+      <td>3</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
     </tr>
@@ -370,7 +370,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T09</td>
       <td>Diseño Segmentos</td>
       <td>Diseñar tarjetas por rol</td>
-      <td>1</td>
+      <td>2</td>
       <td>Flores Thyago, Angel</td>
       <td>Completed</td>
     </tr>
@@ -380,7 +380,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T10</td>
       <td>Implementación Segmentos</td>
       <td>Mostrar beneficios por usuario</td>
-      <td>2</td>
+      <td>3</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
     </tr>
@@ -390,7 +390,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T13</td>
       <td>Diseño CTA</td>
       <td>Diseñar botones de acción</td>
-      <td>1</td>
+      <td>2 </td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -400,7 +400,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>T14</td>
       <td>Implementación CTA</td>
       <td>Agregar botones de contacto</td>
-      <td>2</td>
+      <td>3</td>
       <td>Blancas Chávez, Carlos Franco</td>
       <td>Completed</td>
     </tr>
@@ -628,7 +628,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T01</td>
       <td>Implementación KPIs</td>
       <td>Implementar tarjetas de indicadores clave: incidentes activos, resueltos, sectores críticos y cumplimiento SST</td>
-      <td>3</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -638,7 +638,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T02</td>
       <td>Detalle de indicador por sector</td>
       <td>Al hacer clic en un KPI, mostrar dialog con listado de sectores y alertas activas; cerrar con un solo clic para volver        al dashboard</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -648,7 +648,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T03</td>
       <td>Gráfico de tendencias</td>
       <td>Implementar gráfica de línea con evolución mensual de incidentes diferenciada por tipo</td>
-      <td>3</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -658,7 +658,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T04</td>
       <td>Exportar gráfica como imagen</td>
       <td>Implementar descarga de la gráfica de tendencias en formato PNG con un solo clic</td>
-      <td>1</td>
+      <td>3</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -668,7 +668,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T05</td>
       <td>Generación reportes auditoría PDF y Excel</td>
       <td>Implementar formulario de exportación con selección de rango de fechas y formato, generación de documento de auditoría en PDF y Excel</td>
-      <td>3</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -678,7 +678,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T07</td>
       <td>Historial y gestión de reportes generados</td>
       <td>Implementar historial de reportes generados</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -688,7 +688,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T07</td>
       <td>Diseño seguimiento SST</td>
       <td>Diseñar tarjetas de cumplimiento de actividades del plan anual de SST con indicador de color por porcentaje</td>
-      <td>1</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -698,7 +698,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T08</td>
       <td>Implementación seguimiento SST</td>
       <td>-Implementar vista con cumplimiento global, actividades completadas, gráfica de evolución mensual,         exportación de informe anual PDF y generación de reporte de cumplimiento en PDF o Excel</td>
-      <td>2</td>
+      <td>5</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -708,7 +708,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T09</td>
       <td>Diseño indicadores predictivos</td>
       <td>Diseñar tarjetas de indicadores predictivos</td>
-      <td>1</td>
+      <td>3</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -718,7 +718,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T10</td>
       <td>Implementación indicadores predictivos</td>
       <td>Mostrar indicadores predictivos: sectores con tendencia creciente, tipos recurrentes y tiempo promedio de resolución</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -728,7 +728,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T11</td>
       <td>Exportación resumen ejecutivo predictivo PDF</td>
       <td>Implementar generación y descarga del resumen ejecutivo en PDFd</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -738,7 +738,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T12</td>
       <td>Implementación alertas críticas</td>
       <td>Implementar tabla con acciones marcar como resuelto y eliminar, con tags de severidad por tipo y estado</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -748,7 +748,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T13</td>
       <td>Implementación tabla historial de solo lectura</td>
       <td>Implementar tabla inmutable de incidentes sin opciones de edición para garantizar trazabilidad legal ante          SUNAFIL</td>
-      <td>2</td>
+      <td>5</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -758,7 +758,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T14</td>
       <td>Filtros por sector, tipo y rango de fechas</td>
       <td>Implementar filtros de búsqueda por sector, tipo de incidente y rango de fechas con actualización del       contador de resultados filtrados</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -768,7 +768,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T15</td>
       <td>Generación de reporte en PDF</td>
       <td>Implementar generación y descarga automática del reporte mensual consolidado en PDF con jsPDF</td>
-      <td>3</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -778,7 +778,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T16</td>
       <td>Historial y previsualización de reportes mensuales</td>
       <td>Implementar historial de reportes mensuales generados con previsualización en historial, re-descarga y eliminación con confirmación</td>
-      <td>2</td>
+      <td>5</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -788,7 +788,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T17</td>
       <td>Consumo endpoint GET /api/v1/kpi_dashboard</td>
       <td>Consumir el endpoint GET /api/v1/kpi_dashboard para obtener los cuatro indicadores KPI y sincronizarlos reactivamente en el store mediante syncKPIs</td>
-      <td>2</td>
+      <td>5</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -798,7 +798,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T18</td>
       <td>Consumo endpoint GET /api/v1/historical_trends</td>
       <td>Consumir el endpoint GET /api/v1/historical_trends para obtener la evolución mensual de incidentes y aplicar filtro por sector y por tipo en el frontend</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -808,7 +808,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T19</td>
       <td>Consumo endpoints GET, POST y DELETE /api/v1/generated_reports</td>
       <td>Consumir los endpoints de reportes generados para listar, registrar y eliminar reportes; la generación del documento PDF o Excel se realiza en el cliente con jsPDF</td>
-      <td>2</td>
+      <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -818,7 +818,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T20</td>
       <td>Consumo endpoints GET, PATCH y DELETE /api/v1/critical_alerts</td>
       <td>Consumir los endpoints de alertas críticas para listar, actualizar estado y eliminar alertas, con recálculo automático del KPI de sectores críticos tras cada operación</td>
-      <td>2</td>
+      <td>5</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
@@ -828,7 +828,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>T21</td>
       <td>Consumo endpoint GET /api/v1/annual_ohs_plan</td>
       <td>Consumir el endpoint GET /api/v1/annual_ohs_plan para obtener el porcentaje de cumplimiento global y el desglose por sector, y alimentar la vista de seguimiento SST y el KPI del dashboard</td>
-      <td>2</td>
+      <td>5</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
