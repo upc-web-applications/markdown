@@ -106,15 +106,73 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 **Cuando** logremos mantener una tasa de disponibilidad del sistema superior al 70% sin requerir hardware especializado del lado del cliente.
 
 #### 1.2.2.4. Lean UX Canvas
-<div align="center">
-  <p>
-    <b>Grafico 2</b>: Lean UX Canvas
-  </p>
-  <img src="https://i.postimg.cc/TYtDkfz2/leanuxcanvas-app-web.png" alt="Grafico 2" />
-  <p>
-    <i><b>Fuente</b>: Elaboración propia</i>
-  </p>
-</div>
+
+<table>
+  <tr>
+    <th>Business Problem</th>
+    <th>Solutions</th>
+    <th>Business Outcomes</th>
+  </tr>
+  <tr>
+    <td>
+      Las empresas de manufactura y logística presentan una brecha crítica en la prevención de riesgos laborales debido al uso de registros manuales, hojas de cálculo y reportes tardíos. Esta situación afecta a los operarios, quienes no reportan incidentes por falta de tiempo o retroalimentación; a los supervisores, quienes no cuentan con datos centralizados para priorizar riesgos; y a los gerentes, quienes reciben información incompleta o tardía para tomar decisiones preventivas y cumplir con la Ley N.° 29783.
+    </td>
+    <td>
+      <ul>
+        <li>Formulario móvil/web para registrar casi-accidentes y condiciones inseguras con evidencia fotográfica.</li>
+        <li>Backend que clasifica la criticidad del riesgo mediante reglas de probabilidad, severidad y recurrencia.</li>
+        <li>Dashboard operativo con mapa de calor, alertas activas y patrones recurrentes.</li>
+        <li>Gestión de tickets y acciones correctivas.</li>
+        <li>Dashboard ejecutivo y reportes exportables para cumplimiento normativo.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Reducción del subregistro de incidentes.</li>
+        <li>Disminución del tiempo de respuesta ante riesgos críticos.</li>
+        <li>Mejora en la trazabilidad de acciones correctivas.</li>
+        <li>Apoyo al cumplimiento de la Ley N.° 29783.</li>
+        <li>Reducción progresiva de condiciones inseguras no atendidas.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>Users</th>
+    <th>Hypotheses</th>
+    <th>User Outcomes & Benefits</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Operarios de planta</li>
+        <li>Supervisores de seguridad y mantenimiento</li>
+        <li>Gerentes y administradores</li>
+      </ul>
+    </td>
+    <td>
+      Creemos que digitalizar el reporte de incidentes mediante RiskGuard incrementará la cantidad de reportes registrados por los operarios, porque el proceso será más rápido, simple y trazable que el uso de papel o Excel. Sabremos que esto es cierto cuando los usuarios puedan completar un reporte en menos de 30 segundos y los supervisores visualicen automáticamente el riesgo en el dashboard.
+    </td>
+    <td>
+      <ul>
+        <li><strong>Operarios:</strong> reportan riesgos en pocos pasos y reciben confirmación.</li>
+        <li><strong>Supervisores:</strong> centralizan reportes, priorizan zonas críticas y asignan acciones correctivas.</li>
+        <li><strong>Gerentes:</strong> consultan indicadores predictivos y exportan reportes para auditorías y toma de decisiones.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2">What’s the most important thing we need to learn first?</th>
+    <th>What’s the least amount of work we need to do to learn the next most important thing?</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+      ¿Los operarios, supervisores y gerentes consideran útil una plataforma web que permita registrar incidentes, visualizar riesgos por sector y recibir alertas de criticidad para mejorar la prevención de accidentes laborales?
+    </td>
+    <td>
+      Desarrollar un MVP funcional con autenticación por roles, formulario de reporte de incidentes, registro de sectores y activos, dashboard con mapa de calor simulado, alertas de criticidad y reportes básicos usando una fake API basada en json-server y db.json.
+    </td>
+  </tr>
+</table>
 
 
 ## 1.3. Segmentos objetivo
