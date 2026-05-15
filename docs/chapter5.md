@@ -592,6 +592,15 @@ En este Sprint 2, el equipo se enfocó en el desarrollo integral del frontend de
 | Sum of Story Points |  SP |
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
+En este Sprint, los aspectos corresponden a los principales Bounded Contexts desarrollados para la aplicación RiskGuard. Se asignaron roles de liderazgo y colaboración para cada módulo con el fin de mejorar la organización, distribución de tareas y coordinación entre los integrantes del equipo durante el desarrollo del frontend.
+
+| Miembro del equipo (Apellido, Nombre) | Usuario GitHub | Account Generation and Authentication BC (L/C) | Site / Area and Industrial Asset BC (L/C) | Inspection / Unsafe Condition BC (L/C) | Risk Assessment (IPERC) BC (L/C) | Mitigation BC (L/C) | Monitoring / Dashboard BC (L/C) | Reports / Compliance BC (L/C) |
+|--------------------------------------|---------------|-----------------------------------------------|-------------------------------------------|----------------------------------------|----------------------------------|---------------------|----------------------------------|-------------------------------|
+| Aponte Pablo, Isabel Luisa | IsabelAponte234 | C | C | C | C | C | C | L |
+| Laura Acosta, Victor Jhosef | Zatrynox | C | C| C | L | L | C | C |
+| Blancas Chávez, Carlos Franco | CarlosBlancas969 | C | L | L | C | C | C | C |
+| Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C | L | C |
+
 #### 5.2.2.3.Sprint Backlog 2.
 #### 5.2.2.4.Development Evidence for Sprint Review.
 #### 5.2.2.5.Execution Evidence for Sprint Review.
