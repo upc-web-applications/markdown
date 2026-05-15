@@ -2284,7 +2284,9 @@
         <li>El sistema muestra el porcentaje de cumplimiento del plan anual de SST calculado en base a los tickets cerrados versus los planificados en el período.</li>
         <li>El indicador se diferencia visualmente: verde (≥80%), amarillo (50–79%), rojo (&lt;50%).</li>
         <li>El gerente puede ver el detalle de las actividades cumplidas e incumplidas por sector.</li>
+           <li>El sistema muestra una gráfica de línea con la evolución mensual del porcentaje de cumplimiento a lo largo del año.</li>
         <li>Si el cumplimiento cae por debajo del 50%, el sistema genera una alerta visible en el dashboard.</li>
+          <li>El gerente puede generar un reporte de cumplimiento SST en formato PDF o Excel desde el formulario de generación de reportes, seleccionando el tipo "Cumplimiento".</li>
       </ol>
       <b>Escenario 1:</b> Cumplimiento en nivel aceptable<br/>
       <ul>
@@ -2306,6 +2308,20 @@
         <li><b>When</b> hace clic sobre el indicador de cumplimiento,</li>
         <li><b>Then</b> el sistema muestra el porcentaje de cumplimiento desglosado por sector,</li>
         <li><b>And</b> ordena los sectores de menor a mayor cumplimiento.</li>
+      </ul>
+      <b>Escenario 3:</b> Evolución mensual del cumplimiento<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente visualiza la sección de cumplimiento mensual,</li>
+        <li><b>When</b> el sistema procesa el campo monthly_compliance del plan anual,</li>
+        <li><b>Then</b> muestra una gráfica de línea con el porcentaje de cumplimiento por cada mes del año,</li>
+        <li><b>And</b> el gerente puede identificar visualmente los meses con mayor y menor cumplimiento.</li>
+      </ul>
+      <b>Escenario 5:</b> Generar reporte de cumplimiento SST<br/>
+      <ul>
+        <li><b>Given</b> que el Gerente accede al formulario "Generar Reporte" y selecciona el tipo "Cumplimiento",           </li>
+        <li><b>When</b> elige el formato (PDF o Excel) y hace clic en "Generar",</li>
+        <li><b>Then</b> el sistema genera y descarga el reporte con el porcentaje de cumplimiento global, actividades             completadas y desglose por sector,</li>
+        <li><b>And</b> registra el reporte en el historial de reportes generados.</li>
       </ul>
     </td>
   </tr>
