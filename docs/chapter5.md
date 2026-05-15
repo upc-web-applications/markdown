@@ -602,7 +602,192 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C | L | C |
 
 #### 5.2.2.3.Sprint Backlog 2.
+
+<p><strong>Sprint #:</strong> Sprint 2</p>
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-Item / Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned To</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US44</td>
+      <td>Visualización del Dashboard Ejecutivo de Seguridad</td>
+      <td>T01</td>
+      <td>Implementación KPIs</td>
+      <td>Implementar tarjetas de indicadores clave: incidentes activos, resueltos, sectores críticos y cumplimiento SST</td>
+      <td>3</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US44</td>
+      <td>Visualización del Dashboard Ejecutivo de Seguridad</td>
+      <td>T02</td>
+      <td>Detalle de indicador por sector</td>
+      <td>Al hacer clic en un KPI, mostrar dialog con listado de sectores y alertas activas; cerrar con un solo clic para volver        al dashboard</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US45</td>
+      <td>Visualización de Tendencias de Accidentabilidad</td>
+      <td>T03</td>
+      <td>Gráfico de tendencias</td>
+      <td>Implementar gráfica de línea con evolución mensual de incidentes diferenciada por tipo</td>
+      <td>3</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US45</td>
+      <td>Visualización de Tendencias de Accidentabilidad</td>
+      <td>T04</td>
+      <td>Exportar gráfica como imagen</td>
+      <td>Implementar descarga de la gráfica de tendencias en formato PNG con un solo clic</td>
+      <td>1</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+   <tr>
+      <td>US46</td>
+      <td>Exportación de Formatos de Auditoría para SUNAFIL</td>
+      <td>T05</td>
+      <td>Generación reportes auditoría PDF y Excel</td>
+      <td>Implementar formulario de exportación con selección de rango de fechas y formato, generación de documento de auditoría en PDF y Excel</td>
+      <td>3</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+      <tr>
+      <td>US46</td>
+      <td>Exportación de Formatos de Auditoría para SUNAFIL</td>
+      <td>T07</td>
+      <td>Historial y gestión de reportes generados</td>
+      <td>Implementar historial de reportes generados</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US47</td>
+      <td>Seguimiento del Cumplimiento del Plan Anual de SST</td>
+      <td>T07</td>
+      <td>Diseño seguimiento SST</td>
+      <td>Diseñar tarjetas de cumplimiento de actividades del plan anual de SST con indicador de color por porcentaje</td>
+      <td>1</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US47</td>
+      <td>Seguimiento del Cumplimiento del Plan Anual de SST</td>
+      <td>T08</td>
+      <td>Implementación seguimiento SST</td>
+      <td>-Implementar vista con cumplimiento global, actividades completadas, gráfica de evolución mensual,         exportación de informe anual PDF y generación de reporte de cumplimiento en PDF o Excel</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US48</td>
+      <td>Visualización de Indicadores Predictivos de Riesgo</td>
+      <td>T09</td>
+      <td>Diseño indicadores predictivos</td>
+      <td>Diseñar tarjetas de indicadores predictivos</td>
+      <td>1</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US48</td>
+      <td>Visualización de Indicadores Predictivos de Riesgo</td>
+      <td>T10</td>
+      <td>Implementación indicadores predictivos</td>
+      <td>Mostrar indicadores predictivos: sectores con tendencia creciente, tipos recurrentes y tiempo promedio de resolución</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US48</td>
+      <td>Visualización de Indicadores Predictivos de Riesgo</td>
+      <td>T11</td>
+      <td>Exportación resumen ejecutivo predictivo PDF</td>
+      <td>Implementar generación y descarga del resumen ejecutivo en PDFd</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US49</td>
+      <td>Notificación de Alerta Crítica No Resuelta a Gerencia</td>
+      <td>T12</td>
+      <td>Implementación alertas críticas</td>
+      <td>Implementar tabla con acciones marcar como resuelto y eliminar, con tags de severidad por tipo y estado</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+  <tr>
+      <td>US50</td>
+      <td>Registro Histórico de Incidentes para Trazabilidad Legal</td>
+      <td>T13</td>
+      <td>Implementación tabla historial de solo lectura</td>
+      <td>Implementar tabla inmutable de incidentes sin opciones de edición para garantizar trazabilidad legal ante          SUNAFIL</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US50</td>
+      <td>Registro Histórico de Incidentes para Trazabilidad Legal</td>
+      <td>T14</td>
+      <td>Filtros por sector, tipo y rango de fechas</td>
+      <td>Implementar filtros de búsqueda por sector, tipo de incidente y rango de fechas con actualización del       contador de resultados filtrados</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>US52</td>
+      <td>Generación de Reporte Mensual de Gestión de SST</td>
+      <td>T15</td>
+      <td>Generación de reporte en PDF</td>
+      <td>Implementar generación y descarga automática del reporte mensual consolidado en PDF con jsPDF</td>
+      <td>3</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+     <tr>
+      <td>US52</td>
+      <td>Generación de Reporte Mensual de Gestión de SST</td>
+      <td>T16</td>
+      <td>Historial y previsualización de reportes mensuales</td>
+      <td>Implementar historial de reportes mensuales generados con previsualización en historial, re-descarga y eliminación con confirmación</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.2.4.Development Evidence for Sprint Review.
+
 #### 5.2.2.5.Execution Evidence for Sprint Review.
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
 #### 5.2.2.7.Software Deployment Evidence for Sprint Review.
