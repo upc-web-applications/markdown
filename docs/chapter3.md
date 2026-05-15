@@ -52,7 +52,7 @@
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como Operario de Planta, quiero iniciar sesión en RiskGuard con mis credenciales asignadas, para acceder a las funciones correspondientes a mi rol.</td>
+    <td colspan="3">Como usuario, quiero iniciar sesión en RiskGuard con mis credenciales asignadas, para acceder a las funciones correspondientes a mi rol.</td>
   </tr>
   <tr>
     <td colspan="4">
@@ -66,14 +66,14 @@
       </ol>
       <b>Escenario 1:</b> Inicio de sesión exitoso<br/>
       <ul>
-        <li><b>Given</b> que el Operario se encuentra en la pantalla de inicio de sesión,</li>
+        <li><b>Given</b> que el usuario se encuentra en la pantalla de inicio de sesión,</li>
         <li><b>When</b> ingresa su correo y contraseña correctos y hace clic en "Ingresar",</li>
         <li><b>Then</b> el sistema valida las credenciales,</li>
         <li><b>And</b> redirige al operario a su vista principal de funciones.</li>
       </ul>
       <b>Escenario 2:</b> Credenciales inválidas<br/>
       <ul>
-        <li><b>Given</b> que el Operario se encuentra en la pantalla de inicio de sesión,</li>
+        <li><b>Given</b> que el usuario se encuentra en la pantalla de inicio de sesión,</li>
         <li><b>When</b> ingresa alguna credencial incorrecta y hace clic en "Ingresar",</li>
         <li><b>Then</b> el sistema deniega el acceso,</li>
         <li><b>And</b> muestra el mensaje "Correo o contraseña incorrectos".</li>
@@ -102,7 +102,7 @@
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como Operario de Planta, quiero cerrar sesión de forma segura desde la aplicación, para proteger mi cuenta en dispositivos compartidos del área de trabajo.</td>
+    <td colspan="3">Como usuario, quiero cerrar sesión de forma segura desde la aplicación, para proteger mi cuenta en dispositivos compartidos del área de trabajo.</td>
   </tr>
   <tr>
     <td colspan="4">
@@ -115,21 +115,21 @@
       </ol>
       <b>Escenario 1:</b> Cierre de sesión exitoso<br/>
       <ul>
-        <li><b>Given</b> que el Operario se encuentra en cualquier pantalla de la aplicación,</li>
+        <li><b>Given</b> que el usuario se encuentra en cualquier pantalla de la aplicación,</li>
         <li><b>When</b> hace clic en "Cerrar sesión" desde el menú,</li>
         <li><b>Then</b> el sistema invalida su token de autenticación,</li>
         <li><b>And</b> redirige al operario a la pantalla de inicio de sesión.</li>
       </ul>
       <b>Escenario 2:</b> Cierre con reporte en proceso<br/>
       <ul>
-        <li><b>Given</b> que el Operario tiene un formulario de reporte con datos ingresados sin enviar,</li>
+        <li><b>Given</b> que el usurio tiene un formulario de reporte con datos ingresados sin enviar,</li>
         <li><b>When</b> intenta cerrar sesión,</li>
         <li><b>Then</b> el sistema muestra el mensaje "Tienes un reporte sin enviar. ¿Deseas salir de todas formas?",</li>
         <li><b>And</b> ofrece las opciones "Continuar reportando" y "Salir sin guardar".</li>
       </ul>
       <b>Escenario 3:</b> Intento de acceso tras cerrar sesión<br/>
       <ul>
-        <li><b>Given</b> que el Operario cerró sesión correctamente,</li>
+        <li><b>Given</b> que el usuario cerró sesión correctamente,</li>
         <li><b>When</b> intenta acceder a una URL protegida directamente,</li>
         <li><b>Then</b> el sistema detecta que no hay token válido,</li>
         <li><b>And</b> redirige automáticamente a la pantalla de inicio de sesión.</li>
@@ -1066,196 +1066,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS22</td>
-    <td><b>Epic ID</b></td><td>EP02</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Servicio de Notificaciones Push</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a los dispositivos móviles.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El sistema envía notificaciones push en tiempo real.</li>
-        <li>Integra servicios externos (Firebase, etc.).</li>
-        <li>Maneja reintentos automáticos.</li>
-        <li>Permite cola de mensajes si el usuario está offline.</li>
-        <li>Registra cada envío en logs.</li>
-      </ol>
-      <b>Escenario 1:</b> Envío exitoso<br/>
-      <ul>
-        <li><b>Given</b> que existe una alerta crítica,</li>
-        <li><b>When</b> el sistema envía la notificación,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 202,</li>
-        <li><b>And</b> la notificación es entregada al dispositivo del usuario.</li>
-      </ul>
-      <b>Escenario 2:</b> Error en servicio externo<br/>
-      <ul>
-        <li><b>Given</b> que falla el proveedor de notificaciones,</li>
-        <li><b>When</b> el sistema intenta enviar el mensaje,</li>
-        <li><b>Then</b> se ejecuta un reintento automático,</li>
-        <li><b>And</b> el error queda registrado en logs.</li>
-      </ul>
-      <b>Escenario 3:</b> Usuario offline<br/>
-      <ul>
-        <li><b>Given</b> que el usuario no tiene conexión,</li>
-        <li><b>When</b> se envía la notificación,</li>
-        <li><b>Then</b> el sistema la almacena en cola,</li>
-        <li><b>And</b> la envía cuando el usuario se reconecta.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS23</td>
-    <td><b>Epic ID</b></td><td>EP02</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener Patrones de Riesgo Recurrentes</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones que devuelva los patrones de riesgo recurrentes por sector y período, para mostrar las alertas predictivas en el dashboard del supervisor de seguridad.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint GET /api/v1/predictivo/patrones acepta el identificador del sector y el número de días como parámetros de consulta obligatorios.</li>
-        <li>El endpoint retorna los patrones detectados con tipo de riesgo, frecuencia de ocurrencia y fecha de primera ocurrencia en el período.</li>
-        <li>Si el sector no tiene registros suficientes, el endpoint retorna una respuesta HTTP 200 con lista vacía y un mensaje descriptivo.</li>
-        <li>Si el sector enviada no existe en el sistema, el endpoint retorna HTTP 404 indicando que el recurso no fue encontrado.</li>
-      </ol>
-      <b>Escenario 1:</b> Solicitud exitosa con patrones detectados<br/>
-      <ul>
-        <li><b>Given</b> que el sector consultada tiene registros suficientes en el período indicado,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones?area=almacen&dias=30,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de patrones detectados con tipo de riesgo, frecuencia y fecha de primera ocurrencia.</li>
-      </ul>
-      <b>Escenario 2:</b> Sector sin datos suficientes para detectar patrones<br/>
-      <ul>
-        <li><b>Given</b> que el sector consultada tiene menos de 3 registros en el período indicado,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones con esos parámetros,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200, lista vacía y el mensaje "Datos insuficientes para detectar patrones en el período indicado".</li>
-      </ul>
-      <b>Escenario 3:</b> Sector no encontrada en el sistema<br/>
-      <ul>
-        <li><b>Given</b> que el desarrollador envía un identificador de sector que no existe en el sistema,</li>
-        <li><b>When</b> el endpoint procesa la solicitud,</li>
-        <li><b>Then</b> el endpoint retorna HTTP 404 con el mensaje "sector no encontrada en el sistema".</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS24</td>
-    <td><b>Epic ID</b></td><td>EP02</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener Datos del Mapa de Calor</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor que retorne la concentración de riesgos activos por sector clasificada por nivel de intensidad, para alimentar el mapa de calor del dashboard en tiempo real.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint GET /api/v1/predictivo/mapa-calor retorna todas las sectores registradas con su nivel de intensidad calculado</li>
-        <li>El nivel de intensidad se calcula en base a la cantidad de riesgos activos sin resolver de cada sector.</li>
-        <li>Si ninguna sector tiene riesgos activos, el endpoint retorna todas las sectors con nivel de intensidad bajo y HTTP 200.</li>
-        <li>El endpoint no requiere parámetros adicionales y retorna siempre el estado actual de toda la planta.</li>
-      </ol>
-      <b>Escenario 1:</b> Solicitud exitosa con riesgos activos registrados<br/>
-      <ul>
-        <li><b>Given</b> que al menos un sector de la planta tiene riesgos activos registrados,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 con cada sector y su nivel de intensidad calculado según la concentración de riesgos activos.</li>
-      </ul>
-      <b>Escenario 2:</b> Sin riesgos activos en ningun sector de la planta<br/>
-      <ul>
-        <li><b>Given</b> que ninguna sector tiene riesgos activos registrados en ese momento,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 con todas las sectors en nivel de intensidad "bajo".</li>
-      </ul>
-      <b>Escenario 3:</b> Sector recién actualizada reflejada en el mapa<br/>
-      <ul>
-        <li><b>Given</b> que se acaba de registrar un nuevo riesgo crítico en el sector de Producción,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor inmediatamente después,</li>
-        <li><b>Then</b> el endpoint retorna el sector de Producción con el nivel de intensidad actualizado reflejando el nuevo riesgo.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS25</td>
-    <td><b>Epic ID</b></td><td>EP02</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener Riesgos Críticos Sin Atender</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos que retorne los riesgos críticos sin acción correctiva asignada que superen el tiempo indicado, para que el módulo de notificaciones escale automáticamente al supervisor de seguridad.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint GET /api/v1/predictivo/no-atendidos acepta el número de horas como parámetro obligatorio para definir el umbral de tiempo sin atención.</li>
-        <li>El endpoint retorna los riesgos críticos activos sin acción correctiva que superen el umbral, incluyendo sector, tipo de riesgo, nivel de criticidad y horas transcurridas sin atención.</li>
-        <li>Si todos los riesgos han sido atendidos dentro del plazo, el endpoint retorna HTTP 200 con lista vacía.</li>
-        <li>Si el parámetro de horas no es enviado o tiene un valor inválido, el endpoint retorna HTTP 400 indicando que el parámetro es requerido.</li>
-      </ol>
-      <b>Escenario 1:</b> Riesgos sin atender encontrados en el sistema<br/>
-      <ul>
-        <li><b>Given</b> que existen riesgos críticos sin acción correctiva asignada por más de 24 horas,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de riesgos que superaron el umbral con sector, tipo, criticidad y horas transcurridas sin atención.</li>
-      </ul>
-      <b>Escenario 2:</b> Todos los riesgos críticos fueron atendidos a tiempo<br/>
-      <ul>
-        <li><b>Given</b> que todos los riesgos críticos activos tienen acción correctiva asignada dentro del plazo,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y lista vacía confirmando que no hay riesgos sin atender.</li>
-      </ul>
-      <b>Escenario 3:</b> Parámetro de horas no enviado en la solicitud<br/>
-      <ul>
-        <li><b>Given</b> que el desarrollador realiza GET /api/v1/predictivo/no-atendidos sin enviar el parámetro de horas,</li>
-        <li><b>When</b> el endpoint procesa la solicitud,</li>
-        <li><b>Then</b> el endpoint retorna HTTP 400 con el mensaje "El parámetro 'horas' es requerido para procesar esta solicitud".</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>US26</td>
+    <td><b>User Story ID</b></td><td>US22</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -1295,7 +1106,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US27</td>
+    <td><b>User Story ID</b></td><td>US23</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -1329,132 +1140,11 @@
     </td>
   </tr>
 </table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS28</td>
-    <td><b>Epic ID</b></td><td>EP02</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Marcar Alerta de Patrón como Revisada</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada que permita marcar una alerta de patrón recurrente como revisada, para retirarla del panel principal y registrar quién la atendió.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint acepta el identificador de la alerta en la URL y actualiza su estado a "revisada".</li>
-        <li>Si la alerta no existe en el sistema, el endpoint retorna HTTP 404.</li>
-        <li>El endpoint requiere token con rol Supervisor o superior; de lo contrario retorna HTTP 403.</li>
-      </ol>
-      <b>Escenario 1:</b> Alerta marcada como revisada exitosamente<br/>
-      <ul>
-        <li><b>Given</b> que existe una alerta de patrón recurrente en estado pendiente,</li>
-        <li><b>When</b> el desarrollador realiza PATCH /api/v1/predictivo/alertas/{id}/revisada con token válido,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y actualiza el estado de la alerta a "revisada" registrando la fecha y el usuario.</li>
-      </ul>
-      <b>Escenario 2:</b> Alerta no encontrada en el sistema<br/>
-      <ul>
-        <li><b>Given</b> que el identificador de alerta enviado no existe en el sistema,</li>
-        <li><b>When</b> el endpoint procesa la solicitud,</li>
-        <li><b>Then</b> el endpoint retorna HTTP 404 indicando que la alerta no fue encontrada.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS29</td>
-    <td><b>Epic ID</b></td><td>EP02</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener Resumen Diario de Riesgos por Sector</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario que retorne el total de riesgos registrados en el día agrupados por sector, para alimentar el panel de resumen del dashboard del supervisor.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint retorna todos los sectores con el total de riesgos nuevos, en progreso y resueltos del día actual.</li>
-        <li>Si no se han registrado riesgos en el día, el endpoint retorna HTTP 200 con lista vacía.</li>
-        <li>El endpoint no requiere parámetros y calcula automáticamente el día actual.</li>
-      </ol>
-      <b>Escenario 1:</b> Solicitud exitosa con riesgos del día<br/>
-      <ul>
-        <li><b>Given</b> que se han registrado riesgos durante el día actual en al menos un sector,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/resumen-diario con token válido,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y el listado de sectores con sus conteos de riesgos nuevos, en progreso y resueltos del día.</li>
-      </ul>
-      <b>Escenario 2:</b> Sin riesgos registrados en el día<br/>
-      <ul>
-        <li><b>Given</b> que no se han registrado riesgos durante el día actual,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/resumen-diario,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y lista vacía.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS30</td>
-    <td><b>Epic ID</b></td><td>EP02</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint de Cálculo de Matriz IPERC</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc que reciba los índices de probabilidad y severidad, para calcular el nivel de criticidad del riesgo según la lógica IPERC del sistema.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint recibe los parámetros <b>probability_index</b> y <b>severity_index</b>.</li>
-        <li>El sistema valida que los valores estén dentro del rango permitido.</li>
-        <li>Se calcula el nivel de riesgo.</li>
-        <li>Se retorna el color asociado al nivel de riesgo.</li>
-        <li>El tiempo de respuesta es menor a 2 segundos.</li>
-        <li>Se manejan errores de validación y errores internos.</li>
-      </ol>
-      <b>Escenario 1:</b> Cálculo de riesgo exitoso<br/>
-      <ul>
-        <li><b>Given</b> se procesa el request válido con probability_index y severity_index,</li>
-        <li><b>When</b> el API procesa la solicitud en el endpoint POST /api/v1/predictivo/iperc,</li>
-        <li><b>Then</b> el sistema calcula correctamente el nivel de criticidad del riesgo,</li>
-        <li><b>And</b> retorna un HTTP 200 OK</li>
-      </ul>
-      <b>Escenario 2:</b> Valores fuera de rango<br/>
-      <ul>
-        <li><b>Given</b> que los valores enviados están fuera del rango permitido,</li>
-        <li><b>When</b> el API valida la solicitud,</li>
-        <li><b>Then</b> responde con HTTP 400 Bad Request,</li>
-        <li><b>And</b> retorna un mensaje de error de validación de parámetros.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
 ---
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US31</b></td>
+        <td>US24</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1464,7 +1154,7 @@
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero iniciar sesión en la plataforma utilizando mis credenciales preconfiguradas, para acceder a las funciones establecidas de acuerdo mi rol</td>
+        <td colspan="3"></b>Como usuario, quiero iniciar sesión en la plataforma utilizando mis credenciales preconfiguradas, para acceder a las funciones establecidas de acuerdo mi rol</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1479,7 +1169,7 @@
             </ol>
             <b>Escenario 1:</b> Inicio de sesión exitoso<br/>
             <ul>
-                <li><b>Given</b> que el Supervisor se encuentra en la pantalla de inicio de sesión de RiskGuard</li>
+                <li><b>Given</b> que el usuario se encuentra en la pantalla de inicio de sesión de RiskGuard</li>
                 <li><b>When</b> ingresa su correo corporativo preconfigurado y su contraseña correcta,</li>
                 <li><b>And</b> hace clic en el botón "Ingresar",</li>
                 <li><b>Then</b> el sistema valida las credenciales,</li>
@@ -1487,7 +1177,7 @@
             </ul>
             <b>Escenario 2:</b> Intento fallido por credenciales inválidas<br/>
             <ul>
-                <li><b>Given</b> que el Supervisor se encuentra en la pantalla de inicio de sesión de RiskGuard</li>
+                <li><b>Given</b> que el usuario se encuentra en la pantalla de inicio de sesión de RiskGuard</li>
                 <li><b>When</b> ingresa alguna credencial de manera incorrecta</li>
                 <li><b>And</b> hace clic en el botón "Ingresar",</li>
                 <li><b>Then</b> el sistema deniega el acceso a la plataforma,</li>
@@ -1495,7 +1185,7 @@
             </ul>
             <b>Escenario 3:</b> Bloqueo preventivo por múltiples intentos fallidos consecutivos<br/>
             <ul>
-                <li><b>Given</b> que el Supervisor intenta acceder al sistema,</li>
+                <li><b>Given</b> que el usuario intenta acceder al sistema,</li>
                 <li><b>When</b> acumula 5 intentos de autenticación fallidos consecutivos,</li>
                 <li><b>And</b> hace clic en el botón "Ingresar",</li>
                 <li><b>Then</b> el sistema bloquea temporalmente las peticiones para ese usuario,</li>
@@ -1510,7 +1200,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US32</b></td>
+        <td>US25</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1562,7 +1252,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US33</b></td>
+        <td>US26</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1615,7 +1305,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US34</b></td>
+        <td>US27</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1667,7 +1357,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US35</b></td>
+        <td>US28</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1718,7 +1408,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US36</b></td>
+        <td>US29</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1768,7 +1458,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US37</b></td>
+        <td>US30</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1816,7 +1506,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US38</b></td>
+        <td>US31</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1866,7 +1556,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US39</b></td>
+        <td>US32</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1907,7 +1597,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US40</b></td>
+        <td>US33</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -1950,7 +1640,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US41</b></td>
+        <td>US34</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -2000,7 +1690,7 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US42</b></td>
+        <td>US35</b></td>
         <td><b>Epic ID</b></td>
         <td>EP03</b></td>
     </tr>
@@ -2051,7 +1741,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US43</td>
+    <td><b>User Story ID</b></td><td>US36</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2060,7 +1750,7 @@
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como Gerente o Administrador, quiero iniciar sesión en RiskGuard con mis credenciales preconfiguradas, para acceder al dashboard ejecutivo y a las funciones correspondientes a mi rol de alta dirección.</td>
+    <td colspan="3">Como usuario, quiero iniciar sesión en RiskGuard con mis credenciales preconfiguradas, para acceder al dashboard ejecutivo y a las funciones correspondientes a mi rol de alta dirección.</td>
   </tr>
   <tr>
     <td colspan="4">
@@ -2074,21 +1764,21 @@
       </ol>
       <b>Escenario 1:</b> Inicio de sesión exitoso<br/>
       <ul>
-        <li><b>Given</b> que el Gerente se encuentra en la pantalla de inicio de sesión,</li>
+        <li><b>Given</b> que el usuario se encuentra en la pantalla de inicio de sesión,</li>
         <li><b>When</b> ingresa su correo y contraseña correctos y hace clic en "Ingresar",</li>
         <li><b>Then</b> el sistema valida las credenciales,</li>
         <li><b>And</b> redirige al gerente a su dashboard ejecutivo.</li>
       </ul>
       <b>Escenario 2:</b> Credenciales inválidas<br/>
       <ul>
-        <li><b>Given</b> que el Gerente se encuentra en la pantalla de inicio de sesión,</li>
+        <li><b>Given</b> que el usuario se encuentra en la pantalla de inicio de sesión,</li>
         <li><b>When</b> ingresa alguna credencial incorrecta y hace clic en "Ingresar",</li>
         <li><b>Then</b> el sistema deniega el acceso,</li>
         <li><b>And</b> muestra el mensaje "Correo o contraseña incorrectos".</li>
       </ul>
       <b>Escenario 3:</b> Bloqueo por intentos fallidos<br/>
       <ul>
-        <li><b>Given</b> que el Gerente acumula 5 intentos fallidos consecutivos,</li>
+        <li><b>Given</b> que el usuario acumula 5 intentos fallidos consecutivos,</li>
         <li><b>When</b> intenta ingresar nuevamente,</li>
         <li><b>Then</b> el sistema bloquea la cuenta temporalmente,</li>
         <li><b>And</b> muestra el mensaje "Demasiados intentos fallidos. Intente en 15 minutos".</li>
@@ -2101,7 +1791,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US44</td>
+    <td><b>User Story ID</b></td><td>US37</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2151,7 +1841,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US45</td>
+    <td><b>User Story ID</b></td><td>US38</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2200,7 +1890,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US46</td>
+    <td><b>User Story ID</b></td><td>US39</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2266,7 +1956,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US47</td>
+    <td><b>User Story ID</b></td><td>US40</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2331,7 +2021,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US48</td>
+    <td><b>User Story ID</b></td><td>US41</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2379,7 +2069,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US49</td>
+    <td><b>User Story ID</b></td><td>US42</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2427,7 +2117,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US50</td>
+    <td><b>User Story ID</b></td><td>US43</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2476,7 +2166,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US51</td>
+    <td><b>User Story ID</b></td><td>US44</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2525,7 +2215,7 @@
 ---
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US52</td>
+    <td><b>User Story ID</b></td><td>US45</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -2578,245 +2268,10 @@
     </td>
   </tr>
 </table>
-
 ---
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS53</td>
-    <td><b>Epic ID</b></td><td>EP04</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener Indicadores del Dashboard Ejecutivo</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/kpi_dashboard que retorna los indicadores clave de SST consolidados, para alimentar el tablero ejecutivo del gerente con datos actualizados en tiempo real.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint retorna un arreglo con los indicadores: incidentes activos, incidentes resueltos, sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST.</li>
-        <li>Cada indicador incluye los campos: id, name, value, goal y status (optimal, alert o danger).</li>
-        <li>El endpoint no requiere parámetros y retorna siempre el estado actual registrado en la base de datos.</li>
-        <li>Si no hay registros, el endpoint retorna HTTP 200 con un arreglo vacío.</li>
-        <li>El tiempo de respuesta es menor a 2 segundos.</li>
-      </ol>
-      <b>Escenario 1:</b> Solicitud exitosa con datos disponibles<br/>
-      <ul>
-        <li><b>Given</b> que existen registros en la colección kpi_dashboard,</li>
-        <li><b>When</b> el frontend realiza GET /api/v1/kpi_dashboard,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de indicadores con sus valores y estados actuales.</li>
-      </ul>
-      <b>Escenario 2:</b> Sin datos registrados<br/>
-      <ul>
-        <li><b>Given</b> que la colección kpi_dashboard no tiene registros,</li>
-        <li><b>When</b> el frontend realiza GET /api/v1/kpi_dashboard,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y un arreglo vacío.</li>
-      </ul>
-      <b>Escenario 3:</b> Actualización reactiva de indicadores<br/>
-      <ul>
-        <li><b>Given</b> que el frontend recibe los indicadores y el usuario resuelve un incidente o alerta,</li>
-        <li><b>When</b> el store ejecuta syncKPIs(),</li>
-        <li><b>Then</b> los valores de active_incidents, resolved_incidents y critical_sectors se recalculan automáticamente sin necesidad de recargar la página.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS54</td>
-    <td><b>Epic ID</b></td><td>EP04</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener Tendencias Históricas de Accidentabilidad</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/historical_trends que retorna la evolución mensual de incidentes agrupados por tipo y sector, para alimentar las gráficas de tendencia del tablero ejecutivo del gerente.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint retorna un arreglo con registros mensuales que incluyen: month, year, total_incidents, incidents_by_type e incidents_by_sector.</li>
-        <li>El frontend filtra los datos por sector seleccionado directamente sobre el arreglo retornado por el endpoint.</li>
-        <li>Si no hay registros en la colección, el endpoint retorna HTTP 200 con un arreglo vacío.</li>
-        <li>Los meses con incremento significativo (más del 20% respecto al anterior) son resaltados visualmente por el frontend con un punto rojo en la gráfica.</li>
-        <li>El tiempo de respuesta es menor a 2 segundos.</li>
-      </ol>
-      <b>Escenario 1:</b> Solicitud exitosa con datos disponibles<br/>
-      <ul>
-        <li><b>Given</b> que existen registros en la colección historical_trends,</li>
-        <li><b>When</b> el frontend realiza GET /api/v1/historical_trends,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de datos mensuales con su desglose por tipo y sector.</li>
-      </ul>
-      <b>Escenario 2:</b> Filtrado por sector en el frontend<br/>
-      <ul>
-        <li><b>Given</b> que el gerente selecciona un sector específico en el filtro del dashboard,</li>
-        <li><b>When</b> el frontend aplica el filtro sobre los datos ya cargados del endpoint,</li>
-        <li><b>Then</b> la gráfica se actualiza mostrando únicamente los datos del sector seleccionado sin realizar una nueva petición al servidor.</li>
-      </ul>
-      <b>Escenario 3:</b> Vista por tipo de incidente<br/>
-      <ul>
-        <li><b>Given</b> que el gerente activa el modo "por tipo" en la gráfica,</li>
-        <li><b>When</b> el frontend procesa el campo incidents_by_type de cada registro,</li>
-        <li><b>Then</b> la gráfica muestra una línea por cada tipo de incidente con colores diferenciados.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS55</td>
-    <td><b>Epic ID</b></td><td>EP04</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Gestión de Reportes Generados</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir los endpoints GET y POST /api/v1/generated_reports y DELETE /api/v1/generated_reports/{id} para registrar, listar y eliminar reportes generados, mientras la generación del documento PDF o Excel se realiza en el cliente con jsPDF.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint POST /api/v1/generated_reports registra el reporte con los campos: title, type, period, format, generated_date y file_url.</li>
-        <li>El endpoint GET /api/v1/generated_reports retorna el listado de todos los reportes generados ordenados por fecha descendente.</li>
-        <li>El endpoint DELETE /api/v1/generated_reports/{id} elimina el registro del reporte y retorna HTTP 200.</li>
-        <li>La generación del archivo PDF se realiza en el cliente con jsPDF y se descarga automáticamente en el dispositivo del gerente.</li>
-        <li>Si no hay datos en el rango de fechas indicado, el frontend muestra el mensaje "No hay datos registrados para el período seleccionado" sin generar el archivo.</li>
-      </ol>
-      <b>Escenario 1:</b> Generación y registro exitoso en PDF<br/>
-      <ul>
-        <li><b>Given</b> que existen incidentes registrados en el rango de fechas indicado,</li>
-        <li><b>When</b> el gerente hace clic en "Generar reporte" con formato PDF,</li>
-        <li><b>Then</b> el frontend genera el PDF con jsPDF, lo descarga automáticamente y registra el reporte en el endpoint POST /api/v1/generated_reports.</li>
-      </ul>
-      <b>Escenario 2:</b> Período sin datos<br/>
-      <ul>
-        <li><b>Given</b> que no existen incidentes en el rango de fechas seleccionado,</li>
-        <li><b>When</b> el gerente hace clic en "Generar reporte",</li>
-        <li><b>Then</b> el frontend muestra el mensaje "No hay datos registrados para el período seleccionado" y no genera ningún archivo ni realiza el POST al endpoint.</li>
-      </ul>
-      <b>Escenario 3:</b> Eliminación de reporte generado<br/>
-      <ul>
-        <li><b>Given</b> que el gerente visualiza la lista de reportes generados,</li>
-        <li><b>When</b> hace clic en el ícono de eliminar sobre un reporte,</li>
-        <li><b>Then</b> el frontend realiza DELETE /api/v1/generated_reports/{id} y el registro desaparece de la lista sin recargar la página.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS56</td>
-    <td><b>Epic ID</b></td><td>EP04</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Gestión de Alertas Críticas</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir los endpoints GET, PATCH y DELETE /api/v1/critical_alerts para listar, actualizar el estado y eliminar alertas críticas, para que el gerente pueda gestionar los riesgos no resueltos desde el tablero ejecutivo.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint GET /api/v1/critical_alerts retorna el listado de alertas con los campos: id, type, sector, risk_type, message, elapsed_hours, responsible_supervisor y status.</li>
-        <li>El endpoint PATCH /api/v1/critical_alerts/{id} actualiza el campo status de la alerta (unresolved, in_review, resolved) y retorna el registro actualizado.</li>
-        <li>El endpoint DELETE /api/v1/critical_alerts/{id} elimina la alerta y retorna HTTP 200.</li>
-        <li>Al actualizar o eliminar una alerta, el store recalcula automáticamente el KPI de critical_sectors mediante syncKPIs().</li>
-        <li>El tiempo de respuesta es menor a 2 segundos.</li>
-      </ol>
-      <b>Escenario 1:</b> Listado de alertas exitoso<br/>
-      <ul>
-        <li><b>Given</b> que existen alertas registradas en la colección critical_alerts,</li>
-        <li><b>When</b> el frontend realiza GET /api/v1/critical_alerts,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de alertas con todos sus campos.</li>
-      </ul>
-      <b>Escenario 2:</b> Marcar alerta como resuelta<br/>
-      <ul>
-        <li><b>Given</b> que el gerente visualiza una alerta con status "unresolved" o "in_review",</li>
-        <li><b>When</b> hace clic en el ícono de check,</li>
-        <li><b>Then</b> el frontend realiza PATCH /api/v1/critical_alerts/{id} con status "resolved", actualiza el registro en el store y recalcula los KPIs sin recargar la página.</li>
-      </ul>
-      <b>Escenario 3:</b> Eliminación de alerta<br/>
-      <ul>
-        <li><b>Given</b> que el gerente hace clic en el ícono de eliminar sobre una alerta,</li>
-        <li><b>When</b> el frontend realiza DELETE /api/v1/critical_alerts/{id},</li>
-        <li><b>Then</b> la alerta desaparece de la tabla y el KPI de sectores críticos se actualiza automáticamente.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>TS57</td>
-    <td><b>Epic ID</b></td><td>EP04</td>
-  </tr>
-  <tr>
-    <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener el Plan Anual de SST y su Cumplimiento</td>
-  </tr>
-  <tr>
-    <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/annual_ohs_plan que retorne el plan anual de SST con el porcentaje de cumplimiento global y el desglose por sector, para alimentar el indicador de seguimiento del tablero ejecutivo del gerente.</td>
-  </tr>
-  <tr>
-    <td colspan="4">
-      <b>Criterios de aceptación:</b>
-      <ol>
-        <li>El endpoint retorna el plan anual con los campos: id, year, overall_compliance, total_activities, completed_activities y details_by_sector.</li>
-        <li>El campo details_by_sector contiene un arreglo con el porcentaje de cumplimiento, actividades completadas y planificadas por cada sector.</li>
-        <li>El frontend clasifica cada sector visualmente: verde (≥80%), amarillo (50–79%) y rojo (&lt;50%) según su porcentaje de cumplimiento.</li>
-        <li>Si no hay plan registrado, el endpoint retorna HTTP 200 con un arreglo vacío y el frontend muestra el estado vacío correspondiente.</li>
-        <li>El tiempo de respuesta es menor a 2 segundos.</li>
-      </ol>
-      <b>Escenario 1:</b> Solicitud exitosa con plan registrado<br/>
-      <ul>
-        <li><b>Given</b> que existe un plan anual de SST registrado en la colección annual_ohs_plan,</li>
-        <li><b>When</b> el frontend realiza GET /api/v1/annual_ohs_plan,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200, el porcentaje global de cumplimiento y el desglose por sector.</li>
-      </ul>
-      <b>Escenario 2:</b> Detalle de cumplimiento por sector desde el dashboard<br/>
-      <ul>
-        <li><b>Given</b> que el gerente hace clic en el KPI de cumplimiento del plan SST,</li>
-        <li><b>When</b> el frontend procesa el campo details_by_sector del plan retornado,</li>
-        <li><b>Then</b> muestra un dialog con los sectores ordenados de menor a mayor cumplimiento con sus indicadores de color.</li>
-      </ul>
-      <b>Escenario 3:</b> Sin plan registrado<br/>
-      <ul>
-        <li><b>Given</b> que la colección annual_ohs_plan no tiene registros,</li>
-        <li><b>When</b> el frontend realiza GET /api/v1/annual_ohs_plan,</li>
-        <li><b>Then</b> el endpoint retorna HTTP 200 con arreglo vacío y el frontend muestra el estado vacío en la vista de seguimiento SST.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
-<table align="center">
-  <tr>
-    <td><b>User Story ID</b></td><td>US58</td>
+    <td><b>User Story ID</b></td><td>US46</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2868,7 +2323,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US59</td>
+    <td><b>User Story ID</b></td><td>US47</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2920,7 +2375,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US60</td>
+    <td><b>User Story ID</b></td><td>US48</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -2972,7 +2427,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US61</td>
+    <td><b>User Story ID</b></td><td>US49</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3024,7 +2479,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US62</td>
+    <td><b>User Story ID</b></td><td>US50</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3076,7 +2531,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US63</td>
+    <td><b>User Story ID</b></td><td>US51</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3128,7 +2583,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US64</td>
+    <td><b>User Story ID</b></td><td>US52</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3180,7 +2635,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US65</td>
+    <td><b>User Story ID</b></td><td>US53</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3232,7 +2687,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US66</td>
+    <td><b>User Story ID</b></td><td>US54</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3284,7 +2739,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US67</td>
+    <td><b>User Story ID</b></td><td>US55</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3336,7 +2791,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US68</td>
+    <td><b>User Story ID</b></td><td>US56</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3388,7 +2843,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US69</td>
+    <td><b>User Story ID</b></td><td>US57</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3440,7 +2895,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US70</td>
+    <td><b>User Story ID</b></td><td>US58</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3492,7 +2947,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US71</td>
+    <td><b>User Story ID</b></td><td>US59</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3544,7 +2999,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US72</td>
+    <td><b>User Story ID</b></td><td>US60</td>
     <td><b>Epic ID</b></td><td>EP05</td>
   </tr>
   <tr>
@@ -3594,7 +3049,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US73</td>
+    <td><b>User Story ID</b></td><td>US61</td>
     <td><b>Epic ID</b></td><td>EP06</td>
   </tr>
   <tr>
@@ -3604,7 +3059,7 @@
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como visitante o posible usuario, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada.
+      Como visitante, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada.
     </td>
   </tr>
   <tr>
@@ -3618,14 +3073,14 @@
       </ol>
       <b>Escenario 1:</b> Acceso exitoso a la Landing Page oficial<br/>
       <ul>
-        <li><b>Given</b> que un usuario dispone de la dirección URL oficial de la Landing Page de RiskGuard,</li>
+        <li><b>Given</b> que el visitante dispone de la dirección URL oficial de la Landing Page de RiskGuard,</li>
         <li><b>When</b> ingresa la dirección en su navegador y presiona Enter,</li>
         <li><b>Then</b> el sistema carga la interfaz principal de la Landing Page,</li>
         <li><b>And</b> expone correctamente la identidad visual (logo y colores corporativos) en el encabezado.</li>
       </ul>
       <b>Escenario 2:</b> Navegación interna por anclas<br/>
       <ul>
-        <li><b>Given</b> que un usuario se encuentra en el inicio de la página,</li>
+        <li><b>Given</b> que el visitante se encuentra en el inicio de la página,</li>
         <li><b>When</b> hace clic en algun enlace del menu de navegacion,</li>
         <li><b>Then</b> el sistema realiza un desplazamiento suave hacia la seccion seleccionada,</li>
         <li><b>And</b> mantiene el Navbar visible para permitir saltar a otras secciones.</li>
@@ -3636,7 +3091,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US74</td>
+    <td><b>User Story ID</b></td><td>US62</td>
     <td><b>Epic ID</b></td><td>EP06</td>
   </tr>
   <tr>
@@ -3646,7 +3101,7 @@
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como visitante o posible usuario, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol.
+      Como visitante, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol.
     </td>
   </tr>
   <tr>
@@ -3659,7 +3114,7 @@
       </ol>
       <b>Escenario 1:</b> Captación de interés inicial<br/>
       <ul>
-        <li><b>Given</b> que un usuario entra a la Landing Page por primera vez,</li>
+        <li><b>Given</b> que el visitante entra a la Landing Page por primera vez,</li>
         <li><b>When</b> visualiza la sección principal,</li>
         <li><b>Then</b> el sistema presenta el titular y el porcentaje de "Precisión Predictiva" para generar impacto inmediato.</li>
       </ul>
@@ -3669,7 +3124,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US75</td>
+    <td><b>User Story ID</b></td><td>US63</td>
     <td><b>Epic ID</b></td><td>EP06</td>
   </tr>
   <tr>
@@ -3679,7 +3134,7 @@
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como visitante o posible usuario, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero.
+      Como visitante, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero.
     </td>
   </tr>
   <tr>
@@ -3691,14 +3146,14 @@
       </ol>
       <b>Escenario 1:</b> Exploración general de soluciones<br/>
       <ul>
-        <li><b>Given</b> que un visitante se encuentra navegando por la landing page de RiskGuard,</li>
+        <li><b>Given</b> que el visitante se encuentra navegando por la landing page de RiskGuard,</li>
         <li><b>When</b> se desplaza hacia la sección de infraestructura de seguridad,</li>
         <li><b>Then</b> el sistema presenta el catálogo completo de funcionalidades de manera organizada,</li>
         <li><b>And</b> permite al usuario visualizar todas las herramientas disponibles de un solo vistazo.</li>
       </ul>
       <b>Escenario 2:</b> Comprensión del valor por funcionalidad<br/>
       <ul>
-        <li><b>Given</b> que el usuario está interesado en una funcionalidad específica,</li>
+        <li><b>Given</b> que el visitante está interesado en una funcionalidad específica,</li>
         <li><b>When</b> lee la descripción breve que acompaña a cada icono,</li>
         <li><b>Then</b> el sistema proporciona información clara sobre el beneficio operativo de dicha función,</li>
         <li><b>And</b> ayuda al usuario a determinar si la herramienta se ajusta a las necesidades operativas del sector en el que opera.</li>
@@ -3709,7 +3164,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US76</td>
+    <td><b>User Story ID</b></td><td>US64</td>
     <td><b>Epic ID</b></td><td>EP06</td>
   </tr>
   <tr>
@@ -3719,7 +3174,7 @@
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como visitante o posible usuario, quiero conocer el proceso de trabajo que realiza la aplicacion web y estadisticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales.
+      Como visitante, quiero conocer el proceso de trabajo que realiza la aplicacion web y estadisticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales.
     </td>
   </tr>
   <tr>
@@ -3731,14 +3186,14 @@
       </ol>
       <b>Escenario 1:</b> Comprensión del flujo de trabajo integral<br/>
       <ul>
-        <li><b>Given</b> que un interesado desea conocer cómo se opera con el software en el día a día,</li>
+        <li><b>Given</b> 3l viistante desea conocer cómo se opera con el software en el día a día,</li>
         <li><b>When</b> consulta la sección "Diseñado para el piso industrial",</li>
         <li><b>Then</b> el sistema describe visualmente la secuencia lógica de participación entre el personal de campo y la plataforma,</li>
         <li><b>And</b> permite al usuario entender cómo se cierra el ciclo desde el reporte hasta la actuación del supervisor.</li>
       </ul>
       <b>Escenario 2:</b> Sensibilización mediante datos del rubro<br/>
       <ul>
-        <li><b>Given</b> que un usuario busca argumentos para priorizar la seguridad en su planta,</li>
+        <li><b>Given</b> que el visitante busca argumentos para priorizar la seguridad en su planta,</li>
         <li><b>When</b> revisa las estadísticas de la industria peruana presentadas en la página,</li>
         <li><b>Then</b> el sistema expone cifras relevantes sobre el impacto de la prevención y los riesgos actuales,</li>
         <li><b>And</b> ayuda al usuario a visualizar la magnitud del problema que RiskGuard ayuda a resolver.</li>
@@ -3749,7 +3204,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US77</td>
+    <td><b>User Story ID</b></td><td>US65</td>
     <td><b>Epic ID</b></td><td>EP06</td>
   </tr>
   <tr>
@@ -3759,7 +3214,7 @@
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como visitante o posible usuario, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores.
+      Como visitante, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores.
     </td>
   </tr>
   <tr>
@@ -3771,7 +3226,7 @@
       </ol>
       <b>Escenario 1:</b> Identificación de herramientas por nivel jerárquico<br/>
       <ul>
-        <li><b>Given</b> que un jefe de planta evalúa cómo distribuir la solución entre sus colaboradores,</li>
+        <li><b>Given</b> que un visitante evalúa cómo distribuir la solución entre sus colaboradores,</li>
         <li><b>When</b> explora la sección de "Una herramienta unificada para toda la jerarquía",</li>
         <li><b>Then</b> el sistema presenta las capacidades que recibirá cada perfil (Operarios, Supervisores y Administracion),</li>
         <li><b>And</b> permite al usuario confirmar que cada rol tiene las herramientas necesarias para cumplir su función.</li>
@@ -3782,7 +3237,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>US78</td>
+    <td><b>User Story ID</b></td><td>US66</td>
     <td><b>Epic ID</b></td><td>EP06</td>
   </tr>
   <tr>
@@ -3792,7 +3247,7 @@
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como visitante o posible usuario, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa.
+      Como visitante, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa.
     </td>
   </tr>
   <tr>
@@ -3805,13 +3260,13 @@
       </ol>
       <b>Escenario 1:</b> Intención de inicio de uso del software<br/>
       <ul>
-        <li><b>Given</b> que un cliente potencial ha terminado de informarse y desea probar la solución,</li>
+        <li><b>Given</b> que el visitanto ha terminado de informarse y desea probar la solución,</li>
         <li><b>When</b> localiza y presiona el botón de "Iniciar prueba gratuita",</li>
         <li><b>Then</b> el sistema facilita el punto de partida para la conversión, guiando al usuario hacia el siguiente paso de adquisición.</li>
       </ul>
       <b>Escenario 2:</b> Verificación de soporte y respaldo institucional<br/>
       <ul>
-        <li><b>Given</b> que un usuario requiere verificar la procedencia y el soporte técnico del sistema,</li>
+        <li><b>Given</b> que el visitante requiere verificar la procedencia y el soporte técnico del sistema,</li>
         <li><b>When</b> revisa la sección del footer al final de la navegación,</li>
         <li><b>Then</b> el sistema muestra claramente la afiliación a la UPC y las opciones de soporte técnico disponibles,</li>
         <li><b>And</b> genera una percepción de confianza y seriedad institucional sobre el producto.</li>
@@ -3819,6 +3274,551 @@
     </td>
   </tr>
 </table>
+
+
+#### Technical Stories 
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS01</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Servicio de Notificaciones Push</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a los dispositivos móviles.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El sistema envía notificaciones push en tiempo real.</li>
+        <li>Integra servicios externos (Firebase, etc.).</li>
+        <li>Maneja reintentos automáticos.</li>
+        <li>Permite cola de mensajes si el usuario está offline.</li>
+        <li>Registra cada envío en logs.</li>
+      </ol>
+      <b>Escenario 1:</b> Envío exitoso<br/>
+      <ul>
+        <li><b>Given</b> que existe una alerta crítica,</li>
+        <li><b>When</b> el sistema envía la notificación,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 202,</li>
+        <li><b>And</b> la notificación es entregada al dispositivo del usuario.</li>
+      </ul>
+      <b>Escenario 2:</b> Error en servicio externo<br/>
+      <ul>
+        <li><b>Given</b> que falla el proveedor de notificaciones,</li>
+        <li><b>When</b> el sistema intenta enviar el mensaje,</li>
+        <li><b>Then</b> se ejecuta un reintento automático,</li>
+        <li><b>And</b> el error queda registrado en logs.</li>
+      </ul>
+      <b>Escenario 3:</b> Usuario offline<br/>
+      <ul>
+        <li><b>Given</b> que el usuario no tiene conexión,</li>
+        <li><b>When</b> se envía la notificación,</li>
+        <li><b>Then</b> el sistema la almacena en cola,</li>
+        <li><b>And</b> la envía cuando el usuario se reconecta.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS02</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Patrones de Riesgo Recurrentes</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones que devuelva los patrones de riesgo recurrentes por sector y período, para mostrar las alertas predictivas en el dashboard del supervisor de seguridad.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/predictivo/patrones acepta el identificador del sector y el número de días como parámetros de consulta obligatorios.</li>
+        <li>El endpoint retorna los patrones detectados con tipo de riesgo, frecuencia de ocurrencia y fecha de primera ocurrencia en el período.</li>
+        <li>Si el sector no tiene registros suficientes, el endpoint retorna una respuesta HTTP 200 con lista vacía y un mensaje descriptivo.</li>
+        <li>Si el sector enviada no existe en el sistema, el endpoint retorna HTTP 404 indicando que el recurso no fue encontrado.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con patrones detectados<br/>
+      <ul>
+        <li><b>Given</b> que el sector consultada tiene registros suficientes en el período indicado,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones?area=almacen&dias=30,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de patrones detectados con tipo de riesgo, frecuencia y fecha de primera ocurrencia.</li>
+      </ul>
+      <b>Escenario 2:</b> Sector sin datos suficientes para detectar patrones<br/>
+      <ul>
+        <li><b>Given</b> que el sector consultada tiene menos de 3 registros en el período indicado,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones con esos parámetros,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200, lista vacía y el mensaje "Datos insuficientes para detectar patrones en el período indicado".</li>
+      </ul>
+      <b>Escenario 3:</b> Sector no encontrada en el sistema<br/>
+      <ul>
+        <li><b>Given</b> que el desarrollador envía un identificador de sector que no existe en el sistema,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 404 con el mensaje "sector no encontrada en el sistema".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS03</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Datos del Mapa de Calor</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor que retorne la concentración de riesgos activos por sector clasificada por nivel de intensidad, para alimentar el mapa de calor del dashboard en tiempo real.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/predictivo/mapa-calor retorna todas las sectores registradas con su nivel de intensidad calculado</li>
+        <li>El nivel de intensidad se calcula en base a la cantidad de riesgos activos sin resolver de cada sector.</li>
+        <li>Si ninguna sector tiene riesgos activos, el endpoint retorna todas las sectors con nivel de intensidad bajo y HTTP 200.</li>
+        <li>El endpoint no requiere parámetros adicionales y retorna siempre el estado actual de toda la planta.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con riesgos activos registrados<br/>
+      <ul>
+        <li><b>Given</b> que al menos un sector de la planta tiene riesgos activos registrados,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 con cada sector y su nivel de intensidad calculado según la concentración de riesgos activos.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin riesgos activos en ningun sector de la planta<br/>
+      <ul>
+        <li><b>Given</b> que ninguna sector tiene riesgos activos registrados en ese momento,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 con todas las sectors en nivel de intensidad "bajo".</li>
+      </ul>
+      <b>Escenario 3:</b> Sector recién actualizada reflejada en el mapa<br/>
+      <ul>
+        <li><b>Given</b> que se acaba de registrar un nuevo riesgo crítico en el sector de Producción,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/mapa-calor inmediatamente después,</li>
+        <li><b>Then</b> el endpoint retorna el sector de Producción con el nivel de intensidad actualizado reflejando el nuevo riesgo.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS04</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Riesgos Críticos Sin Atender</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos que retorne los riesgos críticos sin acción correctiva asignada que superen el tiempo indicado, para que el módulo de notificaciones escale automáticamente al supervisor de seguridad.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/predictivo/no-atendidos acepta el número de horas como parámetro obligatorio para definir el umbral de tiempo sin atención.</li>
+        <li>El endpoint retorna los riesgos críticos activos sin acción correctiva que superen el umbral, incluyendo sector, tipo de riesgo, nivel de criticidad y horas transcurridas sin atención.</li>
+        <li>Si todos los riesgos han sido atendidos dentro del plazo, el endpoint retorna HTTP 200 con lista vacía.</li>
+        <li>Si el parámetro de horas no es enviado o tiene un valor inválido, el endpoint retorna HTTP 400 indicando que el parámetro es requerido.</li>
+      </ol>
+      <b>Escenario 1:</b> Riesgos sin atender encontrados en el sistema<br/>
+      <ul>
+        <li><b>Given</b> que existen riesgos críticos sin acción correctiva asignada por más de 24 horas,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de riesgos que superaron el umbral con sector, tipo, criticidad y horas transcurridas sin atención.</li>
+      </ul>
+      <b>Escenario 2:</b> Todos los riesgos críticos fueron atendidos a tiempo<br/>
+      <ul>
+        <li><b>Given</b> que todos los riesgos críticos activos tienen acción correctiva asignada dentro del plazo,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y lista vacía confirmando que no hay riesgos sin atender.</li>
+      </ul>
+      <b>Escenario 3:</b> Parámetro de horas no enviado en la solicitud<br/>
+      <ul>
+        <li><b>Given</b> que el desarrollador realiza GET /api/v1/predictivo/no-atendidos sin enviar el parámetro de horas,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 400 con el mensaje "El parámetro 'horas' es requerido para procesar esta solicitud".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS05</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Marcar Alerta de Patrón como Revisada</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada que permita marcar una alerta de patrón recurrente como revisada, para retirarla del panel principal y registrar quién la atendió.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint acepta el identificador de la alerta en la URL y actualiza su estado a "revisada".</li>
+        <li>Si la alerta no existe en el sistema, el endpoint retorna HTTP 404.</li>
+        <li>El endpoint requiere token con rol Supervisor o superior; de lo contrario retorna HTTP 403.</li>
+      </ol>
+      <b>Escenario 1:</b> Alerta marcada como revisada exitosamente<br/>
+      <ul>
+        <li><b>Given</b> que existe una alerta de patrón recurrente en estado pendiente,</li>
+        <li><b>When</b> el desarrollador realiza PATCH /api/v1/predictivo/alertas/{id}/revisada con token válido,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y actualiza el estado de la alerta a "revisada" registrando la fecha y el usuario.</li>
+      </ul>
+      <b>Escenario 2:</b> Alerta no encontrada en el sistema<br/>
+      <ul>
+        <li><b>Given</b> que el identificador de alerta enviado no existe en el sistema,</li>
+        <li><b>When</b> el endpoint procesa la solicitud,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 404 indicando que la alerta no fue encontrada.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS06</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Resumen Diario de Riesgos por Sector</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario que retorne el total de riesgos registrados en el día agrupados por sector, para alimentar el panel de resumen del dashboard del supervisor.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint retorna todos los sectores con el total de riesgos nuevos, en progreso y resueltos del día actual.</li>
+        <li>Si no se han registrado riesgos en el día, el endpoint retorna HTTP 200 con lista vacía.</li>
+        <li>El endpoint no requiere parámetros y calcula automáticamente el día actual.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con riesgos del día<br/>
+      <ul>
+        <li><b>Given</b> que se han registrado riesgos durante el día actual en al menos un sector,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/resumen-diario con token válido,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el listado de sectores con sus conteos de riesgos nuevos, en progreso y resueltos del día.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin riesgos registrados en el día<br/>
+      <ul>
+        <li><b>Given</b> que no se han registrado riesgos durante el día actual,</li>
+        <li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/resumen-diario,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y lista vacía.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS07</td>
+    <td><b>Epic ID</b></td><td>EP02</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint de Cálculo de Matriz IPERC</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc que reciba los índices de probabilidad y severidad, para calcular el nivel de criticidad del riesgo según la lógica IPERC del sistema.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint recibe los parámetros <b>probability_index</b> y <b>severity_index</b>.</li>
+        <li>El sistema valida que los valores estén dentro del rango permitido.</li>
+        <li>Se calcula el nivel de riesgo.</li>
+        <li>Se retorna el color asociado al nivel de riesgo.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+        <li>Se manejan errores de validación y errores internos.</li>
+      </ol>
+      <b>Escenario 1:</b> Cálculo de riesgo exitoso<br/>
+      <ul>
+        <li><b>Given</b> se procesa el request válido con probability_index y severity_index,</li>
+        <li><b>When</b> el API procesa la solicitud en el endpoint POST /api/v1/predictivo/iperc,</li>
+        <li><b>Then</b> el sistema calcula correctamente el nivel de criticidad del riesgo,</li>
+        <li><b>And</b> retorna un HTTP 200 OK</li>
+      </ul>
+      <b>Escenario 2:</b> Valores fuera de rango<br/>
+      <ul>
+        <li><b>Given</b> que los valores enviados están fuera del rango permitido,</li>
+        <li><b>When</b> el API valida la solicitud,</li>
+        <li><b>Then</b> responde con HTTP 400 Bad Request,</li>
+        <li><b>And</b> retorna un mensaje de error de validación de parámetros.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS08</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Indicadores del Dashboard Ejecutivo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/kpi_dashboard que retorna los indicadores clave de SST consolidados, para alimentar el tablero ejecutivo del gerente con datos actualizados en tiempo real.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint retorna un arreglo con los indicadores: incidentes activos, incidentes resueltos, sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST.</li>
+        <li>Cada indicador incluye los campos: id, name, value, goal y status (optimal, alert o danger).</li>
+        <li>El endpoint no requiere parámetros y retorna siempre el estado actual registrado en la base de datos.</li>
+        <li>Si no hay registros, el endpoint retorna HTTP 200 con un arreglo vacío.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con datos disponibles<br/>
+      <ul>
+        <li><b>Given</b> que existen registros en la colección kpi_dashboard,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/kpi_dashboard,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de indicadores con sus valores y estados actuales.</li>
+      </ul>
+      <b>Escenario 2:</b> Sin datos registrados<br/>
+      <ul>
+        <li><b>Given</b> que la colección kpi_dashboard no tiene registros,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/kpi_dashboard,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y un arreglo vacío.</li>
+      </ul>
+      <b>Escenario 3:</b> Actualización reactiva de indicadores<br/>
+      <ul>
+        <li><b>Given</b> que el frontend recibe los indicadores y el usuario resuelve un incidente o alerta,</li>
+        <li><b>When</b> el store ejecuta syncKPIs(),</li>
+        <li><b>Then</b> los valores de active_incidents, resolved_incidents y critical_sectors se recalculan automáticamente sin necesidad de recargar la página.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS09</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener Tendencias Históricas de Accidentabilidad</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/historical_trends que retorna la evolución mensual de incidentes agrupados por tipo y sector, para alimentar las gráficas de tendencia del tablero ejecutivo del gerente.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint retorna un arreglo con registros mensuales que incluyen: month, year, total_incidents, incidents_by_type e incidents_by_sector.</li>
+        <li>El frontend filtra los datos por sector seleccionado directamente sobre el arreglo retornado por el endpoint.</li>
+        <li>Si no hay registros en la colección, el endpoint retorna HTTP 200 con un arreglo vacío.</li>
+        <li>Los meses con incremento significativo (más del 20% respecto al anterior) son resaltados visualmente por el frontend con un punto rojo en la gráfica.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con datos disponibles<br/>
+      <ul>
+        <li><b>Given</b> que existen registros en la colección historical_trends,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/historical_trends,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de datos mensuales con su desglose por tipo y sector.</li>
+      </ul>
+      <b>Escenario 2:</b> Filtrado por sector en el frontend<br/>
+      <ul>
+        <li><b>Given</b> que el gerente selecciona un sector específico en el filtro del dashboard,</li>
+        <li><b>When</b> el frontend aplica el filtro sobre los datos ya cargados del endpoint,</li>
+        <li><b>Then</b> la gráfica se actualiza mostrando únicamente los datos del sector seleccionado sin realizar una nueva petición al servidor.</li>
+      </ul>
+      <b>Escenario 3:</b> Vista por tipo de incidente<br/>
+      <ul>
+        <li><b>Given</b> que el gerente activa el modo "por tipo" en la gráfica,</li>
+        <li><b>When</b> el frontend procesa el campo incidents_by_type de cada registro,</li>
+        <li><b>Then</b> la gráfica muestra una línea por cada tipo de incidente con colores diferenciados.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS10</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Reportes Generados</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir los endpoints GET y POST /api/v1/generated_reports y DELETE /api/v1/generated_reports/{id} para registrar, listar y eliminar reportes generados, mientras la generación del documento PDF o Excel se realiza en el cliente con jsPDF.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint POST /api/v1/generated_reports registra el reporte con los campos: title, type, period, format, generated_date y file_url.</li>
+        <li>El endpoint GET /api/v1/generated_reports retorna el listado de todos los reportes generados ordenados por fecha descendente.</li>
+        <li>El endpoint DELETE /api/v1/generated_reports/{id} elimina el registro del reporte y retorna HTTP 200.</li>
+        <li>La generación del archivo PDF se realiza en el cliente con jsPDF y se descarga automáticamente en el dispositivo del gerente.</li>
+        <li>Si no hay datos en el rango de fechas indicado, el frontend muestra el mensaje "No hay datos registrados para el período seleccionado" sin generar el archivo.</li>
+      </ol>
+      <b>Escenario 1:</b> Generación y registro exitoso en PDF<br/>
+      <ul>
+        <li><b>Given</b> que existen incidentes registrados en el rango de fechas indicado,</li>
+        <li><b>When</b> el gerente hace clic en "Generar reporte" con formato PDF,</li>
+        <li><b>Then</b> el frontend genera el PDF con jsPDF, lo descarga automáticamente y registra el reporte en el endpoint POST /api/v1/generated_reports.</li>
+      </ul>
+      <b>Escenario 2:</b> Período sin datos<br/>
+      <ul>
+        <li><b>Given</b> que no existen incidentes en el rango de fechas seleccionado,</li>
+        <li><b>When</b> el gerente hace clic en "Generar reporte",</li>
+        <li><b>Then</b> el frontend muestra el mensaje "No hay datos registrados para el período seleccionado" y no genera ningún archivo ni realiza el POST al endpoint.</li>
+      </ul>
+      <b>Escenario 3:</b> Eliminación de reporte generado<br/>
+      <ul>
+        <li><b>Given</b> que el gerente visualiza la lista de reportes generados,</li>
+        <li><b>When</b> hace clic en el ícono de eliminar sobre un reporte,</li>
+        <li><b>Then</b> el frontend realiza DELETE /api/v1/generated_reports/{id} y el registro desaparece de la lista sin recargar la página.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS11</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Alertas Críticas</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir los endpoints GET, PATCH y DELETE /api/v1/critical_alerts para listar, actualizar el estado y eliminar alertas críticas, para que el gerente pueda gestionar los riesgos no resueltos desde el tablero ejecutivo.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/critical_alerts retorna el listado de alertas con los campos: id, type, sector, risk_type, message, elapsed_hours, responsible_supervisor y status.</li>
+        <li>El endpoint PATCH /api/v1/critical_alerts/{id} actualiza el campo status de la alerta (unresolved, in_review, resolved) y retorna el registro actualizado.</li>
+        <li>El endpoint DELETE /api/v1/critical_alerts/{id} elimina la alerta y retorna HTTP 200.</li>
+        <li>Al actualizar o eliminar una alerta, el store recalcula automáticamente el KPI de critical_sectors mediante syncKPIs().</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Listado de alertas exitoso<br/>
+      <ul>
+        <li><b>Given</b> que existen alertas registradas en la colección critical_alerts,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/critical_alerts,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de alertas con todos sus campos.</li>
+      </ul>
+      <b>Escenario 2:</b> Marcar alerta como resuelta<br/>
+      <ul>
+        <li><b>Given</b> que el gerente visualiza una alerta con status "unresolved" o "in_review",</li>
+        <li><b>When</b> hace clic en el ícono de check,</li>
+        <li><b>Then</b> el frontend realiza PATCH /api/v1/critical_alerts/{id} con status "resolved", actualiza el registro en el store y recalcula los KPIs sin recargar la página.</li>
+      </ul>
+      <b>Escenario 3:</b> Eliminación de alerta<br/>
+      <ul>
+        <li><b>Given</b> que el gerente hace clic en el ícono de eliminar sobre una alerta,</li>
+        <li><b>When</b> el frontend realiza DELETE /api/v1/critical_alerts/{id},</li>
+        <li><b>Then</b> la alerta desaparece de la tabla y el KPI de sectores críticos se actualiza automáticamente.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table align="center">
+  <tr>
+    <td><b>User Story ID</b></td><td>TS12</td>
+    <td><b>Epic ID</b></td><td>EP04</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Obtener el Plan Anual de SST y su Cumplimiento</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/annual_ohs_plan que retorne el plan anual de SST con el porcentaje de cumplimiento global y el desglose por sector, para alimentar el indicador de seguimiento del tablero ejecutivo del gerente.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint retorna el plan anual con los campos: id, year, overall_compliance, total_activities, completed_activities y details_by_sector.</li>
+        <li>El campo details_by_sector contiene un arreglo con el porcentaje de cumplimiento, actividades completadas y planificadas por cada sector.</li>
+        <li>El frontend clasifica cada sector visualmente: verde (≥80%), amarillo (50–79%) y rojo (&lt;50%) según su porcentaje de cumplimiento.</li>
+        <li>Si no hay plan registrado, el endpoint retorna HTTP 200 con un arreglo vacío y el frontend muestra el estado vacío correspondiente.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Solicitud exitosa con plan registrado<br/>
+      <ul>
+        <li><b>Given</b> que existe un plan anual de SST registrado en la colección annual_ohs_plan,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/annual_ohs_plan,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200, el porcentaje global de cumplimiento y el desglose por sector.</li>
+      </ul>
+      <b>Escenario 2:</b> Detalle de cumplimiento por sector desde el dashboard<br/>
+      <ul>
+        <li><b>Given</b> que el gerente hace clic en el KPI de cumplimiento del plan SST,</li>
+        <li><b>When</b> el frontend procesa el campo details_by_sector del plan retornado,</li>
+        <li><b>Then</b> muestra un dialog con los sectores ordenados de menor a mayor cumplimiento con sus indicadores de color.</li>
+      </ul>
+      <b>Escenario 3:</b> Sin plan registrado<br/>
+      <ul>
+        <li><b>Given</b> que la colección annual_ohs_plan no tiene registros,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/annual_ohs_plan,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 200 con arreglo vacío y el frontend muestra el estado vacío en la vista de seguimiento SST.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
 
 ## 3.2. Impact Mapping
 
@@ -3847,81 +3847,81 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 
 | # | ID | Título | Descripción | SP |
 |---|---|---|---|---|
-| 1 | US73 | Identidad y Acceso General | Como visitante o posible usuario, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada. | 2 |
-| 2 | US74 | Propuesta de Valor | Como visitante o posible usuario, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol. | 3 |
-| 3 | US75 | Catálogo de Capacidades Técnicas | Como visitante o posible usuario, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero. | 3 |
-| 4 | US76 | Metodología y Validación Social | Como visitante o posible usuario, quiero conocer el proceso de trabajo que realiza la aplicacion web y estadisticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales. | 3 |
-| 5 | US77 | Beneficios por Rol Operativo | Como visitante o posible usuario, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores. | 3 |
-| 6 | US78 | Cierre y Conversión de Prospectos | Como visitante o posible usuario, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa. | 2 |
+| 1 | US61 | Identidad y Acceso General | Como visitante, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada. | 2 |
+| 2 | US62 | Propuesta de Valor | Como visitante, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol. | 3 |
+| 3 | US63 | Catálogo de Capacidades Técnicas | Como visitante, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero. | 3 |
+| 4 | US64 | Metodología y Validación Social | Como visitante, quiero conocer el proceso de trabajo que realiza la aplicacion web y estadisticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales. | 3 |
+| 5 | US65 | Beneficios por Rol Operativo | Como visitante, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores. | 3 |
+| 6 | US66 | Cierre y Conversión de Prospectos | Como visitante, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa. | 2 |
 | 7 | US16 | Visualización de métricas de impacto predictivo | Como visitante, quiero visualizar indicadores reales de siniestralidad en la landing page para comprender el impacto de la analítica predictiva. | 2 |
 | 8 | US17 | Interacción con botones de conversión | Como visitante, quiero interactuar con los botones "Iniciar prueba gratuita" y "Hablar con ventas" para contactar con el servicio de RiskGuard. | 2 |
-| 9 | US01 | Autenticación de Operario | Como Operario de Planta, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
-| 10 | US02 | Cierre de Sesión del Operario | Como Operario de Planta, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
-| 11 | US31 | Autenticación Segura de Supervisor | Como Supervisor de Seguridad, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
-| 12 | US43 | Autenticación Segura de Gerente o Administrador | Como Gerente o Administrador, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
-| 13 | US03 | Registro Rápido de Casi-Accidente | Como Operario de Planta, quiero registrar un casi-accidente desde mi celular en menos de 30 segundos para no interrumpir mi flujo de trabajo. | 5 |
-| 14 | US04 | Adjuntar Evidencia Fotográfica al Reporte | Como Operario de Planta, quiero adjuntar una foto al momento de reportar un incidente para proporcionar evidencia visual al supervisor. | 3 |
-| 15 | US05 | Selección de Sector al Registrar Incidente | Como Operario de Planta, quiero seleccionar el sector donde ocurrió el incidente para georreferenciar correctamente el riesgo. | 3 |
-| 16 | US06 | Selección del Nivel de Urgencia del Incidente | Como Operario de Planta, quiero indicar el nivel de urgencia del incidente para que el sistema priorice correctamente la alerta. | 3 |
-| 17 | US07 | Selección del Tipo de Incidente | Como Operario de Planta, quiero seleccionar el tipo de incidente de una lista predefinida para categorizar correctamente el riesgo. | 3 |
-| 18 | US08 | Registro de Condición Insegura Vinculada a un Activo | Como Operario de Planta, quiero vincular mi reporte a un activo específico para indicar qué máquina presenta la condición insegura. | 3 |
-| 19 | US09 | Descripción de Texto Libre en el Reporte | Como Operario de Planta, quiero ingresar una descripción en texto libre para dar más contexto al supervisor. | 2 |
-| 20 | US10 | Confirmación de Recepción del Reporte | Como Operario de Planta, quiero recibir una confirmación visible después de enviar mi reporte para saber que la información llegó correctamente. | 3 |
-| 21 | US15 | Edición de Reporte Antes del Envío | Como Operario de Planta, quiero poder revisar y corregir los datos de mi reporte antes de enviarlo para asegurar que la información es precisa. | 2 |
-| 22 | US11 | Notificación de Atención del Reporte | Como Operario de Planta, quiero recibir una notificación cuando mi reporte haya sido revisado para saber que tuvo impacto real. | 3 |
-| 23 | US12 | Historial de Reportes del Operario | Como Operario de Planta, quiero consultar el historial de mis reportes para hacer seguimiento del estado de cada uno. | 3 |
-| 24 | US13 | Consulta del Detalle de un Reporte Enviado | Como Operario de Planta, quiero ver el detalle completo de un reporte que envié para conocer su estado actual y la acción tomada. | 2 |
-| 25 | US14 | Visualización de Alertas Activas en el Sector | Como Operario de Planta, quiero ver las alertas activas en mi sector al ingresar a la aplicación para estar informado antes de iniciar mi turno. | 3 |
-| 26 | US32 | Configuración de Sectores y Áreas Operativas | Como Supervisor de Seguridad, quiero administrar los sectores físicos de la planta para georreferenciar correctamente las incidencias reportadas. | 5 |
-| 27 | US33 | Configuración y Gestión de Activos Industriales | Como Supervisor de Seguridad, quiero registrar y administrar la maquinaria de la planta para vincularla a su sector correspondiente. | 5 |
-| 28 | US34 | Gestión y Administración de Personal Técnico | Como Supervisor de Seguridad, quiero registrar y administrar al personal de mantenimiento para disponer de técnicos calificados a quienes delegar tickets. | 5 |
-| 29 | US35 | Asignación de Tickets de Acción Correctiva | Como Supervisor de Seguridad, quiero asignar un ticket de incidente a un técnico de mantenimiento para delegar la responsabilidad de la reparación. | 5 |
-| 30 | US36 | Exploración Sectorizada y Filtrado de Alertas Activas | Como Supervisor de Seguridad, quiero acceder a las alertas activas seleccionando un sector específico para enfocar mi análisis por zona. | 5 |
-| 31 | US37 | Verificación y Cierre de Medidas de Control | Como Supervisor de Seguridad, quiero evaluar la efectividad de las medidas correctivas implementadas para garantizar que el riesgo fue mitigado. | 5 |
-| 32 | US18 | Visualización de Alerta por Riesgo Recurrente en Sector | Como Supervisor de Seguridad, quiero recibir una alerta cuando el mismo tipo de riesgo se repita más de 3 veces en 30 días para intervenir a tiempo. | 8 |
-| 33 | US19 | Visualización de Mapa de Calor de Riesgos de la Planta | Como Supervisor de Seguridad, quiero ver un mapa de calor actualizado de la planta para priorizar mis recursos de inspección. | 8 |
-| 34 | US38 | Visualización del Mapa de Calor Operativo | Como Supervisor de Seguridad, quiero visualizar la distribución de niveles de riesgo por sector para identificar qué áreas requieren intervención prioritaria. | 8 |
-| 35 | US26 | Visualización de Resumen de Riesgos del Día | Como Supervisor de Seguridad, quiero ver cuántos riesgos nuevos se registraron hoy en cada sector para tener una visión rápida al inicio de mi turno. | 3 |
-| 36 | US20 | Notificación de Riesgo Crítico Sin Atender | Como Supervisor de Seguridad, quiero que el sistema me notifique cuando un riesgo crítico lleve más de 24 horas sin ser atendido para escalarlo a tiempo. | 5 |
-| 37 | US39 | Notificación Externa Automática por Incidentes Críticos | Como Supervisor de Seguridad, quiero recibir notificaciones automáticas por correo cuando el sistema registre un incidente crítico para garantizar respuesta inmediata. | 5 |
-| 38 | US40 | Escalamiento Automático por Incumplimiento de SLA | Como Supervisor de Seguridad, quiero que el sistema escale automáticamente los tickets que superen su tiempo máximo de resolución para alertar a gerencia. | 8 |
-| 39 | US21 | Filtrado de Patrones de Riesgo por Tipo de Peligro | Como Supervisor de Seguridad, quiero filtrar los patrones de riesgo detectados por tipo de peligro para analizar de forma segmentada cada categoría. | 3 |
-| 40 | US27 | Marcar Alerta de Patrón Recurrente como Revisada | Como Supervisor de Seguridad, quiero marcar una alerta de patrón recurrente como revisada para mantener el dashboard organizado. | 2 |
-| 41 | US41 | Programación de Mantenimiento Preventivo de Activos | Como Supervisor de Seguridad, quiero programar tickets de mantenimiento preventivo sobre máquinas específicas para evitar fallas críticas futuras. | 8 |
-| 42 | US42 | Generación y Exportación de Reportes de Cumplimiento | Como Supervisor de Seguridad, quiero generar y exportar reportes consolidados del historial de incidentes para documentar el cumplimiento normativo. | 8 |
-| 43 | US44 | Visualización del Dashboard Ejecutivo de Seguridad | Como Gerente, quiero ver un dashboard ejecutivo con los indicadores clave de seguridad para tener una visión consolidada del estado de la SST. | 8 |
-| 44 | US45 | Visualización de Tendencias de Accidentabilidad | Como Gerente, quiero ver gráficas de tendencia de incidentes por mes para identificar si la accidentabilidad está mejorando o empeorando. | 5 |
-| 45 | US47 | Seguimiento del Cumplimiento del Plan Anual de SST | Como Gerente, quiero ver el porcentaje de cumplimiento del plan anual de SST en tiempo real para detectar brechas antes de una inspección. | 5 |
-| 46 | US48 | Visualización de Indicadores Predictivos de Riesgo | Como Gerente, quiero ver indicadores predictivos que anticipen posibles accidentes para justificar inversiones preventivas con datos concretos. | 8 |
-| 47 | US46 | Exportación de Formatos de Auditoría para SUNAFIL | Como Gerente, quiero exportar automáticamente los formatos de auditoría exigidos por la Ley N° 29783 para prepararme ante inspecciones de SUNAFIL. | 8 |
-| 48 | US52 | Generación de Reporte Mensual de Gestión de SST | Como Gerente, quiero generar un reporte mensual consolidado de seguridad con un solo clic para reducir el tiempo dedicado a informes manuales. | 5 |
-| 49 | US49 | Notificación de Alerta Crítica No Resuelta a Gerencia | Como Gerente, quiero recibir una notificación cuando un riesgo crítico lleve más de 48 horas sin resolver para escalar el problema internamente. | 5 |
-| 50 | US50 | Registro Histórico de Incidentes para Trazabilidad Legal | Como Gerente, quiero acceder al historial completo e inmutable de todos los incidentes para contar con evidencia ante auditorías de SUNAFIL. | 5 |
-| 51 | US51 | Gestión de Cuentas de Usuario desde Administración | Como Administrador, quiero crear, editar y desactivar cuentas de usuario para mantener el control de acceso a la plataforma. | 5 |
-| 52 | US58 | Configuración de niveles de riesgo | Como Administrador, quiero definir los niveles de riesgo del sistema para clasificar correctamente los incidentes detectados. | 3 |
-| 53 | US59 | Configuración de umbrales de alerta | Como Administrador, quiero definir los umbrales de alerta del sistema para que se generen notificaciones cuando se superen ciertos valores. | 3 |
-| 54 | US60 | Configuración de reglas de alertas | Como Administrador, quiero configurar reglas de generación de alertas para adaptar el comportamiento del sistema a distintos escenarios operativos. | 5 |
-| 55 | US61 | Activación y desactivación de módulos del sistema | Como Administrador, quiero activar o desactivar módulos del sistema para personalizar su funcionamiento según las necesidades de la organización. | 3 |
-| 56 | US62 | Configuración de horarios operativos | Como Administrador, quiero configurar los horarios de operación del sistema para adaptarlo a los turnos y jornadas laborales de la planta. | 3 |
-| 57 | US63 | Registro de dispositivos | Como Administrador, quiero registrar dispositivos como sensores o cámaras para integrarlos al sistema de monitoreo. | 3 |
-| 58 | US64 | Edición de dispositivos | Como Administrador, quiero editar la información de los dispositivos registrados para mantener sus datos actualizados. | 2 |
-| 59 | US65 | Eliminación de dispositivos | Como Administrador, quiero eliminar dispositivos registrados para mantener el sistema sin información innecesaria. | 2 |
-| 60 | US66 | Configuración de zonas de monitoreo | Como Administrador, quiero definir zonas de monitoreo dentro de la planta para segmentar las áreas según niveles de riesgo. | 3 |
-| 61 | US67 | Configuración de parámetros del motor predictivo | Como Administrador, quiero configurar los parámetros del motor predictivo para mejorar la precisión en la detección de riesgos. | 5 |
-| 62 | US68 | Configuración de prioridad de alertas | Como Administrador, quiero definir la prioridad de las alertas para atender primero las más críticas. | 3 |
-| 63 | US69 | Configuración de notificaciones | Como Administrador, quiero configurar los canales de notificación del sistema para recibir alertas de forma oportuna. | 3 |
-| 64 | US70 | Guardado de configuración del sistema | Como Administrador, quiero guardar los cambios realizados en la configuración para asegurar que los datos se mantengan persistentes. | 2 |
-| 65 | US71 | Restaurar configuración por defecto | Como Administrador, quiero restaurar la configuración del sistema a sus valores por defecto para recuperar el funcionamiento original en caso de errores. | 2 |
-| 66 | US72 | Visualización de configuración del sistema | Como Administrador, quiero visualizar la configuración actual del sistema para tener un control general de todos los parámetros definidos. | 2 |
-| 67 | TS22 | Servicio de Notificaciones Push | Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a dispositivos móviles. | 8 |
-| 68 | TS23 | Endpoint para Obtener Patrones de Riesgo Recurrentes | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones para mostrar alertas predictivas en el dashboard del supervisor. | 8 |
-| 69 | TS24 | Endpoint para Obtener Datos del Mapa de Calor | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor para alimentar el mapa de calor del dashboard en tiempo real. | 8 |
-| 70 | TS25 | Endpoint para Obtener Riesgos Críticos Sin Atender | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos para que el módulo de notificaciones escale automáticamente al supervisor. | 5 |
-| 71 | TS28 | Endpoint para Marcar Alerta de Patrón como Revisada | Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada para retirar alertas del panel principal. | 3 |
-| 72 | TS29 | Endpoint para Obtener Resumen Diario de Riesgos por Sector | Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario para alimentar el panel de resumen del dashboard del supervisor. | 5 |
-| 73 | TS30 | Endpoint de Cálculo de Matriz IPERC | Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc para calcular el nivel de criticidad del riesgo según la lógica IPERC. | 8 |
-| 74 | TS53 | Endpoint para Obtener Indicadores del Dashboard Ejecutivo | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/ejecutivo para alimentar el dashboard ejecutivo del gerente en tiempo real. | 8 |
-| 75 | TS54 | Endpoint para Obtener Tendencias Históricas de Accidentabilidad | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/tendencias para alimentar las gráficas de tendencia del dashboard ejecutivo. | 8 |
-| 76 | TS55 | Endpoint para Generación de Reporte de Auditoría | Como desarrollador, quiero implementar el endpoint POST /api/v1/reportes/auditoria para generar documentos compatibles con la Ley N° 29783. | 8 |
-| 77 | TS56 | Endpoint para Gestión de Cuentas de Usuario | Como desarrollador, quiero implementar los endpoints POST /api/v1/usuarios y PATCH /api/v1/usuarios/{id}/estado para gestionar el acceso del personal. | 5 |
-| 78 | TS57 | Endpoint para Obtener el Indicador de Cumplimiento del Plan Anual de SST | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/cumplimiento-sst para alimentar el indicador ejecutivo del dashboard del gerente. | 5 |
+| 9 | US03 | Registro Rápido de Casi-Accidente | Como Operario de Planta, quiero registrar un casi-accidente desde mi celular en menos de 30 segundos para no interrumpir mi flujo de trabajo. | 5 |
+| 10 | US04 | Adjuntar Evidencia Fotográfica al Reporte | Como Operario de Planta, quiero adjuntar una foto al momento de reportar un incidente para proporcionar evidencia visual al supervisor. | 3 |
+| 11 | US05 | Selección de Sector al Registrar Incidente | Como Operario de Planta, quiero seleccionar el sector donde ocurrió el incidente para georreferenciar correctamente el riesgo. | 3 |
+| 12 | US06 | Selección del Nivel de Urgencia del Incidente | Como Operario de Planta, quiero indicar el nivel de urgencia del incidente para que el sistema priorice correctamente la alerta. | 3 |
+| 13 | US07 | Selección del Tipo de Incidente | Como Operario de Planta, quiero seleccionar el tipo de incidente de una lista predefinida para categorizar correctamente el riesgo. | 3 |
+| 14 | US08 | Registro de Condición Insegura Vinculada a un Activo | Como Operario de Planta, quiero vincular mi reporte a un activo específico para indicar qué máquina presenta la condición insegura. | 3 |
+| 15 | US09 | Descripción de Texto Libre en el Reporte | Como Operario de Planta, quiero ingresar una descripción en texto libre para dar más contexto al supervisor. | 2 |
+| 16 | US10 | Confirmación de Recepción del Reporte | Como Operario de Planta, quiero recibir una confirmación visible después de enviar mi reporte para saber que la información llegó correctamente. | 3 |
+| 17 | US15 | Edición de Reporte Antes del Envío | Como Operario de Planta, quiero poder revisar y corregir los datos de mi reporte antes de enviarlo para asegurar que la información es precisa. | 2 |
+| 18 | US11 | Notificación de Atención del Reporte | Como Operario de Planta, quiero recibir una notificación cuando mi reporte haya sido revisado para saber que tuvo impacto real. | 3 |
+| 19 | US12 | Historial de Reportes del Operario | Como Operario de Planta, quiero consultar el historial de mis reportes para hacer seguimiento del estado de cada uno. | 3 |
+| 20 | US13 | Consulta del Detalle de un Reporte Enviado | Como Operario de Planta, quiero ver el detalle completo de un reporte que envié para conocer su estado actual y la acción tomada. | 2 |
+| 21 | US14 | Visualización de Alertas Activas en el Sector | Como Operario de Planta, quiero ver las alertas activas en mi sector al ingresar a la aplicación para estar informado antes de iniciar mi turno. | 3 |
+| 22 | US25 | Configuración de Sectores y Áreas Operativas | Como Supervisor de Seguridad, quiero administrar los sectores físicos de la planta para georreferenciar correctamente las incidencias reportadas. | 5 |
+| 23 | US26 | Configuración y Gestión de Activos Industriales | Como Supervisor de Seguridad, quiero registrar y administrar la maquinaria de la planta para vincularla a su sector correspondiente. | 5 |
+| 24 | US27 | Gestión y Administración de Personal Técnico | Como Supervisor de Seguridad, quiero registrar y administrar al personal de mantenimiento para disponer de técnicos calificados a quienes delegar tickets. | 5 |
+| 25 | US28 | Asignación de Tickets de Acción Correctiva | Como Supervisor de Seguridad, quiero asignar un ticket de incidente a un técnico de mantenimiento para delegar la responsabilidad de la reparación. | 5 |
+| 26 | US29 | Exploración Sectorizada y Filtrado de Alertas Activas | Como Supervisor de Seguridad, quiero acceder a las alertas activas seleccionando un sector específico para enfocar mi análisis por zona. | 5 |
+| 27 | US30 | Verificación y Cierre de Medidas de Control | Como Supervisor de Seguridad, quiero evaluar la efectividad de las medidas correctivas implementadas para garantizar que el riesgo fue mitigado. | 5 |
+| 28 | US18 | Visualización de Alerta por Riesgo Recurrente en Sector | Como Supervisor de Seguridad, quiero recibir una alerta cuando el mismo tipo de riesgo se repita más de 3 veces en 30 días para intervenir a tiempo. | 8 |
+| 29 | US19 | Visualización de Mapa de Calor de Riesgos de la Planta | Como Supervisor de Seguridad, quiero ver un mapa de calor actualizado de la planta para priorizar mis recursos de inspección. | 8 |
+| 30 | US31 | Visualización del Mapa de Calor Operativo | Como Supervisor de Seguridad, quiero visualizar la distribución de niveles de riesgo por sector para identificar qué áreas requieren intervención prioritaria. | 8 |
+| 31 | US22 | Visualización de Resumen de Riesgos del Día | Como Supervisor de Seguridad, quiero ver cuántos riesgos nuevos se registraron hoy en cada sector para tener una visión rápida al inicio de mi turno. | 3 |
+| 32 | US20 | Notificación de Riesgo Crítico Sin Atender | Como Supervisor de Seguridad, quiero que el sistema me notifique cuando un riesgo crítico lleve más de 24 horas sin ser atendido para escalarlo a tiempo. | 5 |
+| 33 | US32 | Notificación Externa Automática por Incidentes Críticos | Como Supervisor de Seguridad, quiero recibir notificaciones automáticas por correo cuando el sistema registre un incidente crítico para garantizar respuesta inmediata. | 5 |
+| 34 | US33 | Escalamiento Automático por Incumplimiento de SLA | Como Supervisor de Seguridad, quiero que el sistema escale automáticamente los tickets que superen su tiempo máximo de resolución para alertar a gerencia. | 8 |
+| 35 | US21 | Filtrado de Patrones de Riesgo por Tipo de Peligro | Como Supervisor de Seguridad, quiero filtrar los patrones de riesgo detectados por tipo de peligro para analizar de forma segmentada cada categoría. | 3 |
+| 36 | US23 | Marcar Alerta de Patrón Recurrente como Revisada | Como Supervisor de Seguridad, quiero marcar una alerta de patrón recurrente como revisada para mantener el dashboard organizado. | 2 |
+| 37 | US34 | Programación de Mantenimiento Preventivo de Activos | Como Supervisor de Seguridad, quiero programar tickets de mantenimiento preventivo sobre máquinas específicas para evitar fallas críticas futuras. | 8 |
+| 38 | US35 | Generación y Exportación de Reportes de Cumplimiento | Como Supervisor de Seguridad, quiero generar y exportar reportes consolidados del historial de incidentes para documentar el cumplimiento normativo. | 8 |
+| 39 | US37 | Visualización del Dashboard Ejecutivo de Seguridad | Como Gerente, quiero ver un dashboard ejecutivo con los indicadores clave de seguridad para tener una visión consolidada del estado de la SST. | 8 |
+| 40 | US38 | Visualización de Tendencias de Accidentabilidad | Como Gerente, quiero ver gráficas de tendencia de incidentes por mes para identificar si la accidentabilidad está mejorando o empeorando. | 5 |
+| 41 | US40 | Seguimiento del Cumplimiento del Plan Anual de SST | Como Gerente, quiero ver el porcentaje de cumplimiento del plan anual de SST en tiempo real para detectar brechas antes de una inspección. | 5 |
+| 42 | US41 | Visualización de Indicadores Predictivos de Riesgo | Como Gerente, quiero ver indicadores predictivos que anticipen posibles accidentes para justificar inversiones preventivas con datos concretos. | 8 |
+| 43 | US39 | Exportación de Formatos de Auditoría para SUNAFIL | Como Gerente, quiero exportar automáticamente los formatos de auditoría exigidos por la Ley N° 29783 para prepararme ante inspecciones de SUNAFIL. | 8 |
+| 44 | US45 | Generación de Reporte Mensual de Gestión de SST | Como Gerente, quiero generar un reporte mensual consolidado de seguridad con un solo clic para reducir el tiempo dedicado a informes manuales. | 5 |
+| 45 | US42 | Notificación de Alerta Crítica No Resuelta a Gerencia | Como Gerente, quiero recibir una notificación cuando un riesgo crítico lleve más de 48 horas sin resolver para escalar el problema internamente. | 5 |
+| 46 | US43 | Registro Histórico de Incidentes para Trazabilidad Legal | Como Gerente, quiero acceder al historial completo e inmutable de todos los incidentes para contar con evidencia ante auditorías de SUNAFIL. | 5 |
+| 47 | US44 | Gestión de Cuentas de Usuario desde Administración | Como Administrador, quiero crear, editar y desactivar cuentas de usuario para mantener el control de acceso a la plataforma. | 5 |
+| 48 | US46 | Configuración de niveles de riesgo | Como Administrador, quiero definir los niveles de riesgo del sistema para clasificar correctamente los incidentes detectados. | 3 |
+| 49 | US47 | Configuración de umbrales de alerta | Como Administrador, quiero definir los umbrales de alerta del sistema para que se generen notificaciones cuando se superen ciertos valores. | 3 |
+| 50 | US48 | Configuración de reglas de alertas | Como Administrador, quiero configurar reglas de generación de alertas para adaptar el comportamiento del sistema a distintos escenarios operativos. | 5 |
+| 51 | US49 | Activación y desactivación de módulos del sistema | Como Administrador, quiero activar o desactivar módulos del sistema para personalizar su funcionamiento según las necesidades de la organización. | 3 |
+| 52 | US50 | Configuración de horarios operativos | Como Administrador, quiero configurar los horarios de operación del sistema para adaptarlo a los turnos y jornadas laborales de la planta. | 3 |
+| 53 | US51 | Registro de dispositivos | Como Administrador, quiero registrar dispositivos como sensores o cámaras para integrarlos al sistema de monitoreo. | 3 |
+| 54 | US52 | Edición de dispositivos | Como Administrador, quiero editar la información de los dispositivos registrados para mantener sus datos actualizados. | 2 |
+| 55 | US53 | Eliminación de dispositivos | Como Administrador, quiero eliminar dispositivos registrados para mantener el sistema sin información innecesaria. | 2 |
+| 56 | US54 | Configuración de zonas de monitoreo | Como Administrador, quiero definir zonas de monitoreo dentro de la planta para segmentar las áreas según niveles de riesgo. | 3 |
+| 57 | US55 | Configuración de parámetros del motor predictivo | Como Administrador, quiero configurar los parámetros del motor predictivo para mejorar la precisión en la detección de riesgos. | 5 |
+| 58 | US56 | Configuración de prioridad de alertas | Como Administrador, quiero definir la prioridad de las alertas para atender primero las más críticas. | 3 |
+| 59 | US57 | Configuración de notificaciones | Como Administrador, quiero configurar los canales de notificación del sistema para recibir alertas de forma oportuna. | 3 |
+| 60 | US58 | Guardado de configuración del sistema | Como Administrador, quiero guardar los cambios realizados en la configuración para asegurar que los datos se mantengan persistentes. | 2 |
+| 61 | US59 | Restaurar configuración por defecto | Como Administrador, quiero restaurar la configuración del sistema a sus valores por defecto para recuperar el funcionamiento original en caso de errores. | 2 |
+| 62 | US60 | Visualización de configuración del sistema | Como Administrador, quiero visualizar la configuración actual del sistema para tener un control general de todos los parámetros definidos. | 2 |
+| 63 | TS01 | Servicio de Notificaciones Push | Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a dispositivos móviles. | 8 |
+| 64 | TS02 | Endpoint para Obtener Patrones de Riesgo Recurrentes | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones para mostrar alertas predictivas en el dashboard del supervisor. | 8 |
+| 65 | TS03 | Endpoint para Obtener Datos del Mapa de Calor | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor para alimentar el mapa de calor del dashboard en tiempo real. | 8 |
+| 66 | TS04 | Endpoint para Obtener Riesgos Críticos Sin Atender | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos para que el módulo de notificaciones escale automáticamente al supervisor. | 5 |
+| 67 | TS05 | Endpoint para Marcar Alerta de Patrón como Revisada | Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada para retirar alertas del panel principal. | 3 |
+| 68 | TS06 | Endpoint para Obtener Resumen Diario de Riesgos por Sector | Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario para alimentar el panel de resumen del dashboard del supervisor. | 5 |
+| 69 | TS07 | Endpoint de Cálculo de Matriz IPERC | Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc para calcular el nivel de criticidad del riesgo según la lógica IPERC. | 8 |
+| 70 | TS08 | Endpoint para Obtener Indicadores del Dashboard Ejecutivo | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/ejecutivo para alimentar el dashboard ejecutivo del gerente en tiempo real. | 8 |
+| 71 | TS09 | Endpoint para Obtener Tendencias Históricas de Accidentabilidad | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/tendencias para alimentar las gráficas de tendencia del dashboard ejecutivo. | 8 |
+| 72 | TS10 | Endpoint para Generación de Reporte de Auditoría | Como desarrollador, quiero implementar el endpoint POST /api/v1/reportes/auditoria para generar documentos compatibles con la Ley N° 29783. | 8 |
+| 73 | TS11 | Endpoint para Gestión de Cuentas de Usuario | Como desarrollador, quiero implementar los endpoints POST /api/v1/usuarios y PATCH /api/v1/usuarios/{id}/estado para gestionar el acceso del personal. | 5 |
+| 74 | TS12 | Endpoint para Obtener el Indicador de Cumplimiento del Plan Anual de SST | Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/cumplimiento-sst para alimentar el indicador ejecutivo del dashboard del gerente. | 5 |
+| 75 | US01 | Autenticación de Operario | Como usuario, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
+| 76 | US02 | Cierre de Sesión del Operario | Como usuario, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
+| 77 | US24 | Autenticación Segura de Supervisor | Como usuario, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
+| 78 | US36 | Autenticación Segura de Gerente o Administrador | Como usuario, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
