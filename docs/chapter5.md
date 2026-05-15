@@ -604,7 +604,6 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 #### 5.2.2.3.Sprint Backlog 2.
 
 <p><strong>Sprint #:</strong> Sprint 2</p>
-
 <table border="1" cellspacing="0" cellpadding="6">
   <thead>
     <tr>
@@ -783,6 +782,56 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
+    <tr>
+      <td>TS53</td>
+      <td>Endpoint para Obtener Indicadores del Dashboard Ejecutivo</td>
+      <td>T17</td>
+      <td>Consumo endpoint GET /api/v1/kpi_dashboard</td>
+      <td>Consumir el endpoint GET /api/v1/kpi_dashboard para obtener los cuatro indicadores KPI y sincronizarlos reactivamente en el store mediante syncKPIs</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>TS54</td>
+      <td>Endpoint para Obtener Tendencias Históricas de Accidentabilidad</td>
+      <td>T18</td>
+      <td>Consumo endpoint GET /api/v1/historical_trends</td>
+      <td>Consumir el endpoint GET /api/v1/historical_trends para obtener la evolución mensual de incidentes y aplicar filtro por sector y por tipo en el frontend</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>TS55</td>
+      <td>Endpoint para Gestión de Reportes Generados</td>
+      <td>T19</td>
+      <td>Consumo endpoints GET, POST y DELETE /api/v1/generated_reports</td>
+      <td>Consumir los endpoints de reportes generados para listar, registrar y eliminar reportes; la generación del documento PDF o Excel se realiza en el cliente con jsPDF</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>TS56</td>
+      <td>Endpoint para Gestión de Alertas Críticas</td>
+      <td>T20</td>
+      <td>Consumo endpoints GET, PATCH y DELETE /api/v1/critical_alerts</td>
+      <td>Consumir los endpoints de alertas críticas para listar, actualizar estado y eliminar alertas, con recálculo automático del KPI de sectores críticos tras cada operación</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
+    <tr>
+      <td>TS57</td>
+      <td>Endpoint para Obtener el Plan Anual de SST y su Cumplimiento</td>
+      <td>T21</td>
+      <td>Consumo endpoint GET /api/v1/annual_ohs_plan</td>
+      <td>Consumir el endpoint GET /api/v1/annual_ohs_plan para obtener el porcentaje de cumplimiento global y el desglose por sector, y alimentar la vista de seguimiento SST y el KPI del dashboard</td>
+      <td>2</td>
+      <td>Aponte Pablo, Isabel Luisa</td>
+      <td>Completed</td>
+    </tr>
   </tbody>
 </table>
 
@@ -790,5 +839,353 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 
 #### 5.2.2.5.Execution Evidence for Sprint Review.
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
+
+En esta sección se incluye la relación de Endpoints documentados con OpenAPI, relacionados con el alcance del Sprint. A continuación se resume los logros alcanzados en relación con Documentación de Web Services para este Sprint.
+Para este Sprint no se cuenta con un repositorio independiente de Web Services ni con servicios backend desplegados. La aplicación consume una API local simulada basada en json-server, definida dentro del mismo repositorio frontend mediante los archivos `server/db.json` y `server/routes.json`. Por este motivo, el repositorio de Servicios Web corresponde al repositorio frontend del proyecto RiskGuard, donde se encuentran definidos y versionados los endpoints mock.
+
+Se documentan los endpoints simulados utilizados para validar las funcionalidades desarrolladas durante el sprint.
+
+**Repositorio API/local:** https://github.com/upc-web-applications/Frontend.git 
+
+**URL base local:** `http://localhost:3000/api/v1`  
+**Archivo de datos simulado:** `server/db.json`  
+**Archivo de rutas simulado:** `server/routes.json`
+
+**Commits relacionados con Documentación e implementación de endpoints:**
+
+| Commit Id | Mensaje |
+|---|---|
+| 42e7dcf | feat: add assemblers and api |
+| 4f10c4e | feat: add store |
+| 3415ec1 | feat: add entities |
+| 03a43ab | feat: add database db |
+| 3b0f309 | feat: reports updates |
+| b6b23eb | feat: add env |
+
+**Tabla de Endpoints**
+
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acciones implementadas</th>
+      <th>URL local</th>
+      <th>Verbo HTTP</th>
+      <th>Sintaxis de llamada</th>
+      <th>Parámetros</th>
+      <th>Ejemplo de Response</th>
+      <th>Explicación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>/kpi_dashboard</code></td>
+      <td>Obtener indicadores KPI del dashboard ejecutivo</td>
+      <td><code>http://localhost:3000/api/v1/kpi_dashboard</code></td>
+      <td><code>GET</code></td>
+      <td><code>GET /api/v1/kpi_dashboard</code></td>
+      <td>No requiere parámetros</td>
+      <td><pre>[
+  { "id": "KPI_001", "name": "active_incidents",
+    "value": 3, "goal": 0, "status": "alert" },
+  { "id": "KPI_002", "name": "resolved_incidents",
+    "value": 6, "goal": 10, "status": "optimal" },
+  { "id": "KPI_003", "name": "critical_sectors",
+    "value": 2, "goal": 0, "status": "danger" },
+  { "id": "KPI_004", "name": "ohs_plan_compliance",
+    "value": 72, "goal": 80, "status": "alert" }
+]</pre></td>
+      <td>Cada objeto contiene el nombre del indicador (<code>name</code>), el valor actual (<code>value</code>), la meta (<code>goal</code>) y el estado visual (<code>optimal</code>, <code>alert</code>, <code>danger</code>). El frontend sincroniza estos valores reactivamente mediante <code>syncKPIs()</code> al resolver incidentes o alertas.</td>
+    </tr>
+    <tr>
+      <td><code>/historical_trends</code></td>
+      <td>Obtener evolución mensual de incidentes por tipo y sector</td>
+      <td><code>http://localhost:3000/api/v1/historical_trends</code></td>
+      <td><code>GET</code></td>
+      <td><code>GET /api/v1/historical_trends</code></td>
+      <td>No requiere parámetros. El filtrado por sector y tipo se aplica en el frontend.</td>
+      <td><pre>{
+  "id": "TREND_2024_04",
+  "month": 4, "year": 2024,
+  "total_incidents": 22,
+  "incidents_by_type": {
+    "Chemical Leak": 9,
+    "Pressure Anomaly": 7,
+    "Unsafe Condition": 4,
+    "Abnormal Vibration": 2
+  },
+  "incidents_by_sector": {
+    "WAREHOUSE_B": 9,
+    "GAS_PLANT": 7
+  }
+}</pre></td>
+      <td>Cada registro corresponde a un mes. El frontend filtra <code>incidents_by_sector</code> al seleccionar un sector y construye datasets por tipo usando <code>incidents_by_type</code>. Los meses con incremento mayor al 20% respecto al anterior se resaltan en rojo en la gráfica.</td>
+    </tr>
+    <tr>
+      <td><code>/critical_alerts</code></td>
+      <td>Listar alertas críticas del sistema</td>
+      <td><code>http://localhost:3000/api/v1/critical_alerts</code></td>
+      <td><code>GET</code></td>
+      <td><code>GET /api/v1/critical_alerts</code></td>
+      <td>No requiere parámetros</td>
+      <td><pre>[
+  {
+    "id": "ALERT_001",
+    "type": "CRITICAL",
+    "sector": "WAREHOUSE_B",
+    "risk_type": "Chemical Leak",
+    "elapsed_hours": 72,
+    "responsible_supervisor": "Ana Torres",
+    "status": "unresolved",
+    "message": "Fuga de ácido en contenedor
+     IBC-12 supera el umbral de seguridad."
+  }
+]</pre></td>
+      <td>El campo <code>type</code> puede ser <code>CRITICAL</code> o <code>ALERT</code>. El campo <code>status</code> puede ser <code>unresolved</code>, <code>in_review</code> o <code>resolved</code>. El frontend calcula el KPI <code>critical_sectors</code> contando sectores con alertas <code>unresolved</code> o <code>in_review</code>.</td>
+    </tr>
+    <tr>
+      <td><code>/critical_alerts/{id}</code></td>
+      <td>Actualizar estado de una alerta crítica</td>
+      <td><code>http://localhost:3000/api/v1/critical_alerts/{id}</code></td>
+      <td><code>PATCH</code></td>
+      <td><code>PATCH /api/v1/critical_alerts/ALERT_001</code></td>
+      <td><code>id</code> en la URL. Body: <code>{ "status": "resolved" }</code></td>
+      <td><pre>{
+  "id": "ALERT_001",
+  "type": "CRITICAL",
+  "sector": "WAREHOUSE_B",
+  "status": "resolved",
+  "elapsed_hours": 72,
+  "responsible_supervisor": "Ana Torres",
+  "message": "Fuga de ácido en contenedor
+   IBC-12 supera el umbral de seguridad."
+}</pre></td>
+      <td>Al recibir la respuesta, el store actualiza el registro en el arreglo local y ejecuta <code>syncKPIs()</code> para recalcular el KPI de sectores críticos sin recargar la página.</td>
+    </tr>
+    <tr>
+      <td><code>/critical_alerts/{id}</code></td>
+      <td>Eliminar una alerta crítica</td>
+      <td><code>http://localhost:3000/api/v1/critical_alerts/{id}</code></td>
+      <td><code>DELETE</code></td>
+      <td><code>DELETE /api/v1/critical_alerts/ALERT_001</code></td>
+      <td><code>id</code> en la URL</td>
+      <td><pre>{} (HTTP 200)</pre></td>
+      <td>El store filtra el arreglo local eliminando el registro con el id correspondiente y recalcula los KPIs reactivamente mediante <code>syncKPIs()</code>.</td>
+    </tr>
+    <tr>
+      <td><code>/annual_ohs_plan</code></td>
+      <td>Obtener cumplimiento global y desglose mensual del plan anual de SST</td>
+      <td><code>http://localhost:3000/api/v1/annual_ohs_plan</code></td>
+      <td><code>GET</code></td>
+      <td><code>GET /api/v1/annual_ohs_plan</code></td>
+      <td>No requiere parámetros</td>
+      <td><pre>{
+  "id": "PLAN_2024", "year": 2024,
+  "global_compliance": 72, "goal": 80,
+  "completed_activities": 86,
+  "total_activities": 120,
+  "critical_months": 2,
+  "monthly_details": [
+    { "month": 1, "compliance": 70,
+      "completed_activities": 8,
+      "planned_activities": 12,
+      "status": "acceptable" },
+    { "month": 2, "compliance": 45,
+      "completed_activities": 5,
+      "planned_activities": 12,
+      "status": "critical" }
+  ]
+}</pre></td>
+      <td>El frontend usa <code>global_compliance</code> para mostrar el indicador con color (verde ≥80%, amarillo 50–79%, rojo &lt;50%) y <code>monthly_details</code> para construir la gráfica de evolución mensual. El campo <code>details_by_sector</code> alimenta el panel de detalle al hacer clic en el KPI del dashboard.</td>
+    </tr>
+    <tr>
+      <td><code>/predictive_indicators</code></td>
+      <td>Obtener indicadores predictivos de riesgo de los últimos 30 días</td>
+      <td><code>http://localhost:3000/api/v1/predictive_indicators</code></td>
+      <td><code>GET</code></td>
+      <td><code>GET /api/v1/predictive_indicators</code></td>
+      <td>No requiere parámetros</td>
+      <td><pre>{
+  "id": "PRED_001",
+  "period_days": 30,
+  "total_incidents": 42,
+  "previous_month_variation": 15,
+  "average_resolution_time_hours": 8,
+  "sectors_with_increasing_trend": [
+    { "sector": "WAREHOUSE_B",
+      "status": "critical" },
+    { "sector": "GAS_PLANT",
+      "status": "warning" }
+  ]
+}</pre></td>
+      <td>El campo <code>sectors_with_increasing_trend</code> se muestra como tags de severidad (<code>danger</code> para critical, <code>warning</code> para warning). El campo <code>previous_month_variation</code> indica el porcentaje de variación respecto al mes anterior.</td>
+    </tr>
+    <tr>
+      <td><code>/historical_incident_records</code></td>
+      <td>Consultar historial completo de incidentes (solo lectura)</td>
+      <td><code>http://localhost:3000/api/v1/historical_incident_records</code></td>
+      <td><code>GET</code></td>
+      <td><code>GET /api/v1/historical_incident_records</code></td>
+      <td>No requiere parámetros. El filtrado por sector, tipo y rango de fechas se aplica en el frontend.</td>
+      <td><pre>{
+  "id": "INC_006",
+  "date": "2024-03-03",
+  "section": "GAS_PLANT",
+  "incident_type": "Pressure Anomaly",
+  "description": "High pressure alert in
+   pipeline B — valve showed 140%
+   of nominal value",
+  "resolved": false,
+  "criticality": "CRITICAL",
+  "operator_id": "OP_003"
+}</pre></td>
+      <td>La tabla del historial es de solo lectura. No se habilita ningún campo de edición para garantizar la trazabilidad legal ante auditorías de SUNAFIL.</td>
+    </tr>
+    <tr>
+      <td><code>/generated_reports</code></td>
+      <td>Listar reportes generados</td>
+      <td><code>http://localhost:3000/api/v1/generated_reports</code></td>
+      <td><code>GET</code></td>
+      <td><code>GET /api/v1/generated_reports</code></td>
+      <td>No requiere parámetros. El filtrado por mes, año y tipo se aplica en el frontend.</td>
+      <td><pre>[
+  {
+    "id": "DmNMTQ6",
+    "type": "monthly",
+    "month": 1, "year": 2026,
+    "format": "pdf",
+    "generation_date":
+      "2026-05-15T02:27:04.290Z",
+    "file_name":
+      "RiskGuard_Reporte_Mensual_
+       enero_2026.pdf",
+    "status": "generated",
+    "size_kb": 14
+  }
+]</pre></td>
+      <td>El campo <code>type</code> puede ser <code>monthly</code>, <code>audit</code> o <code>compliance</code>. El campo <code>format</code> puede ser <code>pdf</code> o <code>xlsx</code>. El frontend regenera el archivo al hacer clic en descargar usando los datos del store junto con jsPDF.</td>
+    </tr>
+    <tr>
+      <td><code>/generated_reports</code></td>
+      <td>Registrar nuevo reporte generado</td>
+      <td><code>http://localhost:3000/api/v1/generated_reports</code></td>
+      <td><code>POST</code></td>
+      <td><code>POST /api/v1/generated_reports</code></td>
+      <td>Body: <code>{ "type", "month", "year", "format", "generation_date", "file_name", "status", "size_kb" }</code></td>
+      <td><pre>{
+  "id": "xK9pQmR",
+  "type": "monthly",
+  "month": 3, "year": 2026,
+  "format": "pdf",
+  "file_name":
+    "RiskGuard_Reporte_Mensual_
+     marzo_2026.pdf",
+  "status": "generated",
+  "size_kb": 14
+} (HTTP 201)</pre></td>
+      <td>El registro se agrega al arreglo local del store sin recargar la página. La generación y descarga del archivo PDF o Excel se realiza completamente en el cliente con jsPDF.</td>
+    </tr>
+    <tr>
+      <td><code>/generated_reports/{id}</code></td>
+      <td>Eliminar un reporte generado del historial</td>
+      <td><code>http://localhost:3000/api/v1/generated_reports/{id}</code></td>
+      <td><code>DELETE</code></td>
+      <td><code>DELETE /api/v1/generated_reports/DmNMTQ6</code></td>
+      <td><code>id</code> en la URL</td>
+      <td><pre>{} (HTTP 200)</pre></td>
+      <td>El store filtra el arreglo local eliminando el registro correspondiente. La acción requiere confirmación previa del usuario mediante un diálogo de confirmación.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Capturas de Interacción con Datos de Muestra**
+<h5 align="center">GET /api/v1/kpi_dashboard</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/zGRvRNXh/Captura-de-pantalla-2026-05-15-145344.png" width="500"/>
+</p>
+
+*Respuesta del endpoint con los cuatro indicadores KPI. Los estados `alert` y `danger` se visualizan en el dashboard mediante tags de color.*
+
+<h5 align="center">GET /api/v1/historical_trends</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/MGpQM44g/Captura-de-pantalla-2026-05-15-150618.png" width="500"/>
+</p>
+
+*Retorno de la evolución mensual de incidentes. Los datos se filtran por sector en el frontend para construir los datasets de la gráfica de línea.*
+
+<h5 align="center">GET /api/v1/critical_alerts</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/0QCLKQBw/Captura-de-pantalla-2026-05-15-152655.png" width="500"/>
+</p>
+
+*Listado de alertas críticas con estado `unresolved`. El frontend calcula el KPI de sectores críticos a partir de estos registros.*
+
+<h5 align="center">PATCH /api/v1/critical_alerts/ALERT_001</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/prwY2QBx/Whats-App-Image-2026-05-15-at-3-31-04-PM.jpg" width="500"/>
+</p>
+
+*Actualización del estado de la alerta a `resolved`. El store recalcula automáticamente los KPIs tras recibir la respuesta.*
+
+<h5 align="center">DELETE /api/v1/critical_alerts/ALERT_001</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/2590sZM2/Whats-App-Image-2026-05-15-at-3-33-34-PM.jpg" width="500"/>
+</p>
+
+*Eliminación de la alerta. Respuesta HTTP 200 con body vacío `{}`.*
+
+<h5 align="center">GET /api/v1/annual_ohs_plan</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/YCnN0wRy/Whats-App-Image-2026-05-15-at-3-35-29-PM.jpg" width="500"/>
+</p>
+
+*Plan anual con cumplimiento global del 72%, por debajo de la meta del 80%. El frontend muestra el indicador en amarillo con etiqueta "Aceptable".*
+
+<h5 align="center">GET /api/v1/predictive_indicators</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/yYrWSYq7/Whats-App-Image-2026-05-15-at-3-37-08-PM.jpg" width="500"/>
+</p>
+
+*Indicadores predictivos con sectores de tendencia creciente. `WAREHOUSE_B` aparece con tag rojo (`critical`) y `GAS_PLANT` con tag amarillo (`warning`).*
+
+<h5 align="center">GET /api/v1/historical_incident_records</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/5t9CwKPR/Whats-App-Image-2026-05-15-at-3-46-25-PM.jpg" width="500"/>
+</p>
+
+*Historial de incidentes de solo lectura. El frontend aplica filtros por sector, tipo y rango de fechas sobre los datos ya cargados.*
+
+<h5 align="center">GET /api/v1/generated_reports</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/WzFCWn4f/Whats-App-Image-2026-05-15-at-3-39-33-PM.jpg" width="500"/>
+</p>
+
+*Listado de reportes generados con tipo `monthly` y formato PDF.*
+
+<h5 align="center">POST /api/v1/generated_reports</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/8PBQqZHm/Whats-App-Image-2026-05-15-at-3-41-08-PM.jpg" width="500"/>
+</p>
+
+*Registro de un nuevo reporte. El servidor retorna HTTP 201 con el id generado automáticamente. El store agrega el registro al historial sin recargar la página.*
+
+<h5 align="center">DELETE /api/v1/generated_reports/Z4PRqZP</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/9MVyNFF1/Whats-App-Image-2026-05-15-at-3-43-05-PM-(1).jpg" width="500"/>
+</p>
+
+*Eliminación del reporte con id `Z4PRqZP`. Respuesta HTTP 200 con body vacío `{}`.*
 #### 5.2.2.7.Software Deployment Evidence for Sprint Review.
 #### 5.2.2.8.Team Collaboration Insights during Sprint
