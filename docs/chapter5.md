@@ -573,3 +573,28 @@ El equipo trabajó directamente sobre la rama main, realizando commits continuos
 <p align="center">
   <img src="https://i.postimg.cc/0Q22mY2x/Whats-App-Image-2026-04-26-at-1-13-41-PM.jpg" width="500"/>
 </p>
+
+### 5.2.2. Sprint 2
+#### 5.2.2.1.Sprint Planning 2.
+
+En este Sprint 2, el equipo se enfocó en el desarrollo integral del frontend de la aplicación RiskGuard, implementando las principales interfaces, dashboards y flujos interactivos dirigidos tanto a operarios como a supervisores y gerentes. Durante este Sprint se desarrollaron funcionalidades relacionadas con el registro y seguimiento de incidentes, visualización de alertas, dashboards de monitoreo, mapas de calor, historial de reportes, autenticación y navegación general del sistema. Asimismo, se trabajó con integraciones mediante Fake API para validar el comportamiento y experiencia de usuario antes de la integración definitiva con el backend. El trabajo colaborativo permitió abarcar gran parte de las User Stories priorizadas, garantizando una experiencia responsive, navegable y funcional en las distintas vistas de la plataforma.
+
+| **Campo** | **Detalle** |
+|----------|------------|
+| Sprint # | 2 |
+| Date | 2026-05-10 |
+| Time | 4:00 PM |
+| Location | Reunión virtual (Google Meet / Zoom) |
+| Prepared By | Flores Eusebio, Angel Thyago |
+| Attendees | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef  / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Sprint Goal | Our focus is on developing the frontend interfaces and interactive flows for RiskGuard across the bounded contexts of Account Generation and Authentication, Site / Area and Industrial Asset, Inspection / Unsafe Condition, Risk Assessment (IPERC), Mitigation, Monitoring / Dashboard, and Reports / Compliance. We believe it delivers an organized, realistic and user-centered experience to operators, supervisors and managers by allowing them to interact with the core functionalities of industrial risk prevention and monitoring before backend integration. This will be confirmed when users can seamlessly navigate through the implemented modules, register and monitor incidents, visualize dashboards and reports, and validate the usability and responsiveness of the application across desktop and mobile devices. |
+| Sprint n Velocity |    SP |
+| Sum of Story Points |  SP |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators.
+#### 5.2.2.3.Sprint Backlog 2.
+#### 5.2.2.4.Development Evidence for Sprint Review.
+#### 5.2.2.5.Execution Evidence for Sprint Review.
+#### 5.2.2.6.Services Documentation Evidence for Sprint Review.
+#### 5.2.2.7.Software Deployment Evidence for Sprint Review.
+#### 5.2.2.8.Team Collaboration Insights during Sprint
