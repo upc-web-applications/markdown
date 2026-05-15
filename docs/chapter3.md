@@ -2166,8 +2166,8 @@
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>El sistema muestra una gráfica de línea con la evolución mensual de incidentes de los últimos 12 meses.</li>
-        <li>La gráfica diferencia visualmente entre incidentes por tipo: condición insegura, casi-accidente, falla de equipo y otros.</li>
+        <li>El sistema muestra una gráfica de línea con la evolución mensual de incidentes.</li>
+        <li>La gráfica diferencia visualmente entre incidentes por tipo</li>
         <li>El gerente puede filtrar la gráfica por sector específico o ver la tendencia global de la planta.</li>
         <li>Si hay un mes con incremento significativo respecto al anterior, el sistema lo resalta con un indicador visual.</li>
         <li>La gráfica es exportable en formato PNG con un solo clic.</li>
@@ -2176,8 +2176,7 @@
       <ul>
         <li><b>Given</b> que el Gerente accede a la sección de tendencias,</li>
         <li><b>When</b> el sistema carga la gráfica,</li>
-        <li><b>Then</b> muestra la evolución mensual de los últimos 12 meses diferenciada por tipo de incidente,</li>
-        <li><b>And</b> resalta los meses con incrementos significativos.</li>
+        <li><b>Then</b> muestra la evolución mensual diferenciada por tipo de incidente,</li>
       </ul>
       <b>Escenario 2:</b> Filtrado por sector<br/>
       <ul>
@@ -2191,7 +2190,7 @@
         <li><b>Given</b> que el Gerente visualiza una gráfica de tendencias,</li>
         <li><b>When</b> hace clic en "Exportar imagen",</li>
         <li><b>Then</b> el sistema descarga la gráfica en formato PNG,</li>
-        <li><b>And</b> el archivo incluye el rango de fechas y el sector consultado en el nombre del archivo.</li>
+        <li><b>And</b> el archivo incluye el rango de fechas.</li>
       </ul>
     </td>
   </tr>
@@ -2541,7 +2540,6 @@
 </table>
 
 ---
-
 <table align="center">
   <tr>
     <td><b>User Story ID</b></td><td>TS53</td>
@@ -2553,35 +2551,35 @@
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/ejecutivo que retorne los indicadores clave de SST consolidados, para alimentar el dashboard ejecutivo del gerente en tiempo real.</td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/kpi_dashboard que retorna los indicadores clave de SST consolidados, para alimentar el tablero ejecutivo del gerente con datos actualizados en tiempo real.</td>
   </tr>
   <tr>
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>El endpoint retorna: total de incidentes activos, total de incidentes resueltos en el mes en curso, cantidad de sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST.</li>
-        <li>El endpoint no requiere parámetros y retorna siempre el estado actual de la planta.</li>
-        <li>Si no hay datos registrados, el endpoint retorna HTTP 200 con todos los indicadores en valor cero y un mensaje descriptivo.</li>
+        <li>El endpoint retorna un arreglo con los indicadores: incidentes activos, incidentes resueltos, sectores en estado crítico y porcentaje de cumplimiento del plan anual de SST.</li>
+        <li>Cada indicador incluye los campos: id, name, value, goal y status (optimal, alert o danger).</li>
+        <li>El endpoint no requiere parámetros y retorna siempre el estado actual registrado en la base de datos.</li>
+        <li>Si no hay registros, el endpoint retorna HTTP 200 con un arreglo vacío.</li>
         <li>El tiempo de respuesta es menor a 2 segundos.</li>
-        <li>El endpoint requiere autenticación con token de rol Gerente o Administrador; en caso contrario retorna HTTP 403.</li>
       </ol>
       <b>Escenario 1:</b> Solicitud exitosa con datos disponibles<br/>
       <ul>
-        <li><b>Given</b> que existen datos de incidentes y sectores registrados en el sistema,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/ejecutivo con token válido de rol Gerente,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y los cuatro indicadores calculados con sus valores actuales.</li>
+        <li><b>Given</b> que existen registros en la colección kpi_dashboard,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/kpi_dashboard,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de indicadores con sus valores y estados actuales.</li>
       </ul>
-      <b>Escenario 2:</b> Sin datos registrados en el sistema<br/>
+      <b>Escenario 2:</b> Sin datos registrados<br/>
       <ul>
-        <li><b>Given</b> que el sistema no tiene incidentes ni sectores con alertas registradas,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/ejecutivo,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200, todos los indicadores en cero y el mensaje "No hay datos de seguridad registrados en el sistema".</li>
+        <li><b>Given</b> que la colección kpi_dashboard no tiene registros,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/kpi_dashboard,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y un arreglo vacío.</li>
       </ul>
-      <b>Escenario 3:</b> Acceso sin rol autorizado<br/>
+      <b>Escenario 3:</b> Actualización reactiva de indicadores<br/>
       <ul>
-        <li><b>Given</b> que el token de autenticación corresponde a un usuario con rol Operario,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/ejecutivo,</li>
-        <li><b>Then</b> el endpoint retorna HTTP 403 con el mensaje "No tienes permisos para acceder a este recurso".</li>
+        <li><b>Given</b> que el frontend recibe los indicadores y el usuario resuelve un incidente o alerta,</li>
+        <li><b>When</b> el store ejecuta syncKPIs(),</li>
+        <li><b>Then</b> los valores de active_incidents, resolved_incidents y critical_sectors se recalculan automáticamente sin necesidad de recargar la página.</li>
       </ul>
     </td>
   </tr>
@@ -2600,35 +2598,35 @@
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/tendencias que retorne la evolución mensual de incidentes agrupados por tipo, para alimentar las gráficas de tendencia del dashboard ejecutivo del gerente.</td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/historical_trends que retorna la evolución mensual de incidentes agrupados por tipo y sector, para alimentar las gráficas de tendencia del tablero ejecutivo del gerente.</td>
   </tr>
   <tr>
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>El endpoint acepta como parámetros opcionales el identificador de sector y el número de meses hacia atrás (por defecto 12).</li>
-        <li>El endpoint retorna un arreglo con la cantidad de incidentes por mes desglosados por tipo de incidente.</li>
-        <li>Si se indica un sector que no existe, el endpoint retorna HTTP 404.</li>
-        <li>Si el número de meses enviado es menor a 1 o mayor a 24, el endpoint retorna HTTP 400 indicando el rango permitido.</li>
+        <li>El endpoint retorna un arreglo con registros mensuales que incluyen: month, year, total_incidents, incidents_by_type e incidents_by_sector.</li>
+        <li>El frontend filtra los datos por sector seleccionado directamente sobre el arreglo retornado por el endpoint.</li>
+        <li>Si no hay registros en la colección, el endpoint retorna HTTP 200 con un arreglo vacío.</li>
+        <li>Los meses con incremento significativo (más del 20% respecto al anterior) son resaltados visualmente por el frontend con un punto rojo en la gráfica.</li>
         <li>El tiempo de respuesta es menor a 2 segundos.</li>
       </ol>
-      <b>Escenario 1:</b> Solicitud global exitosa<br/>
+      <b>Escenario 1:</b> Solicitud exitosa con datos disponibles<br/>
       <ul>
-        <li><b>Given</b> que el sistema tiene incidentes registrados en los últimos meses,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/tendencias?meses=12 sin especificar sector,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de datos mensuales desglosados por tipo de toda la planta.</li>
+        <li><b>Given</b> que existen registros en la colección historical_trends,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/historical_trends,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de datos mensuales con su desglose por tipo y sector.</li>
       </ul>
-      <b>Escenario 2:</b> Solicitud filtrada por sector<br/>
+      <b>Escenario 2:</b> Filtrado por sector en el frontend<br/>
       <ul>
-        <li><b>Given</b> que el sector consultado existe y tiene registros históricos,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/tendencias?sector=almacen&meses=6,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de datos mensuales exclusivamente de ese sector.</li>
+        <li><b>Given</b> que el gerente selecciona un sector específico en el filtro del dashboard,</li>
+        <li><b>When</b> el frontend aplica el filtro sobre los datos ya cargados del endpoint,</li>
+        <li><b>Then</b> la gráfica se actualiza mostrando únicamente los datos del sector seleccionado sin realizar una nueva petición al servidor.</li>
       </ul>
-      <b>Escenario 3:</b> Parámetro de meses fuera de rango<br/>
+      <b>Escenario 3:</b> Vista por tipo de incidente<br/>
       <ul>
-        <li><b>Given</b> que el desarrollador envía un valor de meses fuera del rango permitido,</li>
-        <li><b>When</b> el endpoint procesa la solicitud,</li>
-        <li><b>Then</b> retorna HTTP 400 con el mensaje "El parámetro 'meses' debe estar entre 1 y 24".</li>
+        <li><b>Given</b> que el gerente activa el modo "por tipo" en la gráfica,</li>
+        <li><b>When</b> el frontend procesa el campo incidents_by_type de cada registro,</li>
+        <li><b>Then</b> la gráfica muestra una línea por cada tipo de incidente con colores diferenciados.</li>
       </ul>
     </td>
   </tr>
@@ -2643,40 +2641,39 @@
   </tr>
   <tr>
     <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Generación de Reporte de Auditoría</td>
+    <td colspan="3">Endpoint para Gestión de Reportes Generados</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero implementar el endpoint POST /api/v1/reportes/auditoria que reciba un rango de fechas y el formato de salida, para generar y retornar el documento de auditoría con los datos reales del sistema compatibles con la Ley N° 29783.</td>
+    <td colspan="3">Como desarrollador, quiero consumir los endpoints GET y POST /api/v1/generated_reports y DELETE /api/v1/generated_reports/{id} para registrar, listar y eliminar reportes generados, mientras la generación del documento PDF o Excel se realiza en el cliente con jsPDF.</td>
   </tr>
   <tr>
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>El endpoint acepta los parámetros: fecha_inicio, fecha_fin y formato (pdf o excel).</li>
-        <li>El endpoint retorna el archivo binario del documento generado con el Content-Type correspondiente al formato solicitado.</li>
-        <li>Si no hay datos en el rango indicado, retorna HTTP 204 sin contenido.</li>
-        <li>Si el formato enviado no es "pdf" ni "excel", retorna HTTP 400 indicando los formatos válidos.</li>
-        <li>Si fecha_inicio es posterior a fecha_fin, retorna HTTP 400 con mensaje descriptivo.</li>
-        <li>El tiempo de generación del documento es menor a 10 segundos.</li>
+        <li>El endpoint POST /api/v1/generated_reports registra el reporte con los campos: title, type, period, format, generated_date y file_url.</li>
+        <li>El endpoint GET /api/v1/generated_reports retorna el listado de todos los reportes generados ordenados por fecha descendente.</li>
+        <li>El endpoint DELETE /api/v1/generated_reports/{id} elimina el registro del reporte y retorna HTTP 200.</li>
+        <li>La generación del archivo PDF se realiza en el cliente con jsPDF y se descarga automáticamente en el dispositivo del gerente.</li>
+        <li>Si no hay datos en el rango de fechas indicado, el frontend muestra el mensaje "No hay datos registrados para el período seleccionado" sin generar el archivo.</li>
       </ol>
-      <b>Escenario 1:</b> Generación exitosa en PDF<br/>
+      <b>Escenario 1:</b> Generación y registro exitoso en PDF<br/>
       <ul>
         <li><b>Given</b> que existen incidentes registrados en el rango de fechas indicado,</li>
-        <li><b>When</b> el desarrollador realiza POST /api/v1/reportes/auditoria con fecha_inicio, fecha_fin y formato "pdf",</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y el archivo PDF generado con los datos del período.</li>
+        <li><b>When</b> el gerente hace clic en "Generar reporte" con formato PDF,</li>
+        <li><b>Then</b> el frontend genera el PDF con jsPDF, lo descarga automáticamente y registra el reporte en el endpoint POST /api/v1/generated_reports.</li>
       </ul>
-      <b>Escenario 2:</b> Rango de fechas sin datos<br/>
+      <b>Escenario 2:</b> Período sin datos<br/>
       <ul>
-        <li><b>Given</b> que no existen incidentes en el rango de fechas enviado,</li>
-        <li><b>When</b> el endpoint procesa la solicitud,</li>
-        <li><b>Then</b> retorna HTTP 204 sin contenido indicando que no hay datos para el período.</li>
+        <li><b>Given</b> que no existen incidentes en el rango de fechas seleccionado,</li>
+        <li><b>When</b> el gerente hace clic en "Generar reporte",</li>
+        <li><b>Then</b> el frontend muestra el mensaje "No hay datos registrados para el período seleccionado" y no genera ningún archivo ni realiza el POST al endpoint.</li>
       </ul>
-      <b>Escenario 3:</b> Rango de fechas inválido<br/>
+      <b>Escenario 3:</b> Eliminación de reporte generado<br/>
       <ul>
-        <li><b>Given</b> que el desarrollador envía una fecha_inicio posterior a fecha_fin,</li>
-        <li><b>When</b> el endpoint valida los parámetros,</li>
-        <li><b>Then</b> retorna HTTP 400 con el mensaje "La fecha de inicio no puede ser posterior a la fecha de fin".</li>
+        <li><b>Given</b> que el gerente visualiza la lista de reportes generados,</li>
+        <li><b>When</b> hace clic en el ícono de eliminar sobre un reporte,</li>
+        <li><b>Then</b> el frontend realiza DELETE /api/v1/generated_reports/{id} y el registro desaparece de la lista sin recargar la página.</li>
       </ul>
     </td>
   </tr>
@@ -2691,40 +2688,39 @@
   </tr>
   <tr>
     <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Gestión de Cuentas de Usuario</td>
+    <td colspan="3">Endpoint para Gestión de Alertas Críticas</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero implementar los endpoints POST /api/v1/usuarios y PATCH /api/v1/usuarios/{id}/estado para la creación y desactivación de cuentas, para que el módulo de administración pueda gestionar el acceso de todo el personal a la plataforma.</td>
+    <td colspan="3">Como desarrollador, quiero consumir los endpoints GET, PATCH y DELETE /api/v1/critical_alerts para listar, actualizar el estado y eliminar alertas críticas, para que el gerente pueda gestionar los riesgos no resueltos desde el tablero ejecutivo.</td>
   </tr>
   <tr>
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>El endpoint POST /api/v1/usuarios requiere: nombre, correo corporativo, rol y sector asignado para procesar el registro.</li>
-        <li>El sistema valida la unicidad del correo antes de registrar; si ya existe retorna HTTP 409.</li>
-        <li>Al crear la cuenta, el sistema genera y retorna una contraseña temporal hasheada en base de datos.</li>
-        <li>El endpoint PATCH /api/v1/usuarios/{id}/estado acepta los valores "activo" o "inactivo" para el campo estado.</li>
-        <li>Ambos endpoints requieren token con rol Administrador; de lo contrario retornan HTTP 403.</li>
+        <li>El endpoint GET /api/v1/critical_alerts retorna el listado de alertas con los campos: id, type, sector, risk_type, message, elapsed_hours, responsible_supervisor y status.</li>
+        <li>El endpoint PATCH /api/v1/critical_alerts/{id} actualiza el campo status de la alerta (unresolved, in_review, resolved) y retorna el registro actualizado.</li>
+        <li>El endpoint DELETE /api/v1/critical_alerts/{id} elimina la alerta y retorna HTTP 200.</li>
+        <li>Al actualizar o eliminar una alerta, el store recalcula automáticamente el KPI de critical_sectors mediante syncKPIs().</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
       </ol>
-      <b>Escenario 1:</b> Creación de cuenta exitosa<br/>
+      <b>Escenario 1:</b> Listado de alertas exitoso<br/>
       <ul>
-        <li><b>Given</b> que el correo corporativo enviado no existe en la base de datos,</li>
-        <li><b>When</b> el desarrollador realiza POST /api/v1/usuarios con los datos requeridos y token de Administrador,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 201 y retorna los datos de la cuenta creada junto con la contraseña temporal generada.</li>
+        <li><b>Given</b> que existen alertas registradas en la colección critical_alerts,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/critical_alerts,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de alertas con todos sus campos.</li>
       </ul>
-      <b>Escenario 2:</b> Correo duplicado en el registro<br/>
+      <b>Escenario 2:</b> Marcar alerta como resuelta<br/>
       <ul>
-        <li><b>Given</b> que el correo enviado ya pertenece a una cuenta registrada,</li>
-        <li><b>When</b> el endpoint procesa la solicitud de creación,</li>
-        <li><b>Then</b> retorna HTTP 409 con el mensaje "El correo corporativo ya está registrado en el sistema".</li>
+        <li><b>Given</b> que el gerente visualiza una alerta con status "unresolved" o "in_review",</li>
+        <li><b>When</b> hace clic en el ícono de check,</li>
+        <li><b>Then</b> el frontend realiza PATCH /api/v1/critical_alerts/{id} con status "resolved", actualiza el registro en el store y recalcula los KPIs sin recargar la página.</li>
       </ul>
-      <b>Escenario 3:</b> Desactivación de cuenta exitosa<br/>
+      <b>Escenario 3:</b> Eliminación de alerta<br/>
       <ul>
-        <li><b>Given</b> que la cuenta con el id indicado existe y está activa,</li>
-        <li><b>When</b> el desarrollador realiza PATCH /api/v1/usuarios/{id}/estado con el valor "inactivo",</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200 y actualiza el estado de la cuenta en la base de datos,</li>
-        <li><b>And</b> la cuenta queda inhabilitada para iniciar sesión desde ese momento.</li>
+        <li><b>Given</b> que el gerente hace clic en el ícono de eliminar sobre una alerta,</li>
+        <li><b>When</b> el frontend realiza DELETE /api/v1/critical_alerts/{id},</li>
+        <li><b>Then</b> la alerta desaparece de la tabla y el KPI de sectores críticos se actualiza automáticamente.</li>
       </ul>
     </td>
   </tr>
@@ -2739,39 +2735,39 @@
   </tr>
   <tr>
     <td><b>Título</b></td>
-    <td colspan="3">Endpoint para Obtener el Indicador de Cumplimiento del Plan Anual de SST</td>
+    <td colspan="3">Endpoint para Obtener el Plan Anual de SST y su Cumplimiento</td>
   </tr>
   <tr>
     <td><b>Descripción</b></td>
-    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/dashboard/cumplimiento-sst que retorne el porcentaje de cumplimiento del plan anual de SST desglosado por sector, para alimentar el indicador ejecutivo del dashboard del gerente en tiempo real.</td>
+    <td colspan="3">Como desarrollador, quiero consumir el endpoint GET /api/v1/annual_ohs_plan que retorne el plan anual de SST con el porcentaje de cumplimiento global y el desglose por sector, para alimentar el indicador de seguimiento del tablero ejecutivo del gerente.</td>
   </tr>
   <tr>
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>El endpoint retorna el porcentaje de cumplimiento global del plan anual de SST calculado en base a tickets cerrados versus planificados en el año en curso.</li>
-        <li>El endpoint también retorna el desglose de cumplimiento por sector ordenado de menor a mayor porcentaje.</li>
-        <li>Si el año en curso no tiene plan de SST registrado, el endpoint retorna HTTP 404 indicando que no se encontró el plan.</li>
-        <li>El endpoint requiere token con rol Gerente o Administrador; de lo contrario retorna HTTP 403.</li>
+        <li>El endpoint retorna el plan anual con los campos: id, year, overall_compliance, total_activities, completed_activities y details_by_sector.</li>
+        <li>El campo details_by_sector contiene un arreglo con el porcentaje de cumplimiento, actividades completadas y planificadas por cada sector.</li>
+        <li>El frontend clasifica cada sector visualmente: verde (≥80%), amarillo (50–79%) y rojo (&lt;50%) según su porcentaje de cumplimiento.</li>
+        <li>Si no hay plan registrado, el endpoint retorna HTTP 200 con un arreglo vacío y el frontend muestra el estado vacío correspondiente.</li>
         <li>El tiempo de respuesta es menor a 2 segundos.</li>
       </ol>
       <b>Escenario 1:</b> Solicitud exitosa con plan registrado<br/>
       <ul>
-        <li><b>Given</b> que el año en curso tiene un plan anual de SST registrado con actividades planificadas,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/cumplimiento-sst con token válido,</li>
-        <li><b>Then</b> el endpoint responde con HTTP 200, el porcentaje global de cumplimiento y el desglose por sector ordenado de menor a mayor.</li>
+        <li><b>Given</b> que existe un plan anual de SST registrado en la colección annual_ohs_plan,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/annual_ohs_plan,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200, el porcentaje global de cumplimiento y el desglose por sector.</li>
       </ul>
-      <b>Escenario 2:</b> Sin plan de SST registrado para el año<br/>
+      <b>Escenario 2:</b> Detalle de cumplimiento por sector desde el dashboard<br/>
       <ul>
-        <li><b>Given</b> que no existe un plan anual de SST registrado para el año en curso,</li>
-        <li><b>When</b> el endpoint procesa la solicitud,</li>
-        <li><b>Then</b> retorna HTTP 404 con el mensaje "No se encontró el plan anual de SST para el año en curso".</li>
+        <li><b>Given</b> que el gerente hace clic en el KPI de cumplimiento del plan SST,</li>
+        <li><b>When</b> el frontend procesa el campo details_by_sector del plan retornado,</li>
+        <li><b>Then</b> muestra un dialog con los sectores ordenados de menor a mayor cumplimiento con sus indicadores de color.</li>
       </ul>
-      <b>Escenario 3:</b> Acceso con rol no autorizado<br/>
+      <b>Escenario 3:</b> Sin plan registrado<br/>
       <ul>
-        <li><b>Given</b> que el token corresponde a un usuario con rol Supervisor,</li>
-        <li><b>When</b> el desarrollador realiza GET /api/v1/dashboard/cumplimiento-sst,</li>
-        <li><b>Then</b> el endpoint retorna HTTP 403 con el mensaje "No tienes permisos para acceder a este recurso".</li>
+        <li><b>Given</b> que la colección annual_ohs_plan no tiene registros,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/annual_ohs_plan,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 200 con arreglo vacío y el frontend muestra el estado vacío en la vista de seguimiento SST.</li>
       </ul>
     </td>
   </tr>
