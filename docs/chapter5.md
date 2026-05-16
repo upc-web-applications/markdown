@@ -2159,7 +2159,7 @@ Boundend context : Reportes y cumplimiento
 
 https://riskguard-7fe11.web.app
 
-#### Despliegue de Vercel + My Json Server
+#### Despliegue de Vercel + My Json Server para Usuario/Autenticacion
 Para el bounded context de User Authentication se realizó el despliegue del frontend utilizando Vercel, debido a su integración directa con GitHub y su capacidad para desplegar ramas específicas del repositorio. Asimismo, el backend simulado fue desplegado mediante My JSON Server, utilizando un archivo `db.json` publicado en un repositorio independiente.
 
 <p align="center">
@@ -2180,6 +2180,11 @@ Para el despliegue del frontend se creó un proyecto en Vercel llamado `riskguar
 
 https://riskguard-user-authentication.vercel.app/login
 
+#### Despliegue de Vercel + Render para Monitoreo/Dashboard
+
+Para el bounded context de **Monitoring Dashboard** se realizó el despliegue del frontend utilizando **Vercel**, debido a su integración directa con GitHub y su soporte para aplicaciones desarrolladas con **Vite + Vue.js**.
+
+Asimismo, el backend simulado fue desplegado mediante **Render** utilizando `json-server`. Inicialmente se evaluó el uso de **My JSON Server**, sin embargo, durante la validación del endpoint `/assets` se presentó una limitación al exponer los datos del archivo `db.json`. Por ello, se optó por desplegar una fake API en Render, permitiendo conservar la estructura completa de datos requerida por el dashboard.
 
 #### Despliegue de Firebase + Render para Risk Guard
 
