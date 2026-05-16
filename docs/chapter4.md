@@ -695,7 +695,7 @@ Login Gerente → Dashboard Ejecutivo → Revisión de KPIs → Clic en indicado
 
 **Unhappy Paths:**
 - Período sin datos suficientes (US52, Scenario 2): mensaje "No hay datos registrados para el período seleccionado" → no se genera archivo.
-- Fecha de inicio posterior a fecha de fin (TS55, Scenario 3): error de validación de rango → generación bloqueada.
+- Fecha de inicio posterior a fecha de fin (TS10, Scenario 3): error de validación de rango → generación bloqueada.
 - Indicadores predictivos sin tendencias crecientes (US48, Scenario 2): mensaje informativo "No se detectaron tendencias de riesgo creciente en el período consultado".
 
 ---

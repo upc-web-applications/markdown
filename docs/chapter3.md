@@ -122,7 +122,7 @@
       </ul>
       <b>Escenario 2:</b> Cierre con reporte en proceso<br/>
       <ul>
-        <li><b>Given</b> que el usurio tiene un formulario de reporte con datos ingresados sin enviar,</li>
+        <li><b>Given</b> que el usuario tiene un formulario de reporte con datos ingresados sin enviar,</li>
         <li><b>When</b> intenta cerrar sesión,</li>
         <li><b>Then</b> el sistema muestra el mensaje "Tienes un reporte sin enviar. ¿Deseas salir de todas formas?",</li>
         <li><b>And</b> ofrece las opciones "Continuar reportando" y "Salir sin guardar".</li>
@@ -1144,17 +1144,17 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US24</b></td>
+        <td>US24</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Autenticación Segura de Supervisor</b></td>
+        <td colspan="3">Autenticación Segura de Supervisor</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como usuario, quiero iniciar sesión en la plataforma utilizando mis credenciales preconfiguradas, para acceder a las funciones establecidas de acuerdo mi rol</td>
+        <td colspan="3">Como usuario, quiero iniciar sesión en la plataforma utilizando mis credenciales preconfiguradas, para acceder a las funciones establecidas de acuerdo mi rol</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1191,7 +1191,7 @@
                 <li><b>Then</b> el sistema bloquea temporalmente las peticiones para ese usuario,</li>
                 <li><b>And</b> muestra el mensaje indicando "Demasiados intentos fallidos. Por favor, intente nuevamente en 15 minutos".</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
@@ -1200,17 +1200,17 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US25</b></td>
+        <td>US25</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Configuración de Sectores y Áreas Operativas</b></td>
+        <td colspan="3">Configuración de Sectores y Áreas Operativas</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3">Como Supervisor de Seguridad, quiero administrar y gestionar los sectores fisicos de la planta, para georreferenciar correctamente las incidencias reportadas y organizar el catálogo de activos.</b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero administrar y gestionar los sectores fisicos de la planta, para georreferenciar correctamente las incidencias reportadas y organizar el catálogo de activos.</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1222,7 +1222,7 @@
                 <li>Los sectores creados deben listarse en una tabla con opciones para "Editar" o "Desactivar".</li>
                 <li>Un sector no se puede eliminar definitivamente si tiene historial de riesgos asociados; solo se puede cambiar su estado a "Inactivo" para que no aparezca en los nuevos formularios de los operarios</li>
             </ol>
-            <b>Escenario 1:</b> Registro exitoso de nuevo scetor<br/>
+            <b>Escenario 1:</b> Registro exitoso de nuevo sector<br/>
             <ul>
                 <li><b>Given</b> que el Supervisor se encuentra en el módulo de "Gestión de Sectores",</li>
                 <li><b>When</b> hace clic en "Nuevo Sector", ingresa un nombre en especifico y una descripcion,</li>
@@ -1243,7 +1243,7 @@
                 <li><b>Then</b> el sistema cambia el estado del sector a "Inactivo", conservando sus datos históricos de incidencias,</li>
                 <li><b>And</b> el sector aparece como "Inactivo" en la lista de sectores</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
@@ -1252,17 +1252,17 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US26</b></td>
+        <td>US26</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Configuración y Gestión de Activos Industriales</b></td>
+        <td colspan="3">Configuración y Gestión de Activos Industriales</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3">Como Supervisor de Seguridad, quiero registrar y administrar la maquinaria y equipos de la planta, para vincularlos a su scetor operativo correspondiente y permitir la asignación precisa de reportes de inspección a cada activo</b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero registrar y administrar la maquinaria y equipos de la planta, para vincularlos a su sector operativo correspondiente y permitir la asignación precisa de reportes de inspección a cada activo</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1296,7 +1296,7 @@
                 <li><b>Then</b> el sistema actualiza la ubicación del activo en los registros,</li>
                 <li><b>And</b> mantiene intacto el historial de reportes previos generados en su ubicación original</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
@@ -1305,17 +1305,17 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US27</b></td>
+        <td>US27</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Gestión y Administración de Personal Técnico</b></td>
+        <td colspan="3">Gestión y Administración de Personal Técnico</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3">Como Supervisor de Seguridad, quiero registrar y administrar al personal de mantenimiento en el sistema, para disponer de una lista actualizada de técnicos calificados a quienes delegar los tickets de acción correctiva</b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero registrar y administrar al personal de mantenimiento en el sistema, para disponer de una lista actualizada de técnicos calificados a quienes delegar los tickets de acción correctiva</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1348,7 +1348,7 @@
                 <li><b>Then</b> el sistema actualiza el estado del técnico a "Inactivo",</li>
                 <li><b>And</b> lo oculta de la lista de personal disponible para nuevas asignaciones, manteniendo intactos los registros de sus trabajos previos</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
@@ -1357,17 +1357,17 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US28</b></td>
+        <td>US28</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Asignación de Tickets de Acción Correctiva</b></td>
+        <td colspan="3">Asignación de Tickets de Acción Correctiva</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3">Como Supervisor de Seguridad, quiero asignar un ticket de incidente a un técnico de mantenimiento específico, para delegar la responsabilidad de la reparación y cambiar el estado de la alerta a un proceso de mitigación activo.</b></td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero asignar un ticket de incidente a un técnico de mantenimiento específico, para delegar la responsabilidad de la reparación y cambiar el estado de la alerta a un proceso de mitigación activo.</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1399,7 +1399,7 @@
                 <li><b>Then</b> el sistema actualiza al responsable activo de la tarea,</li>
                 <li><b>And</b> añade un registro en el historial detallando la transferencia de responsabilidad entre ambos técnicos.</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
@@ -1408,17 +1408,17 @@
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US29</b></td>
+        <td>US29</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Exploración Sectorizada y Filtrado de Alertas Activas</b></td>
+        <td colspan="3">Exploración Sectorizada y Filtrado de Alertas Activas</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero acceder a las alertas activas seleccionando previamente un sector específico, para enfocar mi análisis en un sector a la vez y aplicar filtros de riesgo sobre sus incidentes correspondientes.</td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero acceder a las alertas activas seleccionando previamente un sector específico, para enfocar mi análisis en un sector a la vez y aplicar filtros de riesgo sobre sus incidentes correspondientes.</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1437,7 +1437,7 @@
                 <li><b>Then</b> el sistema procesa la solicitud y retorna únicamente los tickets de incidentes asociados a dicho sector,</li>
                 <li><b>And</b> mantiene ocultas las alertas pertenecientes a otras áreas operativas</li>
             </ul>
-            <b>Escenario 2:</b> Filtrado dentro de un sector específicos<br/>
+            <b>Escenario 2:</b> Filtrado dentro de un sector específico<br/>
             <ul>
                 <li><b>Given</b> que el sistema muestra todas las alertas correspondientes a un sector en especifico,</li>
                 <li><b>When</b> el supervisor aplica algun filtro secundario,</li>
@@ -1451,24 +1451,24 @@
                 <li><b>Then</b> el sistema procesa la consulta sin retornar tickets de incidentes,</li>
                 <li><b>And</b> emite el mensaje informativo indicando que el sector opera dentro de los parámetros seguros y no posee alertas activas</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US30</b></td>
+        <td>US30</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Verificación y Cierre de Medidas de Control</b></td>
+        <td colspan="3">Verificación y Cierre de Medidas de Control</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero evaluar la efectividad de las medidas correctivas implementadas, para garantizar que el riesgo ha sido mitigado satisfactoriamente antes de proceder al cierre definitivo del incidente en el sistema</td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero evaluar la efectividad de las medidas correctivas implementadas, para garantizar que el riesgo ha sido mitigado satisfactoriamente antes de proceder al cierre definitivo del incidente en el sistema</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1498,25 +1498,25 @@
                 <li><b>Given</b> que el supervisor decide rechazar una medida de control implementada,</li>
                 <li><b>When</b> intenta procesar el veredicto de rechazo sin registrar el comentario de justificación,</li>
                 <li><b>Then</b> el sistema impide la actualización del estado del ticket,</li>
-                <li><b>And</b> emite una mensaje indicando que le falto sustentar el motivo del rechazo.</li>
+                <li><b>And</b> emite una mensaje indicando que debe ingresar una justificación del motivo del rechazo.</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US31</b></td>
+        <td>US31</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Visualización del Mapa de Calor Operativo</b></td>
+        <td colspan="3">Visualización del Mapa de Calor Operativo</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero visualizar la distribución de los niveles de riesgo de los sectores de la planta, para identificar de forma inmediata qué sectores requieren intervención prioritaria</td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero visualizar la distribución de los niveles de riesgo de los sectores de la planta, para identificar de forma inmediata qué sectores requieren intervención prioritaria</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1549,24 +1549,24 @@
                 <li><b>Then</b> el sistema recalcula el estado general del sector,</li>
                 <li><b>And</b> actualiza el indicador hacia un estado de riesgo tolerable o normal.</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US32</b></td>
+        <td>US32</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Notificación Externa Automática por Incidentes Críticos</b></td>
+        <td colspan="3">Notificación Externa Automática por Incidentes Críticos</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero recibir notificaciones automáticas a través de canales externos cuando el sistema registre un incidente de riesgo crítico, para garantizar un tiempo de respuesta inmediato ante emergencias sin requerir un monitoreo activo de la plataforma</td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero recibir notificaciones automáticas a través de canales externos cuando el sistema registre un incidente de riesgo crítico, para garantizar un tiempo de respuesta inmediato ante emergencias sin requerir un monitoreo activo de la plataforma</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1590,24 +1590,24 @@
                 <li><b>Then</b> el sistema almacena el incidente para su revisión en la plataforma,</li>
                 <li><b>And</b> omite el disparo del evento de notificación hacia el correo electrónico externo del supervisor.</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US33</b></td>
+        <td>US33</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Escalamiento Automático por Incumplimiento de SLA</b></td>
+        <td colspan="3">Escalamiento Automático por Incumplimiento de SLA</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero que el sistema escale automáticamente los tickets de incidentes que superen su tiempo máximo de resolución permitido (SLA), para alertar a la gerencia sobre posibles negligencias operativas y evitar la materialización de accidentes graves</td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero que el sistema escale automáticamente los tickets de incidentes que superen su tiempo máximo de resolución permitido (SLA), para alertar a la gerencia sobre posibles negligencias operativas y evitar la materialización de accidentes graves</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1633,24 +1633,24 @@
                 <li><b>Then</b> el sistema detiene el contador de SLA para dicho ticket,</li>
                 <li><b>And</b> omite cualquier protocolo de escalamiento o notificación gerencial.</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US34</b></td>
+        <td>US34</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Programación de Mantenimiento Preventivo de Activos</b></td>
+        <td colspan="3">Programación de Mantenimiento Preventivo de Activos</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero programar tickets de mantenimiento preventivo sobre máquinas específicas independientes de su nivel de riesgo actual, para aislar temporalmente el activo y realizar revisiones periódicas que eviten fallas críticas futuras</td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero programar tickets de mantenimiento preventivo sobre máquinas específicas independientes de su nivel de riesgo actual, para aislar temporalmente el activo y realizar revisiones periódicas que eviten fallas críticas futuras</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1683,24 +1683,24 @@
                 <li><b>Then</b> el sistema actualiza el estado del activo devolviéndolo a operativo,</li>
                 <li><b>And</b> rehabilita la generación de alertas sobre el equipo.</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
 <table align="center">
     <tr>
         <td><b>User Story ID</b></td>
-        <td>US35</b></td>
+        <td>US35</td>
         <td><b>Epic ID</b></td>
-        <td>EP03</b></td>
+        <td>EP03</td>
     </tr>
     <tr>
         <td><b>Título</b></td>
-        <td colspan="3">Generación y Exportación de Reportes de Cumplimiento</b></td>
+        <td colspan="3">Generación y Exportación de Reportes de Cumplimiento</td>
     </tr>
     <tr>
         <td><b>Descripción</b></td>
-        <td colspan="3"></b>Como Supervisor de Seguridad, quiero generar y exportar reportes consolidados sobre el historial de incidentes y el rendimiento operativo, para documentar el cumplimiento normativo de la planta y sustentar la toma de decisiones gerenciales</td>
+        <td colspan="3">Como Supervisor de Seguridad, quiero generar y exportar reportes consolidados sobre el historial de incidentes y el rendimiento operativo, para documentar el cumplimiento normativo de la planta y sustentar la toma de decisiones gerenciales</td>
     </tr>
     <tr>
         <td colspan="4">
@@ -1733,7 +1733,7 @@
                 <li><b>Then</b> el sistema extrae los registros correspondientes,</li>
                 <li><b>And</b> exporta un documento que contiene exclusivamente el historial de tickets y mantenimientos asociados a dicha ubicación.</li>
             </ul>
-        </b></td>
+        </td>
     </tr>
 </table>
 
@@ -1999,7 +1999,7 @@
         <li><b>Then</b> el sistema muestra el porcentaje de cumplimiento desglosado por sector,</li>
         <li><b>And</b> ordena los sectores de menor a mayor cumplimiento.</li>
       </ul>
-      <b>Escenario 3:</b> Evolución mensual del cumplimiento<br/>
+      <b>Escenario 4:</b> Evolución mensual del cumplimiento<br/>
       <ul>
         <li><b>Given</b> que el Gerente visualiza la sección de cumplimiento mensual,</li>
         <li><b>When</b> el sistema procesa el campo monthly_compliance del plan anual,</li>
@@ -3186,7 +3186,7 @@
       </ol>
       <b>Escenario 1:</b> Comprensión del flujo de trabajo integral<br/>
       <ul>
-        <li><b>Given</b> 3l viistante desea conocer cómo se opera con el software en el día a día,</li>
+        <li><b>Given</b> el visitante desea conocer cómo se opera con el software en el día a día,</li>
         <li><b>When</b> consulta la sección "Diseñado para el piso industrial",</li>
         <li><b>Then</b> el sistema describe visualmente la secuencia lógica de participación entre el personal de campo y la plataforma,</li>
         <li><b>And</b> permite al usuario entender cómo se cierra el ciclo desde el reporte hasta la actuación del supervisor.</li>
@@ -3221,8 +3221,8 @@
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>Se debe explicar el flujo de 3 pasos (Operarios reportan desde la aplicacion web, El sistema analiza los datos, Supervisores toman accion preventiva).</li>
-        <li>Se debe incluir una sección de estadísticas titulada "La realidad de la industria peruana" con datos que respaldan la necesidad de la aplicacion web RiskGuard.</li>
+        <li>La página debe presentar una sección que describa las herramientas y funcionalidades disponibles para cada nivel jerárquico: Operarios, Supervisores y Gerentes.</li>
+        <li>El visitante debe poder identificar claramente qué beneficios obtiene cada rol al usar RiskGuard.</li>
       </ol>
       <b>Escenario 1:</b> Identificación de herramientas por nivel jerárquico<br/>
       <ul>
@@ -3260,7 +3260,7 @@
       </ol>
       <b>Escenario 1:</b> Intención de inicio de uso del software<br/>
       <ul>
-        <li><b>Given</b> que el visitanto ha terminado de informarse y desea probar la solución,</li>
+        <li><b>Given</b> que el visitante ha terminado de informarse y desea probar la solución,</li>
         <li><b>When</b> localiza y presiona el botón de "Iniciar prueba gratuita",</li>
         <li><b>Then</b> el sistema facilita el punto de partida para la conversión, guiando al usuario hacia el siguiente paso de adquisición.</li>
       </ul>
@@ -3280,7 +3280,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS01</td>
+    <td><b>Technical Story ID</b></td><td>TS01</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -3329,7 +3329,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS02</td>
+    <td><b>Technical Story ID</b></td><td>TS02</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -3375,7 +3375,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS03</td>
+    <td><b>Technical Story ID</b></td><td>TS03</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -3421,7 +3421,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS04</td>
+    <td><b>Technical Story ID</b></td><td>TS04</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -3466,7 +3466,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS05</td>
+    <td><b>Technical Story ID</b></td><td>TS05</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -3505,7 +3505,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS06</td>
+    <td><b>Technical Story ID</b></td><td>TS06</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -3544,7 +3544,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS07</td>
+    <td><b>Technical Story ID</b></td><td>TS07</td>
     <td><b>Epic ID</b></td><td>EP02</td>
   </tr>
   <tr>
@@ -3588,7 +3588,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS08</td>
+    <td><b>Technical Story ID</b></td><td>TS08</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -3635,7 +3635,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS09</td>
+    <td><b>Technical Story ID</b></td><td>TS09</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -3682,7 +3682,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS10</td>
+    <td><b>Technical Story ID</b></td><td>TS10</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -3729,7 +3729,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS11</td>
+    <td><b>Technical Story ID</b></td><td>TS11</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
@@ -3776,7 +3776,7 @@
 
 <table align="center">
   <tr>
-    <td><b>User Story ID</b></td><td>TS12</td>
+    <td><b>Technical Story ID</b></td><td>TS12</td>
     <td><b>Epic ID</b></td><td>EP04</td>
   </tr>
   <tr>
