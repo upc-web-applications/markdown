@@ -2224,13 +2224,31 @@ Para el despliegue del frontend se creó un proyecto en Vercel llamado `riskguar
   <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/vercel-deploy.png?raw=true" width="500"/>
 </p>
 
-https://riskguard-user-authentication.vercel.app/login
+FrontEnd: https://riskguard-user-authentication.vercel.app/login
+Backend (My Json Server): https://my-json-server.typicode.com/upc-web-applications/riskguard-user-authentication-api
 
 #### Despliegue de Vercel + Render para Monitoreo/Dashboard
 
 Para el bounded context de **Monitoring Dashboard** se realizó el despliegue del frontend utilizando **Vercel**, debido a su integración directa con GitHub y su soporte para aplicaciones desarrolladas con **Vite + Vue.js**.
 
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/deploy-monitoreo.png?raw=true" width="500"/>
+</p>
+
+Para el backend simulado se creó un repositorio independiente llamado:`riskguard-monitoring-dashboard-api`. Este repositorio contiene los archivos necesarios para levantar la fake API:
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/db-json-monitoreo.png?raw=true" width="500"/>
+</p>
+
 Asimismo, el backend simulado fue desplegado mediante **Render** utilizando `json-server`. Inicialmente se evaluó el uso de **My JSON Server**, sin embargo, durante la validación del endpoint `/assets` se presentó una limitación al exponer los datos del archivo `db.json`. Por ello, se optó por desplegar una fake API en Render, permitiendo conservar la estructura completa de datos requerida por el dashboard.
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/json-srver-monitoreo.png?raw=true" width="500"/>
+</p>
+
+FrontEnd: https://riskguard-monitoring-dashboard.vercel.app
+Backend (Render): https://riskguard-monitoring-dashboard-api.onrender.com (Primero cargar la Fake API)
 
 #### Despliegue de Firebase + Render para Risk Guard
 
