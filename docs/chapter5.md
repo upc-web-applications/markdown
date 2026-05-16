@@ -1270,6 +1270,45 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 </p>
 
 #### Monitoring / Dashboard BC 
+<h5 align="center">1. Visualización de Mapa de Calor para Supervisores</h5>
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/mapa%20de%20calor.png?raw=true" width="500"/>
+</p>
+
+*Vista principal del supervisor con acceso al mapa de calor por sectores*
+
+<h5 align="center">1. Visualización de la bandeja de tickets</h5>
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/bandeja-tickets.png?raw=true" width="500"/>
+</p>
+
+*Vista principal del supervisor en la bandeja de tickets*
+
+<h5 align="center">1. Visualización de gestion de activos</h5>
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/gestion-activos.png?raw=true" width="500"/>
+</p>
+
+*Vista principal del supervisor en la gestion de activos*
+
+<h5 align="center">1. Visualización del mapa de sectores</h5>
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/mapa-sectores.png?raw=true" width="500"/>
+</p>
+
+*Vista principal del supervisor en los reportes y cumplimiento*
+
+<h5 align="center">1. Visualización del directorio tecnico</h5>
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/reportes.png?raw=true" width="500"/>
+</p>
+
+*Vista principal del supervisor en los reportes y cumplimiento*
 
 #### Reports / Compliance BC
 <h5 align="center">1. Visualización de Inicio del Gerente</h5>
