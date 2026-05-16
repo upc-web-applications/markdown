@@ -2122,6 +2122,10 @@ npm run build
 firebase deploy
 ```
 
+<p align="center">
+  <img src="images/bc/pa-bc-mi.png" width="500"/>
+</p>
+
 El directorio de publicación fue configurado como `dist` en `firebase.json`, y la aplicación fue configurada como Single Page App (SPA) con rewrites para que todas las rutas apunten a `index.html`.
 
 ##### Configuración de variables de entorno
