@@ -1145,7 +1145,34 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 
 #### Site / Area and Industrial Asset BC
 
+<h5 align="center">1. Visualización Gestion de sedes</h5>
+
+<img src="images/Operario-sedes.png" width="500">
+
+*Vista orientada al registro de las sedes activos o inactivos.*
+
+<h5 align="center">1. Visualización de las Areas </h5>
+
+<img src="images/operario-areas.png" width="500">
+
+*Vista orientada al registro del estado de las areas y su nivel de riesgo.*
+
+
 #### Inspection / Unsafe Condition BC
+
+<h5 align="center">1. Visualización de las Inspecciones</h5>
+
+<img src="images/Operario-inspecciones.png" width="500">
+
+*Este conexto maneja el registro de incidentes.*
+
+
+<h5 align="center">1. Visualización de los activos</h5>
+
+<img src="images/operario-activos.png" width="500">
+
+*Vista orientada al registro de los activos industriales como máquinas y equipos vinculados a cada área.*
+
 
 #### Risk Assessment (IPERC) BC  
 
