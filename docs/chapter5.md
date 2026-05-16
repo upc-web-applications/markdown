@@ -1430,4 +1430,46 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 
 *Eliminación del reporte con id `Z4PRqZP`. Respuesta HTTP 200 con body vacío `{}`.*
 #### 5.2.2.7.Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 2 se realizó el despliegue completo de la aplicación RiskGuard, tanto del frontend como del backend simulado. El frontend, desarrollado en Vue 3 con Vite, fue desplegado  en  Vercel y Firebase
+
+#### Despliegue de Firebase + render  para Reportes y Cumplimiento
+Firebase Hosting. El backend simulado con json-server fue desplegado en **Render**, exponiendo los endpoints REST consumidos por la aplicación.
+Backend – Render
+Se creó un repositorio independiente con el archivo `db.json` y el `package.json` configurado con el comando de inicio:
+
+<p align="center">
+  <img src="https://i.postimg.cc/52dmYFXh/Whats-App-Image-2026-05-15-at-8-51-24-PM-(2).jpg" width="500"/>
+</p>
+
+El servicio fue desplegado como un Web Service en Render, obteniendo la URL base:
+`https://db-server-risk-2.onrender.com`
+Los endpoints disponibles incluyen: `/kpi_dashboard`, `/critical_alerts`, `/predictive_indicators`, `/generated_reports`, `/monthly_reports`, `/historical_incident_records`, `/historical_trends` y `/annual_ohs_plan`.
+
+<p align="center">
+  <img src="https://i.postimg.cc/g0fMDBjY/Whats-App-Image-2026-05-15-at-9-12-09-PM.jpg" width="500"/>
+</p>
+
+Luego creamos nuestro proyecto en firebase 
+<p align="center">
+  <img src="https://i.postimg.cc/pLbBhnm3/Whats-App-Image-2026-05-15-at-8-58-51-PM.jpg" width="500"/>
+</p>
+
+Luego ejecutamos los siguientes comandos para el despliegue:
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init hosting
+npm run build
+firebase deploy
+```
+<p align="center">
+  <img src="https://i.postimg.cc/7Z8NGT5d/Whats-App-Image-2026-05-15-at-8-58-15-PM.jpg" width="500"/>
+</p>
+
+El directorio de publicación fue configurado como `dist` en `firebase.json`, y la aplicación fue configurada como Single Page App (SPA). La URL de producción obtenida fue:
+Boundend context : Reportes y cumplimiento
+
+https://riskguard-7fe11.web.app
 #### 5.2.2.8.Team Collaboration Insights during Sprint
