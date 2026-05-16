@@ -1501,6 +1501,313 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
     <td>Este endpoint registra intentos exitosos, credenciales incorrectas, cuentas bloqueadas, correos no registrados y cierres de sesión para mantener trazabilidad del acceso.</td>
   </tr>
 </tbody>
+<tbody>
+  <tr>
+    <td><code>/heatMapZones</code></td>
+    <td>Listar sectores y datos del mapa de calor</td>
+    <td><code>http://localhost:3002/api/v1/heatMapZones</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/heatMapZones</code></td>
+    <td>No requiere parámetros</td>
+    <td><pre>[
+  {
+    "id": 1,
+    "code": "SEC-001",
+    "name": "Calderas",
+    "description": "Sector de calderas y sistemas de presion.",
+    "heatIndex": 94,
+    "riskLevel": "Critico",
+    "status": "Activo"
+  }
+]</pre></td>
+    <td>El frontend usa este recurso para cargar el mapa de sectores, el mapa de calor y el contador de sectores totales. Cada sector incluye su nivel de riesgo, estado operativo y datos descriptivos.</td>
+  </tr>
+
+  <tr>
+    <td><code>/heatMapZones</code></td>
+    <td>Registrar nuevo sector operativo</td>
+    <td><code>http://localhost:3002/api/v1/heatMapZones</code></td>
+    <td><code>POST</code></td>
+    <td><code>POST /api/v1/heatMapZones</code></td>
+    <td>Body: <code>{ "code", "name", "description", "heatIndex", "riskLevel", "status" }</code></td>
+    <td><pre>{
+  "id": 6,
+  "code": "SEC-006",
+  "name": "Hornos",
+  "description": "Sector de hornos industriales.",
+  "heatIndex": 0,
+  "riskLevel": "Bajo",
+  "status": "Activo"
+}</pre></td>
+    <td>Permite crear sectores desde la sección Mapa de Sectores. El código del sector se genera automáticamente en el frontend antes de enviar el registro al fake API.</td>
+  </tr>
+
+  <tr>
+    <td><code>/heatMapZones/{id}</code></td>
+    <td>Actualizar datos de un sector</td>
+    <td><code>http://localhost:3002/api/v1/heatMapZones/{id}</code></td>
+    <td><code>PUT</code></td>
+    <td><code>PUT /api/v1/heatMapZones/1</code></td>
+    <td><code>id</code> en la URL. Body con los datos actualizados del sector.</td>
+    <td><pre>{
+  "id": 1,
+  "code": "SEC-001",
+  "name": "Calderas Norte",
+  "description": "Sector actualizado.",
+  "heatIndex": 94,
+  "riskLevel": "Critico",
+  "status": "Activo"
+}</pre></td>
+    <td>Se utiliza para editar el nombre, descripción y estado del sector. El código permanece como dato de referencia y no se modifica desde el formulario.</td>
+  </tr>
+
+  <tr>
+    <td><code>/tickets</code></td>
+    <td>Listar tickets de acción correctiva</td>
+    <td><code>http://localhost:3002/api/v1/tickets</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/tickets</code></td>
+    <td>No requiere parámetros. Los filtros por sector, riesgo y estado se aplican en el frontend.</td>
+    <td><pre>[
+  {
+    "id": 1,
+    "code": "T-001",
+    "sector": "Calderas",
+    "assetName": "Caldera B-12",
+    "incidentType": "Fuga de presion",
+    "riskLevel": "Critico",
+    "assignedTechnician": "",
+    "status": "Pendiente",
+    "slaStatus": "En tiempo"
+  }
+]</pre></td>
+    <td>Este endpoint alimenta la Bandeja de Tickets y el dashboard. El frontend muestra los tickets pendientes, en progreso, el estado SLA y permite ingresar a la asignación de técnico.</td>
+  </tr>
+
+  <tr>
+    <td><code>/tickets/{id}</code></td>
+    <td>Asignar o reasignar técnico a un ticket</td>
+    <td><code>http://localhost:3002/api/v1/tickets/{id}</code></td>
+    <td><code>PUT</code></td>
+    <td><code>PUT /api/v1/tickets/1</code></td>
+    <td><code>id</code> en la URL. Body con el ticket actualizado.</td>
+    <td><pre>{
+  "id": 1,
+  "code": "T-001",
+  "sector": "Calderas",
+  "assignedTechnician": "Luis Carpio",
+  "requiredSpecialty": "Calderas",
+  "assignmentDetails": "Revisar valvula principal.",
+  "status": "En Progreso"
+}</pre></td>
+    <td>Se usa cuando el supervisor asigna una acción correctiva. Al guardar, el ticket queda asociado a un técnico y su estado cambia a En Progreso.</td>
+  </tr>
+
+  <tr>
+    <td><code>/technicians</code></td>
+    <td>Listar técnicos disponibles</td>
+    <td><code>http://localhost:3002/api/v1/technicians</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/technicians</code></td>
+    <td>No requiere parámetros</td>
+    <td><pre>[
+  {
+    "id": 1,
+    "code": "TEC-01",
+    "firstName": "Ana",
+    "lastName": "Paredes",
+    "fullName": "Ana Paredes",
+    "specialty": "Mecanica industrial",
+    "status": "Activo"
+  }
+]</pre></td>
+    <td>El frontend usa esta información en el Directorio Técnico y en el formulario de asignación de tickets, mostrando principalmente técnicos activos.</td>
+  </tr>
+
+  <tr>
+    <td><code>/technicians</code></td>
+    <td>Registrar nuevo técnico</td>
+    <td><code>http://localhost:3002/api/v1/technicians</code></td>
+    <td><code>POST</code></td>
+    <td><code>POST /api/v1/technicians</code></td>
+    <td>Body: <code>{ "code", "firstName", "lastName", "fullName", "specialty", "email", "phone", "status" }</code></td>
+    <td><pre>{
+  "id": 4,
+  "code": "TEC-04",
+  "firstName": "Diego",
+  "lastName": "Ramos",
+  "fullName": "Diego Ramos",
+  "specialty": "Electricidad",
+  "status": "Activo"
+}</pre></td>
+    <td>Permite crear técnicos desde el Directorio Técnico. El código se asigna automáticamente y el nuevo técnico puede aparecer luego en la lista de asignación de tickets.</td>
+  </tr>
+
+  <tr>
+    <td><code>/technicians/{id}</code></td>
+    <td>Actualizar datos de un técnico</td>
+    <td><code>http://localhost:3002/api/v1/technicians/{id}</code></td>
+    <td><code>PUT</code></td>
+    <td><code>PUT /api/v1/technicians/1</code></td>
+    <td><code>id</code> en la URL. Body con los datos actualizados del técnico.</td>
+    <td><pre>{
+  "id": 1,
+  "code": "TEC-01",
+  "firstName": "Ana",
+  "lastName": "Paredes",
+  "fullName": "Ana Paredes",
+  "specialty": "Mecanica industrial",
+  "status": "Activo"
+}</pre></td>
+    <td>Se utiliza para editar datos del técnico. El código técnico se mantiene bloqueado en la interfaz para conservar la trazabilidad.</td>
+  </tr>
+
+  <tr>
+    <td><code>/assets</code></td>
+    <td>Listar activos industriales</td>
+    <td><code>http://localhost:3002/api/v1/assets</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/assets</code></td>
+    <td>No requiere parámetros</td>
+    <td><pre>[
+  {
+    "id": 1,
+    "name": "Caldera de Vapor",
+    "code": "ACT-001",
+    "brand": "Fulton",
+    "sector": "Calderas",
+    "riskLevel": "Critico",
+    "lastReview": "2026-03-15",
+    "status": "Critico"
+  }
+]</pre></td>
+    <td>Alimenta la sección Gestión de Activos y el contador de activos totales mostrado también en Mapa de Sectores.</td>
+  </tr>
+
+  <tr>
+    <td><code>/assets</code></td>
+    <td>Registrar nuevo activo industrial</td>
+    <td><code>http://localhost:3002/api/v1/assets</code></td>
+    <td><code>POST</code></td>
+    <td><code>POST /api/v1/assets</code></td>
+    <td>Body: <code>{ "name", "code", "brand", "sector", "riskLevel", "lastReview", "status" }</code></td>
+    <td><pre>{
+  "id": 5,
+  "name": "Compresor Industrial",
+  "code": "ACT-005",
+  "brand": "Atlas Copco",
+  "sector": "Ensamblaje",
+  "riskLevel": "Medio",
+  "lastReview": "2026-05-15",
+  "status": "Operativo"
+}</pre></td>
+    <td>Permite registrar activos desde Gestión de Activos. El código se genera automáticamente y no es ingresado manualmente por el usuario.</td>
+  </tr>
+
+  <tr>
+    <td><code>/assets/{id}</code></td>
+    <td>Actualizar datos o estado de un activo</td>
+    <td><code>http://localhost:3002/api/v1/assets/{id}</code></td>
+    <td><code>PUT</code></td>
+    <td><code>PUT /api/v1/assets/3</code></td>
+    <td><code>id</code> en la URL. Body con el activo actualizado.</td>
+    <td><pre>{
+  "id": 3,
+  "name": "Tanque de Acido Sulfurico",
+  "code": "ACT-003",
+  "brand": "ChemTank",
+  "sector": "Quimicos",
+  "riskLevel": "Alto",
+  "lastReview": "2026-05-18",
+  "status": "Operativo"
+}</pre></td>
+    <td>Se usa para editar activos, pasarlos a mantenimiento o reactivarlos. Al reactivar un activo, la fecha de última revisión se actualiza con la fecha de reactivación del mantenimiento.</td>
+  </tr>
+
+  <tr>
+    <td><code>/preventiveMaintenances</code></td>
+    <td>Listar mantenimientos preventivos</td>
+    <td><code>http://localhost:3002/api/v1/preventiveMaintenances</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/preventiveMaintenances</code></td>
+    <td>No requiere parámetros</td>
+    <td><pre>[
+  {
+    "id": 3,
+    "assetId": 3,
+    "assetName": "Tanque de Acido Sulfurico",
+    "technician": "Luis Carpio",
+    "scheduledDate": "2026-05-14",
+    "reactivationDate": "2026-05-18",
+    "status": "En Mantenimiento"
+  }
+]</pre></td>
+    <td>Permite conocer qué activos tienen mantenimiento programado, finalizado o activo. Se usa para decidir si un activo debe mostrar acción de edición o reactivación.</td>
+  </tr>
+
+  <tr>
+    <td><code>/preventiveMaintenances</code></td>
+    <td>Programar mantenimiento preventivo</td>
+    <td><code>http://localhost:3002/api/v1/preventiveMaintenances</code></td>
+    <td><code>POST</code></td>
+    <td><code>POST /api/v1/preventiveMaintenances</code></td>
+    <td>Body: <code>{ "assetId", "assetName", "technician", "scheduledDate", "reactivationDate", "description", "status" }</code></td>
+    <td><pre>{
+  "id": 4,
+  "assetId": 2,
+  "assetName": "Brazo Robotico",
+  "technician": "Ana Paredes",
+  "scheduledDate": "2026-05-20",
+  "reactivationDate": "2026-05-22",
+  "description": "Revision preventiva.",
+  "status": "En Mantenimiento"
+}</pre></td>
+    <td>Se ejecuta al programar mantenimiento desde Gestión de Activos. Además del registro del mantenimiento, el frontend actualiza el estado del activo a Mantenimiento.</td>
+  </tr>
+
+  <tr>
+    <td><code>/preventiveMaintenances/{id}</code></td>
+    <td>Actualizar estado de mantenimiento</td>
+    <td><code>http://localhost:3002/api/v1/preventiveMaintenances/{id}</code></td>
+    <td><code>PUT</code></td>
+    <td><code>PUT /api/v1/preventiveMaintenances/3</code></td>
+    <td><code>id</code> en la URL. Body con el mantenimiento actualizado.</td>
+    <td><pre>{
+  "id": 3,
+  "assetId": 3,
+  "assetName": "Tanque de Acido Sulfurico",
+  "technician": "Luis Carpio",
+  "scheduledDate": "2026-05-14",
+  "reactivationDate": "2026-05-18",
+  "status": "Finalizado",
+  "finishedAt": "2026-05-18T10:30:00.000Z"
+}</pre></td>
+    <td>Se utiliza cuando el supervisor reactiva un activo. El mantenimiento pasa a Finalizado y el activo vuelve a estado Operativo.</td>
+  </tr>
+
+  <tr>
+    <td><code>/archivedReports</code></td>
+    <td>Listar reportes archivados de cumplimiento</td>
+    <td><code>http://localhost:3002/api/v1/archivedReports</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/archivedReports</code></td>
+    <td>No requiere parámetros. El filtrado por sector y rango de fechas se aplica en el frontend.</td>
+    <td><pre>[
+  {
+    "id": 1,
+    "heatMapId": 2,
+    "code": "INC-110",
+    "ticketCode": "T-010",
+    "date": "2025-10-24",
+    "sector": "Quimicos",
+    "status": "Cerrado",
+    "documentUrl": "/reports/T-010.pdf"
+  }
+]</pre></td>
+    <td>Este recurso alimenta la sección Reportes y Cumplimiento. El frontend filtra los reportes por sector, permite seleccionar Todos y muestra reportes de incidentes resueltos en un intervalo de fechas.</td>
+  </tr>
+</tbody>
+
 
 </table>
 
