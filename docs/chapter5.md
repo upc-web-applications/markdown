@@ -1238,6 +1238,9 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 * Video de la Ejecución del Web app  Dashboard Gerente
 [Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQBALHFNZT8gT4yDbhrSrY9UAZIWLt8aMd3C8mnHjEJcOPc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3vniTW)
 
+* Video de la Ejecución del Web app  Dashboard Operario
+[Ver enlace](https://1drv.ms/v/c/7E97073B2DC02368/IQC8p3wmcttLTKSZG68RWUqIAZ49lfz4UNWr2nqnkEUgzXg?e=kB406n)
+
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
 
 En esta sección se incluye la relación de Endpoints documentados con OpenAPI, relacionados con el alcance del Sprint. A continuación se resume los logros alcanzados en relación con Documentación de Web Services para este Sprint.
