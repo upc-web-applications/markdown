@@ -2115,6 +2115,52 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 </p>
 
 *Eliminación del reporte con id `Z4PRqZP`. Respuesta HTTP 200 con body vacío `{}`.*
+
+*Operario* 
+
+Para este Sprint no se cuenta con un repositorio independiente de Web Services ni con servicios backend desplegados. La aplicación consume una API local simulada basada en json-server, definida dentro del mismo repositorio frontend mediante los archivos `server/db.json` y `server/routes.json`. Por este motivo, el repositorio de Servicios Web corresponde al repositorio frontend del proyecto RiskGuard, donde se encuentran definidos y versionados los endpoints mock.
+
+Se documentan los endpoints simulados utilizados para validar las funcionalidades desarrolladas durante el sprint.
+
+**Repositorio API/local:** https://github.com/upc-web-applications/Frontend.git
+
+**URL base local:** `http://localhost:3000/api/v1`  
+**Archivo de datos simulado:** `server/db.json`  
+**Archivo de rutas simulado:** `server/routes.json`
+
+**Commits relacionados con Documentación e implementación de endpoints:**
+
+| Commit Id | Mensaje |
+|---|---|
+| - | feat: add inspection and headquarters BC |
+
+**Tabla de Endpoints**
+
+| Endpoint | Acciones implementadas | Verbo HTTP | Parámetros | Explicación |
+|---|---|---|---|---|
+| `/sedes` | Obtener todas las sedes | `GET` | No requiere | Retorna el listado completo de sedes registradas |
+| `/sedes` | Crear nueva sede | `POST` | Body: `{ nombre, direccion, telefono, email, estado, fechaCreacion }` | Registra una nueva sede en el sistema |
+| `/sedes/{id}` | Obtener sede por ID | `GET` | `id` en la URL | Retorna los datos de una sede específica |
+| `/sedes/{id}` | Actualizar sede | `PUT` | `id` en la URL. Body con los datos actualizados | Actualiza todos los campos de una sede existente |
+| `/sedes/{id}` | Eliminar sede | `DELETE` | `id` en la URL | Elimina la sede del sistema |
+| `/areas` | Obtener todas las áreas | `GET` | No requiere | Retorna el listado completo de áreas registradas |
+| `/areas?sedeId={id}` | Obtener áreas por sede | `GET` | `sedeId` como query param | Filtra las áreas pertenecientes a una sede específica |
+| `/areas` | Crear nueva área | `POST` | Body: `{ nombre, codigo, descripcion, sedeId, estado, nivelRiesgo, fechaCreacion }` | Registra una nueva área vinculada a una sede |
+| `/areas/{id}` | Actualizar área | `PUT` | `id` en la URL. Body con los datos actualizados | Actualiza los datos de un área existente |
+| `/areas/{id}` | Eliminar área | `DELETE` | `id` en la URL | Elimina el área del sistema |
+| `/activos` | Obtener todos los activos | `GET` | No requiere | Retorna el listado completo de activos industriales |
+| `/activos?areaId={id}` | Obtener activos por área | `GET` | `areaId` como query param | Filtra los activos pertenecientes a un área específica |
+| `/activos` | Crear nuevo activo | `POST` | Body: `{ codigo, nombre, descripcion, tipo, areaId, sedeId, estado, fechaAdquisicion, ultimoMantenimiento }` | Registra un nuevo activo vinculado a un área y sede |
+| `/activos/{id}` | Actualizar activo | `PUT` | `id` en la URL. Body con los datos actualizados | Actualiza los datos de un activo existente |
+| `/activos/{id}` | Eliminar activo | `DELETE` | `id` en la URL | Elimina el activo del sistema |
+| `/inspecciones` | Obtener todas las inspecciones | `GET` | No requiere | Retorna el listado completo de inspecciones registradas |
+| `/inspecciones` | Crear nueva inspección | `POST` | Body: `{ ticket, tipoIncidente, areaId, sedeId, activoId, nivelUrgencia, descripcion, estado, fotoUrl, operarioId, fechaReporte, fechaActualizacion, accionCorrectiva }` | Registra una nueva inspección con ticket generado automáticamente |
+| `/inspecciones/{id}` | Obtener inspección por ID | `GET` | `id` en la URL | Retorna el detalle completo de una inspección |
+| `/inspecciones/{id}` | Eliminar inspección | `DELETE` | `id` en la URL | Elimina la inspección del sistema |
+
+
+
+
 #### 5.2.2.7.Software Deployment Evidence for Sprint Review.
 
 Durante el Sprint 2 se realizó el despliegue completo de la aplicación RiskGuard, tanto del frontend como del backend simulado. El frontend, desarrollado en Vue 3 con Vite, fue desplegado  en  Vercel y Firebase
@@ -2264,5 +2310,37 @@ baseURL: import.meta.env.VITE_RISKGUARD_API_URL,
 - **Frontend (Firebase Hosting):** https://risk-guard-u202418655.web.app
 - **Backend (Render):** https://db-server-risk-0r34.onrender.com
 
+*Operario*
 
+Durante el Sprint 2 se realizó el despliegue completo del Bounded Context de Sede/Área e Inspección. El frontend fue desplegado en **Vercel** y el backend simulado con **json-server** fue desplegado mediante **My JSON Server**, utilizando un repositorio independiente con el archivo `db.json`.
+
+##### Backend – My JSON Server
+
+Se creó un repositorio independiente en la organización `upc-web-applications` con el nombre `riskguard-inspection-headquarters-api`, que contiene el archivo `db.json` con los datos simulados de sedes, áreas, activos e inspecciones.
+
+El repositorio fue publicado en:
+```
+[https://db-server-risk-0r34.onrender.com](https://github.com/upc-web-applications/riskguard-inspection-headquarters-api)
+```
+
+La URL base del backend simulado obtenida fue:
+
+```
+[[https://db-server-risk-0r34.onrender.com](https://github.com/upc-web-applications/riskguard-inspection-headquarters-api)](https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-ap)
+```
+
+Los endpoints disponibles incluyen: `/sedes`, `/areas`, `/activos` e `/inspecciones`.
+
+##### Frontend – Vercel
+
+Se configuró el archivo de entorno de producción del frontend para consumir la URL pública de My JSON Server. En el archivo `src/.env.production` se actualizó la variable `VITE_RISKGUARD_API_URL` reemplazando la URL local por la URL pública del backend simulado:
+
+VITE_RISKGUARD_API_URL="https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-api"
+
+Para el despliegue del frontend se conectó el repositorio `upc-web-applications/Frontend` a Vercel, configurando como rama de producción `feature/inspection_headquarters`.
+
+##### URL de producción
+
+- **Frontend (Vercel):** https://frontend-git-feature-inspecti-0997ce-carlosblancas969s-projects.vercel.app
+- **Backend (My JSON Server):** https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-api
 #### 5.2.2.8.Team Collaboration Insights during Sprint
