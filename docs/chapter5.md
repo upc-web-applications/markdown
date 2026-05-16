@@ -2225,6 +2225,7 @@ Para el despliegue del frontend se creó un proyecto en Vercel llamado `riskguar
 </p>
 
 FrontEnd: https://riskguard-user-authentication.vercel.app/login
+
 Backend (My Json Server): https://my-json-server.typicode.com/upc-web-applications/riskguard-user-authentication-api
 
 #### Despliegue de Vercel + Render para Monitoreo/Dashboard
@@ -2248,6 +2249,7 @@ Asimismo, el backend simulado fue desplegado mediante **Render** utilizando `jso
 </p>
 
 FrontEnd: https://riskguard-monitoring-dashboard.vercel.app
+
 Backend (Render): https://riskguard-monitoring-dashboard-api.onrender.com (Primero cargar la Fake API)
 
 #### Despliegue de Firebase + Render para Risk Guard
