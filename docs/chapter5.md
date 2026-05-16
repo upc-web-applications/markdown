@@ -2326,13 +2326,13 @@ Se creó un repositorio independiente en la organización `upc-web-applications`
 
 El repositorio fue publicado en:
 ```
-[https://db-server-risk-0r34.onrender.com](https://github.com/upc-web-applications/riskguard-inspection-headquarters-api)
+https://github.com/upc-web-applications/riskguard-inspection-headquarters-api
 ```
 
 La URL base del backend simulado obtenida fue:
 
 ```
-[[https://db-server-risk-0r34.onrender.com](https://github.com/upc-web-applications/riskguard-inspection-headquarters-api)](https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-ap)
+https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-ap
 ```
 
 Los endpoints disponibles incluyen: `/sedes`, `/areas`, `/activos` e `/inspecciones`.
