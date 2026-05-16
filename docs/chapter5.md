@@ -603,6 +603,31 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 
 #### 5.2.2.3.Sprint Backlog 2.
 
+| User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
+|---|---|---|---|---|---|---|
+| US05 | Selección de Sector al Registrar Incidente | T01 | Implementar dropdown de áreas activas filtrado por sede en el formulario de inspección | 2 | Blancas Chávez, Carlos Franco | Done |
+| US07 | Selección del Tipo de Incidente | T02 | Implementar dropdown de tipos de incidente con opción "Otro" y campo adicional | 2 | Blancas Chávez, Carlos Franco | Done |
+| US08 | Registro de Condición Insegura Vinculada a un Activo | T03 | Implementar dropdown de activos filtrado por área seleccionada | 2 | Blancas Chávez, Carlos Franco | Done |
+| US03 | Registro Rápido de Casi-Accidente | T04 | Implementar formulario completo de inspección con validaciones y envío a fake API | 3 | Blancas Chávez, Carlos Franco | Done |
+| US04 | Adjuntar Evidencia Fotográfica al Reporte | T05 | Implementar carga de foto con previsualización y validación de tamaño máximo 5MB | 2 | Blancas Chávez, Carlos Franco | Done |
+| US10 | Confirmación de Recepción del Reporte | T06 | Implementar pantalla de detalle de inspección con ticket generado automáticamente | 1 | Blancas Chávez, Carlos Franco | Done |
+| US12 | Historial de Reportes del Operario | T07 | Implementar lista de inspecciones con filtros por estado y contador de estadísticas | 2 | Blancas Chávez, Carlos Franco | Done |
+| US13 | Consulta del Detalle de un Reporte Enviado | T08 | Implementar vista de detalle de inspección con estado, acción correctiva y foto | 2 | Blancas Chávez, Carlos Franco | Done |
+| US14 | Visualización de Alertas Activas en el Sector | T09 | Implementar lista de inspecciones pendientes y en progreso con badges de urgencia | 1 | Blancas Chávez, Carlos Franco | Done |
+| - | BC Sede — CRUD completo | T10 | Implementar lista, formulario y detalle de sedes con create, update y delete | 3 | Blancas Chávez, Carlos Franco | Done |
+| - | BC Área — CRUD completo | T11 | Implementar lista, formulario y detalle de áreas vinculadas a sede con nivel de riesgo | 3 | Blancas Chávez, Carlos Franco | Done |
+| - | BC Activo Industrial — CRUD completo | T12 | Implementar lista, formulario y detalle de activos vinculados a área y sede | 3 | Blancas Chávez, Carlos Franco | Done |
+| - | Fake API — db.json | T13 | Crear base de datos fake con datos de sedes, áreas, activos e inspecciones para json-server | 1 | Blancas Chávez, Carlos Franco | Done |
+| - | Arquitectura DDD | T14 | Estructurar cada BC con capas domain, infrastructure, application y presentation siguiendo el patrón del curso | 2 | Blancas Chávez, Carlos Franco | Done |
+| - | i18n ES/EN | T15 | Implementar internacionalización con vue-i18n para español e inglés con botón de cambio en sidebar | 1 | Blancas Chávez, Carlos Franco | Done |
+| - | Diseño dark theme RiskGuard | T16 | Implementar estilos globales con paleta de colores #060D1A, #E8460A usando PrimeVue y PrimeFlex | 2 | Blancas Chávez, Carlos Franco | Done |
+
+
+
+
+
+
+
 <p><strong>Sprint #:</strong> Sprint 2</p>
 <table border="1" cellspacing="0" cellpadding="6">
   <thead>
