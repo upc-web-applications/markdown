@@ -724,22 +724,6 @@ Login Supervisor → Módulo de Configuración → Categoría "Sectores" → Cli
 
 El prototipo interactivo de RiskGuard simula la navegación y los principales flujos de interacción de la aplicación web, permitiendo evaluar la coherencia de la experiencia de usuario antes del desarrollo, identificar puntos de fricción y validar las decisiones de arquitectura de información tomadas a lo largo del capítulo 4. El prototipo fue construido en Figma utilizando conexiones de prototipado entre frames, transiciones y overlays para representar de forma fiel los comportamientos especificados en los User Flow Diagrams.
 
-Los criterios de diseño que guiaron las decisiones de interacción y navegación del prototipo son los siguientes:
-
-**Orientación al rol y al flujo operativo de urgencia:** La arquitectura de navegación prioriza el acceso inmediato a las tareas de mayor frecuencia e importancia definidas en el User Task Matrix del capítulo 2. Para el operario, el botón "Nuevo Reporte" es el elemento más prominente de su pantalla principal. Para el supervisor, el mapa de calor y el panel de alertas activas son los primeros elementos visibles al iniciar sesión. Para el gerente, el dashboard ejecutivo con los KPIs consolidados carga como vista inicial sin necesidad de pasos adicionales.
-
-**Consistencia en los patrones de interacción:** Se emplearon cuatro patrones de navegación a lo largo de toda la aplicación: (1) **Navegación por Sidebar** para el cambio entre módulos principales según el rol activo; (2) **Drawer lateral deslizante** para formularios de creación y edición que no requieren cambio de contexto (asignación de técnico, creación de sectores, registro de activos); (3) **Modal central** para acciones críticas que requieren confirmación del usuario (cierre de ticket, desactivación de usuario, restauración de configuración); y (4) **Toast / Snackbar** para retroalimentación inmediata de resultado sin interrumpir el flujo operativo. Esta consistencia reduce la carga cognitiva del usuario, ya que los patrones aprendidos en un módulo son directamente aplicables a los demás.
-
-**Prevención de errores en acciones de alto impacto:** En operaciones con consecuencias irreversibles o de alto impacto operativo como cerrar un ticket, escalar una alerta, desactivar un usuario o restaurar la configuración por defecto, el prototipo incluye una capa adicional de confirmación mediante modal que describe el impacto de la acción antes de ejecutarla. Esto es especialmente crítico en el contexto de RiskGuard, donde una acción incorrecta puede afectar la trazabilidad de un incidente real.
-
-**Retroalimentación inmediata en tiempo real:** Todos los cambios en el estado del sistema que afectan al usuario se comunican de forma inmediata: el mapa de calor se actualiza al registrarse o resolverse un incidente, el contador de notificaciones no leídas se actualiza al recibir una nueva alerta, y los campos de formulario muestran validación inline sin necesidad de enviar el formulario completo.
-
-**Accesibilidad y objetivos táctiles:** Todos los elementos interactivos del prototipo tienen dimensiones mínimas de 48 × 48 px para cumplir los requisitos de objetivo táctil, especialmente relevantes para operarios que interactúan con la aplicación desde dispositivos móviles en entornos industriales con guantes de trabajo. Los contrastes de color en todos los estados cumplen el mínimo WCAG 2.1 AA.
-
-![Prototipo Vista General](images/prototipo-riskguard.png)
-
-*Ilustración – Web Application Prototyping: Vista general del flujo de navegación*
-
 ### Flujos de interacción cubiertos por el prototipo
 
 El prototipo cubre los siguientes flujos principales de interacción, representando tanto las rutas exitosas como las principales rutas alternativas ante errores o condiciones de excepción:
@@ -752,15 +736,19 @@ El prototipo cubre los siguientes flujos principales de interacción, representa
 
 **Flujo 4 – Dashboard ejecutivo y reportes:** Comprende el dashboard ejecutivo del gerente con los KPIs interactivos, la gráfica de tendencias filtrable por sector, el panel de indicadores predictivos, el módulo de exportación de reportes de auditoría compatible con la Ley N° 29783 y la generación del reporte mensual de gestión de SST.
 
-**Flujo 5 – Configuración del sistema:** Comprende el módulo de gestión de usuarios con los flujos de creación y desactivación de cuentas, la configuración de sectores y activos industriales, la gestión del personal técnico y la configuración de parámetros del motor predictivo.
+<h5 align="center">Visualización del prototipo</h5>
 
----
+[![Whats-App-Image-2026-05-16-at-12-18-01-AM.jpg](https://i.postimg.cc/1zmgdD78/Whats-App-Image-2026-05-16-at-12-18-01-AM.jpg)](https://postimg.cc/CR2LBng0)
+
+*Vista del prototipo del sistema, mostrando la interfaz principal y su estructura general.*
+
+*Demostración del funcionamiento del sistema.*
+
+[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDnlJ5QrLMvQJNFmpy7IZ6qAcJvvWF7wScF0tDJGNWzLc0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Nb2ZHe)
 
 ## 4.6. Domain-Driven Software Architecture
 
 En esta sección se elaboró el diseño de los Bounded Contexts (BC) y sus conexiones dentro del sistema RiskGuard, basado en el proceso de Event Storming documentado en el capítulo 2.
-
-
 
 ### 4.6.1. Design-Level Event Storming
 
