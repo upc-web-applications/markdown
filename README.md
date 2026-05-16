@@ -39,6 +39,8 @@ Aplicaciones Web
 | Version | Fecha | Autor | Descripción de modificación |
 |:------:|:------:|:------:|:---------------------------:|
 | AV1 | 26/04/2026 | Todos los integrantes | Primera Version |
+| TB1 | 16/05/2026 | Todos los integrantes | Primera Version |
+
 
 </div>
 
@@ -57,17 +59,23 @@ Durante la elaboración de la AV1, los integrantes del equipo contribuyeron en l
 
 | Integrante | Secciones principales del informe |
 |---|---|
-| Aponte Pablo, Isabel Luisa | Integración del proyecto · Capítulo V (Sprint 1) · Deployment Evidence |
-| Laura Acosta, Victor Jhosef | Capítulo IV (Style Guidelines, Information Architecture) · Diseño Landing Page |
-| Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page |
-| Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe |
+| Aponte Pablo, Isabel Luisa | Integración del proyecto · Capítulo V (Sprint 1) · Deployment Evidence · Sprint 2: BC Reports & Compliance· Team Collaboration Insights, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review, Development Evidence for Sprint Review|
+| Laura Acosta, Victor Jhosef | Capítulo IV (Style Guidelines, Information Architecture) · Diseño Landing Page · Sprint 2: BC Risk Assessment (IPERC) & BC Mitigation · Sprint Backlog 2 · Student Outcome , Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review|
+| Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page · Sprint 2: BC Site / Area & Industrial Asset · BC Inspection / Unsafe Condition, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review |
+| Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe · Sprint 2: BC Account Generation & Authentication · BC Monitoring / Dashboard, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review|
 
----
+AV1
 
 ![Contri](docs/images/all.png "contri1")
 
 
 ![Contri](docs/images/commits-all.png "contri1")
+
+TB1
+
+![Imagen 1](https://i.postimg.cc/qRcs922Z/Whats-App-Image-2026-05-16-at-1-51-33-AM.jpg "evidencia-1")
+
+![Imagen 2](https://i.postimg.cc/LXktrjjC/Whats-App-Image-2026-05-16-at-1-51-33-AM-(1).jpg "evidencia-2")
 
 ## Repositorio del Landing Page
 
@@ -84,6 +92,20 @@ Durante el Sprint 1, el equipo realizó commits en el repositorio del Landing Pa
 | Blancas Chávez, Carlos Franco | CarlosBlancas969 | Implementación de secciones principales · Navbar · Hero · Características |
 | Flores Eusebio, Angel Thyago | angelfdevs | Diseño de secciones · Cómo funciona · Segmentos |
 
+## Repositorio del Frontend
+
+**URL:** https://github.com/upc-web-applications/Frontend
+
+El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_cumplimiento`, `feature/monitoring-dashboard`, `feature/inspection_headquarters`, `feature/assessment_mitigation` y `feature/user-authentication`, reflejando la separación por bounded context adoptada por el equipo.
+
+### Contribuciones por integrante
+
+| Integrante | GitHub Username | Rama | Área de contribución |
+|---|---|---|---|
+| Aponte Pablo, Isabel Luisa | IsabelAponte234 | feature/reports_cumplimiento | BC Reports & Compliance |
+| Laura Acosta, Victor Jhosef | Zatrynox | feature/assessment_mitigation | BC Risk Assessment (IPERC) · BC Mitigation |
+| Blancas Chávez, Carlos Franco | CarlosBlancas969 | feature/inspection_headquarters | BC Inspection / Unsafe Condition · BC Site / Area & Industrial Asset |
+| Flores Eusebio, Angel Thyago | angelfdevs | feature/monitoring-dashboard · feature/user-authentication | BC Monitoring / Dashboard · BC Account Generation & Authentication |
 
 # Tabla de contenidos
 
