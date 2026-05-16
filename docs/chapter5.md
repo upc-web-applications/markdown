@@ -2073,4 +2073,71 @@ Para el despliegue del frontend se creó un proyecto en Vercel llamado `riskguar
 https://riskguard-user-authentication.vercel.app/login
 
 
+#### Despliegue de Firebase + Render para Risk Guard
+
+El frontend fue desplegado en **Firebase Hosting** y el backend simulado con **json-server** fue desplegado en **Render**, exponiendo los endpoints REST consumidos por la aplicación.
+
+##### Backend – Render
+
+Se creó la carpeta `copy/` con los archivos `db.json` y `package.json` configurado con el comando de inicio:
+
+```json
+{
+  "scripts": {
+    "start": "json-server --host 0.0.0.0 --watch db.json"
+  },
+  "dependencies": {
+    "json-server": "0.17.4"
+  }
+}
+```
+
+El servicio fue desplegado como un Web Service en Render, obteniendo la URL base:
+
+```
+https://db-server-risk-0r34.onrender.com
+```
+
+Los endpoints disponibles incluyen: `/peligros`, `/evaluaciones-riesgo`, `/mitigaciones`, `/patrones-riesgo`, `/niveles-criticidad-area`, `/alertas-patron`, `/resumenes-diarios`, `/tickets-accion-correctiva`, `/verificaciones-medida`, `/historiales-ticket`, `/alertas-sla`, `/notificaciones-criticas` y `/tecnicos`.
+
+##### Frontend – Firebase Hosting
+
+Se creó el proyecto en Firebase Console:
+
+```
+risk-guard-u202418655
+```
+
+Luego se ejecutaron los siguientes comandos para el despliegue:
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init hosting
+npm run build
+firebase deploy
+```
+
+El directorio de publicación fue configurado como `dist` en `firebase.json`, y la aplicación fue configurada como Single Page App (SPA) con rewrites para que todas las rutas apunten a `index.html`.
+
+##### Configuración de variables de entorno
+
+En los archivos `.env.production` y `.env.development` se configuró la URL base de la API:
+
+```
+VITE_RISKGUARD_API_URL="https://db-server-risk-0r34.onrender.com/api/v1/"
+```
+
+Además, en `src/shared/infrastructure/base-api.js` se actualizó para consumir la variable de entorno en lugar del URL hardcodeado:
+
+```js
+baseURL: import.meta.env.VITE_RISKGUARD_API_URL,
+```
+
+##### URLs de producción
+
+- **Frontend (Firebase Hosting):** https://risk-guard-u202418655.web.app
+- **Backend (Render):** https://db-server-risk-0r34.onrender.com
+
+
 #### 5.2.2.8.Team Collaboration Insights during Sprint
