@@ -2332,7 +2332,7 @@ https://github.com/upc-web-applications/riskguard-inspection-headquarters-api
 La URL base del backend simulado obtenida fue:
 
 ```
-https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-ap
+https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-api
 ```
 
 Los endpoints disponibles incluyen: `/sedes`, `/areas`, `/activos` e `/inspecciones`.
