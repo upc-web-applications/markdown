@@ -81,6 +81,16 @@ Para la gestión del código fuente, el equipo utilizó **GitHub** como platafor
 
 Se tomó como base el modelo **GitFlow**, aunque adaptado al alcance del Sprint 1. Se definieron las ramas principales **main**, que contiene la versión estable, y **develop**, destinada a la integración de nuevas funcionalidades (*features*). Cada *feature* será desarrollada de manera independiente antes de su integración. Sin embargo, para este primer Sprint el trabajo se realizó principalmente sobre la rama *main*, ya que el objetivo fue obtener una primera versión funcional del Landing Page.
 
+ A partir del Sprint 2, el equipo adoptó plenamente el flujo de ramas feature, desarrollando cada bounded context de forma independiente antes de integrarlo mediante pull request.
+
+Las ramas feature utilizadas durante el Sprint 2 fueron:
+
+- `feature/reports_cumplimiento`  
+- `feature/monitoring-dashboard`  
+- `feature/inspection_headquarters`  
+- `feature/assessment_mitigation`  
+- `feature/user-authentication`
+
 **Convención de ramas**
 
 Para los siguientes Sprints, se definieron convenciones para organizar el desarrollo:
@@ -177,11 +187,10 @@ Para el desarrollo backend se adoptarán las **C# Coding Conventions de Microsof
 - Se mantiene una estructura clara del proyecto.  
 
 ### 5.1.4. Software Deployment Configuration
-En esta sección se describe la configuración del despliegue del proyecto, detallando los pasos necesarios para lograr la publicación del producto a partir de su repositorio de código fuente.
-Para este Sprint, el alcance se centra en el desarrollo del **Landing Page de RiskGuard**, por lo que la configuración de despliegue se define únicamente para este componente. El objetivo es establecer un proceso que permita publicar el sitio de manera accesible, asegurando su correcta visualización y disponibilidad en línea.
+En esta sección se describe la configuración del despliegue del proyecto, detallando los pasos necesarios para lograr la publicación del producto a partir de su repositorio de código fuente..
 
 **GitHub Pages**  
-Para la publicación mediante GitHub Pages se definió el siguiente procedimiento:
+Utilizado para la publicación del Landing Page de RiskGuard durante el Sprint 1.
 
 1. Utilizar la rama `main` como fuente del despliegue.  
 2. Acceder a la configuración del repositorio en GitHub.  
@@ -190,7 +199,7 @@ Para la publicación mediante GitHub Pages se definió el siguiente procedimient
 5. Guardar la configuración para habilitar la generación automática del sitio.
    
 **Vercel**  
-Para el despliegue en Vercel se definió el siguiente proceso:
+Utilizado para el despliegue del Landing Page durante el Sprint 1 y Sprint 2.
 
 1. Vincular el repositorio de GitHub con la cuenta de Vercel.  
 2. Importar el proyecto desde el repositorio.  
@@ -198,7 +207,34 @@ Para el despliegue en Vercel se definió el siguiente proceso:
 4. Definir la rama `main` como fuente.  
 5. Habilitar el despliegue automático del sitio.
 
-Una vez desplegado, el sitio estará disponible para su acceso en línea mediante la URL generada por la plataforma de despliegue. En la fase de mantenimiento, las actualizaciones se gestionarán mediante commits y merges hacia la rama principal (`main`), siguiendo el flujo de control de versiones definido por el equipo. Cada cambio integrado en esta rama generará automáticamente una nueva versión del sitio desplegado, permitiendo que las mejoras y correcciones se reflejen de manera continua.
+**Firebase Hosting**  
+Utilizado para el despliegue de la Web Application (frontend Vue 3) a partir del Sprint 2.
+
+1. Instalar Firebase CLI: `npm install -g firebase-tools`.  
+2. Autenticarse con `firebase login`.  
+3. Ejecutar `firebase init hosting` en la raíz del proyecto y seleccionar el proyecto `riskguard-7fe11`.  
+4. Configurar el directorio público como `dist` y habilitar la opción de Single Page App.  
+5. Generar el build de producción con `npm run build`.  
+6. Desplegar con `firebase deploy`.  
+
+La aplicación queda disponible en: `https://riskguard-7fe11.web.app`
+
+**Render**  
+Utilizado para el despliegue del servidor de datos simulado (json-server) a partir del Sprint 2.
+
+1. Crear una cuenta en Render (`render.com`).  
+2. Conectar la cuenta de GitHub con Render.  
+3. Crear un nuevo **Web Service** y seleccionar el repositorio del backend.  
+4. Configurar los parámetros de despliegue:  
+   - **Build Command:** `npm install`  
+   - **Start Command:** `npm start`  
+5. Asegurarse de que el `package.json` incluya el script de inicio:  
+   ```json
+   "start": "json-server --watch db.json --routes routes.json --port 3000 --host 0.0.0.0"
+   ```
+6. Hacer clic en **Create Web Service** y esperar que finalice el primer deploy.
+
+Una vez desplegados ambos servicios, las actualizaciones se gestionan mediante commits y merges hacia la rama principal (`main`), siguiendo el flujo GitFlow definido por el equipo. Cada cambio integrado generará automáticamente una nueva versión del producto desplegado, permitiendo que las mejoras y correcciones se reflejen de manera continua.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -2393,4 +2429,36 @@ Para el despliegue del frontend se conectó el repositorio `upc-web-applications
 
 - **Frontend (Vercel):** https://frontend-git-feature-inspecti-0997ce-carlosblancas969s-projects.vercel.app
 - **Backend (My JSON Server):** https://my-json-server.typicode.com/upc-web-applications/riskguard-inspection-headquarters-api
+- 
 #### 5.2.2.8.Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo colaboró activamente en el desarrollo de la Web Application RiskGuard. Cada integrante trabajó en su respectivo bounded context mediante ramas feature independientes, integrando los cambios al repositorio compartido a través de pull requests. A continuación se presentan los analíticos de colaboración y el historial de commits obtenidos desde el repositorio `upc-web-applications/Frontend`.
+
+El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_cumplimiento`, `feature/monitoring-dashboard`, `feature/inspection_headquarters`, `feature/assessment_mitigation` y `feature/user-authentication`, reflejando la separación por bounded context adoptada por el equipo.
+
+
+**Capturas de analíticos y commits en GitHub:**
+
+*Estructura de ramas del repositorio utilizada durante el Sprint 2.*
+
+<h5 align="center">Ramas creadas</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/W11mFDgC/Whats-App-Image-2026-05-16-at-1-10-44-AM.jpg" width="600"/>
+</p>
+
+*Historial de commits organizado por cada integrante del equipo.*
+
+<h5 align="center">Commits de cada autor</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/9QQPR4Zk/Whats-App-Image-2026-05-16-at-1-10-05-AM.jpg" width="600"/>
+</p>
+
+*Resumen estadístico del repositorio con cantidad de commits y contribuciones por autor.*
+
+<h5 align="center">Estadísticas</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/3xxj4ym6/Whats-App-Image-2026-05-16-at-1-10-15-AM.jpg" width="600"/>
+</p>
