@@ -2098,6 +2098,10 @@ El servicio fue desplegado como un Web Service en Render, obteniendo la URL base
 https://db-server-risk-0r34.onrender.com
 ```
 
+<p align="center">
+  <img src="images/bc/render-bc-mi.png" width="500"/>
+</p>
+
 Los endpoints disponibles incluyen: `/peligros`, `/evaluaciones-riesgo`, `/mitigaciones`, `/patrones-riesgo`, `/niveles-criticidad-area`, `/alertas-patron`, `/resumenes-diarios`, `/tickets-accion-correctiva`, `/verificaciones-medida`, `/historiales-ticket`, `/alertas-sla`, `/notificaciones-criticas` y `/tecnicos`.
 
 ##### Frontend – Firebase Hosting
@@ -2133,6 +2137,10 @@ Además, en `src/shared/infrastructure/base-api.js` se actualizó para consumir 
 ```js
 baseURL: import.meta.env.VITE_RISKGUARD_API_URL,
 ```
+
+<p align="center">
+  <img src="images/bc/des-bc-mi.png" width="500"/>
+</p>
 
 ##### URLs de producción
 
