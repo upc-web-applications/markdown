@@ -1391,6 +1391,119 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
       <td>El store filtra el arreglo local eliminando el registro correspondiente. La acción requiere confirmación previa del usuario mediante un diálogo de confirmación.</td>
     </tr>
   </tbody>
+  <tbody>
+  <tr>
+    <td><code>/roles</code></td>
+    <td>Obtener los roles disponibles del sistema</td>
+    <td><code>http://localhost:3001/api/v1/roles</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/roles</code></td>
+    <td>No requiere parámetros</td>
+    <td><pre>[
+  {
+    "id": "4afbd60b-8da6-46a6-9b48-2d04b8fa2161",
+    "code": "supervisor",
+    "name": "Supervisor",
+    "description": "Valida alertas, tickets y estado operativo de planta"
+  }
+]</pre></td>
+    <td>El frontend usa este endpoint para identificar el rol del usuario autenticado y mostrar el panel correspondiente: supervisor, administrador u operario de planta.</td>
+  </tr>
+
+  <tr>
+    <td><code>/users</code></td>
+    <td>Obtener usuarios registrados para validar credenciales</td>
+    <td><code>http://localhost:3001/api/v1/users</code></td>
+    <td><code>GET</code></td>
+    <td><code>GET /api/v1/users</code></td>
+    <td>No requiere parámetros</td>
+    <td><pre>[
+  {
+    "id": "e5e103d0-1f8e-4b27-8dd3-03a71651b344",
+    "roleId": "4afbd60b-8da6-46a6-9b48-2d04b8fa2161",
+    "fullName": "Supervisor Turno Alpha",
+    "email": "supervisor@riskguard.tech",
+    "password": "Risk123",
+    "status": "active",
+    "failedAttempts": 0,
+    "blockedUntil": null
+  }
+]</pre></td>
+    <td>El store de autenticación consulta los usuarios para validar correo, contraseña, estado de cuenta, intentos fallidos y rol asignado. La contraseña se usa solo para simulación con json-server.</td>
+  </tr>
+
+  <tr>
+    <td><code>/users/{id}</code></td>
+    <td>Actualizar intentos fallidos, bloqueo o estado del usuario</td>
+    <td><code>http://localhost:3001/api/v1/users/{id}</code></td>
+    <td><code>PUT</code></td>
+    <td><code>PUT /api/v1/users/e5e103d0-1f8e-4b27-8dd3-03a71651b344</code></td>
+    <td><code>id</code> en la URL. Body con el usuario completo actualizado.</td>
+    <td><pre>{
+  "id": "e5e103d0-1f8e-4b27-8dd3-03a71651b344",
+  "status": "blocked",
+  "failedAttempts": 5,
+  "blockedUntil": "2026-05-16T01:20:00.000Z"
+}</pre></td>
+    <td>Cuando el usuario falla sus credenciales, el frontend incrementa <code>failedAttempts</code>. Si llega a 5 intentos, cambia el estado a <code>blocked</code> y registra la fecha de desbloqueo.</td>
+  </tr>
+
+  <tr>
+    <td><code>/sessions</code></td>
+    <td>Registrar una nueva sesión al iniciar sesión correctamente</td>
+    <td><code>http://localhost:3001/api/v1/sessions</code></td>
+    <td><code>POST</code></td>
+    <td><code>POST /api/v1/sessions</code></td>
+    <td>Body con datos de sesión generados en el frontend usando <code>uuid</code>.</td>
+    <td><pre>{
+  "id": "11cc99b8-30b9-4f97-9cca-2e7d9d0dc54a",
+  "userId": "e5e103d0-1f8e-4b27-8dd3-03a71651b344",
+  "token": "RG-0f1f137f-016f-4e92-b3ab-81c5f78cc04b",
+  "createdAt": "2026-05-16T01:08:28.306Z",
+  "lastActivityAt": "2026-05-16T01:08:28.306Z",
+  "isValid": true,
+  "closedAt": null,
+  "closeReason": ""
+}</pre></td>
+    <td>El frontend crea una sesión fake para representar que el usuario inició sesión. El token no se muestra al usuario; solo queda como dato interno de simulación.</td>
+  </tr>
+
+  <tr>
+    <td><code>/sessions/{id}</code></td>
+    <td>Actualizar una sesión al cerrar sesión o expirar por inactividad</td>
+    <td><code>http://localhost:3001/api/v1/sessions/{id}</code></td>
+    <td><code>PUT</code></td>
+    <td><code>PUT /api/v1/sessions/11cc99b8-30b9-4f97-9cca-2e7d9d0dc54a</code></td>
+    <td><code>id</code> en la URL. Body con la sesión completa actualizada.</td>
+    <td><pre>{
+  "id": "11cc99b8-30b9-4f97-9cca-2e7d9d0dc54a",
+  "isValid": false,
+  "closedAt": "2026-05-16T01:08:29.668Z",
+  "closeReason": "manual-logout"
+}</pre></td>
+    <td>Al cerrar sesión, el store cambia <code>isValid</code> a <code>false</code>. También se usa para registrar el cierre automático por inactividad con <code>session-expired-by-inactivity</code>.</td>
+  </tr>
+
+  <tr>
+    <td><code>/accessLogs</code></td>
+    <td>Registrar auditoría de accesos e intentos de autenticación</td>
+    <td><code>http://localhost:3001/api/v1/accessLogs</code></td>
+    <td><code>POST</code></td>
+    <td><code>POST /api/v1/accessLogs</code></td>
+    <td>Body con datos del intento de acceso generado en el frontend usando <code>uuid</code>.</td>
+    <td><pre>{
+  "id": "9efd03c7-d6ce-4d4c-9ce4-be8682d70a15",
+  "userId": "e5e103d0-1f8e-4b27-8dd3-03a71651b344",
+  "email": "supervisor@riskguard.tech",
+  "attemptAt": "2026-05-16T01:08:28.384Z",
+  "wasSuccessful": true,
+  "ipAddress": "192.168.1.15",
+  "failureReason": ""
+}</pre></td>
+    <td>Este endpoint registra intentos exitosos, credenciales incorrectas, cuentas bloqueadas, correos no registrados y cierres de sesión para mantener trazabilidad del acceso.</td>
+  </tr>
+</tbody>
+
 </table>
 
 **Capturas de Interacción con Datos de Muestra**
