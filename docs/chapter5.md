@@ -1346,6 +1346,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 
 *Vista principal del supervisor en los reportes y cumplimiento*
 
+
 #### Reports / Compliance BC
 <h5 align="center">1. Visualización de Inicio del Gerente</h5>
 
@@ -1411,6 +1412,8 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 [Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418655_upc_edu_pe/IQC_6i5BsOJGTLdzmhEy1SD0ARj-GwAq0GY5e8ZuEKii3Xw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=PbxdK8
 )
 
+* Video de la Ejecucion del Web app Monitoreo/Dashboard
+[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231b781_upc_edu_pe/IQACbrvx365gSrZiZgk9H0ZPAYetdnOFpNdsz9cGPKd72Hw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K9zxK1)
 
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
 
