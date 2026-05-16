@@ -883,30 +883,30 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | - | i18n ES/EN | T24 | Implementar textos principales en español e inglés usando vue-i18n, incluyendo navegación y footer | 2 | Flores Eusebio, Angel Thyago | Done |
 | - | Diseño dark theme RiskGuard | T25 | Ajustar estilos globales con tema oscuro, acento naranja, tablas PrimeVue, formularios, sidebar y footer | 3 | Flores Eusebio, Angel Thyago | Done |
 | - | Configuración para Deploy | T26 | Preparar variables de entorno para Vercel y API desplegada en Render | 1 | Flores Eusebio, Angel Thyago | Done |
-| US01 | Autenticación de Operario | T01 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T02 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T03 | Validar credenciales preconfiguradas del operario desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T04 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T05 | Implementar contador de intentos fallidos y bloqueo temporal después de 5 intentos | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T06 | Redirigir al operario autenticado hacia su panel correspondiente según su rol | 2 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T07 | Implementar botón de cierre de sesión dentro del panel autenticado | 1 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T08 | Limpiar la sesión activa del usuario al cerrar sesión y redirigir al login | 2 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T09 | Implementar cierre automático de sesión por inactividad luego de 30 segundos | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T10 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T11 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T12 | Validar credenciales preconfiguradas del supervisor desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T13 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T14 | Redirigir al supervisor autenticado hacia su panel correspondiente según su rol | 1 | Angel Thyago Flores Eusbio | Done | 
-| US36 | Autenticación Segura de Gerente o Administrador | T | Configurar usuarios demo para administrador, supervisor y operario en db.json | 1 | Angel Thyago Flores Eusebio | Done |
-| US36 | Autenticación Segura de Gerente o Administrador | T | Implementar validación de credenciales para usuarios de alta dirección | 2 | Angel Thyago Flores Eusebio | Done |
-| US36 | Autenticación Segura de Gerente o Administrador | T | Mostrar panel simple según el rol autenticado: administración, supervisor u operario | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Arquitectura DDD | T14 | Estructurar el bounded context con capas application, domain, infrastructure y presentation | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Entidades de Dominio | T15 | Crear entidades User, Session y AccessLog con nomenclatura en inglés y atributos neutros | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Infrastructure | T16 | Implementar BaseApi, BaseEndpoint, IdentityAccessApi y assemblers siguiendo el estilo de learning-center | 3 | Angel Thyago Flores Eusebio | Done |
-| - | Fake API — Identity Access | T17 | Crear datos fake de roles, usuarios, sesiones y registros de acceso usando uuid | 2 | Angel Thyago Flores Eusebio | Done |
-| - | i18n ES/EN | T18 | Implementar textos en español e inglés para login, validaciones, panel y cierre de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| - | Diseño RiskGuard | T19 | Adaptar el diseño visual al tema oscuro de RiskGuard con color principal naranja | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Deploy y Configuración | T20 | Configurar variables de entorno para desarrollo y producción con envDir en Vite | 1 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T26 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T27 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T28 | Validar credenciales preconfiguradas del operario desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T29 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T30 | Implementar contador de intentos fallidos y bloqueo temporal después de 5 intentos | 2 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T31 | Redirigir al operario autenticado hacia su panel correspondiente según su rol | 2 | Angel Thyago Flores Eusebio | Done |
+| US02 | Cierre de Sesión del Operario | T32 | Implementar botón de cierre de sesión dentro del panel autenticado | 1 | Angel Thyago Flores Eusebio | Done |
+| US02 | Cierre de Sesión del Operario | T33 | Limpiar la sesión activa del usuario al cerrar sesión y redirigir al login | 2 | Angel Thyago Flores Eusebio | Done |
+| US02 | Cierre de Sesión del Operario | T34 | Implementar cierre automático de sesión por inactividad luego de 30 segundos | 2 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T35 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T36 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T37 | Validar credenciales preconfiguradas del supervisor desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T38 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T39 | Redirigir al supervisor autenticado hacia su panel correspondiente según su rol | 1 | Angel Thyago Flores Eusbio | Done | 
+| US36 | Autenticación Segura de Gerente o Administrador | T40 | Configurar usuarios demo para administrador, supervisor y operario en db.json | 1 | Angel Thyago Flores Eusebio | Done |
+| US36 | Autenticación Segura de Gerente o Administrador | T41 | Implementar validación de credenciales para usuarios de alta dirección | 2 | Angel Thyago Flores Eusebio | Done |
+| US36 | Autenticación Segura de Gerente o Administrador | T42| Mostrar panel simple según el rol autenticado: administración, supervisor u operario | 2 | Angel Thyago Flores Eusebio | Done |
+| - | Identity Access — Arquitectura DDD | T43 | Estructurar el bounded context con capas application, domain, infrastructure y presentation | 2 | Angel Thyago Flores Eusebio | Done |
+| - | Identity Access — Entidades de Dominio | T44 | Crear entidades User, Session y AccessLog con nomenclatura en inglés y atributos neutros | 2 | Angel Thyago Flores Eusebio | Done |
+| - | Identity Access — Infrastructure | T45 | Implementar BaseApi, BaseEndpoint, IdentityAccessApi y assemblers siguiendo el estilo de learning-center | 3 | Angel Thyago Flores Eusebio | Done |
+| - | Fake API — Identity Access | T46 | Crear datos fake de roles, usuarios, sesiones y registros de acceso usando uuid | 2 | Angel Thyago Flores Eusebio | Done |
+| - | i18n ES/EN | T47 | Implementar textos en español e inglés para login, validaciones, panel y cierre de sesión | 1 | Angel Thyago Flores Eusebio | Done |
+| - | Diseño RiskGuard | T48 | Adaptar el diseño visual al tema oscuro de RiskGuard con color principal naranja | 2 | Angel Thyago Flores Eusebio | Done |
+| - | Deploy y Configuración | T49 | Configurar variables de entorno para desarrollo y producción con envDir en Vite | 1 | Angel Thyago Flores Eusebio | Done |
 
 
 
