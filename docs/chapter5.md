@@ -1408,7 +1408,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 [Ver enlace](https://1drv.ms/v/c/7E97073B2DC02368/IQC8p3wmcttLTKSZG68RWUqIAZ49lfz4UNWr2nqnkEUgzXg?e=kB406n)
 
 * Video de la Ejecución del Web app Mitigación de accidentes y cuidado de riesgos
-[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418655_upc_edu_pe/IQC_6i5BsOJGTLdzmhEy1SD0AfL7-ToMfmTWVXQLmefNPNE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ckjB6h
+[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418655_upc_edu_pe/IQC_6i5BsOJGTLdzmhEy1SD0ARj-GwAq0GY5e8ZuEKii3Xw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=PbxdK8
 )
 
 
