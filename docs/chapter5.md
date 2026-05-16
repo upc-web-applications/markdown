@@ -601,7 +601,8 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | Blancas Chávez, Carlos Franco | CarlosBlancas969 | C | L | L | C | C | C | C |
 | Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C | L | C |
 
-#### 5.2.2.3.Sprint Backlog 2.
+#### 5.2.2.3. Sprint Backlog 2.
+#### 5.2.2.3.1. Sprint Backlog - Integrante 1
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -621,39 +622,8 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | - | Arquitectura DDD | T14 | Estructurar cada BC con capas domain, infrastructure, application y presentation siguiendo el patrón del curso | 2 | Blancas Chávez, Carlos Franco | Done |
 | - | i18n ES/EN | T15 | Implementar internacionalización con vue-i18n para español e inglés con botón de cambio en sidebar | 1 | Blancas Chávez, Carlos Franco | Done |
 | - | Diseño dark theme RiskGuard | T16 | Implementar estilos globales con paleta de colores #060D1A, #E8460A usando PrimeVue y PrimeFlex | 2 | Blancas Chávez, Carlos Franco | Done |
-| US38 | Visualización del Mapa de Calor Operativo | T17 | Implementar dashboard principal con KPIs de tickets pendientes, tickets en progreso y mapa de calor por sectores | 3 | Flores Eusebio, Angel Thyago | Done |
-| US36 | Exploración Sectorizada y Filtrado de Alertas Activas | T03 | Implementar filtros de tickets por sector, nivel de riesgo y estado dentro de la bandeja de tickets | 3 | Flores Eusebio, Angel Thyago | Done |
-| US35 | Asignación de Tickets de Acción Correctiva | T18 | Implementar bandeja de tickets con acciones para asignar técnico o visualizar detalle de asignación | 3 | Flores Eusebio, Angel Thyago | Done |
-| US35 | Asignación de Tickets de Acción Correctiva | T19 | Implementar formulario de asignación y reasignación de técnico responsable a un ticket | 3 | Flores Eusebio, Angel Thyago | Done |
-| US40 | Escalamiento Automático por Incumplimiento de SLA | T20 | Mostrar estado SLA incumplido en tickets vencidos y adaptar el tiempo restante como tiempo excedido | 2 | Flores Eusebio, Angel Thyago | Done |
-| US32 | Configuración de Sectores y Áreas Operativas | T21 | Implementar sección Mapa de Sectores con listado, contador de sectores y contador de activos relacionados | 3 | Flores Eusebio, Angel Thyago | Done |
-| US32 | Configuración de Sectores y Áreas Operativas | T22 | Implementar formulario de creación y edición de sectores con código automático, descripción y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US33 | Configuración y Gestión de Activos Industriales | T23 | Implementar sección Gestión de Activos con listado, contador total y acciones por estado operativo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US33 | Configuración y Gestión de Activos Industriales | T24 | Implementar formulario de creación y edición de activos industriales con código automático y campos bloqueados cuando corresponde | 3 | Flores Eusebio, Angel Thyago | Done |
-| US41 | Programación de Mantenimiento Preventivo de Activos | T25 | Implementar formulario para programar mantenimiento preventivo sobre un activo y actualizar su estado a mantenimiento | 3 | Flores Eusebio, Angel Thyago | Done |
-| US41 | Programación de Mantenimiento Preventivo de Activos | T26 | Implementar reactivación de activos en mantenimiento y actualización de la fecha de última revisión | 2 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Gestión y Administración de Personal Técnico | T27 | Implementar Directorio Técnico con listado de técnicos, especialidad, estado y acción de detalle | 3 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Gestión y Administración de Personal Técnico | T28 | Implementar formulario de registro y edición de técnicos con código automático y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Gestión y Administración de Personal Técnico | T29 | Integrar técnicos activos con el formulario de asignación de tickets correctivos | 2 | Flores Eusebio, Angel Thyago | Done |
-| US42 | Generación y Exportación de Reportes de Cumplimiento | T30 | Implementar sección Reportes y Cumplimiento con reportes por sector, estado y rango de fechas | 3 | Flores Eusebio, Angel Thyago | Done |
-| US42 | Generación y Exportación de Reportes de Cumplimiento | T31 | Implementar filtros de reportes por sector, opción Todos, fechas y botón para limpiar filtros | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Fake API — json-server | T32 | Crear y ajustar db.json con sectores, tickets, técnicos, activos, mantenimientos preventivos y reportes archivados | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Arquitectura DDD del BC Monitoring | T33 | Estructurar el bounded context monitoring-dashboard con capas application, domain, infrastructure y presentation | 3 | Flores Eusebio, Angel Thyago | Done |
-| - | Modelos de Dominio y Assemblers | T34 | Crear entidades y assemblers para tickets, sectores, técnicos, activos, mapa de calor y mantenimientos preventivos | 3 | Flores Eusebio, Angel Thyago | Done |
-| - | Integración API e Infraestructura | T35 | Implementar MonitoringApi usando BaseApi, BaseEndpoint y variables de entorno para endpoints del fake API | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Navegación y Rutas | T36 | Configurar rutas del bounded context para dashboard, tickets, sectores, técnicos, activos, mantenimiento y reportes | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | i18n ES/EN | T37 | Implementar textos principales en español e inglés usando vue-i18n, incluyendo navegación y footer | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Diseño dark theme RiskGuard | T38 | Ajustar estilos globales con tema oscuro, acento naranja, tablas PrimeVue, formularios, sidebar y footer | 3 | Flores Eusebio, Angel Thyago | Done |
-| - | Configuración para Deploy | T39 | Preparar variables de entorno para Vercel y API desplegada en Render | 1 | Flores Eusebio, Angel Thyago | Done |
 
-
-
-
-
-
-
-
-<p><strong>Sprint #:</strong> Sprint 2</p>
+#### 5.2.2.3.2. Sprint Backlog - Integrante 2
 <table border="1" cellspacing="0" cellpadding="6">
   <thead>
     <tr>
@@ -884,6 +854,36 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
     </tr>
   </tbody>
 </table>
+
+#### 5.2.2.3.3. Sprint Backlog - Integrante 3
+
+| User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
+|---|---|---|---|---|---|---|
+| US38 | Visualización del Mapa de Calor Operativo | T01 | Implementar dashboard principal con KPIs de tickets pendientes, tickets en progreso y mapa de calor por sectores | 3 | Flores Eusebio, Angel Thyago | Done |
+| US36 | Exploración Sectorizada y Filtrado de Alertas Activas | T03 | Implementar filtros de tickets por sector, nivel de riesgo y estado dentro de la bandeja de tickets | 3 | Flores Eusebio, Angel Thyago | Done |
+| US35 | Asignación de Tickets de Acción Correctiva | T04 | Implementar bandeja de tickets con acciones para asignar técnico o visualizar detalle de asignación | 3 | Flores Eusebio, Angel Thyago | Done |
+| US35 | Asignación de Tickets de Acción Correctiva | T05 | Implementar formulario de asignación y reasignación de técnico responsable a un ticket | 3 | Flores Eusebio, Angel Thyago | Done |
+| US40 | Escalamiento Automático por Incumplimiento de SLA | T06 | Mostrar estado SLA incumplido en tickets vencidos y adaptar el tiempo restante como tiempo excedido | 2 | Flores Eusebio, Angel Thyago | Done |
+| US32 | Configuración de Sectores y Áreas Operativas | T07 | Implementar sección Mapa de Sectores con listado, contador de sectores y contador de activos relacionados | 3 | Flores Eusebio, Angel Thyago | Done |
+| US32 | Configuración de Sectores y Áreas Operativas | T08 | Implementar formulario de creación y edición de sectores con código automático, descripción y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
+| US33 | Configuración y Gestión de Activos Industriales | T09 | Implementar sección Gestión de Activos con listado, contador total y acciones por estado operativo | 3 | Flores Eusebio, Angel Thyago | Done |
+| US33 | Configuración y Gestión de Activos Industriales | T10 | Implementar formulario de creación y edición de activos industriales con código automático y campos bloqueados cuando corresponde | 3 | Flores Eusebio, Angel Thyago | Done |
+| US41 | Programación de Mantenimiento Preventivo de Activos | T11 | Implementar formulario para programar mantenimiento preventivo sobre un activo y actualizar su estado a mantenimiento | 3 | Flores Eusebio, Angel Thyago | Done |
+| US41 | Programación de Mantenimiento Preventivo de Activos | T12 | Implementar reactivación de activos en mantenimiento y actualización de la fecha de última revisión | 2 | Flores Eusebio, Angel Thyago | Done |
+| US34 | Gestión y Administración de Personal Técnico | T13 | Implementar Directorio Técnico con listado de técnicos, especialidad, estado y acción de detalle | 3 | Flores Eusebio, Angel Thyago | Done |
+| US34 | Gestión y Administración de Personal Técnico | T14 | Implementar formulario de registro y edición de técnicos con código automático y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
+| US34 | Gestión y Administración de Personal Técnico | T15 | Integrar técnicos activos con el formulario de asignación de tickets correctivos | 2 | Flores Eusebio, Angel Thyago | Done |
+| US42 | Generación y Exportación de Reportes de Cumplimiento | T16 | Implementar sección Reportes y Cumplimiento con reportes por sector, estado y rango de fechas | 3 | Flores Eusebio, Angel Thyago | Done |
+| US42 | Generación y Exportación de Reportes de Cumplimiento | T17 | Implementar filtros de reportes por sector, opción Todos, fechas y botón para limpiar filtros | 2 | Flores Eusebio, Angel Thyago | Done |
+| - | Fake API — json-server | T19 | Crear y ajustar db.json con sectores, tickets, técnicos, activos, mantenimientos preventivos y reportes archivados | 2 | Flores Eusebio, Angel Thyago | Done |
+| - | Arquitectura DDD del BC Monitoring | T20 | Estructurar el bounded context monitoring-dashboard con capas application, domain, infrastructure y presentation | 3 | Flores Eusebio, Angel Thyago | Done |
+| - | Modelos de Dominio y Assemblers | T21 | Crear entidades y assemblers para tickets, sectores, técnicos, activos, mapa de calor y mantenimientos preventivos | 3 | Flores Eusebio, Angel Thyago | Done |
+| - | Integración API e Infraestructura | T22 | Implementar MonitoringApi usando BaseApi, BaseEndpoint y variables de entorno para endpoints del fake API | 2 | Flores Eusebio, Angel Thyago | Done |
+| - | Navegación y Rutas | T23 | Configurar rutas del bounded context para dashboard, tickets, sectores, técnicos, activos, mantenimiento y reportes | 2 | Flores Eusebio, Angel Thyago | Done |
+| - | i18n ES/EN | T24 | Implementar textos principales en español e inglés usando vue-i18n, incluyendo navegación y footer | 2 | Flores Eusebio, Angel Thyago | Done |
+| - | Diseño dark theme RiskGuard | T25 | Ajustar estilos globales con tema oscuro, acento naranja, tablas PrimeVue, formularios, sidebar y footer | 3 | Flores Eusebio, Angel Thyago | Done |
+| - | Configuración para Deploy | T26 | Preparar variables de entorno para Vercel y API desplegada en Render | 1 | Flores Eusebio, Angel Thyago | Done |
+
 
 #### 5.2.2.4.Development Evidence for Sprint Review.
 
