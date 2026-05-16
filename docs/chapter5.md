@@ -1237,11 +1237,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <p align="center">
   <img src="images/bc/mitigation-detail.png" width="500"/>
 </p>
-<h5 align="center">Formulario de Mitigación</h5>
-<p align="center">Registro de nuevas medidas de control.</p>
-<p align="center">
-  <img src="images/bc/mitigation-form.png" width="500"/>
-</p>
+
 <h5 align="center">Tickets de Acción Correctiva</h5>
 <p align="center">Gestión de tickets correctivos con SLA y técnicos asignados.</p>
 <p align="center">
@@ -1271,16 +1267,6 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <p align="center">Línea de tiempo con eventos de cada ticket.</p>
 <p align="center">
   <img src="images/bc/ticket-history.png" width="500"/>
-</p>
-<h5 align="center">Alertas SLA</h5>
-<p align="center">Notificaciones de SLA excedidos en tickets correctivos.</p>
-<p align="center">
-  <img src="images/bc/sla-alerts.png" width="500"/>
-</p>
-<h5 align="center">Notificaciones Críticas</h5>
-<p align="center">Alertas de riesgo crítico que requieren supervisión inmediata.</p>
-<p align="center">
-  <img src="images/bc/critical-notifications.png" width="500"/>
 </p>
 
 #### Monitoring / Dashboard BC 
