@@ -859,22 +859,22 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
-| US38 | Visualización del Mapa de Calor Operativo | T01 | Implementar dashboard principal con KPIs de tickets pendientes, tickets en progreso y mapa de calor por sectores | 3 | Flores Eusebio, Angel Thyago | Done |
-| US36 | Exploración Sectorizada y Filtrado de Alertas Activas | T03 | Implementar filtros de tickets por sector, nivel de riesgo y estado dentro de la bandeja de tickets | 3 | Flores Eusebio, Angel Thyago | Done |
-| US35 | Asignación de Tickets de Acción Correctiva | T04 | Implementar bandeja de tickets con acciones para asignar técnico o visualizar detalle de asignación | 3 | Flores Eusebio, Angel Thyago | Done |
-| US35 | Asignación de Tickets de Acción Correctiva | T05 | Implementar formulario de asignación y reasignación de técnico responsable a un ticket | 3 | Flores Eusebio, Angel Thyago | Done |
-| US40 | Escalamiento Automático por Incumplimiento de SLA | T06 | Mostrar estado SLA incumplido en tickets vencidos y adaptar el tiempo restante como tiempo excedido | 2 | Flores Eusebio, Angel Thyago | Done |
-| US32 | Configuración de Sectores y Áreas Operativas | T07 | Implementar sección Mapa de Sectores con listado, contador de sectores y contador de activos relacionados | 3 | Flores Eusebio, Angel Thyago | Done |
-| US32 | Configuración de Sectores y Áreas Operativas | T08 | Implementar formulario de creación y edición de sectores con código automático, descripción y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US33 | Configuración y Gestión de Activos Industriales | T09 | Implementar sección Gestión de Activos con listado, contador total y acciones por estado operativo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US33 | Configuración y Gestión de Activos Industriales | T10 | Implementar formulario de creación y edición de activos industriales con código automático y campos bloqueados cuando corresponde | 3 | Flores Eusebio, Angel Thyago | Done |
-| US41 | Programación de Mantenimiento Preventivo de Activos | T11 | Implementar formulario para programar mantenimiento preventivo sobre un activo y actualizar su estado a mantenimiento | 3 | Flores Eusebio, Angel Thyago | Done |
-| US41 | Programación de Mantenimiento Preventivo de Activos | T12 | Implementar reactivación de activos en mantenimiento y actualización de la fecha de última revisión | 2 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Gestión y Administración de Personal Técnico | T13 | Implementar Directorio Técnico con listado de técnicos, especialidad, estado y acción de detalle | 3 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Gestión y Administración de Personal Técnico | T14 | Implementar formulario de registro y edición de técnicos con código automático y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Gestión y Administración de Personal Técnico | T15 | Integrar técnicos activos con el formulario de asignación de tickets correctivos | 2 | Flores Eusebio, Angel Thyago | Done |
-| US42 | Generación y Exportación de Reportes de Cumplimiento | T16 | Implementar sección Reportes y Cumplimiento con reportes por sector, estado y rango de fechas | 3 | Flores Eusebio, Angel Thyago | Done |
-| US42 | Generación y Exportación de Reportes de Cumplimiento | T17 | Implementar filtros de reportes por sector, opción Todos, fechas y botón para limpiar filtros | 2 | Flores Eusebio, Angel Thyago | Done |
+| US19 | Visualización del Mapa de Calor Operativo | T01 | Implementar dashboard principal con KPIs de tickets pendientes, tickets en progreso y mapa de calor por sectores | 3 | Flores Eusebio, Angel Thyago | Done |
+| US29 | Exploración Sectorizada y Filtrado de Alertas Activas | T03 | Implementar filtros de tickets por sector, nivel de riesgo y estado dentro de la bandeja de tickets | 3 | Flores Eusebio, Angel Thyago | Done |
+| US28 | Asignación de Tickets de Acción Correctiva | T04 | Implementar bandeja de tickets con acciones para asignar técnico o visualizar detalle de asignación | 3 | Flores Eusebio, Angel Thyago | Done |
+| US28 | Asignación de Tickets de Acción Correctiva | T05 | Implementar formulario de asignación y reasignación de técnico responsable a un ticket | 3 | Flores Eusebio, Angel Thyago | Done |
+| US33 | Escalamiento Automático por Incumplimiento de SLA | T06 | Mostrar estado SLA incumplido en tickets vencidos y adaptar el tiempo restante como tiempo excedido | 2 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración de Sectores y Áreas Operativas | T07 | Implementar sección Mapa de Sectores con listado, contador de sectores y contador de activos relacionados | 3 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración de Sectores y Áreas Operativas | T08 | Implementar formulario de creación y edición de sectores con código automático, descripción y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración y Gestión de Activos Industriales | T09 | Implementar sección Gestión de Activos con listado, contador total y acciones por estado operativo | 3 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración y Gestión de Activos Industriales | T10 | Implementar formulario de creación y edición de activos industriales con código automático y campos bloqueados cuando corresponde | 3 | Flores Eusebio, Angel Thyago | Done |
+| US34 | Programación de Mantenimiento Preventivo de Activos | T11 | Implementar formulario para programar mantenimiento preventivo sobre un activo y actualizar su estado a mantenimiento | 3 | Flores Eusebio, Angel Thyago | Done |
+| US34 | Programación de Mantenimiento Preventivo de Activos | T12 | Implementar reactivación de activos en mantenimiento y actualización de la fecha de última revisión | 2 | Flores Eusebio, Angel Thyago | Done |
+| US27 | Gestión y Administración de Personal Técnico | T13 | Implementar Directorio Técnico con listado de técnicos, especialidad, estado y acción de detalle | 3 | Flores Eusebio, Angel Thyago | Done |
+| US27 | Gestión y Administración de Personal Técnico | T14 | Implementar formulario de registro y edición de técnicos con código automático y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
+| US27 | Gestión y Administración de Personal Técnico | T15 | Integrar técnicos activos con el formulario de asignación de tickets correctivos | 2 | Flores Eusebio, Angel Thyago | Done |
+| US35 | Generación y Exportación de Reportes de Cumplimiento | T16 | Implementar sección Reportes y Cumplimiento con reportes por sector, estado y rango de fechas | 3 | Flores Eusebio, Angel Thyago | Done |
+| US35 | Generación y Exportación de Reportes de Cumplimiento | T17 | Implementar filtros de reportes por sector, opción Todos, fechas y botón para limpiar filtros | 2 | Flores Eusebio, Angel Thyago | Done |
 | - | Fake API — json-server | T19 | Crear y ajustar db.json con sectores, tickets, técnicos, activos, mantenimientos preventivos y reportes archivados | 2 | Flores Eusebio, Angel Thyago | Done |
 | - | Arquitectura DDD del BC Monitoring | T20 | Estructurar el bounded context monitoring-dashboard con capas application, domain, infrastructure y presentation | 3 | Flores Eusebio, Angel Thyago | Done |
 | - | Modelos de Dominio y Assemblers | T21 | Crear entidades y assemblers para tickets, sectores, técnicos, activos, mapa de calor y mantenimientos preventivos | 3 | Flores Eusebio, Angel Thyago | Done |
@@ -883,30 +883,32 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | - | i18n ES/EN | T24 | Implementar textos principales en español e inglés usando vue-i18n, incluyendo navegación y footer | 2 | Flores Eusebio, Angel Thyago | Done |
 | - | Diseño dark theme RiskGuard | T25 | Ajustar estilos globales con tema oscuro, acento naranja, tablas PrimeVue, formularios, sidebar y footer | 3 | Flores Eusebio, Angel Thyago | Done |
 | - | Configuración para Deploy | T26 | Preparar variables de entorno para Vercel y API desplegada en Render | 1 | Flores Eusebio, Angel Thyago | Done |
-| US01 | Autenticación de Operario | T27 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T28 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T29 | Validar credenciales preconfiguradas del operario desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T30 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T31 | Implementar contador de intentos fallidos y bloqueo temporal después de 5 intentos | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T32 | Redirigir al operario autenticado hacia su panel correspondiente según su rol | 2 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T33 | Implementar botón de cierre de sesión dentro del panel autenticado | 1 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T34 | Limpiar la sesión activa del usuario al cerrar sesión y redirigir al login | 2 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T35 | Implementar cierre automático de sesión por inactividad luego de 30 segundos | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T36 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T37 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T38 | Validar credenciales preconfiguradas del supervisor desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T39 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T40 | Redirigir al supervisor autenticado hacia su panel correspondiente según su rol | 1 | Angel Thyago Flores Eusbio | Done | 
-| US43 | Autenticación Segura de Gerente o Administrador | T41 | Configurar usuarios demo para administrador, supervisor y operario en db.json | 1 | Angel Thyago Flores Eusebio | Done |
-| US43 | Autenticación Segura de Gerente o Administrador | T42 | Implementar validación de credenciales para usuarios de alta dirección | 2 | Angel Thyago Flores Eusebio | Done |
-| US43 | Autenticación Segura de Gerente o Administrador | T43 | Mostrar panel simple según el rol autenticado: administración, supervisor u operario | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Arquitectura DDD | T44 | Estructurar el bounded context con capas application, domain, infrastructure y presentation | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Entidades de Dominio | T45 | Crear entidades User, Session y AccessLog con nomenclatura en inglés y atributos neutros | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Infrastructure | T46 | Implementar BaseApi, BaseEndpoint, IdentityAccessApi y assemblers siguiendo el estilo de learning-center | 3 | Angel Thyago Flores Eusebio | Done |
-| - | Fake API — Identity Access | T47 | Crear datos fake de roles, usuarios, sesiones y registros de acceso usando uuid | 2 | Angel Thyago Flores Eusebio | Done |
-| - | i18n ES/EN | T48 | Implementar textos en español e inglés para login, validaciones, panel y cierre de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| - | Diseño RiskGuard | T49 | Adaptar el diseño visual al tema oscuro de RiskGuard con color principal naranja | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Deploy y Configuración | T50 | Configurar variables de entorno para desarrollo y producción con envDir en Vite | 1 | Angel Thyago Flores Eusebio | Done |
+
+| US01 | Autenticación de Operario | T01 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T02 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T03 | Validar credenciales preconfiguradas del operario desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T04 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T05 | Implementar contador de intentos fallidos y bloqueo temporal después de 5 intentos | 2 | Angel Thyago Flores Eusebio | Done |
+| US01 | Autenticación de Operario | T06 | Redirigir al operario autenticado hacia su panel correspondiente según su rol | 2 | Angel Thyago Flores Eusebio | Done |
+| US02 | Cierre de Sesión del Operario | T07 | Implementar botón de cierre de sesión dentro del panel autenticado | 1 | Angel Thyago Flores Eusebio | Done |
+| US02 | Cierre de Sesión del Operario | T08 | Limpiar la sesión activa del usuario al cerrar sesión y redirigir al login | 2 | Angel Thyago Flores Eusebio | Done |
+| US02 | Cierre de Sesión del Operario | T09 | Implementar cierre automático de sesión por inactividad luego de 30 segundos | 2 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T10 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T11 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T12 | Validar credenciales preconfiguradas del supervisor desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T13 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
+| US24 | Autenticación Segura de Supervisor | T14 | Redirigir al supervisor autenticado hacia su panel correspondiente según su rol | 1 | Angel Thyago Flores Eusbio | Done | 
+| US36 | Autenticación Segura de Gerente o Administrador | T | Configurar usuarios demo para administrador, supervisor y operario en db.json | 1 | Angel Thyago Flores Eusebio | Done |
+| US36 | Autenticación Segura de Gerente o Administrador | T | Implementar validación de credenciales para usuarios de alta dirección | 2 | Angel Thyago Flores Eusebio | Done |
+| US36 | Autenticación Segura de Gerente o Administrador | T | Mostrar panel simple según el rol autenticado: administración, supervisor u operario | 2 | Angel Thyago Flores Eusebio | Done |
+
+| - | Identity Access — Arquitectura DDD | T14 | Estructurar el bounded context con capas application, domain, infrastructure y presentation | 2 | Angel Thyago Flores Eusebio | Done |
+| - | Identity Access — Entidades de Dominio | T15 | Crear entidades User, Session y AccessLog con nomenclatura en inglés y atributos neutros | 2 | Angel Thyago Flores Eusebio | Done |
+| - | Identity Access — Infrastructure | T16 | Implementar BaseApi, BaseEndpoint, IdentityAccessApi y assemblers siguiendo el estilo de learning-center | 3 | Angel Thyago Flores Eusebio | Done |
+| - | Fake API — Identity Access | T17 | Crear datos fake de roles, usuarios, sesiones y registros de acceso usando uuid | 2 | Angel Thyago Flores Eusebio | Done |
+| - | i18n ES/EN | T18 | Implementar textos en español e inglés para login, validaciones, panel y cierre de sesión | 1 | Angel Thyago Flores Eusebio | Done |
+| - | Diseño RiskGuard | T19 | Adaptar el diseño visual al tema oscuro de RiskGuard con color principal naranja | 2 | Angel Thyago Flores Eusebio | Done |
+| - | Deploy y Configuración | T20 | Configurar variables de entorno para desarrollo y producción con envDir en Vite | 1 | Angel Thyago Flores Eusebio | Done |
 
 
 
@@ -1130,6 +1132,87 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
 </table>
 
 #### 5.2.2.5.Execution Evidence for Sprint Review.
+
+Durante el Sprint se lograron avances significativos en la visualización y navegación de la aplicación, incluyendo interfaces de identificacion, Dashboard del operador, del supervisor y del gerente
+
+#### Account Generation and Authentication BC
+
+<h5 align="center">Inicio de autenticación</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/1z3GFxQN/Whats-App-Image-2026-05-15-at-10-14-36-PM.jpg" width="500"/>
+</p>
+
+*Pantalla de autenticación del sistema donde el usuario ingresa sus credenciales para acceder a la plataforma.*
+
+#### Site / Area and Industrial Asset BC
+
+#### Inspection / Unsafe Condition BC
+
+#### Risk Assessment (IPERC) BC  
+
+#### Mitigation BC 
+
+#### Monitoring / Dashboard BC 
+
+#### Reports / Compliance BC
+<h5 align="center">1. Visualización de Inicio del Gerente</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/VNMh3c36/Whats-App-Image-2026-05-15-at-9-35-46-PM-(2).jpg" width="500"/>
+</p>
+
+*Vista principal del gerente con acceso al resumen general del sistema y métricas de seguridad.*
+
+<h5 align="center">2. Visualización de Nuevo Reporte del Gerente</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/0yh3WNH7/Whats-App-Image-2026-05-15-at-9-35-46-PM-(3).jpg" width="500"/>
+</p>
+
+*Vista orientada al registro de nuevos reportes de incidentes y condiciones inseguras.*
+
+<h5 align="center">3. Visualización de Mis Reportes del Gerente</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/jSB9gjkP/Whats-App-Image-2026-05-15-at-9-35-46-PM-(4).jpg" width="500"/>
+</p>
+
+*Vista para la consulta y administración de reportes generados dentro del sistema.*
+
+<h5 align="center">4. Visualización del Historial de Incidentes del Gerente</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/JzSg6hdt/Whats-App-Image-2026-05-15-at-9-35-46-PM-(5).jpg" width="500"/>
+</p>
+*Vista enfocada en el seguimiento y análisis del historial de incidentes registrados.*
+
+<h5 align="center">5. Visualización de Alertas Críticas del Gerente</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/HkFKZLPY/Whats-App-Image-2026-05-15-at-9-35-46-PM-(6).jpg" width="500"/>
+</p>
+
+*Vista de alertas críticas para supervisar eventos de riesgo y estados de atención.*
+
+<h5 align="center">6. Visualización de Indicadores Predictivos del Gerente</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/DwRDjzYf/Whats-App-Image-2026-05-15-at-9-35-46-PM-(7).jpg" width="500"/>
+</p>
+*Vista de indicadores predictivos con métricas y tendencias relacionadas a seguridad industrial.*
+
+<h5 align="center">7. Visualización del Plan SST del Gerente</h5>
+
+<p align="center">
+  <img src="https://i.postimg.cc/L8G7Cs08/Whats-App-Image-2026-05-15-at-9-35-46-PM-(8).jpg" width="500"/>
+</p>
+
+*Vista del Plan SST con indicadores de cumplimiento, actividades completadas y monitoreo mensual.*
+
+* Video de la Ejecución del Web app  Dashboard Gerente
+[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQBALHFNZT8gT4yDbhrSrY9UAZIWLt8aMd3C8mnHjEJcOPc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3vniTW)
+
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
 
 En esta sección se incluye la relación de Endpoints documentados con OpenAPI, relacionados con el alcance del Sprint. A continuación se resume los logros alcanzados en relación con Documentación de Web Services para este Sprint.
