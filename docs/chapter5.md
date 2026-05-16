@@ -883,7 +883,6 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | - | i18n ES/EN | T24 | Implementar textos principales en español e inglés usando vue-i18n, incluyendo navegación y footer | 2 | Flores Eusebio, Angel Thyago | Done |
 | - | Diseño dark theme RiskGuard | T25 | Ajustar estilos globales con tema oscuro, acento naranja, tablas PrimeVue, formularios, sidebar y footer | 3 | Flores Eusebio, Angel Thyago | Done |
 | - | Configuración para Deploy | T26 | Preparar variables de entorno para Vercel y API desplegada en Render | 1 | Flores Eusebio, Angel Thyago | Done |
-
 | US01 | Autenticación de Operario | T01 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
 | US01 | Autenticación de Operario | T02 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
 | US01 | Autenticación de Operario | T03 | Validar credenciales preconfiguradas del operario desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
@@ -901,7 +900,6 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | US36 | Autenticación Segura de Gerente o Administrador | T | Configurar usuarios demo para administrador, supervisor y operario en db.json | 1 | Angel Thyago Flores Eusebio | Done |
 | US36 | Autenticación Segura de Gerente o Administrador | T | Implementar validación de credenciales para usuarios de alta dirección | 2 | Angel Thyago Flores Eusebio | Done |
 | US36 | Autenticación Segura de Gerente o Administrador | T | Mostrar panel simple según el rol autenticado: administración, supervisor u operario | 2 | Angel Thyago Flores Eusebio | Done |
-
 | - | Identity Access — Arquitectura DDD | T14 | Estructurar el bounded context con capas application, domain, infrastructure y presentation | 2 | Angel Thyago Flores Eusebio | Done |
 | - | Identity Access — Entidades de Dominio | T15 | Crear entidades User, Session y AccessLog con nomenclatura en inglés y atributos neutros | 2 | Angel Thyago Flores Eusebio | Done |
 | - | Identity Access — Infrastructure | T16 | Implementar BaseApi, BaseEndpoint, IdentityAccessApi y assemblers siguiendo el estilo de learning-center | 3 | Angel Thyago Flores Eusebio | Done |
