@@ -285,7 +285,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US73</td>
+      <td>US61</td>
       <td>Identidad y Acceso General</td>
       <td>T01</td>
       <td>Diseño Header</td>
@@ -295,7 +295,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US73</td>
+      <td>US61</td>
       <td>Identidad y Acceso General</td>
       <td>T02</td>
       <td>Implementación Header</td>
@@ -305,7 +305,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US74</td>
+      <td>US62</td>
       <td>Propuesta de Valor</td>
       <td>T03</td>
       <td>Diseño Hero</td>
@@ -325,7 +325,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US75</td>
+      <td>US63</td>
       <td>Catálogo de Capacidades Técnicas</td>
       <td>T05</td>
       <td>Diseño Funciones</td>
@@ -335,7 +335,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US75</td>
+      <td>US63</td>
       <td>Catálogo de Capacidades Técnicas</td>
       <td>T06</td>
       <td>Implementación Características</td>
@@ -345,7 +345,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US76</td>
+      <td>US64</td>
       <td>Metodología y Validación Social</td>
       <td>T07</td>
       <td>Diseño Cómo funciona</td>
@@ -355,7 +355,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US76</td>
+      <td>US64</td>
       <td>Metodología y Validación Social</td>
       <td>T08</td>
       <td>Implementación Cómo funciona</td>
@@ -365,7 +365,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US77</td>
+      <td>US65</td>
       <td>Beneficios por Rol Operativo</td>
       <td>T09</td>
       <td>Diseño Segmentos</td>
@@ -375,7 +375,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US77</td>
+      <td>US65</td>
       <td>Beneficios por Rol Operativo</td>
       <td>T10</td>
       <td>Implementación Segmentos</td>
@@ -385,7 +385,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US78</td>
+      <td>US66</td>
       <td>Cierre y Conversión de Prospectos</td>
       <td>T13</td>
       <td>Diseño CTA</td>
@@ -395,7 +395,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US78</td>
+      <td>US66</td>
       <td>Cierre y Conversión de Prospectos</td>
       <td>T14</td>
       <td>Implementación CTA</td>
@@ -623,7 +623,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
   </thead>
   <tbody>
     <tr>
-      <td>US44</td>
+      <td>US37</td>
       <td>Visualización del Dashboard Ejecutivo de Seguridad</td>
       <td>T01</td>
       <td>Implementación KPIs</td>
@@ -633,7 +633,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US44</td>
+      <td>US37</td>
       <td>Visualización del Dashboard Ejecutivo de Seguridad</td>
       <td>T02</td>
       <td>Detalle de indicador por sector</td>
@@ -643,7 +643,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US45</td>
+      <td>US38</td>
       <td>Visualización de Tendencias de Accidentabilidad</td>
       <td>T03</td>
       <td>Gráfico de tendencias</td>
@@ -653,7 +653,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US45</td>
+      <td>US38</td>
       <td>Visualización de Tendencias de Accidentabilidad</td>
       <td>T04</td>
       <td>Exportar gráfica como imagen</td>
@@ -663,7 +663,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
    <tr>
-      <td>US46</td>
+      <td>US39</td>
       <td>Exportación de Formatos de Auditoría para SUNAFIL</td>
       <td>T05</td>
       <td>Generación reportes auditoría PDF y Excel</td>
@@ -673,7 +673,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
       <tr>
-      <td>US46</td>
+      <td>US39</td>
       <td>Exportación de Formatos de Auditoría para SUNAFIL</td>
       <td>T07</td>
       <td>Historial y gestión de reportes generados</td>
@@ -683,7 +683,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US47</td>
+      <td>US40</td>
       <td>Seguimiento del Cumplimiento del Plan Anual de SST</td>
       <td>T07</td>
       <td>Diseño seguimiento SST</td>
@@ -693,7 +693,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US47</td>
+      <td>US40</td>
       <td>Seguimiento del Cumplimiento del Plan Anual de SST</td>
       <td>T08</td>
       <td>Implementación seguimiento SST</td>
@@ -703,7 +703,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US48</td>
+      <td>US41</td>
       <td>Visualización de Indicadores Predictivos de Riesgo</td>
       <td>T09</td>
       <td>Diseño indicadores predictivos</td>
@@ -713,7 +713,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US48</td>
+      <td>US41</td>
       <td>Visualización de Indicadores Predictivos de Riesgo</td>
       <td>T10</td>
       <td>Implementación indicadores predictivos</td>
@@ -723,7 +723,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US48</td>
+      <td>US41</td>
       <td>Visualización de Indicadores Predictivos de Riesgo</td>
       <td>T11</td>
       <td>Exportación resumen ejecutivo predictivo PDF</td>
@@ -733,7 +733,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US49</td>
+      <td>US42</td>
       <td>Notificación de Alerta Crítica No Resuelta a Gerencia</td>
       <td>T12</td>
       <td>Implementación alertas críticas</td>
@@ -743,27 +743,27 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
   <tr>
-      <td>US50</td>
+      <td>US43</td>
       <td>Registro Histórico de Incidentes para Trazabilidad Legal</td>
       <td>T13</td>
       <td>Implementación tabla historial de solo lectura</td>
-      <td>Implementar tabla inmutable de incidentes sin opciones de edición para garantizar trazabilidad legal ante          SUNAFIL</td>
+      <td>Implementar tabla inmutable de incidentes sin opciones de edición para garantizar trazabilidad legal ante SUNAFIL</td>
       <td>5</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US50</td>
+      <td>US43</td>
       <td>Registro Histórico de Incidentes para Trazabilidad Legal</td>
       <td>T14</td>
       <td>Filtros por sector, tipo y rango de fechas</td>
-      <td>Implementar filtros de búsqueda por sector, tipo de incidente y rango de fechas con actualización del       contador de resultados filtrados</td>
+      <td>Implementar filtros de búsqueda por sector, tipo de incidente y rango de fechas con actualización del contador de resultados filtrados</td>
       <td>4</td>
       <td>Aponte Pablo, Isabel Luisa</td>
       <td>Completed</td>
     </tr>
     <tr>
-      <td>US52</td>
+      <td>US45</td>
       <td>Generación de Reporte Mensual de Gestión de SST</td>
       <td>T15</td>
       <td>Generación de reporte en PDF</td>
@@ -773,7 +773,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
      <tr>
-      <td>US52</td>
+      <td>US45</td>
       <td>Generación de Reporte Mensual de Gestión de SST</td>
       <td>T16</td>
       <td>Historial y previsualización de reportes mensuales</td>
@@ -783,7 +783,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>TS53</td>
+      <td>TS08</td>
       <td>Endpoint para Obtener Indicadores del Dashboard Ejecutivo</td>
       <td>T17</td>
       <td>Consumo endpoint GET /api/v1/kpi_dashboard</td>
@@ -793,9 +793,9 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>TS54</td>
+      <td>TS08</td>
       <td>Endpoint para Obtener Tendencias Históricas de Accidentabilidad</td>
-      <td>T18</td>
+      <td>T09</td>
       <td>Consumo endpoint GET /api/v1/historical_trends</td>
       <td>Consumir el endpoint GET /api/v1/historical_trends para obtener la evolución mensual de incidentes y aplicar filtro por sector y por tipo en el frontend</td>
       <td>4</td>
@@ -803,7 +803,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>TS55</td>
+      <td>TS10</td>
       <td>Endpoint para Gestión de Reportes Generados</td>
       <td>T19</td>
       <td>Consumo endpoints GET, POST y DELETE /api/v1/generated_reports</td>
@@ -813,7 +813,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>TS56</td>
+      <td>TS11</td>
       <td>Endpoint para Gestión de Alertas Críticas</td>
       <td>T20</td>
       <td>Consumo endpoints GET, PATCH y DELETE /api/v1/critical_alerts</td>
@@ -823,7 +823,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
       <td>Completed</td>
     </tr>
     <tr>
-      <td>TS57</td>
+      <td>TS12</td>
       <td>Endpoint para Obtener el Plan Anual de SST y su Cumplimiento</td>
       <td>T21</td>
       <td>Consumo endpoint GET /api/v1/annual_ohs_plan</td>
@@ -836,6 +836,223 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 </table>
 
 #### 5.2.2.4.Development Evidence for Sprint Review.
+
+Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades correspondientes a cada Epic en el repositorio frontend del proyecto RiskGuard. A continuación se presenta el registro de commits realizados en las ramas de trabajo de cada integrante, evidenciando el progreso y las contribuciones individuales durante el período del sprint.
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Commited on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>4066cfd</td>
+      <td>Create index</td>
+      <td>Creación del archivo índice del proyecto</td>
+      <td>Apr 24, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>8a88511</td>
+      <td>add inspection and headquarters BC</td>
+      <td>Agregado bounded context de inspección y sede central</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>8aa1c72</td>
+      <td>fix: rename in english</td>
+      <td>Corrección de nombres de archivos y variables al inglés</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>0ebc3b5</td>
+      <td>Merge pull request #1 from upc-web-applications/feature/inspection_headquarters</td>
+      <td>Fusión de la rama feature/inspection_headquarters al flujo principal</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>41a4aa4</td>
+      <td>feat: upload bc</td>
+      <td>Subida del bounded context de evaluación de riesgos</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>b8e45b7</td>
+      <td>fix: add</td>
+      <td>Corrección y adición de archivos faltantes en el módulo</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>3570ff1</td>
+      <td>fix: add</td>
+      <td>Segunda corrección de archivos faltantes en el módulo</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/monitoring-dashboard</td>
+      <td>5034b80</td>
+      <td>monitoring-dashboard bc</td>
+      <td>Agregado bounded context del dashboard de monitoreo del supervisor</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/monitoring-dashboard</td>
+      <td>2f1d68a</td>
+      <td>update feature/monitoring-dashboard</td>
+      <td>Actualización de componentes y vistas del panel de monitoreo</td>
+      <td>May 15, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>b1cc4de</td>
+      <td>Merge branch 'main' of Frontend-RiskGuard</td>
+      <td>Sincronización con la rama main del repositorio personal</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>f9d6a2c</td>
+      <td>feat: add es and en</td>
+      <td>Agregado archivos de internacionalización en español e inglés</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>03a43ab</td>
+      <td>feat: add database db</td>
+      <td>Agregado archivo de base de datos json-server</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>b6b23eb</td>
+      <td>feat: add env</td>
+      <td>Agregado archivo de variables de entorno del proyecto</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>b3ec027</td>
+      <td>feat: add shared</td>
+      <td>Agregado componentes y recursos compartidos del módulo</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>3415ec1</td>
+      <td>feat: add entities</td>
+      <td>Agregado entidades del dominio de reportes y cumplimiento SST</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>42e7dcf</td>
+      <td>feat: add assemblers and api</td>
+      <td>Agregado assemblers y servicios de consumo de API</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>4f10c4e</td>
+      <td>feat: add store</td>
+      <td>Agregado store  para gestión de estado del módulo</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>70fdeae</td>
+      <td>feat: add presentation reports styles</td>
+      <td>Agregado estilos y estructura visual de las vistas de reportes</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>3fcc99b</td>
+      <td>feat: add configuration</td>
+      <td>Agregado configuración del módulo de reportes y cumplimiento</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>dbeea7d</td>
+      <td>fix: correct position</td>
+      <td>Corrección de posicionamiento de elementos en la interfaz</td>
+      <td>May 13, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>297db99</td>
+      <td>feat: add service pdf and excel</td>
+      <td>Agregado servicio de generación de documentos PDF y Excel con jsPDF</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>e0cf4ad</td>
+      <td>feat: add new presentation</td>
+      <td>Agregado nueva vista de presentación del módulo de reportes</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>de75928</td>
+      <td>feat: update routes</td>
+      <td>Actualización del enrutamiento para las vistas de reportes</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/reports_cumplimiento</td>
+      <td>3b0f309</td>
+      <td>feat: reports updates</td>
+      <td>Actualización de componentes y lógica del módulo de reportes</td>
+      <td>May 14, 2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/user-authentication</td>
+      <td>8116699</td>
+      <td>authentication bc</td>
+      <td>Agregado bounded context de autenticación de usuarios</td>
+      <td>May 15, 2026</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.2.5.Execution Evidence for Sprint Review.
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
