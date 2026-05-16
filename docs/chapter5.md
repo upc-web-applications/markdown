@@ -2099,7 +2099,7 @@ https://db-server-risk-0r34.onrender.com
 ```
 
 <p align="center">
-  <img src="images/bc/render-bc-mi.png" width="500"/>
+  <img src="images/bc/reder-bc-mi.png" width="500"/>
 </p>
 
 Los endpoints disponibles incluyen: `/peligros`, `/evaluaciones-riesgo`, `/mitigaciones`, `/patrones-riesgo`, `/niveles-criticidad-area`, `/alertas-patron`, `/resumenes-diarios`, `/tickets-accion-correctiva`, `/verificaciones-medida`, `/historiales-ticket`, `/alertas-sla`, `/notificaciones-criticas` y `/tecnicos`.
