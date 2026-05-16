@@ -2023,4 +2023,25 @@ El directorio de publicación fue configurado como `dist` en `firebase.json`, y 
 Boundend context : Reportes y cumplimiento
 
 https://riskguard-7fe11.web.app
+
+#### Despliegue de Vercel + My Json Server
+Para el bounded context de User Authentication se realizó el despliegue del frontend utilizando Vercel, debido a su integración directa con GitHub y su capacidad para desplegar ramas específicas del repositorio. Asimismo, el backend simulado fue desplegado mediante My JSON Server, utilizando un archivo `db.json` publicado en un repositorio independiente.
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/api-authentication.png?raw=true" width="500"/>
+</p>
+
+Posteriormente, se configuró el archivo de entorno de producción del frontend para consumir la URL pública de My JSON Server. En el archivo `src/.env.production` se actualizó la variable `VITE_RISKGUARD_API_URL`, reemplazando la URL local por la URL pública del backend simulado.
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/my-json-server-api.png?raw=true" width="500"/>
+</p>
+
+Para el despliegue del frontend se creó un proyecto en Vercel llamado `riskguard-user-authentication`. Este proyecto fue conectado al repositorio `upc-web-applications/Frontend`, configurando como rama de producción `feature/user-authentication`.
+
+<p align="center">
+  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/vercel-deploy.png?raw=true" width="500"/>
+</p>
+
+
 #### 5.2.2.8.Team Collaboration Insights during Sprint
