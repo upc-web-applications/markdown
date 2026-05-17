@@ -1,4 +1,6 @@
-## Conclusiones
+<link rel="stylesheet" href="../pdf-style.css" type="text/css">
+
+# Conclusiones
 
 1. **La investigación preliminar validó la existencia de una brecha tecnológica crítica en la gestión de seguridad y salud en el trabajo dentro del sector industrial peruano.** A través de la aplicación de entrevistas con los tres segmentos objetivo, el análisis competitivo y la revisión de datos estadísticos del sector minero y manufacturero, el equipo confirmó que la mayoría de las empresas industriales opera sin herramientas digitales especializadas para el registro y análisis de incidentes, lo que genera una "ceguera operativa" que incrementa la probabilidad de accidentes graves. Este hallazgo fundamenta con solidez la propuesta de valor de RiskGuard como solución viable, necesaria y diferenciada para ese segmento.
 

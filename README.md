@@ -1,4 +1,6 @@
-#	RiskGuard by GuardSecurity
+<link rel="stylesheet" href="pdf-style.css" type="text/css">
+
+# RiskGuard by GuardSecurity
 <div align="center">
 <br><br>
 <img src="https://marketingperu.beglobal.biz/wp-content/uploads/2025/01/logo-upc-png-transparente-1.png" alt="drawing" width="100"/> <br><br>

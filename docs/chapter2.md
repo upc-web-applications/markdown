@@ -1,18 +1,20 @@
+<link rel="stylesheet" href="../pdf-style.css" type="text/css">
+
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
-#### 1. SafetyCulture
+### 1. SafetyCulture
 Es una plataforma digital de seguridad y operaciones que permite realizar inspecciones, auditorías, capacitaciones y reportes de incidentes desde una sola aplicación. Incluye listas de verificación, gestión de activos y alertas en tiempo real, ayudando a las empresas a mejorar la seguridad, optimizar procesos y cumplir normas.
 
-#### 2. Cority
+### 2. Cority
 
 Cority es una plataforma web de gestión EHS (medio ambiente, salud y seguridad) orientada principalmente a grandes empresas de sectores como minería, manufactura, salud y gobierno. Permite centralizar datos, estandarizar procesos, controlar el cumplimiento normativo e identificar riesgos. Además, cuenta con módulos de salud ocupacional, seguridad, medio ambiente e higiene industrial, y cumple normas como OSHA, HIPAA y ADA.
 
-#### 3. EHS Insight
+### 3. EHS Insight
 
 EHS Insight es una plataforma de gestión EHS en la nube que permite automatizar procesos de seguridad, salud y medio ambiente. Incluye módulos de gestión de incidentes, auditorías, riesgos, impacto ambiental y desempeño empresarial. Además, ofrece acceso desde celular y modo sin conexión, permitiendo registrar datos incluso en zonas sin internet y sincronizarlos después.
 
-#### 4. GOSST - Gestor Online de Seguridad y Salud en el Trabajo
+### 4. GOSST - Gestor Online de Seguridad y Salud en el Trabajo
 
 GOSST es una plataforma peruana de Seguridad y Salud en el Trabajo desarrollada para ayudar a las empresas a cumplir la legislación peruana y estándares internacionales mediante una solución 100 % web. La plataforma integra módulos de inspecciones, capacitaciones, participación de trabajadores, gestión de contratistas y control de evaluaciones, facilitando la colaboración entre operarios, supervisores y comités de seguridad.
 
@@ -37,13 +39,13 @@ GOSST es una plataforma peruana de Seguridad y Salud en el Trabajo desarrollada 
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-#### Estrategias:
+### Estrategias:
 
 1. **Prevención predictiva y no solo registro:** RiskGuard se diferenciará de competidores como **SafetyCulture**, **EHS Insight** y **GOSST** porque no solo almacenará incidentes, sino que analizará los datos para anticipar accidentes antes de que ocurran. La plataforma utilizará reglas de negocio y variables como fallas de maquinaria, fatiga y falta de capacitación para calcular niveles de riesgo.
 2. **Adaptación al contexto peruano:** A diferencia de **Cority** y **SafetyCulture**, RiskGuard estará diseñado específicamente para empresas manufactureras y logísticas del Perú, incorporando formatos de auditoría, terminología y procesos alineados con la **Ley N.° 29783** y las necesidades locales.
 3. **Accesibilidad y facilidad de uso:** La plataforma será web, ligera e intuitiva, permitiendo que supervisores, operarios y personal de RR. HH. registren incidentes y riesgos de forma rápida, incluso desde dispositivos de baja gama.
 
-#### Tácticas:
+### Tácticas:
 
 * **Desarrollo de alertas y mapas de calor predictivos**  
   Implementación de dashboards con zonas de riesgo representadas por colores y alertas automáticas cuando el sistema detecte patrones peligrosos.
@@ -56,7 +58,7 @@ GOSST es una plataforma peruana de Seguridad y Salud en el Trabajo desarrollada 
   Planes de bajo costo para empresas medianas. Además, se brindará soporte técnico local y capacitación inicial, lo que facilitará la adopción frente a competidores internacionales.
 
 
-#### Aprovechamiento de debilidades de la competencia:
+### Aprovechamiento de debilidades de la competencia:
 
 1. Frente a **SafetyCulture**, que se centra principalmente en listas de verificación e inspecciones, RiskGuard ofrecerá un análisis más avanzado y predictivo, capaz de identificar áreas de alto riesgo antes de que ocurra un accidente.
 2. En comparación con **Cority**, que está orientado a grandes corporaciones y tiene un costo elevado, RiskGuard será más económico, simple de implementar y accesible para empresas medianas peruanas.
@@ -156,7 +158,7 @@ exploración y cierre sobre disposición de adopción tecnológica.
 ### 2.2.2. Registro de entrevistas
 Para consultar las entrevistas realizadas , visitar Anexo A
 
-#### Segmento objetivo #1: Operarios de Planta
+### Segmento objetivo #1: Operarios de Planta
 
 *Entrevistado N°1: Fabrizio Vacca Crisostomo*
 
@@ -193,7 +195,7 @@ Indicó que el proceso actual de reporte no es práctico, ya que implica avisar 
 Además, mencionó que ha reportado problemas anteriormente sin recibir seguimiento ni retroalimentación, lo que genera desmotivación y la percepción de que reportar no tiene impacto real. Aun así, identifica con frecuencia condiciones inseguras como cables sueltos o equipos en mal estado que muchas veces no son reportados por otros trabajadores.  
 Mostró disposición a utilizar una solución como RiskGuard, siempre que sea rápida, sencilla y no interrumpa su trabajo. Señaló que confiaría en la herramienta si esta confirma la recepción del reporte y demuestra que se toman acciones concretas en base a los incidentes reportados.  
 
-  #### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
+  ### Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento
   
   *Entrevistado N°1: Jorge Surco Villazante*
 
@@ -233,7 +235,7 @@ Actualmente, la información sobre incidentes se gestiona mediante fichas o form
 Álvaro reconoce que muchos operarios no reportan incidentes menores, ya sea porque los consideran poco relevantes o por falta de cultura de seguridad, lo cual representa un problema, ya que todos los eventos deberían ser registrados. También comentó que, en algunos casos, ya se habían detectado fallas en maquinaria antes de que ocurrieran accidentes, pero no se contaba con herramientas para actuar a tiempo.  
 Mostró alto interés en soluciones tecnológicas como RiskGuard, destacando que herramientas con alertas automáticas y dashboards de riesgos mejorarían significativamente su capacidad de prevención. Considera que este tipo de sistema optimizaría su trabajo, permitiría actuar antes de que ocurran accidentes y facilitaría una gestión más eficiente de la seguridad en planta.
 
-#### Segmento objetivo #3: Gerentes y Administradores
+### Segmento objetivo #3: Gerentes y Administradores
 *Entrevistado N°1: Tiziano Nicoletti*
 
 <p align="center">
@@ -347,7 +349,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ### 2.3.1. User Personas
 
-  #### Segmento Objetivo 1: Operarios de Planta
+  ### Segmento Objetivo 1: Operarios de Planta
   
   <div align="center">
   <p>
@@ -363,7 +365,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
- #### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
+ ### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
   
   <div align="center">
   <p>
@@ -379,7 +381,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
- #### Segmento Objetivo 3: Gerentes y Administradores
+ ### Segmento Objetivo 3: Gerentes y Administradores
   
   <div align="center">
   <p>
@@ -396,7 +398,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ### 2.3.2. User Task Matrix
 
-#### Segmento 1: Operarios de planta
+### Segmento 1: Operarios de planta
 
 | Tarea | Frecuencia | Importancia | Dificultad actual | ¿RiskGuard la soporta? |
 |---|---|---|---|---|
@@ -411,7 +413,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
-#### Segmento 2: Supervisores de seguridad y mantenimiento
+### Segmento 2: Supervisores de seguridad y mantenimiento
 
 | Tarea | Frecuencia | Importancia | Dificultad actual | ¿RiskGuard la soporta? |
 |---|---|---|---|---|
@@ -427,7 +429,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
-#### Segmento 3: Gerentes y administradores
+### Segmento 3: Gerentes y administradores
 
 | Tarea | Frecuencia | Importancia | Dificultad actual | ¿RiskGuard la soporta? |
 |---|---|---|---|---|
@@ -443,7 +445,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ### 2.3.3. User Journey Mapping
 
- #### Segmento Objetivo 1: Operarios de Planta
+ ### Segmento Objetivo 1: Operarios de Planta
   
   <div align="center">
   <p>
@@ -459,7 +461,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
- #### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
+ ### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
   
   <div align="center">
   <p>
@@ -475,7 +477,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
- #### Segmento Objetivo 3: Gerentes y Administradores
+ ### Segmento Objetivo 3: Gerentes y Administradores
   
   <div align="center">
   <p>
@@ -491,7 +493,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ### 2.3.4. Empathy Mapping
 
- #### Segmento Objetivo 1: Operarios de Planta
+ ### Segmento Objetivo 1: Operarios de Planta
   
   <div align="center">
   <p>
@@ -507,7 +509,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
- #### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
+ ### Segmento Objetivo 2: Supervisores de seguridad y mantenimiento
   
   <div align="center">
   <p>
@@ -523,7 +525,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
 
 ---
 
- #### Segmento Objetivo 3: Gerentes y Administradores
+ ### Segmento Objetivo 3: Gerentes y Administradores
   
   <div align="center">
   <p>

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../pdf-style.css" type="text/css">
 
 # Capítulo IV: Product Design
 

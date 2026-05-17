@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../pdf-style.css" type="text/css">
+
 # Anexos
 
 - Entrevista a Operarios de Planta

@@ -1,8 +1,10 @@
+<link rel="stylesheet" href="../pdf-style.css" type="text/css">
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
 
-## Epics
+### Epics
 
 <table align="center">
     <tr>
@@ -40,7 +42,7 @@
 </table>
 
 
-## User Stories
+### User Stories
 <table align="center">
   <tr>
     <td><b>User Story ID</b></td><td>US01</td>

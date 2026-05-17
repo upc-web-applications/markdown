@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../pdf-style.css" type="text/css">
+
 # Bibliografía
 
 - Christian Aquino Canchari et al. Enfermedades ocupacionales en minería en el
