@@ -271,179 +271,27 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 | Flores Eusebio, Angel Thyago         | angelfdevs      | C | C | C | C | C | C | C |
 
 #### 5.2.1.3. *Sprint Backlog 1*
+**Sprint #:** Sprint 1
 
-<p><strong>Sprint #:</strong> Sprint 1</p>
+**Sprint #:** Sprint 1
 
-<table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th colspan="2">User Story</th>
-      <th colspan="6">Work-Item / Task</th>
-    </tr>
-    <tr>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Estimation (Hours)</th>
-      <th>Assigned To</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US16</td>
-      <td>Visualización de métricas de impacto predictivo</td>
-      <td>T11</td>
-      <td>Diseño Estadísticas</td>
-      <td>Diseñar tarjetas de métricas</td>
-      <td>3 </td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US16</td>
-      <td>Visualización de métricas de impacto predictivo</td>
-      <td>T12</td>
-      <td>Implementación Estadísticas</td>
-      <td>Mostrar indicadores visuales</td>
-      <td>4</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US17</td>
-      <td>Interacción con botones de conversión</td>
-      <td>T15</td>
-      <td>Eventos botones</td>
-      <td>Configurar los botones</td>
-      <td>2</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US61</td>
-      <td>Identidad y Acceso General</td>
-      <td>T01</td>
-      <td>Diseño Header</td>
-      <td>Diseñar estructura del navbar</td>
-      <td>3</td>
-      <td>Flores Thyago, Angel</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US61</td>
-      <td>Identidad y Acceso General</td>
-      <td>T02</td>
-      <td>Implementación Header</td>
-      <td>Implementar navbar con logo y menú</td>
-      <td>3</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US62</td>
-      <td>Propuesta de Valor</td>
-      <td>T03</td>
-      <td>Diseño Hero</td>
-      <td>Diseñar sección principal</td>
-      <td>3</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US74</td>
-      <td>Propuesta de Valor</td>
-      <td>T04</td>
-      <td>Implementación Hero</td>
-      <td>Agregar texto e imagen principal</td>
-      <td>4</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US63</td>
-      <td>Catálogo de Capacidades Técnicas</td>
-      <td>T05</td>
-      <td>Diseño Funciones</td>
-      <td>Diseñar tarjetas de funcionalidades</td>
-      <td>2</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US63</td>
-      <td>Catálogo de Capacidades Técnicas</td>
-      <td>T06</td>
-      <td>Implementación Características</td>
-      <td>Mostrar funcionalidades del sistema</td>
-      <td>4</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US64</td>
-      <td>Metodología y Validación Social</td>
-      <td>T07</td>
-      <td>Diseño Cómo funciona</td>
-      <td>Diseñar flujo de pasos</td>
-      <td>2</td>
-      <td>Flores Thyago, Angel</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US64</td>
-      <td>Metodología y Validación Social</td>
-      <td>T08</td>
-      <td>Implementación Cómo funciona</td>
-      <td>Mostrar proceso del sistema</td>
-      <td>3</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US65</td>
-      <td>Beneficios por Rol Operativo</td>
-      <td>T09</td>
-      <td>Diseño Segmentos</td>
-      <td>Diseñar tarjetas por rol</td>
-      <td>2</td>
-      <td>Flores Thyago, Angel</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US65</td>
-      <td>Beneficios por Rol Operativo</td>
-      <td>T10</td>
-      <td>Implementación Segmentos</td>
-      <td>Mostrar beneficios por usuario</td>
-      <td>3</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US66</td>
-      <td>Cierre y Conversión de Prospectos</td>
-      <td>T13</td>
-      <td>Diseño CTA</td>
-      <td>Diseñar botones de acción</td>
-      <td>2 </td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US66</td>
-      <td>Cierre y Conversión de Prospectos</td>
-      <td>T14</td>
-      <td>Implementación CTA</td>
-      <td>Agregar botones de contacto</td>
-      <td>3</td>
-      <td>Blancas Chávez, Carlos Franco</td>
-      <td>Completed</td>
-    </tr>
-  </tbody>
-</table>
+| User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
+|---|---|---|---|---|---|---|
+| US16 | Visualización de Métricas de Impacto Predictivo | T01 | Diseñar tarjetas de métricas predictivas con indicadores visuales de siniestralidad, porcentajes de reducción y codificación por color según impacto | 4 | Laura Acosta, Victor Jhosef | Done |
+| US16 | Visualización de Métricas de Impacto Predictivo | T02 | Implementar indicadores estadísticos de impacto predictivo con animaciones de conteo, barras de progreso y diseño responsive usando PrimeVue | 6 | Blancas Chávez, Carlos Franco | Done |
+| US17 | Interacción con Botones de Conversión | T03 | Implementar registro de eventos de clic en botones de conversión, validación de múltiples interacciones sin errores y compatibilidad cross-device | 5 | Blancas Chávez, Carlos Franco | Done |
+| US61 | Identidad y Acceso General | T04 | Diseñar estructura del navbar responsive con logo, menú de navegación y botones de acceso para desktop y móvil | 4 | Flores Thyago, Angel | Done |
+| US61 | Identidad y Acceso General | T05 | Implementar navbar funcional con logo corporativo, menú hamburguesa en móvil, enlaces de navegación interna y botón de inicio de sesión | 6 | Blancas Chávez, Carlos Franco | Done |
+| US62 | Propuesta de Valor | T06 | Diseñar sección hero principal con título impactante, subtítulo descriptivo, imagen ilustrativa y llamada a la acción alineada a la identidad visual de RiskGuard | 4 | Laura Acosta, Victor Jhosef | Done |
+| US63 | Catálogo de Capacidades Técnicas | T07 | Diseñar tarjetas de funcionalidades clave del sistema con íconos representativos, títulos y descripciones breves por cada módulo | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US63 | Catálogo de Capacidades Técnicas | T08 | Implementar grid de funcionalidades con tarjetas interactivas mostrando módulos del sistema: monitoreo, reportes, alertas y cumplimiento SST | 6 | Blancas Chávez, Carlos Franco | Done |
+| US64 | Metodología y Validación Social | T09 | Diseñar sección de flujo de pasos ilustrando el proceso operativo del sistema desde el registro de incidentes hasta la resolución y reportes | 4 | Flores Thyago, Angel | Done |
+| US64 | Metodología y Validación Social | T10 | Implementar sección "Cómo funciona" con pasos numerados, íconos descriptivos y línea de tiempo visual del proceso de gestión de riesgos | 6 | Blancas Chávez, Carlos Franco | Done |
+| US65 | Beneficios por Rol Operativo | T11 | Diseñar tarjetas segmentadas por rol (operario, supervisor, gerente) con beneficios específicos y diferenciación visual por perfil de usuario | 4 | Flores Thyago, Angel | Done |
+| US65 | Beneficios por Rol Operativo | T12 | Implementar sección de beneficios por segmento de usuario con tarjetas diferenciadas, íconos por rol y descripción de valor para cada perfil | 6 | Blancas Chávez, Carlos Franco | Done |
+| US66 | Cierre y Conversión de Prospectos | T13 | Diseñar sección de cierre con botones de conversión "Iniciar prueba gratuita" y "Hablar con ventas", alineados a la guía de estilo de RiskGuard | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US66 | Cierre y Conversión de Prospectos | T14 | Implementar botones CTA de conversión con redirección a formularios de contacto, efectos hover y diseño responsive para desktop y móvil | 6 | Blancas Chávez, Carlos Franco | Done |
+| US74 | Propuesta de Valor | T15 | Implementar sección hero con texto de propuesta de valor, imagen principal optimizada, botones CTA y diseño responsive | 6 | Blancas Chávez, Carlos Franco | Done |
 
 #### 5.2.1.4. *Development Evidence for Sprint Review*
 
@@ -640,1023 +488,163 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C | L | C |
 
 #### 5.2.2.3. Sprint Backlog 2.
-#### 5.2.2.3.1. Sprint Backlog - Integrante 1
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
-| US05 | Selección de Sector al Registrar Incidente | T01 | Implementar dropdown de áreas activas filtrado por sede en el formulario de inspección | 2 | Blancas Chávez, Carlos Franco | Done |
-| US07 | Selección del Tipo de Incidente | T02 | Implementar dropdown de tipos de incidente con opción "Otro" y campo adicional | 2 | Blancas Chávez, Carlos Franco | Done |
-| US08 | Registro de Condición Insegura Vinculada a un Activo | T03 | Implementar dropdown de activos filtrado por área seleccionada | 2 | Blancas Chávez, Carlos Franco | Done |
-| US03 | Registro Rápido de Casi-Accidente | T04 | Implementar formulario completo de inspección con validaciones y envío a fake API | 3 | Blancas Chávez, Carlos Franco | Done |
-| US04 | Adjuntar Evidencia Fotográfica al Reporte | T05 | Implementar carga de foto con previsualización y validación de tamaño máximo 5MB | 2 | Blancas Chávez, Carlos Franco | Done |
-| US10 | Confirmación de Recepción del Reporte | T06 | Implementar pantalla de detalle de inspección con ticket generado automáticamente | 1 | Blancas Chávez, Carlos Franco | Done |
-| US12 | Historial de Reportes del Operario | T07 | Implementar lista de inspecciones con filtros por estado y contador de estadísticas | 2 | Blancas Chávez, Carlos Franco | Done |
-| US13 | Consulta del Detalle de un Reporte Enviado | T08 | Implementar vista de detalle de inspección con estado, acción correctiva y foto | 2 | Blancas Chávez, Carlos Franco | Done |
-| US14 | Visualización de Alertas Activas en el Sector | T09 | Implementar lista de inspecciones pendientes y en progreso con badges de urgencia | 1 | Blancas Chávez, Carlos Franco | Done |
-| - | BC Sede — CRUD completo | T10 | Implementar lista, formulario y detalle de sedes con create, update y delete | 3 | Blancas Chávez, Carlos Franco | Done |
-| - | BC Área — CRUD completo | T11 | Implementar lista, formulario y detalle de áreas vinculadas a sede con nivel de riesgo | 3 | Blancas Chávez, Carlos Franco | Done |
-| - | BC Activo Industrial — CRUD completo | T12 | Implementar lista, formulario y detalle de activos vinculados a área y sede | 3 | Blancas Chávez, Carlos Franco | Done |
-| - | Fake API — db.json | T13 | Crear base de datos fake con datos de sedes, áreas, activos e inspecciones para json-server | 1 | Blancas Chávez, Carlos Franco | Done |
-| - | Arquitectura DDD | T14 | Estructurar cada BC con capas domain, infrastructure, application y presentation siguiendo el patrón del curso | 2 | Blancas Chávez, Carlos Franco | Done |
-| - | i18n ES/EN | T15 | Implementar internacionalización con vue-i18n para español e inglés con botón de cambio en sidebar | 1 | Blancas Chávez, Carlos Franco | Done |
-| - | Diseño dark theme RiskGuard | T16 | Implementar estilos globales con paleta de colores #060D1A, #E8460A usando PrimeVue y PrimeFlex | 2 | Blancas Chávez, Carlos Franco | Done |
-
-#### 5.2.2.3.2. Sprint Backlog - Integrante 2
-<table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th colspan="2">User Story</th>
-      <th colspan="6">Work-Item / Task</th>
-    </tr>
-    <tr>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Estimation (Hours)</th>
-      <th>Assigned To</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US37</td>
-      <td>Visualización del Dashboard Ejecutivo de Seguridad</td>
-      <td>T01</td>
-      <td>Implementación KPIs</td>
-      <td>Implementar tarjetas de indicadores clave: incidentes activos, resueltos, sectores críticos y cumplimiento SST</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US37</td>
-      <td>Visualización del Dashboard Ejecutivo de Seguridad</td>
-      <td>T02</td>
-      <td>Detalle de indicador por sector</td>
-      <td>Al hacer clic en un KPI, mostrar dialog con listado de sectores y alertas activas; cerrar con un solo clic para volver        al dashboard</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US38</td>
-      <td>Visualización de Tendencias de Accidentabilidad</td>
-      <td>T03</td>
-      <td>Gráfico de tendencias</td>
-      <td>Implementar gráfica de línea con evolución mensual de incidentes diferenciada por tipo</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US38</td>
-      <td>Visualización de Tendencias de Accidentabilidad</td>
-      <td>T04</td>
-      <td>Exportar gráfica como imagen</td>
-      <td>Implementar descarga de la gráfica de tendencias en formato PNG con un solo clic</td>
-      <td>3</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-   <tr>
-      <td>US39</td>
-      <td>Exportación de Formatos de Auditoría para SUNAFIL</td>
-      <td>T05</td>
-      <td>Generación reportes auditoría PDF y Excel</td>
-      <td>Implementar formulario de exportación con selección de rango de fechas y formato, generación de documento de auditoría en PDF y Excel</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-      <tr>
-      <td>US39</td>
-      <td>Exportación de Formatos de Auditoría para SUNAFIL</td>
-      <td>T07</td>
-      <td>Historial y gestión de reportes generados</td>
-      <td>Implementar historial de reportes generados</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US40</td>
-      <td>Seguimiento del Cumplimiento del Plan Anual de SST</td>
-      <td>T07</td>
-      <td>Diseño seguimiento SST</td>
-      <td>Diseñar tarjetas de cumplimiento de actividades del plan anual de SST con indicador de color por porcentaje</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US40</td>
-      <td>Seguimiento del Cumplimiento del Plan Anual de SST</td>
-      <td>T08</td>
-      <td>Implementación seguimiento SST</td>
-      <td>-Implementar vista con cumplimiento global, actividades completadas, gráfica de evolución mensual,         exportación de informe anual PDF y generación de reporte de cumplimiento en PDF o Excel</td>
-      <td>5</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US41</td>
-      <td>Visualización de Indicadores Predictivos de Riesgo</td>
-      <td>T09</td>
-      <td>Diseño indicadores predictivos</td>
-      <td>Diseñar tarjetas de indicadores predictivos</td>
-      <td>3</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US41</td>
-      <td>Visualización de Indicadores Predictivos de Riesgo</td>
-      <td>T10</td>
-      <td>Implementación indicadores predictivos</td>
-      <td>Mostrar indicadores predictivos: sectores con tendencia creciente, tipos recurrentes y tiempo promedio de resolución</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US41</td>
-      <td>Visualización de Indicadores Predictivos de Riesgo</td>
-      <td>T11</td>
-      <td>Exportación resumen ejecutivo predictivo PDF</td>
-      <td>Implementar generación y descarga del resumen ejecutivo en PDFd</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US42</td>
-      <td>Notificación de Alerta Crítica No Resuelta a Gerencia</td>
-      <td>T12</td>
-      <td>Implementación alertas críticas</td>
-      <td>Implementar tabla con acciones marcar como resuelto y eliminar, con tags de severidad por tipo y estado</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-  <tr>
-      <td>US43</td>
-      <td>Registro Histórico de Incidentes para Trazabilidad Legal</td>
-      <td>T13</td>
-      <td>Implementación tabla historial de solo lectura</td>
-      <td>Implementar tabla inmutable de incidentes sin opciones de edición para garantizar trazabilidad legal ante SUNAFIL</td>
-      <td>5</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US43</td>
-      <td>Registro Histórico de Incidentes para Trazabilidad Legal</td>
-      <td>T14</td>
-      <td>Filtros por sector, tipo y rango de fechas</td>
-      <td>Implementar filtros de búsqueda por sector, tipo de incidente y rango de fechas con actualización del contador de resultados filtrados</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>US45</td>
-      <td>Generación de Reporte Mensual de Gestión de SST</td>
-      <td>T15</td>
-      <td>Generación de reporte en PDF</td>
-      <td>Implementar generación y descarga automática del reporte mensual consolidado en PDF con jsPDF</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-     <tr>
-      <td>US45</td>
-      <td>Generación de Reporte Mensual de Gestión de SST</td>
-      <td>T16</td>
-      <td>Historial y previsualización de reportes mensuales</td>
-      <td>Implementar historial de reportes mensuales generados con previsualización en historial, re-descarga y eliminación con confirmación</td>
-      <td>5</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>TS08</td>
-      <td>Endpoint para Obtener Indicadores del Dashboard Ejecutivo</td>
-      <td>T17</td>
-      <td>Consumo endpoint GET /api/v1/kpi_dashboard</td>
-      <td>Consumir el endpoint GET /api/v1/kpi_dashboard para obtener los cuatro indicadores KPI y sincronizarlos reactivamente en el store mediante syncKPIs</td>
-      <td>5</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>TS08</td>
-      <td>Endpoint para Obtener Tendencias Históricas de Accidentabilidad</td>
-      <td>T09</td>
-      <td>Consumo endpoint GET /api/v1/historical_trends</td>
-      <td>Consumir el endpoint GET /api/v1/historical_trends para obtener la evolución mensual de incidentes y aplicar filtro por sector y por tipo en el frontend</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>TS10</td>
-      <td>Endpoint para Gestión de Reportes Generados</td>
-      <td>T19</td>
-      <td>Consumo endpoints GET, POST y DELETE /api/v1/generated_reports</td>
-      <td>Consumir los endpoints de reportes generados para listar, registrar y eliminar reportes; la generación del documento PDF o Excel se realiza en el cliente con jsPDF</td>
-      <td>4</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>TS11</td>
-      <td>Endpoint para Gestión de Alertas Críticas</td>
-      <td>T20</td>
-      <td>Consumo endpoints GET, PATCH y DELETE /api/v1/critical_alerts</td>
-      <td>Consumir los endpoints de alertas críticas para listar, actualizar estado y eliminar alertas, con recálculo automático del KPI de sectores críticos tras cada operación</td>
-      <td>5</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-    <tr>
-      <td>TS12</td>
-      <td>Endpoint para Obtener el Plan Anual de SST y su Cumplimiento</td>
-      <td>T21</td>
-      <td>Consumo endpoint GET /api/v1/annual_ohs_plan</td>
-      <td>Consumir el endpoint GET /api/v1/annual_ohs_plan para obtener el porcentaje de cumplimiento global y el desglose por sector, y alimentar la vista de seguimiento SST y el KPI del dashboard</td>
-      <td>5</td>
-      <td>Aponte Pablo, Isabel Luisa</td>
-      <td>Completed</td>
-    </tr>
-  </tbody>
-</table>
-
-#### 5.2.2.3.3. Sprint Backlog - Integrante 3
-
-| User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
-|---|---|---|---|---|---|---|
-| US19 | Visualización del Mapa de Calor Operativo | T01 | Implementar dashboard principal con KPIs de tickets pendientes, tickets en progreso y mapa de calor por sectores | 3 | Flores Eusebio, Angel Thyago | Done |
-| US29 | Exploración Sectorizada y Filtrado de Alertas Activas | T03 | Implementar filtros de tickets por sector, nivel de riesgo y estado dentro de la bandeja de tickets | 3 | Flores Eusebio, Angel Thyago | Done |
-| US28 | Asignación de Tickets de Acción Correctiva | T04 | Implementar bandeja de tickets con acciones para asignar técnico o visualizar detalle de asignación | 3 | Flores Eusebio, Angel Thyago | Done |
-| US28 | Asignación de Tickets de Acción Correctiva | T05 | Implementar formulario de asignación y reasignación de técnico responsable a un ticket | 3 | Flores Eusebio, Angel Thyago | Done |
-| US33 | Escalamiento Automático por Incumplimiento de SLA | T06 | Mostrar estado SLA incumplido en tickets vencidos y adaptar el tiempo restante como tiempo excedido | 2 | Flores Eusebio, Angel Thyago | Done |
-| US25 | Configuración de Sectores y Áreas Operativas | T07 | Implementar sección Mapa de Sectores con listado, contador de sectores y contador de activos relacionados | 3 | Flores Eusebio, Angel Thyago | Done |
-| US25 | Configuración de Sectores y Áreas Operativas | T08 | Implementar formulario de creación y edición de sectores con código automático, descripción y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US25 | Configuración y Gestión de Activos Industriales | T09 | Implementar sección Gestión de Activos con listado, contador total y acciones por estado operativo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US25 | Configuración y Gestión de Activos Industriales | T10 | Implementar formulario de creación y edición de activos industriales con código automático y campos bloqueados cuando corresponde | 3 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Programación de Mantenimiento Preventivo de Activos | T11 | Implementar formulario para programar mantenimiento preventivo sobre un activo y actualizar su estado a mantenimiento | 3 | Flores Eusebio, Angel Thyago | Done |
-| US34 | Programación de Mantenimiento Preventivo de Activos | T12 | Implementar reactivación de activos en mantenimiento y actualización de la fecha de última revisión | 2 | Flores Eusebio, Angel Thyago | Done |
-| US27 | Gestión y Administración de Personal Técnico | T13 | Implementar Directorio Técnico con listado de técnicos, especialidad, estado y acción de detalle | 3 | Flores Eusebio, Angel Thyago | Done |
-| US27 | Gestión y Administración de Personal Técnico | T14 | Implementar formulario de registro y edición de técnicos con código automático y estado activo/inactivo | 3 | Flores Eusebio, Angel Thyago | Done |
-| US27 | Gestión y Administración de Personal Técnico | T15 | Integrar técnicos activos con el formulario de asignación de tickets correctivos | 2 | Flores Eusebio, Angel Thyago | Done |
-| US35 | Generación y Exportación de Reportes de Cumplimiento | T16 | Implementar sección Reportes y Cumplimiento con reportes por sector, estado y rango de fechas | 3 | Flores Eusebio, Angel Thyago | Done |
-| US35 | Generación y Exportación de Reportes de Cumplimiento | T17 | Implementar filtros de reportes por sector, opción Todos, fechas y botón para limpiar filtros | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Fake API — json-server | T19 | Crear y ajustar db.json con sectores, tickets, técnicos, activos, mantenimientos preventivos y reportes archivados | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Arquitectura DDD del BC Monitoring | T20 | Estructurar el bounded context monitoring-dashboard con capas application, domain, infrastructure y presentation | 3 | Flores Eusebio, Angel Thyago | Done |
-| - | Modelos de Dominio y Assemblers | T21 | Crear entidades y assemblers para tickets, sectores, técnicos, activos, mapa de calor y mantenimientos preventivos | 3 | Flores Eusebio, Angel Thyago | Done |
-| - | Integración API e Infraestructura | T22 | Implementar MonitoringApi usando BaseApi, BaseEndpoint y variables de entorno para endpoints del fake API | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Navegación y Rutas | T23 | Configurar rutas del bounded context para dashboard, tickets, sectores, técnicos, activos, mantenimiento y reportes | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | i18n ES/EN | T24 | Implementar textos principales en español e inglés usando vue-i18n, incluyendo navegación y footer | 2 | Flores Eusebio, Angel Thyago | Done |
-| - | Diseño dark theme RiskGuard | T25 | Ajustar estilos globales con tema oscuro, acento naranja, tablas PrimeVue, formularios, sidebar y footer | 3 | Flores Eusebio, Angel Thyago | Done |
-| - | Configuración para Deploy | T26 | Preparar variables de entorno para Vercel y API desplegada en Render | 1 | Flores Eusebio, Angel Thyago | Done |
-| US01 | Autenticación de Operario | T26 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T27 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T28 | Validar credenciales preconfiguradas del operario desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T29 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T30 | Implementar contador de intentos fallidos y bloqueo temporal después de 5 intentos | 2 | Angel Thyago Flores Eusebio | Done |
-| US01 | Autenticación de Operario | T31 | Redirigir al operario autenticado hacia su panel correspondiente según su rol | 2 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T32 | Implementar botón de cierre de sesión dentro del panel autenticado | 1 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T33 | Limpiar la sesión activa del usuario al cerrar sesión y redirigir al login | 2 | Angel Thyago Flores Eusebio | Done |
-| US02 | Cierre de Sesión del Operario | T34 | Implementar cierre automático de sesión por inactividad luego de 30 segundos | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T35 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T36 | Validar formato de correo antes de procesar el inicio de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T37 | Validar credenciales preconfiguradas del supervisor desde la Fake API | 2 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T38 | Implementar mensaje de error para correo o contraseña incorrectos | 1 | Angel Thyago Flores Eusebio | Done |
-| US24 | Autenticación Segura de Supervisor | T39 | Redirigir al supervisor autenticado hacia su panel correspondiente según su rol | 1 | Angel Thyago Flores Eusbio | Done | 
-| US36 | Autenticación Segura de Gerente o Administrador | T40 | Configurar usuarios demo para administrador, supervisor y operario en db.json | 1 | Angel Thyago Flores Eusebio | Done |
-| US36 | Autenticación Segura de Gerente o Administrador | T41 | Implementar validación de credenciales para usuarios de alta dirección | 2 | Angel Thyago Flores Eusebio | Done |
-| US36 | Autenticación Segura de Gerente o Administrador | T42| Mostrar panel simple según el rol autenticado: administración, supervisor u operario | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Arquitectura DDD | T43 | Estructurar el bounded context con capas application, domain, infrastructure y presentation | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Entidades de Dominio | T44 | Crear entidades User, Session y AccessLog con nomenclatura en inglés y atributos neutros | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Identity Access — Infrastructure | T45 | Implementar BaseApi, BaseEndpoint, IdentityAccessApi y assemblers siguiendo el estilo de learning-center | 3 | Angel Thyago Flores Eusebio | Done |
-| - | Fake API — Identity Access | T46 | Crear datos fake de roles, usuarios, sesiones y registros de acceso usando uuid | 2 | Angel Thyago Flores Eusebio | Done |
-| - | i18n ES/EN | T47 | Implementar textos en español e inglés para login, validaciones, panel y cierre de sesión | 1 | Angel Thyago Flores Eusebio | Done |
-| - | Diseño RiskGuard | T48 | Adaptar el diseño visual al tema oscuro de RiskGuard con color principal naranja | 2 | Angel Thyago Flores Eusebio | Done |
-| - | Deploy y Configuración | T49 | Configurar variables de entorno para desarrollo y producción con envDir en Vite | 1 | Angel Thyago Flores Eusebio | Done |
-
-#### 5.2.2.3.4. Sprint Backlog - Integrante 4
-<table border="1" cellspacing="0" cellpadding="6">
-  <thead>
-    <tr>
-      <th colspan="2">User Story</th>
-      <th colspan="6">Work-Item / Task</th>
-    </tr>
-    <tr>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Estimation (Hours)</th>
-      <th>Assigned To</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US16</td>
-      <td>Visualización de Métricas de Impacto Predictivo</td>
-      <td>T50</td>
-      <td>Landing page métricas predictivas</td>
-      <td>Implementar sección de la Landing Page con tarjetas visuales de indicadores de siniestralidad (50%, 83%, 90.7%) usando PrimeVue y diseño responsive</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US16</td>
-      <td>Visualización de Métricas de Impacto Predictivo</td>
-      <td>T51</td>
-      <td>Consumo API métricas predictivas</td>
-      <td>Consumir endpoint GET /api/v1/predictive_metrics para obtener indicadores de siniestralidad y sincronizarlos reactivamente en el store</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US16</td>
-      <td>Visualización de Métricas de Impacto Predictivo</td>
-      <td>T52</td>
-      <td>Validaciones de carga y responsive</td>
-      <td>Implementar validaciones de carga en menos de 3 segundos, diseño responsive para desktop y móvil, y asegurar visibilidad sin autenticación</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US17</td>
-      <td>Interacción con Botones de Conversión</td>
-      <td>T53</td>
-      <td>Botones CTA en landing</td>
-      <td>Implementar botones "Iniciar prueba gratuita" y "Hablar con ventas" con redirección a formularios y diseño responsive</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US17</td>
-      <td>Interacción con Botones de Conversión</td>
-      <td>T54</td>
-      <td>Registro de interacciones CTA</td>
-      <td>Consumir endpoint POST /api/v1/conversion_events para registrar clics en botones de conversión y sincronizar con el store</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US17</td>
-      <td>Interacción con Botones de Conversión</td>
-      <td>T55</td>
-      <td>Validación de múltiples clics y compatibilidad</td>
-      <td>Validar que los botones permitan múltiples clics sin errores y funcionen correctamente en desktop y dispositivos móviles</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US18</td>
-      <td>Visualización de Alerta por Riesgo Recurrente en sector</td>
-      <td>T56</td>
-      <td>Alerta de patrón recurrente</td>
-      <td>Implementar componente de alerta de patrón recurrente con detalle de tipo de riesgo, sector afectado, número de ocurrencias y fecha del primer reporte</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US18</td>
-      <td>Visualización de Alerta por Riesgo Recurrente en sector</td>
-      <td>T57</td>
-      <td>Consumo API riesgos recurrentes</td>
-      <td>Consumir endpoint GET /api/v1/recurrent_risk_alerts para detectar patrones con más de 3 ocurrencias en 30 días y mostrar en dashboard principal</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US18</td>
-      <td>Visualización de Alerta por Riesgo Recurrente en sector</td>
-      <td>T58</td>
-      <td>Lógica de detección de recurrencia</td>
-      <td>Implementar validación del motor de recurrencia: conteo de ocurrencias por tipo y sector en ventana de 30 días, sin generar alertas para menos de 3 ocurrencias</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US19</td>
-      <td>Visualización de Mapa de Calor de Riesgos de la Planta</td>
-      <td>T59</td>
-      <td>Mapa de calor interactivo</td>
-      <td>Implementar mapa de calor con sectores coloreados por intensidad según concentración de riesgos activos, usando PrimeVue y design tokens</td>
-      <td>8</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US19</td>
-      <td>Visualización de Mapa de Calor de Riesgos de la Planta</td>
-      <td>T60</td>
-      <td>Consumo API mapa de calor</td>
-      <td>Consumir endpoint GET /api/v1/risk_heatmap para obtener concentración de riesgos por sector con actualización automática al registrar o resolver riesgos</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US19</td>
-      <td>Visualización de Mapa de Calor de Riesgos de la Planta</td>
-      <td>T61</td>
-      <td>Detalle de sector desde mapa</td>
-      <td>Implementar vista de detalle al hacer clic en un sector del mapa mostrando lista de riesgos activos con tipo, criticidad y estado; volver al mapa con un clic</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US20</td>
-      <td>Notificación de Riesgo Crítico Sin Atender</td>
-      <td>T62</td>
-      <td>Notificación de escalamiento</td>
-      <td>Implementar componente de notificación de escalamiento para riesgos críticos sin acción correctiva asignada por más de 24 horas</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US20</td>
-      <td>Notificación de Riesgo Crítico Sin Atender</td>
-      <td>T63</td>
-      <td>Consumo API riesgos críticos sin atender</td>
-      <td>Consumir endpoint GET /api/v1/critical_unattended_risks para evaluar periódicamente riesgos críticos sin acción correctiva y sincronizar notificaciones en el store</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US20</td>
-      <td>Notificación de Riesgo Crítico Sin Atender</td>
-      <td>T64</td>
-      <td>Validación de tiempo transcurrido</td>
-      <td>Implementar lógica de validación de tiempo transcurrido desde registro del riesgo y evaluar si supera 24 horas sin acción correctiva asignada</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US21</td>
-      <td>Filtrado de Patrones de Riesgo por Tipo de Peligro</td>
-      <td>T65</td>
-      <td>Panel de patrones con filtros</td>
-      <td>Implementar panel de patrones de riesgo con filtros por tipo de peligro (físico, químico, ergonómico, otros) combinable con selector de sector</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US21</td>
-      <td>Filtrado de Patrones de Riesgo por Tipo de Peligro</td>
-      <td>T66</td>
-      <td>Consumo API patrones con filtros</td>
-      <td>Consumir endpoint GET /api/v1/risk_patterns con parámetros de filtro por tipo de peligro y sector, actualizando resultados reactivamente</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US21</td>
-      <td>Filtrado de Patrones de Riesgo por Tipo de Peligro</td>
-      <td>T67</td>
-      <td>Validación de filtros combinados</td>
-      <td>Validar filtros combinados de tipo de peligro y sector, mostrar mensaje informativo cuando no hay patrones para la categoría seleccionada</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US22</td>
-      <td>Visualización de Resumen de Riesgos del Día</td>
-      <td>T68</td>
-      <td>Dashboard resumen diario</td>
-      <td>Implementar dashboard de resumen diario con tarjetas de riesgos nuevos, en progreso y resueltos agrupados por sector</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US22</td>
-      <td>Visualización de Resumen de Riesgos del Día</td>
-      <td>T69</td>
-      <td>Consumo API resumen diario</td>
-      <td>Consumir endpoint GET /api/v1/daily_risk_summary para obtener conteo de riesgos del día actual agrupados por sector con estado</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US22</td>
-      <td>Visualización de Resumen de Riesgos del Día</td>
-      <td>T70</td>
-      <td>Validación de resumen vacío</td>
-      <td>Validar datos del resumen diario y mostrar mensaje "No se han reportado riesgos hoy" cuando no hay registros en el día actual</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US23</td>
-      <td>Marcar Alerta de Patrón Recurrente como Revisada</td>
-      <td>T71</td>
-      <td>Opción marcar como revisada</td>
-      <td>Implementar botón "Marcar como revisada" en cada alerta de patrón recurrente del dashboard con transición a sección de revisadas</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US23</td>
-      <td>Marcar Alerta de Patrón Recurrente como Revisada</td>
-      <td>T72</td>
-      <td>Consumo API actualizar estado alerta</td>
-      <td>Consumir endpoint PATCH /api/v1/recurrent_risk_alerts/:id para actualizar estado de alerta a revisada y recargar panel principal</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US23</td>
-      <td>Marcar Alerta de Patrón Recurrente como Revisada</td>
-      <td>T73</td>
-      <td>Historial de alertas revisadas</td>
-      <td>Implementar sección de historial de alertas revisadas accesible desde la misma pantalla y mostrar mensaje cuando no hay pendientes</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US24</td>
-      <td>Autenticación Segura de Supervisor</td>
-      <td>T74</td>
-      <td>Pantalla login supervisor</td>
-      <td>Implementar pantalla de inicio de sesión para supervisor con formulario de correo y contraseña, diseño RiskGuard y PrimeVue</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US24</td>
-      <td>Autenticación Segura de Supervisor</td>
-      <td>T75</td>
-      <td>Validación login y bloqueo</td>
-      <td>Validar formato de correo, consumir endpoint POST /api/v1/auth/login para validar credenciales, implementar contador de 5 intentos fallidos y bloqueo de 15 minutos</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US24</td>
-      <td>Autenticación Segura de Supervisor</td>
-      <td>T76</td>
-      <td>Redirección por rol supervisor</td>
-      <td>Implementar generación de token de seguridad post-autenticación y redirigir al supervisor a su panel de funciones según su rol</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US25</td>
-      <td>Configuración de Sectores y Áreas Operativas</td>
-      <td>T77</td>
-      <td>Módulo gestión de sectores</td>
-      <td>Implementar módulo de gestión de sectores con tabla de listado, formulario de creación y edición con nombre y descripción, y opción de desactivación</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US25</td>
-      <td>Configuración de Sectores y Áreas Operativas</td>
-      <td>T78</td>
-      <td>Consumo API CRUD sectores</td>
-      <td>Consumir endpoints CRUD /api/v1/sectors para listar, crear, actualizar y desactivar sectores con sincronización en store</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US25</td>
-      <td>Configuración de Sectores y Áreas Operativas</td>
-      <td>T79</td>
-      <td>Validación de sectores duplicados</td>
-      <td>Validar unicidad de nombre de sector antes de crear, restringir eliminación si tiene historial asociado permitiendo solo desactivación, mostrar mensajes de error</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US26</td>
-      <td>Configuración y Gestión de Activos Industriales</td>
-      <td>T80</td>
-      <td>Módulo gestión de activos</td>
-      <td>Implementar módulo de gestión de activos industriales con tabla de listado, formulario de creación/edición vinculado a sector activo y estado operativo</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US26</td>
-      <td>Configuración y Gestión de Activos Industriales</td>
-      <td>T81</td>
-      <td>Consumo API CRUD activos</td>
-      <td>Consumir endpoints CRUD /api/v1/industrial_assets para gestionar activos con código único, reubicación entre sectores y actualización de estado</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US26</td>
-      <td>Configuración y Gestión de Activos Industriales</td>
-      <td>T82</td>
-      <td>Validación de activos</td>
-      <td>Validar unicidad de código identificador, rechazar registro si sector destino está inactivo, desactivar en lugar de eliminar si tiene historial de inspecciones</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US27</td>
-      <td>Gestión y Administración de Personal Técnico</td>
-      <td>T83</td>
-      <td>Directorio técnico</td>
-      <td>Implementar directorio de personal técnico con listado, formulario de registro y edición con DNI, nombres, especialidad y estado activo/inactivo</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US27</td>
-      <td>Gestión y Administración de Personal Técnico</td>
-      <td>T84</td>
-      <td>Consumo API CRUD técnicos</td>
-      <td>Consumir endpoints CRUD /api/v1/technicians para gestionar personal técnico con validación de DNI único y filtro de solo activos para asignación</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US27</td>
-      <td>Gestión y Administración de Personal Técnico</td>
-      <td>T85</td>
-      <td>Validación e inhabilitación de técnicos</td>
-      <td>Validar unicidad de DNI, inhabilitar técnicos con estado "Inactivo" preservando historial de tickets y ocultarlos del selector de asignación</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US28</td>
-      <td>Asignación de Tickets de Acción Correctiva</td>
-      <td>T86</td>
-      <td>Bandeja de tickets y asignación</td>
-      <td>Implementar bandeja de tickets con formulario de asignación de técnico responsable, selector de técnicos activos y transición visual de estado</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US28</td>
-      <td>Asignación de Tickets de Acción Correctiva</td>
-      <td>T87</td>
-      <td>Consumo API asignar ticket</td>
-      <td>Consumir endpoint PATCH /api/v1/tickets/:id/assign para asignar técnico, actualizar estado a "En Progreso" y registrar trazabilidad de reasignaciones</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US28</td>
-      <td>Asignación de Tickets de Acción Correctiva</td>
-      <td>T88</td>
-      <td>Validación de asignación</td>
-      <td>Validar selección obligatoria de técnico activo, registrar fecha/hora de asignación y permitir reasignación con historial de cambios</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US29</td>
-      <td>Exploración Sectorizada y Filtrado de Alertas Activas</td>
-      <td>T89</td>
-      <td>Exploración por sector y filtros</td>
-      <td>Implementar visualización de alertas activas con selector de sector obligatorio y filtros secundarios por nivel de riesgo y estado</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US29</td>
-      <td>Exploración Sectorizada y Filtrado de Alertas Activas</td>
-      <td>T90</td>
-      <td>Consumo API alertas por sector</td>
-      <td>Consumir endpoint GET /api/v1/sectors/:id/alerts con parámetros de filtro secundario para obtener tickets de incidentes del sector seleccionado</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US29</td>
-      <td>Exploración Sectorizada y Filtrado de Alertas Activas</td>
-      <td>T91</td>
-      <td>Validación de selección de sector</td>
-      <td>Validar selección obligatoria de sector antes de desplegar alertas, mostrar mensaje informativo cuando el sector no tiene alertas activas o filtros sin coincidencias</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US30</td>
-      <td>Verificación y Cierre de Medidas de Control</td>
-      <td>T92</td>
-      <td>Vista de verificación de medidas</td>
-      <td>Implementar vista de verificación con selección de veredicto (Aprobación/Rechazo), campo de comentario obligatorio en rechazo y diseño de formulario</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US30</td>
-      <td>Verificación y Cierre de Medidas de Control</td>
-      <td>T93</td>
-      <td>Consumo API verificar ticket</td>
-      <td>Consumir endpoint PATCH /api/v1/tickets/:id/verify para aprobar (estado "Cerrado") o rechazar (revertir a "En Progreso") con registro de marca de tiempo</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US30</td>
-      <td>Verificación y Cierre de Medidas de Control</td>
-      <td>T94</td>
-      <td>Validación de veredicto y comentario</td>
-      <td>Validar que solo tickets en estado "Medida Implementada" puedan verificarse, exigir comentario de justificación en caso de rechazo, actualizar nivel de riesgo del sector</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US31</td>
-      <td>Visualización del Mapa de Calor Operativo</td>
-      <td>T95</td>
-      <td>Mapa de calor operativo IPERC</td>
-      <td>Implementar mapa de calor operativo con indicadores de criticidad IPERC por sector, clasificación visual por nivel de riesgo y selección de sector para ver tickets activos</td>
-      <td>8</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US31</td>
-      <td>Visualización del Mapa de Calor Operativo</td>
-      <td>T96</td>
-      <td>Consumo API heatmap operativo</td>
-      <td>Consumir endpoint GET /api/v1/operational_heatmap para obtener niveles de criticidad IPERC por sector y actualizar indicadores automáticamente al cerrar tickets</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US31</td>
-      <td>Visualización del Mapa de Calor Operativo</td>
-      <td>T97</td>
-      <td>Recálculo automático de nivel de alerta</td>
-      <td>Implementar lógica de disminución automática del nivel de alerta de un sector cuando todos los tickets críticos alcanzan estado "Cerrado"</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US32</td>
-      <td>Notificación Externa Automática por Incidentes Críticos</td>
-      <td>T98</td>
-      <td>Configuración notificación por correo</td>
-      <td>Implementar configuración de notificación por correo electrónico con alerta de incidentes críticos y formulario de dirección de destino</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US32</td>
-      <td>Notificación Externa Automática por Incidentes Críticos</td>
-      <td>T99</td>
-      <td>Consumo API notificación crítica</td>
-      <td>Consumir endpoint POST /api/v1/critical_alerts/notify para enviar notificación por correo al supervisor con ID de ticket, clasificación, sector y marca de tiempo</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US32</td>
-      <td>Notificación Externa Automática por Incidentes Críticos</td>
-      <td>T100</td>
-      <td>Validación de umbral crítico</td>
-      <td>Validar que solo incidentes con nivel de riesgo "Crítico" disparen la notificación externa, omitiendo el envío para niveles inferiores</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US33</td>
-      <td>Escalamiento Automático por Incumplimiento de SLA</td>
-      <td>T101</td>
-      <td>Visualización SLA y escalamiento</td>
-      <td>Implementar etiqueta "SLA Incumplido" en tickets vencidos, contador de tiempo excedido y notificación de escalamiento a gerencia</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US33</td>
-      <td>Escalamiento Automático por Incumplimiento de SLA</td>
-      <td>T102</td>
-      <td>Consumo API monitoreo SLA</td>
-      <td>Consumir endpoint GET /api/v1/tickets/sla_breach para monitorear tickets que superaron su SLA por nivel de riesgo y sincronizar estado en store</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US33</td>
-      <td>Escalamiento Automático por Incumplimiento de SLA</td>
-      <td>T103</td>
-      <td>Lógica de monitoreo SLA</td>
-      <td>Implementar asignación de SLA por nivel de riesgo, monitoreo en segundo plano del tiempo transcurrido, registro inmutable de incumplimiento y disparo de notificación gerencial</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US34</td>
-      <td>Programación de Mantenimiento Preventivo de Activos</td>
-      <td>T104</td>
-      <td>Formulario mantenimiento preventivo</td>
-      <td>Implementar formulario de programación de mantenimiento preventivo con selección de activo, técnico responsable, descripción y ventana de tiempo futura</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US34</td>
-      <td>Programación de Mantenimiento Preventivo de Activos</td>
-      <td>T105</td>
-      <td>Consumo API mantenimiento preventivo</td>
-      <td>Consumir endpoints POST /api/v1/preventive_maintenance y PATCH para crear, actualizar estado y cerrar mantenimientos con actualización de estado del activo</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US34</td>
-      <td>Programación de Mantenimiento Preventivo de Activos</td>
-      <td>T106</td>
-      <td>Validación de ciclo de mantenimiento</td>
-      <td>Validar bloqueo de alertas predictivas mientras activo está "En Mantenimiento", reactivación automática al cierre del ticket y registro de fecha de última revisión</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US35</td>
-      <td>Generación y Exportación de Reportes de Cumplimiento</td>
-      <td>T107</td>
-      <td>Sección reportes de cumplimiento</td>
-      <td>Implementar sección de reportes con filtros por rango de fechas, selector de sector, y botones de exportación en PDF y Excel</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US35</td>
-      <td>Generación y Exportación de Reportes de Cumplimiento</td>
-      <td>T108</td>
-      <td>Consumo API reportes cumplimiento</td>
-      <td>Consumir endpoint GET /api/v1/compliance_reports para obtener datos consolidados de incidentes, nivel de riesgo promedio y tasa de cumplimiento SLA con filtros</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>US35</td>
-      <td>Generación y Exportación de Reportes de Cumplimiento</td>
-      <td>T109</td>
-      <td>Validación y exportación de reportes</td>
-      <td>Validar consistencia del rango de fechas, bloquear consulta si fecha inicio es posterior a fecha fin, generar archivo descargable en PDF con jsPDF y Excel</td>
-      <td>6</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Fake API — json-server</td>
-      <td>T110</td>
-      <td>Base de datos fake assessment y mitigation</td>
-      <td>Crear y ajustar db.json con datos fake de sectores, activos industriales, técnicos, tickets, alertas de recurrencia, mapa de calor, SLA, mantenimientos preventivos y reportes de cumplimiento</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Arquitectura DDD del BC Risk Assessment</td>
-      <td>T111</td>
-      <td>DDD bounded context risk-assessment</td>
-      <td>Estructurar el bounded context risk-assessment con capas application, domain, infrastructure y presentation para el motor predictivo y análisis de riesgos</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Arquitectura DDD del BC Incident Mitigation</td>
-      <td>T112</td>
-      <td>DDD bounded context incident-mitigation</td>
-      <td>Estructurar el bounded context incident-mitigation con capas application, domain, infrastructure y presentation para la gestión de alertas y mitigación</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Modelos de Dominio y Assemblers</td>
-      <td>T113</td>
-      <td>Entidades y assemblers</td>
-      <td>Crear entidades y assemblers para patrones de riesgo, mapa de calor por sector, alertas críticas, SLA, mantenimiento preventivo y reportes de cumplimiento</td>
-      <td>5</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Integración API e Infraestructura</td>
-      <td>T114</td>
-      <td>AssessmentMitigationApi</td>
-      <td>Implementar AssessmentMitigationApi usando BaseApi, BaseEndpoint y variables de entorno para endpoints del fake API en ambos bounded contexts</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Navegación y Rutas</td>
-      <td>T115</td>
-      <td>Configuración de rutas</td>
-      <td>Configurar rutas de los bounded contexts para landing, dashboard supervisor, sectores, activos, técnicos, tickets, alertas, mantenimiento y reportes con lazy loading</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>i18n ES/EN</td>
-      <td>T116</td>
-      <td>Internacionalización assessment y mitigation</td>
-      <td>Implementar textos en español e inglés usando vue-i18n para todos los módulos de assessment (métricas, patrones, mapa de calor) y mitigation (alertas, tickets, SLA, mantenimiento, reportes)</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Diseño dark theme RiskGuard</td>
-      <td>T117</td>
-      <td>Estilos globales y tema oscuro</td>
-      <td>Ajustar estilos globales con tema oscuro RiskGuard (#060D1A, #E8460A) y PrimeVue para las nuevas vistas de assessment y mitigation, incluyendo tablas, formularios, sidebar y footer</td>
-      <td>4</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Configuración para Deploy</td>
-      <td>T118</td>
-      <td>Variables de entorno y deploy</td>
-      <td>Preparar variables de entorno para Vercel y API desplegada en Render, configurar envDir en Vite para los bounded contexts de assessment y mitigation</td>
-      <td>2</td>
-      <td>Laura Acosta, Victor Jhosef</td>
-      <td>Done</td>
-    </tr>
-  </tbody>
-</table>
+| US01 | Autenticación de Operario | T01 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 4 | Flores Eusebio, Angel Thyago | Done |
+| US01 | Autenticación de Operario | T02 | Validar formato de correo antes de procesar el inicio de sesión | 4 | Flores Eusebio, Angel Thyago | Done |
+| US01 | Autenticación de Operario | T03 | Validar credenciales preconfiguradas del operario desde la Fake API | 5 | Flores Eusebio, Angel Thyago | Done |
+| US01 | Autenticación de Operario | T04 | Implementar mensaje de error para correo o contraseña incorrectos | 4 | Flores Eusebio, Angel Thyago | Done |
+| US01 | Autenticación de Operario | T05 | Implementar contador de intentos fallidos y bloqueo temporal después de 5 intentos | 5 | Flores Eusebio, Angel Thyago | Done |
+| US01 | Autenticación de Operario | T06 | Redirigir al operario autenticado hacia su panel correspondiente según su rol | 4 | Flores Eusebio, Angel Thyago | Done |
+| US02 | Cierre de Sesión del Operario | T07 | Implementar botón de cierre de sesión dentro del panel autenticado | 4 | Flores Eusebio, Angel Thyago | Done |
+| US02 | Cierre de Sesión del Operario | T08 | Limpiar la sesión activa del usuario al cerrar sesión y redirigir al login | 5 | Flores Eusebio, Angel Thyago | Done |
+| US02 | Cierre de Sesión del Operario | T09 | Implementar cierre automático de sesión por inactividad luego de 30 segundos | 5 | Flores Eusebio, Angel Thyago | Done |
+| US03 | Registro Rápido de Casi-Accidente | T10 | Implementar formulario completo de inspección con validaciones y envío a fake API | 6 | Blancas Chávez, Carlos Franco | Done |
+| US04 | Adjuntar Evidencia Fotográfica al Reporte | T11 | Implementar carga de foto con previsualización y validación de tamaño máximo 5MB | 5 | Blancas Chávez, Carlos Franco | Done |
+| US05 | Selección de Sector al Registrar Incidente | T12 | Implementar dropdown de áreas activas filtrado por sede en el formulario de inspección | 5 | Blancas Chávez, Carlos Franco | Done |
+| US07 | Selección del Tipo de Incidente | T13 | Implementar dropdown de tipos de incidente con opción "Otro" y campo adicional | 5 | Blancas Chávez, Carlos Franco | Done |
+| US08 | Registro de Condición Insegura Vinculada a un Activo | T14 | Implementar dropdown de activos filtrado por área seleccionada | 5 | Blancas Chávez, Carlos Franco | Done |
+| US10 | Confirmación de Recepción del Reporte | T15 | Implementar pantalla de detalle de inspección con ticket generado automáticamente | 4 | Blancas Chávez, Carlos Franco | Done |
+| US12 | Historial de Reportes del Operario | T16 | Implementar lista de inspecciones con filtros por estado y contador de estadísticas | 5 | Blancas Chávez, Carlos Franco | Done |
+| US13 | Consulta del Detalle de un Reporte Enviado | T17 | Implementar vista de detalle de inspección con estado, acción correctiva y foto | 5 | Blancas Chávez, Carlos Franco | Done |
+| US14 | Visualización de Alertas Activas en el Sector | T18 | Implementar lista de inspecciones pendientes y en progreso con badges de urgencia | 4 | Blancas Chávez, Carlos Franco | Done |
+| US16 | Visualización de Métricas de Impacto Predictivo | T19 | Implementar sección de la Landing Page con tarjetas visuales de indicadores de siniestralidad (50%, 83%, 90.7%) usando PrimeVue y diseño responsive | 6 | Laura Acosta, Victor Jhosef | Done |
+| US16 | Visualización de Métricas de Impacto Predictivo | T20 | Consumir endpoint GET /api/v1/predictive_metrics para obtener indicadores de siniestralidad y sincronizarlos reactivamente en el store | 5 | Laura Acosta, Victor Jhosef | Done |
+| US16 | Visualización de Métricas de Impacto Predictivo | T21 | Implementar validaciones de carga en menos de 3 segundos, diseño responsive para desktop y móvil, y asegurar visibilidad sin autenticación | 5 | Laura Acosta, Victor Jhosef | Done |
+| US17 | Interacción con Botones de Conversión | T22 | Implementar botones "Iniciar prueba gratuita" y "Hablar con ventas" con redirección a formularios y diseño responsive | 5 | Laura Acosta, Victor Jhosef | Done |
+| US17 | Interacción con Botones de Conversión | T23 | Consumir endpoint POST /api/v1/conversion_events para registrar clics en botones de conversión y sincronizar con el store | 5 | Laura Acosta, Victor Jhosef | Done |
+| US17 | Interacción con Botones de Conversión | T24 | Validar que los botones permitan múltiples clics sin errores y funcionen correctamente en desktop y dispositivos móviles | 4 | Laura Acosta, Victor Jhosef | Done |
+| US18 | Visualización de Alerta por Riesgo Recurrente en sector | T25 | Implementar componente de alerta de patrón recurrente con detalle de tipo de riesgo, sector afectado, número de ocurrencias y fecha del primer reporte | 6 | Laura Acosta, Victor Jhosef | Done |
+| US18 | Visualización de Alerta por Riesgo Recurrente en sector | T26 | Consumir endpoint GET /api/v1/recurrent_risk_alerts para detectar patrones con más de 3 ocurrencias en 30 días y mostrar en dashboard principal | 5 | Laura Acosta, Victor Jhosef | Done |
+| US18 | Visualización de Alerta por Riesgo Recurrente en sector | T27 | Implementar validación del motor de recurrencia: conteo de ocurrencias por tipo y sector en ventana de 30 días, sin generar alertas para menos de 3 ocurrencias | 5 | Laura Acosta, Victor Jhosef | Done |
+| US19 | Visualización de Mapa de Calor de Riesgos de la Planta | T28 | Implementar mapa de calor con sectores coloreados por intensidad según concentración de riesgos activos, usando PrimeVue y design tokens | 8 | Laura Acosta, Victor Jhosef | Done |
+| US19 | Visualización de Mapa de Calor de Riesgos de la Planta | T29 | Consumir endpoint GET /api/v1/risk_heatmap para obtener concentración de riesgos por sector con actualización automática al registrar o resolver riesgos | 5 | Laura Acosta, Victor Jhosef | Done |
+| US19 | Visualización de Mapa de Calor de Riesgos de la Planta | T30 | Implementar vista de detalle al hacer clic en un sector del mapa mostrando lista de riesgos activos con tipo, criticidad y estado; volver al mapa con un clic | 5 | Laura Acosta, Victor Jhosef | Done |
+| US19 | Visualización del Mapa de Calor Operativo | T31 | Implementar dashboard principal con KPIs de tickets pendientes, tickets en progreso y mapa de calor por sectores | 6 | Flores Eusebio, Angel Thyago | Done |
+| US20 | Notificación de Riesgo Crítico Sin Atender | T32 | Implementar componente de notificación de escalamiento para riesgos críticos sin acción correctiva asignada por más de 24 horas | 5 | Laura Acosta, Victor Jhosef | Done |
+| US20 | Notificación de Riesgo Crítico Sin Atender | T33 | Consumir endpoint GET /api/v1/critical_unattended_risks para evaluar periódicamente riesgos críticos sin acción correctiva y sincronizar notificaciones en el store | 5 | Laura Acosta, Victor Jhosef | Done |
+| US20 | Notificación de Riesgo Crítico Sin Atender | T34 | Implementar lógica de validación de tiempo transcurrido desde registro del riesgo y evaluar si supera 24 horas sin acción correctiva asignada | 4 | Laura Acosta, Victor Jhosef | Done |
+| US21 | Filtrado de Patrones de Riesgo por Tipo de Peligro | T35 | Implementar panel de patrones de riesgo con filtros por tipo de peligro (físico, químico, ergonómico, otros) combinable con selector de sector | 6 | Laura Acosta, Victor Jhosef | Done |
+| US21 | Filtrado de Patrones de Riesgo por Tipo de Peligro | T36 | Consumir endpoint GET /api/v1/risk_patterns con parámetros de filtro por tipo de peligro y sector, actualizando resultados reactivamente | 5 | Laura Acosta, Victor Jhosef | Done |
+| US21 | Filtrado de Patrones de Riesgo por Tipo de Peligro | T37 | Validar filtros combinados de tipo de peligro y sector, mostrar mensaje informativo cuando no hay patrones para la categoría seleccionada | 4 | Laura Acosta, Victor Jhosef | Done |
+| US22 | Visualización de Resumen de Riesgos del Día | T38 | Implementar dashboard de resumen diario con tarjetas de riesgos nuevos, en progreso y resueltos agrupados por sector | 6 | Laura Acosta, Victor Jhosef | Done |
+| US22 | Visualización de Resumen de Riesgos del Día | T39 | Consumir endpoint GET /api/v1/daily_risk_summary para obtener conteo de riesgos del día actual agrupados por sector con estado | 5 | Laura Acosta, Victor Jhosef | Done |
+| US22 | Visualización de Resumen de Riesgos del Día | T40 | Validar datos del resumen diario y mostrar mensaje "No se han reportado riesgos hoy" cuando no hay registros en el día actual | 4 | Laura Acosta, Victor Jhosef | Done |
+| US23 | Marcar Alerta de Patrón Recurrente como Revisada | T41 | Implementar botón "Marcar como revisada" en cada alerta de patrón recurrente del dashboard con transición a sección de revisadas | 4 | Laura Acosta, Victor Jhosef | Done |
+| US23 | Marcar Alerta de Patrón Recurrente como Revisada | T42 | Consumir endpoint PATCH /api/v1/recurrent_risk_alerts/:id para actualizar estado de alerta a revisada y recargar panel principal | 5 | Laura Acosta, Victor Jhosef | Done |
+| US23 | Marcar Alerta de Patrón Recurrente como Revisada | T43 | Implementar sección de historial de alertas revisadas accesible desde la misma pantalla y mostrar mensaje cuando no hay pendientes | 4 | Laura Acosta, Victor Jhosef | Done |
+| US24 | Autenticación Segura de Supervisor | T44 | Implementar pantalla de inicio de sesión RiskGuard con formulario de correo y contraseña | 4 | Flores Eusebio, Angel Thyago | Done |
+| US24 | Autenticación Segura de Supervisor | T45 | Validar formato de correo antes de procesar el inicio de sesión | 4 | Flores Eusebio, Angel Thyago | Done |
+| US24 | Autenticación Segura de Supervisor | T46 | Validar credenciales preconfiguradas del supervisor desde la Fake API | 5 | Flores Eusebio, Angel Thyago | Done |
+| US24 | Autenticación Segura de Supervisor | T47 | Implementar mensaje de error para correo o contraseña incorrectos | 4 | Flores Eusebio, Angel Thyago | Done |
+| US24 | Autenticación Segura de Supervisor | T48 | Redirigir al supervisor autenticado hacia su panel correspondiente según su rol | 4 | Flores Eusebio, Angel Thyago | Done |
+| US24 | Autenticación Segura de Supervisor | T49 | Implementar pantalla de inicio de sesión para supervisor con formulario de correo y contraseña, diseño RiskGuard y PrimeVue | 5 | Laura Acosta, Victor Jhosef | Done |
+| US24 | Autenticación Segura de Supervisor | T50 | Validar formato de correo, consumir endpoint POST /api/v1/auth/login para validar credenciales, implementar contador de 5 intentos fallidos y bloqueo de 15 minutos | 6 | Laura Acosta, Victor Jhosef | Done |
+| US24 | Autenticación Segura de Supervisor | T51 | Implementar generación de token de seguridad post-autenticación y redirigir al supervisor a su panel de funciones según su rol | 5 | Laura Acosta, Victor Jhosef | Done |
+| US25 | Configuración de Sectores y Áreas Operativas | T52 | Implementar sección Mapa de Sectores con listado, contador de sectores y contador de activos relacionados | 6 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración de Sectores y Áreas Operativas | T53 | Implementar formulario de creación y edición de sectores con código automático, descripción y estado activo/inactivo | 6 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración y Gestión de Activos Industriales | T54 | Implementar sección Gestión de Activos con listado, contador total y acciones por estado operativo | 6 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración y Gestión de Activos Industriales | T55 | Implementar formulario de creación y edición de activos industriales con código automático y campos bloqueados cuando corresponde | 6 | Flores Eusebio, Angel Thyago | Done |
+| US25 | Configuración de Sectores y Áreas Operativas | T56 | Implementar módulo de gestión de sectores con tabla de listado, formulario de creación y edición con nombre y descripción, y opción de desactivación | 6 | Laura Acosta, Victor Jhosef | Done |
+| US25 | Configuración de Sectores y Áreas Operativas | T57 | Consumir endpoints CRUD /api/v1/sectors para listar, crear, actualizar y desactivar sectores con sincronización en store | 5 | Laura Acosta, Victor Jhosef | Done |
+| US25 | Configuración de Sectores y Áreas Operativas | T58 | Validar unicidad de nombre de sector antes de crear, restringir eliminación si tiene historial asociado permitiendo solo desactivación, mostrar mensajes de error | 4 | Laura Acosta, Victor Jhosef | Done |
+| US26 | Configuración y Gestión de Activos Industriales | T59 | Implementar módulo de gestión de activos industriales con tabla de listado, formulario de creación/edición vinculado a sector activo y estado operativo | 6 | Laura Acosta, Victor Jhosef | Done |
+| US26 | Configuración y Gestión de Activos Industriales | T60 | Consumir endpoints CRUD /api/v1/industrial_assets para gestionar activos con código único, reubicación entre sectores y actualización de estado | 5 | Laura Acosta, Victor Jhosef | Done |
+| US26 | Configuración y Gestión de Activos Industriales | T61 | Validar unicidad de código identificador, rechazar registro si sector destino está inactivo, desactivar en lugar de eliminar si tiene historial de inspecciones | 4 | Laura Acosta, Victor Jhosef | Done |
+| US27 | Gestión y Administración de Personal Técnico | T62 | Implementar Directorio Técnico con listado de técnicos, especialidad, estado y acción de detalle | 6 | Flores Eusebio, Angel Thyago | Done |
+| US27 | Gestión y Administración de Personal Técnico | T63 | Implementar formulario de registro y edición de técnicos con código automático y estado activo/inactivo | 6 | Flores Eusebio, Angel Thyago | Done |
+| US27 | Gestión y Administración de Personal Técnico | T64 | Integrar técnicos activos con el formulario de asignación de tickets correctivos | 5 | Flores Eusebio, Angel Thyago | Done |
+| US27 | Gestión y Administración de Personal Técnico | T65 | Implementar directorio de personal técnico con listado, formulario de registro y edición con DNI, nombres, especialidad y estado activo/inactivo | 6 | Laura Acosta, Victor Jhosef | Done |
+| US27 | Gestión y Administración de Personal Técnico | T66 | Consumir endpoints CRUD /api/v1/technicians para gestionar personal técnico con validación de DNI único y filtro de solo activos para asignación | 5 | Laura Acosta, Victor Jhosef | Done |
+| US27 | Gestión y Administración de Personal Técnico | T67 | Validar unicidad de DNI, inhabilitar técnicos con estado "Inactivo" preservando historial de tickets y ocultarlos del selector de asignación | 4 | Laura Acosta, Victor Jhosef | Done |
+| US28 | Asignación de Tickets de Acción Correctiva | T68 | Implementar bandeja de tickets con acciones para asignar técnico o visualizar detalle de asignación | 6 | Flores Eusebio, Angel Thyago | Done |
+| US28 | Asignación de Tickets de Acción Correctiva | T69 | Implementar formulario de asignación y reasignación de técnico responsable a un ticket | 6 | Flores Eusebio, Angel Thyago | Done |
+| US28 | Asignación de Tickets de Acción Correctiva | T70 | Implementar bandeja de tickets con formulario de asignación de técnico responsable, selector de técnicos activos y transición visual de estado | 6 | Laura Acosta, Victor Jhosef | Done |
+| US28 | Asignación de Tickets de Acción Correctiva | T71 | Consumir endpoint PATCH /api/v1/tickets/:id/assign para asignar técnico, actualizar estado a "En Progreso" y registrar trazabilidad de reasignaciones | 5 | Laura Acosta, Victor Jhosef | Done |
+| US28 | Asignación de Tickets de Acción Correctiva | T72 | Validar selección obligatoria de técnico activo, registrar fecha/hora de asignación y permitir reasignación con historial de cambios | 4 | Laura Acosta, Victor Jhosef | Done |
+| US29 | Exploración Sectorizada y Filtrado de Alertas Activas | T73 | Implementar filtros de tickets por sector, nivel de riesgo y estado dentro de la bandeja de tickets | 6 | Flores Eusebio, Angel Thyago | Done |
+| US29 | Exploración Sectorizada y Filtrado de Alertas Activas | T74 | Implementar visualización de alertas activas con selector de sector obligatorio y filtros secundarios por nivel de riesgo y estado | 6 | Laura Acosta, Victor Jhosef | Done |
+| US29 | Exploración Sectorizada y Filtrado de Alertas Activas | T75 | Consumir endpoint GET /api/v1/sectors/:id/alerts con parámetros de filtro secundario para obtener tickets de incidentes del sector seleccionado | 5 | Laura Acosta, Victor Jhosef | Done |
+| US29 | Exploración Sectorizada y Filtrado de Alertas Activas | T76 | Validar selección obligatoria de sector antes de desplegar alertas, mostrar mensaje informativo cuando el sector no tiene alertas activas o filtros sin coincidencias | 4 | Laura Acosta, Victor Jhosef | Done |
+| US30 | Verificación y Cierre de Medidas de Control | T77 | Implementar vista de verificación con selección de veredicto (Aprobación/Rechazo), campo de comentario obligatorio en rechazo y diseño de formulario | 6 | Laura Acosta, Victor Jhosef | Done |
+| US30 | Verificación y Cierre de Medidas de Control | T78 | Consumir endpoint PATCH /api/v1/tickets/:id/verify para aprobar (estado "Cerrado") o rechazar (revertir a "En Progreso") con registro de marca de tiempo | 5 | Laura Acosta, Victor Jhosef | Done |
+| US30 | Verificación y Cierre de Medidas de Control | T79 | Validar que solo tickets en estado "Medida Implementada" puedan verificarse, exigir comentario de justificación en caso de rechazo, actualizar nivel de riesgo del sector | 4 | Laura Acosta, Victor Jhosef | Done |
+| US31 | Visualización del Mapa de Calor Operativo | T80 | Implementar mapa de calor operativo con indicadores de criticidad IPERC por sector, clasificación visual por nivel de riesgo y selección de sector para ver tickets activos | 8 | Laura Acosta, Victor Jhosef | Done |
+| US31 | Visualización del Mapa de Calor Operativo | T81 | Consumir endpoint GET /api/v1/operational_heatmap para obtener niveles de criticidad IPERC por sector y actualizar indicadores automáticamente al cerrar tickets | 5 | Laura Acosta, Victor Jhosef | Done |
+| US31 | Visualización del Mapa de Calor Operativo | T82 | Implementar lógica de disminución automática del nivel de alerta de un sector cuando todos los tickets críticos alcanzan estado "Cerrado" | 5 | Laura Acosta, Victor Jhosef | Done |
+| US32 | Notificación Externa Automática por Incidentes Críticos | T83 | Implementar configuración de notificación por correo electrónico con alerta de incidentes críticos y formulario de dirección de destino | 5 | Laura Acosta, Victor Jhosef | Done |
+| US32 | Notificación Externa Automática por Incidentes Críticos | T84 | Consumir endpoint POST /api/v1/critical_alerts/notify para enviar notificación por correo al supervisor con ID de ticket, clasificación, sector y marca de tiempo | 5 | Laura Acosta, Victor Jhosef | Done |
+| US32 | Notificación Externa Automática por Incidentes Críticos | T85 | Validar que solo incidentes con nivel de riesgo "Crítico" disparen la notificación externa, omitiendo el envío para niveles inferiores | 4 | Laura Acosta, Victor Jhosef | Done |
+| US33 | Escalamiento Automático por Incumplimiento de SLA | T86 | Mostrar estado SLA incumplido en tickets vencidos y adaptar el tiempo restante como tiempo excedido | 5 | Flores Eusebio, Angel Thyago | Done |
+| US33 | Escalamiento Automático por Incumplimiento de SLA | T87 | Implementar etiqueta "SLA Incumplido" en tickets vencidos, contador de tiempo excedido y notificación de escalamiento a gerencia | 6 | Laura Acosta, Victor Jhosef | Done |
+| US33 | Escalamiento Automático por Incumplimiento de SLA | T88 | Consumir endpoint GET /api/v1/tickets/sla_breach para monitorear tickets que superaron su SLA por nivel de riesgo y sincronizar estado en store | 5 | Laura Acosta, Victor Jhosef | Done |
+| US33 | Escalamiento Automático por Incumplimiento de SLA | T89 | Implementar asignación de SLA por nivel de riesgo, monitoreo en segundo plano del tiempo transcurrido, registro inmutable de incumplimiento y disparo de notificación gerencial | 6 | Laura Acosta, Victor Jhosef | Done |
+| US34 | Programación de Mantenimiento Preventivo de Activos | T90 | Implementar formulario para programar mantenimiento preventivo sobre un activo y actualizar su estado a mantenimiento | 6 | Flores Eusebio, Angel Thyago | Done |
+| US34 | Programación de Mantenimiento Preventivo de Activos | T91 | Implementar reactivación de activos en mantenimiento y actualización de la fecha de última revisión | 5 | Flores Eusebio, Angel Thyago | Done |
+| US34 | Programación de Mantenimiento Preventivo de Activos | T92 | Implementar formulario de programación de mantenimiento preventivo con selección de activo, técnico responsable, descripción y ventana de tiempo futura | 6 | Laura Acosta, Victor Jhosef | Done |
+| US34 | Programación de Mantenimiento Preventivo de Activos | T93 | Consumir endpoints POST /api/v1/preventive_maintenance y PATCH para crear, actualizar estado y cerrar mantenimientos con actualización de estado del activo | 5 | Laura Acosta, Victor Jhosef | Done |
+| US34 | Programación de Mantenimiento Preventivo de Activos | T94 | Validar bloqueo de alertas predictivas mientras activo está "En Mantenimiento", reactivación automática al cierre del ticket y registro de fecha de última revisión | 5 | Laura Acosta, Victor Jhosef | Done |
+| US35 | Generación y Exportación de Reportes de Cumplimiento | T95 | Implementar sección Reportes y Cumplimiento con reportes por sector, estado y rango de fechas | 6 | Flores Eusebio, Angel Thyago | Done |
+| US35 | Generación y Exportación de Reportes de Cumplimiento | T96 | Implementar filtros de reportes por sector, opción Todos, fechas y botón para limpiar filtros | 5 | Flores Eusebio, Angel Thyago | Done |
+| US35 | Generación y Exportación de Reportes de Cumplimiento | T97 | Implementar sección de reportes con filtros por rango de fechas, selector de sector, y botones de exportación en PDF y Excel | 6 | Laura Acosta, Victor Jhosef | Done |
+| US35 | Generación y Exportación de Reportes de Cumplimiento | T98 | Consumir endpoint GET /api/v1/compliance_reports para obtener datos consolidados de incidentes, nivel de riesgo promedio y tasa de cumplimiento SLA con filtros | 5 | Laura Acosta, Victor Jhosef | Done |
+| US35 | Generación y Exportación de Reportes de Cumplimiento | T99 | Validar consistencia del rango de fechas, bloquear consulta si fecha inicio es posterior a fecha fin, generar archivo descargable en PDF con jsPDF y Excel | 6 | Laura Acosta, Victor Jhosef | Done |
+| US36 | Autenticación Segura de Gerente o Administrador | T100 | Configurar usuarios demo para administrador, supervisor y operario en db.json | 4 | Flores Eusebio, Angel Thyago | Done |
+| US36 | Autenticación Segura de Gerente o Administrador | T101 | Implementar validación de credenciales para usuarios de alta dirección | 5 | Flores Eusebio, Angel Thyago | Done |
+| US36 | Autenticación Segura de Gerente o Administrador | T102 | Mostrar panel simple según el rol autenticado: administración, supervisor u operario | 5 | Flores Eusebio, Angel Thyago | Done |
+| US37 | Visualización del Dashboard Ejecutivo de Seguridad | T103 | Implementar tarjetas de indicadores clave: incidentes activos, resueltos, sectores críticos y cumplimiento SST | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US37 | Visualización del Dashboard Ejecutivo de Seguridad | T104 | Al hacer clic en un KPI, mostrar dialog con listado de sectores y alertas activas; cerrar con un solo clic para volver al dashboard | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US38 | Visualización de Tendencias de Accidentabilidad | T105 | Implementar gráfica de línea con evolución mensual de incidentes diferenciada por tipo | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US38 | Visualización de Tendencias de Accidentabilidad | T106 | Implementar descarga de la gráfica de tendencias en formato PNG con un solo clic | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US39 | Exportación de Formatos de Auditoría para SUNAFIL | T107 | Implementar formulario de exportación con selección de rango de fechas y formato, generación de documento de auditoría en PDF y Excel | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US39 | Exportación de Formatos de Auditoría para SUNAFIL | T108 | Implementar historial de reportes generados | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US40 | Seguimiento del Cumplimiento del Plan Anual de SST | T109 | Diseñar tarjetas de cumplimiento de actividades del plan anual de SST con indicador de color por porcentaje | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US40 | Seguimiento del Cumplimiento del Plan Anual de SST | T110 | Implementar vista con cumplimiento global, actividades completadas, gráfica de evolución mensual, exportación de informe anual PDF y generación de reporte de cumplimiento en PDF o Excel | 5 | Aponte Pablo, Isabel Luisa | Done |
+| US41 | Visualización de Indicadores Predictivos de Riesgo | T111 | Diseñar tarjetas de indicadores predictivos | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US41 | Visualización de Indicadores Predictivos de Riesgo | T112 | Mostrar indicadores predictivos: sectores con tendencia creciente, tipos recurrentes y tiempo promedio de resolución | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US41 | Visualización de Indicadores Predictivos de Riesgo | T113 | Implementar generación y descarga del resumen ejecutivo en PDF | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US42 | Notificación de Alerta Crítica No Resuelta a Gerencia | T114 | Implementar tabla con acciones marcar como resuelto y eliminar, con tags de severidad por tipo y estado | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US43 | Registro Histórico de Incidentes para Trazabilidad Legal | T115 | Implementar tabla inmutable de incidentes sin opciones de edición para garantizar trazabilidad legal ante SUNAFIL | 5 | Aponte Pablo, Isabel Luisa | Done |
+| US43 | Registro Histórico de Incidentes para Trazabilidad Legal | T116 | Implementar filtros de búsqueda por sector, tipo de incidente y rango de fechas con actualización del contador de resultados filtrados | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US45 | Generación de Reporte Mensual de Gestión de SST | T117 | Implementar generación y descarga automática del reporte mensual consolidado en PDF con jsPDF | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US45 | Generación de Reporte Mensual de Gestión de SST | T118 | Implementar historial de reportes mensuales generados con previsualización en historial, re-descarga y eliminación con confirmación | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS08 | Endpoint para Obtener Indicadores del Dashboard Ejecutivo | T119 | Consumir el endpoint GET /api/v1/kpi_dashboard para obtener los cuatro indicadores KPI y sincronizarlos reactivamente en el store mediante syncKPIs | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS08 | Endpoint para Obtener Tendencias Históricas de Accidentabilidad | T120 | Consumir el endpoint GET /api/v1/historical_trends para obtener la evolución mensual de incidentes y aplicar filtro por sector y por tipo en el frontend | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS10 | Endpoint para Gestión de Reportes Generados | T121 | Consumir los endpoints de reportes generados para listar, registrar y eliminar reportes; la generación del documento PDF o Excel se realiza en el cliente con jsPDF | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS11 | Endpoint para Gestión de Alertas Críticas | T122 | Consumir los endpoints de alertas críticas para listar, actualizar estado y eliminar alertas, con recálculo automático del KPI de sectores críticos tras cada operación | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS12 | Endpoint para Obtener el Plan Anual de SST y su Cumplimiento | T123 | Consumir el endpoint GET /api/v1/annual_ohs_plan para obtener el porcentaje de cumplimiento global y el desglose por sector, y alimentar la vista de seguimiento SST y el KPI del dashboard | 5 | Aponte Pablo, Isabel Luisa | Done |
+| - | BC Sede — CRUD completo | T124 | Implementar lista, formulario y detalle de sedes con create, update y delete | 6 | Blancas Chávez, Carlos Franco | Done |
+| - | BC Área — CRUD completo | T125 | Implementar lista, formulario y detalle de áreas vinculadas a sede con nivel de riesgo | 6 | Blancas Chávez, Carlos Franco | Done |
+| - | BC Activo Industrial — CRUD completo | T126 | Implementar lista, formulario y detalle de activos vinculados a área y sede | 6 | Blancas Chávez, Carlos Franco | Done |
+| - | Fake API — db.json | T127 | Crear base de datos fake con datos de sedes, áreas, activos e inspecciones para json-server | 4 | Blancas Chávez, Carlos Franco | Done |
+| - | Arquitectura DDD | T128 | Estructurar cada BC con capas domain, infrastructure, application y presentation siguiendo el patrón del curso | 5 | Blancas Chávez, Carlos Franco | Done |
+| - | i18n ES/EN | T129 | Implementar internacionalización con vue-i18n para español e inglés con botón de cambio en sidebar | 4 | Blancas Chávez, Carlos Franco | Done |
+| - | Diseño dark theme RiskGuard | T130 | Implementar estilos globales con paleta de colores #060D1A, #E8460A usando PrimeVue y PrimeFlex | 5 | Blancas Chávez, Carlos Franco | Done |
+| - | Fake API — json-server | T131 | Crear y ajustar db.json con sectores, tickets, técnicos, activos, mantenimientos preventivos y reportes archivados | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | Arquitectura DDD del BC Monitoring | T132 | Estructurar el bounded context monitoring-dashboard con capas application, domain, infrastructure y presentation | 6 | Flores Eusebio, Angel Thyago | Done |
+| - | Modelos de Dominio y Assemblers | T133 | Crear entidades y assemblers para tickets, sectores, técnicos, activos, mapa de calor y mantenimientos preventivos | 6 | Flores Eusebio, Angel Thyago | Done |
+| - | Integración API e Infraestructura | T134 | Implementar MonitoringApi usando BaseApi, BaseEndpoint y variables de entorno para endpoints del fake API | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | Navegación y Rutas | T135 | Configurar rutas del bounded context para dashboard, tickets, sectores, técnicos, activos, mantenimiento y reportes | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | i18n ES/EN | T136 | Implementar textos principales en español e inglés usando vue-i18n, incluyendo navegación y footer | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | Diseño dark theme RiskGuard | T137 | Ajustar estilos globales con tema oscuro, acento naranja, tablas PrimeVue, formularios, sidebar y footer | 6 | Flores Eusebio, Angel Thyago | Done |
+| - | Configuración para Deploy | T138 | Preparar variables de entorno para Vercel y API desplegada en Render | 4 | Flores Eusebio, Angel Thyago | Done |
+| - | Identity Access — Arquitectura DDD | T139 | Estructurar el bounded context con capas application, domain, infrastructure y presentation | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | Identity Access — Entidades de Dominio | T140 | Crear entidades User, Session y AccessLog con nomenclatura en inglés y atributos neutros | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | Identity Access — Infrastructure | T141 | Implementar BaseApi, BaseEndpoint, IdentityAccessApi y assemblers siguiendo el estilo de learning-center | 6 | Flores Eusebio, Angel Thyago | Done |
+| - | Fake API — Identity Access | T142 | Crear datos fake de roles, usuarios, sesiones y registros de acceso usando uuid | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | i18n ES/EN | T143 | Implementar textos en español e inglés para login, validaciones, panel y cierre de sesión | 4 | Flores Eusebio, Angel Thyago | Done |
+| - | Diseño RiskGuard | T144 | Adaptar el diseño visual al tema oscuro de RiskGuard con color principal naranja | 5 | Flores Eusebio, Angel Thyago | Done |
+| - | Deploy y Configuración | T145 | Configurar variables de entorno para desarrollo y producción con envDir en Vite | 4 | Flores Eusebio, Angel Thyago | Done |
+| - | Fake API — json-server | T146 | Crear y ajustar db.json con datos fake de sectores, activos industriales, técnicos, tickets, alertas de recurrencia, mapa de calor, SLA, mantenimientos preventivos y reportes de cumplimiento | 5 | Laura Acosta, Victor Jhosef | Done |
+| - | Arquitectura DDD del BC Risk Assessment | T147 | Estructurar el bounded context risk-assessment con capas application, domain, infrastructure y presentation para el motor predictivo y análisis de riesgos | 5 | Laura Acosta, Victor Jhosef | Done |
+| - | Arquitectura DDD del BC Incident Mitigation | T148 | Estructurar el bounded context incident-mitigation con capas application, domain, infrastructure y presentation para la gestión de alertas y mitigación | 5 | Laura Acosta, Victor Jhosef | Done |
+| - | Modelos de Dominio y Assemblers | T149 | Crear entidades y assemblers para patrones de riesgo, mapa de calor por sector, alertas críticas, SLA, mantenimiento preventivo y reportes de cumplimiento | 5 | Laura Acosta, Victor Jhosef | Done |
+| - | Integración API e Infraestructura | T150 | Implementar AssessmentMitigationApi usando BaseApi, BaseEndpoint y variables de entorno para endpoints del fake API en ambos bounded contexts | 4 | Laura Acosta, Victor Jhosef | Done |
+| - | Navegación y Rutas | T151 | Configurar rutas de los bounded contexts para landing, dashboard supervisor, sectores, activos, técnicos, tickets, alertas, mantenimiento y reportes con lazy loading | 4 | Laura Acosta, Victor Jhosef | Done |
+| - | i18n ES/EN | T152 | Implementar textos en español e inglés usando vue-i18n para todos los módulos de assessment y mitigation | 4 | Laura Acosta, Victor Jhosef | Done |
+| - | Diseño dark theme RiskGuard | T153 | Ajustar estilos globales con tema oscuro RiskGuard (#060D1A, #E8460A) y PrimeVue para las nuevas vistas de assessment y mitigation | 4 | Laura Acosta, Victor Jhosef | Done |
+| - | Configuración para Deploy | T154 | Preparar variables de entorno para Vercel y API desplegada en Render, configurar envDir en Vite para los bounded contexts de assessment y mitigation | 4 | Laura Acosta, Victor Jhosef | Done |
 
 
 #### 5.2.2.4.Development Evidence for Sprint Review.
