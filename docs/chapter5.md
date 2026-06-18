@@ -2317,4 +2317,84 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 
 ### 5.3.3. Evaluaciones según heurísticas
 
+<table>
+<tr><td><strong>CARRERA</strong></td><td> Ingeniería de Software</td></tr>
+<tr><td><strong>CURSO</strong></td><td> Aplicaciones Web</td></tr>
+<tr><td><strong>SECCIÓN</strong></td><td> 12190</td></tr>
+<tr><td><strong>PROFESORES</strong></td><td> Todos</td></tr>
+<tr><td><strong>AUDITOR</strong></td><td> RiskGuard Team</td></tr>
+<tr><td><strong>CLIENTE(S)</strong></td><td>  Fabrizio Vacca, Rocío Acosta, Jorge Surco, Álvaro Pablo, Tiziano Nicoletti </td></tr>
+</table>
+
+**Usability – Inclusive Design – Information Architecture**
+
+**SITE o APP A EVALUAR:** RiskGuard Web Application
+
+**TAREAS A EVALUAR:**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Inicio de sesión y redirección por rol (Operario, Supervisor, Gerente)
+2. Registro de un incidente desde el dashboard del operario
+3. Seguimiento de reportes desde la sección "Inspecciones"
+4. Visualización del mapa de calor y panel de alertas del supervisor
+5. Asignación de técnico a un ticket desde el detalle
+7. Creación de sedes y registro de activos en el módulo de configuración
+8. Visualización del dashboard ejecutivo con indicadores clave
+9. Exportación de gráficas de tendencias en PNG
+10. Generación de reportes mensuales y de auditoría SUNAFIL
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Gestión de contraseñas y recuperación de cuentas
+2. Administración de roles y permisos de usuario
+4. Integración con sistemas externos de nómina o ERP
+
+**ESCALA DE SEVERIDAD:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | **Problema superficial:** puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+
+**TABLA RESUMEN:**
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|----------|:-------------------:|-------------------------------|
+| 1 | El formulario de reporte no permite adjuntar más de una foto de evidencia | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 2 | El campo de descripción del incidente no incluye texto de ejemplo o placeholder orientativo | 2 | Usability: Ayuda y documentación |
+| 3 | La sección "Inspecciones" no ofrece filtros por estado del reporte (pendiente, en progreso, cerrado) | 3 | Information Architecture: Is it findable? |
+| 4 | El selector de técnicos no muestra la carga de trabajo actual de cada técnico | 2 | Usability: Visibilidad del estado del sistema |
+| 5 | Al exportar gráficas de tendencias, solo se ofrece formato PNG sin opción de tabla con datos numéricos | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 6 | El dashboard ejecutivo no incluye un indicador de "días sin accidentes" | 2 | Information Architecture: Is it useful? |
+| 7 | No existe la opción de configurar alertas personalizadas por correo electrónico cuando los indicadores superan umbrales definidos | 3 | Usability: Flexibilidad y eficiencia de uso |
+| 8 | El flujo de cierre de ticket no permite al técnico adjuntar fotos de evidencia de la medida implementada | 3 | Usability: Correspondencia entre el sistema y el mundo real |
+| 9 | No se incluyen notas internas visibles solo para el supervisor en el detalle del ticket | 2 | Usability: Flexibilidad y eficiencia de uso |
+| 10 | Las etiquetas de urgencia por color no incluyen texto alternativo descriptivo para accesibilidad | 3 | Inclusive Design: Proporciona experiencias comparables |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #11:** Los colores del panel de alertas activas no generan suficiente contraste visual para destacar las alertas críticas
+
+**Severidad:** 2
+**Heurística violada:** Usability – Visibilidad del estado del sistema
+
+**Problema:**
+
+En el panel de "Alertas activas" del dashboard del supervisor, el badge "Crítico" se muestra en un tono rojo sobre fondo oscuro que no genera el contraste suficiente para captar la atención de manera inmediata. Aunque el mapa de calor operativo sí diferencia los sectores con colores llamativos (rojo para crítico, amarillo para alto, verde para bajo), el panel lateral de alertas no replica esa misma intensidad visual. Esto puede provocar que el supervisor no perciba una alerta crítica con la urgencia que requiere al revisar rápidamente el dashboard.
+
+<p align="center">
+  <img src="https://i.postimg.cc/SsFmXmP7/Captura-de-pantalla-2026-06-18-071423.png" width="600">
+</p>
+
+**Recomendación:**
+Aplicar un fondo con tinte rojo sutil en las filas de alertas críticas dentro del panel lateral, de modo que se distingan visualmente de las alertas de menor prioridad.
+
+
+
 ## 5.4. Video About-the-Product
