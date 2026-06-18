@@ -2305,6 +2305,24 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 
 **Segmento objetivo #1: Operarios de Planta**
 
+
+### Entrevista Nro. 1
+
+<img src="images/bc/Operario.png" width="500"/>
+
+**Entrevistado N°1:** Fabrizio Vacca  
+**Edad:** 28 años  
+**Ubicación:** Los Olivos  
+**Cargo:** Operario de Planta — Sector Manufactura  
+
+**Entrevista:** [Ver en One Drive](https://1drv.ms/v/c/7E97073B2DC02368/IQAE46rrHvs3QJDtniYrXsG0AR8jxBw5mSr1altIVn-HNBA?e=eYUCdP)  
+**Instante del que inicia:** 00:00  
+**Duración:** 12:27  
+
+**Resumen:**
+
+El participante indicó que el Landing Page le transmitió confianza al ver el mensaje principal "Predice los riesgos antes de que ocurran", señalando que refleja una necesidad real en su planta donde los incidentes muchas veces no se reportan a tiempo. Destacó la sección de estadísticas, especialmente el dato de 83% de trabajadores que mejoran cuando sus supervisores usan herramientas de seguimiento, considerándolo muy cercano a su realidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección sin necesidad de orientación, calificando el dashboard como intuitivo y directo. Respecto al formulario, indicó que los campos son suficientes para describir una situación de riesgo real, valorando especialmente los botones de color para el nivel de urgencia, asociando el rojo con situaciones que requieren atención inmediata. La confirmación con el número de ticket le generó confianza de que su reporte fue recibido correctamente, algo que destacó como una diferencia clave frente al proceso actual en su planta donde el reporte se hace en papel y no hay forma de hacer seguimiento. En la sección de Inspecciones, encontró fácilmente su reporte y comprendió los estados Pendiente, En Progreso y Resuelto sin necesidad de explicación. Calificó la facilidad de uso con un 5 de 5, afirmando que el sistema representaría una mejora real ya que actualmente el proceso de reporte es lento, manual y muchas veces los reportes se pierden. Como única sugerencia, mencionó que agregaría la opción de reportar la ubicación exacta dentro del área mediante un mapa simple.
+
 **Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento**
 
 | **Entrevista Nro. 1** |
