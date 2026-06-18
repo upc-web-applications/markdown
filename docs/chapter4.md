@@ -528,7 +528,7 @@ Los Wireflow Diagrams presentan de forma integrada las pantallas de la aplicaci�
 
 **Descripción del flujo:** Cualquier usuario (operario, supervisor o gerente) accede a RiskGuard con sus credenciales preconfiguradas.
 
-**Pantalla de Login:** El usuario ingresa correo y contraseña. Si las credenciales son válidas (US01, US31, US43, Scenario 1): el sistema valida el rol asignado y redirige a la vista principal correspondiente. Si las credenciales son incorrectas (Scenario 2): aparece el mensaje "Correo o contraseña incorrectos" y los campos quedan limpios. Si se acumulan 5 intentos fallidos consecutivos (Scenario 3): la cuenta se bloquea por 15 minutos y se muestra el mensaje de bloqueo temporal.
+**Pantalla de Login:** El usuario ingresa correo y contraseña. Si las credenciales son válidas (US01, US24, US36, Scenario 1): el sistema valida el rol asignado y redirige a la vista principal correspondiente. Si las credenciales son incorrectas (Scenario 2): aparece el mensaje "Correo o contraseña incorrectos" y los campos quedan limpios. Si se acumulan 5 intentos fallidos consecutivos (Scenario 3): la cuenta se bloquea por 15 minutos y se muestra el mensaje de bloqueo temporal.
 
 **Redirección por rol:** Un operario es redirigido a su dashboard con el formulario de reporte y las alertas de su sector. Un supervisor es redirigido al dashboard de monitoreo con el mapa de calor y el panel de tickets. Un gerente es redirigido al dashboard ejecutivo con los KPIs consolidados.
 
@@ -560,9 +560,9 @@ Los Wireflow Diagrams presentan de forma integrada las pantallas de la aplicaci�
 
 **Dashboard del Supervisor:** Al ingresar, el sistema carga el mapa de calor y el panel de alertas activas ordenadas por criticidad. El supervisor hace clic sobre una alerta crítica.
 
-**Detalle de Ticket (US35):** El sistema carga el detalle completo del ticket. El supervisor revisa la descripción, la foto adjunta y el nivel de criticidad calculado por el motor IPERC. Presiona "Asignar técnico". Si selecciona un técnico activo y confirma (Scenario 1): el ticket pasa a estado "En Progreso" y se registra la asignación en el historial. Si intenta confirmar sin seleccionar técnico (Scenario 2): aparece el mensaje de validación y el botón permanece deshabilitado.
+**Detalle de Ticket (US28):** El sistema carga el detalle completo del ticket. El supervisor revisa la descripción, la foto adjunta y el nivel de criticidad calculado por el motor IPERC. Presiona "Asignar técnico". Si selecciona un técnico activo y confirma (Scenario 1): el ticket pasa a estado "En Progreso" y se registra la asignación en el historial. Si intenta confirmar sin seleccionar técnico (Scenario 2): aparece el mensaje de validación y el botón permanece deshabilitado.
 
-**Cierre del Ticket (US37):** Cuando el técnico marca la medida como implementada, el supervisor recibe una notificación y puede aprobar o rechazar. Si aprueba: el ticket pasa a "Cerrado" y el mapa de calor se actualiza. Si rechaza sin ingresar motivo (Scenario 3): el sistema bloquea la acción y solicita la justificación técnica.
+**Cierre del Ticket (US30):** Cuando el técnico marca la medida como implementada, el supervisor recibe una notificación y puede aprobar o rechazar. Si aprueba: el ticket pasa a "Cerrado" y el mapa de calor se actualiza. Si rechaza sin ingresar motivo (Scenario 3): el sistema bloquea la acción y solicita la justificación técnica.
 
 ---
 
@@ -574,9 +574,9 @@ Los Wireflow Diagrams presentan de forma integrada las pantallas de la aplicaci�
 
 **Descripción del flujo:** El supervisor utiliza el dashboard predictivo para detectar patrones recurrentes y recibe alertas de escalamiento ante SLA incumplidos.
 
-**Panel de Patrones (US18, US21):** El supervisor accede al panel de patrones de riesgo. Aplica el filtro por tipo de peligro. Si existen patrones recurrentes (Scenario 1): el sistema muestra las alertas de patrón con el tipo de riesgo, sector, número de ocurrencias y fecha de primera ocurrencia en el período. Si no existen patrones para el tipo seleccionado (Scenario 2): el sistema muestra el mensaje informativo correspondiente.
+**Panel de Patrones (US18, US21):** El supervisor accede al panel de patrones de riesgo. (Scenario 1): el sistema muestra las alertas de patrón con el tipo de riesgo, sector, número de ocurrencias y fecha de primera ocurrencia en el período. Si no existen patrones para el tipo seleccionado (Scenario 2): el sistema muestra el mensaje informativo correspondiente.
 
-**Alerta de SLA Incumplido (US40):** Cuando un ticket crítico supera su tiempo máximo sin cerrarse, el sistema marca el ticket con la etiqueta "SLA Incumplido" y envía una notificación de escalamiento al gerente. El supervisor puede acceder al ticket desde la notificación y ejecutar la reasignación.
+**Alerta de SLA Incumplido (US33):** Cuando un ticket crítico supera su tiempo máximo sin cerrarse, el sistema marca el ticket con la etiqueta "SLA Incumplido" y envía una notificación de escalamiento al gerente. El supervisor puede acceder al ticket desde la notificación y ejecutar la reasignación.
 
 ---
 
@@ -656,7 +656,7 @@ Esta sección presenta los User Flow Diagrams de la aplicación web de RiskGuard
 *Ilustración – Web Application User Flow Diagram: Registro y Seguimiento de Incidente*
 
 **Happy Path:**
-Dashboard Operario → Clic "Nuevo Reporte" → Formulario desplegado → Completa tipo, sector, urgencia y descripción → Clic "Enviar" → Confirmación con número de ticket → Regresa al dashboard → Recibe notificación cuando el supervisor cambia el estado → Consulta detalle desde "Mis Reportes".
+Dashboard Operario → Clic "Registrar inspeccion"  → Formulario desplegado → Completa tipo, sector, urgencia y descripción → Clic "Enviar" → Confirmación con número de ticket → Regresa al dashboard → Recibe notificación cuando el supervisor cambia el estado → Consulta detalle desde "Inspecciones".
 
 **Unhappy Paths:**
 - Campos obligatorios vacíos (US03, Scenario 2): campos resaltados en rojo → botón "Enviar" bloqueado.
@@ -674,12 +674,12 @@ Dashboard Operario → Clic "Nuevo Reporte" → Formulario desplegado → Comple
 *Ilustración – Web Application User Flow Diagram: Gestión de Tickets y Cierre*
 
 **Happy Path:**
-Dashboard Supervisor → Panel de alertas activas → Clic sobre alerta crítica → Detalle del ticket → Clic "Asignar técnico" → Selector de técnico activo → Confirmar → Ticket pasa a "En Progreso" → Técnico implementa la medida → Supervisor recibe notificación → Accede al detalle → Aprueba la medida → Ticket pasa a "Cerrado" → Mapa de calor se actualiza → Operario recibe notificación de resolución.
+Dashboard Supervisor → Panel de alertas activas → Clic sobre alerta crítica → Clic "Asignar técnico" → Selector de técnico activo → Confirmar → Ticket pasa a "En Progreso" → Técnico implementa la medida → Supervisor recibe notificación → Accede al detalle → Aprueba la medida → Ticket pasa a "Cerrado" → Mapa de calor se actualiza → Operario recibe notificación de resolución.
 
 **Unhappy Paths:**
-- Intento de asignar sin seleccionar técnico (US35, Scenario 2): mensaje de validación → botón deshabilitado.
-- Rechazo de medida sin justificación (US37, Scenario 3): sistema bloquea el rechazo → campo de motivo resaltado en rojo.
-- Ticket supera SLA sin cerrarse (US40, Scenario 1): etiqueta "SLA Incumplido" aparece en la fila → notificación enviada al gerente.
+- Intento de asignar sin seleccionar técnico (US28, Scenario 2): mensaje de validación → botón deshabilitado.
+- Rechazo de medida sin justificación (US30, Scenario 3): sistema bloquea el rechazo → campo de motivo resaltado en rojo.
+- Ticket supera SLA sin cerrarse (US33, Scenario 1): etiqueta "SLA Incumplido" aparece en la fila → notificación enviada al gerente.
 
 ---
 
@@ -695,9 +695,9 @@ Dashboard Supervisor → Panel de alertas activas → Clic sobre alerta crítica
 Login Gerente → Dashboard Ejecutivo → Revisión de KPIs → Clic en indicador de "Sectores en estado crítico" → Detalle de sectores con alertas → Regresa al dashboard → Accede a sección de tendencias → Filtra por sector → Exporta gráfica en PNG → Navega a Módulo de Reportes → Selecciona tipo "Reporte mensual" → Elige período → Clic "Generar reporte" → PDF descargado automáticamente.
 
 **Unhappy Paths:**
-- Período sin datos suficientes (US52, Scenario 2): mensaje "No hay datos registrados para el período seleccionado" → no se genera archivo.
-- Fecha de inicio posterior a fecha de fin (TS10, Scenario 3): error de validación de rango → generación bloqueada.
-- Indicadores predictivos sin tendencias crecientes (US48, Scenario 2): mensaje informativo "No se detectaron tendencias de riesgo creciente en el período consultado".
+- Período sin datos suficientes (US45, Scenario 2): mensaje "No hay datos registrados para el período seleccionado" → no se genera archivo.
+- Fecha de inicio posterior a fecha de fin (US39, Scenario 2): error de validación de rango → generación bloqueada.
+- Indicadores predictivos sin tendencias crecientes (US41, Scenario 2): mensaje informativo "No se detectaron tendencias de riesgo creciente en el período consultado".
 
 ---
 
@@ -710,12 +710,12 @@ Login Gerente → Dashboard Ejecutivo → Revisión de KPIs → Clic en indicado
 *Ilustración – Web Application User Flow Diagram: Configuración de Sectores y Activos*
 
 **Happy Path:**
-Login Supervisor → Módulo de Configuración → Categoría "Sectores" → Clic "Nuevo Sector" → Completa nombre y descripción → Guardar → Sector aparece en la lista como "Activo" → Navega a categoría "Activos" → Clic "Nuevo Activo" → Selecciona sector creado → Completa datos del activo → Guardar → Activo aparece vinculado al sector.
+Login Supervisor → Módulo de Configuración → Categoría "Sedes" → Clic "Nueva sede" → Completa nombre y descripción → Guardar → Sector aparece en la lista como "Activo" → Navega a categoría "Activos" → Clic "Nuevo Activo" → Selecciona sector creado → Completa datos del activo → Guardar → Activo aparece vinculado al sector.
 
 **Unhappy Paths:**
-- Nombre de sector duplicado (US32, Scenario 2): sistema bloquea la creación → mensaje "El nombre del área ya existe".
-- Intento de registrar activo en sector inactivo (US33, Scenario 2): sistema rechaza la operación → mensaje de error de validación.
-- Desactivación de sector con historial (US32, Scenario 3): sistema cambia estado a "Inactivo" preservando los datos históricos → sector desaparece de los formularios de los operarios.
+- Nombre de sector duplicado (US25, Scenario 2): sistema bloquea la creación → mensaje "El nombre del área ya existe".
+- Intento de registrar activo en sector inactivo (US26, Scenario 2): sistema rechaza la operación → mensaje de error de validación.
+- Desactivación de sector con historial (US25, Scenario 3): sistema cambia estado a "Inactivo" preservando los datos históricos → sector desaparece de los formularios de los operarios.
 
 ---
 
