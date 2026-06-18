@@ -273,8 +273,6 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 #### 5.2.1.3. *Sprint Backlog 1*
 **Sprint #:** Sprint 1
 
-**Sprint #:** Sprint 1
-
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
 | US16 | Visualización de Métricas de Impacto Predictivo | T01 | Diseñar tarjetas de métricas predictivas con indicadores visuales de siniestralidad, porcentajes de reducción y codificación por color según impacto | 4 | Laura Acosta, Victor Jhosef | Done |
@@ -283,15 +281,15 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 | US61 | Identidad y Acceso General | T04 | Diseñar estructura del navbar responsive con logo, menú de navegación y botones de acceso para desktop y móvil | 4 | Flores Thyago, Angel | Done |
 | US61 | Identidad y Acceso General | T05 | Implementar navbar funcional con logo corporativo, menú hamburguesa en móvil, enlaces de navegación interna y botón de inicio de sesión | 6 | Blancas Chávez, Carlos Franco | Done |
 | US62 | Propuesta de Valor | T06 | Diseñar sección hero principal con título impactante, subtítulo descriptivo, imagen ilustrativa y llamada a la acción alineada a la identidad visual de RiskGuard | 4 | Laura Acosta, Victor Jhosef | Done |
-| US63 | Catálogo de Capacidades Técnicas | T07 | Diseñar tarjetas de funcionalidades clave del sistema con íconos representativos, títulos y descripciones breves por cada módulo | 4 | Aponte Pablo, Isabel Luisa | Done |
-| US63 | Catálogo de Capacidades Técnicas | T08 | Implementar grid de funcionalidades con tarjetas interactivas mostrando módulos del sistema: monitoreo, reportes, alertas y cumplimiento SST | 6 | Blancas Chávez, Carlos Franco | Done |
-| US64 | Metodología y Validación Social | T09 | Diseñar sección de flujo de pasos ilustrando el proceso operativo del sistema desde el registro de incidentes hasta la resolución y reportes | 4 | Flores Thyago, Angel | Done |
-| US64 | Metodología y Validación Social | T10 | Implementar sección "Cómo funciona" con pasos numerados, íconos descriptivos y línea de tiempo visual del proceso de gestión de riesgos | 6 | Blancas Chávez, Carlos Franco | Done |
-| US65 | Beneficios por Rol Operativo | T11 | Diseñar tarjetas segmentadas por rol (operario, supervisor, gerente) con beneficios específicos y diferenciación visual por perfil de usuario | 4 | Flores Thyago, Angel | Done |
-| US65 | Beneficios por Rol Operativo | T12 | Implementar sección de beneficios por segmento de usuario con tarjetas diferenciadas, íconos por rol y descripción de valor para cada perfil | 6 | Blancas Chávez, Carlos Franco | Done |
-| US66 | Cierre y Conversión de Prospectos | T13 | Diseñar sección de cierre con botones de conversión "Iniciar prueba gratuita" y "Hablar con ventas", alineados a la guía de estilo de RiskGuard | 4 | Aponte Pablo, Isabel Luisa | Done |
-| US66 | Cierre y Conversión de Prospectos | T14 | Implementar botones CTA de conversión con redirección a formularios de contacto, efectos hover y diseño responsive para desktop y móvil | 6 | Blancas Chávez, Carlos Franco | Done |
-| US74 | Propuesta de Valor | T15 | Implementar sección hero con texto de propuesta de valor, imagen principal optimizada, botones CTA y diseño responsive | 6 | Blancas Chávez, Carlos Franco | Done |
+| US62 | Propuesta de Valor | T07 | Implementar sección hero con texto de propuesta de valor, imagen principal optimizada, botones CTA y diseño responsive | 6 | Blancas Chávez, Carlos Franco | Done |
+| US63 | Catálogo de Capacidades Técnicas | T08 | Diseñar tarjetas de funcionalidades clave del sistema con íconos representativos, títulos y descripciones breves por cada módulo | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US63 | Catálogo de Capacidades Técnicas | T09 | Implementar grid de funcionalidades con tarjetas interactivas mostrando módulos del sistema: monitoreo, reportes, alertas y cumplimiento SST | 6 | Blancas Chávez, Carlos Franco | Done |
+| US64 | Metodología y Validación Social | T10 | Diseñar sección de flujo de pasos ilustrando el proceso operativo del sistema desde el registro de incidentes hasta la resolución y reportes | 4 | Flores Thyago, Angel | Done |
+| US64 | Metodología y Validación Social | T11 | Implementar sección "Cómo funciona" con pasos numerados, íconos descriptivos y línea de tiempo visual del proceso de gestión de riesgos | 6 | Blancas Chávez, Carlos Franco | Done |
+| US65 | Beneficios por Rol Operativo | T12 | Diseñar tarjetas segmentadas por rol (operario, supervisor, gerente) con beneficios específicos y diferenciación visual por perfil de usuario | 4 | Flores Thyago, Angel | Done |
+| US65 | Beneficios por Rol Operativo | T13 | Implementar sección de beneficios por segmento de usuario con tarjetas diferenciadas, íconos por rol y descripción de valor para cada perfil | 6 | Blancas Chávez, Carlos Franco | Done |
+| US66 | Cierre y Conversión de Prospectos | T14 | Diseñar sección de cierre con botones de conversión "Iniciar prueba gratuita" y "Hablar con ventas", alineados a la guía de estilo de RiskGuard | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US66 | Cierre y Conversión de Prospectos | T15 | Implementar botones CTA de conversión con redirección a formularios de contacto, efectos hover y diseño responsive para desktop y móvil | 6 | Blancas Chávez, Carlos Franco | Done |
 
 #### 5.2.1.4. *Development Evidence for Sprint Review*
 
@@ -2304,6 +2302,17 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 12. Si pudiera cambiarle una sola cosa al módulo gerencial, ¿cuál sería?
 
 ### 5.3.2. Registro de Entrevistas
+
+**Segmento objetivo #1: Operarios de Planta**
+
+**Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento**
+
+| **Entrevista Nro. 1** |
+|---|
+| <img src="https://i.postimg.cc/yNTVtMdG/Captura-de-pantalla-2026-06-18-065936.png" width="330" hspace="230"> |
+| **Entrevistado N°2:** Álvaro Pablo <br> **Edad:** 25 años<br>**Ubicación:** Barranca<br>**Cargo:** Supervisor de seguridad y mantenimiento<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQB1uHcy34fvSqQwXjrQbD-iAe9CaOKMJZslPIPAD3BTcko) <br>**Instante del que inicia:** 00:00<br> **Duración:** 7:18 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza porque identifica los procesos de planta relacionados con seguridad industrial, destacando que los colores son intuitivos y que la plataforma aplica la metodología IPERC, la cual utiliza en su campo de ingeniería industrial. Al ver el dashboard con el mapa de calor, identificó rápidamente qué sectores requieren atención gracias a la diferenciación por colores, asociando el rojo con criticidad grave. Los badges de color le resultaron claros para diferenciar la urgencia de cada ticket. Respecto al detalle del ticket, consideró que la información presentada es suficiente para tomar una decisión sobre la acción correctiva, ya que identifica el sector y muestra el estado actual del problema. El proceso de asignar un técnico le pareció directo y eficiente. La etiqueta "SLA Incumplido" le resultó entendible para priorizar acciones y no sugirió agregar otra señal visual. En el módulo de configuración, el flujo de crear sedes y registrar activos le pareció sencillo y completo, valorando los nombres claros y las descripciones rápidas de cada proceso. Calificó la completitud del flujo de gestión de tickets con un 4 de 5, señalando que el sistema ayuda a identificar lo que ocurre de manera rápida y centralizada. Confirmó que el sistema reduciría el tiempo dedicado a gestionar incidentes, ya que actualmente debe llenar documentos físicos, hacer llamadas y registrar en bases de datos manuales. Como única sugerencia, mencionó que cambiaría los colores del fondo en la sección de alertas, haciendo que el rojo sea más llamativo para destacar mejor las alertas críticas. |
+
+**Segmento objetivo #3: Gerentes y Administradores**
 
 
 ### 5.3.3. Evaluaciones según heurísticas
