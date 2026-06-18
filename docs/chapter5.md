@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../pdf-style.css" type="text/css">
-
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
@@ -271,7 +269,12 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 | Flores Eusebio, Angel Thyago         | angelfdevs      | C | C | C | C | C | C | C |
 
 #### 5.2.1.3. *Sprint Backlog 1*
-**Sprint #:** Sprint 1
+
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 1 del proyecto, el cual tuvo como objetivo principal implementar la Landing Page de la plataforma RiskGuard y establecer la presencia digital del producto. Durante este Sprint, el equipo desarrolló User Stories relacionadas con la visualización de métricas de impacto predictivo, la interacción con botones de conversión, la presentación de la propuesta de valor y el diseño responsive de la página de aterrizaje orientada a captar potenciales clientes del sector industrial. Asimismo, se realizó la descomposición de cada User Story en tareas técnicas específicas (Work-items/Tasks), permitiendo organizar el trabajo de manera incremental, asignar responsabilidades y realizar el seguimiento del avance del Sprint mediante la herramienta de gestión del proyecto.
+
+**Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
+
+[![Captura-de-pantalla-2026-06-18-173234.png](https://i.postimg.cc/jSr0Dj28/Captura-de-pantalla-2026-06-18-173234.png)](https://postimg.cc/WhSfKTMr)
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -486,6 +489,12 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 | Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C | L | C |
 
 #### 5.2.2.3. Sprint Backlog 2.
+
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 2 del proyecto, el cual tuvo como objetivo principal implementar el frontend completo de la plataforma RiskGuard con integración a una Fake API. Durante este Sprint, el equipo desarrolló User Stories relacionadas con el dashboard ejecutivo de seguridad, la visualización de tendencias de accidentabilidad, la exportación de reportes de auditoría para SUNAFIL, el seguimiento del plan anual de SST, los indicadores predictivos de riesgo, el mapa de calor operativo, la gestión de tickets correctivos con SLA, el mantenimiento preventivo de activos y la generación de reportes de cumplimiento. Asimismo, se realizó la descomposición de cada User Story en tareas técnicas específicas (Work-items/Tasks), permitiendo organizar el trabajo de manera incremental, asignar responsabilidades y realizar el seguimiento del avance del Sprint mediante la herramienta de gestión del proyecto.
+
+**Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
+
+[![Captura-de-pantalla-2026-06-18-174121.png](https://i.postimg.cc/sXWbfdyV/Captura-de-pantalla-2026-06-18-174121.png)](https://postimg.cc/bDzmL5sM)
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -2397,7 +2406,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
-**PROBLEMA #11:** Los colores del panel de alertas activas no generan suficiente contraste visual para destacar las alertas críticas
+**PROBLEMA #01:** Los colores del panel de alertas activas no generan suficiente contraste visual para destacar las alertas críticas
 
 **Severidad:** 2
 **Heurística violada:** Usability – Visibilidad del estado del sistema
