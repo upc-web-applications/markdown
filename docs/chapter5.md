@@ -2188,9 +2188,123 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 
 ## 5.3. Validation Interviews
 
+En esta sección se registran las entrevistas de validación del proyecto. A diferencia de las entrevistas de la sección 2.2, donde se buscaba descubrir problemas y necesidades, aquí el objetivo es verificar si lo que construimos realmente funciona para los usuarios y si les resulta fácil de usar.
+
 ### 5.3.1. Diseño de Entrevistas
 
+Al inicio de cada sesión se le explica al participante que el objetivo es probar la aplicación, no sus conocimientos, por lo que puede interactuar con total libertad. La sesión se divide en tres momentos: exploración del Landing Page, ejecución de tareas en la aplicación y cuestionario final.
+
+**Datos de registro del participante**
+
+- Nombre completo
+- Edad
+- Distrito de residencia
+- Cargo actual y empresa (o sector industrial)
+- Años de experiencia en el sector
+
+**Segmento objetivo 1: Operarios de Planta**
+
+*Elementos a validar: Landing Page y Web Application (registro de incidentes y seguimiento de reportes).*
+
+**User Flows a validar (sección 4.4.4):**
+
+- User Flow 1 – Registro y seguimiento de incidente. Acceder al dashboard del operario, presionar "Registrar inspección", completar el formulario de reporte rápido (tipo de incidente, sector, urgencia, descripción y foto opcional), enviar el reporte y recibir la confirmación con número de ticket. Luego consultar el estado del reporte desde la sección "Inspecciones" y recibir notificaciones de cambio de estado.
+
+**Tareas asignadas:**
+
+- Navegar el Landing Page, revisar las secciones de características, metodología y estadísticas, y acceder a la aplicación.
+- Iniciar sesión con sus credenciales de operario.
+- Desde el dashboard, identificar el botón "Registrar inspección" y acceder al formulario de reporte rápido.
+- Completar todos los campos obligatorios del formulario: seleccionar tipo de incidente, sector, nivel de urgencia (usando los botones de color) e ingresar una descripción.
+- Adjuntar una foto de evidencia (opcional) y enviar el reporte.
+- Verificar que el sistema muestre la confirmación con el número de ticket asignado.
+- Navegar a la sección "Inspecciones" y localizar el reporte recién enviado para revisar su estado actual.
+- Consultar el detalle de un reporte anterior y verificar el historial de cambios de estado.
+
+**Preguntas de validación:**
+
+1. ¿El Landing Page le ayudó a entender para qué sirve RiskGuard? ¿Qué sección le llamó más la atención?
+2. Al ver el dashboard del operario, ¿pudo identificar rápidamente dónde registrar un nuevo reporte? ¿Le pareció intuitivo?
+3. Los campos del formulario de reporte (tipo de incidente, sector, urgencia, descripción y foto), ¿le parecieron suficientes para describir una situación de riesgo? ¿Sobra o falta algún campo?
+4. ¿Los botones de color para seleccionar el nivel de urgencia (verde, naranja, rojo) le resultaron claros? ¿Entendió la diferencia entre cada nivel?
+5. Al enviar el reporte, ¿la confirmación con el número de ticket le generó confianza de que su reporte fue recibido?
+6. En la sección "Inspecciones", ¿le resultó fácil encontrar su reporte y entender en qué estado se encuentra?
+7. ¿Hubo algún botón o pantalla donde no supiera qué hacer?
+8. En una escala del 1 al 5, ¿qué tan fácil le resultó completar el proceso de registro de un incidente?
+9. Comparado con el proceso actual de reporte en su planta, ¿considera que este sistema representaría una mejora real? ¿Por qué?
+10. Si pudiera cambiarle una sola cosa a la aplicación, ¿cuál sería?
+
+**Segmento objetivo 2: Supervisores de Seguridad y Mantenimiento**
+
+*Elementos a validar: Landing Page y Web Application (gestión de tickets, cierre de acciones correctivas y configuración de planta).*
+
+**User Flows a validar (sección 4.4.4):**
+
+- User Flow 2 – Gestión de tickets y cierre de acciones correctivas. Acceder al dashboard del supervisor con el mapa de calor y el panel de alertas activas, seleccionar una alerta crítica, revisar el detalle del ticket, asignar un técnico de mantenimiento, verificar la implementación de la medida correctiva y aprobar o rechazar el cierre del ticket.
+- User Flow 4 – Configuración de planta. Acceder al módulo de configuración, crear una nueva sede con nombre y descripción, registrar un nuevo activo vinculado a un sector activo, e intentar desactivar un sector con historial de incidentes.
+
+**Tareas asignadas:**
+
+- Navegar el Landing Page, revisar las secciones de características y metodología, y acceder a la aplicación.
+- Iniciar sesión con sus credenciales de supervisor.
+- En el dashboard, interpretar el mapa de calor e identificar qué sectores requieren atención inmediata.
+- Revisar el panel de alertas activas ordenadas por criticidad y seleccionar una alerta crítica.
+- Acceder al detalle del ticket y revisar la información completa
+- Asignar un técnico de mantenimiento activo al ticket y confirmar la asignación.
+- Identificar un ticket con etiqueta "SLA Incumplido" y verificar su señalización visual.
+- Navegar al módulo de configuración y crear una nueva sede.
+
+**Preguntas de validación:**
+
+1. ¿El Landing Page le transmitió confianza sobre la plataforma? ¿Le quedó claro cómo RiskGuard ayudaría en su rol de supervisor?
+2. Al ver el dashboard con el mapa de calor y las alertas activas, ¿la disposición de la información le permitió identificar rápidamente qué sectores requieren atención?
+3. ¿Los badges de color  le resultaron claros para diferenciar la urgencia de cada ticket?
+4. En el detalle del ticket, ¿la información presentada  es suficiente para tomar una decisión sobre la acción correctiva?
+5. ¿El proceso de asignar un técnico al ticket le pareció directo y eficiente? ¿Cambiaría algo del selector de técnicos?
+6. La etiqueta "SLA Incumplido", ¿le ayuda a priorizar sus acciones? ¿Agregaría alguna otra señal visual?
+7. En el módulo de configuración, ¿el flujo de crear sedes y registrar activos le pareció sencillo y completo?
+8. En una escala del 1 al 5, ¿qué tan completo considera el flujo de gestión de tickets para sus necesidades diarias?
+9. ¿Este sistema le permitiría reducir el tiempo que actualmente dedica a gestionar incidentes de manera manual?
+10. Si pudiera cambiarle una sola cosa a la aplicación, ¿cuál sería?
+
+**Segmento objetivo 3: Gerentes y Administradores**
+
+*Elementos a validar: Landing Page y Web Application (dashboard ejecutivo, indicadores predictivos y exportación de reportes).*
+
+**User Flows a validar (sección 4.4.4):**
+
+- User Flow 3 – Dashboard ejecutivo y exportación de reportes. Iniciar sesión como gerente y acceder al dashboard ejecutivo, revisar los cuatro indicadores clave (incidentes activos, resueltos en el mes, sectores críticos, cumplimiento del plan anual de SST), hacer clic en el indicador de sectores críticos para ver el detalle, acceder a la sección de tendencias de accidentabilidad, filtrar por sector, exportar la gráfica en PNG, navegar al módulo de reportes, seleccionar tipo de reporte y período, y generar el PDF
+
+**Tareas asignadas:**
+
+- Navegar el Landing Page, revisar las secciones de estadísticas y soluciones por rol, y acceder a la aplicación.
+- Iniciar sesión con sus credenciales de gerente.
+- En el dashboard ejecutivo, interpretar los cuatro indicadores clave 
+- Hacer clic sobre el indicador de "Sectores críticos" y revisar el detalle desplegado con las alertas activas por sector.
+- Acceder a la sección de tendencias de accidentabilidad y revisar la gráfica de evolución mensual diferenciada por tipo de incidente.
+- Aplicar el filtro por sector en la gráfica de tendencias y exportar la gráfica en formato PNG.
+- Navegar al módulo de reportes y generar un reporte mensual: seleccionar el tipo "Reporte mensual", elegir mes y año, y hacer clic en "Generar reporte".
+- Generar un reporte de auditoría para SUNAFIL: seleccionar rango de fechas, elegir formato (PDF o Excel) y generar.
+- Revisar el historial de reportes generados: filtrar, previsualizar y re-descargar un reporte anterior.
+- Revisar los indicadores predictivos y su interpretación.
+
+**Preguntas de validación:**
+
+1. ¿El Landing Page le ayudó a entender el valor de RiskGuard para su gestión? ¿Qué sección le pareció más relevante?
+2. Los cuatro indicadores del dashboard ejecutivo (incidentes activos, resueltos, sectores críticos, cumplimiento SST), ¿son los que necesita ver en primera instancia? ¿Falta o sobra alguno?
+3. Al hacer clic en "Sectores en estado crítico", ¿el detalle con el listado de sectores y alertas activas le proporcionó información suficiente para tomar decisiones?
+4. La gráfica de tendencias, ¿le resultó clara y útil para identificar patrones? ¿El filtro por sector le pareció práctico?
+5. ¿La exportación de la gráfica en PNG le resulta útil para sus presentaciones al directorio?
+6. El proceso de generar un reporte mensual (seleccionar tipo, período, formato), ¿le pareció directo y sin pasos innecesarios?
+7. ¿Los formatos de auditoría exportables serían suficientes para responder ante una inspección de SUNAFIL sin preparar reportes adicionales manualmente?
+8. El historial de reportes con opciones de filtrar, previsualizar, re-descargar y eliminar, ¿cubre sus necesidades de gestión documental?
+9. Los indicadores predictivos que anticipan posibles accidentes, ¿le resultarían útiles para justificar inversiones preventivas ante el directorio?
+10. En una escala del 1 al 5, ¿qué tan alineado está este dashboard ejecutivo con lo que necesita para su gestión diaria de SST?
+11. ¿Cuánto tiempo estima que le ahorraría mensualmente el uso de este sistema comparado con su proceso actual de reportería?
+12. Si pudiera cambiarle una sola cosa al módulo gerencial, ¿cuál sería?
+
 ### 5.3.2. Registro de Entrevistas
+
 
 ### 5.3.3. Evaluaciones según heurísticas
 
