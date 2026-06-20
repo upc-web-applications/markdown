@@ -2179,6 +2179,8 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 
 #### 5.2.3.1. Sprint Planning 3
 
+En este Sprint 3, el equipo se enfocó en el desarrollo del Backend para la aplicación web RiskGuard, con el objetivo de construir la base funcional que permita procesar la información registrada por los usuarios, aplicar reglas de negocio y exponer servicios consumibles desde el frontend. A diferencia de los sprints anteriores, centrados principalmente en la presentación visual y la interacción del usuario, este sprint priorizó la implementación de la lógica interna del sistema, la organización del código bajo una arquitectura orientada a DDD y la definición de endpoints REST para los principales flujos de la plataforma.
+
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
 #### 5.2.3.3. Sprint Backlog 3
