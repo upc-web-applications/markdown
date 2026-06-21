@@ -2484,3 +2484,22 @@ Incorporar un mapa simple o selector visual que permita al operario marcar el pu
 
 
 ## 5.4. Video About-the-Product
+
+
+El video About-the-Product presenta RiskGuard como una plataforma web de seguridad industrial predictiva dirigida a empresas manufactureras y logísticas del Perú. El contenido está orientado a los visitantes del Landing Page que desean conocer el modelo de negocio y las características principales de la solución, así como a los usuarios de la aplicación que buscan comprender los procesos soportados por el sistema.
+
+El video muestra las funcionalidades clave de RiskGuard organizadas por rol de usuario: el registro rápido de inspecciones y condiciones inseguras por parte del operario, la gestión de alertas activas y asignación de técnicos por parte del supervisor mediante el mapa de calor operativo, y la visualización de indicadores predictivos, gráficas de tendencias y generación de reportes de cumplimiento normativo por parte del gerente. El tono de comunicación es técnico, directo y orientado a resultados, consistente con la identidad visual y verbal del producto.
+
+El video incluye el testimonio positivo de Rocío Acosta, operaria de producción que participó en las entrevistas de validación, quien señaló: *"RiskGuard me parece una solución viable para nosotros en planta, 
+porque ahora usamos una decoumentacion basica y los reportes se pierden. Con esto puedo 
+reportar rápido y saber si alguien lo está atendiendo."*
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-150024.png" width="600">
+</p>
+
+**Duración:** 3:02
+
+**Publicación en Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDS3kUSnobBSYNlDg4pDzxSAXNcqLYT66AZhYrsAVPt7_E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=tWxAUo)
+
+**Publicación en YouTube:** [Ver video](https://youtu.be/ZD5rg0QELU0)
