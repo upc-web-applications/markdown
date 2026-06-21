@@ -2188,7 +2188,7 @@ En este Sprint 3, el equipo se enfocó en el desarrollo del Backend para la apli
 | **Campo** | **Detalle** |
 |----------|------------|
 | Sprint # | 3 |
-| Date | 2026-06-07 |
+| Date | 2026-06-15 |
 | Time | 4:00 PM |
 | Location | Reunión virtual (Google Meet) |
 | Prepared By | Flores Eusebio, Angel Thyago |
