@@ -247,13 +247,15 @@ En este Sprint 1, el equipo se centró en el desarrollo de la Landing Page de Ri
 | **Campo** | **Detalle** |
 |----------|------------|
 | Sprint # | 1 |
-| Date | 2026-04-05 |
-| Time | 10:00 PM |
-| Location | Reunión virtual (Google Meet) |
+| Date | 2026-04-12 |
+| Time | 4:00 PM |
+| Location | Reunión virtual (Google Meet / Zoom) |
 | Prepared By | Flores Eusebio, Angel Thyago |
-| Attendees | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Flores Siguas, Marlon Alessandro / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
-| Sprint Goal | Our focus is on developing a responsive landing page for RiskGuard that clearly presents its value proposition through the main section, along with sections for características, cómo funciona, segmentos, estadísticas y contactar. We believe it delivers a better understanding of how the platform helps organizations manage risks and improve safety. This will be confirmed when users can navigate all sections smoothly and understand the purpose of the system on both desktop and mobile devices. |
-| Sprint n Velocity | 25 SP |
+| Attendees (to planning meeting) | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Sprint n – 1 Review Summary | No aplica. Este es el primer Sprint del proyecto, por lo que no existe un Sprint anterior cuyo resultado pueda ser revisado. |
+| Sprint n – 1 Retrospective Summary | No aplica. Al ser el primer Sprint, no se cuenta con una retrospectiva previa. El equipo estableció los acuerdos iniciales de trabajo: uso de GitHub como repositorio central, comunicación por WhatsApp y Google Meet, y distribución de tareas mediante Trello. |
+| Sprint Goal | Our focus is on building the Landing Page for RiskGuard to establish the product's digital presence and communicate its value proposition to industrial safety stakeholders. We believe it delivers a clear, professional and responsive web page that effectively conveys the platform's capabilities in industrial risk prevention and occupational health and safety (SST). This will be confirmed when the Landing Page is deployed on GitHub Pages with all planned sections functional, responsive across desktop and mobile devices, and validated by the Product Owner as aligned with the product vision. |
+| Sprint n Velocity | 20 SP |
 | Sum of Story Points | 20 SP |
 
 #### 5.2.1.2. *Aspect Leaders and Collaborators*
@@ -473,10 +475,12 @@ En este Sprint 2, el equipo se enfocó en el desarrollo integral del frontend de
 | Time | 4:00 PM |
 | Location | Reunión virtual (Google Meet / Zoom) |
 | Prepared By | Flores Eusebio, Angel Thyago |
-| Attendees | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef  / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Attendees (to planning meeting) | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Sprint n – 1 Review Summary | Durante el Sprint 1, el equipo completó exitosamente la Landing Page de RiskGuard con todas las secciones planificadas (propuesta de valor, funcionalidades, proceso operativo, segmentos por rol, métricas de impacto y contacto). El Product Owner validó que la página refleja la identidad visual del producto y comunica adecuadamente la propuesta de valor a los tres segmentos objetivo. Se desplegó en GitHub Pages con diseño responsive funcional en desktop y móvil. |
+| Sprint n – 1 Retrospective Summary | El equipo identificó como acierto la división clara de tareas de diseño e implementación por sección, lo que permitió avanzar en paralelo. Como oportunidad de mejora, se señaló la necesidad de adoptar GitFlow con ramas feature desde el inicio del siguiente Sprint, ya que en el Sprint 1 se trabajó principalmente sobre main. También se acordó establecer convenciones de commits (Conventional Commits) y mejorar la documentación de los componentes desarrollados. |
 | Sprint Goal | Our focus is on developing the frontend interfaces and interactive flows for RiskGuard across the bounded contexts of Account Generation and Authentication, Site / Area and Industrial Asset, Inspection / Unsafe Condition, Risk Assessment (IPERC), Mitigation, Monitoring / Dashboard, and Reports / Compliance. We believe it delivers an organized, realistic and user-centered experience to operators, supervisors and managers by allowing them to interact with the core functionalities of industrial risk prevention and monitoring before backend integration. This will be confirmed when users can seamlessly navigate through the implemented modules, register and monitor incidents, visualize dashboards and reports, and validate the usability and responsiveness of the application across desktop and mobile devices. |
-| Sprint n Velocity |    SP |
-| Sum of Story Points |  SP |
+| Sprint n Velocity | 120 SP |
+| Sum of Story Points | 115 SP |
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 En este Sprint, los aspectos corresponden a los principales Bounded Contexts desarrollados para la aplicación RiskGuard. Se asignaron roles de liderazgo y colaboración para cada módulo con el fin de mejorar la organización, distribución de tareas y coordinación entre los integrantes del equipo durante el desarrollo del frontend.
@@ -2181,7 +2185,29 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 
 En este Sprint 3, el equipo se enfocó en el desarrollo del Backend para la aplicación web RiskGuard, con el objetivo de construir la base funcional que permita procesar la información registrada por los usuarios, aplicar reglas de negocio y exponer servicios consumibles desde el frontend. A diferencia de los sprints anteriores, centrados principalmente en la presentación visual y la interacción del usuario, este sprint priorizó la implementación de la lógica interna del sistema, la organización del código bajo una arquitectura orientada a DDD y la definición de endpoints REST para los principales flujos de la plataforma.
 
+| **Campo** | **Detalle** |
+|----------|------------|
+| Sprint # | 3 |
+| Date | 2026-06-07 |
+| Time | 4:00 PM |
+| Location | Reunión virtual (Google Meet) |
+| Prepared By | Flores Eusebio, Angel Thyago |
+| Attendees (to planning meeting) | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Sprint n – 1 Review Summary | Durante el Sprint 2, el equipo completó el desarrollo del frontend de RiskGuard con 154 tareas implementadas, cubriendo los 7 bounded contexts planificados. Se logró la integración con Fake API (json-server) para simular operaciones CRUD, autenticación por roles (operario, supervisor, gerente), dashboards con indicadores KPI, mapas de calor, gestión de tickets con SLA, mantenimiento preventivo de activos y generación de reportes en PDF/Excel. El Product Owner validó la navegación completa de la aplicación y la experiencia responsive en desktop y móvil. La aplicación fue desplegada en Vercel con la API mock en Render. |
+| Sprint n – 1 Retrospective Summary | El equipo destacó como acierto la adopción de GitFlow con ramas feature por bounded context, lo que facilitó el trabajo paralelo y redujo conflictos de merge. Se valoró positivamente la implementación de i18n (español/inglés) y el diseño dark theme consistente en todos los módulos. Como oportunidades de mejora, se identificó la necesidad de definir contratos de API más formales antes del desarrollo para facilitar la transición al backend real, y se acordó implementar revisiones de código cruzadas (code reviews) mediante pull requests para el Sprint 3. |
+| Sprint Goal | Our focus is on developing the backend Web Services for RiskGuard using C# (.NET) with Domain-Driven Design architecture, implementing RESTful API endpoints for the bounded contexts of Account Generation and Authentication, Site / Area and Industrial Asset, Inspection / Unsafe Condition, Risk Assessment (IPERC) and Mitigation, and Reports / Compliance. We believe it delivers a robust, secure and scalable server-side foundation that replaces the current json-server mock with real business logic, data persistence and JWT-based authentication. This will be confirmed when the frontend application can consume all implemented endpoints, perform CRUD operations with validated data, and authenticate users with role-based access control across the three user profiles (operator, supervisor and manager). |
+| Sprint n Velocity | 80 SP |
+| Sum of Story Points | 80 SP |
+
 #### 5.2.3.2. Aspect Leaders and Collaborators
+En este Sprint, los aspectos corresponden a los Bounded Contexts del backend de RiskGuard, implementados como Web Services con C# / ASP.NET Core y arquitectura DDD. Se asignaron roles de liderazgo y colaboración para cada módulo con el fin de mejorar la organización, distribución de tareas y coordinación entre los integrantes del equipo durante el desarrollo de los servicios REST.
+
+| Miembro del equipo (Apellido, Nombre) | Usuario GitHub | Account Generation and Authentication BC (L/C) | Site / Area and Industrial Asset BC (L/C) | Inspection / Unsafe Condition BC (L/C) | Risk Assessment (IPERC) and Mitigation BC (L/C) | Reports / Compliance BC (L/C) |
+|--------------------------------------|---------------|-----------------------------------------------|-------------------------------------------|----------------------------------------|------------------------------------------------|-------------------------------|
+| Aponte Pablo, Isabel Luisa | IsabelAponte234 | C | C | C | C | L |
+| Laura Acosta, Victor Jhosef | Zatrynox | C | C | C | L | C |
+| Blancas Chávez, Carlos Franco | CarlosBlancas969 | C | L | L | C | C |
+| Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C |
 
 #### 5.2.3.3. Sprint Backlog 3
 
