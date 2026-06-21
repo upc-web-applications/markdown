@@ -2200,18 +2200,279 @@ En este Sprint 3, el equipo se enfocó en el desarrollo del Backend para la apli
 | Sum of Story Points | 80 SP |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
+
 En este Sprint, los aspectos corresponden a los Bounded Contexts del backend de RiskGuard, implementados como Web Services con C# / ASP.NET Core y arquitectura DDD. Se asignaron roles de liderazgo y colaboración para cada módulo con el fin de mejorar la organización, distribución de tareas y coordinación entre los integrantes del equipo durante el desarrollo de los servicios REST.
 
-| Miembro del equipo (Apellido, Nombre) | Usuario GitHub | Account Generation and Authentication BC (L/C) | Site / Area and Industrial Asset BC (L/C) | Inspection / Unsafe Condition BC (L/C) | Risk Assessment (IPERC) and Mitigation BC (L/C) | Reports / Compliance BC (L/C) |
-|--------------------------------------|---------------|-----------------------------------------------|-------------------------------------------|----------------------------------------|------------------------------------------------|-------------------------------|
-| Aponte Pablo, Isabel Luisa | IsabelAponte234 | C | C | C | C | L |
-| Laura Acosta, Victor Jhosef | Zatrynox | C | C | C | L | C |
-| Blancas Chávez, Carlos Franco | CarlosBlancas969 | C | L | L | C | C |
-| Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C |
+| Miembro del equipo (Apellido, Nombre) | Usuario GitHub | Account Generation and Authentication BC (L/C) | Site / Area and Industrial Asset BC (L/C) | Inspection / Unsafe Condition BC (L/C) | Risk Assessment (IPERC) BC (L/C) | Mitigation BC (L/C) | Monitoring / Dashboard BC (L/C) | Reports / Compliance BC (L/C) |
+|--------------------------------------|---------------|-----------------------------------------------|-------------------------------------------|----------------------------------------|----------------------------------|---------------------|----------------------------------|-------------------------------|
+| Aponte Pablo, Isabel Luisa | IsabelAponte234 | C | C | C | C | C | C | L |
+| Laura Acosta, Victor Jhosef | Zatrynox | C | C | C | L | L | C | C |
+| Blancas Chávez, Carlos Franco | CarlosBlancas969 | C | L | L | C | C | C | C |
+| Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C | L | C |
 
 #### 5.2.3.3. Sprint Backlog 3
 
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3 del proyecto, el cual tuvo como objetivo principal implementar los Web Services (Backend) de RiskGuard utilizando C# / ASP.NET Core con arquitectura Domain-Driven Design (DDD). Durante este Sprint, el equipo desarrolló las Technical Stories correspondientes a los endpoints REST de los bounded contexts: IAM, OrganizationAssets, Inspections, RiskAssessments, Mitigations, Hazards, Technicians, MonitoringDashboard y ReportsCompliance.
+
+**Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
+
+![Captura de pantalla 2026 06 21 171412](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-171412.png)
+
+| User Story ID | Título | Work-Item / Task ID | Título de Task | Estimación (hrs) | Asignado a | Status |
+|---|---|---|---|---|---|---|
+| TS01 | Servicio de Notificaciones Push | T01 | Implementar endpoint POST /api/v1/notificaciones/push con entidad Notification y autorización JWT | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS02 | Endpoint para Obtener Patrones de Riesgo Recurrentes | T02 | Implementar RiskPatternsController con endpoints CRUD en /api/v1/risk-patterns con filtro por sector | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS03 | Endpoint para Obtener Datos del Mapa de Calor | T03 | Implementar AreaCriticalityLevelsController con endpoints CRUD en /api/v1/area-criticality-levels con filtro por sector | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS04 | Endpoint para Obtener Riesgos Críticos Sin Atender | T04 | Implementar RiskAssessmentsController con endpoints CRUD en /api/v1/risk-assessments con filtro por sector | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS05 | Endpoint para Marcar Alerta de Patrón como Revisada | T05 | Implementar PatternAlertsController con endpoints CRUD en /api/v1/pattern-alerts con filtro por sector | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS06 | Endpoint para Obtener Resumen Diario de Riesgos por Sector | T06 | Implementar DailySummariesController con endpoints CRUD en /api/v1/daily-summaries con filtro por sector y fecha | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS07 | Endpoint de Cálculo de Matriz IPERC | T07 | Implementar lógica de cálculo IPERC integrada en RiskAssessmentsController con campos probability y severity | 4 | Laura Acosta, Victor Jhosef | Done |
+| TS07 | Endpoint de Cálculo de Matriz IPERC | T08 | Implementar CorrectiveActionTicketsController, MitigationsController y SlaAlertsController en /api/v1/ del BC Mitigations | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS07 | Endpoint de Cálculo de Matriz IPERC | T09 | Implementar MeasureVerificationsController, CriticalNotificationsController y TicketHistoriesController del BC Mitigations | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS07 | Endpoint de Cálculo de Matriz IPERC | T10 | Implementar HazardsController en /api/v1/hazards y TechniciansController en /api/v1/technicians del proyecto assessment | 4 | Laura Acosta, Victor Jhosef | Done |
+| TS08 | Endpoint para Obtener Indicadores del Dashboard Ejecutivo | T11 | Implementar KpiDashboardController con endpoints GET all y GET by id en /api/v1/kpi_dashboard | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS09 | Endpoint para Obtener Tendencias Históricas | T12 | Implementar HistoricalTrendsController con endpoints GET all y GET by id en /api/v1/historical_trends | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS10 | Endpoint para Gestión de Reportes Generados | T13 | Implementar GeneratedReportsController con endpoints GET all, GET by id, POST y DELETE en /api/v1/generated_reports | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS11 | Endpoint para Gestión de Alertas Críticas | T14 | Implementar CriticalAlertsController con endpoints GET all, GET by id, PUT y DELETE en /api/v1/critical_alerts | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS12 | Endpoint para Obtener el Plan Anual de SST | T15 | Implementar AnnualOhsPlanController con endpoints GET all, GET by id y PUT en /api/v1/annual_ohs_plan | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS12 | Endpoint para Obtener el Plan Anual de SST | T16 | Implementar MonthlyReportsController con endpoints GET all, GET by id, GET by year, POST y PUT en /api/v1/monthly_reports | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS12 | Endpoint para Obtener el Plan Anual de SST | T17 | Implementar CumulativeStIndicatorsController en /api/v1/cumulative_st_indicators y HistoricalIncidentRecordsController en /api/v1/historical_incident_records | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS12 | Endpoint para Obtener el Plan Anual de SST | T18 | Implementar PredictiveIndicatorsController con endpoints GET all y GET by id en /api/v1/predictive_indicators | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS13 | Endpoint para Registro y Consulta de Inspecciones por Operario | T19 | Implementar InspeccionesController con POST personalizado y GET /mine/{operarioId} con filtro por estado en /api/v1/inspecciones | 5 | Blancas Chávez, Carlos Franco | Done |
+| TS14 | Endpoint para Gestión de Catálogo de Peligros | T20 | Implementar PeligrosController con endpoints  heredados de CrudController en /api/v1/peligros | 4 | Blancas Chávez, Carlos Franco | Done |
+| TS15 | Endpoint para Gestión de Sedes Operativas | T21 | Implementar SedesController con endpoints  heredados de CrudController en /api/v1/sedes | 4 | Blancas Chávez, Carlos Franco | Done |
+| TS16 | Endpoint para Gestión de Áreas y Activos Industriales | T22 | Implementar AreasController con endpoints  y GET /active en /api/v1/areas filtrando por Estado="Activo" | 5 | Blancas Chávez, Carlos Franco | Done |
+| TS16 | Endpoint para Gestión de Áreas y Activos Industriales | T23 | Implementar ActivosController con endpoints  y GET /by-area/{areaId} en /api/v1/activos filtrando por AreaId y Estado="Activo" | 5 | Blancas Chávez, Carlos Franco | Done |
+| TS16 | Endpoint para Gestión de Áreas y Activos Industriales | T24 | Configurar DbContext con EF Core, MySQL, CrudController genérico y Swagger/OpenAPI del proyecto inspection | 4 | Blancas Chávez, Carlos Franco | Done |
+| TS17 | Endpoint para Autenticación y Generación de Token JWT | T25 | Implementar AuthenticationController con POST /sign-in (JWT) y POST /sign-up en /api/v1/authentication | 5 | Flores Eusebio, Angel Thyago | Done |
+| TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | T26 | Implementar UsersController  y PUT personalizado en /api/v1/users y RolesController en /api/v1/roles | 5 | Flores Eusebio, Angel Thyago | Done |
+| TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | T27 | Implementar SessionsController en /api/v1/sessions y AccessLogsController en /api/v1/accessLogs | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | T28 | Implementar TicketsController en /api/v1/tickets y TechniciansController en /api/v1/technicians con CrudController | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | T29 | Implementar AssetsController en /api/v1/assets y PreventiveMaintenancesController en /api/v1/preventiveMaintenances | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | T30 | Implementar HeatMapZonesController en /api/v1/heatMapZones y ArchivedReportsController en /api/v1/archivedReports | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | T31 | Configurar DbContext con EF Core, MySQL, CrudController genérico, JWT middleware y Swagger/OpenAPI del proyecto auth_monitoring | 5 | Flores Eusebio, Angel Thyago | Done |
+
+
 #### 5.2.3.4. Development Evidence for Sprint Review
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+En esta sección se presentan los commits realizados durante el Sprint 3, los cuales reflejan el avance en la implementación de los Web Services del backend de RiskGuard. El desarrollo se organizó en ramas independientes por bounded context: feature/reports para el módulo de reportes y cumplimiento SST (KPI dashboard, tendencias históricas, alertas críticas, reportes generados, plan anual SST), feature/assessment_mitigation para evaluación de riesgos, mitigaciones, peligros y técnicos, feature/inspection_headquarters para inspecciones, sedes, áreas y activos industriales, y feature/user-authentication-monitoring-dashboard para autenticación JWT, gestión de usuarios/roles/sesiones y el dashboard de monitoreo del supervisor. Cada rama fue integrada  mediante pull requests revisadas por el equipo.
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Commited on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>caefcf9</td>
+      <td>first commit</td>
+      <td>Creación inicial del repositorio backend</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>3150c55</td>
+      <td>Fix: update</td>
+      <td>Corrección y actualización de archivos del proyecto</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>767c91a</td>
+      <td>chore: initial project setup with ASP.NET Core Web API</td>
+      <td>Configuración inicial del proyecto con ASP.NET Core Web API</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>b14dc11</td>
+      <td>feat: add Shared module</td>
+      <td>Agregado módulo Shared con CrudController genérico, DbContext y UnitOfWork</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>a911b0b</td>
+      <td>feat(reports): add monthly_reports endpoint</td>
+      <td>Agregado MonthlyReportsController con endpoints GET all, GET by id, GET by year, POST y PUT</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>a85af2b</td>
+      <td>feat(reports): add cumulative_st_indicators endpoint</td>
+      <td>Agregado CumulativeStIndicatorsController con endpoints GET all y GET by id</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>0e92be4</td>
+      <td>feat(reports): add historical_incident_records and annual_ohs_plan endpoints</td>
+      <td>Agregado HistoricalIncidentRecordsController y AnnualOhsPlanController</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>7b6ea0b</td>
+      <td>feat(reports): add predictive_indicators and critical_alerts endpoints</td>
+      <td>Agregado PredictiveIndicatorsController y CriticalAlertsController con GET, PUT y DELETE</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>2027f26</td>
+      <td>feat(reports): add generated_reports, kpi_dashboard and historical_trends endpoints</td>
+      <td>Agregado GeneratedReportsController, KpiDashboardController y HistoricalTrendsController</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>eea1ccd</td>
+      <td>feat(reports): configure Program</td>
+      <td>Configuración del Program.cs con DbContext, Swagger y servicios de inyección de dependencias</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>75c61aa</td>
+      <td>feat(reports): add Resources and Transform</td>
+      <td>Agregado Resources y Transform assemblers para el BC ReportsCompliance</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>f2fd93a</td>
+      <td>feat(reports): integrate CQRS with Resources and Transform in controllers</td>
+      <td>Integración del patrón CQRS con Resources y Transform en todos los controllers de ReportsCompliance</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>550eb6c</td>
+      <td>feat(reports): add all endpoints matching frontend usage (GET id, PUT, DELETE)</td>
+      <td>Agregado endpoints adicionales GET by id, PUT y DELETE para coincidir con el consumo del frontend</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>24f36ec</td>
+      <td>feat: add elements</td>
+      <td>Agregado elementos adicionales del dominio de reportes</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/reports</td>
+      <td>c91df25</td>
+      <td>Merge pull request #1 from IsabelAponte234/feature/reports-refactor</td>
+      <td>Fusión de la rama feature/reports-refactor con refactorización de controllers</td>
+      <td>Jun 19, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>560fa99</td>
+      <td>feat: add to my feature</td>
+      <td>Agregado bounded contexts RiskAssessments, Mitigations, Hazards y Technicians con todos los controllers</td>
+      <td>Jun 20, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>8d2b036</td>
+      <td>Merge pull request #2 from upc-web-applications/feature/reports</td>
+      <td>Fusión de la rama feature/reports al flujo de assessment_mitigation</td>
+      <td>Jun 20, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/inspection_headquarters</td>
+      <td>5ab61d6</td>
+      <td>feat: add inspection and headquarters BC</td>
+      <td>Agregado bounded contexts Inspections y OrganizationAssets con InspeccionesController, PeligrosController, SedesController, AreasController y ActivosController</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/inspection_headquarters</td>
+      <td>1ce5310</td>
+      <td>chore: add project configuration files</td>
+      <td>Agregado archivos de configuración del proyecto inspection con EF Core y MySQL</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/user-authentication-monitoring-dashboard</td>
+      <td>d35638c</td>
+      <td>feat(iam): add authentication and identity access context</td>
+      <td>Agregado AuthenticationController con sign-in/sign-up JWT, UsersController, RolesController, SessionsController y AccessLogsController</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/user-authentication-monitoring-dashboard</td>
+      <td>4eb6a26</td>
+      <td>feat(monitoring): add monitoring dashboard context</td>
+      <td>Agregado HeatMapZonesController, TicketsController, TechniciansController, AssetsController, PreventiveMaintenancesController y ArchivedReportsController</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/user-authentication-monitoring-dashboard</td>
+      <td>c11d837</td>
+      <td>feat(shared): add shared backend infrastructure</td>
+      <td>Agregado módulo Shared con CrudController genérico, DbContext, UnitOfWork y configuración EF Core</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/user-authentication-monitoring-dashboard</td>
+      <td>27877fd</td>
+      <td>chore: add backend project configuration</td>
+      <td>Agregado archivos de configuración del proyecto auth_monitoring con Swagger y MySQL</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>feature/user-authentication-monitoring-dashboard</td>
+      <td>c4ce846</td>
+      <td>chore: add gitignore for .NET artifacts</td>
+      <td>Agregado .gitignore para artefactos de compilación .NET</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>fecc5e9</td>
+      <td>feat: merge all branches</td>
+      <td>Fusión de todas las ramas feature al branch main del repositorio backend</td>
+      <td>Jun 21, 2026</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
