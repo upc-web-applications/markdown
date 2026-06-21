@@ -2239,21 +2239,19 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3 del p
 | TS12 | Endpoint para Obtener el Plan Anual de SST | T17 | Implementar CumulativeStIndicatorsController en /api/v1/cumulative_st_indicators y HistoricalIncidentRecordsController en /api/v1/historical_incident_records | 5 | Aponte Pablo, Isabel Luisa | Done |
 | TS12 | Endpoint para Obtener el Plan Anual de SST | T18 | Implementar PredictiveIndicatorsController con endpoints GET all y GET by id en /api/v1/predictive_indicators | 4 | Aponte Pablo, Isabel Luisa | Done |
 | TS13 | Endpoint para Registro y Consulta de Inspecciones por Operario | T19 | Implementar InspeccionesController con POST personalizado y GET /mine/{operarioId} con filtro por estado en /api/v1/inspecciones | 5 | Blancas Chávez, Carlos Franco | Done |
-| TS14 | Endpoint para Gestión de Catálogo de Peligros | T20 | Implementar PeligrosController con endpoints  heredados de CrudController en /api/v1/peligros | 4 | Blancas Chávez, Carlos Franco | Done |
+| TS14 | Endpoint para Gestión de Catálogo de Peligros | T20 | Implementar PeligrosController con endpoints  heredados de CrudController en /api/v1/dangers | 4 | Blancas Chávez, Carlos Franco | Done |
 | TS15 | Endpoint para Gestión de Sedes Operativas | T21 | Implementar SedesController con endpoints  heredados de CrudController en /api/v1/sedes | 4 | Blancas Chávez, Carlos Franco | Done |
 | TS16 | Endpoint para Gestión de Áreas y Activos Industriales | T22 | Implementar AreasController con endpoints  y GET /active en /api/v1/areas filtrando por Estado="Activo" | 5 | Blancas Chávez, Carlos Franco | Done |
 | TS16 | Endpoint para Gestión de Áreas y Activos Industriales | T23 | Implementar ActivosController con endpoints  y GET /by-area/{areaId} en /api/v1/activos filtrando por AreaId y Estado="Activo" | 5 | Blancas Chávez, Carlos Franco | Done |
 | TS16 | Endpoint para Gestión de Áreas y Activos Industriales | T24 | Configurar DbContext con EF Core, MySQL, CrudController genérico y Swagger/OpenAPI del proyecto inspection | 4 | Blancas Chávez, Carlos Franco | Done |
 | TS17 | Endpoint para Autenticación y Generación de Token JWT | T25 | Implementar AuthenticationController con POST /sign-in (JWT) y POST /sign-up en /api/v1/authentication | 5 | Flores Eusebio, Angel Thyago | Done |
 | TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | T26 | Implementar UsersController  y PUT personalizado en /api/v1/users y RolesController en /api/v1/roles | 5 | Flores Eusebio, Angel Thyago | Done |
-| TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | T27 | Implementar SessionsController en /api/v1/sessions y AccessLogsController en /api/v1/accessLogs | 4 | Flores Eusebio, Angel Thyago | Done |
-| TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | T28 | Implementar TicketsController en /api/v1/tickets y TechniciansController en /api/v1/technicians con CrudController | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | T27 | Implementar SessionsController en /api/v1/sessions y AccessLogsController en /api/v1/access-logs | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | T28 | Implementar TicketsController en /api/v1/tickets y TechniciansController en /api/v1/dashboard-technicians con CrudController | 4 | Flores Eusebio, Angel Thyago | Done |
 | TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | T29 | Implementar AssetsController en /api/v1/assets y PreventiveMaintenancesController en /api/v1/preventiveMaintenances | 4 | Flores Eusebio, Angel Thyago | Done |
-| TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | T30 | Implementar HeatMapZonesController en /api/v1/heatMapZones y ArchivedReportsController en /api/v1/archivedReports | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | T30 | Implementar HeatMapZonesController en /api/v1/heatMapZones y ArchivedReportsController en /api/v1/archived-reports | 4 | Flores Eusebio, Angel Thyago | Done |
 | TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | T31 | Configurar DbContext con EF Core, MySQL, CrudController genérico, JWT middleware y Swagger/OpenAPI del proyecto auth_monitoring | 5 | Flores Eusebio, Angel Thyago | Done |
 
-
-#### 5.2.3.4. Development Evidence for Sprint Review
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
