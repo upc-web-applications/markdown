@@ -3821,6 +3821,319 @@
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS13</td>
+    <td><b>Epic ID</b></td><td>EP01</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Registro y Consulta de Inspecciones por Operario</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints POST /api/v1/inspecciones para registrar una nueva inspección y GET /api/v1/inspecciones/mine/{operarioId} para que el operario consulte sus inspecciones enviadas, permitiendo la trazabilidad de reportes desde el backend.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint POST recibe los campos: tipo de incidente, nivel de urgencia, sector, activo vinculado, descripción y evidencia fotográfica.</li>
+        <li>El sistema genera automáticamente un ticket de inspección con fecha y estado "pendiente".</li>
+        <li>El endpoint GET /mine/{operarioId} retorna únicamente las inspecciones registradas por el operario indicado, ordenadas por fecha descendente.</li>
+        <li>Si el operarioId no tiene inspecciones, el endpoint retorna HTTP 200 con un arreglo vacío.</li>
+      </ol>
+      <b>Escenario 1:</b> Registro exitoso de inspección<br/>
+      <ul>
+        <li><b>Given</b> que el operario completa el formulario de inspección con todos los campos obligatorios,</li>
+        <li><b>When</b> el frontend realiza POST /api/v1/inspecciones con token válido,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 201 y el objeto de inspección creado con su ticket generado.</li>
+      </ul>
+      <b>Escenario 2:</b> Consulta de inspecciones propias<br/>
+      <ul>
+        <li><b>Given</b> que el operario desea ver el historial de sus reportes,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/inspecciones/mine/{operarioId},</li>
+        <li><b>Then</b> el endpoint retorna HTTP 200 con el listado de inspecciones del operario.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS14</td>
+    <td><b>Epic ID</b></td><td>EP01</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Catálogo de Peligros</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints CRUD /api/v1/peligros para administrar el catálogo de tipos de peligro (físico, químico, ergonómico, biológico) que se utilizan al clasificar inspecciones y evaluar riesgos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/peligros retorna el listado completo de tipos de peligro registrados.</li>
+        <li>El endpoint POST permite crear un nuevo tipo de peligro con nombre y descripción.</li>
+        <li>El endpoint PUT permite actualizar un peligro existente y DELETE permite eliminarlo.</li>
+        <li>Si no existen peligros registrados, el endpoint GET retorna HTTP 200 con arreglo vacío.</li>
+      </ol>
+      <b>Escenario 1:</b> Listado exitoso de peligros<br/>
+      <ul>
+        <li><b>Given</b> que existen tipos de peligro registrados en el sistema,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/peligros,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de peligros con id, nombre y descripción.</li>
+      </ul>
+      <b>Escenario 2:</b> Creación de nuevo tipo de peligro<br/>
+      <ul>
+        <li><b>Given</b> que el administrador necesita agregar una nueva categoría de peligro,</li>
+        <li><b>When</b> realiza POST /api/v1/peligros con nombre y descripción,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 201 y el peligro creado.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS15</td>
+    <td><b>Epic ID</b></td><td>EP03</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Sedes Operativas</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints CRUD /api/v1/sedes para registrar, listar, actualizar y eliminar las sedes físicas de la planta industrial, permitiendo la organización jerárquica de la infraestructura operativa.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/sedes retorna el listado completo de sedes con id, nombre, dirección y estado.</li>
+        <li>El endpoint POST permite registrar una nueva sede con validación de campos obligatorios.</li>
+        <li>El endpoint PUT permite actualizar los datos de una sede existente.</li>
+        <li>El endpoint DELETE elimina la sede solo si no tiene áreas activas asociadas; de lo contrario retorna HTTP 409.</li>
+      </ol>
+      <b>Escenario 1:</b> Listado exitoso de sedes<br/>
+      <ul>
+        <li><b>Given</b> que existen sedes registradas en el sistema,</li>
+        <li><b>When</b> el supervisor realiza GET /api/v1/sedes,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el arreglo de sedes.</li>
+      </ul>
+      <b>Escenario 2:</b> Eliminación bloqueada por áreas activas<br/>
+      <ul>
+        <li><b>Given</b> que la sede tiene áreas activas asociadas,</li>
+        <li><b>When</b> se intenta DELETE /api/v1/sedes/{id},</li>
+        <li><b>Then</b> el endpoint retorna HTTP 409 indicando que no se puede eliminar.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS16</td>
+    <td><b>Epic ID</b></td><td>EP03</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Áreas y Activos Industriales</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints CRUD /api/v1/areas con filtro GET /active y /api/v1/activos con filtro GET /by-area/{areaId}, para gestionar las áreas operativas y los activos industriales vinculados a cada zona de la planta.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/areas retorna todas las áreas; GET /api/v1/areas/active retorna solo las áreas con estado activo.</li>
+        <li>El endpoint GET /api/v1/activos/by-area/{areaId} retorna los activos filtrados por el área indicada.</li>
+        <li>Los endpoints POST permiten crear áreas y activos con validación de campos obligatorios y relación con sede/área padre.</li>
+        <li>Si el areaId no tiene activos, el endpoint retorna HTTP 200 con arreglo vacío.</li>
+      </ol>
+      <b>Escenario 1:</b> Consulta de áreas activas<br/>
+      <ul>
+        <li><b>Given</b> que existen áreas con diferentes estados en el sistema,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/areas/active,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y solo las áreas con estado activo.</li>
+      </ul>
+      <b>Escenario 2:</b> Consulta de activos por área<br/>
+      <ul>
+        <li><b>Given</b> que un área tiene activos industriales registrados,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/activos/by-area/{areaId},</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el listado de activos del área.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS17</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Autenticación y Generación de Token JWT</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints POST /api/v1/authentication/sign-in y POST /api/v1/authentication/sign-up para autenticar usuarios y generar tokens JWT con claims de rol (operario, supervisor, gerente), permitiendo el control de acceso basado en roles en todos los Web Services.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint sign-in valida credenciales contra la base de datos y retorna un token JWT con expiración configurable.</li>
+        <li>El token JWT incluye claims de userId, username y role para autorización en endpoints protegidos.</li>
+        <li>El endpoint sign-up registra un nuevo usuario con username y password hasheado con BCrypt.</li>
+        <li>Si las credenciales son inválidas, sign-in retorna HTTP 401.</li>
+        <li>Si el username ya existe, sign-up retorna HTTP 409.</li>
+      </ol>
+      <b>Escenario 1:</b> Inicio de sesión exitoso<br/>
+      <ul>
+        <li><b>Given</b> que el usuario tiene credenciales válidas registradas,</li>
+        <li><b>When</b> realiza POST /api/v1/authentication/sign-in con username y password,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el token JWT con claims de rol.</li>
+      </ul>
+      <b>Escenario 2:</b> Credenciales inválidas<br/>
+      <ul>
+        <li><b>Given</b> que el password no coincide con el registrado,</li>
+        <li><b>When</b> realiza POST /api/v1/authentication/sign-in,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 401 indicando credenciales inválidas.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS18</td>
+    <td><b>Epic ID</b></td><td>EP05</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Usuarios, Roles y Sesiones</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints CRUD /api/v1/users, /api/v1/roles, /api/v1/sessions y /api/v1/access-logs para administrar las cuentas de usuario, los roles del sistema, las sesiones activas y el registro de auditoría de accesos.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint GET /api/v1/users retorna el listado de usuarios con id, username, role y estado.</li>
+        <li>El endpoint CRUD /api/v1/roles permite gestionar los roles del sistema (operario, supervisor, gerente, administrador).</li>
+        <li>El endpoint GET /api/v1/sessions retorna las sesiones activas con fecha de inicio y usuario asociado.</li>
+        <li>El endpoint GET /api/v1/access-logs retorna el historial de accesos para auditoría de seguridad.</li>
+        <li>Todos los endpoints requieren token JWT con rol Administrador.</li>
+      </ol>
+      <b>Escenario 1:</b> Listado de usuarios<br/>
+      <ul>
+        <li><b>Given</b> que el administrador necesita gestionar las cuentas del sistema,</li>
+        <li><b>When</b> realiza GET /api/v1/users con token de administrador,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y el listado de usuarios.</li>
+      </ul>
+      <b>Escenario 2:</b> Consulta de logs de acceso<br/>
+      <ul>
+        <li><b>Given</b> que se requiere auditar los accesos al sistema,</li>
+        <li><b>When</b> realiza GET /api/v1/access-logs,</li>
+        <li><b>Then</b> el endpoint retorna HTTP 200 con el historial de accesos.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS19</td>
+    <td><b>Epic ID</b></td><td>EP03</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints CRUD /api/v1/tickets, /api/v1/technicians, /api/v1/preventive-maintenances y /api/v1/assets para gestionar la asignación de tickets correctivos, el directorio de técnicos, la programación de mantenimientos preventivos y el inventario de activos desde el dashboard del supervisor.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint CRUD /api/v1/tickets permite crear, listar, actualizar y eliminar tickets de acción correctiva con campos: id, title, description, status, assignedTechnicianId, priority y slaDeadline.</li>
+        <li>El endpoint CRUD /api/v1/technicians permite gestionar el directorio de técnicos de mantenimiento.</li>
+        <li>El endpoint CRUD /api/v1/preventive-maintenances permite programar mantenimientos preventivos vinculados a activos específicos.</li>
+        <li>El endpoint CRUD /api/v1/assets permite gestionar el inventario de activos industriales.</li>
+        <li>El tiempo de respuesta es menor a 2 segundos.</li>
+      </ol>
+      <b>Escenario 1:</b> Creación de ticket correctivo<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor identifica una acción correctiva necesaria,</li>
+        <li><b>When</b> realiza POST /api/v1/tickets con los datos del ticket y técnico asignado,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 201 y el ticket creado con su deadline de SLA calculado.</li>
+      </ul>
+      <b>Escenario 2:</b> Programación de mantenimiento preventivo<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor necesita programar mantenimiento sobre un activo,</li>
+        <li><b>When</b> realiza POST /api/v1/preventive-maintenances con activo y fecha programada,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 201 y el mantenimiento programado.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <td><b>Technical Story ID</b></td><td>TS20</td>
+    <td><b>Epic ID</b></td><td>EP03</td>
+  </tr>
+  <tr>
+    <td><b>Título</b></td>
+    <td colspan="3">Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados</td>
+  </tr>
+  <tr>
+    <td><b>Descripción</b></td>
+    <td colspan="3">Como desarrollador, quiero implementar los endpoints CRUD /api/v1/heat-map-zones y /api/v1/archived-reports para gestionar las zonas del mapa de calor operativo y el archivo histórico de reportes del dashboard de monitoreo del supervisor.</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>Criterios de aceptación:</b>
+      <ol>
+        <li>El endpoint CRUD /api/v1/heat-map-zones permite registrar, listar, actualizar y eliminar zonas del mapa con campos: id, sectorName, riskLevel, latitude, longitude y activeIncidents.</li>
+        <li>El endpoint CRUD /api/v1/archived-reports permite gestionar reportes archivados con campos: id, title, generatedDate, type y fileUrl.</li>
+        <li>El endpoint GET de heat-map-zones retorna las zonas ordenadas por nivel de riesgo descendente.</li>
+        <li>Si no existen zonas o reportes, los endpoints retornan HTTP 200 con arreglo vacío.</li>
+      </ol>
+      <b>Escenario 1:</b> Listado de zonas del mapa de calor<br/>
+      <ul>
+        <li><b>Given</b> que existen zonas registradas con diferentes niveles de riesgo,</li>
+        <li><b>When</b> el frontend realiza GET /api/v1/heat-map-zones,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 200 y las zonas ordenadas por riskLevel descendente.</li>
+      </ul>
+      <b>Escenario 2:</b> Archivo de reporte<br/>
+      <ul>
+        <li><b>Given</b> que el supervisor desea archivar un reporte generado,</li>
+        <li><b>When</b> realiza POST /api/v1/archived-reports,</li>
+        <li><b>Then</b> el endpoint responde con HTTP 201 y el reporte archivado.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ## 3.2. Impact Mapping
 
@@ -3923,7 +4236,15 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 | 72 | TS10 | Endpoint para Gestión de Reportes Generados | Como desarrollador, quiero consumir los endpoints GET y POST /api/v1/generated_reports y DELETE /api/v1/generated_reports/{id} para registrar, listar y eliminar reportes generados, mientras la generación del documento PDF o Excel se realiza en el cliente con jsPDF. | 8 |
 | 73 | TS11 | Endpoint para Gestión de Alertas Críticas | Como desarrollador, quiero consumir los endpoints GET, PATCH y DELETE /api/v1/critical_alerts para listar, actualizar el estado y eliminar alertas críticas, para que el gerente pueda gestionar los riesgos no resueltos desde el tablero ejecutivo. | 5 |
 | 74 | TS12 | Endpoint para Obtener el Plan Anual de SST y su Cumplimiento | Como desarrollador, quiero consumir el endpoint GET /api/v1/annual_ohs_plan que retorne el plan anual de SST con el porcentaje de cumplimiento global y el desglose por sector, para alimentar el indicador de seguimiento del tablero ejecutivo del gerente. | 5 |
-| 75 | US01 | Autenticación de Operario | Como usuario, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
-| 76 | US02 | Cierre de Sesión del Operario | Como usuario, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
-| 77 | US24 | Autenticación Segura de Supervisor | Como usuario, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
-| 78 | US36 | Autenticación Segura de Gerente o Administrador | Como usuario, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
+| 75 | TS13 | Endpoint para Registro y Consulta de Inspecciones por Operario | Como desarrollador, quiero implementar los endpoints POST /api/v1/inspecciones y GET /api/v1/inspecciones/mine/{operarioId} para registrar inspecciones y consultar reportes por operario. | 8 |
+| 76 | TS14 | Endpoint para Gestión de Catálogo de Peligros | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/peligros para administrar el catálogo de tipos de peligro utilizados en inspecciones y evaluaciones de riesgo. | 5 |
+| 77 | TS15 | Endpoint para Gestión de Sedes Operativas | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/sedes para registrar, listar, actualizar y eliminar las sedes físicas de la planta industrial. | 5 |
+| 78 | TS16 | Endpoint para Gestión de Áreas y Activos Industriales | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/areas con filtro GET /active y /api/v1/activos con filtro GET /by-area/{areaId} para gestionar áreas y activos. | 8 |
+| 79 | TS17 | Endpoint para Autenticación y Generación de Token JWT | Como desarrollador, quiero implementar los endpoints POST /api/v1/authentication/sign-in y sign-up para autenticar usuarios y generar tokens JWT con claims de rol. | 8 |
+| 80 | TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/users, /api/v1/roles, /api/v1/sessions y /api/v1/access-logs para administrar cuentas, roles y auditoría. | 8 |
+| 81 | TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/tickets, /api/v1/technicians, /api/v1/preventive-maintenances y /api/v1/assets para el dashboard del supervisor. | 8 |
+| 82 | TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/heat-map-zones y /api/v1/archived-reports para el dashboard de monitoreo del supervisor. | 5 |
+| 83 | US01 | Autenticación de Operario | Como usuario, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
+| 84 | US02 | Cierre de Sesión del Operario | Como usuario, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
+| 85 | US24 | Autenticación Segura de Supervisor | Como usuario, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
+| 86 | US36 | Autenticación Segura de Gerente o Administrador | Como usuario, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
