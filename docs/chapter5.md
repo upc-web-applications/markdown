@@ -2343,22 +2343,17 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 **Segmento objetivo #1: Operarios de Planta**
 
 
-### Entrevista Nro. 1
+| **Entrevista Nro. 1** |
+|---|
+| <img src="images/bc/Operario.png" width="330" hspace="230"> |
+| **Entrevistado N°1:** Fabrizio Vacca <br> **Edad:** 28 años<br>**Ubicación:** Los Olivos<br>**Cargo:** Operario de Planta — Sector Manufactura<br><br> **Entrevista:** [Ver en One Drive](https://1drv.ms/v/c/7E97073B2DC02368/IQAE46rrHvs3QJDtniYrXsG0AR8jxBw5mSr1altIVn-HNBA?e=eYUCdP) <br>**Instante del que inicia:** 00:00<br> **Duración:** 12:27 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza al ver el mensaje principal "Predice los riesgos antes de que ocurran", señalando que refleja una necesidad real en su planta donde los incidentes muchas veces no se reportan a tiempo. Destacó la sección de estadísticas, especialmente el dato de 83% de trabajadores que mejoran cuando sus supervisores usan herramientas de seguimiento, considerándolo muy cercano a su realidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección sin necesidad de orientación, calificando el dashboard como intuitivo y directo. Respecto al formulario, indicó que los campos son suficientes para describir una situación de riesgo real, valorando especialmente los botones de color para el nivel de urgencia, asociando el rojo con situaciones que requieren atención inmediata. La confirmación con el número de ticket le generó confianza de que su reporte fue recibido correctamente, algo que destacó como una diferencia clave frente al proceso actual en su planta donde el reporte se hace en papel y no hay forma de hacer seguimiento. En la sección de Inspecciones, encontró fácilmente su reporte y comprendió los estados Pendiente, En Progreso y Resuelto sin necesidad de explicación. Calificó la facilidad de uso con un 5 de 5, afirmando que el sistema representaría una mejora real ya que actualmente el proceso de reporte es lento, manual y muchas veces los reportes se pierden. Como única sugerencia, mencionó que agregaría la opción de reportar la ubicación exacta dentro del área mediante un mapa simple. |
 
-<img src="images/bc/Operario.png" width="500"/>
 
-**Entrevistado N°1:** Fabrizio Vacca  
-**Edad:** 28 años  
-**Ubicación:** Los Olivos  
-**Cargo:** Operario de Planta — Sector Manufactura  
+| **Entrevista Nro. 2** |
+|---|
+| <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-094100.png" width="330" hspace="230"> |
+| **Entrevistado N°2:** Rocío Acosta <br> **Edad:** 21 años<br>**Ubicación:** Pueblo Libre<br>**Cargo:** Operaria de Producción<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDzCVuI3MO7Qq7Q2wM__nhIAXxVlF9JemhOtM5P4NV_WjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=QPDAVj) <br>**Instante del que inicia:** 00:00<br> **Duración:** 5:51 <br><br> **Resumen:** <br><br> La participante indicó que el Landing Page le permitió entender rápidamente que RiskGuard es una plataforma para reportar riesgos en planta. Destacó la sección de estadísticas como la que más le llamó la atención, señalando que los números reales de incidentes reducidos le parecen importantes y generan credibilidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección, calificándolo como intuitivo y visible desde el dashboard. Respecto al formulario, consideró que los campos son completos y suficientes para describir un incidente, valorando especialmente la opción de adjuntar una foto como muy útil para estos casos. Los botones de color para el nivel de urgencia le resultaron muy claros, asociándolos con un semáforo: verde es leve, naranja es medio y rojo es urgente. La confirmación con el número de ticket le generó confianza y tranquilidad de que su reporte queda registrado y puede hacer seguimiento. En la sección de Inspecciones, encontró su reporte rápidamente, destacando que los estados con colores y la organización facilitan la navegación. No identificó ninguna pantalla o botón donde no supiera qué hacer, señalando que todo fue directo y guiado paso a paso. Calificó la facilidad de uso con un 5 de 5, afirmando que los pasos son claros y no solicitan información innecesaria. Confirmó que el sistema representaría una mejora real ya que actualmente usan papel, los reportes se pierden y no hay forma de verificar si alguien los está atendiendo. Como única sugerencia, mencionó que haría las letras del formulario más grandes y claras, ya que en pantallas con fondo oscuro cuesta leer textos pequeños, especialmente desde el celular. |
 
-**Entrevista:** [Ver en One Drive](https://1drv.ms/v/c/7E97073B2DC02368/IQAE46rrHvs3QJDtniYrXsG0AR8jxBw5mSr1altIVn-HNBA?e=eYUCdP)  
-**Instante del que inicia:** 00:00  
-**Duración:** 12:27  
-
-**Resumen:**
-
-El participante indicó que el Landing Page le transmitió confianza al ver el mensaje principal "Predice los riesgos antes de que ocurran", señalando que refleja una necesidad real en su planta donde los incidentes muchas veces no se reportan a tiempo. Destacó la sección de estadísticas, especialmente el dato de 83% de trabajadores que mejoran cuando sus supervisores usan herramientas de seguimiento, considerándolo muy cercano a su realidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección sin necesidad de orientación, calificando el dashboard como intuitivo y directo. Respecto al formulario, indicó que los campos son suficientes para describir una situación de riesgo real, valorando especialmente los botones de color para el nivel de urgencia, asociando el rojo con situaciones que requieren atención inmediata. La confirmación con el número de ticket le generó confianza de que su reporte fue recibido correctamente, algo que destacó como una diferencia clave frente al proceso actual en su planta donde el reporte se hace en papel y no hay forma de hacer seguimiento. En la sección de Inspecciones, encontró fácilmente su reporte y comprendió los estados Pendiente, En Progreso y Resuelto sin necesidad de explicación. Calificó la facilidad de uso con un 5 de 5, afirmando que el sistema representaría una mejora real ya que actualmente el proceso de reporte es lento, manual y muchas veces los reportes se pierden. Como única sugerencia, mencionó que agregaría la opción de reportar la ubicación exacta dentro del área mediante un mapa simple.
 
 **Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento**
 
@@ -2366,8 +2361,6 @@ El participante indicó que el Landing Page le transmitió confianza al ver el m
 |---|
 | <img src="https://i.postimg.cc/yNTVtMdG/Captura-de-pantalla-2026-06-18-065936.png" width="330" hspace="230"> |
 | **Entrevistado N°2:** Álvaro Pablo <br> **Edad:** 25 años<br>**Ubicación:** Barranca<br>**Cargo:** Supervisor de seguridad y mantenimiento<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQB1uHcy34fvSqQwXjrQbD-iAe9CaOKMJZslPIPAD3BTcko) <br>**Instante del que inicia:** 00:00<br> **Duración:** 7:18 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza porque identifica los procesos de planta relacionados con seguridad industrial, destacando que los colores son intuitivos y que la plataforma aplica la metodología IPERC, la cual utiliza en su campo de ingeniería industrial. Al ver el dashboard con el mapa de calor, identificó rápidamente qué sectores requieren atención gracias a la diferenciación por colores, asociando el rojo con criticidad grave. Los badges de color le resultaron claros para diferenciar la urgencia de cada ticket. Respecto al detalle del ticket, consideró que la información presentada es suficiente para tomar una decisión sobre la acción correctiva, ya que identifica el sector y muestra el estado actual del problema. El proceso de asignar un técnico le pareció directo y eficiente. La etiqueta "SLA Incumplido" le resultó entendible para priorizar acciones y no sugirió agregar otra señal visual. En el módulo de configuración, el flujo de crear sedes y registrar activos le pareció sencillo y completo, valorando los nombres claros y las descripciones rápidas de cada proceso. Calificó la completitud del flujo de gestión de tickets con un 4 de 5, señalando que el sistema ayuda a identificar lo que ocurre de manera rápida y centralizada. Confirmó que el sistema reduciría el tiempo dedicado a gestionar incidentes, ya que actualmente debe llenar documentos físicos, hacer llamadas y registrar en bases de datos manuales. Como única sugerencia, mencionó que cambiaría los colores del fondo en la sección de alertas, haciendo que el rojo sea más llamativo para destacar mejor las alertas críticas. |
-
-**Segmento objetivo #3: Gerentes y Administradores**
 
 
 ### 5.3.3. Evaluaciones según heurísticas
@@ -2437,6 +2430,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 **PROBLEMA #01:** Los colores del panel de alertas activas no generan suficiente contraste visual para destacar las alertas críticas
 
 **Severidad:** 2
+
 **Heurística violada:** Usability – Visibilidad del estado del sistema
 
 **Problema:**
@@ -2449,6 +2443,43 @@ En el panel de "Alertas activas" del dashboard del supervisor, el badge "Crític
 
 **Recomendación:**
 Aplicar un fondo con tinte rojo sutil en las filas de alertas críticas dentro del panel lateral, de modo que se distingan visualmente de las alertas de menor prioridad.
+
+
+**PROBLEMA #02:** Las letras del formulario de registro de incidentes son pequeñas y difíciles de leer en fondo oscuro
+
+**Severidad:** 2
+
+**Heurística violada:** Inclusive Design – Proporciona experiencias comparables
+
+**Problema:**
+
+En el formulario de registro de inspección del operario, las etiquetas de los campos y el texto dentro de los inputs se muestran en un tamaño de fuente reducido sobre un fondo oscuro, lo que dificulta la lectura rápida, especialmente cuando el usuario accede desde un dispositivo móvil. Este problema fue reportado directamente por la operaria entrevistada, quien señaló que en planta se consulta el celular de forma rápida y los textos pequeños con fondo oscuro dificultan la interacción. Esto puede provocar errores al completar los campos o que el usuario desista de registrar el incidente.
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-105852.png" width="600">
+</p>
+
+**Recomendación:**
+Aumentar el tamaño de fuente de las etiquetas y campos del formulario a un mínimo, y mejorar el contraste entre el texto y el fondo oscuro utilizando tonos más claros o blancos para las letras. Considerar también un espaciado mayor entre campos para facilitar la interacción táctil en dispositivos móviles.
+
+
+**PROBLEMA #03:** El formulario de reporte no permite indicar la ubicación exacta del incidente dentro del área
+
+**Severidad:** 2
+
+**Heurística violada:** Usability – Correspondencia entre el sistema y el mundo real
+
+**Problema:**
+
+El operario puede seleccionar la planta y el área general del incidente, pero no existe una opción para señalar la ubicación exacta dentro de dicha área. En plantas grandes, un mismo sector tiene múltiples zonas de trabajo, lo que dificulta al técnico localizar el problema reportado.
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-110432.png" width="600">
+</p>
+
+**Recomendación:**
+Incorporar un mapa simple o selector visual que permita al operario marcar el punto aproximado donde ocurrió el incidente.
+
 
 
 
