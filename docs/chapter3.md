@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../pdf-style.css" type="text/css">
-
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories

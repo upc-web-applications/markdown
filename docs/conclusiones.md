@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../pdf-style.css" type="text/css">
-
 # Conclusiones
 
 1. **La investigación cualitativa mediante entrevistas a los tres segmentos objetivo confirmó la existencia de una brecha crítica en la digitalización de la gestión de seguridad industrial en el Perú.** Los operarios reportaron subregistro sistemático de incidentes (1-2 veces por semana) debido a procesos manuales que pueden tomar días, los supervisores admitieron carecer de herramientas para detectar patrones de riesgo antes de que ocurran accidentes, y los gerentes revelaron pérdidas económicas de hasta 85,000 soles por sanciones SUNAFIL derivadas de información tardía e incompleta. Estos hallazgos, documentados en las 6 entrevistas realizadas, validaron cuantitativa y cualitativamente la necesidad de RiskGuard y fundamentaron cada decisión de producto tomada posteriormente.

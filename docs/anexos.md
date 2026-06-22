@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../pdf-style.css" type="text/css">
-
 # Anexos
  
 - Figma

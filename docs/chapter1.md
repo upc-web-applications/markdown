@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../pdf-style.css" type="text/css">
-
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
