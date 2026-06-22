@@ -2578,6 +2578,11 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
        width="750"/>
 </p>
 
+<p align="center">
+  <img src="images/hazard.png"
+       width="750"/>
+</p>
+
 
 *Vista general de los recursos y endpoints correspondientes al bounded context Risk Assessment.*
 
