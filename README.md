@@ -42,6 +42,7 @@ Aplicaciones Web
 |:------:|:------:|:------:|:---------------------------:|
 | AV1 | 26/04/2026 | Todos los integrantes | Primera Version |
 | TB1 | 16/05/2026 | Todos los integrantes | Primera Version |
+| AV2 | 22/06/2026 | Todos los integrantes | Primera Version |
 
 
 </div>
@@ -61,10 +62,11 @@ Durante la elaboración de la AV1, los integrantes del equipo contribuyeron en l
 
 | Integrante | Secciones principales del informe |
 |---|---|
-| Aponte Pablo, Isabel Luisa | Integración del proyecto · Capítulo V (Sprint 1) · Deployment Evidence · Sprint 2: BC Reports & Compliance· Team Collaboration Insights, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review, Development Evidence for Sprint Review|
-| Laura Acosta, Victor Jhosef | Capítulo IV (Style Guidelines, Information Architecture) · Diseño Landing Page · Sprint 2: BC Risk Assessment (IPERC) & BC Mitigation · Sprint Backlog 2 · Student Outcome , Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review|
-| Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page · Sprint 2: BC Site / Area & Industrial Asset · BC Inspection / Unsafe Condition, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review |
-| Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe · Sprint 2: BC Account Generation & Authentication · BC Monitoring / Dashboard, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review|
+| Aponte Pablo, Isabel Luisa | Integración del proyecto · Capítulo V (Sprint 1) · Deployment Evidence · Sprint 2: BC Reports & Compliance · Team Collaboration Insights, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review, Development Evidence for Sprint Review · Sprint 3: Backend BC Reports & Compliance (KPI Dashboard, Historical Trends, Generated Reports, Critical Alerts, Annual OHS Plan, Monthly Reports, Cumulative ST Indicators, Predictive Indicators) · Configuración inicial del proyecto ASP.NET Core · Despliegue en Render · Services Documentation Evidence |
+| Laura Acosta, Victor Jhosef | Capítulo IV (Style Guidelines, Information Architecture) · Diseño Landing Page · Sprint 2: BC Risk Assessment (IPERC) & BC Mitigation · Sprint Backlog 2 · Student Outcome, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC Risk Assessment & BC Mitigation (Risk Assessments, Risk Patterns, Daily Summaries, Pattern Alerts, Area Criticality Levels, Mitigations, Corrective Action Tickets, SLA Alerts, Measure Verifications, Ticket Histories, Hazards, Technicians) |
+| Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page · Sprint 2: BC Site / Area & Industrial Asset · BC Inspection / Unsafe Condition, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC Inspection & BC Organization Assets (Inspections, Dangers, Headquarters, Areas, Assets) · Configuración EF Core y MySQL del proyecto inspection |
+| Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe · Sprint 2: BC Account Generation & Authentication · BC Monitoring / Dashboard, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC IAM & BC Monitoring Dashboard (Authentication JWT, Users, Roles, Sessions, Access Logs, Heat Map Zones, Dashboard Tickets, Dashboard Technicians, Dashboard Assets, Preventive Maintenances, Archived Reports) |
+
 
 AV1
 
@@ -78,6 +80,13 @@ TB1
 ![Imagen 1](https://i.postimg.cc/qRcs922Z/Whats-App-Image-2026-05-16-at-1-51-33-AM.jpg "evidencia-1")
 
 ![Imagen 2](https://i.postimg.cc/LXktrjjC/Whats-App-Image-2026-05-16-at-1-51-33-AM-(1).jpg "evidencia-2")
+
+
+AV2
+
+![Captura de pantalla 2026 06 21 235946](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-235946.png)
+
+![Captura de pantalla 2026 06 22 000011](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-000011.png)
 
 ## Repositorio del Landing Page
 
@@ -108,6 +117,22 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 | Laura Acosta, Victor Jhosef | Zatrynox | feature/assessment_mitigation | BC Risk Assessment (IPERC) · BC Mitigation |
 | Blancas Chávez, Carlos Franco | CarlosBlancas969 | feature/inspection_headquarters | BC Inspection / Unsafe Condition · BC Site / Area & Industrial Asset |
 | Flores Eusebio, Angel Thyago | angelfdevs | feature/monitoring-dashboard · feature/user-authentication | BC Monitoring / Dashboard · BC Account Generation & Authentication |
+
+
+## Repositorio del Backend
+
+**URL:** https://github.com/upc-web-applications/Backend
+
+El repositorio cuenta con 6 ramas activas: `main`, `develop`, `feature/reports`, `feature/assessment_mitigation`, `feature/inspection_headquarters` y `feature/user-authentication-monitoring-dashboard`, reflejando la separación por bounded context adoptada por el equipo para el desarrollo del backend en ASP.NET Core.
+
+### Contribuciones por integrante
+
+| Integrante | GitHub Username | Rama | Área de contribución |
+|---|---|---|---|
+| Aponte Pablo, Isabel Luisa | IsabelAponte234 | feature/reports | BC Reports & Compliance (Monthly Reports, Cumulative ST Indicators, Historical Incident Records, Annual OHS Plan, Predictive Indicators, Critical Alerts, Generated Reports, KPI Dashboard, Historical Trends) |
+| Laura Acosta, Victor Jhosef | Zatrynox | feature/assessment_mitigation | BC Risk Assessment (Risk Assessments, Risk Patterns, Daily Summaries, Pattern Alerts, Area Criticality Levels) · BC Mitigation (Mitigations, Corrective Action Tickets, SLA Alerts, Critical Notifications, Measure Verifications, Ticket Histories) · BC Hazards · BC Technicians |
+| Blancas Chávez, Carlos Franco | CarlosBlancas969 | feature/inspection_headquarters | BC Inspection / Unsafe Condition   (Inspections, Dangers) ·  BC Site / Area & Industrial Asset  (Organization Assets) (Headquarters, Areas, Assets) |
+| Flores Eusebio, Angel Thyago | angelfdevs | feature/user-authentication-monitoring-dashboard | BC IAM (Authentication, Users, Roles, Sessions, Access Logs) · BC Monitoring Dashboard (Heat Map Zones, Dashboard Tickets, Dashboard Technicians, Dashboard Assets, Preventive Maintenances, Archived Reports) |
 
 # Tabla de contenidos
 
@@ -286,6 +311,22 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
       </td>
       <td>
         Durante la TB1 (Sprint 2), el equipo de RiskGuard demostró capacidad para organizarse en torno a la arquitectura de bounded contexts, asignando a cada integrante un frente de trabajo claramente delimitado pero interdependiente. La división del trabajo por bounded contexts —Reports & Compliance, Risk Assessment & Mitigation, Site/Area & Inspection, y Monitoring & Authentication— permitió que cada miembro trabajara de forma autónoma en su rama de Git, mientras que la comunicación constante y las reuniones de sincronización garantizaron la cohesión del producto final. El equipo cumplió con los objetivos del Sprint 2, evidenciando un entorno colaborativo e inclusivo donde cada integrante aportó desde su especialidad, reforzando la competencia de trabajo en equipo definida por el Student Outcome 5.
+      </td>
+    </tr>
+    <tr>
+      <td>Demuestra capacidad de liderazgo técnico y colaboración efectiva en el desarrollo del backend, implementando los Web Services de sus bounded contexts asignados con arquitectura DDD y coordinando la integración del equipo durante el Sprint 3.</td>
+      <td>
+        <strong>Aponte Pablo, Isabel Luisa</strong><br>
+        <em>AV2:</em> Desarrolló los Web Services del Bounded Context Reports & Compliance en ASP.NET Core, implementando los endpoints para Monthly Reports, Cumulative ST Indicators, Historical Incident Records, Annual OHS Plan, Predictive Indicators, Critical Alerts, Generated Reports, KPI Dashboard e Historical Trends. Trabajó en la rama <code>feature/reports</code>, aplicando la arquitectura DDD con Entity Framework Core y MySQL. Coordinó con el equipo la configuración inicial del proyecto backend y lideró el despliegue del Web Service en Render.<br><br>
+        <strong>Laura Acosta, Victor Jhosef</strong><br>
+        <em>AV2:</em> Implementó los Web Services de los Bounded Contexts Risk Assessment y Mitigation, desarrollando los endpoints para Risk Assessments, Risk Patterns, Daily Summaries, Pattern Alerts, Area Criticality Levels, Mitigations, Corrective Action Tickets, SLA Alerts, Measure Verifications y Ticket Histories. Trabajó en la rama <code>feature/assessment_mitigation</code>, aplicando el patrón CrudController genérico para estandarizar las operaciones CRUD. Colaboró con el equipo en la definición de la estructura de capas del proyecto backend.<br><br>
+        <strong>Blancas Chávez, Carlos Franco</strong><br>
+        <em>AV2:</em> Desarrolló los Web Services de los Bounded Contexts Inspection y Organization Assets, implementando los endpoints para Inspections, Dangers, Headquarters, Areas y Assets. Trabajó en la rama <code>feature/inspection_headquarters</code>, configurando Entity Framework Core con el proveedor MySQL para su bounded context. Participó en las reuniones de coordinación del Sprint 3, apoyando a sus compañeros en la resolución de conflictos de integración durante los merges a develop.<br><br>
+        <strong>Flores Eusebio, Angel Thyago</strong><br>
+        <em>AV2:</em> Implementó los Web Services de los Bounded Contexts IAM y Monitoring Dashboard, desarrollando el sistema de autenticación JWT con BCrypt para el hash de contraseñas, y los endpoints para Users, Roles, Sessions, Access Logs, Heat Map Zones, Dashboard Tickets, Dashboard Technicians, Dashboard Assets, Preventive Maintenances y Archived Reports. Trabajó en la rama <code>feature/user-authentication-monitoring-dashboard</code>, liderando la implementación del módulo de seguridad del sistema. Coordinó con el equipo la documentación de los endpoints mediante Swagger/OpenAPI.
+      </td>
+      <td>
+        Durante la AV2 (Sprint 3), el equipo de RiskGuard demostró madurez en su capacidad de trabajo colaborativo al abordar el desarrollo del backend con arquitectura DDD en ASP.NET Core. Cada integrante asumió la responsabilidad de implementar los Web Services de sus bounded contexts asignados, trabajando en ramas independientes y coordinando la integración a través de la rama develop. La adopción de patrones compartidos —como el CrudController genérico, Entity Framework Core con MySQL y autenticación JWT— evidencia que el equipo estableció estándares técnicos comunes que facilitaron la consistencia del código y la colaboración efectiva. El despliegue exitoso en Render y la documentación mediante Swagger demuestran que el equipo no solo cumplió con los objetivos técnicos del Sprint, sino que también consolidó un entorno de trabajo donde el liderazgo técnico se distribuye según la especialidad de cada integrante, cumpliendo plenamente con el Student Outcome 5.
       </td>
     </tr>
   </tbody>
