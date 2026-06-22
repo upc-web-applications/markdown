@@ -3006,7 +3006,7 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
 
 | Servicio | URL |
 |---|---|
-| Landing Page | *(pendiente)* |
+| Landing Page | https://riskguard-landingpage.vercel.app/ |
 | Frontend (Firebase) | https://riskguard-a146d.web.app/login |
 | Backend Real (Render) | https://riskguard-platform.onrender.com/swagger/index.html |
 | Base de datos simulada (json-server en Render) | https://db-server-risk-0r34.onrender.com |
@@ -3115,17 +3115,12 @@ https://riskguard-platform.onrender.com/swagger/index.html
 
 | Producto | Estado de despliegue | Observación |
 |---|---|---|
-| Landing Page | *(pendiente de configurar)* | Se actualizará desde la rama principal. |
+| Landing Page | https://riskguard-landingpage.vercel.app/  | Se actualizará desde la rama principal. |
 | Frontend (Web App) | Desplegado en Firebase Hosting con integración continua  | La aplicación está disponible en https://riskguard-a146d.web.app |
 | Backend / Web Services | Desplegado en Render | Los endpoints fueron validados mediante Swagger UI, accesible en https://riskguard-platform.onrender.com/swagger/index.html. Base de datos MySQL. |
 | Base de datos simulada | Desplegada en Render como json-server | Disponible en https://db-server-risk-0r34.onrender.com. Requiere activación manual por inactividad de Render Free. |
 
 **Landing Page desplegada**
-
-Evidencia de actualizacion en main: 
-<p align="center">
-  <img src="images/EvidenciaLading.png" width="500"/>
-</p>
 
 Evidencia de Ladin page publicada:
 
@@ -3133,7 +3128,7 @@ Evidencia de Ladin page publicada:
   <img src="images/EvidenciaLading1.png" width="500"/>
 </p>
 
-**Fronteed desplegado**
+**Fronted desplegado**
 
 Evidencia del fronteed publicado:
 
