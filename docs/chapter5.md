@@ -2474,6 +2474,8 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Services de RiskGuard utilizando C# y ASP.NET Core. El backend fue organizado como un monolito modular basado en Domain-Driven Design, separando las responsabilidades de la solución mediante bounded contexts. Las operaciones fueron verificadas desde Swagger UI utilizando datos de prueba y comprobando los códigos de respuesta HTTP.
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
