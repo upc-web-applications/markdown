@@ -2846,8 +2846,6 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
    - **Plan:** Free
 7. Click en **Create Web Service**
 
-![Captura de pantalla 2026 06 21 205339](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205339.png)
-
 ![Captura de pantalla 2026 06 21 205902](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205902.png)
 
 ![Captura de pantalla 2026 06 21 210013](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210013.png)
