@@ -2517,17 +2517,13 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
        width="750"/>
 </p>
 
-<p align="center">
-  <img src="images/image4-area.png"
-       width="750"/>
-</p>
 
 *Vista general de los recursos y endpoints correspondientes al bounded context Site, Area and Industrial Asset.*
 
 ##### Inspection / Unsafe Condition BC
 
 <p align="center">
-  <img src="images/sprint-3/execution/inspection-swagger-overview.png"
+  <img src="images/image4-area"
        width="750"/>
 </p>
 
