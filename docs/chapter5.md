@@ -2479,7 +2479,23 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 ##### Account Generation and Authentication BC
 
 <p align="center">
-  <img src="images/sprint-3/execution/iam-swagger-overview.png" width="750"/>
+  <img src="images/accesslog-swagger.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/authentication-swagger.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/roles-swagger.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/sessions-swagger.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/user-swagger.png" width="750"/>
 </p>
 
 *Vista general de los recursos y endpoints correspondientes al bounded context Account Generation and Authentication.*
@@ -2487,7 +2503,7 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 ##### Site / Area and Industrial Asset BC
 
 <p align="center">
-  <img src="images/sprint-3/execution/organization-assets-swagger-overview.png"
+  <img src="images/organization-assets-swagger-overview.png"
        width="750"/>
 </p>
 
