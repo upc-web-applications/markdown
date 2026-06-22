@@ -2523,7 +2523,7 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 ##### Inspection / Unsafe Condition BC
 
 <p align="center">
-  <img src="images/image4-area"
+  <img src="images/image4-area.png"
        width="750"/>
 </p>
 
