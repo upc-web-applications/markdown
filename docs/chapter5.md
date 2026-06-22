@@ -3081,6 +3081,53 @@ Evidencia del fronteed publicado:
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
+Durante el Sprint 3, el equipo colaboró activamente en el desarrollo del Backend de RiskGuard con ASP.NET Core y arquitectura DDD. Cada integrante trabajó en su respectivo bounded context mediante ramas feature independientes, integrando los cambios al repositorio compartido a través de pull requests. A continuación se presentan los analíticos de colaboración y el historial de commits obtenidos desde el repositorio upc-web-applications/Backend.
+
+El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, feature/assessment_mitigation, feature/inspection_headquarters y feature/user-authentication-monitoring-dashboard, reflejando la separación por bounded context adoptada por el equipo.
+
+**Capturas de analíticos y commits en GitHub:**
+
+*Estructura de ramas del repositorio utilizada durante el Sprint 3.*
+
+<h5 align="center">Ramas creadas</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-000527.png" width="600"/>
+</p>
+
+*Historial de commits organizado cronológicamente en el repositorio.*
+
+<h5 align="center">Orden de commits</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-001744.png" width="600"/>
+</p>
+
+*Resumen estadístico del repositorio con cantidad de commits y contribuciones por autor.*
+
+<h5 align="center">Commits por usuario</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-001759.png" width="600"/>
+</p>
+
+*Network graph del repositorio mostrando el flujo de ramas y merges del equipo.*
+
+<h5 align="center">Network graph</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-223104.png" width="600"/>
+</p>
+
+*Registro completo de todos los commits realizados durante el Sprint 3.*
+
+<h5 align="center">Todos los commits</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-002957.png" width="600"/>
+</p>
+
+
 ## 5.3. Validation Interviews
 
 En esta sección se registran las entrevistas de validación del proyecto. A diferencia de las entrevistas de la sección 2.2, donde se buscaba descubrir problemas y necesidades, aquí el objetivo es verificar si lo que construimos realmente funciona para los usuarios y si les resulta fácil de usar.
