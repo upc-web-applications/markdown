@@ -2540,9 +2540,35 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 ##### Monitoring / Dashboard BC
 
 <p align="center">
-  <img src="images/sprint-3/execution/monitoring-dashboard-swagger-overview.png"
+  <img src="images/archivedreports-swagger.png"
        width="750"/>
 </p>
+
+<p align="center">
+  <img src="images/assets-swagger.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/heatmapzones-swagger.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/preventive-swagger.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/technicians-swagger.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/tickets-swagger.png"
+       width="750"/>
+</p>
+
 
 *Vista general de los recursos y endpoints correspondientes al bounded context Monitoring and Dashboard.*
 
