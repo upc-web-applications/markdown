@@ -2627,6 +2627,9 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 
 *Vista general de los recursos y endpoints correspondientes al bounded context Reports and Compliance.*
 
+*Video de demostración:*  [Ver video en microsoft](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQAll8gqH1OTSZBfmPtTGWADARPeg5vTnz514xeDGxJ4mhQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6RRLJw) 
+
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante este Sprint se lograron avances significativos en el desarrollo y documentación de los Web Services que soportan las funcionalidades principales de la plataforma RiskGuard. Se implementaron y documentaron múltiples endpoints REST relacionados con la autenticación de usuarios, gestión de inspecciones, evaluación de riesgos, medidas de mitigación, tickets correctivos, monitoreo por mapa de calor, mantenimientos preventivos, gestión de sedes, áreas y activos industriales, así como reportes de cumplimiento normativo SST.
