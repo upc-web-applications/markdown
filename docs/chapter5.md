@@ -2503,7 +2503,22 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 ##### Site / Area and Industrial Asset BC
 
 <p align="center">
-  <img src="images/organization-assets-swagger-overview.png"
+  <img src="images/image1-area.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image2-area.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image3-area.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image4-area.png"
        width="750"/>
 </p>
 
@@ -2521,7 +2536,17 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 ##### Risk Assessment BC
 
 <p align="center">
-  <img src="images/sprint-3/execution/risk-assessment-swagger-overview.png"
+  <img src="images/image1-risk.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image2-risk.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image3-risk.png"
        width="750"/>
 </p>
 
@@ -2531,7 +2556,17 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 #### Mitigation BC
 
 <p align="center">
-  <img src="images/sprint-3/execution/mitigation-swagger-overview.png"
+  <img src="images/image1-mitigation.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image2-mitigation.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image3-mitigation.png"
        width="750"/>
 </p>
 
@@ -2575,7 +2610,22 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 ##### Reports / Compliance BC
 
 <p align="center">
-  <img src="images/sprint-3/execution/reports-compliance-swagger-overview.png"
+  <img src="images/image1-reports.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image2-reports.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image3-reports.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="images/image4-reports.png"
        width="750"/>
 </p>
 
