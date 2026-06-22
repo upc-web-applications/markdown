@@ -3127,7 +3127,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Ramas creadas</h5>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-000527.png" width="600"/>
+  <img src="docs/images/sprint3-branches.png" width="600"/>
 </p>
 
 *Historial de commits organizado cronológicamente en el repositorio.*
@@ -3135,7 +3135,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Orden de commits</h5>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-001744.png" width="600"/>
+  <img src="docs/images/sprint3-commits-order.png" width="600"/>
 </p>
 
 *Resumen estadístico del repositorio con cantidad de commits y contribuciones por autor.*
@@ -3143,7 +3143,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Commits por usuario</h5>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-001759.png" width="600"/>
+  <img src="docs/images/sprint3-commits-per-user.png" width="600"/>
 </p>
 
 *Network graph del repositorio mostrando el flujo de ramas y merges del equipo.*
@@ -3151,7 +3151,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Network graph</h5>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-223104.png" width="600"/>
+  <img src="docs/images/sprint3-network-graph.png" width="600"/>
 </p>
 
 *Registro completo de todos los commits realizados durante el Sprint 3.*
@@ -3159,7 +3159,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Todos los commits</h5>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-002957.png" width="600"/>
+  <img src="docs/images/sprint3-all-commits.png" width="600"/>
 </p>
 
 
