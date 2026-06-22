@@ -2484,7 +2484,7 @@ Asimismo, se integró la persistencia de datos mediante una base de datos MySQL,
 
 A continuación, se presenta la relación de endpoints desarrollados durante el Sprint, incluyendo las acciones soportadas, la sintaxis de llamada y ejemplos de respuesta obtenidos a través de la documentación interactiva.
 
-**Repositorio de Web Services:** [RiskGuard Backend](https://github.com/upc-pre-202501-si730-4428-RiskGuard)
+**Repositorio de Web Services:** https://github.com/upc-web-applications/Backend
 
 **URL local de la documentación Swagger:** http://localhost:5175/swagger
 
