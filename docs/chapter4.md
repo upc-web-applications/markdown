@@ -49,7 +49,7 @@ El interlineado general se mantiene en 1.5x–1.6x para textos de cuerpo, asegur
 La paleta de RiskGuard refuerza el concepto de vigilancia industrial activa y control de riesgos en tiempo real:
 
 - `#0A0C0F` → Fondo principal de la aplicación. Tono casi negro que maximiza el contraste con los elementos de interfaz y simula el ambiente de una sala de control nocturna.
-- `#111418` → Fondo secundario. Utilizado en secciones de contenido alternadas para crear separación visual sin romper la coherencia oscura.
+- `#111418` → Fondo secundario. Utilizado en secciónes de contenido alternadas para crear separación visual sin romper la coherencia oscura.
 - `#1A1E24` → Superficies de cards y componentes. Aporta profundidad y diferenciación entre capas de UI sin generar ruido visual.
 - `#2A2F38` → Bordes y separadores. Delimita componentes de forma sutil manteniendo la cohesión visual del tema oscuro.
 - `#FF5B00` **(Primario)** → Naranja de acción y alerta. Es el color de identidad central de RiskGuard: representa urgencia, precisión y acción preventiva. Se usa en CTAs, highlights y elementos interactivos clave.
@@ -65,7 +65,7 @@ La paleta de RiskGuard refuerza el concepto de vigilancia industrial activa y co
 
 **Spacing:**
 
-Se aplican espacios amplios entre secciones para evitar la sensación de saturación en interfaces de alta densidad informativa. Margen mínimo de contenido: **16 px**. Espaciado base entre elementos internos de componentes: **8 px**. Padding interno de cards y secciones: **24 a 32 px**. El espaciado generoso entre secciones del landing (mínimo **80 px** vertical) refuerza la jerarquía de contenido y facilita la lectura progresiva.
+Se aplican espacios amplios entre secciónes para evitar la sensación de saturación en interfaces de alta densidad informativa. Margen mínimo de contenido: **16 px**. Espaciado base entre elementos internos de componentes: **8 px**. Padding interno de cards y secciónes: **24 a 32 px**. El espaciado generoso entre secciónes del landing (mínimo **80 px** vertical) refuerza la jerarquía de contenido y facilita la lectura progresiva.
 
 ---
 
@@ -88,7 +88,7 @@ El lenguaje será claro, conciso y orientado a la acción operativa. Se prioriza
 La interfaz web de RiskGuard está diseñada con un enfoque *responsive*, garantizando adaptación fluida entre desktop, laptop y tablet sin perder la identidad visual definida por la paleta institucional (`#0A0C0F`, `#FF5B00`, `#1A1E24`, `#00C97B`, `#FF3B30`).
 
 - **Desktop:**
-  Se emplea una grilla de 12 columnas con áreas de contenido centradas a un máximo de 1200 px. El navbar superior es fijo e incluye a la izquierda el logotipo y a la derecha los links de navegación principales: Características, Metodología, Sectores, Estadísticas, y un botón CTA naranja destacado ("Contáctanos"). El hero ocupa el 100% del viewport con layout de dos columnas: copy izquierdo y widget de panel de seguridad a la derecha. Las secciones de features usan grillas de 3 columnas para las cards.
+  Se emplea una grilla de 12 columnas con áreas de contenido centradas a un máximo de 1200 px. El navbar superior es fijo e incluye a la izquierda el logotipo y a la derecha los links de navegación principales: Características, Metodología, Sectores, Estadísticas, y un botón CTA naranja destacado ("Contáctanos"). El hero ocupa el 100% del viewport con layout de dos columnas: copy izquierdo y widget de panel de seguridad a la derecha. Las secciónes de features usan grillas de 3 columnas para las cards.
 
 - **Tablet:**
   La grilla se ajusta a 2 columnas. El navbar se condensa y los botones incrementan su área táctil mínima a 44 px para facilitar interacción. Las grillas de 3 columnas se colapsan a 2 columnas.
@@ -135,7 +135,7 @@ La interfaz web de RiskGuard está diseñada con un enfoque *responsive*, garant
 
  <div align="center">
   <p>
-    <b>Grafico 13</b>: Web Styles Guidlines - RiskGuard
+    <b>Grafico 13</b>: Web Styles Guidelines - RiskGuard
   </p>
     
 ![Foto](images/Exhibición.png)
@@ -164,7 +164,7 @@ La organización visual del dashboard está diseñada para guiar al usuario a tr
   - _RRHH / Gerencia:_ Acceso al panel ejecutivo con métricas consolidadas, reportes PERC y análisis de tendencias.
 
 - **Panel principal (post-login):**
-  Una vez autenticado, el usuario accede al dashboard principal con las siguientes secciones:
+  Una vez autenticado, el usuario accede al dashboard principal con las siguientes secciónes:
   - _Panel de Seguridad:_ Vista en tiempo real del estado de zonas, alertas activas y nivel de cobertura.
   - _Alertas Multi-Canal:_ Listado de alertas clasificadas por severidad y canal de origen (SMS, app, SMTP).
   - _Informes PERC:_ Acceso a informes generados automáticamente con análisis de cumplimiento ICC.
@@ -189,7 +189,7 @@ La organización visual del dashboard está diseñada para guiar al usuario a tr
 
 **Landing Page:**
 
-La landing page sigue una estructura de bloques verticales con jerarquía visual clara orientada a la conversión:
+El Landing Page sigue una estructura de bloques verticales con jerarquía visual clara orientada a la conversión:
 
 - Hero: Propuesta de valor central + widget demo del panel de seguridad.
 - Features: Grid de 6 features con cards de producto (Digitalización 337, Alertas Multi-Canal, Informes PERC, Predicción de Tendencias, Control por Zonas, Protocolos LOTO Digital).
@@ -289,7 +289,7 @@ El sistema de navegación ha sido implementado tanto en la versión web (landing
 
 Menú de navegación principal:
 
-En la versión web, el navbar se ubica en la parte superior de forma fija, alineado de izquierda a derecha, ofreciendo acceso directo a las secciones más relevantes:
+En la versión web, el navbar se ubica en la parte superior de forma fija, alineado de izquierda a derecha, ofreciendo acceso directo a las secciónes más relevantes:
 
 - _Características:_ Descripción de los 6 módulos principales del producto.
 - _Metodología:_ Explicación del enfoque técnico y de inteligencia artificial de RiskGuard.
@@ -315,7 +315,7 @@ El menú hamburguesa en la esquina superior derecha agrupa acciones secundarias:
 
 **Navegación y Acceso a Información:**
 
-RiskGuard permite a operarios y supervisores monitorear el estado de seguridad industrial con el mínimo número de pasos posibles. Desde el panel principal, el usuario puede visualizar alertas activas, acceder a protocolos aplicables y generar reportes sin salir del flujo principal. La navegación entre secciones usa transiciones inmediatas sin animaciones innecesarias que puedan ralentizar la respuesta en contextos de urgencia.
+RiskGuard permite a operarios y supervisores monitorear el estado de seguridad industrial con el mínimo número de pasos posibles. Desde el panel principal, el usuario puede visualizar alertas activas, acceder a protocolos aplicables y generar reportes sin salir del flujo principal. La navegación entre secciónes usa transiciones inmediatas sin animaciones innecesarias que puedan ralentizar la respuesta en contextos de urgencia.
 
 **Interacción y Experiencia de Usuario:**
 
@@ -333,7 +333,7 @@ En conjunto, el sistema de navegación de RiskGuard equilibra funcionalidad oper
 
 ### 4.3.1. Landing Page Wireframe
 
-En esta seccion se presentan los wireframes de la Landing Page del proyecto RiskGuard. El objetivo principal de estos diseños de definir la arquitectura de la informacion y la disposicion estructural de los elementos clave, sin entrar en detalles visuales como colores o tipografias. 
+En esta sección se presentan los wireframes de la Landing Page del proyecto RiskGuard. El objetivo principal de estos diseños de definir la arquitectura de la información y la disposición estructural de los elementos clave, sin entrar en detalles visuales como colores o tipografías. 
 
 <div align="center">
   <p>
@@ -497,7 +497,7 @@ La pantalla de detalle de ticket presenta el historial completo del incidente en
 
 #### Wireframes: Dashboard Ejecutivo del Gerente
 
-[![Captura de pantalla 2026-05-14 165957](https://i.postimg.cc/j2dWxXdy/Captura-de-pantalla-2026-05-14-165957.png)](https://postimages.org/)
+![Wireflow Prototype 1](docs/images/wireflow-prototype-1.png)
 
 *Ilustración – Web Application Wireframe: Dashboard Ejecutivo del Gerente*
 
@@ -635,7 +635,7 @@ La pantalla de detalle de ticket aplica el layout de dos columnas sobre fondo `#
 
 #### Dashboard Ejecutivo del Gerente
 
-[![Captura de pantalla 2026-05-14 164930](https://i.postimg.cc/QdqR5Jjw/Captura-de-pantalla-2026-05-14-164930.png)](https://postimages.org/)
+![Wireflow Prototype 2](docs/images/wireflow-prototype-2.png)
 
 *Ilustración – Web Application Mock-up: Dashboard Ejecutivo del Gerente*
 
@@ -656,7 +656,7 @@ Esta sección presenta los User Flow Diagrams de la aplicación web de RiskGuard
 *Ilustración – Web Application User Flow Diagram: Registro y Seguimiento de Incidente*
 
 **Happy Path:**
-Dashboard Operario → Clic "Registrar inspeccion"  → Formulario desplegado → Completa tipo, sector, urgencia y descripción → Clic "Enviar" → Confirmación con número de ticket → Regresa al dashboard → Recibe notificación cuando el supervisor cambia el estado → Consulta detalle desde "Inspecciones".
+Dashboard Operario → Clic "Registrar inspección"  → Formulario desplegado → Completa tipo, sector, urgencia y descripción → Clic "Enviar" → Confirmación con número de ticket → Regresa al dashboard → Recibe notificación cuando el supervisor cambia el estado → Consulta detalle desde "Inspecciones".
 
 **Unhappy Paths:**
 - Campos obligatorios vacíos (US03, Scenario 2): campos resaltados en rojo → botón "Enviar" bloqueado.
@@ -739,7 +739,7 @@ El prototipo cubre los siguientes flujos principales de interacción, representa
 
 <h5 align="center">Visualización del prototipo</h5>
 
-[![Whats-App-Image-2026-05-16-at-12-18-01-AM.jpg](https://i.postimg.cc/1zmgdD78/Whats-App-Image-2026-05-16-at-12-18-01-AM.jpg)](https://postimg.cc/CR2LBng0)
+![Prototype Figma](docs/images/prototype-figma.jpg)
 
 *Vista del prototipo del sistema, mostrando la interfaz principal y su estructura general.*
 
@@ -923,9 +923,7 @@ Este Bounded Context es responsable de la gestión de acciones correctivas y tic
 
 <p align="center">Monitoreo y Dashboard BC</p>
 <p align="center">
-  <a href="https://postimg.cc/bDJyz295">
-    <img src="https://i.postimg.cc/sXPv4YQ3/Container-001-(11).png" width="300"/>
-  </a>
+  <img src="docs/images/container-diagram-11.png" width="300"/>
 </p>
 
 ![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(8).png?raw=true)
@@ -969,7 +967,7 @@ Este Bounded Context es responsable de la generación de reportes ejecutivos e i
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
-En esta seccion se muestran los diagramas de de base de datos por cada Bounded Context. En estos diagramas se pueden evidenciar tanto las tablas, columnas, constraints y relaciones entre si por cada bounded context
+En esta sección se muestran los diagramas de de base de datos por cada Bounded Context. En estos diagramas se pueden evidenciar tanto las tablas, columnas, constraints y relaciones entre si por cada bounded context
 <div align="center">
     
   <img src="images/diagrama-basedatos-riskguard-bc-usuarios.svg" width="500">

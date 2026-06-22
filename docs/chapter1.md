@@ -38,10 +38,10 @@ La solución RiskGuard se caracteriza por su capacidad para registrar y centrali
 
 | Foto | Nombre | Descripción |
 | -------- | -------- | -------- |
-| ![](https://i.postimg.cc/wxR9Q4g6/Whats-App-Image-2026-04-17-at-3-05-22-AM.jpg) | Aponte Pablo, Isabel Luisa (u20241e158) | Soy estudiante de Ingeniería de Software con interés en la programación y el desarrollo de soluciones prácticas. Disfruto aprender cómo funcionan los sistemas por dentro y aplicar ese conocimiento en proyectos. Poseo conocimientos en C++, Java y HTML, además de otras herramientas tecnológicas. Me caracterizo por ser responsable, organizada y orientada al trabajo en equipo. |
-| ![](https://i.postimg.cc/t7GpDwGK/57b57997-504b-4f5e-9f25-20eb7aefcc84.jpg) | Blancas Chávez, Carlos Franco (u20241a322) |Me interesa mucho el desarrollo de software ya que desde siempre me ha interesado conocer cómo funcionan las cosas por dentro y esa curiosidad fue lo que me motivó a elegir esta profesión. Me gustaría desempeñarme en el área de bases de datos o desarrollador backend, porque me atrae la lógica que hay detrás de los sistemas y la forma en la que se organiza y gestiona la información. Habilidades: C++, Python, Js,React, Html, css, JavaScript, MySql|
-| ![](https://i.postimg.cc/pdZsV6Vp/angel-flores-foto.jpg) | Flores Eusebio, Angel Thyago (u20231b781) | Soy estudiante de la carrera de ingenieria de Software. Disfruto mucho de aprender nuevas tecnologias como vue, javascript, c# y mas, para luego ponerlas en practica creando codigos que puedan ayudarme o ayudar a alguien de mi entorno cercano. |
-| ![](https://i.postimg.cc/QNbmD5zt/victor-photo.jpg) | Laura Acosta, Victor Jhosuef (u202418655) | Soy estudiante de Ingeniería de Software, con conocimientos en C++, C# y Java, y experiencia en Visual Studio Code y Visual Studio. Cuento con habilidades en diseño de bases de datos, elaborando modelos conceptuales y físicos. Me caracterizo por estar en constante aprendizaje y disposición para trabajar en equipo. |
+| ![](docs/images/isabel-aponte.jpg) | Aponte Pablo, Isabel Luisa (u20241e158) | Soy estudiante de Ingeniería de Software con interés en la programación y el desarrollo de soluciones prácticas. Disfruto aprender cómo funcionan los sistemas por dentro y aplicar ese conocimiento en proyectos. Poseo conocimientos en C++, Java y HTML, además de otras herramientas tecnológicas. Me caracterizo por ser responsable, organizada y orientada al trabajo en equipo. |
+| ![](docs/images/carlos-blancas.jpg) | Blancas Chávez, Carlos Franco (u20241a322) |Me interesa mucho el desarrollo de software ya que desde siempre me ha interesado conocer cómo funcionan las cosas por dentro y esa curiosidad fue lo que me motivó a elegir esta profesión. Me gustaría desempeñarme en el área de bases de datos o desarrollador backend, porque me atrae la lógica que hay detrás de los sistemas y la forma en la que se organiza y gestiona la información. Habilidades: C++, Python, Js,React, Html, css, JavaScript, MySql|
+| ![](docs/images/angel-flores.jpg) | Flores Eusebio, Angel Thyago (u20231b781) | Soy estudiante de la carrera de ingenieria de Software. Disfruto mucho de aprender nuevas tecnologías como vue, javascript, c# y mas, para luego ponerlas en práctica creando códigos que puedan ayudarme o ayudar a alguien de mi entorno cercano. |
+| ![](docs/images/victor-laura.jpg) | Laura Acosta, Victor Jhosuef (u202418655) | Soy estudiante de Ingeniería de Software, con conocimientos en C++, C# y Java, y experiencia en Visual Studio Code y Visual Studio. Cuento con habilidades en diseño de bases de datos, elaborando modelos conceptuales y físicos. Me caracterizo por estar en constante aprendizaje y disposición para trabajar en equipo. |
 
 ## 1.2. Solution Profile
 
@@ -68,14 +68,14 @@ Nuestra plataforma se sitúa en el dominio de la Seguridad y Salud en el Trabajo
 
 Hemos identificado como problema central la alta dependencia de procesos manuales, lo que genera una "ceguera operativa": los datos de incidentes menores, fallas de maquinaria y actos inseguros no se cruzan ni se analizan. Esta fragmentación de la información impide identificar patrones de riesgo antes de que se conviertan en accidentes fatales o paradas de planta costosas
 
-Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que actúe como un motor de inteligencia preventiva. El sistema permitirá a los supervisores reportar condiciones inseguras mediante una interfaz dinamica, mientras que un motor de reglas en el backend calculará automáticamente niveles de criticidad.
+Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que actúe como un motor de inteligencia preventiva. El sistema permitirá a los supervisores reportar condiciones inseguras mediante una interfaz dinámica, mientras que un motor de reglas en el backend calculará automáticamente niveles de criticidad.
 
 #### 1.2.2.2. Lean UX Assumptions
 
 #### Features
 
-- Interfaz grafica para el registro rápido de incidentes, permitiendo adjuntar evidencia fotográfica de condiciones inseguras en tiempo real.
-- Algoritmos que aplican modelos matematicos de riesgo para categorizar la urgencia de cada hallazgo.
+- Interfaz gráfica para el registro rápido de incidentes, permitiendo adjuntar evidencia fotográfica de condiciones inseguras en tiempo real.
+- Algoritmos que aplican modelos matemáticos de riesgo para categorizar la urgencia de cada hallazgo.
 - Panel visual con mapas de calor y gráficas de tendencia que se actualizan sin necesidad de recargar la página, facilitando el monitoreo continuo de la planta.
 - Funcionalidad para exportar documentos de auditoría que cumplan con los formatos referenciales de la ley peruana.
 
@@ -83,25 +83,25 @@ Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que 
 
 - Las empresas presentan una deficiencia en la capacidad de prevención de riesgos, causada por el uso de métodos de registro que no permiten un análisis estadístico oportuno.
 - Los Usuarios necesitan superar esta deficiencia aprendiendo a identificar y registrar peligros de manera digital, confiando en que el sistema procesará esa información para alertar sobre riesgos inminentes.
-- Empresas de manufactura y logistica estan interesados en optimizar sus sistemas de gestion de la seguridad con el fin de reducir la tasa de accidentes.
-- Los administradores desean ver una grafica de tendencia en base a los datos de ingresados.
+- Empresas de manufactura y logística están interesados en optimizar sus sistemas de gestión de la seguridad con el fin de reducir la tasa de accidentes.
+- Los administradores desean ver una gráfica de tendencia en base a los datos de ingresados.
 - Corregir la brecha entre el hallazgo de un peligro y su mitigación mediante una plataforma accesible y predictiva que prepare a la organización para actuar ante situaciones críticas antes de que ocurran accidentes.
 - La falta de veracidad en el llenado de datos por parte del personal operativo, lo cual se abordará con interfaces simplificadas y validaciones automáticas de integridad en el frontend.
 - Sistemas de gestión documental genéricos o formularios en Excel, que carecen de la capacidad reactiva y del motor predictivo propuesto en ....
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**Creemos** que digitalizar el proceso de inspeccion mediante la aplicacion web RiskGuard evolucionará la captura de datos en planta. 
+**Creemos** que digitalizar el proceso de inspección mediante la aplicación web RiskGuard evolucionará la captura de datos en planta. 
 **Sabremos** que lo propuesto es cierto 
-**Cuando** los reportes diarios se incrementen en un 40% debido a la facilidad de uso frente al registro en hojas de calculos o papel
+**Cuando** los reportes diarios se incrementen en un 40% debido a la facilidad de uso frente al registro en hojas de cálculos o papel
 
-**Creemos** que integrar un motor de reglas en la aplicacion web permitira predecir accidentes antes de que ocurran. 
+**Creemos** que integrar un motor de reglas en la aplicación web permitirá predecir accidentes antes de que ocurran. 
 **Sabremos** que lo propuesto es cierto
 **Cuando** el sistema identifique correctamente al menos el 70% de las áreas de alta criticidad antes de que se registre un siniestro real
 
-**Creemos** que ofrecer Dashboards visuales con indicadores predictivos potenciara la toma de decisiones gerenciales
+**Creemos** que ofrecer Dashboards visuales con indicadores predictivos potenciará la toma de decisiones gerenciales
 **Sabremos** que lo propuesto es cierto 
-**Cuando** se reporte una reduccion del 50% en el tiempo dedicado a elaborar informes mensuales de gestion.
+**Cuando** se reporte una reducción del 50% en el tiempo dedicado a elaborar informes mensuales de gestión.
 
 **Creemos** que ofrecer una plataforma ligera y accesible desde navegadores web permitirá la adopción de RiskGuard en empresas con baja infraestructura tecnológica. 
 **Sabremos** que esto es cierto 

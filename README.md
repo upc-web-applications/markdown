@@ -77,16 +77,16 @@ AV1
 
 TB1
 
-![Imagen 1](https://i.postimg.cc/qRcs922Z/Whats-App-Image-2026-05-16-at-1-51-33-AM.jpg "evidencia-1")
+![Imagen 1](docs/images/tb1-evidence-1.jpg "evidencia-1")
 
-![Imagen 2](https://i.postimg.cc/LXktrjjC/Whats-App-Image-2026-05-16-at-1-51-33-AM-(1).jpg "evidencia-2")
+![Imagen 2](docs/images/tb1-evidence-2.jpg "evidencia-2")
 
 
 AV2
 
-![Captura de pantalla 2026 06 21 235946](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-235946.png)
+![Captura de pantalla 2026 06 21 235946](docs/images/av2-evidence-1.png)
 
-![Captura de pantalla 2026 06 22 000011](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-000011.png)
+![Captura de pantalla 2026 06 22 000011](docs/images/av2-evidence-2.png)
 
 ## Repositorio del Landing Page
 
@@ -285,7 +285,7 @@ El repositorio cuenta con 6 ramas activas: `main`, `develop`, `feature/reports`,
       <td>Participa activamente en la planificación y cumplimiento de objetivos del equipo, asumiendo responsabilidades de liderazgo o colaboración según las necesidades del sprint.</td>
       <td>
         <strong>Aponte Pablo, Isabel Luisa</strong><br>
-        <em>AV1:</em> Participó activamente en la reunión de Sprint Planning 1, contribuyendo a la definición del sprint goal y a la distribución de tareas entre los integrantes. Asumió la responsabilidad del diseño visual de secciones del Landing Page, coordinando con sus compañeros para asegurar la coherencia estética del sitio. Su participación constante en los canales de comunicación del equipo facilitó la resolución de bloqueos durante el desarrollo.<br><br>
+        <em>AV1:</em> Participó activamente en la reunión de Sprint Planning 1, contribuyendo a la definición del Sprint Goal y a la distribución de tareas entre los integrantes. Asumió la responsabilidad del diseño visual de secciones del Landing Page, coordinando con sus compañeros para asegurar la coherencia estética del sitio. Su participación constante en los canales de comunicación del equipo facilitó la resolución de bloqueos durante el desarrollo.<br><br>
         <strong>Laura Acosta, Victor Jhosef</strong><br>
         <em>AV1:</em> Lideró la integración y consolidación de las secciones desarrolladas por los distintos integrantes del equipo, asegurando que el Landing Page funcionara de manera cohesionada como producto final. Coordinó el proceso de despliegue en GitHub Pages y Vercel, estableciendo los pasos del pipeline de publicación y comunicándolos al equipo para garantizar que todos comprendieran el flujo de entrega. Su rol de liderazgo técnico en la fase de integración fue clave para cumplir el objetivo del Sprint 1.<br><br>
         <strong>Blancas Chávez, Carlos Franco</strong><br>
@@ -294,7 +294,7 @@ El repositorio cuenta con 6 ramas activas: `main`, `develop`, `feature/reports`,
         <em>AV1:</em> Contribuyó al equipo asumiendo la responsabilidad del diseño e implementación de las secciones "Cómo funciona" y "Segmentos" del Landing Page, trabajando de forma coordinada con los demás integrantes para respetar los lineamientos visuales acordados en las Style Guidelines. Participó en las reuniones de seguimiento del Sprint, reportando su avance y señalando dependencias con otras secciones para facilitar la integración. Su compromiso con los plazos establecidos contribuyó al cumplimiento del objetivo del Sprint 1.
       </td>
       <td>
-        Durante la AV1, el equipo de RiskGuard Solutions demostró capacidad para funcionar de manera efectiva como unidad de trabajo colaborativo. La distribución de responsabilidades durante el Sprint Planning, la comunicación continua a través de los canales del equipo y la integración coordinada de las secciones del Landing Page evidencian que los integrantes no solo cumplieron sus tareas individuales, sino que también apoyaron el trabajo colectivo para alcanzar el objetivo común del Sprint. La existencia de roles diferenciados —liderazgo técnico en integración y despliegue, liderazgo en implementación de secciones y colaboración en diseño— refleja un equipo que distribuye el liderazgo de forma situacional, creando un entorno inclusivo donde cada integrante aporta desde sus fortalezas. El cumplimiento del sprint goal dentro del plazo establecido valida que el equipo ha comenzado a desarrollar efectivamente la competencia de trabajo en equipo definida por el Student Outcome 5.
+        Durante la AV1, el equipo de RiskGuard Solutions demostró capacidad para funcionar de manera efectiva como unidad de trabajo colaborativo. La distribución de responsabilidades durante el Sprint Planning, la comunicación continua a través de los canales del equipo y la integración coordinada de las secciones del Landing Page evidencian que los integrantes no solo cumplieron sus tareas individuales, sino que también apoyaron el trabajo colectivo para alcanzar el objetivo común del Sprint. La existencia de roles diferenciados —liderazgo técnico en integración y despliegue, liderazgo en implementación de secciones y colaboración en diseño— refleja un equipo que distribuye el liderazgo de forma situacional, creando un entorno inclusivo donde cada integrante aporta desde sus fortalezas. El cumplimiento del Sprint Goal dentro del plazo establecido valida que el equipo ha comenzado a desarrollar efectivamente la competencia de trabajo en equipo definida por el Student Outcome 5.
       </td>
     </tr>
     <tr>

@@ -131,7 +131,7 @@ Se adoptaron lineamientos de W3Schools para estructurar correctamente el conteni
 - Los elementos y atributos se escriben en minúsculas para mantener uniformidad.  
 - Los valores de los atributos se definen con comillas dobles.  
 - Se incluye el atributo `lang` en la etiqueta `<html>` para indicar el idioma del sitio.  
-- Todas las imágenes contienen el atributo `alt` con descripciones relevantes.  
+- Todas las imágenes contienen el atributo `alt` con descripciónes relevantes.  
 - Se utiliza indentación de 2 espacios para mejorar la lectura del código.  
 - Se evita el uso de estilos en línea, delegando el diseño a hojas de estilo externas.  
 - Se emplean comentarios para identificar secciones principales.
@@ -236,6 +236,38 @@ Utilizado para el despliegue del servidor de datos simulado (json-server) a part
 
 Una vez desplegados ambos servicios, las actualizaciones se gestionan mediante commits y merges hacia la rama principal (`main`), siguiendo el flujo GitFlow definido por el equipo. Cada cambio integrado generará automáticamente una nueva versión del producto desplegado, permitiendo que las mejoras y correcciones se reflejen de manera continua.
 
+### 5.1.5. Continuous Improvement
+
+A lo largo de las tres entregas del proyecto (AV1, TB1, AV2), el equipo implementó mejoras continuas basadas en la retroalimentación recibida y en la autoevaluación de cada sprint. A continuación se documentan las principales correcciones y mejoras aplicadas:
+
+**Entrega AV1 → TB1:**
+
+1. **Corrección de nomenclatura de User Stories**: Se estandarizó el formato de identificación de User Stories y Technical Stories (US01-US66, TS01-TS20) eliminando guiones y espacios, y se aseguró la consistencia en todos los capítulos del informe.
+
+2. **Actualización del Registro de Versiones**: Se agregó la fila correspondiente a TB1 en la tabla de versiones del informe, documentando la fecha (16/05/2026) y los autores de los cambios.
+
+3. **Mejora de la sección Collaboration Insights**: Se incorporaron capturas de pantalla del repositorio GitHub mostrando el historial de commits por autor y las estadísticas de contribución por miembro del equipo.
+
+4. **Completitud de User Stories**: Se completaron todas las historias de usuario pendientes, alcanzando un total de 66 User Stories y 20 Technical Stories organizadas en 6 épicas, cubriendo la totalidad del alcance definido en el Lean UX Canvas.
+
+**Entrega TB1 → AV2:**
+
+1. **Reemplazo de Fake API por Web Services reales**: En el Sprint 3, se migró completamente la infraestructura de datos de json-server (Fake API) a un backend real implementado en C# con ASP.NET Core 8, Entity Framework Core, MySQL y autenticación JWT, eliminando la dependencia de datos simulados.
+
+2. **Implementación de Code Reviews**: A partir del Sprint 3, se estableció un proceso de revisiones de código mediante Pull Requests, donde cada integración de ramas feature fue revisada por al menos un miembro del equipo antes de ser fusionada a develop.
+
+3. **Mejora de la tabla Development Evidence**: Se reemplazó la columna "Commited on (Date)" por "Evidence URL" en las tablas de evidencia de commits de los tres sprints, proporcionando enlaces directos a cada commit en GitHub.
+
+4. **Corrección de ortografía y tildes**: Se realizó una revisión exhaustiva de la ortografía en todos los capítulos del informe, corrigiendo más de 50 palabras con tildes faltantes y errores gramaticales.
+
+5. **Reemplazo de imágenes externas por recursos locales**: Todas las imágenes alojadas en servicios externos (postimg.cc, postimage.me) fueron descargadas y referenciadas localmente desde `docs/images/`, eliminando la dependencia de servidores externos para la visualización del informe.
+
+6. **Corrección de numeración de secciones**: Se corrigió la numeración de la sección Sprint 3 (de 5.2.2 a 5.2.3) y la sección de Registro de Entrevistas (de 5.3.2 a 2.2.2). Se unificó el formato de la tabla del Sprint Backlog 3 para que sea consistente con los sprints anteriores.
+
+7. **Mejora de la sección Student Outcome**: Se agregaron las evidencias correspondientes a la entrega AV2 para cada criterio del Student Outcome 5 (ABET), documentando las contribuciones de cada miembro del equipo en los tres sprints del proyecto.
+
+8. **Estandarización de mayúsculas**: Se unificó el uso de mayúsculas en términos como "Landing Page" y "Sprint Goal" en todo el documento, eliminando las inconsistencias identificadas en la revisión.
+
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
@@ -276,7 +308,7 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 1 del p
 
 **Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
 
-[![Captura-de-pantalla-2026-06-18-173234.png](https://i.postimg.cc/jSr0Dj28/Captura-de-pantalla-2026-06-18-173234.png)](https://postimg.cc/WhSfKTMr)
+![Trello Sprint 1](docs/images/trello-sprint-1.png)
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -287,7 +319,7 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 1 del p
 | US61 | Identidad y Acceso General | T05 | Implementar navbar funcional con logo corporativo, menú hamburguesa en móvil, enlaces de navegación interna y botón de inicio de sesión | 6 | Blancas Chávez, Carlos Franco | Done |
 | US62 | Propuesta de Valor | T06 | Diseñar sección hero principal con título impactante, subtítulo descriptivo, imagen ilustrativa y llamada a la acción alineada a la identidad visual de RiskGuard | 4 | Laura Acosta, Victor Jhosef | Done |
 | US62 | Propuesta de Valor | T07 | Implementar sección hero con texto de propuesta de valor, imagen principal optimizada, botones CTA y diseño responsive | 6 | Blancas Chávez, Carlos Franco | Done |
-| US63 | Catálogo de Capacidades Técnicas | T08 | Diseñar tarjetas de funcionalidades clave del sistema con íconos representativos, títulos y descripciones breves por cada módulo | 4 | Aponte Pablo, Isabel Luisa | Done |
+| US63 | Catálogo de Capacidades Técnicas | T08 | Diseñar tarjetas de funcionalidades clave del sistema con íconos representativos, títulos y descripciónes breves por cada módulo | 4 | Aponte Pablo, Isabel Luisa | Done |
 | US63 | Catálogo de Capacidades Técnicas | T09 | Implementar grid de funcionalidades con tarjetas interactivas mostrando módulos del sistema: monitoreo, reportes, alertas y cumplimiento SST | 6 | Blancas Chávez, Carlos Franco | Done |
 | US64 | Metodología y Validación Social | T10 | Diseñar sección de flujo de pasos ilustrando el proceso operativo del sistema desde el registro de incidentes hasta la resolución y reportes | 4 | Flores Thyago, Angel | Done |
 | US64 | Metodología y Validación Social | T11 | Implementar sección "Cómo funciona" con pasos numerados, íconos descriptivos y línea de tiempo visual del proceso de gestión de riesgos | 6 | Blancas Chávez, Carlos Franco | Done |
@@ -308,7 +340,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <th>Commit Id</th>
       <th>Commit Message</th>
       <th>Commit Body</th>
-      <th>Commited on (Date)</th>
+      <th>Evidence URL</th>
     </tr>
   </thead>
   <tbody>
@@ -318,7 +350,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>5c9b242</td>
       <td>Add files via upload</td>
       <td>Implementación completa de la Landing Page (estructura HTML, estilos CSS y secciones: inicio, características, cómo funciona, segmentos, estadísticas y contacto)</td>
-      <td>26 de abril de 2026</td>
+      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/5c9b242">Ver commit</a></td>
     </tr>
     <tr>
       <td>RiskGuard_LandingPage</td>
@@ -326,7 +358,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>57e4417</td>
       <td>docs: deploy github pages</td>
       <td>Configuración y despliegue del proyecto en GitHub Pages</td>
-      <td>26 de abril de 2026</td>
+      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/57e4417">Ver commit</a></td>
     </tr>
     <tr>
       <td>RiskGuard_LandingPage</td>
@@ -334,7 +366,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>8b240d6</td>
       <td>fix: build</td>
       <td>Se corrigieron errores en la compilación del proyecto</td>
-      <td>26 de abril de 2026</td>
+      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/8b240d6">Ver commit</a></td>
     </tr>
     <tr>
       <td>RiskGuard_LandingPage</td>
@@ -342,7 +374,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>a5f06db</td>
       <td>feat: añadir Readme Landing</td>
       <td>Se agregó el archivo README para la Landing Page de RiskGuard</td>
-      <td>26 de abril de 2026</td>
+      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/a5f06db">Ver commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -365,42 +397,42 @@ A continuación, las vistas principales desarrolladas:
 <p align="center">Vista principal con la propuesta de valor.</p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/tg3pxQCZ/landing.jpg" width="500"/>
+  <img src="docs/images/ch5-img-1.jpg" width="500"/>
 </p>
 
 <h5 align="center">Características</h5>
 <p align="center">Funciones clave del sistema.</p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/2SzS7SM4/Whats-App-Image-2026-04-26-at-12-02-57-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-2.jpg" width="500"/>
 </p>
 
 <h5 align="center">Cómo funciona</h5>
 <p align="center">Flujo de uso del sistema.</p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/Z5T5x52d/Whats-App-Image-2026-04-26-at-12-02-23-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-3.jpg" width="500"/>
 </p>
 
 <h5 align="center">Segmentos</h5>
 <p align="center">Usuarios objetivo.</p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/MpWpmpNB/Whats-App-Image-2026-04-26-at-12-02-23-PM-(1).jpg" width="500"/>
+  <img src="docs/images/ch5-img-4.jpg" width="500"/>
 </p>
 
 <h5 align="center">Estadísticas</h5>
 <p align="center">Datos sobre seguridad industrial.</p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/5N5tzC7g/Whats-App-Image-2026-04-26-at-12-02-23-PM-(2).jpg" width="500"/>
+  <img src="docs/images/ch5-img-5.jpg" width="500"/>
 </p>
 
 <h5 align="center">Contactar</h5>
 <p align="center">Prueba gratuita o contacto.</p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/FH9HVH8J/Whats-App-Image-2026-04-26-at-12-02-23-PM-(3).jpg" width="500"/>
+  <img src="docs/images/ch5-img-6.jpg" width="500"/>
 </p>
 
 * Video de la Ejecución
@@ -437,7 +469,7 @@ Se verificó que la versión final del proyecto estuviera almacenada y actualiza
 - Se verificó el acceso al entorno de producción.  
 
 <p align="center">
-  <img src="https://i.postimg.cc/VNXz275M/Whats-App-Image-2026-04-26-at-12-59-55-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-7.jpg" width="500"/>
 </p>
 
 - **GitHub Pages:**  
@@ -456,11 +488,11 @@ En particular, Blancas Chávez, Carlos Franco tuvo un rol destacado en la estruc
 El equipo trabajó directamente sobre la rama main, realizando commits continuos para avanzar en el desarrollo. Durante este Sprint no se utilizó un flujo formal de Pull Requests, ya que el objetivo principal fue construir una primera versión funcional del Landing Page en el menor tiempo posible.
 
 <p align="center">
-  <img src="https://i.postimg.cc/YqJ9VL8Z/Whats-App-Image-2026-04-26-at-1-13-58-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-8.jpg" width="500"/>
 </p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/0Q22mY2x/Whats-App-Image-2026-04-26-at-1-13-41-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-9.jpg" width="500"/>
 </p>
 
 ### 5.2.2. Sprint 2
@@ -498,7 +530,7 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 2 del p
 
 **Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
 
-[![Captura-de-pantalla-2026-06-18-174121.png](https://i.postimg.cc/sXWbfdyV/Captura-de-pantalla-2026-06-18-174121.png)](https://postimg.cc/bDzmL5sM)
+![Trello Sprint 2](docs/images/trello-sprint-2.png)
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -670,7 +702,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <th>Commit Id</th>
       <th>Commit Message</th>
       <th>Commit Body</th>
-      <th>Commited on (Date)</th>
+      <th>Evidence URL</th>
     </tr>
   </thead>
   <tbody>
@@ -680,7 +712,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>4066cfd</td>
       <td>Create index</td>
       <td>Creación del archivo índice del proyecto</td>
-      <td>Apr 24, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/4066cfd">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -688,7 +720,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>8a88511</td>
       <td>add inspection and headquarters BC</td>
       <td>Agregado bounded context de inspección y sede central</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/8a88511">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -696,7 +728,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>8aa1c72</td>
       <td>fix: rename in english</td>
       <td>Corrección de nombres de archivos y variables al inglés</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/8aa1c72">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -704,7 +736,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>0ebc3b5</td>
       <td>Merge pull request #1 from upc-web-applications/feature/inspection_headquarters</td>
       <td>Fusión de la rama feature/inspection_headquarters al flujo principal</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/0ebc3b5">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -712,7 +744,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>41a4aa4</td>
       <td>feat: upload bc</td>
       <td>Subida del bounded context de evaluación de riesgos</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/41a4aa4">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -720,7 +752,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>b8e45b7</td>
       <td>fix: add</td>
       <td>Corrección y adición de archivos faltantes en el módulo</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b8e45b7">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -728,7 +760,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>3570ff1</td>
       <td>fix: add</td>
       <td>Segunda corrección de archivos faltantes en el módulo</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3570ff1">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -736,7 +768,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>5034b80</td>
       <td>monitoring-dashboard bc</td>
       <td>Agregado bounded context del dashboard de monitoreo del supervisor</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/5034b80">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -744,7 +776,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>2f1d68a</td>
       <td>update feature/monitoring-dashboard</td>
       <td>Actualización de componentes y vistas del panel de monitoreo</td>
-      <td>May 15, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/2f1d68a">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -752,7 +784,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>b1cc4de</td>
       <td>Merge branch 'main' of Frontend-RiskGuard</td>
       <td>Sincronización con la rama main del repositorio personal</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b1cc4de">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -760,7 +792,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>f9d6a2c</td>
       <td>feat: add es and en</td>
       <td>Agregado archivos de internacionalización en español e inglés</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/f9d6a2c">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -768,7 +800,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>03a43ab</td>
       <td>feat: add database db</td>
       <td>Agregado archivo de base de datos json-server</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/03a43ab">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -776,7 +808,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>b6b23eb</td>
       <td>feat: add env</td>
       <td>Agregado archivo de variables de entorno del proyecto</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b6b23eb">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -784,7 +816,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>b3ec027</td>
       <td>feat: add shared</td>
       <td>Agregado componentes y recursos compartidos del módulo</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b3ec027">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -792,7 +824,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>3415ec1</td>
       <td>feat: add entities</td>
       <td>Agregado entidades del dominio de reportes y cumplimiento SST</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3415ec1">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -800,7 +832,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>42e7dcf</td>
       <td>feat: add assemblers and api</td>
       <td>Agregado assemblers y servicios de consumo de API</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/42e7dcf">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -808,7 +840,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>4f10c4e</td>
       <td>feat: add store</td>
       <td>Agregado store  para gestión de estado del módulo</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/4f10c4e">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -816,7 +848,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>70fdeae</td>
       <td>feat: add presentation reports styles</td>
       <td>Agregado estilos y estructura visual de las vistas de reportes</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/70fdeae">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -824,7 +856,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>3fcc99b</td>
       <td>feat: add configuration</td>
       <td>Agregado configuración del módulo de reportes y cumplimiento</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3fcc99b">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -832,7 +864,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>dbeea7d</td>
       <td>fix: correct position</td>
       <td>Corrección de posicionamiento de elementos en la interfaz</td>
-      <td>May 13, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/dbeea7d">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -840,7 +872,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>297db99</td>
       <td>feat: add service pdf and excel</td>
       <td>Agregado servicio de generación de documentos PDF y Excel con jsPDF</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/297db99">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -848,7 +880,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>e0cf4ad</td>
       <td>feat: add new presentation</td>
       <td>Agregado nueva vista de presentación del módulo de reportes</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/e0cf4ad">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -856,7 +888,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>de75928</td>
       <td>feat: update routes</td>
       <td>Actualización del enrutamiento para las vistas de reportes</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/de75928">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -864,7 +896,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>3b0f309</td>
       <td>feat: reports updates</td>
       <td>Actualización de componentes y lógica del módulo de reportes</td>
-      <td>May 14, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3b0f309">Ver commit</a></td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -872,28 +904,28 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>8116699</td>
       <td>authentication bc</td>
       <td>Agregado bounded context de autenticación de usuarios</td>
-      <td>May 15, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Frontend/commit/8116699">Ver commit</a></td>
     </tr>
   </tbody>
 </table>
 
 #### 5.2.2.5.Execution Evidence for Sprint Review.
 
-Durante el Sprint se lograron avances significativos en la visualización y navegación de la aplicación, incluyendo interfaces de identificacion, Dashboard del operador, del supervisor y del gerente
+Durante el Sprint se lograron avances significativos en la visualización y navegación de la aplicación, incluyendo interfaces de identificación, Dashboard del operador, del supervisor y del gerente
 
 #### Account Generation and Authentication BC
 
 <h5 align="center">Inicio de autenticación</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/1z3GFxQN/Whats-App-Image-2026-05-15-at-10-14-36-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-10.jpg" width="500"/>
 </p>
 
 *Pantalla de autenticación del sistema donde el usuario ingresa sus credenciales para acceder a la plataforma.*
 
 #### Site / Area and Industrial Asset BC
 
-<h5 align="center">1. Visualización Gestion de sedes</h5>
+<h5 align="center">1. Visualización Gestión de sedes</h5>
 
 <img src="images/Operario-sedes.png" width="500">
 
@@ -1034,13 +1066,13 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 
 *Vista principal del supervisor en la bandeja de tickets*
 
-<h5 align="center">1. Visualización de gestion de activos</h5>
+<h5 align="center">1. Visualización de gestión de activos</h5>
 
 <p align="center">
   <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/gestion-activos.png?raw=true" width="500"/>
 </p>
 
-*Vista principal del supervisor en la gestion de activos*
+*Vista principal del supervisor en la gestión de activos*
 
 <h5 align="center">1. Visualización del mapa de sectores</h5>
 
@@ -1063,7 +1095,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">1. Visualización de Inicio del Gerente</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/VNMh3c36/Whats-App-Image-2026-05-15-at-9-35-46-PM-(2).jpg" width="500"/>
+  <img src="docs/images/ch5-img-11.jpg" width="500"/>
 </p>
 
 *Vista principal del gerente con acceso al resumen general del sistema y métricas de seguridad.*
@@ -1071,7 +1103,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">2. Visualización de Nuevo Reporte del Gerente</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/0yh3WNH7/Whats-App-Image-2026-05-15-at-9-35-46-PM-(3).jpg" width="500"/>
+  <img src="docs/images/ch5-img-12.jpg" width="500"/>
 </p>
 
 *Vista orientada al registro de nuevos reportes de incidentes y condiciones inseguras.*
@@ -1079,7 +1111,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">3. Visualización de Mis Reportes del Gerente</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/jSB9gjkP/Whats-App-Image-2026-05-15-at-9-35-46-PM-(4).jpg" width="500"/>
+  <img src="docs/images/ch5-img-13.jpg" width="500"/>
 </p>
 
 *Vista para la consulta y administración de reportes generados dentro del sistema.*
@@ -1087,14 +1119,14 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">4. Visualización del Historial de Incidentes del Gerente</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/JzSg6hdt/Whats-App-Image-2026-05-15-at-9-35-46-PM-(5).jpg" width="500"/>
+  <img src="docs/images/ch5-img-14.jpg" width="500"/>
 </p>
 *Vista enfocada en el seguimiento y análisis del historial de incidentes registrados.*
 
 <h5 align="center">5. Visualización de Alertas Críticas del Gerente</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/HkFKZLPY/Whats-App-Image-2026-05-15-at-9-35-46-PM-(6).jpg" width="500"/>
+  <img src="docs/images/ch5-img-15.jpg" width="500"/>
 </p>
 
 *Vista de alertas críticas para supervisar eventos de riesgo y estados de atención.*
@@ -1102,14 +1134,14 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">6. Visualización de Indicadores Predictivos del Gerente</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/DwRDjzYf/Whats-App-Image-2026-05-15-at-9-35-46-PM-(7).jpg" width="500"/>
+  <img src="docs/images/ch5-img-16.jpg" width="500"/>
 </p>
 *Vista de indicadores predictivos con métricas y tendencias relacionadas a seguridad industrial.*
 
 <h5 align="center">7. Visualización del Plan SST del Gerente</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/L8G7Cs08/Whats-App-Image-2026-05-15-at-9-35-46-PM-(8).jpg" width="500"/>
+  <img src="docs/images/ch5-img-17.jpg" width="500"/>
 </p>
 
 *Vista del Plan SST con indicadores de cumplimiento, actividades completadas y monitoreo mensual.*
@@ -1812,7 +1844,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/kpi_dashboard</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/zGRvRNXh/Captura-de-pantalla-2026-05-15-145344.png" width="500"/>
+  <img src="docs/images/ch5-img-18.png" width="500"/>
 </p>
 
 *Respuesta del endpoint con los cuatro indicadores KPI. Los estados `alert` y `danger` se visualizan en el dashboard mediante tags de color.*
@@ -1820,7 +1852,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/historical_trends</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/MGpQM44g/Captura-de-pantalla-2026-05-15-150618.png" width="500"/>
+  <img src="docs/images/ch5-img-19.png" width="500"/>
 </p>
 
 *Retorno de la evolución mensual de incidentes. Los datos se filtran por sector en el frontend para construir los datasets de la gráfica de línea.*
@@ -1828,7 +1860,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/critical_alerts</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/0QCLKQBw/Captura-de-pantalla-2026-05-15-152655.png" width="500"/>
+  <img src="docs/images/ch5-img-20.png" width="500"/>
 </p>
 
 *Listado de alertas críticas con estado `unresolved`. El frontend calcula el KPI de sectores críticos a partir de estos registros.*
@@ -1836,7 +1868,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">PATCH /api/v1/critical_alerts/ALERT_001</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/prwY2QBx/Whats-App-Image-2026-05-15-at-3-31-04-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-21.jpg" width="500"/>
 </p>
 
 *Actualización del estado de la alerta a `resolved`. El store recalcula automáticamente los KPIs tras recibir la respuesta.*
@@ -1844,7 +1876,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">DELETE /api/v1/critical_alerts/ALERT_001</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/2590sZM2/Whats-App-Image-2026-05-15-at-3-33-34-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-22.jpg" width="500"/>
 </p>
 
 *Eliminación de la alerta. Respuesta HTTP 200 con body vacío `{}`.*
@@ -1852,7 +1884,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/annual_ohs_plan</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/YCnN0wRy/Whats-App-Image-2026-05-15-at-3-35-29-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-23.jpg" width="500"/>
 </p>
 
 *Plan anual con cumplimiento global del 72%, por debajo de la meta del 80%. El frontend muestra el indicador en amarillo con etiqueta "Aceptable".*
@@ -1860,7 +1892,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/predictive_indicators</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/yYrWSYq7/Whats-App-Image-2026-05-15-at-3-37-08-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-24.jpg" width="500"/>
 </p>
 
 *Indicadores predictivos con sectores de tendencia creciente. `WAREHOUSE_B` aparece con tag rojo (`critical`) y `GAS_PLANT` con tag amarillo (`warning`).*
@@ -1868,7 +1900,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/historical_incident_records</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/5t9CwKPR/Whats-App-Image-2026-05-15-at-3-46-25-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-25.jpg" width="500"/>
 </p>
 
 *Historial de incidentes de solo lectura. El frontend aplica filtros por sector, tipo y rango de fechas sobre los datos ya cargados.*
@@ -1876,7 +1908,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/generated_reports</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/WzFCWn4f/Whats-App-Image-2026-05-15-at-3-39-33-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-26.jpg" width="500"/>
 </p>
 
 *Listado de reportes generados con tipo `monthly` y formato PDF.*
@@ -1884,7 +1916,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">POST /api/v1/generated_reports</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/8PBQqZHm/Whats-App-Image-2026-05-15-at-3-41-08-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-27.jpg" width="500"/>
 </p>
 
 *Registro de un nuevo reporte. El servidor retorna HTTP 201 con el id generado automáticamente. El store agrega el registro al historial sin recargar la página.*
@@ -1892,7 +1924,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">DELETE /api/v1/generated_reports/Z4PRqZP</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/9MVyNFF1/Whats-App-Image-2026-05-15-at-3-43-05-PM-(1).jpg" width="500"/>
+  <img src="docs/images/ch5-img-28.jpg" width="500"/>
 </p>
 
 *Eliminación del reporte con id `Z4PRqZP`. Respuesta HTTP 200 con body vacío `{}`.*
@@ -1926,16 +1958,16 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 | `/sedes/{id}` | Eliminar sede | `DELETE` | `id` en la URL | Elimina la sede del sistema |
 | `/areas` | Obtener todas las áreas | `GET` | No requiere | Retorna el listado completo de áreas registradas |
 | `/areas?sedeId={id}` | Obtener áreas por sede | `GET` | `sedeId` como query param | Filtra las áreas pertenecientes a una sede específica |
-| `/areas` | Crear nueva área | `POST` | Body: `{ nombre, codigo, descripcion, sedeId, estado, nivelRiesgo, fechaCreacion }` | Registra una nueva área vinculada a una sede |
+| `/areas` | Crear nueva área | `POST` | Body: `{ nombre, código, descripción, sedeId, estado, nivelRiesgo, fechaCreacion }` | Registra una nueva área vinculada a una sede |
 | `/areas/{id}` | Actualizar área | `PUT` | `id` en la URL. Body con los datos actualizados | Actualiza los datos de un área existente |
 | `/areas/{id}` | Eliminar área | `DELETE` | `id` en la URL | Elimina el área del sistema |
 | `/activos` | Obtener todos los activos | `GET` | No requiere | Retorna el listado completo de activos industriales |
 | `/activos?areaId={id}` | Obtener activos por área | `GET` | `areaId` como query param | Filtra los activos pertenecientes a un área específica |
-| `/activos` | Crear nuevo activo | `POST` | Body: `{ codigo, nombre, descripcion, tipo, areaId, sedeId, estado, fechaAdquisicion, ultimoMantenimiento }` | Registra un nuevo activo vinculado a un área y sede |
+| `/activos` | Crear nuevo activo | `POST` | Body: `{ código, nombre, descripción, tipo, areaId, sedeId, estado, fechaAdquisicion, ultimoMantenimiento }` | Registra un nuevo activo vinculado a un área y sede |
 | `/activos/{id}` | Actualizar activo | `PUT` | `id` en la URL. Body con los datos actualizados | Actualiza los datos de un activo existente |
 | `/activos/{id}` | Eliminar activo | `DELETE` | `id` en la URL | Elimina el activo del sistema |
 | `/inspecciones` | Obtener todas las inspecciones | `GET` | No requiere | Retorna el listado completo de inspecciones registradas |
-| `/inspecciones` | Crear nueva inspección | `POST` | Body: `{ ticket, tipoIncidente, areaId, sedeId, activoId, nivelUrgencia, descripcion, estado, fotoUrl, operarioId, fechaReporte, fechaActualizacion, accionCorrectiva }` | Registra una nueva inspección con ticket generado automáticamente |
+| `/inspecciones` | Crear nueva inspección | `POST` | Body: `{ ticket, tipoIncidente, areaId, sedeId, activoId, nivelUrgencia, descripción, estado, fotoUrl, operarioId, fechaReporte, fechaActualizacion, accionCorrectiva }` | Registra una nueva inspección con ticket generado automáticamente |
 | `/inspecciones/{id}` | Obtener inspección por ID | `GET` | `id` en la URL | Retorna el detalle completo de una inspección |
 | `/inspecciones/{id}` | Eliminar inspección | `DELETE` | `id` en la URL | Elimina la inspección del sistema |
 
@@ -1952,7 +1984,7 @@ Backend – Render
 Se creó un repositorio independiente con el archivo `db.json` y el `package.json` configurado con el comando de inicio:
 
 <p align="center">
-  <img src="https://i.postimg.cc/52dmYFXh/Whats-App-Image-2026-05-15-at-8-51-24-PM-(2).jpg" width="500"/>
+  <img src="docs/images/ch5-img-29.jpg" width="500"/>
 </p>
 
 El servicio fue desplegado como un Web Service en Render, obteniendo la URL base:
@@ -1960,12 +1992,12 @@ El servicio fue desplegado como un Web Service en Render, obteniendo la URL base
 Los endpoints disponibles incluyen: `/kpi_dashboard`, `/critical_alerts`, `/predictive_indicators`, `/generated_reports`, `/monthly_reports`, `/historical_incident_records`, `/historical_trends` y `/annual_ohs_plan`.
 
 <p align="center">
-  <img src="https://i.postimg.cc/g0fMDBjY/Whats-App-Image-2026-05-15-at-9-12-09-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-30.jpg" width="500"/>
 </p>
 
 Luego creamos nuestro proyecto en firebase 
 <p align="center">
-  <img src="https://i.postimg.cc/pLbBhnm3/Whats-App-Image-2026-05-15-at-8-58-51-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-31.jpg" width="500"/>
 </p>
 
 Luego ejecutamos los siguientes comandos para el despliegue:
@@ -1978,7 +2010,7 @@ npm run build
 firebase deploy
 ```
 <p align="center">
-  <img src="https://i.postimg.cc/7Z8NGT5d/Whats-App-Image-2026-05-15-at-8-58-15-PM.jpg" width="500"/>
+  <img src="docs/images/ch5-img-32.jpg" width="500"/>
 </p>
 
 El directorio de publicación fue configurado como `dist` en `firebase.json`, y la aplicación fue configurada como Single Page App (SPA). La URL de producción obtenida fue:
@@ -2159,7 +2191,7 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 <h5 align="center">Ramas creadas</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/W11mFDgC/Whats-App-Image-2026-05-16-at-1-10-44-AM.jpg" width="600"/>
+  <img src="docs/images/ch5-img-33.jpg" width="600"/>
 </p>
 
 *Historial de commits organizado por cada integrante del equipo.*
@@ -2167,7 +2199,7 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 <h5 align="center">Commits de cada autor</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/9QQPR4Zk/Whats-App-Image-2026-05-16-at-1-10-05-AM.jpg" width="600"/>
+  <img src="docs/images/ch5-img-34.jpg" width="600"/>
 </p>
 
 *Resumen estadístico del repositorio con cantidad de commits y contribuciones por autor.*
@@ -2175,11 +2207,11 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 <h5 align="center">Estadísticas</h5>
 
 <p align="center">
-  <img src="https://i.postimg.cc/3xxj4ym6/Whats-App-Image-2026-05-16-at-1-10-15-AM.jpg" width="600"/>
+  <img src="docs/images/ch5-img-35.jpg" width="600"/>
 </p>
 
 
-### 5.2.2. Sprint 3
+### 5.2.3. Sprint 3
 
 #### 5.2.3.1. Sprint Planning 3
 
@@ -2216,9 +2248,9 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3 del p
 
 **Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
 
-![Captura de pantalla 2026 06 21 171412](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-171412.png)
+![Trello Sprint 3](docs/images/trello-sprint-3.png)
 
-| User Story ID | Título | Work-Item / Task ID | Título de Task | Estimación (hrs) | Asignado a | Status |
+| User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
 | TS01 | Servicio de Notificaciones Push | T01 | Implementar endpoint POST /api/v1/notificaciones/push con entidad Notification y autorización JWT | 5 | Laura Acosta, Victor Jhosef | Done |
 | TS02 | Endpoint para Obtener Patrones de Riesgo Recurrentes | T02 | Implementar RiskPatternsController con endpoints CRUD en /api/v1/risk-patterns con filtro por sector | 5 | Laura Acosta, Victor Jhosef | Done |
@@ -2265,7 +2297,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <th>Commit Id</th>
       <th>Commit Message</th>
       <th>Commit Body</th>
-      <th>Commited on (Date)</th>
+      <th>Evidence URL</th>
     </tr>
   </thead>
   <tbody>
@@ -2275,7 +2307,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>caefcf9</td>
       <td>first commit</td>
       <td>Creación inicial del repositorio backend</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/caefcf9">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2283,7 +2315,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>3150c55</td>
       <td>Fix: update</td>
       <td>Corrección y actualización de archivos del proyecto</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/3150c55">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2291,7 +2323,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>767c91a</td>
       <td>chore: initial project setup with ASP.NET Core Web API</td>
       <td>Configuración inicial del proyecto con ASP.NET Core Web API</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/767c91a">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2299,7 +2331,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>b14dc11</td>
       <td>feat: add Shared module</td>
       <td>Agregado módulo Shared con CrudController genérico, DbContext y UnitOfWork</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/b14dc11">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2307,7 +2339,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>a911b0b</td>
       <td>feat(reports): add monthly_reports endpoint</td>
       <td>Agregado MonthlyReportsController con endpoints GET all, GET by id, GET by year, POST y PUT</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/a911b0b">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2315,7 +2347,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>a85af2b</td>
       <td>feat(reports): add cumulative_st_indicators endpoint</td>
       <td>Agregado CumulativeStIndicatorsController con endpoints GET all y GET by id</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/a85af2b">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2323,7 +2355,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>0e92be4</td>
       <td>feat(reports): add historical_incident_records and annual_ohs_plan endpoints</td>
       <td>Agregado HistoricalIncidentRecordsController y AnnualOhsPlanController</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/0e92be4">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2331,7 +2363,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>7b6ea0b</td>
       <td>feat(reports): add predictive_indicators and critical_alerts endpoints</td>
       <td>Agregado PredictiveIndicatorsController y CriticalAlertsController con GET, PUT y DELETE</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/7b6ea0b">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2339,7 +2371,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>2027f26</td>
       <td>feat(reports): add generated_reports, kpi_dashboard and historical_trends endpoints</td>
       <td>Agregado GeneratedReportsController, KpiDashboardController y HistoricalTrendsController</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/2027f26">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2347,7 +2379,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>eea1ccd</td>
       <td>feat(reports): configure Program</td>
       <td>Configuración del Program.cs con DbContext, Swagger y servicios de inyección de dependencias</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/eea1ccd">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2355,7 +2387,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>75c61aa</td>
       <td>feat(reports): add Resources and Transform</td>
       <td>Agregado Resources y Transform assemblers para el BC ReportsCompliance</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/75c61aa">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2363,7 +2395,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>f2fd93a</td>
       <td>feat(reports): integrate CQRS with Resources and Transform in controllers</td>
       <td>Integración del patrón CQRS con Resources y Transform en todos los controllers de ReportsCompliance</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/f2fd93a">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2371,7 +2403,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>550eb6c</td>
       <td>feat(reports): add all endpoints matching frontend usage (GET id, PUT, DELETE)</td>
       <td>Agregado endpoints adicionales GET by id, PUT y DELETE para coincidir con el consumo del frontend</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/550eb6c">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2379,7 +2411,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>24f36ec</td>
       <td>feat: add elements</td>
       <td>Agregado elementos adicionales del dominio de reportes</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/24f36ec">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2387,7 +2419,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>c91df25</td>
       <td>Merge pull request #1 from IsabelAponte234/feature/reports-refactor</td>
       <td>Fusión de la rama feature/reports-refactor con refactorización de controllers</td>
-      <td>Jun 19, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/c91df25">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2395,7 +2427,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>560fa99</td>
       <td>feat: add to my feature</td>
       <td>Agregado bounded contexts RiskAssessments, Mitigations, Hazards y Technicians con todos los controllers</td>
-      <td>Jun 20, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/560fa99">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2403,7 +2435,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>8d2b036</td>
       <td>Merge pull request #2 from upc-web-applications/feature/reports</td>
       <td>Fusión de la rama feature/reports al flujo de assessment_mitigation</td>
-      <td>Jun 20, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/8d2b036">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2411,7 +2443,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>5ab61d6</td>
       <td>feat: add inspection and headquarters BC</td>
       <td>Agregado bounded contexts Inspections y OrganizationAssets con InspeccionesController, PeligrosController, SedesController, AreasController y ActivosController</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/5ab61d6">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2419,7 +2451,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>1ce5310</td>
       <td>chore: add project configuration files</td>
       <td>Agregado archivos de configuración del proyecto inspection con EF Core y MySQL</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/1ce5310">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2427,7 +2459,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>d35638c</td>
       <td>feat(iam): add authentication and identity access context</td>
       <td>Agregado AuthenticationController con sign-in/sign-up JWT, UsersController, RolesController, SessionsController y AccessLogsController</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/d35638c">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2435,7 +2467,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>4eb6a26</td>
       <td>feat(monitoring): add monitoring dashboard context</td>
       <td>Agregado HeatMapZonesController, TicketsController, TechniciansController, AssetsController, PreventiveMaintenancesController y ArchivedReportsController</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/4eb6a26">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2443,7 +2475,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>c11d837</td>
       <td>feat(shared): add shared backend infrastructure</td>
       <td>Agregado módulo Shared con CrudController genérico, DbContext, UnitOfWork y configuración EF Core</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/c11d837">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2451,7 +2483,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>27877fd</td>
       <td>chore: add backend project configuration</td>
       <td>Agregado archivos de configuración del proyecto auth_monitoring con Swagger y MySQL</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/27877fd">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2459,7 +2491,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>c4ce846</td>
       <td>chore: add gitignore for .NET artifacts</td>
       <td>Agregado .gitignore para artefactos de compilación .NET</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/c4ce846">Ver commit</a></td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2467,7 +2499,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>fecc5e9</td>
       <td>feat: merge all branches</td>
       <td>Fusión de todas las ramas feature al branch main del repositorio backend</td>
-      <td>Jun 21, 2026</td>
+      <td><a href="https://github.com/upc-web-applications/Backend/commit/fecc5e9">Ver commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -2907,32 +2939,32 @@ A continuación, se presenta la relación de endpoints desarrollados durante el 
 
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-195020.png" width="500"/>
+  <img src="docs/images/ch5-img-36.png" width="500"/>
 </p>
 
 *Ejecución del endpoint GET /api/v1/monthly_reports en Swagger UI, mostrando la respuesta exitosa (HTTP 200) con los reportes mensuales almacenados en la base de datos, incluyendo campos id, month, year, status y creationDate.*
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-195502.png" width="500"/>
+  <img src="docs/images/ch5-img-37.png" width="500"/>
 </p>
 
 *Ejecución del endpoint DELETE /api/v1/critical_alerts/CA_001 en Swagger UI, mostrando la eliminación exitosa con respuesta HTTP 204 (The alert was deleted) y la documentación del código 404 (The alert was not found).*
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-195520.png" width="500"/>
+  <img src="docs/images/ch5-img-38.png" width="500"/>
 </p>
 
 *Ejecución del endpoint GET /api/v1/critical_alerts en Swagger UI, mostrando la respuesta exitosa (HTTP 200) con un arreglo vacío tras la eliminación previa, junto con el schema del modelo que incluye los campos id, type, sector, riskType, message, elapsedHours y status.*
 
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-214135.png" width="500"/>
+  <img src="docs/images/ch5-img-39.png" width="500"/>
 </p>
 
 *Ejecución del endpoint POST /api/v1/technicians en el backend desplegado en Render, mostrando el registro de un nuevo técnico con los campos id, documentNumber, fullName, specialty, phone, email y status.*
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-214217.png" width="500"/>
+  <img src="docs/images/ch5-img-40.png" width="500"/>
 </p>
 
 *Ejecución del endpoint GET /api/v1/technicians/TEC_002 en el backend desplegado en Render, mostrando la consulta exitosa (HTTP 200) del técnico registrado con su información completa.*
@@ -2940,7 +2972,7 @@ A continuación, se presenta la relación de endpoints desarrollados durante el 
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-En esta sección se presenta la evidencia del despliegue de los distintos servicios de la plataforma RiskGuard durante el Sprint 3, incluyendo el frontend, backend real, base de datos simulada y landing page.
+En esta sección se presenta la evidencia del despliegue de los distintos servicios de la plataforma RiskGuard durante el Sprint 3, incluyendo el frontend, backend real, base de datos simulada y Landing Page.
 
 **Servicios desplegados:**
 
@@ -2996,7 +3028,7 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
 1. Ir a https://dashboard.render.com
 2. Click en *New +** → **Web Service*
 
-![Captura de pantalla 2026 06 21 205339](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205339.png)
+![Captura de pantalla 2026 06 21 205339](docs/images/ch5-img-41.png)
 
 4. Conectar el repositorio de GitHub del backend
   
@@ -3010,11 +3042,11 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
    - *Plan:* Free
 7. Click en *Create Web Service*
 
-![Captura de pantalla 2026 06 21 205902](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205902.png)
+![Captura de pantalla 2026 06 21 205902](docs/images/ch5-img-42.png)
 
-![Captura de pantalla 2026 06 21 210013](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210013.png)
+![Captura de pantalla 2026 06 21 210013](docs/images/ch5-img-43.png)
 
-![Captura de pantalla 2026 06 21 210218](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210218.png)
+![Captura de pantalla 2026 06 21 210218](docs/images/ch5-img-44.png)
 
 *Despliegue automático:* Render se configura con auto-deploy por defecto. Cada `git push` a main:
 - Render detecta el cambio
@@ -3048,7 +3080,7 @@ https://riskguard-platform.onrender.com/swagger/index.html
 | Backend / Web Services | Desplegado en Render | Los endpoints fueron validados mediante Swagger UI, accesible en https://riskguard-platform.onrender.com/swagger/index.html. Base de datos MySQL. |
 | Base de datos simulada | Desplegada en Render como json-server | Disponible en https://db-server-risk-0r34.onrender.com. Requiere activación manual por inactividad de Render Free. |
 
-**Lading page desplegada**
+**Landing Page desplegada**
 
 Evidencia de actualizacion en main: 
 <p align="center">
@@ -3072,11 +3104,11 @@ Evidencia del fronteed publicado:
 **Backend  desplegado**
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210250.png" width="500"/>
+  <img src="docs/images/ch5-img-45.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-213200.png" width="500"/>
+  <img src="docs/images/ch5-img-46.png" width="500"/>
 </p>
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
@@ -3211,7 +3243,7 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 
 | **Entrevista Nro. 2** |
 |---|
-| <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-094100.png" width="330" hspace="230"> |
+| <img src="docs/images/ch5-img-47.png" width="330" hspace="230"> |
 | **Entrevistado N°2:** Rocío Acosta <br> **Edad:** 21 años<br>**Ubicación:** Pueblo Libre<br>**Cargo:** Operaria de Producción<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDzCVuI3MO7Qq7Q2wM__nhIAXxVlF9JemhOtM5P4NV_WjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=QPDAVj) <br>**Instante del que inicia:** 00:00<br> **Duración:** 5:51 <br><br> **Resumen:** <br><br> La participante indicó que el Landing Page le permitió entender rápidamente que RiskGuard es una plataforma para reportar riesgos en planta. Destacó la sección de estadísticas como la que más le llamó la atención, señalando que los números reales de incidentes reducidos le parecen importantes y generan credibilidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección, calificándolo como intuitivo y visible desde el dashboard. Respecto al formulario, consideró que los campos son completos y suficientes para describir un incidente, valorando especialmente la opción de adjuntar una foto como muy útil para estos casos. Los botones de color para el nivel de urgencia le resultaron muy claros, asociándolos con un semáforo: verde es leve, naranja es medio y rojo es urgente. La confirmación con el número de ticket le generó confianza y tranquilidad de que su reporte queda registrado y puede hacer seguimiento. En la sección de Inspecciones, encontró su reporte rápidamente, destacando que los estados con colores y la organización facilitan la navegación. No identificó ninguna pantalla o botón donde no supiera qué hacer, señalando que todo fue directo y guiado paso a paso. Calificó la facilidad de uso con un 5 de 5, afirmando que los pasos son claros y no solicitan información innecesaria. Confirmó que el sistema representaría una mejora real ya que actualmente usan papel, los reportes se pierden y no hay forma de verificar si alguien los está atendiendo. Como única sugerencia, mencionó que haría las letras del formulario más grandes y claras, ya que en pantallas con fondo oscuro cuesta leer textos pequeños, especialmente desde el celular. |
 
 
@@ -3219,8 +3251,8 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 
 | **Entrevista Nro. 1** |
 |---|
-| <img src="https://i.postimg.cc/yNTVtMdG/Captura-de-pantalla-2026-06-18-065936.png" width="330" hspace="230"> |
-| **Entrevistado N°2:** Álvaro Pablo <br> **Edad:** 25 años<br>**Ubicación:** Barranca<br>**Cargo:** Supervisor de seguridad y mantenimiento<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQB1uHcy34fvSqQwXjrQbD-iAe9CaOKMJZslPIPAD3BTcko) <br>**Instante del que inicia:** 00:00<br> **Duración:** 7:18 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza porque identifica los procesos de planta relacionados con seguridad industrial, destacando que los colores son intuitivos y que la plataforma aplica la metodología IPERC, la cual utiliza en su campo de ingeniería industrial. Al ver el dashboard con el mapa de calor, identificó rápidamente qué sectores requieren atención gracias a la diferenciación por colores, asociando el rojo con criticidad grave. Los badges de color le resultaron claros para diferenciar la urgencia de cada ticket. Respecto al detalle del ticket, consideró que la información presentada es suficiente para tomar una decisión sobre la acción correctiva, ya que identifica el sector y muestra el estado actual del problema. El proceso de asignar un técnico le pareció directo y eficiente. La etiqueta "SLA Incumplido" le resultó entendible para priorizar acciones y no sugirió agregar otra señal visual. En el módulo de configuración, el flujo de crear sedes y registrar activos le pareció sencillo y completo, valorando los nombres claros y las descripciones rápidas de cada proceso. Calificó la completitud del flujo de gestión de tickets con un 4 de 5, señalando que el sistema ayuda a identificar lo que ocurre de manera rápida y centralizada. Confirmó que el sistema reduciría el tiempo dedicado a gestionar incidentes, ya que actualmente debe llenar documentos físicos, hacer llamadas y registrar en bases de datos manuales. Como única sugerencia, mencionó que cambiaría los colores del fondo en la sección de alertas, haciendo que el rojo sea más llamativo para destacar mejor las alertas críticas. |
+| <img src="docs/images/ch5-img-48.png" width="330" hspace="230"> |
+| **Entrevistado N°2:** Álvaro Pablo <br> **Edad:** 25 años<br>**Ubicación:** Barranca<br>**Cargo:** Supervisor de seguridad y mantenimiento<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQB1uHcy34fvSqQwXjrQbD-iAe9CaOKMJZslPIPAD3BTcko) <br>**Instante del que inicia:** 00:00<br> **Duración:** 7:18 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza porque identifica los procesos de planta relacionados con seguridad industrial, destacando que los colores son intuitivos y que la plataforma aplica la metodología IPERC, la cual utiliza en su campo de ingeniería industrial. Al ver el dashboard con el mapa de calor, identificó rápidamente qué sectores requieren atención gracias a la diferenciación por colores, asociando el rojo con criticidad grave. Los badges de color le resultaron claros para diferenciar la urgencia de cada ticket. Respecto al detalle del ticket, consideró que la información presentada es suficiente para tomar una decisión sobre la acción correctiva, ya que identifica el sector y muestra el estado actual del problema. El proceso de asignar un técnico le pareció directo y eficiente. La etiqueta "SLA Incumplido" le resultó entendible para priorizar acciones y no sugirió agregar otra señal visual. En el módulo de configuración, el flujo de crear sedes y registrar activos le pareció sencillo y completo, valorando los nombres claros y las descripciónes rápidas de cada proceso. Calificó la completitud del flujo de gestión de tickets con un 4 de 5, señalando que el sistema ayuda a identificar lo que ocurre de manera rápida y centralizada. Confirmó que el sistema reduciría el tiempo dedicado a gestionar incidentes, ya que actualmente debe llenar documentos físicos, hacer llamadas y registrar en bases de datos manuales. Como única sugerencia, mencionó que cambiaría los colores del fondo en la sección de alertas, haciendo que el rojo sea más llamativo para destacar mejor las alertas críticas. |
 
 
 ### 5.3.3. Evaluaciones según heurísticas
@@ -3298,7 +3330,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 En el panel de "Alertas activas" del dashboard del supervisor, el badge "Crítico" se muestra en un tono rojo sobre fondo oscuro que no genera el contraste suficiente para captar la atención de manera inmediata. Aunque el mapa de calor operativo sí diferencia los sectores con colores llamativos (rojo para crítico, amarillo para alto, verde para bajo), el panel lateral de alertas no replica esa misma intensidad visual. Esto puede provocar que el supervisor no perciba una alerta crítica con la urgencia que requiere al revisar rápidamente el dashboard.
 
 <p align="center">
-  <img src="https://i.postimg.cc/SsFmXmP7/Captura-de-pantalla-2026-06-18-071423.png" width="600">
+  <img src="docs/images/ch5-img-49.png" width="600">
 </p>
 
 **Recomendación:**
@@ -3316,7 +3348,7 @@ Aplicar un fondo con tinte rojo sutil en las filas de alertas críticas dentro d
 En el formulario de registro de inspección del operario, las etiquetas de los campos y el texto dentro de los inputs se muestran en un tamaño de fuente reducido sobre un fondo oscuro, lo que dificulta la lectura rápida, especialmente cuando el usuario accede desde un dispositivo móvil. Este problema fue reportado directamente por la operaria entrevistada, quien señaló que en planta se consulta el celular de forma rápida y los textos pequeños con fondo oscuro dificultan la interacción. Esto puede provocar errores al completar los campos o que el usuario desista de registrar el incidente.
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-105852.png" width="600">
+  <img src="docs/images/ch5-img-50.png" width="600">
 </p>
 
 **Recomendación:**
@@ -3334,7 +3366,7 @@ Aumentar el tamaño de fuente de las etiquetas y campos del formulario a un mín
 El operario puede seleccionar la planta y el área general del incidente, pero no existe una opción para señalar la ubicación exacta dentro de dicha área. En plantas grandes, un mismo sector tiene múltiples zonas de trabajo, lo que dificulta al técnico localizar el problema reportado.
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-110432.png" width="600">
+  <img src="docs/images/ch5-img-51.png" width="600">
 </p>
 
 **Recomendación:**
@@ -3355,7 +3387,7 @@ porque ahora usamos una decoumentacion basica y los reportes se pierden. Con est
 reportar rápido y saber si alguien lo está atendiendo."*
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/21/Captura-de-pantalla-2026-06-21-150024.png" width="600">
+  <img src="docs/images/ch5-img-52.png" width="600">
 </p>
 
 **Duración:** 3:02

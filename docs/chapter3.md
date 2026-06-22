@@ -37,7 +37,7 @@
     </tr>
     <tr>
         <td align="center"><b>EP06</b></td>
-        <td align="center">Presencia Digital y Estrategia de Conversion de Usuarios</td>
+        <td align="center">Presencia Digital y Estrategia de Conversión de Usuarios</td>
     </tr>
 </table>
 
@@ -1219,7 +1219,7 @@
             <b>Criterios de aceptación:</b> <br/>
             <ol>
                 <li>El sistema debe contar con un módulo de "Gestión de Sectores" accesible desde el apartado de funciones de Supervisor de seguridad</li>
-                <li>El formulario de creación debe solicitar obligatoriamente nombre del sector y descripcion</li>
+                <li>El formulario de creación debe solicitar obligatoriamente nombre del sector y descripción</li>
                 <li>El sistema debe validar que no se puedan registrar dos sectores con el mismo nombre exacto para evitar conflictos en la base de datos</li>
                 <li>Los sectores creados deben listarse en una tabla con opciones para "Editar" o "Desactivar".</li>
                 <li>Un sector no se puede eliminar definitivamente si tiene historial de riesgos asociados; solo se puede cambiar su estado a "Inactivo" para que no aparezca en los nuevos formularios de los operarios</li>
@@ -1227,14 +1227,14 @@
             <b>Escenario 1:</b> Registro exitoso de nuevo sector<br/>
             <ul>
                 <li><b>Given</b> que el Supervisor se encuentra en el módulo de "Gestión de Sectores",</li>
-                <li><b>When</b> hace clic en "Nuevo Sector", ingresa un nombre en especifico y una descripcion,</li>
+                <li><b>When</b> hace clic en "Nuevo Sector", ingresa un nombre en especifico y una descripción,</li>
                 <li><b>Then</b> el sistema registra el nuevo sector en la base de datos con estado "Activo",</li>
                 <li><b>And</b> actualiza la tabla de sectores mostrando el nuevo sector en la primera fila</li>
             </ul>
             <b>Escenario 2:</b> Validación de sector duplicado<br/>
             <ul>
                 <li><b>Given</b> que el Supervisor se encuentra en el módulo de "Gestión de Sectores",</li>
-                <li><b>When</b> hace clic en "Nuevo Sector", ingresa un nombre en especifico y una descripcion,</li>
+                <li><b>When</b> hace clic en "Nuevo Sector", ingresa un nombre en especifico y una descripción,</li>
                 <li><b>Then</b> el sistema bloquea la creación del registro,</li>
                 <li><b>And</b> muestra un mensaje indicando: "El nombre del área ya existe. Por favor, elija un nombre diferente"</li>
             </ul>
@@ -3070,7 +3070,7 @@
       <ol>
         <li>El sistema debe ser accesible a través de una URL pública y ser compatible con los navegadores modernos.</li>
         <li>El Navbar debe mostrar de forma prominente el logotipo y el nombre del producto en la esquina superior izquierda.</li>
-        <li>El menú de navegación debe permitir el acceso rápido a las secciones de Características, Metodología, Sectores y Estadísticas.</li>
+        <li>El menú de navegación debe permitir el acceso rápido a las secciónes de Características, Metodología, Sectores y Estadísticas.</li>
         <li>El tiempo de carga inicial de la página no debe superar los 3 segundos para garantizar una buena experiencia de usuario.</li>
       </ol>
       <b>Escenario 1:</b> Acceso exitoso a la Landing Page oficial<br/>
@@ -3084,8 +3084,8 @@
       <ul>
         <li><b>Given</b> que el visitante se encuentra en el inicio de la página,</li>
         <li><b>When</b> hace clic en algun enlace del menu de navegacion,</li>
-        <li><b>Then</b> el sistema realiza un desplazamiento suave hacia la seccion seleccionada,</li>
-        <li><b>And</b> mantiene el Navbar visible para permitir saltar a otras secciones.</li>
+        <li><b>Then</b> el sistema realiza un desplazamiento suave hacia la sección seleccionada,</li>
+        <li><b>And</b> mantiene el Navbar visible para permitir saltar a otras secciónes.</li>
       </ul>
     </td>
   </tr>
@@ -3148,7 +3148,7 @@
       </ol>
       <b>Escenario 1:</b> Exploración general de soluciones<br/>
       <ul>
-        <li><b>Given</b> que el visitante se encuentra navegando por la landing page de RiskGuard,</li>
+        <li><b>Given</b> que el visitante se encuentra navegando por el Landing Page de RiskGuard,</li>
         <li><b>When</b> se desplaza hacia la sección de infraestructura de seguridad,</li>
         <li><b>Then</b> el sistema presenta el catálogo completo de funcionalidades de manera organizada,</li>
         <li><b>And</b> permite al usuario visualizar todas las herramientas disponibles de un solo vistazo.</li>
@@ -3176,15 +3176,15 @@
   <tr>
     <td><b>Descripción</b></td>
     <td colspan="3">
-      Como visitante, quiero conocer el proceso de trabajo que realiza la aplicacion web y estadisticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales.
+      Como visitante, quiero conocer el proceso de trabajo que realiza la aplicación web y estadísticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales.
     </td>
   </tr>
   <tr>
     <td colspan="4">
       <b>Criterios de aceptación:</b>
       <ol>
-        <li>Se debe explicar el flujo de 3 pasos (Operarios reportan desde la aplicacion web, El sistema analiza los datos, Supervisores toman accion preventiva).</li>
-        <li>Se debe incluir una sección de estadísticas titulada "La realidad de la industria peruana" con datos que respaldan la necesidad de la aplicacion web RiskGuard.</li>
+        <li>Se debe explicar el flujo de 3 pasos (Operarios reportan desde la aplicación web, El sistema analiza los datos, Supervisores toman acción preventiva).</li>
+        <li>Se debe incluir una sección de estadísticas titulada "La realidad de la industria peruana" con datos que respaldan la necesidad de la aplicación web RiskGuard.</li>
       </ol>
       <b>Escenario 1:</b> Comprensión del flujo de trabajo integral<br/>
       <ul>
@@ -4165,10 +4165,10 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 | 1 | US61 | Identidad y Acceso General | Como visitante, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada. | 2 |
 | 2 | US62 | Propuesta de Valor | Como visitante, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol. | 3 |
 | 3 | US63 | Catálogo de Capacidades Técnicas | Como visitante, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero. | 3 |
-| 4 | US64 | Metodología y Validación Social | Como visitante, quiero conocer el proceso de trabajo que realiza la aplicacion web y estadisticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales. | 3 |
+| 4 | US64 | Metodología y Validación Social | Como visitante, quiero conocer el proceso de trabajo que realiza la aplicación web y estadísticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales. | 3 |
 | 5 | US65 | Beneficios por Rol Operativo | Como visitante, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores. | 3 |
 | 6 | US66 | Cierre y Conversión de Prospectos | Como visitante, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa. | 2 |
-| 7 | US16 | Visualización de métricas de impacto predictivo | Como visitante, quiero visualizar indicadores reales de siniestralidad en la landing page para comprender el impacto de la analítica predictiva. | 2 |
+| 7 | US16 | Visualización de métricas de impacto predictivo | Como visitante, quiero visualizar indicadores reales de siniestralidad en el Landing Page para comprender el impacto de la analítica predictiva. | 2 |
 | 8 | US17 | Interacción con botones de conversión | Como visitante, quiero interactuar con los botones "Iniciar prueba gratuita" y "Hablar con ventas" para contactar con el servicio de RiskGuard. | 2 |
 | 9 | US03 | Registro Rápido de Casi-Accidente | Como Operario de Planta, quiero registrar un casi-accidente desde mi celular en menos de 30 segundos para no interrumpir mi flujo de trabajo. | 5 |
 | 10 | US04 | Adjuntar Evidencia Fotográfica al Reporte | Como Operario de Planta, quiero adjuntar una foto al momento de reportar un incidente para proporcionar evidencia visual al supervisor. | 3 |
