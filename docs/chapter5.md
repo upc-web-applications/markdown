@@ -2476,6 +2476,69 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
 
 Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Services de RiskGuard utilizando C# y ASP.NET Core. El backend fue organizado como un monolito modular basado en Domain-Driven Design, separando las responsabilidades de la solución mediante bounded contexts. Las operaciones fueron verificadas desde Swagger UI utilizando datos de prueba y comprobando los códigos de respuesta HTTP.
 
+##### Account Generation and Authentication BC
+
+<p align="center">
+  <img src="images/sprint-3/execution/iam-swagger-overview.png" width="750"/>
+</p>
+
+*Vista general de los recursos y endpoints correspondientes al bounded context Account Generation and Authentication.*
+
+##### Site / Area and Industrial Asset BC
+
+<p align="center">
+  <img src="images/sprint-3/execution/organization-assets-swagger-overview.png"
+       width="750"/>
+</p>
+
+*Vista general de los recursos y endpoints correspondientes al bounded context Site, Area and Industrial Asset.*
+
+##### Inspection / Unsafe Condition BC
+
+<p align="center">
+  <img src="images/sprint-3/execution/inspection-swagger-overview.png"
+       width="750"/>
+</p>
+
+*Vista general de los recursos y endpoints correspondientes al bounded context Inspection and Unsafe Condition.*
+
+##### Risk Assessment BC
+
+<p align="center">
+  <img src="images/sprint-3/execution/risk-assessment-swagger-overview.png"
+       width="750"/>
+</p>
+
+
+*Vista general de los recursos y endpoints correspondientes al bounded context Risk Assessment.*
+
+#### Mitigation BC
+
+<p align="center">
+  <img src="images/sprint-3/execution/mitigation-swagger-overview.png"
+       width="750"/>
+</p>
+
+*Vista general de los recursos y endpoints correspondientes al bounded context Mitigation.*
+
+##### Monitoring / Dashboard BC
+
+<p align="center">
+  <img src="images/sprint-3/execution/monitoring-dashboard-swagger-overview.png"
+       width="750"/>
+</p>
+
+*Vista general de los recursos y endpoints correspondientes al bounded context Monitoring and Dashboard.*
+
+##### Reports / Compliance BC
+
+<p align="center">
+  <img src="images/sprint-3/execution/reports-compliance-swagger-overview.png"
+       width="750"/>
+</p>
+
+*Vista general de los recursos y endpoints correspondientes al bounded context Reports and Compliance.*
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante este Sprint se lograron avances significativos en el desarrollo y documentación de los Web Services que soportan las funcionalidades principales de la plataforma RiskGuard. Se implementaron y documentaron múltiples endpoints REST relacionados con la autenticación de usuarios, gestión de inspecciones, evaluación de riesgos, medidas de mitigación, tickets correctivos, monitoreo por mapa de calor, mantenimientos preventivos, gestión de sedes, áreas y activos industriales, así como reportes de cumplimiento normativo SST.
