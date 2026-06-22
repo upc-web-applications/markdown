@@ -2478,6 +2478,302 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
+Durante este Sprint se lograron avances significativos en el desarrollo y documentación de los Web Services que soportan las funcionalidades principales de la plataforma RiskGuard. Se implementaron y documentaron múltiples endpoints REST relacionados con la autenticación de usuarios, gestión de inspecciones, evaluación de riesgos, medidas de mitigación, tickets correctivos, monitoreo por mapa de calor, mantenimientos preventivos, gestión de sedes, áreas y activos industriales, así como reportes de cumplimiento normativo SST.
+
+Asimismo, se integró la persistencia de datos mediante una base de datos MySQL, permitiendo el almacenamiento y recuperación de la información gestionada por los distintos servicios implementados. La documentación de los endpoints fue generada utilizando OpenAPI y publicada a través de Swagger UI, facilitando la visualización de las operaciones disponibles, la determinación de parámetros, la revisión de los modelos de datos y la ejecución de pruebas utilizando datos de ejemplo.
+
+A continuación, se presenta la relación de endpoints desarrollados durante el Sprint, incluyendo las acciones soportadas, la sintaxis de llamada y ejemplos de respuesta obtenidos a través de la documentación interactiva.
+
+**Repositorio de Web Services:** [RiskGuard Backend](https://github.com/upc-pre-202501-si730-4428-RiskGuard)
+
+**URL local de la documentación Swagger:** http://localhost:5175/swagger
+
+**Base de datos utilizada:** MySQL
+
+**Commits relacionados con Documentación e implementación de endpoints:**
+
+| Commit Id | Mensaje |
+|---|---|
+| 767c91a | chore: initial project setup with ASP.NET Core Web API |
+| 2027f26 | feat(reports): add generated_reports, kpi_dashboard and historical_trends endpoints |
+| 560fa99 | feat: add to my feature |
+| 5ab61d6 | feat: add inspection and headquarters BC |
+| d35638c | feat(iam): add authentication and identity access context |
+| 4eb6a26 | feat(monitoring): add monitoring dashboard context |
+
+<table>
+  <thead>
+    <tr>
+      <th>Bounded Context</th>
+      <th>Recurso</th>
+      <th>Endpoint base</th>
+      <th>Acciones Implementadas</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">IAM</td>
+      <td>Autenticación</td>
+      <td>/api/v1/authentication</td>
+      <td>POST (sign-in), POST (sign-up)</td>
+      <td>Registro de usuarios con BCrypt y autenticación con generación de token JWT</td>
+    </tr>
+    <tr>
+      <td>Usuarios</td>
+      <td>/api/v1/users</td>
+      <td>GET, GET {id}</td>
+      <td>Consulta de usuarios registrados. El campo passwordHash se excluye por seguridad</td>
+    </tr>
+    <tr>
+      <td>Roles</td>
+      <td>/api/v1/roles</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Gestión de roles del sistema (supervisor, administrador, operario)</td>
+    </tr>
+    <tr>
+      <td>Sesiones</td>
+      <td>/api/v1/sessions</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Gestión de sesiones activas con control de validez y motivo de cierre</td>
+    </tr>
+    <tr>
+      <td>Registros de acceso</td>
+      <td>/api/v1/access-logs</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Auditoría de intentos de autenticación con IP, resultado y motivo de fallo</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Organization Assets</td>
+      <td>Sedes</td>
+      <td>/api/v1/headquarters</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Gestión de sedes operativas con nombre, dirección y estado (Active/Inactive)</td>
+    </tr>
+    <tr>
+      <td>Áreas</td>
+      <td>/api/v1/areas</td>
+      <td>GET, GET {id}, GET /active, POST, PUT, DELETE</td>
+      <td>Áreas vinculadas a una sede con nivel de riesgo. El endpoint /active filtra por estado activo</td>
+    </tr>
+    <tr>
+      <td>Activos</td>
+      <td>/api/v1/assets</td>
+      <td>GET, GET {id}, GET /by-area/{areaId}, POST, PUT, DELETE</td>
+      <td>Activos industriales por área. El endpoint /by-area filtra por areaId y estado activo</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Inspection</td>
+      <td>Inspecciones</td>
+      <td>/api/v1/inspections</td>
+      <td>POST, GET /mine/{operatorId}</td>
+      <td>Registro de inspecciones de condiciones inseguras. El endpoint /mine filtra por operario</td>
+    </tr>
+    <tr>
+      <td>Peligros</td>
+      <td>/api/v1/dangers</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Catálogo de peligros identificados en planta con nombre y categoría</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Risk Assessment</td>
+      <td>Evaluaciones de riesgo</td>
+      <td>/api/v1/risk-assessments</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Evaluaciones con probabilidad, severidad y nivel de riesgo. Filtrable por sector</td>
+    </tr>
+    <tr>
+      <td>Patrones de riesgo</td>
+      <td>/api/v1/risk-patterns</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Detección de patrones recurrentes de incidentes por sector</td>
+    </tr>
+    <tr>
+      <td>Resúmenes diarios</td>
+      <td>/api/v1/daily-summaries</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Resumen diario de riesgos nuevos, en progreso y resueltos. Filtrable por sector y fecha</td>
+    </tr>
+    <tr>
+      <td>Alertas de patrón</td>
+      <td>/api/v1/pattern-alerts</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Alertas generadas por patrones de riesgo recurrentes detectados</td>
+    </tr>
+    <tr>
+      <td>Niveles de criticidad</td>
+      <td>/api/v1/area-criticality-levels</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Niveles de criticidad por área que alimentan el mapa de calor</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Mitigation</td>
+      <td>Mitigaciones</td>
+      <td>/api/v1/mitigations</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Medidas de control implementadas para reducir el nivel de riesgo</td>
+    </tr>
+    <tr>
+      <td>Tickets correctivos</td>
+      <td>/api/v1/corrective-action-tickets</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Tickets correctivos con prioridad, SLA y técnico asignado</td>
+    </tr>
+    <tr>
+      <td>Alertas SLA</td>
+      <td>/api/v1/sla-alerts</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Alertas de cumplimiento de SLA para tickets próximos a vencer</td>
+    </tr>
+    <tr>
+      <td>Notificaciones críticas</td>
+      <td>/api/v1/critical-notifications</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Notificaciones enviadas cuando un ticket excede su SLA</td>
+    </tr>
+    <tr>
+      <td>Verificaciones de medida</td>
+      <td>/api/v1/measure-verifications</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Verificación de medidas de mitigación con veredicto de aprobación</td>
+    </tr>
+    <tr>
+      <td>Historial de tickets</td>
+      <td>/api/v1/ticket-histories</td>
+      <td>GET, GET {id}, POST</td>
+      <td>Línea de tiempo con eventos de cada ticket correctivo</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Monitoring / Dashboard</td>
+      <td>Zonas mapa de calor</td>
+      <td>/api/v1/heat-map-zones</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Zonas de criticidad para la visualización del mapa de calor del supervisor</td>
+    </tr>
+    <tr>
+      <td>Tickets dashboard</td>
+      <td>/api/v1/dashboard-tickets</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Bandeja de tickets del panel de monitoreo del supervisor</td>
+    </tr>
+    <tr>
+      <td>Técnicos dashboard</td>
+      <td>/api/v1/dashboard-technicians</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Directorio de técnicos disponibles para asignación de tickets</td>
+    </tr>
+    <tr>
+      <td>Activos dashboard</td>
+      <td>/api/v1/dashboard-assets</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Gestión de activos industriales desde el panel del supervisor</td>
+    </tr>
+    <tr>
+      <td>Mantenimientos preventivos</td>
+      <td>/api/v1/preventive-maintenances</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Programación de mantenimientos preventivos para activos industriales</td>
+    </tr>
+    <tr>
+      <td>Reportes archivados</td>
+      <td>/api/v1/archived-reports</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Reportes archivados del sistema de monitoreo</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Reports / Compliance</td>
+      <td>Reportes mensuales</td>
+      <td>/api/v1/monthly_reports</td>
+      <td>GET, GET {id}, GET /year/{year}, POST, PUT</td>
+      <td>Reportes mensuales de seguridad con filtro por año</td>
+    </tr>
+    <tr>
+      <td>Indicadores acumulados ST</td>
+      <td>/api/v1/cumulative_st_indicators</td>
+      <td>GET, GET {id}</td>
+      <td>Indicadores acumulados de Seguridad en el Trabajo</td>
+    </tr>
+    <tr>
+      <td>Registros históricos</td>
+      <td>/api/v1/historical_incident_records</td>
+      <td>GET, GET {id}, POST, PUT</td>
+      <td>Historial de incidentes para trazabilidad ante auditorías SUNAFIL</td>
+    </tr>
+    <tr>
+      <td>Plan anual SST</td>
+      <td>/api/v1/annual_ohs_plan</td>
+      <td>GET, GET {id}, PUT</td>
+      <td>Plan anual SST con cumplimiento global y desglose de actividades</td>
+    </tr>
+    <tr>
+      <td>Indicadores predictivos</td>
+      <td>/api/v1/predictive_indicators</td>
+      <td>GET, GET {id}</td>
+      <td>Indicadores predictivos de riesgo con tendencia</td>
+    </tr>
+    <tr>
+      <td>Alertas críticas</td>
+      <td>/api/v1/critical_alerts</td>
+      <td>GET, GET {id}, PUT, DELETE</td>
+      <td>Alertas críticas con estado (unresolved, in_review, resolved)</td>
+    </tr>
+    <tr>
+      <td>Reportes generados</td>
+      <td>/api/v1/generated_reports</td>
+      <td>GET, GET {id}, POST, DELETE</td>
+      <td>Registro de reportes generados en formato pdf o xlsx</td>
+    </tr>
+    <tr>
+      <td>Dashboard KPI</td>
+      <td>/api/v1/kpi_dashboard</td>
+      <td>GET, GET {id}</td>
+      <td>Indicadores KPI del dashboard ejecutivo con meta y estado visual</td>
+    </tr>
+    <tr>
+      <td>Tendencias históricas</td>
+      <td>/api/v1/historical_trends</td>
+      <td>GET, GET {id}</td>
+      <td>Evolución mensual de incidentes para gráficas de tendencia</td>
+    </tr>
+    <tr>
+      <td>Shared</td>
+      <td>Peligros (Hazards)</td>
+      <td>/api/v1/hazards</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Catálogo de peligros identificados en planta</td>
+    </tr>
+    <tr>
+      <td>Shared</td>
+      <td>Técnicos</td>
+      <td>/api/v1/technicians</td>
+      <td>GET, GET {id}, POST, PUT, DELETE</td>
+      <td>Directorio de técnicos para asignación a tickets y mantenimientos</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Evidencia de interacción con Swagger UI
+
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-195020.png" width="500"/>
+</p>
+
+*Ejecución del endpoint GET /api/v1/monthly_reports en Swagger UI, mostrando la respuesta exitosa (HTTP 200) con los reportes mensuales almacenados en la base de datos, incluyendo campos id, month, year, status y creationDate.*
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-195502.png" width="500"/>
+</p>
+
+*Ejecución del endpoint DELETE /api/v1/critical_alerts/CA_001 en Swagger UI, mostrando la eliminación exitosa con respuesta HTTP 204 (The alert was deleted) y la documentación del código 404 (The alert was not found).*
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-195520.png" width="500"/>
+</p>
+
+*Ejecución del endpoint GET /api/v1/critical_alerts en Swagger UI, mostrando la respuesta exitosa (HTTP 200) con un arreglo vacío tras la eliminación previa, junto con el schema del modelo que incluye los campos id, type, sector, riskType, message, elapsedHours y status.*
+
+
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
