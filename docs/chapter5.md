@@ -2776,6 +2776,118 @@ A continuación, se presenta la relación de endpoints desarrollados durante el 
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
+En esta sección se presenta la evidencia del despliegue de los distintos servicios de la plataforma RiskGuard durante el Sprint 3, incluyendo el frontend, backend real, base de datos simulada y landing page.
+
+**Servicios desplegados:**
+
+| Servicio | URL |
+|---|---|
+| Landing Page | *(pendiente)* |
+| Frontend (Firebase) | https://riskguard-a146d.web.app/login |
+| Backend Real (Render) | https://riskguard-platform.onrender.com/swagger/index.html |
+| Base de datos simulada (json-server en Render) | https://db-server-risk-0r34.onrender.com |
+
+**Stack tecnológico:**
+
+| Componente | Tecnología |
+|---|---|
+| Frontend | Vue 3 + PrimeVue 4 |
+| Hosting Frontend | Firebase Hosting |
+| Backend Real | ASP.NET Core / C# (Render) |
+| Base de datos simulada | json-server con db.json (Render) |
+| Base de datos real | MySQL |
+
+**Cómo desplegar**
+
+##### Frontend (Firebase) — Paso a paso
+
+1. **Crear proyecto en Firebase Console**
+   - Ir a https://console.firebase.google.com
+   - Click en "Crear un proyecto"
+   - Asignar nombre (ej: riskguard)
+   - Desactivar Google Analytics
+   - Esperar a que se cree
+
+2. **Inicializar Firebase en el proyecto local**
+
+   
+   firebase login
+   firebase init hosting
+   
+   Responder:
+   - Seleccionar proyecto → elegir el proyecto creado
+   - Directorio público → `dist`
+   - Configurar como aplicación de una sola página → `Yes`
+   - Configurar compilaciones automáticas → `No`
+   - El archivo index.html ya existe → `No`
+
+3. **Compilación y despliegue manual (primera vez)**
+   ```
+   npm run build
+   firebase deploy
+
+
+##### Backend Real (Render) — Paso a paso
+
+1. Ir a https://dashboard.render.com
+2. Click en **New +** → **Web Service**
+
+![Captura de pantalla 2026 06 21 205339](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205339.png)
+
+4. Conectar el repositorio de GitHub del backend
+  
+6. Configurar:
+   - **Nombre:** riskguard-platform
+   - **Region:** la más cercana
+   - **Rama:** main
+   - **Runtime:** Docker o .NET
+   - **Build Command:** `dotnet publish -c Release -o out`
+   - **Start Command:** `dotnet out/RiskGuard-Platform.dll`
+   - **Plan:** Free
+7. Click en **Create Web Service**
+
+![Captura de pantalla 2026 06 21 205339](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205339.png)
+
+![Captura de pantalla 2026 06 21 205902](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205902.png)
+
+![Captura de pantalla 2026 06 21 210013](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210013.png)
+
+![Captura de pantalla 2026 06 21 210218](https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210218.png)
+
+**Despliegue automático:** Render se configura con auto-deploy por defecto. Cada `git push` a main:
+- Render detecta el cambio
+- Reconstruye y redespliega automáticamente
+
+https://riskguard-platform.onrender.com/swagger/index.html
+
+##### Mock DB (json-server en Render) — Paso a paso
+
+1. Ir a https://dashboard.render.com
+2. Click en **New +** → **Web Service**
+3. Conectar el repositorio del frontend
+4. Configurar:
+   - **Nombre:** db-server-risk
+   - **Region:** la más cercana
+   - **Rama:** main
+   - **Runtime:** Node
+   - **Build Command:** *(vacío)*
+   - **Start Command:** `npx json-server --watch server/db.json --routes server/routes.json --port $PORT`
+   - **Plan:** Free
+5. Click en **Create Web Service**
+
+**Importante:** Usar `$PORT` en el Start Command, no un puerto fijo como 3000.
+
+
+##### Alcance del despliegue en Sprint 3
+
+| Producto | Estado de despliegue | Observación |
+|---|---|---|
+| Landing Page | *(pendiente de configurar)* | Se actualizará desde la rama principal. |
+| Frontend (Web App) | Desplegado en Firebase Hosting con integración continua  | La aplicación está disponible en https://riskguard-a146d.web.app |
+| Backend / Web Services | Desplegado en Render | Los endpoints fueron validados mediante Swagger UI, accesible en https://riskguard-platform.onrender.com/swagger/index.html. Base de datos MySQL. |
+| Base de datos simulada | Desplegada en Render como json-server | Disponible en https://db-server-risk-0r34.onrender.com. Requiere activación manual por inactividad de Render Free. |
+
+
 **Lading page desplegada**
 
 Evidencia de actualizacion en main: 
@@ -2797,7 +2909,11 @@ Evidencia del fronteed publicado:
   <img src="images/EvidenciaFront2.png" width="500"/>
 </p>
 
+**Backend  desplegado**
 
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210250.png" width="500"/>
+</p>
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
