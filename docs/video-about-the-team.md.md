@@ -18,7 +18,7 @@ El video About-the-Team resume el proceso de trabajo realizado por el equipo Ris
 | Testimonio - Angel Flores | 00:07:49 | Actividades, outcomes y competencias desarrolladas |
 | Testimonio - Victor Laura | 00:10:27 | Actividades, outcomes y competencias desarrolladas |
 
-![Captura de pantalla 2026 06 21 151656](docs/images/video-team-screenshot.png)
+![Captura de pantalla 2026 06 21 151656](images/video-team-screenshot.png)
 
 
 **Duración:** 10:27

@@ -497,7 +497,7 @@ La pantalla de detalle de ticket presenta el historial completo del incidente en
 
 #### Wireframes: Dashboard Ejecutivo del Gerente
 
-![Wireflow Prototype 1](docs/images/wireflow-prototype-1.png)
+![Wireflow Prototype 1](images/wireflow-prototype-1.png)
 
 *Ilustración – Web Application Wireframe: Dashboard Ejecutivo del Gerente*
 
@@ -635,7 +635,7 @@ La pantalla de detalle de ticket aplica el layout de dos columnas sobre fondo `#
 
 #### Dashboard Ejecutivo del Gerente
 
-![Wireflow Prototype 2](docs/images/wireflow-prototype-2.png)
+![Wireflow Prototype 2](images/wireflow-prototype-2.png)
 
 *Ilustración – Web Application Mock-up: Dashboard Ejecutivo del Gerente*
 
@@ -739,7 +739,7 @@ El prototipo cubre los siguientes flujos principales de interacción, representa
 
 <h5 align="center">Visualización del prototipo</h5>
 
-![Prototype Figma](docs/images/prototype-figma.jpg)
+![Prototype Figma](images/prototype-figma.jpg)
 
 *Vista del prototipo del sistema, mostrando la interfaz principal y su estructura general.*
 
@@ -923,7 +923,7 @@ Este Bounded Context es responsable de la gestión de acciones correctivas y tic
 
 <p align="center">Monitoreo y Dashboard BC</p>
 <p align="center">
-  <img src="docs/images/container-diagram-11.png" width="300"/>
+  <img src="images/container-diagram-11.png" width="300"/>
 </p>
 
 ![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(8).png?raw=true)

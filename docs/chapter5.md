@@ -308,7 +308,7 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 1 del p
 
 **Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
 
-![Trello Sprint 1](docs/images/trello-sprint-1.png)
+![Trello Sprint 1](images/trello-sprint-1.png)
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -397,42 +397,42 @@ A continuación, las vistas principales desarrolladas:
 <p align="center">Vista principal con la propuesta de valor.</p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-1.jpg" width="500"/>
+  <img src="images/ch5-img-1.jpg" width="500"/>
 </p>
 
 <h5 align="center">Características</h5>
 <p align="center">Funciones clave del sistema.</p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-2.jpg" width="500"/>
+  <img src="images/ch5-img-2.jpg" width="500"/>
 </p>
 
 <h5 align="center">Cómo funciona</h5>
 <p align="center">Flujo de uso del sistema.</p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-3.jpg" width="500"/>
+  <img src="images/ch5-img-3.jpg" width="500"/>
 </p>
 
 <h5 align="center">Segmentos</h5>
 <p align="center">Usuarios objetivo.</p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-4.jpg" width="500"/>
+  <img src="images/ch5-img-4.jpg" width="500"/>
 </p>
 
 <h5 align="center">Estadísticas</h5>
 <p align="center">Datos sobre seguridad industrial.</p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-5.jpg" width="500"/>
+  <img src="images/ch5-img-5.jpg" width="500"/>
 </p>
 
 <h5 align="center">Contactar</h5>
 <p align="center">Prueba gratuita o contacto.</p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-6.jpg" width="500"/>
+  <img src="images/ch5-img-6.jpg" width="500"/>
 </p>
 
 * Video de la Ejecución
@@ -469,7 +469,7 @@ Se verificó que la versión final del proyecto estuviera almacenada y actualiza
 - Se verificó el acceso al entorno de producción.  
 
 <p align="center">
-  <img src="docs/images/ch5-img-7.jpg" width="500"/>
+  <img src="images/ch5-img-7.jpg" width="500"/>
 </p>
 
 - **GitHub Pages:**  
@@ -488,11 +488,11 @@ En particular, Blancas Chávez, Carlos Franco tuvo un rol destacado en la estruc
 El equipo trabajó directamente sobre la rama main, realizando commits continuos para avanzar en el desarrollo. Durante este Sprint no se utilizó un flujo formal de Pull Requests, ya que el objetivo principal fue construir una primera versión funcional del Landing Page en el menor tiempo posible.
 
 <p align="center">
-  <img src="docs/images/ch5-img-8.jpg" width="500"/>
+  <img src="images/ch5-img-8.jpg" width="500"/>
 </p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-9.jpg" width="500"/>
+  <img src="images/ch5-img-9.jpg" width="500"/>
 </p>
 
 ### 5.2.2. Sprint 2
@@ -530,7 +530,7 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 2 del p
 
 **Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
 
-![Trello Sprint 2](docs/images/trello-sprint-2.png)
+![Trello Sprint 2](images/trello-sprint-2.png)
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -918,7 +918,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">Inicio de autenticación</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-10.jpg" width="500"/>
+  <img src="images/ch5-img-10.jpg" width="500"/>
 </p>
 
 *Pantalla de autenticación del sistema donde el usuario ingresa sus credenciales para acceder a la plataforma.*
@@ -1095,7 +1095,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">1. Visualización de Inicio del Gerente</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-11.jpg" width="500"/>
+  <img src="images/ch5-img-11.jpg" width="500"/>
 </p>
 
 *Vista principal del gerente con acceso al resumen general del sistema y métricas de seguridad.*
@@ -1103,7 +1103,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">2. Visualización de Nuevo Reporte del Gerente</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-12.jpg" width="500"/>
+  <img src="images/ch5-img-12.jpg" width="500"/>
 </p>
 
 *Vista orientada al registro de nuevos reportes de incidentes y condiciones inseguras.*
@@ -1111,7 +1111,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">3. Visualización de Mis Reportes del Gerente</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-13.jpg" width="500"/>
+  <img src="images/ch5-img-13.jpg" width="500"/>
 </p>
 
 *Vista para la consulta y administración de reportes generados dentro del sistema.*
@@ -1119,14 +1119,14 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">4. Visualización del Historial de Incidentes del Gerente</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-14.jpg" width="500"/>
+  <img src="images/ch5-img-14.jpg" width="500"/>
 </p>
 *Vista enfocada en el seguimiento y análisis del historial de incidentes registrados.*
 
 <h5 align="center">5. Visualización de Alertas Críticas del Gerente</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-15.jpg" width="500"/>
+  <img src="images/ch5-img-15.jpg" width="500"/>
 </p>
 
 *Vista de alertas críticas para supervisar eventos de riesgo y estados de atención.*
@@ -1134,14 +1134,14 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">6. Visualización de Indicadores Predictivos del Gerente</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-16.jpg" width="500"/>
+  <img src="images/ch5-img-16.jpg" width="500"/>
 </p>
 *Vista de indicadores predictivos con métricas y tendencias relacionadas a seguridad industrial.*
 
 <h5 align="center">7. Visualización del Plan SST del Gerente</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-17.jpg" width="500"/>
+  <img src="images/ch5-img-17.jpg" width="500"/>
 </p>
 
 *Vista del Plan SST con indicadores de cumplimiento, actividades completadas y monitoreo mensual.*
@@ -1844,7 +1844,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/kpi_dashboard</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-18.png" width="500"/>
+  <img src="images/ch5-img-18.png" width="500"/>
 </p>
 
 *Respuesta del endpoint con los cuatro indicadores KPI. Los estados `alert` y `danger` se visualizan en el dashboard mediante tags de color.*
@@ -1852,7 +1852,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/historical_trends</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-19.png" width="500"/>
+  <img src="images/ch5-img-19.png" width="500"/>
 </p>
 
 *Retorno de la evolución mensual de incidentes. Los datos se filtran por sector en el frontend para construir los datasets de la gráfica de línea.*
@@ -1860,7 +1860,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/critical_alerts</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-20.png" width="500"/>
+  <img src="images/ch5-img-20.png" width="500"/>
 </p>
 
 *Listado de alertas críticas con estado `unresolved`. El frontend calcula el KPI de sectores críticos a partir de estos registros.*
@@ -1868,7 +1868,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">PATCH /api/v1/critical_alerts/ALERT_001</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-21.jpg" width="500"/>
+  <img src="images/ch5-img-21.jpg" width="500"/>
 </p>
 
 *Actualización del estado de la alerta a `resolved`. El store recalcula automáticamente los KPIs tras recibir la respuesta.*
@@ -1876,7 +1876,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">DELETE /api/v1/critical_alerts/ALERT_001</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-22.jpg" width="500"/>
+  <img src="images/ch5-img-22.jpg" width="500"/>
 </p>
 
 *Eliminación de la alerta. Respuesta HTTP 200 con body vacío `{}`.*
@@ -1884,7 +1884,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/annual_ohs_plan</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-23.jpg" width="500"/>
+  <img src="images/ch5-img-23.jpg" width="500"/>
 </p>
 
 *Plan anual con cumplimiento global del 72%, por debajo de la meta del 80%. El frontend muestra el indicador en amarillo con etiqueta "Aceptable".*
@@ -1892,7 +1892,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/predictive_indicators</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-24.jpg" width="500"/>
+  <img src="images/ch5-img-24.jpg" width="500"/>
 </p>
 
 *Indicadores predictivos con sectores de tendencia creciente. `WAREHOUSE_B` aparece con tag rojo (`critical`) y `GAS_PLANT` con tag amarillo (`warning`).*
@@ -1900,7 +1900,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/historical_incident_records</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-25.jpg" width="500"/>
+  <img src="images/ch5-img-25.jpg" width="500"/>
 </p>
 
 *Historial de incidentes de solo lectura. El frontend aplica filtros por sector, tipo y rango de fechas sobre los datos ya cargados.*
@@ -1908,7 +1908,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">GET /api/v1/generated_reports</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-26.jpg" width="500"/>
+  <img src="images/ch5-img-26.jpg" width="500"/>
 </p>
 
 *Listado de reportes generados con tipo `monthly` y formato PDF.*
@@ -1916,7 +1916,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">POST /api/v1/generated_reports</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-27.jpg" width="500"/>
+  <img src="images/ch5-img-27.jpg" width="500"/>
 </p>
 
 *Registro de un nuevo reporte. El servidor retorna HTTP 201 con el id generado automáticamente. El store agrega el registro al historial sin recargar la página.*
@@ -1924,7 +1924,7 @@ Se documentan los endpoints simulados utilizados para validar las funcionalidade
 <h5 align="center">DELETE /api/v1/generated_reports/Z4PRqZP</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-28.jpg" width="500"/>
+  <img src="images/ch5-img-28.jpg" width="500"/>
 </p>
 
 *Eliminación del reporte con id `Z4PRqZP`. Respuesta HTTP 200 con body vacío `{}`.*
@@ -1984,7 +1984,7 @@ Backend – Render
 Se creó un repositorio independiente con el archivo `db.json` y el `package.json` configurado con el comando de inicio:
 
 <p align="center">
-  <img src="docs/images/ch5-img-29.jpg" width="500"/>
+  <img src="images/ch5-img-29.jpg" width="500"/>
 </p>
 
 El servicio fue desplegado como un Web Service en Render, obteniendo la URL base:
@@ -1992,12 +1992,12 @@ El servicio fue desplegado como un Web Service en Render, obteniendo la URL base
 Los endpoints disponibles incluyen: `/kpi_dashboard`, `/critical_alerts`, `/predictive_indicators`, `/generated_reports`, `/monthly_reports`, `/historical_incident_records`, `/historical_trends` y `/annual_ohs_plan`.
 
 <p align="center">
-  <img src="docs/images/ch5-img-30.jpg" width="500"/>
+  <img src="images/ch5-img-30.jpg" width="500"/>
 </p>
 
 Luego creamos nuestro proyecto en firebase 
 <p align="center">
-  <img src="docs/images/ch5-img-31.jpg" width="500"/>
+  <img src="images/ch5-img-31.jpg" width="500"/>
 </p>
 
 Luego ejecutamos los siguientes comandos para el despliegue:
@@ -2010,7 +2010,7 @@ npm run build
 firebase deploy
 ```
 <p align="center">
-  <img src="docs/images/ch5-img-32.jpg" width="500"/>
+  <img src="images/ch5-img-32.jpg" width="500"/>
 </p>
 
 El directorio de publicación fue configurado como `dist` en `firebase.json`, y la aplicación fue configurada como Single Page App (SPA). La URL de producción obtenida fue:
@@ -2191,7 +2191,7 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 <h5 align="center">Ramas creadas</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-33.jpg" width="600"/>
+  <img src="images/ch5-img-33.jpg" width="600"/>
 </p>
 
 *Historial de commits organizado por cada integrante del equipo.*
@@ -2199,7 +2199,7 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 <h5 align="center">Commits de cada autor</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-34.jpg" width="600"/>
+  <img src="images/ch5-img-34.jpg" width="600"/>
 </p>
 
 *Resumen estadístico del repositorio con cantidad de commits y contribuciones por autor.*
@@ -2207,7 +2207,7 @@ El repositorio cuenta con 7 ramas activas: `main`, `develop`, `feature/reports_c
 <h5 align="center">Estadísticas</h5>
 
 <p align="center">
-  <img src="docs/images/ch5-img-35.jpg" width="600"/>
+  <img src="images/ch5-img-35.jpg" width="600"/>
 </p>
 
 
@@ -2248,7 +2248,7 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3 del p
 
 **Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
 
-![Trello Sprint 3](docs/images/trello-sprint-3.png)
+![Trello Sprint 3](images/trello-sprint-3.png)
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
@@ -2942,32 +2942,32 @@ A continuación, se presenta la relación de endpoints desarrollados durante el 
 
 
 <p align="center">
-  <img src="docs/images/ch5-img-36.png" width="500"/>
+  <img src="images/ch5-img-36.png" width="500"/>
 </p>
 
 *Ejecución del endpoint GET /api/v1/monthly_reports en Swagger UI, mostrando la respuesta exitosa (HTTP 200) con los reportes mensuales almacenados en la base de datos, incluyendo campos id, month, year, status y creationDate.*
 
 <p align="center">
-  <img src="docs/images/ch5-img-37.png" width="500"/>
+  <img src="images/ch5-img-37.png" width="500"/>
 </p>
 
 *Ejecución del endpoint DELETE /api/v1/critical_alerts/CA_001 en Swagger UI, mostrando la eliminación exitosa con respuesta HTTP 204 (The alert was deleted) y la documentación del código 404 (The alert was not found).*
 
 <p align="center">
-  <img src="docs/images/ch5-img-38.png" width="500"/>
+  <img src="images/ch5-img-38.png" width="500"/>
 </p>
 
 *Ejecución del endpoint GET /api/v1/critical_alerts en Swagger UI, mostrando la respuesta exitosa (HTTP 200) con un arreglo vacío tras la eliminación previa, junto con el schema del modelo que incluye los campos id, type, sector, riskType, message, elapsedHours y status.*
 
 
 <p align="center">
-  <img src="docs/images/ch5-img-39.png" width="500"/>
+  <img src="images/ch5-img-39.png" width="500"/>
 </p>
 
 *Ejecución del endpoint POST /api/v1/technicians en el backend desplegado en Render, mostrando el registro de un nuevo técnico con los campos id, documentNumber, fullName, specialty, phone, email y status.*
 
 <p align="center">
-  <img src="docs/images/ch5-img-40.png" width="500"/>
+  <img src="images/ch5-img-40.png" width="500"/>
 </p>
 
 *Ejecución del endpoint GET /api/v1/technicians/TEC_002 en el backend desplegado en Render, mostrando la consulta exitosa (HTTP 200) del técnico registrado con su información completa.*
@@ -3031,7 +3031,7 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
 1. Ir a https://dashboard.render.com
 2. Click en *New +** → **Web Service*
 
-![Captura de pantalla 2026 06 21 205339](docs/images/ch5-img-41.png)
+![Captura de pantalla 2026 06 21 205339](images/ch5-img-41.png)
 
 4. Conectar el repositorio de GitHub del backend
   
@@ -3045,11 +3045,11 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
    - *Plan:* Free
 7. Click en *Create Web Service*
 
-![Captura de pantalla 2026 06 21 205902](docs/images/ch5-img-42.png)
+![Captura de pantalla 2026 06 21 205902](images/ch5-img-42.png)
 
-![Captura de pantalla 2026 06 21 210013](docs/images/ch5-img-43.png)
+![Captura de pantalla 2026 06 21 210013](images/ch5-img-43.png)
 
-![Captura de pantalla 2026 06 21 210218](docs/images/ch5-img-44.png)
+![Captura de pantalla 2026 06 21 210218](images/ch5-img-44.png)
 
 *Despliegue automático:* Render se configura con auto-deploy por defecto. Cada `git push` a main:
 - Render detecta el cambio
@@ -3107,11 +3107,11 @@ Evidencia del fronteed publicado:
 **Backend  desplegado**
 
 <p align="center">
-  <img src="docs/images/ch5-img-45.png" width="500"/>
+  <img src="images/ch5-img-45.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="docs/images/ch5-img-46.png" width="500"/>
+  <img src="images/ch5-img-46.png" width="500"/>
 </p>
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
@@ -3127,7 +3127,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Ramas creadas</h5>
 
 <p align="center">
-  <img src="docs/images/sprint3-branches.png" width="600"/>
+  <img src="images/sprint3-branches.png" width="600"/>
 </p>
 
 *Historial de commits organizado cronológicamente en el repositorio.*
@@ -3135,7 +3135,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Orden de commits</h5>
 
 <p align="center">
-  <img src="docs/images/sprint3-commits-order.png" width="600"/>
+  <img src="images/sprint3-commits-order.png" width="600"/>
 </p>
 
 *Resumen estadístico del repositorio con cantidad de commits y contribuciones por autor.*
@@ -3143,7 +3143,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Commits por usuario</h5>
 
 <p align="center">
-  <img src="docs/images/sprint3-commits-per-user.png" width="600"/>
+  <img src="images/sprint3-commits-per-user.png" width="600"/>
 </p>
 
 *Network graph del repositorio mostrando el flujo de ramas y merges del equipo.*
@@ -3151,7 +3151,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Network graph</h5>
 
 <p align="center">
-  <img src="docs/images/sprint3-network-graph.png" width="600"/>
+  <img src="images/sprint3-network-graph.png" width="600"/>
 </p>
 
 *Registro completo de todos los commits realizados durante el Sprint 3.*
@@ -3159,7 +3159,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 <h5 align="center">Todos los commits</h5>
 
 <p align="center">
-  <img src="docs/images/sprint3-all-commits.png" width="600"/>
+  <img src="images/sprint3-all-commits.png" width="600"/>
 </p>
 
 
@@ -3293,7 +3293,7 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 
 | **Entrevista Nro. 2** |
 |---|
-| <img src="docs/images/ch5-img-47.png" width="330" hspace="230"> |
+| <img src="images/ch5-img-47.png" width="330" hspace="230"> |
 | **Entrevistado N°2:** Rocío Acosta <br> **Edad:** 21 años<br>**Ubicación:** Pueblo Libre<br>**Cargo:** Operaria de Producción<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDzCVuI3MO7Qq7Q2wM__nhIAXxVlF9JemhOtM5P4NV_WjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=QPDAVj) <br>**Instante del que inicia:** 00:00<br> **Duración:** 5:51 <br><br> **Resumen:** <br><br> La participante indicó que el Landing Page le permitió entender rápidamente que RiskGuard es una plataforma para reportar riesgos en planta. Destacó la sección de estadísticas como la que más le llamó la atención, señalando que los números reales de incidentes reducidos le parecen importantes y generan credibilidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección, calificándolo como intuitivo y visible desde el dashboard. Respecto al formulario, consideró que los campos son completos y suficientes para describir un incidente, valorando especialmente la opción de adjuntar una foto como muy útil para estos casos. Los botones de color para el nivel de urgencia le resultaron muy claros, asociándolos con un semáforo: verde es leve, naranja es medio y rojo es urgente. La confirmación con el número de ticket le generó confianza y tranquilidad de que su reporte queda registrado y puede hacer seguimiento. En la sección de Inspecciones, encontró su reporte rápidamente, destacando que los estados con colores y la organización facilitan la navegación. No identificó ninguna pantalla o botón donde no supiera qué hacer, señalando que todo fue directo y guiado paso a paso. Calificó la facilidad de uso con un 5 de 5, afirmando que los pasos son claros y no solicitan información innecesaria. Confirmó que el sistema representaría una mejora real ya que actualmente usan papel, los reportes se pierden y no hay forma de verificar si alguien los está atendiendo. Como única sugerencia, mencionó que haría las letras del formulario más grandes y claras, ya que en pantallas con fondo oscuro cuesta leer textos pequeños, especialmente desde el celular. |
 
 
@@ -3301,7 +3301,7 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 
 | **Entrevista Nro. 1** |
 |---|
-| <img src="docs/images/ch5-img-48.png" width="330" hspace="230"> |
+| <img src="images/ch5-img-48.png" width="330" hspace="230"> |
 | **Entrevistado N°2:** Álvaro Pablo <br> **Edad:** 25 años<br>**Ubicación:** Barranca<br>**Cargo:** Supervisor de seguridad y mantenimiento<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQB1uHcy34fvSqQwXjrQbD-iAe9CaOKMJZslPIPAD3BTcko) <br>**Instante del que inicia:** 00:00<br> **Duración:** 7:18 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza porque identifica los procesos de planta relacionados con seguridad industrial, destacando que los colores son intuitivos y que la plataforma aplica la metodología IPERC, la cual utiliza en su campo de ingeniería industrial. Al ver el dashboard con el mapa de calor, identificó rápidamente qué sectores requieren atención gracias a la diferenciación por colores, asociando el rojo con criticidad grave. Los badges de color le resultaron claros para diferenciar la urgencia de cada ticket. Respecto al detalle del ticket, consideró que la información presentada es suficiente para tomar una decisión sobre la acción correctiva, ya que identifica el sector y muestra el estado actual del problema. El proceso de asignar un técnico le pareció directo y eficiente. La etiqueta "SLA Incumplido" le resultó entendible para priorizar acciones y no sugirió agregar otra señal visual. En el módulo de configuración, el flujo de crear sedes y registrar activos le pareció sencillo y completo, valorando los nombres claros y las descripciónes rápidas de cada proceso. Calificó la completitud del flujo de gestión de tickets con un 4 de 5, señalando que el sistema ayuda a identificar lo que ocurre de manera rápida y centralizada. Confirmó que el sistema reduciría el tiempo dedicado a gestionar incidentes, ya que actualmente debe llenar documentos físicos, hacer llamadas y registrar en bases de datos manuales. Como única sugerencia, mencionó que cambiaría los colores del fondo en la sección de alertas, haciendo que el rojo sea más llamativo para destacar mejor las alertas críticas. |
 
 
@@ -3380,7 +3380,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 En el panel de "Alertas activas" del dashboard del supervisor, el badge "Crítico" se muestra en un tono rojo sobre fondo oscuro que no genera el contraste suficiente para captar la atención de manera inmediata. Aunque el mapa de calor operativo sí diferencia los sectores con colores llamativos (rojo para crítico, amarillo para alto, verde para bajo), el panel lateral de alertas no replica esa misma intensidad visual. Esto puede provocar que el supervisor no perciba una alerta crítica con la urgencia que requiere al revisar rápidamente el dashboard.
 
 <p align="center">
-  <img src="docs/images/ch5-img-49.png" width="600">
+  <img src="images/ch5-img-49.png" width="600">
 </p>
 
 **Recomendación:**
@@ -3398,7 +3398,7 @@ Aplicar un fondo con tinte rojo sutil en las filas de alertas críticas dentro d
 En el formulario de registro de inspección del operario, las etiquetas de los campos y el texto dentro de los inputs se muestran en un tamaño de fuente reducido sobre un fondo oscuro, lo que dificulta la lectura rápida, especialmente cuando el usuario accede desde un dispositivo móvil. Este problema fue reportado directamente por la operaria entrevistada, quien señaló que en planta se consulta el celular de forma rápida y los textos pequeños con fondo oscuro dificultan la interacción. Esto puede provocar errores al completar los campos o que el usuario desista de registrar el incidente.
 
 <p align="center">
-  <img src="docs/images/ch5-img-50.png" width="600">
+  <img src="images/ch5-img-50.png" width="600">
 </p>
 
 **Recomendación:**
@@ -3416,7 +3416,7 @@ Aumentar el tamaño de fuente de las etiquetas y campos del formulario a un mín
 El operario puede seleccionar la planta y el área general del incidente, pero no existe una opción para señalar la ubicación exacta dentro de dicha área. En plantas grandes, un mismo sector tiene múltiples zonas de trabajo, lo que dificulta al técnico localizar el problema reportado.
 
 <p align="center">
-  <img src="docs/images/ch5-img-51.png" width="600">
+  <img src="images/ch5-img-51.png" width="600">
 </p>
 
 **Recomendación:**
@@ -3437,7 +3437,7 @@ porque ahora usamos una decoumentacion basica y los reportes se pierden. Con est
 reportar rápido y saber si alguien lo está atendiendo."*
 
 <p align="center">
-  <img src="docs/images/ch5-img-52.png" width="600">
+  <img src="images/ch5-img-52.png" width="600">
 </p>
 
 **Duración:** 3:02
