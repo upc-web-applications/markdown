@@ -2776,6 +2776,29 @@ A continuación, se presenta la relación de endpoints desarrollados durante el 
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
+**Lading page desplegada**
+
+Evidencia de actualizacion en main: 
+<p align="center">
+  <img src="images/EvidenciaLading.png" width="500"/>
+</p>
+
+Evidencia de Ladin page publicada:
+
+<p align="center">
+  <img src="images/EvidenciaLading1.png" width="500"/>
+</p>
+
+**Fronteed desplegado**
+
+Evidencia del fronteed publicado:
+
+<p align="center">
+  <img src="images/EvidenciaFront2.png" width="500"/>
+</p>
+
+
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
 ## 5.3. Validation Interviews
