@@ -2638,6 +2638,16 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 </p>
 
 
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005106.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005003.png"
+       width="750"/>
+</p>
+
 *Vista general de los recursos y endpoints correspondientes al bounded context Monitoring and Dashboard.*
 
 ##### Reports / Compliance BC
@@ -2659,6 +2669,16 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 
 <p align="center">
   <img src="images/image4-reports.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005106.png"
+       width="750"/>
+</p>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005003.png"
        width="750"/>
 </p>
 
@@ -3036,7 +3056,10 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
 1. Ir a https://dashboard.render.com
 2. Click en *New +** → **Web Service*
 
-![Captura de pantalla 2026 06 21 205339](images/ch5-img-41.png)
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205339.png"
+       width="500"/>
+</p>
 
 4. Conectar el repositorio de GitHub del backend
   
@@ -3050,11 +3073,20 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
    - *Plan:* Free
 7. Click en *Create Web Service*
 
-![Captura de pantalla 2026 06 21 205902](images/ch5-img-42.png)
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205902.png"
+       width="455"/>
+</p>
 
-![Captura de pantalla 2026 06 21 210013](images/ch5-img-43.png)
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210013.png"
+       width="500"/>
+</p>
 
-![Captura de pantalla 2026 06 21 210218](images/ch5-img-44.png)
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210218.png"
+       width="500"/>
+</p>
 
 *Despliegue automático:* Render se configura con auto-deploy por defecto. Cada `git push` a main:
 - Render detecta el cambio
