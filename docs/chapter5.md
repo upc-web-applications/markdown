@@ -1053,7 +1053,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">1. Visualización de Mapa de Calor para Supervisores</h5>
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/mapa%20de%20calor.png?raw=true" width="500"/>
+  <img src="images/mapa de calor.png" width="500"/>
 </p>
 
 *Vista principal del supervisor con acceso al mapa de calor por sectores*
@@ -1061,7 +1061,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">1. Visualización de la bandeja de tickets</h5>
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/bandeja-tickets.png?raw=true" width="500"/>
+  <img src="images/bandeja-tickets.png" width="500"/>
 </p>
 
 *Vista principal del supervisor en la bandeja de tickets*
@@ -1069,7 +1069,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">1. Visualización de gestión de activos</h5>
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/gestion-activos.png?raw=true" width="500"/>
+  <img src="images/gestion-activos.png" width="500"/>
 </p>
 
 *Vista principal del supervisor en la gestión de activos*
@@ -1077,7 +1077,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">1. Visualización del mapa de sectores</h5>
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/mapa-sectores.png?raw=true" width="500"/>
+  <img src="images/mapa-sectores.png" width="500"/>
 </p>
 
 *Vista principal del supervisor en los reportes y cumplimiento*
@@ -1085,7 +1085,7 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
 <h5 align="center">1. Visualización del directorio tecnico</h5>
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/reportes.png?raw=true" width="500"/>
+  <img src="images/reportes.png" width="500"/>
 </p>
 
 *Vista principal del supervisor en los reportes y cumplimiento*
@@ -2022,19 +2022,19 @@ https://riskguard-7fe11.web.app
 Para el bounded context de User Authentication se realizó el despliegue del frontend utilizando Vercel, debido a su integración directa con GitHub y su capacidad para desplegar ramas específicas del repositorio. Asimismo, el backend simulado fue desplegado mediante My JSON Server, utilizando un archivo `db.json` publicado en un repositorio independiente.
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/api-authentication.png?raw=true" width="500"/>
+  <img src="images/api-authentication.png" width="500"/>
 </p>
 
 Posteriormente, se configuró el archivo de entorno de producción del frontend para consumir la URL pública de My JSON Server. En el archivo `src/.env.production` se actualizó la variable `VITE_RISKGUARD_API_URL`, reemplazando la URL local por la URL pública del backend simulado.
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/my-json-server-api.png?raw=true" width="500"/>
+  <img src="images/my-json-server-api.png" width="500"/>
 </p>
 
 Para el despliegue del frontend se creó un proyecto en Vercel llamado `riskguard-user-authentication`. Este proyecto fue conectado al repositorio `upc-web-applications/Frontend`, configurando como rama de producción `feature/user-authentication`.
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/vercel-deploy.png?raw=true" width="500"/>
+  <img src="images/vercel-deploy.png" width="500"/>
 </p>
 
 FrontEnd: https://riskguard-user-authentication.vercel.app/login
@@ -2046,19 +2046,19 @@ Backend (My Json Server): https://my-json-server.typicode.com/upc-web-applicatio
 Para el bounded context de **Monitoring Dashboard** se realizó el despliegue del frontend utilizando **Vercel**, debido a su integración directa con GitHub y su soporte para aplicaciones desarrolladas con **Vite + Vue.js**.
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/deploy-monitoreo.png?raw=true" width="500"/>
+  <img src="images/deploy-monitoreo.png" width="500"/>
 </p>
 
 Para el backend simulado se creó un repositorio independiente llamado:`riskguard-monitoring-dashboard-api`. Este repositorio contiene los archivos necesarios para levantar la fake API:
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/db-json-monitoreo.png?raw=true" width="500"/>
+  <img src="images/db-json-monitoreo.png" width="500"/>
 </p>
 
 Asimismo, el backend simulado fue desplegado mediante **Render** utilizando `json-server`. Inicialmente se evaluó el uso de **My JSON Server**, sin embargo, durante la validación del endpoint `/assets` se presentó una limitación al exponer los datos del archivo `db.json`. Por ello, se optó por desplegar una fake API en Render, permitiendo conservar la estructura completa de datos requerida por el dashboard.
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/markdown/blob/main/docs/images/json-srver-monitoreo.png?raw=true" width="500"/>
+  <img src="images/json-srver-monitoreo.png" width="500"/>
 </p>
 
 FrontEnd: https://riskguard-monitoring-dashboard.vercel.app
@@ -2639,12 +2639,12 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005106.png"
+  <img src="images/postimage-screenshot-005106.png"
        width="750"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005003.png"
+  <img src="images/postimage-screenshot-005003.png"
        width="750"/>
 </p>
 
@@ -2673,12 +2673,12 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 </p>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005106.png"
+  <img src="images/postimage-screenshot-005106.png"
        width="750"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-22-005003.png"
+  <img src="images/postimage-screenshot-005003.png"
        width="750"/>
 </p>
 
@@ -3057,7 +3057,7 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
 2. Click en *New +** → **Web Service*
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205339.png"
+  <img src="images/postimage-screenshot-205339.png"
        width="500"/>
 </p>
 
@@ -3074,17 +3074,17 @@ En esta sección se presenta la evidencia del despliegue de los distintos servic
 7. Click en *Create Web Service*
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-205902.png"
+  <img src="images/postimage-screenshot-205902.png"
        width="455"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210013.png"
+  <img src="images/postimage-screenshot-210013.png"
        width="500"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn.postimage.me/2026/06/22/Captura-de-pantalla-2026-06-21-210218.png"
+  <img src="images/postimage-screenshot-210218.png"
        width="500"/>
 </p>
 

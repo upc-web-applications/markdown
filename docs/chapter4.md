@@ -252,7 +252,7 @@ La Landing Page utiliza la directiva `index, follow` para permitir su posicionam
 <meta property="og:description" content="Previene riesgos antes de que ocurran.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ris-guard-lading.vercel.app/">
-<meta property="og:image" content="https://ris-guard-lading.vercel.app/preview.png"> 
+<meta property="og:image" content="images/preview.png"> 
 ```
 
 Estas etiquetas permiten que la página sea correctamente indexada, mejore su posicionamiento en motores de búsqueda y tenga una presentación adecuada al compartirse en redes sociales.
@@ -863,13 +863,13 @@ Este diagrama muestra la integración y comunicación entre todos los Bounded Co
 A continuación, se presenta el System Context Diagram del sistema RiskGuard. En este diagrama se identifican los actores principales: Administrador/Gerente, Operario y Supervisor, quienes interactúan con la plataforma para administrar, reportar incidentes y supervisar riesgos. Asimismo, se muestran los sistemas externos que se integran con la solución, tales como Gmail (servicio de correo electrónico), Almacenamiento S3 (para guardar evidencias y reportes), Sistema de Notificaciones (para notificaciones internas y alertas) y WebSocket Server (para comunicación en tiempo real).
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/SystemContext-001%20(2).png?raw=true" width="500"/>
+  <img src="images/SystemContext-001.png" width="500"/>
 </p>
 
 ### 4.6.3. Software Architecture Container Diagrams
 A continuación, se presenta el Container Diagram del sistema RiskGuard. Este diagrama describe la arquitectura interna a nivel de contenedores, mostrando los principales componentes desplegables: el API Gateway (Node.js) como punto de entrada único, siete Bounded Contexts implementados como servicios independientes , sus respectivas bases de datos PostgreSQL (y TimescaleDB para métricas), y los sistemas externos con los que se integra (Gmail, Almacenamiento S3, Sistema de Notificaciones y WebSocket Server). Las flechas indican el flujo de comunicación entre usuarios, API Gateway, BCs, bases de datos y sistemas externos, permitiendo visualizar la distribución de responsabilidades y la estructura general del sistema.
 
-![Container Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(3).png?raw=true)
+![Container Diagram](images/Container-001-3.png)
 
 ### 4.6.4. Software Architecture Components Diagrams
 
@@ -877,47 +877,47 @@ A continuación, se presenta el Diagrama de Componentes para cada uno de los sie
 
 <p align="center">Usuario y Autenticación de Cuenta BC</p>
 <p align="center">
-  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(4).png?raw=true" width="300"/>
+  <img src="images/Container-001-4.png" width="300"/>
 </p>
 
-![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(2).png?raw=true)
+![Component Diagram](images/Component-001-2.png)
 
 Este Bounded Context es responsable de la gestión de identidad del usuario dentro del sistema, abarcando tanto el registro como la autenticación. Para ello, integra un servicio externo de correo (Gmail) para el envío de notificaciones de bienvenida, recuperación de contraseña y alertas de bloqueo. A nivel funcional, incluye queries orientados a la validación de token JWT, verificación de roles, consulta de estado de cuenta y conteo de intentos fallidos; y commands destinados a la creación de cuentas, actualización de perfil, cambio de contraseña, bloqueo, desbloqueo y desactivación de cuentas. Finalmente, la información es persistida en bases de datos PostgreSQL de usuarios, sesiones y auditoría, garantizando la consistencia y seguridad de los datos.
 
 <p align="center">Sede / Área y Activo industrial BC</p>
 <p align="center">
-  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(5).png?raw=true" width="300"/>
+  <img src="images/Container-001-5.png" width="300"/>
 </p>
 
-![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(3).png?raw=true)
+![Component Diagram](images/Component-001-3.png)
 
 Este Bounded Context es responsable de la gestión de la estructura organizacional y los activos industriales dentro del sistema. Para ello, integra un servicio externo de notificaciones para alertar sobre cambios de estado y traslados de activos. A nivel funcional, incluye queries orientados a listar sectores activos, validar nombres duplicados, obtener activos por sector y verificar historial de riesgos; y commands destinados a la creación, edición, activación y desactivación de sectores, así como el registro, actualización, traslado, baja, mantenimiento y reactivación de activos industriales. Finalmente, la información es persistida en bases de datos PostgreSQL de sectores, activos e historial de ubicaciones.
 
 <p align="center">Inspección / Condición Insegura BC</p>
 <p align="center">
-  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(6).png?raw=true" width="300"/>
+  <img src="images/Container-001-6.png" width="300"/>
 </p>
 
-![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(4).png?raw=true)
+![Component Diagram](images/Component-001-4.png)
 
 Este Bounded Context es responsable de la gestión de incidentes y condiciones inseguras reportadas en el entorno laboral. Para ello, integra un servicio externo de almacenamiento S3 para guardar evidencias fotográficas y el sistema de notificaciones para alertar sobre nuevos reportes. A nivel funcional, incluye queries orientados a obtener reportes por ID, sector, estado y nivel de urgencia, así como consultar notificaciones por usuario y evidencias por reporte; y commands destinados a la creación, actualización de estado y cancelación de reportes, gestión de formularios de inspección, evaluación de condiciones inseguras, envío de notificaciones y subida de evidencias. Finalmente, la información es persistida en bases de datos PostgreSQL de incidentes, formularios, notificaciones y evidencias.
 
 <p align="center">Evaluación de Riesgo BC</p>
 
 <p align="center">
-  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(6).png?raw=true" width="300"/>
+  <img src="images/Container-001-6.png" width="300"/>
 </p>
 
-![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(4).png?raw=true)
+![Component Diagram](images/Component-001-4.png)
 
 Este Bounded Context es responsable del cálculo y análisis de riesgos mediante la metodología IPERC. Para ello, integra el sistema de notificaciones para alertar sobre patrones de riesgo recurrentes detectados. A nivel funcional, incluye queries orientados a obtener matrices IPERC por ID y sector, consultar patrones de riesgo por sector, obtener niveles de criticidad por área y listar alertas pendientes; y commands destinados al cálculo y validación de matrices IPERC, detección de patrones de recurrencia, actualización de niveles de criticidad por área, generación de resúmenes diarios y creación de alertas de patrones. Finalmente, la información es persistida en bases de datos PostgreSQL de matrices, patrones, niveles por área, resúmenes y alertas de riesgo.
 
 <p align="center">Mitigación BC</p>
 <p align="center">
-  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(7).png?raw=true" width="300"/>
+  <img src="images/Container-001-7.png" width="300"/>
 </p>
 
-![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(5).png?raw=true)
+![Component Diagram](images/Component-001-5.png)
 
 Este Bounded Context es responsable de la gestión de acciones correctivas y tickets de mitigación. Para ello, integra Gmail para el envío de notificaciones de tickets asignados y el sistema de notificaciones para alertas internas de escalamiento. A nivel funcional, incluye queries orientados a obtener tickets por ID, estado y sector, listar acciones pendientes y verificaciones por acción, así como consultar acciones asignadas por usuario; y commands destinados a la creación, asignación, actualización de estado, escalamiento y cierre de tickets, gestión de acciones correctivas, creación y aprobación de verificaciones, y asignación de acciones a usuarios. Finalmente, la información es persistida en bases de datos PostgreSQL de tickets, verificaciones, acciones asignadas y acciones correctivas.
 
@@ -926,16 +926,16 @@ Este Bounded Context es responsable de la gestión de acciones correctivas y tic
   <img src="images/container-diagram-11.png" width="300"/>
 </p>
 
-![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(8).png?raw=true)
+![Component Diagram](images/Component-001-8.png)
 
 Este Bounded Context es responsable de la visualización en tiempo real de métricas y alertas del sistema. Para ello, integra un servidor WebSocket para comunicación en tiempo real y Gmail para el envío de alertas críticas por correo. A nivel funcional, incluye queries orientados a obtener alertas por nivel de urgencia, heatmaps por sector, dashboards por usuario, métricas globales y por sector, widgets por dashboard y notificaciones pendientes; y commands destinados a la creación, actualización y resolución de alertas, generación y actualización de mapas de calor, gestión de dashboards y widgets, cálculo de métricas de riesgo y envío de notificaciones. Finalmente, la información es persistida en bases de datos de alertas, heatmaps, dashboards, widgets, notificaciones y métricas (TimescaleDB).
 
 <p align="center">Reportes y Cumplimiento BC</p>
 <p align="center">
-  <img src="https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Container-001%20(9).png?raw=true" width="300"/>
+  <img src="images/Container-001-9.png" width="300"/>
 </p>
 
-![Component Diagram](https://github.com/upc-web-applications/demo-repository/blob/main/docs/images/Component-001%20(7).png?raw=true)
+![Component Diagram](images/Component-001-7.png)
 Este Bounded Context es responsable de la generación de reportes ejecutivos e indicadores de cumplimiento. Para ello, integra Gmail para el envío de reportes programados y Almacenamiento S3 para la exportación y guardado de reportes generados. A nivel funcional, incluye queries orientados a obtener reportes por rango de fechas, cumplimiento por sector y global, tendencias de cumplimiento, datos históricos y comparación de períodos; y commands destinados a la generación, programación y exportación de reportes ejecutivos, cálculo de indicadores de cumplimiento, análisis histórico, comparación de períodos, registro de auditoría de accesos, verificación de integridad y envío de alertas de cumplimiento. Finalmente, la información es persistida en bases de datos PostgreSQL de reportes, cumplimiento, auditoría, históricos y alertas.
 
 ## 4.7. Software Object-Oriented Design
