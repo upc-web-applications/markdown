@@ -2618,7 +2618,7 @@ A continuación, se presenta la relación de endpoints desarrollados durante el 
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">IAM</td>
+      <td rowspan="5"> Account Generation and Authentication (IAM)</td>
       <td>Autenticación</td>
       <td>/api/v1/authentication</td>
       <td>POST (sign-in), POST (sign-up)</td>
@@ -2649,7 +2649,7 @@ A continuación, se presenta la relación de endpoints desarrollados durante el 
       <td>Auditoría de intentos de autenticación con IP, resultado y motivo de fallo</td>
     </tr>
     <tr>
-      <td rowspan="3">Organization Assets</td>
+      <td rowspan="3">Site / Area and Industrial (Organization Assets)</td>
       <td>Sedes</td>
       <td>/api/v1/headquarters</td>
       <td>GET, GET {id}, POST, PUT, DELETE</td>
