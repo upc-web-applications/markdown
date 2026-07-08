@@ -306,7 +306,7 @@ Se asignaron roles de liderazgo y colaboración para cada sección con el fin de
 
 En esta sección se presenta el Sprint Backlog correspondiente al Sprint 1 del proyecto, el cual tuvo como objetivo principal implementar la Landing Page de la plataforma RiskGuard y establecer la presencia digital del producto. Durante este Sprint, el equipo desarrolló User Stories relacionadas con la visualización de métricas de impacto predictivo, la interacción con botones de conversión, la presentación de la propuesta de valor y el diseño responsive de la página de aterrizaje orientada a captar potenciales clientes del sector industrial. Asimismo, se realizó la descomposición de cada User Story en tareas técnicas específicas (Work-items/Tasks), permitiendo organizar el trabajo de manera incremental, asignar responsabilidades y realizar el seguimiento del avance del Sprint mediante la herramienta de gestión del proyecto.
 
-**Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
+**Tablero Trello:** https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard
 
 ![Trello Sprint 1](images/trello-sprint-1.png)
 
@@ -436,7 +436,8 @@ A continuación, las vistas principales desarrolladas:
 </p>
 
 * Video de la Ejecución
-[Ver enlace del video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDBzzayTq6kQIJAhP26LMO3Ad0Nf1A-UaCJg4qfbtvTvh8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mg8Nk6)
+  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDBzzayTq6kQIJAhP26LMO3Ad0Nf1A-UaCJg4qfbtvTvh8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=
 
 #### 5.2.1.6. *Services Documentation Evidence for Sprint Review*
 
@@ -528,7 +529,7 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 
 En esta sección se presenta el Sprint Backlog correspondiente al Sprint 2 del proyecto, el cual tuvo como objetivo principal implementar el frontend completo de la plataforma RiskGuard con integración a una Fake API. Durante este Sprint, el equipo desarrolló User Stories relacionadas con el dashboard ejecutivo de seguridad, la visualización de tendencias de accidentabilidad, la exportación de reportes de auditoría para SUNAFIL, el seguimiento del plan anual de SST, los indicadores predictivos de riesgo, el mapa de calor operativo, la gestión de tickets correctivos con SLA, el mantenimiento preventivo de activos y la generación de reportes de cumplimiento. Asimismo, se realizó la descomposición de cada User Story en tareas técnicas específicas (Work-items/Tasks), permitiendo organizar el trabajo de manera incremental, asignar responsabilidades y realizar el seguimiento del avance del Sprint mediante la herramienta de gestión del proyecto.
 
-**Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
+**Tablero Trello:** https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard
 
 ![Trello Sprint 2](images/trello-sprint-2.png)
 
@@ -1144,20 +1145,21 @@ Durante el Sprint se lograron avances significativos en la visualización y nave
   <img src="images/ch5-img-17.jpg" width="500"/>
 </p>
 
-*Vista del Plan SST con indicadores de cumplimiento, actividades completadas y monitoreo mensual.*
+* Video de la Ejecución del Web app Dashboard Gerente
 
-* Video de la Ejecución del Web app  Dashboard Gerente
-[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQBALHFNZT8gT4yDbhrSrY9UAZIWLt8aMd3C8mnHjEJcOPc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3vniTW)
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQBALHFNZT8gT4yDbhrSrY9UAZIWLt8aMd3C8mnHjEJcOPc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3vniTW
 
-* Video de la Ejecución del Web app  Dashboard Operario
-[Ver enlace](https://1drv.ms/v/c/7E97073B2DC02368/IQC8p3wmcttLTKSZG68RWUqIAZ49lfz4UNWr2nqnkEUgzXg?e=kB406n)
+* Video de la Ejecución del Web app Dashboard Operario
+  
+https://1drv.ms/v/c/7E97073B2DC02368/IQC8p3wmcttLTKSZG68RWUqIAZ49lfz4UNWr2nqnkEUgzXg?e=kB406n
 
 * Video de la Ejecución del Web app Mitigación de accidentes y cuidado de riesgos
-[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418655_upc_edu_pe/IQC_6i5BsOJGTLdzmhEy1SD0ARj-GwAq0GY5e8ZuEKii3Xw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=PbxdK8
-)
+  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418655_upc_edu_pe/IQC_6i5BsOJGTLdzmhEy1SD0ARj-GwAq0GY5e8ZuEKii3Xw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=PbxdK8
 
-* Video de la Ejecucion del Web app Monitoreo/Dashboard
-[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231b781_upc_edu_pe/IQACbrvx365gSrZiZgk9H0ZPAYetdnOFpNdsz9cGPKd72Hw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K9zxK1)
+* Video de la Ejecución del Web app Monitoreo/Dashboard
+  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231b781_upc_edu_pe/IQACbrvx365gSrZiZgk9H0ZPAYetdnOFpNdsz9cGPKd72Hw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=K9zxK1
 
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
 
@@ -2246,7 +2248,7 @@ En este Sprint, los aspectos corresponden a los Bounded Contexts del backend de 
 
 En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3 del proyecto, el cual tuvo como objetivo principal implementar los Web Services (Backend) de RiskGuard utilizando C# / ASP.NET Core con arquitectura Domain-Driven Design (DDD). Durante este Sprint, el equipo desarrolló las Technical Stories correspondientes a los endpoints REST de los bounded contexts: IAM, OrganizationAssets, Inspections, RiskAssessments, Mitigations, Hazards, Technicians, MonitoringDashboard y ReportsCompliance.
 
-**Tablero Trello:** [Ver en Trello](https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard)
+**Tablero Trello:** https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard
 
 ![Trello Sprint 3](images/trello-sprint-3.png)
 
@@ -2684,7 +2686,7 @@ Durante el Sprint 3 se implementó y ejecutó la primera versión de los Web Ser
 
 *Vista general de los recursos y endpoints correspondientes al bounded context Reports and Compliance.*
 
-*Video de demostración:*  [Ver video en microsoft](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQAll8gqH1OTSZBfmPtTGWADARPeg5vTnz514xeDGxJ4mhQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6RRLJw) 
+*Video de demostración:* https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQAll8gqH1OTSZBfmPtTGWADARPeg5vTnz514xeDGxJ4mhQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6RRLJw
 
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
@@ -3320,13 +3322,13 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 | **Entrevista Nro. 1** |
 |---|
 | <img src="images/bc/Operario.png" width="330" hspace="230"> |
-| **Entrevistado N°1:** Fabrizio Vacca <br> **Edad:** 28 años<br>**Ubicación:** Los Olivos<br>**Cargo:** Operario de Planta — Sector Manufactura<br><br> **Entrevista:** [Ver en One Drive](https://1drv.ms/v/c/7E97073B2DC02368/IQAE46rrHvs3QJDtniYrXsG0AR8jxBw5mSr1altIVn-HNBA?e=eYUCdP) <br>**Instante del que inicia:** 00:00<br> **Duración:** 12:27 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza al ver el mensaje principal "Predice los riesgos antes de que ocurran", señalando que refleja una necesidad real en su planta donde los incidentes muchas veces no se reportan a tiempo. Destacó la sección de estadísticas, especialmente el dato de 83% de trabajadores que mejoran cuando sus supervisores usan herramientas de seguimiento, considerándolo muy cercano a su realidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección sin necesidad de orientación, calificando el dashboard como intuitivo y directo. Respecto al formulario, indicó que los campos son suficientes para describir una situación de riesgo real, valorando especialmente los botones de color para el nivel de urgencia, asociando el rojo con situaciones que requieren atención inmediata. La confirmación con el número de ticket le generó confianza de que su reporte fue recibido correctamente, algo que destacó como una diferencia clave frente al proceso actual en su planta donde el reporte se hace en papel y no hay forma de hacer seguimiento. En la sección de Inspecciones, encontró fácilmente su reporte y comprendió los estados Pendiente, En Progreso y Resuelto sin necesidad de explicación. Calificó la facilidad de uso con un 5 de 5, afirmando que el sistema representaría una mejora real ya que actualmente el proceso de reporte es lento, manual y muchas veces los reportes se pierden. Como única sugerencia, mencionó que agregaría la opción de reportar la ubicación exacta dentro del área mediante un mapa simple. |
+| **Entrevistado N°1:** Fabrizio Vacca <br> **Edad:** 28 años<br>**Ubicación:** Los Olivos<br>**Cargo:** Operario de Planta — Sector Manufactura<br><br> **Entrevista:** https://1drv.ms/v/c/7E97073B2DC02368/IQAE46rrHvs3QJDtniYrXsG0AR8jxBw5mSr1altIVn-HNBA?e=eYUCdP <br>**Instante del que inicia:** 00:00<br> **Duración:** 12:27 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza al ver el mensaje principal "Predice los riesgos antes de que ocurran", señalando que refleja una necesidad real en su planta donde los incidentes muchas veces no se reportan a tiempo. Destacó la sección de estadísticas, especialmente el dato de 83% de trabajadores que mejoran cuando sus supervisores usan herramientas de seguimiento, considerándolo muy cercano a su realidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección sin necesidad de orientación, calificando el dashboard como intuitivo y directo. Respecto al formulario, indicó que los campos son suficientes para describir una situación de riesgo real, valorando especialmente los botones de color para el nivel de urgencia, asociando el rojo con situaciones que requieren atención inmediata. La confirmación con el número de ticket le generó confianza de que su reporte fue recibido correctamente, algo que destacó como una diferencia clave frente al proceso actual en su planta donde el reporte se hace en papel y no hay forma de hacer seguimiento. En la sección de Inspecciones, encontró fácilmente su reporte y comprendió los estados Pendiente, En Progreso y Resuelto sin necesidad de explicación. Calificó la facilidad de uso con un 5 de 5, afirmando que el sistema representaría una mejora real ya que actualmente el proceso de reporte es lento, manual y muchas veces los reportes se pierden. Como única sugerencia, mencionó que agregaría la opción de reportar la ubicación exacta dentro del área mediante un mapa simple. |
 
 
 | **Entrevista Nro. 2** |
 |---|
 | <img src="images/ch5-img-47.png" width="330" hspace="230"> |
-| **Entrevistado N°2:** Rocío Acosta <br> **Edad:** 21 años<br>**Ubicación:** Pueblo Libre<br>**Cargo:** Operaria de Producción<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDzCVuI3MO7Qq7Q2wM__nhIAXxVlF9JemhOtM5P4NV_WjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=QPDAVj) <br>**Instante del que inicia:** 00:00<br> **Duración:** 5:51 <br><br> **Resumen:** <br><br> La participante indicó que el Landing Page le permitió entender rápidamente que RiskGuard es una plataforma para reportar riesgos en planta. Destacó la sección de estadísticas como la que más le llamó la atención, señalando que los números reales de incidentes reducidos le parecen importantes y generan credibilidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección, calificándolo como intuitivo y visible desde el dashboard. Respecto al formulario, consideró que los campos son completos y suficientes para describir un incidente, valorando especialmente la opción de adjuntar una foto como muy útil para estos casos. Los botones de color para el nivel de urgencia le resultaron muy claros, asociándolos con un semáforo: verde es leve, naranja es medio y rojo es urgente. La confirmación con el número de ticket le generó confianza y tranquilidad de que su reporte queda registrado y puede hacer seguimiento. En la sección de Inspecciones, encontró su reporte rápidamente, destacando que los estados con colores y la organización facilitan la navegación. No identificó ninguna pantalla o botón donde no supiera qué hacer, señalando que todo fue directo y guiado paso a paso. Calificó la facilidad de uso con un 5 de 5, afirmando que los pasos son claros y no solicitan información innecesaria. Confirmó que el sistema representaría una mejora real ya que actualmente usan papel, los reportes se pierden y no hay forma de verificar si alguien los está atendiendo. Como única sugerencia, mencionó que haría las letras del formulario más grandes y claras, ya que en pantallas con fondo oscuro cuesta leer textos pequeños, especialmente desde el celular. |
+| **Entrevistado N°2:** Rocío Acosta <br> **Edad:** 21 años<br>**Ubicación:** Pueblo Libre<br>**Cargo:** Operaria de Producción<br><br>**Entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDzCVuI3MO7Qq7Q2wM__nhIAXxVlF9JemhOtM5P4NV_WjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0% <br>**Instante del que inicia:** 00:00<br> **Duración:** 5:51 <br><br> **Resumen:** <br><br> La participante indicó que el Landing Page le permitió entender rápidamente que RiskGuard es una plataforma para reportar riesgos en planta. Destacó la sección de estadísticas como la que más le llamó la atención, señalando que los números reales de incidentes reducidos le parecen importantes y generan credibilidad. Al ingresar a la aplicación, identificó rápidamente el botón de Registrar Inspección, calificándolo como intuitivo y visible desde el dashboard. Respecto al formulario, consideró que los campos son completos y suficientes para describir un incidente, valorando especialmente la opción de adjuntar una foto como muy útil para estos casos. Los botones de color para el nivel de urgencia le resultaron muy claros, asociándolos con un semáforo: verde es leve, naranja es medio y rojo es urgente. La confirmación con el número de ticket le generó confianza y tranquilidad de que su reporte queda registrado y puede hacer seguimiento. En la sección de Inspecciones, encontró su reporte rápidamente, destacando que los estados con colores y la organización facilitan la navegación. No identificó ninguna pantalla o botón donde no supiera qué hacer, señalando que todo fue directo y guiado paso a paso. Calificó la facilidad de uso con un 5 de 5, afirmando que los pasos son claros y no solicitan información innecesaria. Confirmó que el sistema representaría una mejora real ya que actualmente usan papel, los reportes se pierden y no hay forma de verificar si alguien los está atendiendo. Como única sugerencia, mencionó que haría las letras del formulario más grandes y claras, ya que en pantallas con fondo oscuro cuesta leer textos pequeños, especialmente desde el celular. |
 
 
 **Segmento objetivo #2: Supervisores de Seguridad y Mantenimiento**
@@ -3334,7 +3336,7 @@ Al inicio de cada sesión se le explica al participante que el objetivo es proba
 | **Entrevista Nro. 1** |
 |---|
 | <img src="images/ch5-img-48.png" width="330" hspace="230"> |
-| **Entrevistado N°2:** Álvaro Pablo <br> **Edad:** 25 años<br>**Ubicación:** Barranca<br>**Cargo:** Supervisor de seguridad y mantenimiento<br><br> **Entrevista:** [Ver en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQB1uHcy34fvSqQwXjrQbD-iAe9CaOKMJZslPIPAD3BTcko) <br>**Instante del que inicia:** 00:00<br> **Duración:** 7:18 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza porque identifica los procesos de planta relacionados con seguridad industrial, destacando que los colores son intuitivos y que la plataforma aplica la metodología IPERC, la cual utiliza en su campo de ingeniería industrial. Al ver el dashboard con el mapa de calor, identificó rápidamente qué sectores requieren atención gracias a la diferenciación por colores, asociando el rojo con criticidad grave. Los badges de color le resultaron claros para diferenciar la urgencia de cada ticket. Respecto al detalle del ticket, consideró que la información presentada es suficiente para tomar una decisión sobre la acción correctiva, ya que identifica el sector y muestra el estado actual del problema. El proceso de asignar un técnico le pareció directo y eficiente. La etiqueta "SLA Incumplido" le resultó entendible para priorizar acciones y no sugirió agregar otra señal visual. En el módulo de configuración, el flujo de crear sedes y registrar activos le pareció sencillo y completo, valorando los nombres claros y las descripciónes rápidas de cada proceso. Calificó la completitud del flujo de gestión de tickets con un 4 de 5, señalando que el sistema ayuda a identificar lo que ocurre de manera rápida y centralizada. Confirmó que el sistema reduciría el tiempo dedicado a gestionar incidentes, ya que actualmente debe llenar documentos físicos, hacer llamadas y registrar en bases de datos manuales. Como única sugerencia, mencionó que cambiaría los colores del fondo en la sección de alertas, haciendo que el rojo sea más llamativo para destacar mejor las alertas críticas. |
+| **Entrevistado N°2:** Álvaro Pablo <br> **Edad:** 25 años<br>**Ubicación:** Barranca<br>**Cargo:** Supervisor de seguridad y mantenimiento<br><br> **Entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQB1uHcy34fvSqQwXjrQbD-iAe9CaOKMJZslPIPAD3BTcko <br>**Instante del que inicia:** 00:00<br> **Duración:** 7:18 <br><br> **Resumen:** <br><br> El participante indicó que el Landing Page le transmitió confianza porque identifica los procesos de planta relacionados con seguridad industrial, destacando que los colores son intuitivos y que la plataforma aplica la metodología IPERC, la cual utiliza en su campo de ingeniería industrial. Al ver el dashboard con el mapa de calor, identificó rápidamente qué sectores requieren atención gracias a la diferenciación por colores, asociando el rojo con criticidad grave. Los badges de color le resultaron claros para diferenciar la urgencia de cada ticket. Respecto al detalle del ticket, consideró que la información presentada es suficiente para tomar una decisión sobre la acción correctiva, ya que identifica el sector y muestra el estado actual del problema. El proceso de asignar un técnico le pareció directo y eficiente. La etiqueta "SLA Incumplido" le resultó entendible para priorizar acciones y no sugirió agregar otra señal visual. En el módulo de configuración, el flujo de crear sedes y registrar activos le pareció sencillo y completo, valorando los nombres claros y las descripciónes rápidas de cada proceso. Calificó la completitud del flujo de gestión de tickets con un 4 de 5, señalando que el sistema ayuda a identificar lo que ocurre de manera rápida y centralizada. Confirmó que el sistema reduciría el tiempo dedicado a gestionar incidentes, ya que actualmente debe llenar documentos físicos, hacer llamadas y registrar en bases de datos manuales. Como única sugerencia, mencionó que cambiaría los colores del fondo en la sección de alertas, haciendo que el rojo sea más llamativo para destacar mejor las alertas críticas. |
 
 
 ### 5.3.3. Evaluaciones según heurísticas
@@ -3469,11 +3471,11 @@ porque ahora usamos una decoumentacion basica y los reportes se pierden. Con est
 reportar rápido y saber si alguien lo está atendiendo."*
 
 <p align="center">
-  <img src="images/ch5-img-52.png" width="600">
+  <img src="https://i.postimg.cc/hjPhggWj/Captura-de-pantalla-2026-07-07-212302.png" width="600">
 </p>
 
 **Duración:** 3:02
 
-**Publicación en Microsoft Stream:** [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDS3kUSnobBSYNlDg4pDzxSAXNcqLYT66AZhYrsAVPt7_E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=tWxAUo)
+**Publicación en Microsoft Stream:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDS3kUSnobBSYNlDg4pDzxSAXNcqLYT66AZhYrsAVPt7_E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJ
 
-**Publicación en YouTube:** [Ver video](https://youtu.be/ZD5rg0QELU0)
+**Publicación en YouTube:** https://youtu.be/ZD5rg0QELU0
