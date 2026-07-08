@@ -45,28 +45,96 @@ La solución RiskGuard se caracteriza por su capacidad para registrar y centrali
 
 ### 1.2.1. Antecedentes y problemática
 
-En el Perú, la gestión de la seguridad y salud en el trabajo (SST) enfrenta limitaciones considerables en la prevención y control de riesgos laborales. El Informe Anual de Gestión de SST - 2020 evidencia incumplimientos como la omisión de exámenes médicos ocupacionales y la ausencia de monitoreos de riesgos en sus diversas categorías: químicos, biológicos, físicos, psicosociales y ergonómicos (Provías Descentralizado, 2020).  Esta situación pone de manifiesto una brecha persistente entre la normativa vigente y su implementación efectiva en las organizaciones, lo que incrementa la exposición de los trabajadores a condiciones inseguras.
+En el Perú, la gestión de la Seguridad y Salud en el Trabajo (SST) todavía presenta dificultades para registrar, evaluar y atender oportunamente los riesgos laborales. Esta problemática es especialmente relevante en las actividades industriales, donde los trabajadores se encuentran expuestos a maquinaria, ruido, sustancias químicas, esfuerzos físicos y condiciones operativas cambiantes. Cuando los incidentes y condiciones inseguras se registran mediante papel, hojas de cálculo o comunicaciones informales, la información queda dispersa y se dificulta el seguimiento de las acciones correctivas.
 
-Este escenario impacta principalmente a los sectores industriales, donde los peligros ocupacionales constituyen un componente integral de la dinámica laboral diaria. La carencia de mecanismos de supervisión continua, así como de herramientas eficientes para el registro de incidentes y condiciones de riesgo, dificulta la detección temprana de situaciones que podrían derivar en accidentes laborales o enfermedades ocupacionales.
+Según el Ministerio de Trabajo y Promoción del Empleo (MTPE, 2025), en diciembre de 2024 se registraron 3 568 notificaciones relacionadas con la SST: 3 512 accidentes de trabajo no mortales, 19 accidentes mortales, 32 incidentes peligrosos y 5 enfermedades ocupacionales. Las industrias manufactureras concentraron el mayor porcentaje de notificaciones por actividad económica, con el 19,98 % del total. Asimismo, SUNAFIL informó que entre 2023 y 2024 realizó 2 818 inspecciones relacionadas con accidentes de trabajo, de las cuales 381 estuvieron vinculadas con accidentes mortales (SUNAFIL, 2024).
 
-El sector minero, reconocido como un pilar fundamental de la economía nacional, presenta un panorama preocupante en cuanto a la salud ocupacional de sus trabajadores. Un estudio exhaustivo que abarca el periodo 2011-2020 documenta un total de 37,899 casos de enfermedades ocupacionales en este sector, con la hipoacusia emergiendo como la afección más prevalente, representando el 90.74% de los casos. Le siguen en frecuencia la neumoconiosis, con un 4.94%, y la intoxicación por mercurio, con un 0.03% (Aquino Canchari et al., 2022).  Estos datos evidencian la persistencia de factores de riesgo inherentes a la exposición prolongada a ruido, polvo y sustancias químicas, los cuales continúan impactando negativamente la salud de los trabajadores mineros.
+Estas cifras evidencian la necesidad de contar con mecanismos que conecten el reporte de un peligro con su evaluación, asignación, mitigación y cierre. Una gestión deficiente puede afectar la salud de los trabajadores, interrumpir las operaciones y reducir la productividad. Para comprender esta problemática de manera estructurada se aplica la técnica de las 5W+2H:
 
-Las deficiencias en la gestión de la información relacionada con la seguridad laboral representan un obstáculo considerable para la implementación de estrategias preventivas eficaces.  En numerosas organizaciones, el registro de incidentes y eventos peligrosos carece de sistematización y se realiza mediante procesos manuales, lo que limita el análisis oportuno de la información y la identificación de patrones de riesgo recurrentes.
+**What (¿Qué?)**
 
-Desde una perspectiva organizacional, la gestión inadecuada de la Seguridad y Salud en el Trabajo (SST) no solo impacta la salud y bienestar de los trabajadores, sino que también afecta el desempeño y la competitividad empresarial.  Diversos estudios han demostrado que la inversión estratégica en SST contribuye a la reducción de accidentes laborales, sanciones económicas, niveles de estrés y ausentismo, al tiempo que favorece la productividad y la eficiencia operativa (Vargas & Gutiérrez, 2021).  En este contexto, resulta imperativo implementar soluciones integrales que optimicen la gestión preventiva de la SST.
+**¿Cuál es el problema?**
 
-En respuesta a esta problemática, el proyecto RiskGuard propone el desarrollo de una aplicación web robusta y escalable, diseñada para centralizar la información relacionada con la seguridad laboral.  Esta plataforma facilitará el registro eficiente de incidentes y condiciones de riesgo, y empleará reglas de negocio avanzadas para el análisis de datos y la generación de alertas predictivas.  De esta manera, se busca fortalecer la toma de decisiones estratégicas, anticipar posibles riesgos y contribuir a la reducción de accidentes en entornos industriales complejos.
+El problema central es la falta de un proceso integrado y trazable para registrar, evaluar, atender y monitorear los riesgos laborales. Muchas empresas recopilan datos de inspecciones, incidentes y condiciones inseguras mediante herramientas manuales o desconectadas que no permiten seguir el ciclo completo desde la identificación del peligro hasta el cierre de la acción de mitigación.
+
+**¿Cuál es la relación con las personas afectadas?**
+
+Los operarios son quienes detectan primero numerosos peligros dentro de la planta, pero necesitan un medio rápido para reportarlos y conocer su estado. Los supervisores deben evaluar la criticidad, asignar responsables y controlar plazos, aunque con frecuencia trabajan con información dispersa. Los gerentes necesitan indicadores consolidados para tomar decisiones y comprobar el desempeño de la gestión de SST, pero reciben reportes tardíos o incompletos.
+
+**When (¿Cuándo?)**
+
+**¿Cuándo sucede el problema?**
+
+El problema se presenta durante toda la operación industrial: al ejecutar inspecciones, detectar actos o condiciones inseguras, reportar incidentes y casi-accidentes, evaluar riesgos, programar mantenimientos o verificar acciones correctivas. Se intensifica cuando existe alta carga operativa, cambios de turno, actividades de mantenimiento, ingreso de personal nuevo o necesidad de responder rápidamente ante un riesgo crítico.
+
+**Where (¿Dónde?)**
+
+**¿Dónde surge el problema?**
+
+Surge principalmente en plantas industriales, sedes operativas, áreas de producción, almacenes, talleres y zonas de mantenimiento donde existen peligros asociados con personas, procesos y activos. También continúa en las oficinas de seguridad y administración, donde los datos deben consolidarse para elaborar indicadores, reportes y evidencias de cumplimiento.
+
+**¿Dónde se encuentra el usuario cuando necesita la solución?**
+
+El operario puede encontrarse en la planta mientras realiza sus labores y dispone de poco tiempo para completar un reporte. El supervisor puede estar recorriendo diferentes áreas o gestionando casos desde una computadora. El gerente consulta información resumida desde un entorno administrativo. Por ello, la solución debe ser web, responsive y comprensible desde distintos dispositivos.
+
+**Who (¿Quién?)**
+
+**¿Quiénes están involucrados?**
+
+Los principales involucrados son los operarios de planta, los supervisores de seguridad y mantenimiento, los técnicos responsables de acciones correctivas y los gerentes o administradores de empresas industriales. De manera indirecta también participan las áreas de recursos humanos, cumplimiento y dirección, que requieren evidencia confiable sobre la gestión de SST.
+
+**¿A quiénes les sucede el problema?**
+
+El problema afecta principalmente a organizaciones que aún dependen de registros manuales, hojas de cálculo, mensajes o sistemas aislados. Dentro de ellas, afecta a los trabajadores expuestos a peligros, a los supervisores responsables de prevenir accidentes y a los directivos que necesitan controlar el desempeño y el cumplimiento de la organización.
+
+**Why (¿Por qué?)**
+
+**¿Cuáles son las causas del problema?**
+
+Entre las principales causas se encuentran la dependencia de procesos manuales, la fragmentación de la información entre diferentes áreas, la ausencia de un flujo común para gestionar hallazgos y mitigaciones, la limitada trazabilidad de responsables y plazos, y la demora en transformar los registros operativos en indicadores útiles. También influyen el poco tiempo disponible para reportar, la falta de retroalimentación al operario y el uso de herramientas que no están adaptadas a los roles y necesidades de una operación industrial.
+
+**How (¿Cómo?)**
+
+**¿Cómo se gestiona actualmente la situación?**
+
+Los hallazgos suelen registrarse mediante formatos físicos, archivos de Excel, llamadas, mensajes o aplicaciones independientes. Posteriormente, un responsable debe consolidar manualmente la información, evaluar el nivel de riesgo, coordinar la atención y preparar reportes. Este proceso incrementa la posibilidad de duplicidad, omisiones, errores y pérdida de seguimiento.
+
+**¿Cómo prefieren los usuarios acceder a la información?**
+
+Los operarios requieren formularios breves y claros que puedan completar desde un teléfono, tablet o computadora y que confirmen inmediatamente el registro. Los supervisores necesitan una bandeja priorizada con niveles de criticidad, responsables, plazos y estados. Los gerentes requieren dashboards, tendencias, mapas de calor e informes exportables que resuman la situación de la organización.
+
+**How much (¿Cuánto?)**
+
+**¿Cuál es la magnitud del problema?**
+
+El estudio de Aquino Canchari et al. (2022) registró 37 899 casos de enfermedades ocupacionales en el sector minero peruano entre 2011 y 2020. De ese total, el 90,74 % correspondió a hipoacusia y el 4,94 % a neumoconiosis. Si bien estas cifras pertenecen al sector minero, evidencian la magnitud que puede alcanzar la exposición prolongada a peligros físicos y ambientales cuando la prevención y el monitoreo resultan insuficientes.
+
+**¿Qué impacto genera en las organizaciones?**
+
+El impacto no se limita al número de accidentes o enfermedades. También comprende horas de trabajo perdidas, ausentismo, retrasos operativos, acciones correctivas vencidas, posibles sanciones y tiempo administrativo destinado a consolidar información. Vargas y Gutiérrez (2021) sostienen que una inversión adecuada en SST puede reducir accidentes, sanciones, estrés y ausentismo, además de favorecer la productividad y la eficiencia.
+
+**Figura 1**
+
+*Notificaciones de accidentes de trabajo según actividad económica, diciembre de 2024.*
+
+[![Captura-de-pantalla-2026-07-08-144253.png](https://i.postimg.cc/MGRyhQfH/Captura-de-pantalla-2026-07-08-144253.png)](https://postimg.cc/kVJ6SDcP)
+
+*Nota.* Adaptado del *Boletín Estadístico Mensual de Notificaciones de Accidentes de Trabajo, Incidentes Peligrosos y Enfermedades Ocupacionales*, por el Ministerio de Trabajo y Promoción del Empleo (2025).
 
 
 ### 1.2.2. Lean UX Process
 
+En esta sección aplicamos el Lean UX Process con el propósito de comprender la problemática relacionada con la gestión de riesgos laborales y orientar el desarrollo de RiskGuard hacia las necesidades reales de sus usuarios. Para ello, presentamos el Lean UX Problem Statement, las Assumptions, los Hypothesis Statements y el Lean UX Canvas. Estos artefactos permiten identificar los principales problemas de operarios, supervisores y gerentes, establecer las suposiciones iniciales del equipo, formular hipótesis medibles y definir las funcionalidades necesarias para validar la propuesta de valor de la solución.
+
 #### 1.2.2.1. Lean UX Problem Statements
 
-Nuestra plataforma se sitúa en el dominio de la Seguridad y Salud en el Trabajo (SST) bajo un enfoque de analítica predictiva. Está dirigida principalmente a empresas del sector manufacturero y logístico en el Perú, las cuales operan bajo la normativa de la Ley N° 29783. Actualmente, estos segmentos carecen de herramientas digitales que permitan procesar indicadores preventivos en tiempo real, limitándose al registro reactivo de accidentes ya ocurridos
+El proyecto RiskGuard propone una aplicación web para fortalecer la Seguridad y Salud en el Trabajo en empresas industriales peruanas. Mediante una experiencia accesible y diferenciada por roles, la plataforma permite que los operarios registren incidentes, casi-accidentes y condiciones inseguras; que los supervisores evalúen riesgos mediante criterios IPERC, asignen responsables y gestionen acciones de mitigación; y que los gerentes consulten indicadores, tendencias y reportes para tomar decisiones. Su objetivo es integrar en un solo entorno digital el registro, la evaluación, la atención y el monitoreo de los riesgos laborales, mejorando la prevención y la trazabilidad de las acciones correctivas.
 
-Hemos identificado como problema central la alta dependencia de procesos manuales, lo que genera una "ceguera operativa": los datos de incidentes menores, fallas de maquinaria y actos inseguros no se cruzan ni se analizan. Esta fragmentación de la información impide identificar patrones de riesgo antes de que se conviertan en accidentes fatales o paradas de planta costosas
+Dentro de las empresas industriales, se busca que la identificación de un peligro produzca una respuesta oportuna y verificable antes de que la situación derive en un accidente. No obstante, observamos que una parte importante de las inspecciones, incidentes y condiciones inseguras todavía se registra mediante papel, hojas de cálculo o canales informales. Estos medios no ofrecen un proceso continuo que conecte el hallazgo con su evaluación, la asignación de un responsable, la ejecución de una medida de mitigación y la comprobación de su cierre. Esto se refleja en información dispersa, subregistro de eventos, dificultades para priorizar riesgos críticos, acciones correctivas fuera de plazo y poca visibilidad gerencial sobre el estado real de la seguridad en la organización.
 
-Nuestra visión es ofrecer una aplicación web desarrollada con C# y Vue.js que actúe como un motor de inteligencia preventiva. El sistema permitirá a los supervisores reportar condiciones inseguras mediante una interfaz dinámica, mientras que un motor de reglas en el backend calculará automáticamente niveles de criticidad.
+Aunque actualmente existen formularios digitales, sistemas documentales y herramientas generales para registrar incidencias, identificamos que la integración entre la operación en planta, la gestión del supervisor y el análisis gerencial continúa siendo limitada. Ahí radica la oportunidad que RiskGuard desea aprovechar: intervenir en la brecha existente entre la detección de una condición insegura y su atención efectiva, centralizando sedes, áreas, activos, inspecciones, evaluaciones IPERC, mitigaciones, tickets, técnicos, dashboards y reportes. La solución se dirige inicialmente a empresas de manufactura y operaciones de planta que dependen de procesos manuales o herramientas fragmentadas, considerando restricciones como la disponibilidad de tiempo de los operarios, la conectividad en determinadas zonas, el acceso desde distintos dispositivos, la calidad de los datos registrados y la necesidad de proteger la información según el rol del usuario.
+
+**¿Cómo podríamos conectar el reporte, la evaluación, la mitigación y el monitoreo de los riesgos laborales para que operarios, supervisores y gerentes actúen de manera coordinada y oportuna, aun cuando existen limitaciones de tiempo, conectividad y acceso a dispositivos dentro de las operaciones industriales?**
 
 #### 1.2.2.2. Lean UX Assumptions
 
