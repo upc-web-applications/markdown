@@ -3511,3 +3511,33 @@ reportar rápido y saber si alguien lo está atendiendo."*
 **Publicación en Microsoft Stream:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDS3kUSnobBSYNlDg4pDzxSAXNcqLYT66AZhYrsAVPt7_E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJ
 
 **Publicación en YouTube:** https://youtu.be/ZD5rg0QELU0
+
+
+## Video About The Team
+
+El video About-the-Team resume el proceso de trabajo realizado por el equipo RiskGuard Solutions durante el ciclo de desarrollo del proyecto. El contenido incluye escenas de sesiones de trabajo real del equipo, complementadas con narración en voz en off que describe el proceso de ingeniería aplicado a lo largo de los sprints. Además, incluye el testimonio ante cámara de cada integrante del equipo describiendo las actividades realizadas, el logro de outcomes y el desarrollo de competencias alcanzados.
+
+**Pauta de secuencias de contenido:**
+
+| Sección | Inicio | Descripción |
+|---|---|---|
+| Introducción | 00:00:00 | Presentación del equipo RiskGuard Solutions y objetivo del proyecto |
+| Contexto del problema | 00:00:35 | Problemática de seguridad industrial en el Perú y propuesta de solución |
+| Avance 1 - Sprint 1 | 00:01:26 | Documentación, Event Storming, diseño en Figma y despliegue de Landing Page |
+| Sprint 2 | 00:02:07 | Desarrollo del frontend, flujos por rol de usuario |
+| Sprint 3 | 00:03:21 | Desarrollo del backend |
+| Sprint 4 | 00:03:46 | Desarrollo del backend |
+| Reflexión del equipo | 00:04:029 | Retos enfrentados, aprendizajes y dinámica de trabajo |
+| Testimonio - Isabel Aponte | 00:05:05 | Actividades, outcomes y competencias desarrolladas |
+| Testimonio - Angel Flores | 00:06:18 | Actividades, outcomes y competencias desarrolladas |
+| Testimonio - Carlos Blancas | 00:06:18 | Actividades, outcomes y competencias desarrolladas |
+| Testimonio - Angel Flores | 00:08:06 | Actividades, outcomes y competencias desarrolladas |
+| Testimonio - Victor Laura | 00:09:22 | Actividades, outcomes y competencias desarrolladas |
+
+[![Captura-de-pantalla-2026-07-08-135341.png](https://i.postimg.cc/DZqGm37y/Captura-de-pantalla-2026-07-08-135341.png)](https://postimg.cc/62pq1S7D)
+
+**Duración:** 10:43
+
+**Publicación en Microsoft Stream:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQC62MWXlu3BSrX6BPSJ10IbAU8bJK86j_s47jJrOM_iphI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=YnZe0R
+
+**Publicación en YouTube:** https://youtu.be/-lwwjGcMRxY?si=OqaPV_xGQ6MjG0Fw
