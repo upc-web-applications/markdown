@@ -3197,6 +3197,16 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 </p>
 
 
+### 5.2.4. Sprint 4
+#### 5.2.4.1. Spring Planning 4.
+#### 5.2.4.2. Aspect Leaders and Collaborators.
+#### 5.2.4.3. Sprint Backlog 4.
+#### 5.2.4.4. Development Evidence for Sprint Review.
+#### 5.2.4.5. Execution Evidence for Sprint Review.
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review.
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+#### 5.2.4.8. Team Collaboration Insights during Sprint.
+
 ## 5.3. Validation Interviews
 
 En esta sección se registran las entrevistas de validación del proyecto. A diferencia de las entrevistas de la sección 2.2, donde se buscaba descubrir problemas y necesidades, aquí el objetivo es verificar si lo que construimos realmente funciona para los usuarios y si les resulta fácil de usar.
