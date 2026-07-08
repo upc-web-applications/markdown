@@ -585,7 +585,7 @@ Esta sección presenta los mock-ups de alta fidelidad de la aplicación web de R
 
 #### Pantalla de Login
 
-![Mockup Login](images/mockup-login.png)
+![Mockup Login](images/mockup-login.png)f
 
 *Ilustración – Web Application Mock-up: Pantalla de Login*
 
@@ -743,7 +743,7 @@ El prototipo cubre los siguientes flujos principales de interacción, representa
 
 *Demostración del funcionamiento del sistema.*
 
-[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDnlJ5QrLMvQJNFmpy7IZ6qAcJvvWF7wScF0tDJGNWzLc0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Nb2ZHe)
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDnlJ5QrLMvQJNFmpy7IZ6qAcJvvWF7wScF0tDJGNWzLc0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Nb2ZHe
 
 ## 4.6. Domain-Driven Software Architecture
 
