@@ -3201,7 +3201,7 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 
 #### 5.2.4.1. Sprint Planning 4.
 
-n el Sprint 4, el equipo se enfocará en integrar el frontend desarrollado en Vue 3 con los Web Services implementados en ASP.NET Core durante el sprint anterior. El propósito principal será reemplazar el consumo de datos simulados de `json-server` por los endpoints reales del backend, de modo que los principales flujos de RiskGuard funcionen de extremo a extremo..
+En el Sprint 4, el equipo se enfocará en integrar el frontend desarrollado en Vue 3 con los Web Services implementados en ASP.NET Core durante el sprint anterior. El propósito principal será reemplazar el consumo de datos simulados de json-server por los endpoints reales del backend, de modo que los principales flujos de RiskGuard funcionen de extremo a extremo..
 
 La integración se realizará progresivamente por bounded context. Para cada módulo se revisarán y alinearán los contratos de la API, las rutas, los modelos de datos y los códigos de respuesta; después se adaptarán los servicios y stores del frontend, se configurarán las variables de entorno y CORS, y se validarán las operaciones de consulta, registro, actualización y eliminación. También se corregirán incompatibilidades entre ambas aplicaciones y se incorporará un manejo consistente de estados de carga, validaciones, errores y sesiones expiradas.
 
@@ -3213,7 +3213,7 @@ El sprint priorizará los flujos críticos de los tres perfiles de usuario. El o
 | Date | 2026-03-07 |
 | Time | 4:00 PM |
 | Location | Reunión virtual (Google Meet) |
-| Prepared By | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Prepared By |Flores Eusebio, Angel Thyago |
 | Attendees (to planning meeting) | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
 | Sprint n – 3 Review Summary | Durante el Sprint 3 se implementaron los Web Services de RiskGuard con C# y ASP.NET Core, organizados mediante Domain-Driven Design y bounded contexts. Se desarrollaron endpoints REST para autenticación y generación de cuentas, sedes, áreas, activos industriales, inspecciones, evaluación y mitigación de riesgos, técnicos, monitoreo y reportes. Asimismo, se incorporaron persistencia en MySQL, autenticación JWT y documentación con Swagger. Los servicios fueron integrados en la rama principal, desplegados en Render y validados individualmente mediante solicitudes HTTP; sin embargo, el frontend todavía no consume de forma completa el backend real. |
 | Sprint n – 3 Retrospective Summary | El equipo logró distribuir el desarrollo del backend por bounded context y consolidar los módulos mediante ramas feature y pull requests. Como principal oportunidad de mejora se identificó que algunos contratos, nombres de campos y estructuras de respuesta no coinciden completamente con los modelos utilizados por el frontend. Para este sprint se acordó validar primero cada contrato con Swagger, integrar módulo por módulo, mantener una configuración centralizada de la URL base y del token JWT, y realizar pruebas de extremo a extremo antes de considerar terminada cada funcionalidad. |
