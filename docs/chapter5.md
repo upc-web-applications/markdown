@@ -2227,8 +2227,8 @@ En este Sprint 3, el equipo se enfocó en el desarrollo del Backend para la apli
 | Location | Reunión virtual (Google Meet) |
 | Prepared By | Flores Eusebio, Angel Thyago |
 | Attendees (to planning meeting) | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
-| Sprint n – 1 Review Summary | Durante el Sprint 2, el equipo completó el desarrollo del frontend de RiskGuard con 154 tareas implementadas, cubriendo los 7 bounded contexts planificados. Se logró la integración con Fake API (json-server) para simular operaciones CRUD, autenticación por roles (operario, supervisor, gerente), dashboards con indicadores KPI, mapas de calor, gestión de tickets con SLA, mantenimiento preventivo de activos y generación de reportes en PDF/Excel. El Product Owner validó la navegación completa de la aplicación y la experiencia responsive en desktop y móvil. La aplicación fue desplegada en Vercel con la API mock en Render. |
-| Sprint n – 1 Retrospective Summary | El equipo destacó como acierto la adopción de GitFlow con ramas feature por bounded context, lo que facilitó el trabajo paralelo y redujo conflictos de merge. Se valoró positivamente la implementación de i18n (español/inglés) y el diseño dark theme consistente en todos los módulos. Como oportunidades de mejora, se identificó la necesidad de definir contratos de API más formales antes del desarrollo para facilitar la transición al backend real, y se acordó implementar revisiones de código cruzadas (code reviews) mediante pull requests para el Sprint 3. |
+| Sprint n – 2 Review Summary | Durante el Sprint 2, el equipo completó el desarrollo del frontend de RiskGuard con 154 tareas implementadas, cubriendo los 7 bounded contexts planificados. Se logró la integración con Fake API (json-server) para simular operaciones CRUD, autenticación por roles (operario, supervisor, gerente), dashboards con indicadores KPI, mapas de calor, gestión de tickets con SLA, mantenimiento preventivo de activos y generación de reportes en PDF/Excel. El Product Owner validó la navegación completa de la aplicación y la experiencia responsive en desktop y móvil. La aplicación fue desplegada en Vercel con la API mock en Render. |
+| Sprint n – 2 Retrospective Summary | El equipo destacó como acierto la adopción de GitFlow con ramas feature por bounded context, lo que facilitó el trabajo paralelo y redujo conflictos de merge. Se valoró positivamente la implementación de i18n (español/inglés) y el diseño dark theme consistente en todos los módulos. Como oportunidades de mejora, se identificó la necesidad de definir contratos de API más formales antes del desarrollo para facilitar la transición al backend real, y se acordó implementar revisiones de código cruzadas (code reviews) mediante pull requests para el Sprint 3. |
 | Sprint Goal | Our focus is on developing the backend Web Services for RiskGuard using C# (.NET) with Domain-Driven Design architecture, implementing RESTful API endpoints for the bounded contexts of Account Generation and Authentication, Site / Area and Industrial Asset, Inspection / Unsafe Condition, Risk Assessment (IPERC) and Mitigation, and Reports / Compliance. We believe it delivers a robust, secure and scalable server-side foundation that replaces the current json-server mock with real business logic, data persistence and JWT-based authentication. This will be confirmed when the frontend application can consume all implemented endpoints, perform CRUD operations with validated data, and authenticate users with role-based access control across the three user profiles (operator, supervisor and manager). |
 | Sprint n Velocity | 80 SP |
 | Sum of Story Points | 80 SP |
@@ -3198,7 +3198,29 @@ El repositorio cuenta con 6 ramas activas: main, develop, feature/reports, featu
 
 
 ### 5.2.4. Sprint 4
-#### 5.2.4.1. Spring Planning 4.
+
+#### 5.2.4.1. Sprint Planning 4.
+
+n el Sprint 4, el equipo se enfocará en integrar el frontend desarrollado en Vue 3 con los Web Services implementados en ASP.NET Core durante el sprint anterior. El propósito principal será reemplazar el consumo de datos simulados de `json-server` por los endpoints reales del backend, de modo que los principales flujos de RiskGuard funcionen de extremo a extremo..
+
+La integración se realizará progresivamente por bounded context. Para cada módulo se revisarán y alinearán los contratos de la API, las rutas, los modelos de datos y los códigos de respuesta; después se adaptarán los servicios y stores del frontend, se configurarán las variables de entorno y CORS, y se validarán las operaciones de consulta, registro, actualización y eliminación. También se corregirán incompatibilidades entre ambas aplicaciones y se incorporará un manejo consistente de estados de carga, validaciones, errores y sesiones expiradas.
+
+El sprint priorizará los flujos críticos de los tres perfiles de usuario. El operario deberá poder autenticarse, registrar inspecciones o condiciones inseguras y consultar su seguimiento; el supervisor podrá gestionar riesgos, mitigaciones, tickets, técnicos, sedes, áreas y activos; y el gerente visualizará indicadores, tendencias y reportes construidos con información obtenida del backend real. La integración se considerará terminada cuando estos recorridos puedan ejecutarse desde la interfaz desplegada sin depender de información mock y los datos creados o modificados se mantengan correctamente en la base de datos.
+
+| **Campo** | **Detalle** |
+|---|---|
+| Sprint # | 4 |
+| Date | 2026-03-07 |
+| Time | 4:00 PM |
+| Location | Reunión virtual (Google Meet) |
+| Prepared By | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Attendees (to planning meeting) | Aponte Pablo, Isabel Luisa / Laura Acosta, Victor Jhosef / Blancas Chávez, Carlos Franco / Flores Eusebio, Angel Thyago |
+| Sprint n – 3 Review Summary | Durante el Sprint 3 se implementaron los Web Services de RiskGuard con C# y ASP.NET Core, organizados mediante Domain-Driven Design y bounded contexts. Se desarrollaron endpoints REST para autenticación y generación de cuentas, sedes, áreas, activos industriales, inspecciones, evaluación y mitigación de riesgos, técnicos, monitoreo y reportes. Asimismo, se incorporaron persistencia en MySQL, autenticación JWT y documentación con Swagger. Los servicios fueron integrados en la rama principal, desplegados en Render y validados individualmente mediante solicitudes HTTP; sin embargo, el frontend todavía no consume de forma completa el backend real. |
+| Sprint n – 3 Retrospective Summary | El equipo logró distribuir el desarrollo del backend por bounded context y consolidar los módulos mediante ramas feature y pull requests. Como principal oportunidad de mejora se identificó que algunos contratos, nombres de campos y estructuras de respuesta no coinciden completamente con los modelos utilizados por el frontend. Para este sprint se acordó validar primero cada contrato con Swagger, integrar módulo por módulo, mantener una configuración centralizada de la URL base y del token JWT, y realizar pruebas de extremo a extremo antes de considerar terminada cada funcionalidad. |
+| Sprint Goal | Our focus is on integrating the RiskGuard frontend with the real ASP.NET Core backend across the prioritized bounded contexts. We believe it delivers a functional end-to-end product that replaces mock data with persistent information, secure JWT authentication and role-based access for operators, supervisors and managers. This will be confirmed when users can complete the main business flows from the deployed web application, the frontend can successfully execute the required CRUD operations through the REST API, data changes persist in MySQL, and loading, validation and error states are handled consistently without relying on json-server. |
+| Sprint n Velocity |  SP |
+| Sum of Story Points |  SP |
+
 #### 5.2.4.2. Aspect Leaders and Collaborators.
 #### 5.2.4.3. Sprint Backlog 4.
 #### 5.2.4.4. Development Evidence for Sprint Review.
