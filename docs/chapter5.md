@@ -3526,7 +3526,7 @@ El video About-the-Team resume el proceso de trabajo realizado por el equipo Ris
 | Avance 1 - Sprint 1 | 00:01:26 | Documentación, Event Storming, diseño en Figma y despliegue de Landing Page |
 | Sprint 2 | 00:02:07 | Desarrollo del frontend, flujos por rol de usuario |
 | Sprint 3 | 00:03:21 | Desarrollo del backend |
-| Sprint 4 | 00:03:46 | Desarrollo del backend |
+| Sprint 4 | 00:03:46 | Intregración de backend y fronted |
 | Reflexión del equipo | 00:04:029 | Retos enfrentados, aprendizajes y dinámica de trabajo |
 | Testimonio - Isabel Aponte | 00:05:05 | Actividades, outcomes y competencias desarrolladas |
 | Testimonio - Angel Flores | 00:06:18 | Actividades, outcomes y competencias desarrolladas |
