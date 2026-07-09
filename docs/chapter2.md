@@ -379,7 +379,8 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
     <b>Grafico 6</b>: Segmento Objetivo 1
   </p>
 
-![Foto](images/irma-jm.png)
+
+![Foto](images/juan-jm.png)
 
   <p>
     <i><b>Fuente</b>: Elaboración propia en UXPRESSIA. </i>
@@ -411,7 +412,7 @@ A partir de las entrevistas realizadas a los tres segmentos objetivo se  identif
     <b>Grafico 8</b>: Segmento Objetivo 3
   </p>
     
-![Foto](images/juan-jm.png)
+![Foto](images/irma-jm.png)
 
   
   <p>
