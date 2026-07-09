@@ -136,110 +136,179 @@ Aunque actualmente existen formularios digitales, sistemas documentales y herram
 
 **¿Cómo podríamos conectar el reporte, la evaluación, la mitigación y el monitoreo de los riesgos laborales para que operarios, supervisores y gerentes actúen de manera coordinada y oportuna, aun cuando existen limitaciones de tiempo, conectividad y acceso a dispositivos dentro de las operaciones industriales?**
 
+
+
 #### 1.2.2.2. Lean UX Assumptions
 
-#### Features
+**Assumptions Worksheet**
 
-- Interfaz gráfica para el registro rápido de incidentes, permitiendo adjuntar evidencia fotográfica de condiciones inseguras en tiempo real.
-- Algoritmos que aplican modelos matemáticos de riesgo para categorizar la urgencia de cada hallazgo.
-- Panel visual con mapas de calor y gráficas de tendencia que se actualizan sin necesidad de recargar la página, facilitando el monitoreo continuo de la planta.
-- Funcionalidad para exportar documentos de auditoría que cumplan con los formatos referenciales de la ley peruana.
+**¿Quién es el usuario?**
 
-#### Needings
+Los usuarios principales de RiskGuard son:
 
-- Las empresas presentan una deficiencia en la capacidad de prevención de riesgos, causada por el uso de métodos de registro que no permiten un análisis estadístico oportuno.
-- Los Usuarios necesitan superar esta deficiencia aprendiendo a identificar y registrar peligros de manera digital, confiando en que el sistema procesará esa información para alertar sobre riesgos inminentes.
-- Empresas de manufactura y logística están interesados en optimizar sus sistemas de gestión de la seguridad con el fin de reducir la tasa de accidentes.
-- Los administradores desean ver una gráfica de tendencia en base a los datos de ingresados.
-- Corregir la brecha entre el hallazgo de un peligro y su mitigación mediante una plataforma accesible y predictiva que prepare a la organización para actuar ante situaciones críticas antes de que ocurran accidentes.
-- La falta de veracidad en el llenado de datos por parte del personal operativo, lo cual se abordará con interfaces simplificadas y validaciones automáticas de integridad en el frontend.
-- Sistemas de gestión documental genéricos o formularios en Excel, que carecen de la capacidad reactiva y del motor predictivo propuesto en ....
+- **Operarios de planta:** trabajadores que se encuentran expuestos a riesgos durante sus actividades diarias y necesitan reportar incidentes, casi-accidentes o condiciones inseguras de forma rápida desde el celular.
+- **Supervisores de seguridad:** responsables de revisar reportes, priorizar riesgos, asignar acciones correctivas y verificar que las medidas de mitigación se atiendan dentro del plazo establecido.
+- **Gerentes o administradores de SST:** usuarios que necesitan visualizar indicadores, zonas críticas, reportes consolidados y evidencias de cumplimiento para tomar decisiones preventivas.
+
+**¿Dónde encaja nuestro producto en su trabajo o vida?**
+
+RiskGuard se integra en la rutina operativa de empresas industriales, especialmente en espacios donde existen riesgos físicos, químicos, ergonómicos, biológicos o mecánicos. El operario lo utiliza durante la jornada para reportar hallazgos desde campo; el supervisor lo usa para evaluar, clasificar y dar seguimiento a cada caso; y la gerencia lo consulta para monitorear la evolución de la seguridad laboral mediante dashboards y reportes.
+
+**¿Qué problemas tiene nuestro producto que resolver?**
+
+- En los operarios: dificultad para reportar riesgos de manera inmediata cuando los procesos actuales dependen de papel, hojas de cálculo o comunicaciones informales.
+- En los supervisores: falta de trazabilidad para saber qué incidentes están pendientes, quién es responsable y qué acciones correctivas fueron aplicadas.
+- En la gerencia: baja visibilidad sobre tendencias, zonas críticas, reincidencias y cumplimiento de acciones preventivas.
+- En la organización: información dispersa que dificulta prevenir accidentes y sustentar decisiones con datos actualizados.
+
+**¿Cuándo y cómo es usado nuestro producto?**
+
+RiskGuard se usa durante la operación diaria. El operario registra un reporte cuando identifica una condición insegura, un casi-accidente o un incidente. Luego, el supervisor revisa el caso, clasifica el nivel de riesgo, asigna responsables y actualiza el estado de atención. Finalmente, el gerente consulta indicadores y reportes para evaluar el desempeño de SST y priorizar mejoras.
+
+
+**¿Qué características son importantes?**
+
+- Registro rápido de incidentes, casi-accidentes e inspecciones desde dispositivos móviles.
+- Autenticación y control de acceso por roles: operario, supervisor y gerente.
+- Clasificación de riesgos por tipo, severidad, probabilidad, área, sede y activo involucrado.
+- Asignación de tickets, responsables, técnicos y fechas de atención.
+- Dashboard ejecutivo con KPIs, mapa de calor, tendencias y reportes archivados.
+- Trazabilidad de la información para que los reportes, tickets y dashboards se mantengan actualizados.
+
+**¿Cómo debería verse nuestro producto y cómo comportarse?**
+
+La plataforma debe verse clara, profesional y confiable. Debe priorizar colores de estado, alertas visibles, formularios simples y dashboards fáciles de interpretar. Su comportamiento debe ser rápido, responsivo y seguro, permitiendo que cada usuario realice sus tareas sin pasos innecesarios. Además, debe mostrar mensajes claros ante errores, guardar la información en tiempo real y mantener coherencia entre lo registrado en campo y lo visualizado en los paneles.
+
+
+**Assumptions**
+
+- Creemos que los operarios reportarán más incidentes si el formulario es breve, accesible desde el celular y no interrumpe su flujo de trabajo.
+- Suponemos que los supervisores adoptarán RiskGuard si les permite priorizar riesgos, asignar responsables y hacer seguimiento desde una sola plataforma.
+- Creemos que los gerentes valorarán el dashboard si convierte los reportes diarios en indicadores claros para la toma de decisiones.
+- Suponemos que la trazabilidad de tickets reducirá la pérdida de información y mejorará el cumplimiento de acciones correctivas.
+- Creemos que la información actualizada y centralizada aumentará la confianza en el sistema frente al uso de registros manuales.
+- Suponemos que una interfaz simple y por roles facilitará la adopción en usuarios con distintos niveles de experiencia digital.
+- Creemos que los reportes históricos permitirán identificar patrones de riesgo y prevenir incidentes recurrentes.
+- Suponemos que la gestión centralizada de sedes, áreas, activos, peligros y usuarios hará que la solución sea escalable para diferentes plantas.
+- Creemos que las empresas estarán dispuestas a usar RiskGuard si perciben apoyo para cumplir procesos de SST y reducir riesgos operativos.
+- Nuestro mayor riesgo de producto es que los trabajadores no reporten de forma constante; lo resolveremos con un flujo rápido, retroalimentación visible y seguimiento claro del estado de cada reporte.
+
+**User Outcomes**
+
+- Los operarios podrán reportar condiciones inseguras e incidentes sin depender de formatos físicos o comunicaciones informales.
+- Los supervisores podrán conocer qué riesgos requieren atención, quién debe resolverlos y en qué estado se encuentran.
+- Los gerentes podrán visualizar tendencias, zonas críticas y cumplimiento de acciones preventivas desde un dashboard centralizado.
+- La organización podrá conservar evidencia histórica de reportes, tickets, mantenimientos y acciones correctivas.
+- Los usuarios podrán tomar decisiones más rápidas porque la información estará conectada y disponible en tiempo real.
+
+**Business Outcomes**
+
+- Incrementar la cantidad de reportes registrados oportunamente frente a procesos manuales.
+- Reducir el tiempo promedio entre el reporte de un riesgo y la asignación de una acción correctiva.
+- Mejorar la trazabilidad de incidentes, casi-accidentes, inspecciones y mitigaciones.
+- Disminuir la reincidencia de riesgos mediante seguimiento y análisis histórico.
+- Fortalecer la toma de decisiones de SST con indicadores, reportes y evidencias centralizadas.
+- Validar un producto escalable para empresas industriales que necesitan digitalizar su gestión preventiva.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**Creemos** que digitalizar el proceso de inspección mediante la aplicación web RiskGuard evolucionará la captura de datos en planta. 
-**Sabremos** que lo propuesto es cierto 
-**Cuando** los reportes diarios se incrementen en un 40% debido a la facilidad de uso frente al registro en hojas de cálculos o papel
+**Hypothesis Statement 1**
 
-**Creemos** que integrar un motor de reglas en la aplicación web permitirá predecir accidentes antes de que ocurran. 
-**Sabremos** que lo propuesto es cierto
-**Cuando** el sistema identifique correctamente al menos el 70% de las áreas de alta criticidad antes de que se registre un siniestro real
+Creemos que implementar un formulario rápido de reporte permitirá que los operarios registren incidentes y condiciones inseguras con mayor frecuencia. Sabremos que lo hemos logrado cuando al menos el 70% de los reportes piloto se registre desde el formulario digital sin apoyo externo.
 
-**Creemos** que ofrecer Dashboards visuales con indicadores predictivos potenciará la toma de decisiones gerenciales
-**Sabremos** que lo propuesto es cierto 
-**Cuando** se reporte una reducción del 50% en el tiempo dedicado a elaborar informes mensuales de gestión.
+**Hypothesis Statement 2**
 
-**Creemos** que ofrecer una plataforma ligera y accesible desde navegadores web permitirá la adopción de RiskGuard en empresas con baja infraestructura tecnológica. 
-**Sabremos** que esto es cierto 
-**Cuando** logremos mantener una tasa de disponibilidad del sistema superior al 70% sin requerir hardware especializado del lado del cliente.
+Creemos que conectar los reportes con tickets, responsables y estados de atención mejorará el seguimiento de acciones correctivas. Sabremos que lo hemos logrado cuando el 80% de los tickets generados tenga responsable asignado y estado actualizado dentro del plazo definido.
+
+**Hypothesis Statement 3**
+
+Creemos que un dashboard con KPIs, mapa de calor y tendencias permitirá a los gerentes identificar áreas críticas y tomar decisiones preventivas. Sabremos que lo hemos logrado cuando los usuarios gerenciales puedan reconocer los principales riesgos sin revisar hojas de cálculo externas.
+
+**Hypothesis Statement 4**
+
+Creemos que mantener reportes, tickets y dashboards actualizados en una sola plataforma aumentará la confianza en RiskGuard como fuente única de información de SST. Sabremos que lo hemos logrado cuando los usuarios puedan consultar el estado real de los riesgos y acciones correctivas sin recurrir a registros externos.
 
 #### 1.2.2.4. Lean UX Canvas
 
-<table>
-  <tr>
-    <th>Business Problem</th>
-    <th>Solutions</th>
-    <th>Business Outcomes</th>
-  </tr>
-  <tr>
-    <td>
-      Las empresas de manufactura y logística presentan una brecha crítica en la prevención de riesgos laborales debido al uso de registros manuales, hojas de cálculo y reportes tardíos. Esta situación afecta a los operarios, quienes no reportan incidentes por falta de tiempo o retroalimentación; a los supervisores, quienes no cuentan con datos centralizados para priorizar riesgos; y a los gerentes, quienes reciben información incompleta o tardía para tomar decisiones preventivas y cumplir con la Ley N.° 29783.
-    </td>
-    <td>
-      <ul>
-        <li>Formulario móvil/web para registrar casi-accidentes y condiciones inseguras con evidencia fotográfica.</li>
-        <li>Backend que clasifica la criticidad del riesgo mediante reglas de probabilidad, severidad y recurrencia.</li>
-        <li>Dashboard operativo con mapa de calor, alertas activas y patrones recurrentes.</li>
-        <li>Gestión de tickets y acciones correctivas.</li>
-        <li>Dashboard ejecutivo y reportes exportables para cumplimiento normativo.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Reducción del subregistro de incidentes.</li>
-        <li>Disminución del tiempo de respuesta ante riesgos críticos.</li>
-        <li>Mejora en la trazabilidad de acciones correctivas.</li>
-        <li>Apoyo al cumplimiento de la Ley N.° 29783.</li>
-        <li>Reducción progresiva de condiciones inseguras no atendidas.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Users</th>
-    <th>Hypotheses</th>
-    <th>User Outcomes & Benefits</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Operarios de planta</li>
-        <li>Supervisores de seguridad y mantenimiento</li>
-        <li>Gerentes y administradores</li>
-      </ul>
-    </td>
-    <td>
-      Creemos que digitalizar el reporte de incidentes mediante RiskGuard incrementará la cantidad de reportes registrados por los operarios, porque el proceso será más rápido, simple y trazable que el uso de papel o Excel. Sabremos que esto es cierto cuando los usuarios puedan completar un reporte en menos de 30 segundos y los supervisores visualicen automáticamente el riesgo en el dashboard.
-    </td>
-    <td>
-      <ul>
-        <li><strong>Operarios:</strong> reportan riesgos en pocos pasos y reciben confirmación.</li>
-        <li><strong>Supervisores:</strong> centralizan reportes, priorizan zonas críticas y asignan acciones correctivas.</li>
-        <li><strong>Gerentes:</strong> consultan indicadores predictivos y exportan reportes para auditorías y toma de decisiones.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th colspan="2">What’s the most important thing we need to learn first?</th>
-    <th>What’s the least amount of work we need to do to learn the next most important thing?</th>
-  </tr>
-  <tr>
-    <td colspan="2">
-      ¿Los operarios, supervisores y gerentes consideran útil una plataforma web que permita registrar incidentes, visualizar riesgos por sector y recibir alertas de criticidad para mejorar la prevención de accidentes laborales?
-    </td>
-    <td>
-      Desarrollar un MVP funcional con autenticación por roles, formulario de reporte de incidentes, registro de sectores y activos, dashboard con mapa de calor simulado, alertas de criticidad y reportes básicos usando una fake API basada en json-server y db.json.
-    </td>
-  </tr>
+<table width="100%" cellpadding="10" cellspacing="0">
+<tr>
+<td width="36%" valign="top">
+<h4>Business Problem</h4>
+Las empresas industriales necesitan conectar el reporte, la evaluación, la mitigación y el monitoreo de riesgos laborales en un solo flujo trazable. Actualmente, muchos incidentes, casi-accidentes y condiciones inseguras se registran en papel, hojas de cálculo o mensajes informales. Esto genera información dispersa, demoras en la asignación de responsables, baja visibilidad sobre zonas críticas y dificultad para verificar si una acción correctiva fue atendida dentro del plazo previsto.
+</td>
+<td width="28%" rowspan="2" valign="top">
+<h4>Solutions</h4>
+<ul>
+<li>Registro rápido de incidentes, casi-accidentes e inspecciones desde dispositivos móviles.</li>
+<li>Autenticación y control de acceso por roles: operario, supervisor y gerente.</li>
+<li>Clasificación de riesgos por tipo, severidad, probabilidad, área, sede y activo involucrado.</li>
+<li>Asignación de tickets, responsables, técnicos y fechas de atención.</li>
+<li>Dashboard ejecutivo con KPIs, mapa de calor, tendencias y reportes archivados.</li>
+<li>Trazabilidad de reportes, tickets y dashboards actualizados.</li>
+</ul>
+</td>
+<td width="36%" valign="top">
+<h4>Business Outcomes</h4>
+<ul>
+<li>Incrementar la cantidad de reportes registrados oportunamente frente a procesos manuales.</li>
+<li>Reducir el tiempo promedio entre el reporte de un riesgo y la asignación de una acción correctiva.</li>
+<li>Mejorar la trazabilidad de incidentes, casi-accidentes, inspecciones y mitigaciones.</li>
+<li>Disminuir la reincidencia de riesgos mediante seguimiento y análisis histórico.</li>
+<li>Fortalecer la toma de decisiones de SST con indicadores, reportes y evidencias centralizadas.</li>
+<li>Validar un producto escalable para empresas industriales que necesitan digitalizar su gestión preventiva.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="36%" valign="top">
+<h4>Users</h4>
+Contamos con tres usuarios principales:
+<ul>
+<li>Operarios de planta que necesitan reportar incidentes, casi-accidentes o condiciones inseguras de forma rápida desde campo.</li>
+<li>Supervisores de seguridad que revisan reportes, priorizan riesgos, asignan responsables y verifican medidas de mitigación.</li>
+<li>Gerentes o administradores de SST que visualizan indicadores, zonas críticas, reportes consolidados y evidencias de cumplimiento.</li>
+</ul>
+</td>
+<td width="36%" valign="top">
+<h4>User Outcomes & Benefits (JTBD)</h4>
+<ul>
+<li>Los operarios podrán reportar condiciones inseguras e incidentes sin depender de formatos físicos o comunicaciones informales.</li>
+<li>Los supervisores podrán conocer qué riesgos requieren atención, quién debe resolverlos y en qué estado se encuentran.</li>
+<li>Los gerentes podrán visualizar tendencias, zonas críticas y cumplimiento de acciones preventivas desde un dashboard centralizado.</li>
+<li>La organización podrá conservar evidencia histórica de reportes, tickets, mantenimientos y acciones correctivas.</li>
+<li>Los usuarios podrán tomar decisiones más rápidas porque la información estará conectada y disponible en tiempo real.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="36%" valign="top">
+<h4>Hypotheses</h4>
+<ul>
+<li>Creemos que implementar un formulario rápido permitirá que los operarios registren incidentes y condiciones inseguras con mayor frecuencia.</li>
+<li>Creemos que conectar reportes con tickets, responsables y estados de atención mejorará el seguimiento de acciones correctivas.</li>
+<li>Creemos que un dashboard con KPIs, mapa de calor y tendencias permitirá identificar áreas críticas y tomar decisiones preventivas.</li>
+<li>Creemos que mantener la información actualizada en una sola plataforma aumentará la confianza en RiskGuard como fuente única de información de SST.</li>
+</ul>
+</td>
+<td width="28%" valign="top">
+<h4>What’s the most important thing we need to learn first?</h4>
+<ul>
+<li>Si los operarios reportan más cuando el formulario es breve, móvil y no interrumpe su flujo de trabajo.</li>
+<li>Si los supervisores adoptan RiskGuard cuando pueden priorizar riesgos, asignar responsables y hacer seguimiento desde una sola plataforma.</li>
+<li>Si los gerentes valoran el dashboard cuando convierte reportes diarios en indicadores claros para la toma de decisiones.</li>
+<li>Si la información centralizada genera más confianza que los registros manuales.</li>
+</ul>
+</td>
+<td width="36%" valign="top">
+<h4>What’s the least amount of work we need to do to learn the next most important thing?</h4>
+<ul>
+<li>Validar el flujo completo con usuarios simulados de operario, supervisor y gerente.</li>
+<li>Medir si al menos el 70% de reportes piloto se registra desde el formulario digital sin apoyo externo.</li>
+<li>Medir si el 80% de tickets generados tiene responsable asignado y estado actualizado dentro del plazo definido.</li>
+<li>Verificar que reportes, tickets y dashboards muestren el estado real de cada riesgo y acción correctiva.</li>
+</ul>
+</td>
+</tr>
 </table>
 
 
