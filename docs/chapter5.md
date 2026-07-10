@@ -3560,6 +3560,30 @@ La evidencia final muestra la sesion de usuario activa y las opciones disponible
 
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.
+
+En esta seccion se presentan las evidencias de despliegue del Sprint 4. El objetivo fue validar que la aplicacion web RiskGuard funcione en sus totalidad con respecto al despliegue del frontend y backend.
+
+**Servicios desplegados:**
+
+| Servicio | URL |
+|---|---|
+| Landing Page | https://riskguard-landingpage-cfmp1bpia-carlosblancas969s-projects.vercel.app |
+| Frontend (Firebase) | https://riskguard-a146d.web.app/ |
+| Backend Real (Render) | https://riskguard-platform.onrender.com/swagger/index.html |
+
+**Stack tecnológico:**
+
+| Componente | Tecnología |
+|---|---|
+| Landing Page | React (deploy Vercel)|
+| Frontend | Vue 3 + PrimeVue 4 (deploy Firebase)|
+| Backend  | ASP.NET Core / C# (deploy Render) |
+
+
+
+
+
+
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
 
 ## 5.3. Validation Interviews
