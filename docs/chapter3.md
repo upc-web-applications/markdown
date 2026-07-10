@@ -2527,7 +2527,7 @@
 <tr valign="top">
 <td align="center"><b>US51</b></td>
 <td>Registro de dispositivos</td>
-<td>Como administrador, quiero registrar dispositivos (sensores o cámaras), para integrarlos al sistema de monitoreo.</td>
+<td>Como Supervisor de Seguridad, quiero registrar dispositivos (sensores o cámaras), para integrarlos al sistema de monitoreo.</td>
 <td>
 <ol>
 <li>El sistema debe permitir al usuario realizar la acción principal de Registro de dispositivos.</li>
@@ -2536,14 +2536,14 @@
 
 <b>Escenario 1:</b> Registro exitoso de dispositivo<br/>
 <ul>
-<li><b>Given</b> que el administrador accede al módulo de dispositivos,</li>
+<li><b>Given</b> que el supervisor accede al módulo de dispositivos,</li>
 <li><b>When</b> ingresa los datos del dispositivo y hace clic en "Registrar",</li>
 <li><b>Then</b> el sistema valida la información,</li>
 <li><b>And</b> registra el dispositivo correctamente.</li>
 </ul>
 <b>Escenario 2:</b> Campos incompletos<br/>
 <ul>
-<li><b>Given</b> que el administrador deja campos obligatorios vacíos,</li>
+<li><b>Given</b> que el supervisor  deja campos obligatorios vacíos,</li>
 <li><b>When</b> intenta registrar el dispositivo,</li>
 <li><b>Then</b> el sistema rechaza el registro,</li>
 <li><b>And</b> muestra un mensaje de error indicando los campos faltantes.</li>
@@ -2551,7 +2551,7 @@
 <b>Escenario 3:</b> Registro duplicado<br/>
 <ul>
 <li><b>Given</b> que ya existe un dispositivo registrado con los mismos datos,</li>
-<li><b>When</b> el administrador intenta registrarlo nuevamente,</li>
+<li><b>When</b> el supervisor  intenta registrarlo nuevamente,</li>
 <li><b>Then</b> el sistema bloquea la acción,</li>
 <li><b>And</b> muestra el mensaje "El dispositivo ya existe".</li>
 </ul>
@@ -2577,7 +2577,7 @@
 <tr valign="top">
 <td align="center"><b>US52</b></td>
 <td>Edición de dispositivos</td>
-<td>Como administrador, quiero editar la información de los dispositivos registrados, para mantener actualizados sus datos dentro del sistema.</td>
+<td>Como Supervisor de Seguridad, quiero editar la información de los dispositivos registrados, para mantener actualizados sus datos dentro del sistema.</td>
 <td>
 <ol>
 <li>El sistema debe permitir al usuario realizar la acción principal de Edición de dispositivos.</li>
@@ -2586,21 +2586,21 @@
 
 <b>Escenario 1:</b> Edición exitosa de dispositivo<br/>
 <ul>
-<li><b>Given</b> que el administrador accede a la lista de dispositivos,</li>
+<li><b>Given</b> que el supervisor accede a la lista de dispositivos,</li>
 <li><b>When</b> selecciona un dispositivo, modifica sus datos y hace clic en "Guardar",</li>
 <li><b>Then</b> el sistema valida la información,</li>
 <li><b>And</b> actualiza el dispositivo correctamente.</li>
 </ul>
 <b>Escenario 2:</b> Campos inválidos<br/>
 <ul>
-<li><b>Given</b> que el administrador ingresa datos incompletos o inválidos,</li>
+<li><b>Given</b> que el supervisor ingresa datos incompletos o inválidos,</li>
 <li><b>When</b> intenta guardar los cambios,</li>
 <li><b>Then</b> el sistema rechaza la operación,</li>
 <li><b>And</b> muestra un mensaje de error.</li>
 </ul>
 <b>Escenario 3:</b> Cancelación de edición<br/>
 <ul>
-<li><b>Given</b> que el administrador está editando un dispositivo,</li>
+<li><b>Given</b> que el supervisor está editando un dispositivo,</li>
 <li><b>When</b> decide cancelar la operación,</li>
 <li><b>Then</b> el sistema no guarda cambios,</li>
 <li><b>And</b> mantiene la información original.</li>
@@ -2627,7 +2627,7 @@
 <tr valign="top">
 <td align="center"><b>US53</b></td>
 <td>Eliminación de dispositivos</td>
-<td>Como administrador, quiero eliminar dispositivos registrados, para mantener el sistema actualizado y sin información innecesaria.</td>
+<td>Como Supervisor de Seguridad, quiero eliminar dispositivos registrados, para mantener el sistema actualizado y sin información innecesaria.</td>
 <td>
 <ol>
 <li>El sistema debe permitir al usuario realizar la acción principal de Eliminación de dispositivos.</li>
@@ -2636,14 +2636,14 @@
 
 <b>Escenario 1:</b> Eliminación exitosa de dispositivo<br/>
 <ul>
-<li><b>Given</b> que el administrador accede a la lista de dispositivos,</li>
+<li><b>Given</b> que el supervisor accede a la lista de dispositivos,</li>
 <li><b>When</b> selecciona un dispositivo y hace clic en "Eliminar",</li>
 <li><b>Then</b> el sistema solicita confirmación,</li>
 <li><b>And</b> elimina el dispositivo correctamente tras la confirmación.</li>
 </ul>
 <b>Escenario 2:</b> Cancelación de eliminación<br/>
 <ul>
-<li><b>Given</b> que el administrador inicia el proceso de eliminación,</li>
+<li><b>Given</b> que el supervisor inicia el proceso de eliminación,</li>
 <li><b>When</b> decide cancelar la acción,</li>
 <li><b>Then</b> el sistema no elimina el dispositivo,</li>
 <li><b>And</b> mantiene la información sin cambios.</li>
@@ -2651,7 +2651,7 @@
 <b>Escenario 3:</b> Eliminación de dispositivo inexistente<br/>
 <ul>
 <li><b>Given</b> que el dispositivo ya no existe en el sistema,</li>
-<li><b>When</b> el administrador intenta eliminarlo,</li>
+<li><b>When</b> el supervisor intenta eliminarlo,</li>
 <li><b>Then</b> el sistema muestra un mensaje de error,</li>
 <li><b>And</b> evita la operación.</li>
 </ul>
@@ -2677,7 +2677,7 @@
 <tr valign="top">
 <td align="center"><b>US54</b></td>
 <td>Configuración de zonas de monitoreo</td>
-<td>Como administrador, quiero definir zonas de monitoreo dentro de la planta, para segmentar las áreas según niveles de riesgo.</td>
+<td>Como Supervisor de Seguridad, quiero definir zonas de monitoreo dentro de la planta, para segmentar las áreas según niveles de riesgo.</td>
 <td>
 <ol>
 <li>El sistema debe permitir al usuario realizar la acción principal de Configuración de zonas de monitoreo.</li>
@@ -2686,7 +2686,7 @@
 
 <b>Escenario 1:</b> Creación de zona<br/>
 <ul>
-<li><b>Given</b> que el administrador accede al módulo de zonas,</li>
+<li><b>Given</b> que el supervisor accede al módulo de zonas,</li>
 <li><b>When</b> registra una nueva zona con datos válidos,</li>
 <li><b>Then</b> el sistema valida la información,</li>
 <li><b>And</b> guarda la zona correctamente.</li>
@@ -2694,13 +2694,13 @@
 <b>Escenario 2:</b> Edición de zona<br/>
 <ul>
 <li><b>Given</b> que existen zonas previamente registradas,</li>
-<li><b>When</b> el administrador modifica una zona,</li>
+<li><b>When</b> el supervisor modifica una zona,</li>
 <li><b>Then</b> el sistema guarda los cambios,</li>
 <li><b>And</b> actualiza la información en el sistema.</li>
 </ul>
 <b>Escenario 3:</b> Zona duplicada<br/>
 <ul>
-<li><b>Given</b> que el administrador intenta registrar una zona con un nombre ya existente,</li>
+<li><b>Given</b> que el supervisor intenta registrar una zona con un nombre ya existente,</li>
 <li><b>When</b> hace clic en "Guardar",</li>
 <li><b>Then</b> el sistema rechaza la operación,</li>
 <li><b>And</b> muestra el mensaje "La zona ya existe".</li>
@@ -3262,7 +3262,7 @@
 <td>Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a los dispositivos móviles.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3311,14 +3311,14 @@
 <td>Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones que devuelva los patrones de riesgo recurrentes por sector y período, para mostrar las alertas predictivas en el dashboard del supervisor de seguridad.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
 <b>Escenario 1:</b> Solicitud exitosa con patrones detectados<br/>
 <ul>
 <li><b>Given</b> que el sector consultada tiene registros suficientes en el período indicado,</li>
-<li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones?area=almacen&dias=30,</li>
+<li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/patrones/area=almacen&dias=30,</li>
 <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de patrones detectados con tipo de riesgo, frecuencia y fecha de primera ocurrencia.</li>
 </ul>
 <b>Escenario 2:</b> Sector sin datos suficientes para detectar patrones<br/>
@@ -3358,7 +3358,7 @@
 <td>Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor que retorne la concentración de riesgos activos por sector clasificada por nivel de intensidad, para alimentar el mapa de calor del dashboard en tiempo real.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3405,20 +3405,20 @@
 <td>Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos que retorne los riesgos críticos sin acción correctiva asignada que superen el tiempo indicado, para que el módulo de notificaciones escale automáticamente al supervisor de seguridad.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
 <b>Escenario 1:</b> Riesgos sin atender encontrados en el sistema<br/>
 <ul>
 <li><b>Given</b> que existen riesgos críticos sin acción correctiva asignada por más de 24 horas,</li>
-<li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
+<li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos-horas=24,</li>
 <li><b>Then</b> el endpoint responde con HTTP 200 y la lista de riesgos que superaron el umbral con sector, tipo, criticidad y horas transcurridas sin atención.</li>
 </ul>
 <b>Escenario 2:</b> Todos los riesgos críticos fueron atendidos a tiempo<br/>
 <ul>
 <li><b>Given</b> que todos los riesgos críticos activos tienen acción correctiva asignada dentro del plazo,</li>
-<li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos?horas=24,</li>
+<li><b>When</b> el desarrollador realiza GET /api/v1/predictivo/no-atendidos-horas=24,</li>
 <li><b>Then</b> el endpoint responde con HTTP 200 y lista vacía confirmando que no hay riesgos sin atender.</li>
 </ul>
 <b>Escenario 3:</b> Parámetro de horas no enviado en la solicitud<br/>
@@ -3451,7 +3451,7 @@
 <td>Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada que permita marcar una alerta de patrón recurrente como revisada, para retirarla del panel principal y registrar quién la atendió.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3492,7 +3492,7 @@
 <td>Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario que retorne el total de riesgos registrados en el día agrupados por sector, para alimentar el panel de resumen del dashboard del supervisor.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3533,7 +3533,7 @@
 <td>Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc que reciba los índices de probabilidad y severidad, para calcular el nivel de criticidad del riesgo según la lógica IPERC del sistema.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3576,7 +3576,7 @@
 <td>Como desarrollador, quiero consumir el endpoint GET /api/v1/kpi_dashboard que retorna los indicadores clave de SST consolidados, para alimentar el tablero ejecutivo del gerente con datos actualizados en tiempo real.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3623,7 +3623,7 @@
 <td>Como desarrollador, quiero consumir el endpoint GET /api/v1/historical_trends que retorna la evolución mensual de incidentes agrupados por tipo y sector, para alimentar las gráficas de tendencia del tablero ejecutivo del gerente.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3670,7 +3670,7 @@
 <td>Como desarrollador, quiero consumir los endpoints GET y POST /api/v1/generated_reports y DELETE /api/v1/generated_reports/{id} para registrar, listar y eliminar reportes generados, mientras la generación del documento PDF o Excel se realiza en el cliente con jsPDF.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3717,7 +3717,7 @@
 <td>Como desarrollador, quiero consumir los endpoints GET, PATCH y DELETE /api/v1/critical_alerts para listar, actualizar el estado y eliminar alertas críticas, para que el gerente pueda gestionar los riesgos no resueltos desde el tablero ejecutivo.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3764,7 +3764,7 @@
 <td>Como desarrollador, quiero consumir el endpoint GET /api/v1/annual_ohs_plan que retorne el plan anual de SST con el porcentaje de cumplimiento global y el desglose por sector, para alimentar el indicador de seguimiento del tablero ejecutivo del gerente.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3809,7 +3809,7 @@
 <td>Como desarrollador, quiero implementar los endpoints POST /api/v1/inspecciones para registrar una nueva inspección y GET /api/v1/inspecciones/mine/{operarioId} para que el operario consulte sus inspecciones enviadas, permitiendo la trazabilidad de reportes desde el backend.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente segun la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3889,7 +3889,7 @@
 <td>Como desarrollador, quiero implementar los endpoints CRUD /api/v1/sedes para registrar, listar, actualizar y eliminar las sedes físicas de la planta industrial, permitiendo la organización jerárquica de la infraestructura operativa.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3929,7 +3929,7 @@
 <td>Como desarrollador, quiero implementar los endpoints CRUD /api/v1/areas con filtro GET /active y /api/v1/activos con filtro GET /by-area/{areaId}, para gestionar las áreas operativas y los activos industriales vinculados a cada zona de la planta.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -3969,7 +3969,7 @@
 <td>Como desarrollador, quiero implementar los endpoints POST /api/v1/authentication/sign-in y POST /api/v1/authentication/sign-up para autenticar usuarios y generar tokens JWT con claims de rol (operario, supervisor, gerente), permitiendo el control de acceso basado en roles en todos los Web Services.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -4009,7 +4009,7 @@
 <td>Como desarrollador, quiero implementar los endpoints CRUD /api/v1/users, /api/v1/roles, /api/v1/sessions y /api/v1/access-logs para administrar las cuentas de usuario, los roles del sistema, las sesiones activas y el registro de auditoría de accesos.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -4049,7 +4049,7 @@
 <td>Como desarrollador, quiero implementar los endpoints CRUD /api/v1/tickets, /api/v1/technicians, /api/v1/preventive-maintenances y /api/v1/assets para gestionar la asignación de tickets correctivos, el directorio de técnicos, la programación de mantenimientos preventivos y el inventario de activos desde el dashboard del supervisor.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -4089,7 +4089,7 @@
 <td>Como desarrollador, quiero implementar los endpoints CRUD /api/v1/heat-map-zones y /api/v1/archived-reports para gestionar las zonas del mapa de calor operativo y el archivo histórico de reportes del dashboard de monitoreo del supervisor.</td>
 <td>
 <ol>
-<li>El endpoint debe responder correctamente seg?n la operaci?n solicitada y validar los datos obligatorios.</li>
+<li>El endpoint debe responder correctamente según la operación solicitada y validar los datos obligatorios.</li>
 <li>El sistema debe guardar o devolver la información necesaria con mensajes claros ante errores.</li>
 </ol>
 
@@ -4192,10 +4192,10 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 | 50 | US48 | Configuración de reglas de alertas | Como Administrador, quiero configurar reglas de generación de alertas para adaptar el comportamiento del sistema a distintos escenarios operativos. | 5 |
 | 51 | US49 | Activación y desactivación de módulos del sistema | Como Administrador, quiero activar o desactivar módulos del sistema para personalizar su funcionamiento según las necesidades de la organización. | 3 |
 | 52 | US50 | Configuración de horarios operativos | Como Administrador, quiero configurar los horarios de operación del sistema para adaptarlo a los turnos y jornadas laborales de la planta. | 3 |
-| 53 | US51 | Registro de dispositivos | Como Administrador, quiero registrar dispositivos como sensores o cámaras para integrarlos al sistema de monitoreo. | 3 |
-| 54 | US52 | Edición de dispositivos | Como Administrador, quiero editar la información de los dispositivos registrados para mantener sus datos actualizados. | 2 |
-| 55 | US53 | Eliminación de dispositivos | Como Administrador, quiero eliminar dispositivos registrados para mantener el sistema sin información innecesaria. | 2 |
-| 56 | US54 | Configuración de zonas de monitoreo | Como Administrador, quiero definir zonas de monitoreo dentro de la planta para segmentar las áreas según niveles de riesgo. | 3 |
+| 53 | US51 | Registro de dispositivos | Como Supervisor, quiero registrar dispositivos como sensores o cámaras para integrarlos al sistema de monitoreo. | 3 |
+| 54 | US52 | Edición de dispositivos | Como Supervisor, quiero editar la información de los dispositivos registrados para mantener sus datos actualizados. | 2 |
+| 55 | US53 | Eliminación de dispositivos | Como Supervisor, quiero eliminar dispositivos registrados para mantener el sistema sin información innecesaria. | 2 |
+| 56 | US54 | Configuración de zonas de monitoreo | Como Supervisor, quiero definir zonas de monitoreo dentro de la planta para segmentar las áreas según niveles de riesgo. | 3 |
 | 57 | US55 | Configuración de parámetros del motor predictivo | Como Administrador, quiero configurar los parámetros del motor predictivo para mejorar la precisión en la detección de riesgos. | 5 |
 | 58 | US56 | Configuración de prioridad de alertas | Como Administrador, quiero definir la prioridad de las alertas para atender primero las más críticas. | 3 |
 | 59 | US57 | Configuración de notificaciones | Como Administrador, quiero configurar los canales de notificación del sistema para recibir alertas de forma oportuna. | 3 |
