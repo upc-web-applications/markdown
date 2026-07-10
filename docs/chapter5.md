@@ -3977,6 +3977,70 @@ Con estas evidencias se confirma que el Sprint 4 alcanzo una version desplegada 
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
 
+Durante el Sprint 4, el equipo trabajo de forma colaborativa en la integracion final de RiskGuard, involucrando los repositorios de Landing Page, Frontend y Backend. A diferencia de los sprints anteriores, el foco principal no fue construir funcionalidades aisladas, sino consolidar la aplicacion completa para que el frontend consuma los Web Services reales del backend y pueda ser desplegado en un entorno publico.
+
+El trabajo se organizo principalmente sobre las ramas `develop` y `main`. Primero se integraron los cambios en `develop`, donde se realizaron ajustes de contratos, rutas de API, autenticacion JWT, manejo de errores, configuracion de variables de entorno y pruebas por rol. Posteriormente, los cambios estables fueron integrados a `main` mediante pull requests y commits de estabilizacion para dejar la version final desplegable. Esta dinamica permitio separar el trabajo de integracion, correccion y despliegue sin perder trazabilidad en GitHub.
+
+**Resumen de colaboracion por repositorio**
+
+| Repositorio | Evidencia de colaboracion | Resultado |
+|---|---|---|
+| Landing Page | Registro de actividad, commits y contribuciones en GitHub Insights. | Se mantuvo la pagina publica de presentacion de RiskGuard como punto de entrada del producto. |
+| Frontend | Commits, ramas activas, configuracion Firebase y aportes de integracion. | Se integro Vue 3 con la API real, se ajustaron rutas y se preparo la version desplegable en Firebase Hosting. |
+| Backend | Pull requests, commits por autor y documentacion Swagger en Render. | Se corrigieron endpoints, autorizacion, datos semilla, reportes y contratos necesarios para la integracion final. |
+
+**Capturas de analiticos y colaboracion en GitHub**
+
+<h5 align="center">Landing Page repository pulse</h5>
+
+<p align="center">
+  <img src="images/LandingPageR0.png" alt="Landing Page repository pulse during Sprint 4" width="750"/>
+</p>
+
+La captura muestra el apartado Pulse del repositorio de la Landing Page durante la semana del Sprint 4. Esta evidencia permite observar la actividad reciente del repositorio, incluyendo commits realizados en `main` y el estado general de issues y pull requests.
+
+<h5 align="center">Landing Page contributors</h5>
+
+<p align="center">
+  <img src="images/LandingPageR1.png" alt="Landing Page contributors during Sprint 4" width="750"/>
+</p>
+
+La evidencia presenta el grafico de contribuciones del repositorio de la Landing Page. Se observan los aportes realizados por integrantes del equipo y la distribucion de commits durante el periodo de trabajo, lo cual respalda la trazabilidad de mantenimiento y actualizacion del sitio publico.
+
+<h5 align="center">Frontend contributors</h5>
+
+<p align="center">
+  <img src="images/FrontedR2.png" alt="Frontend contributors during Sprint 4" width="750"/>
+</p>
+
+La captura muestra las contribuciones del repositorio Frontend durante el periodo del Sprint 4. Se evidencia una mayor actividad en la semana final, correspondiente a la integracion con el backend real, ajustes de endpoints, configuracion de autenticacion y estabilizacion de flujos antes del despliegue.
+
+<h5 align="center">Frontend branch structure and commit activity</h5>
+
+<p align="center">
+  <img src="images/FrontedR3.png" alt="Frontend branch structure and commit activity" width="750"/>
+</p>
+
+La evidencia muestra la estructura de ramas del repositorio Frontend, incluyendo `main`, `develop` y ramas feature relacionadas con assessment, inspection, monitoring, reports y user authentication. Esta organizacion refleja el trabajo paralelo por bounded context y la posterior integracion de cambios hacia las ramas principales.
+
+<h5 align="center">Backend contributors</h5>
+
+<p align="center">
+  <img src="images/BackendR2.png" alt="Backend contributors during Sprint 4" width="750"/>
+</p>
+
+La captura presenta las contribuciones del repositorio Backend durante el periodo del Sprint 4. Se observa actividad de varios integrantes, con commits asociados a correcciones de endpoints, autorizacion, reportes, autenticacion, datos semilla y ajustes necesarios para que el frontend pudiera consumir los servicios reales.
+
+<h5 align="center">Backend repository pulse and pull requests</h5>
+
+<p align="center">
+  <img src="images/BackendUpdate1.png" alt="Backend repository pulse and pull requests during Sprint 4" width="750"/>
+</p>
+
+La evidencia muestra el resumen de actividad del repositorio Backend, incluyendo pull requests activos o mergeados, commits en `main` y actividad por autores. Esta vista permite comprobar que la integracion del backend se gestiono mediante cambios trazables y revisables antes de consolidar la version utilizada por el frontend desplegado.
+
+En conjunto, estas evidencias demuestran que el Sprint 4 se desarrollo con colaboracion transversal entre frontend, backend y despliegue. El equipo mantuvo trazabilidad mediante commits, ramas, pull requests y analiticos de GitHub, logrando consolidar una version integrada de RiskGuard con autenticacion, consumo de API real, despliegue publico y validacion de los flujos principales por rol.
+
 ## 5.3. Validation Interviews
 
 En esta sección se registran las entrevistas de validación del proyecto. A diferencia de las entrevistas de la sección 2.2, donde se buscaba descubrir problemas y necesidades, aquí el objetivo es verificar si lo que construimos realmente funciona para los usuarios y si les resulta fácil de usar.
