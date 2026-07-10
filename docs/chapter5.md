@@ -3219,23 +3219,62 @@ El sprint priorizará los flujos críticos de los tres perfiles de usuario. El o
 | Sprint n – 3 Review Summary | Durante el Sprint 3 se implementaron los Web Services de RiskGuard con C# y ASP.NET Core, organizados mediante Domain-Driven Design y bounded contexts. Se desarrollaron endpoints REST para autenticación y generación de cuentas, sedes, áreas, activos industriales, inspecciones, evaluación y mitigación de riesgos, técnicos, monitoreo y reportes. Asimismo, se incorporaron persistencia en MySQL, autenticación JWT y documentación con Swagger. Los servicios fueron integrados en la rama principal, desplegados en Render y validados individualmente mediante solicitudes HTTP; sin embargo, el frontend todavía no consume de forma completa el backend real. |
 | Sprint n – 3 Retrospective Summary | El equipo logró distribuir el desarrollo del backend por bounded context y consolidar los módulos mediante ramas feature y pull requests. Como principal oportunidad de mejora se identificó que algunos contratos, nombres de campos y estructuras de respuesta no coinciden completamente con los modelos utilizados por el frontend. Para este sprint se acordó validar primero cada contrato con Swagger, integrar módulo por módulo, mantener una configuración centralizada de la URL base y del token JWT, y realizar pruebas de extremo a extremo antes de considerar terminada cada funcionalidad. |
 | Sprint Goal | Our focus is on integrating the RiskGuard frontend with the real ASP.NET Core backend across the prioritized bounded contexts. We believe it delivers a functional end-to-end product that replaces mock data with persistent information, secure JWT authentication and role-based access for operators, supervisors and managers. This will be confirmed when users can complete the main business flows from the deployed web application, the frontend can successfully execute the required CRUD operations through the REST API, data changes persist in MySQL, and loading, validation and error states are handled consistently without relying on json-server. |
-| Sprint n Velocity |  SP |
-| Sum of Story Points |  SP |
+| Sprint n Velocity | 134 SP |
+| Sum of Story Points | 134 SP |
 
 #### 5.2.4.2. Aspect Leaders and Collaborators.
 
-En este Sprint, los aspectos corresponden a los principales Bounded Contexts desarrollados para la aplicación RiskGuard tanto para Frontend y Backend con la finalidad de refinar y actualizar la aplicacion web RiskGuard. Se asignaron roles de liderazgo y colaboración para cada módulo con el fin de mejorar la organización, distribución de tareas y coordinación entre los integrantes del equipo durante el desarrollo del frontend.
+En esta sección se presenta la Leadership-and-Collaboration Matrix (LACX) correspondiente al Sprint 4. Esta matriz permite identificar, para cada aspecto dentro del alcance del sprint, quién asumió el rol de líder y quiénes participaron como colaboradores, con el fin de mejorar la comunicación interna y distribuir con claridad las responsabilidades de integración.
 
-| Miembro del equipo (Apellido, Nombre) | Usuario GitHub | Account Generation and Authentication BC (L/C) | Site / Area and Industrial Asset BC (L/C) | Inspection / Unsafe Condition BC (L/C) | Risk Assessment (IPERC) BC (L/C) | Mitigation BC (L/C) | Monitoring / Dashboard BC (L/C) | Reports / Compliance BC (L/C) |
-|--------------------------------------|---------------|-----------------------------------------------|-------------------------------------------|----------------------------------------|----------------------------------|---------------------|----------------------------------|-------------------------------|
-| Aponte Pablo, Isabel Luisa | IsabelAponte234 | C | C | C | C | C | C | L |
-| Laura Acosta, Victor Jhosef | Zatrynox | C | C | C | L | L | C | C |
-| Blancas Chávez, Carlos Franco | CarlosBlancas969 | C | L | L | C | C | C | C |
-| Flores Eusebio, Angel Thyago | angelfdevs | L | C | C | C | C | L | C |
+Para este sprint, los aspectos principales se definieron como subconjuntos funcionales y técnicos del alcance de integración trabajado por el equipo. Por ello, la matriz considera la estructuración general del frontend y todos los bounded contexts integrados con el backend real: IAM / Account Generation and Authentication, Site / Area and Industrial Asset, Inspection / Unsafe Condition, Risk Assessment, Mitigation, Monitoring / Dashboard y Reports / Compliance. Esta organización se relaciona directamente con la selección posterior de tasks del Sprint Backlog 4, especialmente con las tareas T32 a T59.
 
 
+| Team Member (Last Name, First Name) | GitHub Username | Frontend Structure and Configuration (L/C) | IAM / Account Generation and Authentication BC (L/C) | Site / Area and Industrial Asset BC (L/C) | Inspection / Unsafe Condition BC (L/C) | Risk Assessment BC (L/C) | Mitigation BC (L/C) | Monitoring / Dashboard BC (L/C) | Reports / Compliance BC (L/C) | Deployment and Final Validation (L/C) |
+|------------------------------------|----------------|--------------------------------------------|------------------------------------------------------|----------------------------------------|----------------------------------------|---------------------------|---------------------|----------------------------------|-------------------------------|-------------------------------------|
+| Aponte Pablo, Isabel Luisa | IsabelAponte234 | C | C | C | C | C | C | C | L | C |
+| Laura Acosta, Victor Jhosef | Zatrynox | C | C | C | C | L | L | C | C | L |
+| Blancas Chávez, Carlos Franco | CarlosBlancas969 | C | C | L | L | C | C | C | C | C |
+| Flores Eusebio, Angel Thyago | angelfdevs | L | L | C | C | C | C | L | C | C |
 
 #### 5.2.4.3. Sprint Backlog 4.
+
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 4 del proyecto, cuyo objetivo principal fue integrar la aplicación frontend de RiskGuard con los Web Services reales del backend. Durante este sprint, el equipo reemplazó progresivamente el consumo de datos simulados por llamadas a endpoints REST desplegados, ajustó la autenticación con JWT, corrigió diferencias entre modelos de datos, actualizó rutas y variables de entorno, estabilizó los flujos principales por rol y validó que la información creada o modificada desde la interfaz persistiera correctamente en el backend.
+
+El trabajo se gestionó sobre los repositorios oficiales del proyecto: [upc-web-applications/Frontend](https://github.com/upc-web-applications/Frontend) y [upc-web-applications/Backend](https://github.com/upc-web-applications/Backend). Las tareas se organizaron como Technical Stories porque el alcance del sprint estuvo orientado principalmente a integración, configuración, corrección de contratos y validación técnica de los flujos de negocio.
+
+**Tablero Trello:** https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard
+
+| User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
+|---|---|---|---|---|---|---|
+| TS21 | Estructuración del Frontend para integración real | T32 | Revisar la estructura del frontend y organizar rutas, stores, servicios API y configuración base para reemplazar progresivamente json-server por el backend real | 5 | Flores Eusebio, Angel Thyago | Done |
+| TS21 | Estructuración del Frontend para integración real | T33 | Actualizar configuración global de Vite, variables de entorno y rutas base para centralizar el consumo de servicios REST | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS21 | Estructuración del Frontend para integración real | T34 | Refinar flujos por rol de usuario para asegurar navegación consistente entre operario, supervisor y gerente | 5 | Flores Eusebio, Angel Thyago | Done |
+| TS21 | Estructuración del Frontend para integración real | T35 | Documentar pasos de configuración, ejecución local y validación del frontend integrado | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS22 | Integración base con Backend API | T36 | Configurar cliente HTTP y rutas de endpoints para consumir la API real del backend desde los bounded contexts priorizados | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS22 | Integración base con Backend API | T37 | Reemplazar llamadas a Fake API por endpoints reales en servicios y stores del frontend | 6 | Laura Acosta, Victor Jhosef | Done |
+| TS22 | Integración base con Backend API | T38 | Ajustar parámetros de consulta, ids numéricos y parseo de datos en stores para coincidir con las respuestas del backend | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS22 | Integración base con Backend API | T39 | Validar operaciones GET, POST, PUT, PATCH y DELETE desde la interfaz contra el backend desplegado | 6 | Laura Acosta, Victor Jhosef | Done |
+| TS23 | Autenticación JWT y control de sesión | T40 | Integrar inicio de sesión por correo y contraseña usando el endpoint real de autenticación JWT | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS23 | Autenticación JWT y control de sesión | T41 | Implementar interceptor para respuestas 401, expiración de sesión y retorno controlado al flujo de autenticación | 4 | Laura Acosta, Victor Jhosef | Done |
+| TS23 | Autenticación JWT y control de sesión | T42 | Validar persistencia de sesión y acceso por rol en los dashboards de operario, supervisor y gerente | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS24 | Alineación de contratos Backend-Frontend | T43 | Ajustar casing JSON, nombres de campos y estructuras de respuesta para compatibilidad con los modelos del frontend | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS24 | Alineación de contratos Backend-Frontend | T44 | Completar datos semilla requeridos para validar dashboards, reportes, alertas, tickets y usuarios demo | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS24 | Alineación de contratos Backend-Frontend | T45 | Corregir endpoints faltantes o inconsistentes detectados durante la integración de módulos | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS24 | Alineación de contratos Backend-Frontend | T46 | Validar respuestas del backend con datos esperados por los componentes visuales del frontend | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS25 | Integración de Reportes y Cumplimiento | T47 | Conectar KPI dashboard, tendencias históricas, reportes generados, alertas críticas y plan anual SST con endpoints reales | 6 | Aponte Pablo, Isabel Luisa | Done |
+| TS25 | Integración de Reportes y Cumplimiento | T48 | Validar filtros, generación de reportes y actualización de estados en vistas de gerencia | 5 | Aponte Pablo, Isabel Luisa | Done |
+| TS25 | Integración de Reportes y Cumplimiento | T49 | Revisar consistencia de datos mostrados en indicadores, tablas y gráficas luego del consumo del backend | 4 | Aponte Pablo, Isabel Luisa | Done |
+| TS26 | Integración de Sedes, Áreas, Activos e Inspecciones | T50 | Validar consumo de endpoints reales para sedes, áreas, activos industriales e inspecciones | 5 | Blancas Chávez, Carlos Franco | Done |
+| TS26 | Integración de Sedes, Áreas, Activos e Inspecciones | T51 | Revisar formularios de creación, edición y consulta para asegurar persistencia correcta en backend | 5 | Blancas Chávez, Carlos Franco | Done |
+| TS26 | Integración de Sedes, Áreas, Activos e Inspecciones | T52 | Verificar flujos de operario relacionados con registro y seguimiento de inspecciones | 4 | Blancas Chávez, Carlos Franco | Done |
+| TS27 | Integración de Monitoreo, Riesgos y Mitigación | T53 | Conectar tickets, técnicos, mapa de calor, mantenimiento preventivo y alertas con endpoints reales del backend | 6 | Laura Acosta, Victor Jhosef | Done |
+| TS27 | Integración de Monitoreo, Riesgos y Mitigación | T54 | Validar asignación de técnicos, cambios de estado, SLA, verificaciones y cierre de medidas correctivas | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS27 | Integración de Monitoreo, Riesgos y Mitigación | T55 | Corregir eliminación en cascada de tickets y restricciones de autorización para operaciones protegidas | 5 | Laura Acosta, Victor Jhosef | Done |
+| TS28 | Despliegue y validación final | T56 | Actualizar entorno de producción del frontend para apuntar al backend real desplegado en Render | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS28 | Despliegue y validación final | T57 | Corregir configuración de hosting y workflow de despliegue del frontend | 4 | Flores Eusebio, Angel Thyago | Done |
+| TS28 | Despliegue y validación final | T58 | Ejecutar pruebas de extremo a extremo sobre los flujos principales de operario, supervisor y gerente | 6 | Aponte Pablo, Isabel Luisa / Blancas Chávez, Carlos Franco | Done |
+| TS28 | Despliegue y validación final | T59 | Registrar incidencias encontradas durante la validación y verificar su corrección antes de integrar la versión final a main | 4 | Laura Acosta, Victor Jhosef | Done |
+
 #### 5.2.4.4. Development Evidence for Sprint Review.
 
 En esta seccion se presentan los commits realizados durante el Sprint 4, los cuales reflejan el avance en la integracion del frontend de RiskGuard con los Web Services implementados en el backend. El desarrollo se organizo en las ramas `develop` de los repositorios Frontend y Backend, donde se registraron los cambios relacionados con la conexion a la API real, la autenticacion JWT, el ajuste de contratos de datos, la correccion de errores, la configuracion de despliegue y la estabilizacion de los flujos principales por rol. Posteriormente, luego de validar los cambios en `develop`, la version final fue integrada a `main` como estado estable del producto. A continuacion, se presenta el registro de commits de la rama `develop`, ordenado de menor a mayor fecha de realizacion.
