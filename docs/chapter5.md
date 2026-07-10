@@ -340,7 +340,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <th>Commit Id</th>
       <th>Commit Message</th>
       <th>Commit Body</th>
-      <th>Evidence URL</th>
+      <th>Commited on (Date)</th>
     </tr>
   </thead>
   <tbody>
@@ -350,7 +350,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>5c9b242</td>
       <td>Add files via upload</td>
       <td>Implementación completa de la Landing Page (estructura HTML, estilos CSS y secciones: inicio, características, cómo funciona, segmentos, estadísticas y contacto)</td>
-      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/5c9b242">Ver commit</a></td>
+      <td>26/04/2026</td>
     </tr>
     <tr>
       <td>RiskGuard_LandingPage</td>
@@ -358,7 +358,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>57e4417</td>
       <td>docs: deploy github pages</td>
       <td>Configuración y despliegue del proyecto en GitHub Pages</td>
-      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/57e4417">Ver commit</a></td>
+      <td>26/04/2026</td>
     </tr>
     <tr>
       <td>RiskGuard_LandingPage</td>
@@ -366,7 +366,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>8b240d6</td>
       <td>fix: build</td>
       <td>Se corrigieron errores en la compilación del proyecto</td>
-      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/8b240d6">Ver commit</a></td>
+      <td>26/04/2026</td>
     </tr>
     <tr>
       <td>RiskGuard_LandingPage</td>
@@ -374,7 +374,7 @@ Durante el Sprint 1, el equipo se centró exclusivamente en el repositorio del L
       <td>a5f06db</td>
       <td>feat: añadir Readme Landing</td>
       <td>Se agregó el archivo README para la Landing Page de RiskGuard</td>
-      <td><a href="https://github.com/upc-web-applications/riskguard-landingpage/commit/a5f06db">Ver commit</a></td>
+      <td>26/04/2026</td>
     </tr>
   </tbody>
 </table>
@@ -695,6 +695,7 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 2 del p
 
 Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades correspondientes a cada Epic en el repositorio frontend del proyecto RiskGuard. A continuación se presenta el registro de commits realizados en las ramas de trabajo de cada integrante, evidenciando el progreso y las contribuciones individuales durante el período del sprint.
 
+
 <table border="1" cellspacing="0" cellpadding="6">
   <thead>
     <tr>
@@ -703,7 +704,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <th>Commit Id</th>
       <th>Commit Message</th>
       <th>Commit Body</th>
-      <th>Evidence URL</th>
+      <th>Commited on (Date)</th>
     </tr>
   </thead>
   <tbody>
@@ -713,7 +714,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>4066cfd</td>
       <td>Create index</td>
       <td>Creación del archivo índice del proyecto</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/4066cfd">Ver commit</a></td>
+      <td>24/04/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -721,63 +722,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>8a88511</td>
       <td>add inspection and headquarters BC</td>
       <td>Agregado bounded context de inspección y sede central</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/8a88511">Ver commit</a></td>
-    </tr>
-    <tr>
-      <td>Frontend</td>
-      <td>feature/assessment_mitigation</td>
-      <td>8aa1c72</td>
-      <td>fix: rename in english</td>
-      <td>Corrección de nombres de archivos y variables al inglés</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/8aa1c72">Ver commit</a></td>
-    </tr>
-    <tr>
-      <td>Frontend</td>
-      <td>feature/assessment_mitigation</td>
-      <td>0ebc3b5</td>
-      <td>Merge pull request #1 from upc-web-applications/feature/inspection_headquarters</td>
-      <td>Fusión de la rama feature/inspection_headquarters al flujo principal</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/0ebc3b5">Ver commit</a></td>
-    </tr>
-    <tr>
-      <td>Frontend</td>
-      <td>feature/assessment_mitigation</td>
-      <td>41a4aa4</td>
-      <td>feat: upload bc</td>
-      <td>Subida del bounded context de evaluación de riesgos</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/41a4aa4">Ver commit</a></td>
-    </tr>
-    <tr>
-      <td>Frontend</td>
-      <td>feature/assessment_mitigation</td>
-      <td>b8e45b7</td>
-      <td>fix: add</td>
-      <td>Corrección y adición de archivos faltantes en el módulo</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b8e45b7">Ver commit</a></td>
-    </tr>
-    <tr>
-      <td>Frontend</td>
-      <td>feature/assessment_mitigation</td>
-      <td>3570ff1</td>
-      <td>fix: add</td>
-      <td>Segunda corrección de archivos faltantes en el módulo</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3570ff1">Ver commit</a></td>
-    </tr>
-    <tr>
-      <td>Frontend</td>
-      <td>feature/monitoring-dashboard</td>
-      <td>5034b80</td>
-      <td>monitoring-dashboard bc</td>
-      <td>Agregado bounded context del dashboard de monitoreo del supervisor</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/5034b80">Ver commit</a></td>
-    </tr>
-    <tr>
-      <td>Frontend</td>
-      <td>feature/monitoring-dashboard</td>
-      <td>2f1d68a</td>
-      <td>update feature/monitoring-dashboard</td>
-      <td>Actualización de componentes y vistas del panel de monitoreo</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/2f1d68a">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -785,7 +730,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>b1cc4de</td>
       <td>Merge branch 'main' of Frontend-RiskGuard</td>
       <td>Sincronización con la rama main del repositorio personal</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b1cc4de">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -793,7 +738,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>f9d6a2c</td>
       <td>feat: add es and en</td>
       <td>Agregado archivos de internacionalización en español e inglés</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/f9d6a2c">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -801,7 +746,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>03a43ab</td>
       <td>feat: add database db</td>
       <td>Agregado archivo de base de datos json-server</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/03a43ab">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -809,7 +754,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>b6b23eb</td>
       <td>feat: add env</td>
       <td>Agregado archivo de variables de entorno del proyecto</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b6b23eb">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -817,7 +762,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>b3ec027</td>
       <td>feat: add shared</td>
       <td>Agregado componentes y recursos compartidos del módulo</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/b3ec027">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -825,7 +770,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>3415ec1</td>
       <td>feat: add entities</td>
       <td>Agregado entidades del dominio de reportes y cumplimiento SST</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3415ec1">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -833,7 +778,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>42e7dcf</td>
       <td>feat: add assemblers and api</td>
       <td>Agregado assemblers y servicios de consumo de API</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/42e7dcf">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -841,7 +786,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>4f10c4e</td>
       <td>feat: add store</td>
       <td>Agregado store  para gestión de estado del módulo</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/4f10c4e">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -849,7 +794,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>70fdeae</td>
       <td>feat: add presentation reports styles</td>
       <td>Agregado estilos y estructura visual de las vistas de reportes</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/70fdeae">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -857,7 +802,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>3fcc99b</td>
       <td>feat: add configuration</td>
       <td>Agregado configuración del módulo de reportes y cumplimiento</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3fcc99b">Ver commit</a></td>
+      <td>13/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -865,7 +810,55 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>dbeea7d</td>
       <td>fix: correct position</td>
       <td>Corrección de posicionamiento de elementos en la interfaz</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/dbeea7d">Ver commit</a></td>
+      <td>13/05/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>8aa1c72</td>
+      <td>fix: rename in english</td>
+      <td>Corrección de nombres de archivos y variables al inglés</td>
+      <td>14/05/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>0ebc3b5</td>
+      <td>Merge pull request #1 from upc-web-applications/feature/inspection_headquarters</td>
+      <td>Fusión de la rama feature/inspection_headquarters al flujo principal</td>
+      <td>14/05/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>41a4aa4</td>
+      <td>feat: upload bc</td>
+      <td>Subida del bounded context de evaluación de riesgos</td>
+      <td>14/05/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>b8e45b7</td>
+      <td>fix: add</td>
+      <td>Corrección y adición de archivos faltantes en el módulo</td>
+      <td>14/05/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/assessment_mitigation</td>
+      <td>3570ff1</td>
+      <td>fix: add</td>
+      <td>Segunda corrección de archivos faltantes en el módulo</td>
+      <td>14/05/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/monitoring-dashboard</td>
+      <td>5034b80</td>
+      <td>monitoring-dashboard bc</td>
+      <td>Agregado bounded context del dashboard de monitoreo del supervisor</td>
+      <td>14/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -873,7 +866,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>297db99</td>
       <td>feat: add service pdf and excel</td>
       <td>Agregado servicio de generación de documentos PDF y Excel con jsPDF</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/297db99">Ver commit</a></td>
+      <td>14/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -881,7 +874,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>e0cf4ad</td>
       <td>feat: add new presentation</td>
       <td>Agregado nueva vista de presentación del módulo de reportes</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/e0cf4ad">Ver commit</a></td>
+      <td>14/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -889,7 +882,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>de75928</td>
       <td>feat: update routes</td>
       <td>Actualización del enrutamiento para las vistas de reportes</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/de75928">Ver commit</a></td>
+      <td>14/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -897,7 +890,15 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>3b0f309</td>
       <td>feat: reports updates</td>
       <td>Actualización de componentes y lógica del módulo de reportes</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/3b0f309">Ver commit</a></td>
+      <td>14/05/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>feature/monitoring-dashboard</td>
+      <td>2f1d68a</td>
+      <td>update feature/monitoring-dashboard</td>
+      <td>Actualización de componentes y vistas del panel de monitoreo</td>
+      <td>15/05/2026</td>
     </tr>
     <tr>
       <td>Frontend</td>
@@ -905,7 +906,7 @@ Durante el Sprint 2, el equipo realizó el desarrollo de las funcionalidades cor
       <td>8116699</td>
       <td>authentication bc</td>
       <td>Agregado bounded context de autenticación de usuarios</td>
-      <td><a href="https://github.com/upc-web-applications/Frontend/commit/8116699">Ver commit</a></td>
+      <td>15/05/2026</td>
     </tr>
   </tbody>
 </table>
@@ -2299,7 +2300,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <th>Commit Id</th>
       <th>Commit Message</th>
       <th>Commit Body</th>
-      <th>Evidence URL</th>
+      <th>Commited on (Date)</th>
     </tr>
   </thead>
   <tbody>
@@ -2309,7 +2310,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>caefcf9</td>
       <td>first commit</td>
       <td>Creación inicial del repositorio backend</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/caefcf9">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2317,7 +2318,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>3150c55</td>
       <td>Fix: update</td>
       <td>Corrección y actualización de archivos del proyecto</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/3150c55">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2325,7 +2326,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>767c91a</td>
       <td>chore: initial project setup with ASP.NET Core Web API</td>
       <td>Configuración inicial del proyecto con ASP.NET Core Web API</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/767c91a">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2333,7 +2334,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>b14dc11</td>
       <td>feat: add Shared module</td>
       <td>Agregado módulo Shared con CrudController genérico, DbContext y UnitOfWork</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/b14dc11">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2341,7 +2342,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>a911b0b</td>
       <td>feat(reports): add monthly_reports endpoint</td>
       <td>Agregado MonthlyReportsController con endpoints GET all, GET by id, GET by year, POST y PUT</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/a911b0b">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2349,7 +2350,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>a85af2b</td>
       <td>feat(reports): add cumulative_st_indicators endpoint</td>
       <td>Agregado CumulativeStIndicatorsController con endpoints GET all y GET by id</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/a85af2b">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2357,7 +2358,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>0e92be4</td>
       <td>feat(reports): add historical_incident_records and annual_ohs_plan endpoints</td>
       <td>Agregado HistoricalIncidentRecordsController y AnnualOhsPlanController</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/0e92be4">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2365,7 +2366,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>7b6ea0b</td>
       <td>feat(reports): add predictive_indicators and critical_alerts endpoints</td>
       <td>Agregado PredictiveIndicatorsController y CriticalAlertsController con GET, PUT y DELETE</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/7b6ea0b">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2373,7 +2374,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>2027f26</td>
       <td>feat(reports): add generated_reports, kpi_dashboard and historical_trends endpoints</td>
       <td>Agregado GeneratedReportsController, KpiDashboardController y HistoricalTrendsController</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/2027f26">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2381,7 +2382,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>eea1ccd</td>
       <td>feat(reports): configure Program</td>
       <td>Configuración del Program.cs con DbContext, Swagger y servicios de inyección de dependencias</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/eea1ccd">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2389,7 +2390,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>75c61aa</td>
       <td>feat(reports): add Resources and Transform</td>
       <td>Agregado Resources y Transform assemblers para el BC ReportsCompliance</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/75c61aa">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2397,7 +2398,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>f2fd93a</td>
       <td>feat(reports): integrate CQRS with Resources and Transform in controllers</td>
       <td>Integración del patrón CQRS con Resources y Transform en todos los controllers de ReportsCompliance</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/f2fd93a">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2405,7 +2406,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>550eb6c</td>
       <td>feat(reports): add all endpoints matching frontend usage (GET id, PUT, DELETE)</td>
       <td>Agregado endpoints adicionales GET by id, PUT y DELETE para coincidir con el consumo del frontend</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/550eb6c">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2413,7 +2414,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>24f36ec</td>
       <td>feat: add elements</td>
       <td>Agregado elementos adicionales del dominio de reportes</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/24f36ec">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2421,7 +2422,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>c91df25</td>
       <td>Merge pull request #1 from IsabelAponte234/feature/reports-refactor</td>
       <td>Fusión de la rama feature/reports-refactor con refactorización de controllers</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/c91df25">Ver commit</a></td>
+      <td>19/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2429,7 +2430,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>560fa99</td>
       <td>feat: add to my feature</td>
       <td>Agregado bounded contexts RiskAssessments, Mitigations, Hazards y Technicians con todos los controllers</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/560fa99">Ver commit</a></td>
+      <td>20/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2437,7 +2438,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>8d2b036</td>
       <td>Merge pull request #2 from upc-web-applications/feature/reports</td>
       <td>Fusión de la rama feature/reports al flujo de assessment_mitigation</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/8d2b036">Ver commit</a></td>
+      <td>20/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2445,7 +2446,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>5ab61d6</td>
       <td>feat: add inspection and headquarters BC</td>
       <td>Agregado bounded contexts Inspections y OrganizationAssets con InspeccionesController, PeligrosController, SedesController, AreasController y ActivosController</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/5ab61d6">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2453,7 +2454,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>1ce5310</td>
       <td>chore: add project configuration files</td>
       <td>Agregado archivos de configuración del proyecto inspection con EF Core y MySQL</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/1ce5310">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2461,7 +2462,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>d35638c</td>
       <td>feat(iam): add authentication and identity access context</td>
       <td>Agregado AuthenticationController con sign-in/sign-up JWT, UsersController, RolesController, SessionsController y AccessLogsController</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/d35638c">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2469,7 +2470,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>4eb6a26</td>
       <td>feat(monitoring): add monitoring dashboard context</td>
       <td>Agregado HeatMapZonesController, TicketsController, TechniciansController, AssetsController, PreventiveMaintenancesController y ArchivedReportsController</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/4eb6a26">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2477,7 +2478,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>c11d837</td>
       <td>feat(shared): add shared backend infrastructure</td>
       <td>Agregado módulo Shared con CrudController genérico, DbContext, UnitOfWork y configuración EF Core</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/c11d837">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2485,7 +2486,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>27877fd</td>
       <td>chore: add backend project configuration</td>
       <td>Agregado archivos de configuración del proyecto auth_monitoring con Swagger y MySQL</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/27877fd">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2493,7 +2494,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>c4ce846</td>
       <td>chore: add gitignore for .NET artifacts</td>
       <td>Agregado .gitignore para artefactos de compilación .NET</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/c4ce846">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
     <tr>
       <td>Backend</td>
@@ -2501,7 +2502,7 @@ En esta sección se presentan los commits realizados durante el Sprint 3, los cu
       <td>fecc5e9</td>
       <td>feat: merge all branches</td>
       <td>Fusión de todas las ramas feature al branch main del repositorio backend</td>
-      <td><a href="https://github.com/upc-web-applications/Backend/commit/fecc5e9">Ver commit</a></td>
+      <td>21/06/2026</td>
     </tr>
   </tbody>
 </table>
@@ -3236,6 +3237,224 @@ En este Sprint, los aspectos corresponden a los principales Bounded Contexts des
 
 #### 5.2.4.3. Sprint Backlog 4.
 #### 5.2.4.4. Development Evidence for Sprint Review.
+
+En esta seccion se presentan los commits realizados durante el Sprint 4, los cuales reflejan el avance en la integracion del frontend de RiskGuard con los Web Services implementados en el backend. El desarrollo se organizo en las ramas `develop` de los repositorios Frontend y Backend, donde se registraron los cambios relacionados con la conexion a la API real, la autenticacion JWT, el ajuste de contratos de datos, la correccion de errores, la configuracion de despliegue y la estabilizacion de los flujos principales por rol. Posteriormente, luego de validar los cambios en `develop`, la version final fue integrada a `main` como estado estable del producto. A continuacion, se presenta el registro de commits de la rama `develop`, ordenado de menor a mayor fecha de realizacion.
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>572b916</td>
+      <td>chore: update frontend configuration</td>
+      <td>Actualizacion de la configuracion del frontend para preparar la integracion y despliegue de la aplicacion.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>0280ed7</td>
+      <td>feat: refine role workflows and bounded contexts</td>
+      <td>Refinamiento de los flujos por rol de usuario y ajuste de bounded contexts para la integracion funcional.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>e6d1e86</td>
+      <td>chore: update mock server data</td>
+      <td>Actualizacion de datos del mock server para validar escenarios antes de completar el consumo del backend real.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>428154e</td>
+      <td>docs: add setup and validation documentation</td>
+      <td>Incorporacion de documentacion de configuracion y validacion para facilitar la ejecucion del frontend.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>3a25101</td>
+      <td>ci: update frontend deployment workflow</td>
+      <td>Actualizacion del flujo de despliegue continuo del frontend para publicar la aplicacion integrada.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>102ad41</td>
+      <td>Agrega descripcion/resolucion/operario a HistoricalIncidentRecord y responsable_supervisor a CriticalAlert</td>
+      <td>Ampliacion de modelos de reportes y alertas criticas con campos requeridos por el frontend.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>190819b</td>
+      <td>feat(reports): complete predictive indicators</td>
+      <td>Completado de indicadores predictivos del modulo de reportes para su consumo desde la aplicacion web.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>ed1628e</td>
+      <td>fix(reports): persist critical alert status changes on GetAll</td>
+      <td>Correccion de persistencia de cambios de estado en alertas criticas al consultar el listado general.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>79db7b3</td>
+      <td>feat(reports): remove unused monthly_reports and cumulative_st_indicators endpoints</td>
+      <td>Eliminacion de endpoints no utilizados para alinear el backend con los contratos requeridos por el frontend.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>35ba0c2</td>
+      <td>fix(reports): align response shapes and json casing with frontend</td>
+      <td>Alineacion de estructuras de respuesta y formato JSON con los modelos consumidos por el frontend.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>0a7516f</td>
+      <td>Merge pull request #5 from upc-web-applications/features/news</td>
+      <td>Integracion de cambios de la rama features/news hacia develop.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>a636d5c</td>
+      <td>feat: connect frontend to backend API with JWT authentication and update all endpoint paths</td>
+      <td>Conexion del frontend con la API real del backend, autenticacion JWT y actualizacion de rutas de endpoints.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>f9fab9c</td>
+      <td>Merge pull request #5 from upc-web-applications/develop</td>
+      <td>Integracion de cambios consolidados en la rama develop del repositorio frontend.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>28c0454</td>
+      <td>feat: implement email-based login, restore monthly_reports/cumulative_st_indicators, and add comprehensive seed data</td>
+      <td>Implementacion de login por correo, restauracion de endpoints de reportes y carga de datos semilla para pruebas.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>41fcf06</td>
+      <td>Merge pull request #6 from upc-web-applications/develop</td>
+      <td>Integracion de cambios acumulados en develop del backend.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>2ce9995</td>
+      <td>fix: language-switcher persist, parseInt stores, API paths, query params, 401 interceptor, store returns</td>
+      <td>Correcciones de persistencia de idioma, stores, rutas de API, parametros de consulta, interceptor 401 y retornos de estado.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>ad284eb</td>
+      <td>Merge pull request #6 from upc-web-applications/develop</td>
+      <td>Integracion de correcciones de consumo de API en la rama develop del frontend.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>f6b81d2</td>
+      <td>fix: cascade delete tickets, add [Authorize], fix missing endpoints, fix sign-up email, add spanish error resources</td>
+      <td>Correccion de eliminacion en cascada de tickets, autorizacion, endpoints faltantes, registro por email y mensajes de error en espanol.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>cc4f90c</td>
+      <td>Merge pull request #7 from upc-web-applications/develop</td>
+      <td>Integracion de correcciones finales del backend en la rama develop.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>b45d9b0</td>
+      <td>fix: point env production to real backend riskguard-platform.onrender.com</td>
+      <td>Actualizacion del entorno de produccion del frontend para consumir el backend desplegado en Render.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>bf24705</td>
+      <td>Merge pull request #7 from upc-web-applications/develop</td>
+      <td>Integracion de ajustes finales de configuracion y consumo de API en develop.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>fb5e861</td>
+      <td>fix: firebase.json hosting site name and fix workflow merge conflict</td>
+      <td>Correccion del nombre del sitio en Firebase Hosting y resolucion de conflicto del workflow de despliegue.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>ae2d674</td>
+      <td>fix: replace ExecuteDeleteAsync with RemoveRange in transaction for ticket cascade delete</td>
+      <td>Reemplazo de ExecuteDeleteAsync por RemoveRange dentro de una transaccion para estabilizar la eliminacion en cascada de tickets.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>develop</td>
+      <td>a45ac26</td>
+      <td>Merge branch 'develop'</td>
+      <td>Fusion final de la rama develop del backend para consolidar las correcciones del sprint.</td>
+      <td>09/07/2026</td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>develop</td>
+      <td>c63dab9</td>
+      <td>fix: language-switcher guard no-op, global error handler, remove legacy i18n</td>
+      <td>Correccion del selector de idioma, manejo global de errores y eliminacion de configuracion i18n heredada.</td>
+      <td>09/07/2026</td>
+    </tr>
+  </tbody>
+</table>
+
 #### 5.2.4.5. Execution Evidence for Sprint Review.
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.
