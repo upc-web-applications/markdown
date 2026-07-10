@@ -1,32 +1,46 @@
-# RiskGuard by GuardSecurity
 <div align="center">
 <br><br>
 <img src="docs/images/logo-upc.png" alt="drawing" width="100"/> <br><br>
 
-### Universidad Peruana de Ciencias Aplicadas
+**Universidad Peruana de Ciencias Aplicadas (UPC)**
 
-<small>Facultad de Ingeniería &nbsp;·&nbsp; Ingeniería de Software &nbsp;·&nbsp; 5to Ciclo</small>
+Carrera de Ingeniería de Software
 
-Aplicaciones Web
+<br>
 
-<small>NRC: 12190 &nbsp;·&nbsp; Profesor: Hugo Allan Mori Paiva</small>
+**1ASI0730**
 
-### Informe del Trabajo Final
+**Aplicaciones Web**
 
-<small>Startup &nbsp;·&nbsp; GuardSecurity</small>
+NRC <br> **12190**
 
-<small>Producto &nbsp;·&nbsp; RiskGuard</small>
+**Informe del Trabajo Final**
 
-### Integrantes
+Profesor
 
-| Código     | Alumno                             |
-| :--------: | :--------------------------------: |
-| u20241e158 | Aponte Pablo, Isabel Luisa         |
-| u202418655 | Laura Acosta, Victor Jhosef        |
-| u20241a322 | Blancas Chávez, Carlos Franco      |
-| u20231b781 | Flores Eusebio, Angel Thyago       |
+**Mori Paiva, Hugo Allan** <br><br>
 
-<small>Abril &nbsp;·&nbsp; 2026</small>
+Equipo <br>
+**GuardSecurity**
+
+Proyecto <br>
+**RiskGuard** <br><br>
+
+Integrantes
+
+u20241e158 - Aponte Pablo, Isabel Luisa
+
+u202418655 - Laura Acosta, Victor Jhosef
+
+u20241a322 - Blancas Chávez, Carlos Franco
+
+u20231b781 - Flores Eusebio, Angel Thyago
+
+**Período 202610**
+
+**Julio 2026**
+
+</div>
 
 ---
 
