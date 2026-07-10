@@ -3558,7 +3558,280 @@ En esta captura se muestra la generacion de un reporte predictivo para el perfil
 
 La evidencia final muestra la sesion de usuario activa y las opciones disponibles desde el menu de perfil. Esto permite validar el manejo de sesion, la visualizacion de datos del usuario autenticado.
 
+
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 4 se actualizo la documentacion de servicios para reflejar la integracion entre el frontend de RiskGuard y los Web Services reales implementados en ASP.NET Core. A diferencia del Sprint 3, donde el foco estuvo en construir y exponer los endpoints del backend, en este Sprint se valido que dichos servicios fueran consumidos desde la aplicacion Vue 3 mediante adaptadores API, variables de entorno y autenticacion JWT.
+
+Para registrar esta evidencia se revisaron los artefactos actualizados de ambos repositorios: Frontend y Backend-main. En el backend se verifico la existencia de controladores REST por bounded context, documentacion OpenAPI/Swagger, soporte para token Bearer, CORS y mapeo de controladores. En el frontend se verifico la configuracion de la URL base del API, el interceptor para adjuntar el token JWT y los archivos api.js encargados de consumir cada servicio.
+
+**Repositorio Frontend:** https://github.com/upc-web-applications/Frontend  
+**Repositorio Backend / Web Services:** https://github.com/upc-web-applications/Backend  
+**URL base local del API:** http://localhost:5175/api/v1  
+**URL local de documentacion Swagger:** http://localhost:5175/swagger 
+**URL de documentacion Swagger en produccion:** https://riskguard-platform.onrender.com/swagger/index.html  
+**Formato de autenticacion:** Authorization: Bearer <token>
+
+**Evidencia tecnica revisada en los ZIP**
+
+| **Repositorio** | **Archivo / componente** | **Evidencia registrada** |
+|---|---|---|
+| Backend | `Program.cs` | Configuracion de Swagger/OpenAPI, soporte de JWT Bearer, CORS, autenticacion, autorizacion y mapeo de controllers REST. |
+| Backend | `Iam/Interfaces/Rest/AuthenticationController.cs` | Endpoints de autenticacion para `sign-in` y `sign-up`. |
+| Backend | `ReportsCompliance/Interfaces/Rest/ReportsComplianceControllers.cs` | Endpoints de reportes, indicadores, tendencias, alertas criticas y registros historicos. |
+| Backend | `Mitigations/Interfaces/Rest/*Controller.cs` | Endpoints para tickets correctivos, mitigaciones, alertas SLA, historial y verificaciones. |
+| Backend | `RiskAssessments/Interfaces/Rest/*Controller.cs` | Endpoints para evaluacion de riesgos, patrones, resumen diario y criticidad por area. |
+| Backend | `OrganizationAssets/Interfaces/Rest/OrganizationAssetsControllers.cs` | Endpoints para sedes, areas y activos industriales. |
+| Frontend | `.env.production` | Configuracion de `VITE_RISKGUARD_API_URL` apuntando al backend desplegado en Render. |
+| Frontend | `src/shared/infrastructure/base-api.js` | Cliente HTTP con Axios, URL base desde variables de entorno, token JWT en cabecera Authorization y manejo de error 401. |
+| Frontend | `src/**/infrastructure/*-api.js` | Adaptadores por bounded context para consumir endpoints reales del backend. |
+
+**Endpoints documentados y consumidos durante el Sprint**
+
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Bounded Context</th>
+      <th>Recurso / Servicio</th>
+      <th>Endpoint base</th>
+      <th>Acciones documentadas</th>
+      <th>Evidencia de integracion frontend</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">IAM / Account Generation and Authentication BC</td>
+      <td>Autenticacion</td>
+      <td><code>/api/v1/authentication</code></td>
+      <td><code>POST sign-in</code>, <code>POST sign-up</code></td>
+      <td><code>identity-access-api.js</code> y <code>base-api.js</code> gestionan inicio de sesion, registro y token JWT.</td>
+    </tr>
+    <tr>
+      <td>Usuarios</td>
+      <td><code>/api/v1/users</code></td>
+      <td><code>GET</code>, <code>GET {id}</code></td>
+      <td>Consulta de informacion del usuario autenticado para sesion y perfil.</td>
+    </tr>
+    <tr>
+      <td>Roles</td>
+      <td><code>/api/v1/roles</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td>Soporte para control de acceso por perfil de operario, supervisor y gerente.</td>
+    </tr>
+    <tr>
+      <td>Sesiones y logs de acceso</td>
+      <td><code>/api/v1/sessions</code>, <code>/api/v1/access-logs</code></td>
+      <td><code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td>Registro y administracion de sesiones activas del sistema.</td>
+    </tr>
+    <tr>
+      <td>Site, Area and Industrial Asset BC</td>
+      <td>Sedes, areas y activos</td>
+      <td><code>/api/v1/headquarters</code>, <code>/api/v1/areas</code>, <code>/api/v1/assets</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>site-api.js</code>, <code>area-api.js</code> y <code>asset-api.js</code> conectan la configuracion de planta con el backend.</td>
+    </tr>
+    <tr>
+      <td>Inspection / Unsafe Condition BC</td>
+      <td>Inspecciones y peligros</td>
+      <td><code>/api/v1/inspections</code>, <code>/api/v1/dangers</code></td>
+      <td><code>GET</code>, <code>GET mine/{operatorId}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>inspection-api.js</code> permite registrar y consultar inspecciones desde el frontend.</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Risk Assessment BC</td>
+      <td>Evaluaciones de riesgo</td>
+      <td><code>/api/v1/risk-assessments</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>risk-assessment-api.js</code> consume las evaluaciones registradas.</td>
+    </tr>
+    <tr>
+      <td>Peligros</td>
+      <td><code>/api/v1/hazards</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>hazard-api.js</code> integra el catalogo de peligros.</td>
+    </tr>
+    <tr>
+      <td>Patrones de riesgo</td>
+      <td><code>/api/v1/risk-patterns</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>patron-riesgo-api.js</code> conecta los patrones usados para analisis.</td>
+    </tr>
+    <tr>
+      <td>Alertas de patron</td>
+      <td><code>/api/v1/pattern-alerts</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>alerta-patron-api.js</code> consume alertas generadas por patrones.</td>
+    </tr>
+    <tr>
+      <td>Resumen diario y criticidad por area</td>
+      <td><code>/api/v1/daily-summaries</code>, <code>/api/v1/area-criticality-levels</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>resumen-diario-api.js</code> y <code>nivel-criticidad-area-api.js</code> conectan indicadores de criticidad.</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Mitigation BC</td>
+      <td>Tickets correctivos</td>
+      <td><code>/api/v1/corrective-action-tickets</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>ticket-accion-correctiva-api.js</code> integra la gestion de tickets.</td>
+    </tr>
+    <tr>
+      <td>Mitigaciones</td>
+      <td><code>/api/v1/mitigations</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>mitigation-api.js</code> conecta medidas de mitigacion.</td>
+    </tr>
+    <tr>
+      <td>Alertas SLA</td>
+      <td><code>/api/v1/sla-alerts</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>alerta-sla-api.js</code> permite consultar alertas por incumplimiento SLA.</td>
+    </tr>
+    <tr>
+      <td>Notificaciones criticas</td>
+      <td><code>/api/v1/critical-notifications</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>notificacion-critica-api.js</code> conecta notificaciones de criticidad.</td>
+    </tr>
+    <tr>
+      <td>Verificaciones de medida</td>
+      <td><code>/api/v1/measure-verifications</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>verificacion-medida-api.js</code> integra la aprobacion o rechazo de medidas.</td>
+    </tr>
+    <tr>
+      <td>Tecnicos e historial de tickets</td>
+      <td><code>/api/v1/technicians</code>, <code>/api/v1/ticket-histories</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>tecnico-api.js</code> e <code>historial-ticket-api.js</code> soportan asignacion y seguimiento.</td>
+    </tr>
+    <tr>
+      <td>Monitoring / Dashboard BC</td>
+      <td>Mapa de calor, tickets, tecnicos, activos y mantenimientos</td>
+      <td><code>/api/v1/heat-map-zones</code>, <code>/api/v1/dashboard-tickets</code>, <code>/api/v1/dashboard-technicians</code>, <code>/api/v1/dashboard-assets</code>, <code>/api/v1/preventive-maintenances</code>, <code>/api/v1/archived-reports</code></td>
+      <td><code>GET</code> y consultas de dashboard</td>
+      <td><code>monitoring-api.js</code> consume datos para el dashboard operativo del supervisor.</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Reports / Compliance BC</td>
+      <td>Registros historicos de incidentes</td>
+      <td><code>/api/v1/historical_incident_records</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td><code>reports-api.js</code> consulta y administra el historial de incidentes usado para auditoria, tendencias y trazabilidad SST.</td>
+    </tr>
+    <tr>
+      <td>Plan anual SST</td>
+      <td><code>/api/v1/annual_ohs_plan</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td>Permite registrar, consultar y actualizar actividades del plan anual de seguridad y salud ocupacional.</td>
+    </tr>
+    <tr>
+      <td>Indicadores predictivos</td>
+      <td><code>/api/v1/predictive_indicators</code></td>
+      <td><code>GET</code>, <code>GET {id}</code></td>
+      <td>Entrega indicadores para anticipar zonas, riesgos o periodos con mayor probabilidad de incidentes.</td>
+    </tr>
+    <tr>
+      <td>Alertas criticas</td>
+      <td><code>/api/v1/critical_alerts</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code></td>
+      <td>Gestiona alertas criticas relacionadas con incidentes, riesgos o incumplimientos que requieren atencion prioritaria.</td>
+    </tr>
+    <tr>
+      <td>Reportes generados</td>
+      <td><code>/api/v1/generated_reports</code></td>
+      <td><code>GET</code>, <code>GET {id}</code>, <code>POST</code>, <code>PUT</code></td>
+      <td>Registra y consulta reportes ejecutivos generados desde el sistema para seguimiento gerencial y cumplimiento.</td>
+    </tr>
+    <tr>
+      <td>Dashboard KPI</td>
+      <td><code>/api/v1/kpi_dashboard</code></td>
+      <td><code>GET</code>, <code>GET {id}</code></td>
+      <td>Provee indicadores clave del dashboard ejecutivo, como incidentes activos, cumplimiento SST y estado general de seguridad.</td>
+    </tr>
+    <tr>
+      <td>Tendencias historicas</td>
+      <td><code>/api/v1/historical_trends</code></td>
+      <td><code>GET</code>, <code>GET {id}</code></td>
+      <td>Permite visualizar la evolucion de incidentes, riesgos y cumplimiento a lo largo del tiempo.</td>
+    </tr>
+    <tr>
+      <td>Reportes mensuales</td>
+      <td><code>/api/v1/monthly_reports</code></td>
+      <td><code>GET</code></td>
+      <td>Obtiene reportes mensuales consolidados para revisar resultados, variaciones y cumplimiento por periodo.</td>
+    </tr>
+    <tr>
+      <td>Indicadores acumulados SST</td>
+      <td><code>/api/v1/cumulative_st_indicators</code></td>
+      <td><code>GET</code></td>
+      <td>Consulta indicadores acumulados de seguridad y salud en el trabajo para evaluar el desempeno global del sistema.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**Commits relacionados con documentacion, contratos e integracion de servicios**
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Relacion con servicios** |
+|---|---|---|---|---|
+| Backend | develop | 28c0454 | feat: implement email-based login, restore monthly_reports/cumulative_st_indicators, and add comprehensive seed data | Actualiza autenticacion por correo, recupera endpoints de reportes y agrega datos semilla para pruebas de servicios. |
+| Backend | develop | f6b81d2 | fix: cascade delete tickets, add [Authorize], fix missing endpoints, fix sign-up email, add spanish error resources | Corrige endpoints faltantes, agrega proteccion con autorizacion y mejora respuestas de error. |
+| Backend | main | ae2d674 | fix: replace ExecuteDeleteAsync with RemoveRange in transaction for ticket cascade delete | Ajusta la eliminacion en cascada de tickets para mantener consistencia de datos. |
+| Frontend | develop | a636d5c | feat: connect frontend to backend API with JWT authentication and update all endpoint paths | Conecta el frontend con la API real, agrega autenticacion JWT y actualiza rutas de endpoints. |
+| Frontend | develop | 2ce9995 | fix: language-switcher persist, parseInt stores, API paths, query params, 401 interceptor, store returns | Corrige rutas del API, parametros de consulta, interceptor 401 y retorno de stores. |
+| Frontend | main | b45d9b0 | fix: point .env production to real backend riskguard-platform.onrender.com | Configura el entorno productivo para consumir el backend desplegado. |
+| Frontend | main | c63dab9 | fix: language-switcher guard no-op, global error handler, remove legacy i18n | Estabiliza el manejo global de errores durante el consumo de servicios. |
+
+Con esta documentacion, el equipo deja registrada la correspondencia entre los endpoints expuestos por el backend y los adaptadores utilizados por el frontend. Esto permite comprobar que el Sprint 4 no solo mantuvo la documentacion OpenAPI de los servicios, sino que tambien actualizo los contratos necesarios para ejecutar los flujos principales de RiskGuard con informacion persistente, autenticacion segura y manejo centralizado de errores.
+
+**Evidencia visual de documentacion y prueba de servicios**
+
+**Evidencia visual de documentacion y prueba de servicios**
+
+<h5 align="center">Authentication service response with JWT token</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-103334.png" alt="Authentication service response with JWT token" width="750"/>
+</p>
+
+Esta evidencia muestra con mayor detalle la respuesta del servicio de autenticacion. El backend procesa las credenciales del usuario administrador y retorna un token JWT, el cual es utilizado posteriormente por el frontend para consumir endpoints protegidos mediante la cabecera <code>Authorization: Bearer</code>.
+
+<h5 align="center">KPI dashboard service test for executive reports</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-104238.png" alt="KPI dashboard service test with frontend executive dashboard" width="750"/>
+</p>
+
+La captura evidencia la integracion del dashboard ejecutivo con el endpoint <code>GET /api/v1/kpi_dashboard</code>. A la izquierda se visualizan los indicadores de seguridad en la aplicacion web y a la derecha la respuesta del backend en Swagger, confirmando que los KPI del perfil gerente son obtenidos desde los Web Services reales.
+
+<h5 align="center">Corrective action tickets service test</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-104831.png" alt="Corrective action tickets service test" width="750"/>
+</p>
+
+La evidencia muestra la consulta de tickets correctivos mediante el endpoint <code>GET /api/v1/corrective-action-tickets</code>. En el frontend se observa la vista de Tickets de Accion Correctiva del perfil supervisor, mientras que Swagger confirma la respuesta <code>200</code> con los tickets registrados, sus estados, criticidad, tecnico asignado y datos de seguimiento.
+
+<h5 align="center">Inspections service test for operator workflow</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-105031.png" alt="Inspections service test for operator workflow" width="750"/>
+</p>
+
+La captura evidencia la integracion del modulo de inspecciones con el endpoint <code>GET /api/v1/inspections</code>. A la izquierda se muestra la lista de inspecciones del perfil operario y a la derecha la respuesta del backend con registros de condiciones inseguras, nivel de urgencia, estado, descripcion y accion correctiva sugerida.
+
+<h5 align="center">Swagger documentation for technicians and area criticality services</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-105753.png" alt="Swagger documentation for technicians and area criticality services" width="750"/>
+</p>
+
+La captura evidencia la documentacion OpenAPI del backend desplegado en produccion. En esta vista se observan los endpoints de tecnicos, recursos de tecnicos para dashboard y niveles de criticidad por area, incluyendo operaciones <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code> y <code>DELETE</code>. Tambien se aprecia que los servicios se encuentran protegidos mediante autorizacion.
+
+
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
 En esta seccion se presentan las evidencias de despliegue del Sprint 4. El objetivo fue validar que la aplicacion web RiskGuard funcione en sus totalidad con respecto al despliegue del frontend y backend.
