@@ -2157,8 +2157,8 @@
 </tbody>
 </table>
 
----
 
+---
 <table align="center">
 <thead>
 <tr>
@@ -2172,55 +2172,6 @@
 <tbody>
 <tr valign="top">
 <td align="center"><b>US44</b></td>
-<td>Gestión de Cuentas de Usuario desde Administración</td>
-<td>Como Administrador, quiero crear, editar y desactivar cuentas de usuario para operarios, supervisores y otros gerentes, para mantener el control de acceso a la plataforma y asegurar que solo el personal autorizado pueda ingresar.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Gestión de Cuentas de Usuario desde Administración.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Creación exitosa de cuenta<br/>
-<ul>
-<li><b>Given</b> que el Administrador accede al módulo de gestión de usuarios,</li>
-<li><b>When</b> completa el formulario con los datos del nuevo usuario y hace clic en "Crear cuenta",</li>
-<li><b>Then</b> el sistema registra la cuenta en la base de datos,</li>
-<li><b>And</b> muestra la contraseña temporal generada para su entrega al usuario.</li>
-</ul>
-<b>Escenario 2:</b> Correo ya registrado<br/>
-<ul>
-<li><b>Given</b> que el Administrador intenta crear una cuenta con un correo ya existente,</li>
-<li><b>When</b> hace clic en "Crear cuenta",</li>
-<li><b>Then</b> el sistema bloquea el registro,</li>
-<li><b>And</b> muestra el mensaje "El correo ingresado ya está registrado en el sistema".</li>
-</ul>
-<b>Escenario 3:</b> Desactivación de cuenta<br/>
-<ul>
-<li><b>Given</b> que el Administrador necesita retirar el acceso a un usuario,</li>
-<li><b>When</b> selecciona la opción "Desactivar" sobre la cuenta,</li>
-<li><b>Then</b> el sistema cambia el estado de la cuenta a "Inactiva",</li>
-<li><b>And</b> el usuario no puede iniciar sesión desde ese momento, conservando su historial de actividad.</li>
-</ul>
-</td>
-<td align="center"><b>EP04</b></td>
-</tr>
-</tbody>
-</table>
-
----
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US45</b></td>
 <td>Generación de Reporte Mensual de Gestión de SST</td>
 <td>Como Gerente, quiero generar un reporte mensual consolidado de la gestión de seguridad con un solo clic, para reducir el tiempo dedicado a elaborar informes manuales y tener siempre datos actualizados para presentar al directorio.</td>
 <td>
@@ -2262,54 +2213,7 @@
 </tr>
 </tbody>
 </table>
----
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US46</b></td>
-<td>Configuración de niveles de riesgo</td>
-<td>Como administrador, quiero definir los niveles de riesgo del sistema, para clasificar correctamente los incidentes detectados.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Configuración de niveles de riesgo.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
 
-<b>Escenario 1:</b> Creación de nivel de riesgo<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de configuración,</li>
-<li><b>When</b> registra un nuevo nivel de riesgo y hace clic en "Guardar",</li>
-<li><b>Then</b> el sistema valida los datos ingresados,</li>
-<li><b>And</b> guarda el nuevo nivel correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Edición de nivel de riesgo<br/>
-<ul>
-<li><b>Given</b> que existen niveles de riesgo registrados,</li>
-<li><b>When</b> el administrador modifica un nivel existente,</li>
-<li><b>Then</b> el sistema guarda los cambios correctamente,</li>
-<li><b>And</b> actualiza la información en el sistema.</li>
-</ul>
-<b>Escenario 3:</b> Validación de duplicados<br/>
-<ul>
-<li><b>Given</b> que el administrador intenta crear un nivel con nombre repetido,</li>
-<li><b>When</b> hace clic en "Guardar",</li>
-<li><b>Then</b> el sistema rechaza la operación,</li>
-<li><b>And</b> muestra el mensaje "El nivel de riesgo ya existe".</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
 
 ---
 
@@ -2325,207 +2229,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US47</b></td>
-<td>Configuración de umbrales de alerta</td>
-<td>Como administrador, quiero definir los umbrales de alerta del sistema, para que se generen notificaciones cuando se superen ciertos valores.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Configuración de umbrales de alerta.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Configuración de umbral válida<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de configuración,</li>
-<li><b>When</b> ingresa un valor válido de umbral y hace clic en "Guardar",</li>
-<li><b>Then</b> el sistema valida el valor ingresado,</li>
-<li><b>And</b> guarda la configuración correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Ingreso de valor inválido<br/>
-<ul>
-<li><b>Given</b> que el administrador se encuentra configurando umbrales,</li>
-<li><b>When</b> ingresa un valor negativo o inválido,</li>
-<li><b>Then</b> el sistema rechaza el valor,</li>
-<li><b>And</b> muestra un mensaje de error.</li>
-</ul>
-<b>Escenario 3:</b> Edición de umbral<br/>
-<ul>
-<li><b>Given</b> que existen umbrales previamente configurados,</li>
-<li><b>When</b> el administrador modifica un umbral existente,</li>
-<li><b>Then</b> el sistema guarda los cambios,</li>
-<li><b>And</b> actualiza la configuración en el sistema.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US48</b></td>
-<td>Configuración de reglas de alertas</td>
-<td>Como administrador, quiero configurar reglas de generación de alertas, para adaptar el comportamiento del sistema a distintos escenarios operativos.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Configuración de reglas de alertas.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Creación de regla de alerta<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de reglas,</li>
-<li><b>When</b> define una nueva regla con condiciones específicas y hace clic en "Guardar",</li>
-<li><b>Then</b> el sistema valida los datos ingresados,</li>
-<li><b>And</b> registra la regla correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Edición de regla existente<br/>
-<ul>
-<li><b>Given</b> que existen reglas previamente configuradas,</li>
-<li><b>When</b> el administrador modifica una regla,</li>
-<li><b>Then</b> el sistema guarda los cambios,</li>
-<li><b>And</b> actualiza la configuración.</li>
-</ul>
-<b>Escenario 3:</b> Eliminación de regla<br/>
-<ul>
-<li><b>Given</b> que el administrador selecciona una regla existente,</li>
-<li><b>When</b> hace clic en "Eliminar",</li>
-<li><b>Then</b> el sistema solicita confirmación,</li>
-<li><b>And</b> elimina la regla del sistema.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US49</b></td>
-<td>Activación y desactivación de módulos del sistema</td>
-<td>Como administrador, quiero activar o desactivar módulos del sistema, para personalizar su funcionamiento según las necesidades de la organización.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Activación y desactivación de módulos del sistema.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Activación de módulo<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de configuración,</li>
-<li><b>When</b> selecciona un módulo inactivo y hace clic en "Activar",</li>
-<li><b>Then</b> el sistema cambia el estado del módulo a activo,</li>
-<li><b>And</b> habilita sus funcionalidades.</li>
-</ul>
-<b>Escenario 2:</b> Desactivación de módulo<br/>
-<ul>
-<li><b>Given</b> que existe un módulo activo,</li>
-<li><b>When</b> el administrador hace clic en "Desactivar",</li>
-<li><b>Then</b> el sistema cambia su estado a inactivo,</li>
-<li><b>And</b> deshabilita sus funcionalidades.</li>
-</ul>
-<b>Escenario 3:</b> Persistencia de cambios<br/>
-<ul>
-<li><b>Given</b> que el administrador realiza cambios en los módulos,</li>
-<li><b>When</b> guarda la configuración,</li>
-<li><b>Then</b> el sistema almacena los cambios correctamente,</li>
-<li><b>And</b> mantiene el estado actualizado.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US50</b></td>
-<td>Configuración de horarios operativos</td>
-<td>Como administrador, quiero configurar los horarios de operación del sistema, para adaptarlo a los turnos y jornadas laborales de la planta.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Configuración de horarios operativos.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Configuración de horario válido<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de horarios,</li>
-<li><b>When</b> define un horario con hora de inicio y fin válidas y hace clic en "Guardar",</li>
-<li><b>Then</b> el sistema valida los datos,</li>
-<li><b>And</b> registra el horario correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Validación de formato incorrecto<br/>
-<ul>
-<li><b>Given</b> que el administrador ingresa un formato de hora inválido,</li>
-<li><b>When</b> intenta guardar la configuración,</li>
-<li><b>Then</b> el sistema rechaza el registro,</li>
-<li><b>And</b> muestra un mensaje de error.</li>
-</ul>
-<b>Escenario 3:</b> Edición de horario<br/>
-<ul>
-<li><b>Given</b> que existen horarios configurados,</li>
-<li><b>When</b> el administrador modifica un horario existente,</li>
-<li><b>Then</b> el sistema guarda los cambios,</li>
-<li><b>And</b> actualiza la información.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US51</b></td>
+<td align="center"><b>US45</b></td>
 <td>Registro de dispositivos</td>
 <td>Como Supervisor de Seguridad, quiero registrar dispositivos (sensores o cámaras), para integrarlos al sistema de monitoreo.</td>
 <td>
@@ -2575,7 +2279,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US52</b></td>
+<td align="center"><b>US46</b></td>
 <td>Edición de dispositivos</td>
 <td>Como Supervisor de Seguridad, quiero editar la información de los dispositivos registrados, para mantener actualizados sus datos dentro del sistema.</td>
 <td>
@@ -2625,7 +2329,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US53</b></td>
+<td align="center"><b>US47</b></td>
 <td>Eliminación de dispositivos</td>
 <td>Como Supervisor de Seguridad, quiero eliminar dispositivos registrados, para mantener el sistema actualizado y sin información innecesaria.</td>
 <td>
@@ -2675,7 +2379,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US54</b></td>
+<td align="center"><b>US48</b></td>
 <td>Configuración de zonas de monitoreo</td>
 <td>Como Supervisor de Seguridad, quiero definir zonas de monitoreo dentro de la planta, para segmentar las áreas según niveles de riesgo.</td>
 <td>
@@ -2725,305 +2429,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US55</b></td>
-<td>Configuración de parámetros del motor predictivo</td>
-<td>Como administrador, quiero configurar los parámetros del motor predictivo, para mejorar la precisión en la detección de riesgos.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Configuración de parámetros del motor predictivo.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Configuración válida de parámetros<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo del motor predictivo,</li>
-<li><b>When</b> modifica parámetros dentro de los rangos permitidos y hace clic en "Guardar",</li>
-<li><b>Then</b> el sistema valida los valores ingresados,</li>
-<li><b>And</b> guarda la configuración correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Valores fuera de rango<br/>
-<ul>
-<li><b>Given</b> que el administrador ingresa valores inválidos,</li>
-<li><b>When</b> intenta guardar la configuración,</li>
-<li><b>Then</b> el sistema rechaza los valores,</li>
-<li><b>And</b> muestra un mensaje de error indicando el rango permitido.</li>
-</ul>
-<b>Escenario 3:</b> Visualización de parámetros<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo,</li>
-<li><b>When</b> visualiza los parámetros configurados,</li>
-<li><b>Then</b> el sistema muestra los valores actuales,</li>
-<li><b>And</b> permite su edición.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US56</b></td>
-<td>Configuración de prioridad de alertas</td>
-<td>Como administrador, quiero definir la prioridad de las alertas, para atender primero las más críticas.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Configuración de prioridad de alertas.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Asignación de prioridad<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de alertas,</li>
-<li><b>When</b> asigna una prioridad a una alerta y guarda los cambios,</li>
-<li><b>Then</b> el sistema registra la prioridad,</li>
-<li><b>And</b> la aplica en el sistema.</li>
-</ul>
-<b>Escenario 2:</b> Modificación de prioridad<br/>
-<ul>
-<li><b>Given</b> que existen prioridades configuradas,</li>
-<li><b>When</b> el administrador modifica una prioridad,</li>
-<li><b>Then</b> el sistema guarda los cambios,</li>
-<li><b>And</b> actualiza la información.</li>
-</ul>
-<b>Escenario 3:</b> Validación de prioridad obligatoria<br/>
-<ul>
-<li><b>Given</b> que una alerta no tiene prioridad asignada,</li>
-<li><b>When</b> se intenta guardar la configuración,</li>
-<li><b>Then</b> el sistema bloquea la acción,</li>
-<li><b>And</b> solicita asignar una prioridad.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US57</b></td>
-<td>Configuración de notificaciones</td>
-<td>Como administrador, quiero configurar los canales de notificación del sistema, para recibir alertas de forma oportuna.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Configuración de notificaciones.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Configuración de notificación válida<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de notificaciones,</li>
-<li><b>When</b> selecciona un canal y guarda la configuración,</li>
-<li><b>Then</b> el sistema registra el canal seleccionado,</li>
-<li><b>And</b> activa las notificaciones correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Sin canales activos<br/>
-<ul>
-<li><b>Given</b> que el administrador desactiva todos los canales,</li>
-<li><b>When</b> intenta guardar la configuración,</li>
-<li><b>Then</b> el sistema bloquea la acción,</li>
-<li><b>And</b> muestra un mensaje indicando que debe activar al menos uno.</li>
-</ul>
-<b>Escenario 3:</b> Modificación de configuración<br/>
-<ul>
-<li><b>Given</b> que existen configuraciones previas,</li>
-<li><b>When</b> el administrador modifica los canales,</li>
-<li><b>Then</b> el sistema guarda los cambios,</li>
-<li><b>And</b> actualiza la configuración.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US58</b></td>
-<td>Guardado de configuración del sistema</td>
-<td>Como administrador, quiero guardar los cambios realizados en la configuración, para asegurar que los datos se mantengan persistentes en el sistema.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Guardado de configuración del sistema.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Guardado exitoso<br/>
-<ul>
-<li><b>Given</b> que el administrador ha realizado cambios en la configuración,</li>
-<li><b>When</b> hace clic en "Guardar",</li>
-<li><b>Then</b> el sistema valida los datos,</li>
-<li><b>And</b> guarda la configuración correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Error en la configuración<br/>
-<ul>
-<li><b>Given</b> que existen datos inválidos en la configuración,</li>
-<li><b>When</b> el administrador intenta guardar,</li>
-<li><b>Then</b> el sistema bloquea la acción,</li>
-<li><b>And</b> muestra un mensaje de error.</li>
-</ul>
-<b>Escenario 3:</b> Persistencia de datos<br/>
-<ul>
-<li><b>Given</b> que la configuración ha sido guardada correctamente,</li>
-<li><b>When</b> el sistema se recarga,</li>
-<li><b>Then</b> los datos permanecen almacenados,</li>
-<li><b>And</b> se muestran correctamente en la interfaz.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US59</b></td>
-<td>Restaurar configuración por defecto</td>
-<td>Como administrador, quiero restaurar la configuración del sistema a sus valores por defecto, para recuperar el funcionamiento original en caso de errores.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Restaurar configuración por defecto.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Restauración exitosa<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de configuración,</li>
-<li><b>When</b> selecciona la opción "Restaurar configuración" y confirma la acción,</li>
-<li><b>Then</b> el sistema elimina las configuraciones personalizadas,</li>
-<li><b>And</b> restablece los valores por defecto correctamente.</li>
-</ul>
-<b>Escenario 2:</b> Cancelación de restauración<br/>
-<ul>
-<li><b>Given</b> que el administrador inicia el proceso de restauración,</li>
-<li><b>When</b> decide cancelar la acción,</li>
-<li><b>Then</b> el sistema no realiza cambios,</li>
-<li><b>And</b> mantiene la configuración actual.</li>
-</ul>
-<b>Escenario 3:</b> Confirmación de restauración<br/>
-<ul>
-<li><b>Given</b> que el administrador selecciona restaurar configuración,</li>
-<li><b>When</b> el sistema solicita confirmación,</li>
-<li><b>Then</b> se muestra un mensaje de advertencia,</li>
-<li><b>And</b> requiere confirmación explícita para continuar.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
----
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US60</b></td>
-<td>Visualización de configuración del sistema</td>
-<td>Como administrador, quiero visualizar la configuración actual del sistema, para tener un control general de todos los parámetros definidos.</td>
-<td>
-<ol>
-<li>El sistema debe permitir al usuario realizar la acción principal de Visualización de configuración del sistema.</li>
-<li>La información debe mostrarse o registrarse correctamente, validando errores y estados necesarios.</li>
-</ol>
-
-<b>Escenario 1:</b> Visualización general<br/>
-<ul>
-<li><b>Given</b> que el administrador accede al módulo de configuración,</li>
-<li><b>When</b> ingresa a la vista general,</li>
-<li><b>Then</b> el sistema muestra todos los parámetros configurados,</li>
-<li><b>And</b> los organiza de manera clara.</li>
-</ul>
-<b>Escenario 2:</b> Actualización en tiempo real<br/>
-<ul>
-<li><b>Given</b> que se realizan cambios en la configuración,</li>
-<li><b>When</b> el administrador visualiza la información,</li>
-<li><b>Then</b> el sistema refleja los cambios actualizados,</li>
-<li><b>And</b> muestra los datos en tiempo real.</li>
-</ul>
-<b>Escenario 3:</b> Organización de la información<br/>
-<ul>
-<li><b>Given</b> que existen múltiples configuraciones en el sistema,</li>
-<li><b>When</b> el administrador accede a la vista,</li>
-<li><b>Then</b> el sistema organiza la información por categorías,</li>
-<li><b>And</b> facilita su comprensión.</li>
-</ul>
-</td>
-<td align="center"><b>EP05</b></td>
-</tr>
-</tbody>
-</table>
-
-<table align="center">
-<thead>
-<tr>
-<th>Epic / Story ID</th>
-<th>Título</th>
-<th>Descripción</th>
-<th>Criterios de Aceptación</th>
-<th>Relacionado con (Epic ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr valign="top">
-<td align="center"><b>US61</b></td>
+<td align="center"><b>US49</b></td>
 <td>Identidad y Acceso General</td>
 <td>Como visitante, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada.</td>
 <td>
@@ -3064,7 +2470,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US62</b></td>
+<td align="center"><b>US50</b></td>
 <td>Propuesta de Valor</td>
 <td>Como visitante, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol.</td>
 <td>
@@ -3097,7 +2503,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US63</b></td>
+<td align="center"><b>US51</b></td>
 <td>Catálogo de Capacidades Técnicas</td>
 <td>Como visitante, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero.</td>
 <td>
@@ -3138,7 +2544,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US64</b></td>
+<td align="center"><b>US52</b></td>
 <td>Metodología y Validación Social</td>
 <td>Como visitante, quiero conocer el proceso de trabajo que realiza la aplicación web y estadísticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales.</td>
 <td>
@@ -3179,7 +2585,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US65</b></td>
+<td align="center"><b>US53</b></td>
 <td>Beneficios por Rol Operativo</td>
 <td>Como visitante, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores.</td>
 <td>
@@ -3213,7 +2619,7 @@
 </thead>
 <tbody>
 <tr valign="top">
-<td align="center"><b>US66</b></td>
+<td align="center"><b>US54</b></td>
 <td>Cierre y Conversión de Prospectos</td>
 <td>Como visitante, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa.</td>
 <td>
@@ -3861,7 +3267,7 @@
 </ul>
 <b>Escenario 2:</b> Creación de nuevo tipo de peligro<br/>
 <ul>
-<li><b>Given</b> que el administrador necesita agregar una nueva categoría de peligro,</li>
+<li><b>Given</b> que el Supervisor necesita agregar una nueva categoría de peligro,</li>
 <li><b>When</b> realiza POST /api/v1/peligros con nombre y descripción,</li>
 <li><b>Then</b> el endpoint responde con HTTP 201 y el peligro creado.</li>
 </ul>
@@ -4015,8 +3421,8 @@
 
 <b>Escenario 1:</b> Listado de usuarios<br/>
 <ul>
-<li><b>Given</b> que el administrador necesita gestionar las cuentas del sistema,</li>
-<li><b>When</b> realiza GET /api/v1/users con token de administrador,</li>
+<li><b>Given</b> que el usuario necesita gestionar las cuentas del sistema,</li>
+<li><b>When</b> realiza GET /api/v1/users con token de usuario,</li>
 <li><b>Then</b> el endpoint responde con HTTP 200 y el listado de usuarios.</li>
 </ul>
 <b>Escenario 2:</b> Consulta de logs de acceso<br/>
@@ -4140,12 +3546,12 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 
 | # | ID | Título | Descripción | SP |
 |---|---|---|---|---|
-| 1 | US61 | Identidad y Acceso General | Como visitante, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada. | 2 |
-| 2 | US62 | Propuesta de Valor | Como visitante, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol. | 3 |
-| 3 | US63 | Catálogo de Capacidades Técnicas | Como visitante, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero. | 3 |
-| 4 | US64 | Metodología y Validación Social | Como visitante, quiero conocer el proceso de trabajo que realiza la aplicación web y estadísticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales. | 3 |
-| 5 | US65 | Beneficios por Rol Operativo | Como visitante, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores. | 3 |
-| 6 | US66 | Cierre y Conversión de Prospectos | Como visitante, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa. | 2 |
+| 1 | US49 | Identidad y Acceso General | Como visitante, quiero acceder a una Landing Page oficial de RiskGuard, para conocer la identidad de la marca y las soluciones que ofrece de manera centralizada. | 2 |
+| 2 | US50 | Propuesta de Valor | Como visitante, quiero visualizar la propuesta de valor principal y un adelanto del panel de control, para entender el impacto inmediato del software en las operaciones segun mi rol. | 3 |
+| 3 | US51 | Catálogo de Capacidades Técnicas | Como visitante, quiero explorar las funcionalidades específicas del sistema, para validar si la herramienta cumple con los requerimientos que necesita mi sector en la empresa en la que opero. | 3 |
+| 4 | US52 | Metodología y Validación Social | Como visitante, quiero conocer el proceso de trabajo que realiza la aplicación web y estadísticas del rubro, para confiar en que la solución es efectiva y está respaldada por datos reales. | 3 |
+| 5 | US53 | Beneficios por Rol Operativo | Como visitante, quiero identificar qué herramientas específicas recibe cada nivel de mi organización, para planificar la adopción del sistema entre mis colaboradores. | 3 |
+| 6 | US54 | Cierre y Conversión de Prospectos | Como visitante, quiero disponer de opciones claras para iniciar una prueba o contactar a ventas, para comenzar el proceso de implementación en mi empresa. | 2 |
 | 7 | US16 | Visualización de métricas de impacto predictivo | Como visitante, quiero visualizar indicadores reales de siniestralidad en el Landing Page para comprender el impacto de la analítica predictiva. | 2 |
 | 8 | US17 | Interacción con botones de conversión | Como visitante, quiero interactuar con los botones "Iniciar prueba gratuita" y "Hablar con ventas" para contactar con el servicio de RiskGuard. | 2 |
 | 9 | US03 | Registro Rápido de Casi-Accidente | Como Operario de Planta, quiero registrar un casi-accidente desde mi celular en menos de 30 segundos para no interrumpir mi flujo de trabajo. | 5 |
@@ -4180,49 +3586,37 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 | 38 | US35 | Generación y Exportación de Reportes de Cumplimiento | Como Supervisor de Seguridad, quiero generar y exportar reportes consolidados del historial de incidentes para documentar el cumplimiento normativo. | 8 |
 | 39 | US37 | Visualización del Dashboard Ejecutivo de Seguridad | Como Gerente, quiero ver un dashboard ejecutivo con los indicadores clave de seguridad para tener una visión consolidada del estado de la SST. | 8 |
 | 40 | US38 | Visualización de Tendencias de Accidentabilidad | Como Gerente, quiero ver gráficas de tendencia de incidentes por mes para identificar si la accidentabilidad está mejorando o empeorando. | 5 |
-| 41 | US40 | Seguimiento del Cumplimiento del Plan Anual de SST | Como Gerente, quiero ver el porcentaje de cumplimiento del plan anual de SST en tiempo real para detectar brechas antes de una inspección. | 5 |
-| 42 | US41 | Visualización de Indicadores Predictivos de Riesgo | Como Gerente, quiero ver indicadores predictivos que anticipen posibles accidentes para justificar inversiones preventivas con datos concretos. | 8 |
-| 43 | US39 | Exportación de Formatos de Auditoría para SUNAFIL | Como Gerente, quiero exportar automáticamente los formatos de auditoría exigidos por la Ley N° 29783 para prepararme ante inspecciones de SUNAFIL. | 8 |
-| 44 | US45 | Generación de Reporte Mensual de Gestión de SST | Como Gerente, quiero generar un reporte mensual consolidado de seguridad con un solo clic para reducir el tiempo dedicado a informes manuales. | 5 |
-| 45 | US42 | Notificación de Alerta Crítica No Resuelta a Gerencia | Como Gerente, quiero recibir una notificación cuando un riesgo crítico lleve más de 48 horas sin resolver para escalar el problema internamente. | 5 |
-| 46 | US43 | Registro Histórico de Incidentes para Trazabilidad Legal | Como Gerente, quiero acceder al historial completo e inmutable de todos los incidentes para contar con evidencia ante auditorías de SUNAFIL. | 5 |
-| 47 | US44 | Gestión de Cuentas de Usuario desde Administración | Como Administrador, quiero crear, editar y desactivar cuentas de usuario para mantener el control de acceso a la plataforma. | 5 |
-| 48 | US46 | Configuración de niveles de riesgo | Como Administrador, quiero definir los niveles de riesgo del sistema para clasificar correctamente los incidentes detectados. | 3 |
-| 49 | US47 | Configuración de umbrales de alerta | Como Administrador, quiero definir los umbrales de alerta del sistema para que se generen notificaciones cuando se superen ciertos valores. | 3 |
-| 50 | US48 | Configuración de reglas de alertas | Como Administrador, quiero configurar reglas de generación de alertas para adaptar el comportamiento del sistema a distintos escenarios operativos. | 5 |
-| 51 | US49 | Activación y desactivación de módulos del sistema | Como Administrador, quiero activar o desactivar módulos del sistema para personalizar su funcionamiento según las necesidades de la organización. | 3 |
-| 52 | US50 | Configuración de horarios operativos | Como Administrador, quiero configurar los horarios de operación del sistema para adaptarlo a los turnos y jornadas laborales de la planta. | 3 |
-| 53 | US51 | Registro de dispositivos | Como Supervisor, quiero registrar dispositivos como sensores o cámaras para integrarlos al sistema de monitoreo. | 3 |
-| 54 | US52 | Edición de dispositivos | Como Supervisor, quiero editar la información de los dispositivos registrados para mantener sus datos actualizados. | 2 |
-| 55 | US53 | Eliminación de dispositivos | Como Supervisor, quiero eliminar dispositivos registrados para mantener el sistema sin información innecesaria. | 2 |
-| 56 | US54 | Configuración de zonas de monitoreo | Como Supervisor, quiero definir zonas de monitoreo dentro de la planta para segmentar las áreas según niveles de riesgo. | 3 |
-| 57 | US55 | Configuración de parámetros del motor predictivo | Como Administrador, quiero configurar los parámetros del motor predictivo para mejorar la precisión en la detección de riesgos. | 5 |
-| 58 | US56 | Configuración de prioridad de alertas | Como Administrador, quiero definir la prioridad de las alertas para atender primero las más críticas. | 3 |
-| 59 | US57 | Configuración de notificaciones | Como Administrador, quiero configurar los canales de notificación del sistema para recibir alertas de forma oportuna. | 3 |
-| 60 | US58 | Guardado de configuración del sistema | Como Administrador, quiero guardar los cambios realizados en la configuración para asegurar que los datos se mantengan persistentes. | 2 |
-| 61 | US59 | Restaurar configuración por defecto | Como Administrador, quiero restaurar la configuración del sistema a sus valores por defecto para recuperar el funcionamiento original en caso de errores. | 2 |
-| 62 | US60 | Visualización de configuración del sistema | Como Administrador, quiero visualizar la configuración actual del sistema para tener un control general de todos los parámetros definidos. | 2 |
-| 63 | TS01 | Servicio de Notificaciones Push | Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a dispositivos móviles. | 8 |
-| 64 | TS02 | Endpoint para Obtener Patrones de Riesgo Recurrentes | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones para mostrar alertas predictivas en el dashboard del supervisor. | 8 |
-| 65 | TS03 | Endpoint para Obtener Datos del Mapa de Calor | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor para alimentar el mapa de calor del dashboard en tiempo real. | 8 |
-| 66 | TS04 | Endpoint para Obtener Riesgos Críticos Sin Atender | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos para que el módulo de notificaciones escale automáticamente al supervisor. | 5 |
-| 67 | TS05 | Endpoint para Marcar Alerta de Patrón como Revisada | Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada para retirar alertas del panel principal. | 3 |
-| 68 | TS06 | Endpoint para Obtener Resumen Diario de Riesgos por Sector | Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario para alimentar el panel de resumen del dashboard del supervisor. | 5 |
-| 69 | TS07 | Endpoint de Cálculo de Matriz IPERC | Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc para calcular el nivel de criticidad del riesgo según la lógica IPERC. | 8 |
-| 70 | TS08 | Endpoint para Obtener Indicadores del Dashboard Ejecutivo | Como desarrollador, quiero consumir el endpoint GET /api/v1/kpi_dashboard que retorna los indicadores clave de SST consolidados, para alimentar el tablero ejecutivo del gerente con datos actualizados en tiempo real. | 8 |
-| 71 | TS09 | Endpoint para Obtener Tendencias Históricas de Accidentabilidad | Como desarrollador, quiero consumir el endpoint GET /api/v1/historical_trends que retorna la evolución mensual de incidentes agrupados por tipo y sector, para alimentar las gráficas de tendencia del tablero ejecutivo del gerente. | 8 |
-| 72 | TS10 | Endpoint para Gestión de Reportes Generados | Como desarrollador, quiero consumir los endpoints GET y POST /api/v1/generated_reports y DELETE /api/v1/generated_reports/{id} para registrar, listar y eliminar reportes generados, mientras la generación del documento PDF o Excel se realiza en el cliente con jsPDF. | 8 |
-| 73 | TS11 | Endpoint para Gestión de Alertas Críticas | Como desarrollador, quiero consumir los endpoints GET, PATCH y DELETE /api/v1/critical_alerts para listar, actualizar el estado y eliminar alertas críticas, para que el gerente pueda gestionar los riesgos no resueltos desde el tablero ejecutivo. | 5 |
-| 74 | TS12 | Endpoint para Obtener el Plan Anual de SST y su Cumplimiento | Como desarrollador, quiero consumir el endpoint GET /api/v1/annual_ohs_plan que retorne el plan anual de SST con el porcentaje de cumplimiento global y el desglose por sector, para alimentar el indicador de seguimiento del tablero ejecutivo del gerente. | 5 |
-| 75 | TS13 | Endpoint para Registro y Consulta de Inspecciones por Operario | Como desarrollador, quiero implementar los endpoints POST /api/v1/inspecciones y GET /api/v1/inspecciones/mine/{operarioId} para registrar inspecciones y consultar reportes por operario. | 8 |
-| 76 | TS14 | Endpoint para Gestión de Catálogo de Peligros | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/peligros para administrar el catálogo de tipos de peligro utilizados en inspecciones y evaluaciones de riesgo. | 5 |
-| 77 | TS15 | Endpoint para Gestión de Sedes Operativas | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/sedes para registrar, listar, actualizar y eliminar las sedes físicas de la planta industrial. | 5 |
-| 78 | TS16 | Endpoint para Gestión de Áreas y Activos Industriales | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/areas con filtro GET /active y /api/v1/activos con filtro GET /by-area/{areaId} para gestionar áreas y activos. | 8 |
-| 79 | TS17 | Endpoint para Autenticación y Generación de Token JWT | Como desarrollador, quiero implementar los endpoints POST /api/v1/authentication/sign-in y sign-up para autenticar usuarios y generar tokens JWT con claims de rol. | 8 |
-| 80 | TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/users, /api/v1/roles, /api/v1/sessions y /api/v1/access-logs para administrar cuentas, roles y auditoría. | 8 |
-| 81 | TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/tickets, /api/v1/technicians, /api/v1/preventive-maintenances y /api/v1/assets para el dashboard del supervisor. | 8 |
-| 82 | TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/heat-map-zones y /api/v1/archived-reports para el dashboard de monitoreo del supervisor. | 5 |
-| 83 | US01 | Autenticación de Operario | Como usuario, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
-| 84 | US02 | Cierre de Sesión del Operario | Como usuario, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
-| 85 | US24 | Autenticación Segura de Supervisor | Como usuario, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
-| 86 | US36 | Autenticación Segura de Gerente o Administrador | Como usuario, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
+| 41 | US39 | Exportación de Formatos de Auditoría para SUNAFIL | Como Gerente, quiero exportar automáticamente los formatos de auditoría exigidos por la Ley N° 29783 para prepararme ante inspecciones de SUNAFIL. | 8 |
+| 42 | US40 | Seguimiento del Cumplimiento del Plan Anual de SST | Como Gerente, quiero ver el porcentaje de cumplimiento del plan anual de SST en tiempo real para detectar brechas antes de una inspección. | 5 |
+| 43 | US41 | Visualización de Indicadores Predictivos de Riesgo | Como Gerente, quiero ver indicadores predictivos que anticipen posibles accidentes para justificar inversiones preventivas con datos concretos. | 8 |
+| 44 | US42 | Notificación de Alerta Crítica No Resuelta a Gerencia | Como Gerente, quiero recibir una notificación cuando un riesgo crítico lleve más de 48 horas sin resolver para escalar el problema internamente. | 5 |
+| 45 | US43 | Registro Histórico de Incidentes para Trazabilidad Legal | Como Gerente, quiero acceder al historial completo e inmutable de todos los incidentes para contar con evidencia ante auditorías de SUNAFIL. | 5 |
+| 46| US44 | Generación de Reporte Mensual de Gestión de SST | Como Gerente, quiero generar un reporte mensual consolidado de seguridad con un solo clic para reducir el tiempo dedicado a informes manuales. | 5 |
+| 47 | US45 | Registro de dispositivos | Como Supervisor, quiero registrar dispositivos como sensores o cámaras para integrarlos al sistema de monitoreo. | 3 |
+| 48 | US46 | Edición de dispositivos | Como Supervisor, quiero editar la información de los dispositivos registrados para mantener sus datos actualizados. | 2 |
+| 49 | US47 | Eliminación de dispositivos | Como Supervisor, quiero eliminar dispositivos registrados para mantener el sistema sin información innecesaria. | 2 |
+| 50 | US48 | Configuración de zonas de monitoreo | Como Supervisor, quiero definir zonas de monitoreo dentro de la planta para segmentar las áreas según niveles de riesgo. | 3 |
+| 51 | TS01 | Servicio de Notificaciones Push | Como desarrollador, quiero implementar el endpoint POST /api/v1/notificaciones/push para enviar alertas críticas en tiempo real a dispositivos móviles. | 8 |
+| 52 | TS02 | Endpoint para Obtener Patrones de Riesgo Recurrentes | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/patrones para mostrar alertas predictivas en el dashboard del supervisor. | 8 |
+| 53 | TS03 | Endpoint para Obtener Datos del Mapa de Calor | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/mapa-calor para alimentar el mapa de calor del dashboard en tiempo real. | 8 |
+| 54 | TS04 | Endpoint para Obtener Riesgos Críticos Sin Atender | Como desarrollador, quiero consumir el endpoint GET /api/v1/predictivo/no-atendidos para que el módulo de notificaciones escale automáticamente al supervisor. | 5 |
+| 55 | TS05 | Endpoint para Marcar Alerta de Patrón como Revisada | Como desarrollador, quiero implementar el endpoint PATCH /api/v1/predictivo/alertas/{id}/revisada para retirar alertas del panel principal. | 3 |
+| 56 | TS06 | Endpoint para Obtener Resumen Diario de Riesgos por Sector | Como desarrollador, quiero implementar el endpoint GET /api/v1/predictivo/resumen-diario para alimentar el panel de resumen del dashboard del supervisor. | 5 |
+| 57 | TS07 | Endpoint de Cálculo de Matriz IPERC | Como desarrollador, quiero implementar el endpoint POST /api/v1/predictivo/iperc para calcular el nivel de criticidad del riesgo según la lógica IPERC. | 8 |
+| 58 | TS08 | Endpoint para Obtener Indicadores del Dashboard Ejecutivo | Como desarrollador, quiero consumir el endpoint GET /api/v1/kpi_dashboard que retorna los indicadores clave de SST consolidados, para alimentar el tablero ejecutivo del gerente con datos actualizados en tiempo real. | 8 |
+| 59 | TS09 | Endpoint para Obtener Tendencias Históricas de Accidentabilidad | Como desarrollador, quiero consumir el endpoint GET /api/v1/historical_trends que retorna la evolución mensual de incidentes agrupados por tipo y sector, para alimentar las gráficas de tendencia del tablero ejecutivo del gerente. | 8 |
+| 60 | TS10 | Endpoint para Gestión de Reportes Generados | Como desarrollador, quiero consumir los endpoints GET y POST /api/v1/generated_reports y DELETE /api/v1/generated_reports/{id} para registrar, listar y eliminar reportes generados, mientras la generación del documento PDF o Excel se realiza en el cliente con jsPDF. | 8 |
+| 61 | TS11 | Endpoint para Gestión de Alertas Críticas | Como desarrollador, quiero consumir los endpoints GET, PATCH y DELETE /api/v1/critical_alerts para listar, actualizar el estado y eliminar alertas críticas, para que el gerente pueda gestionar los riesgos no resueltos desde el tablero ejecutivo. | 5 |
+| 62 | TS12 | Endpoint para Obtener el Plan Anual de SST y su Cumplimiento | Como desarrollador, quiero consumir el endpoint GET /api/v1/annual_ohs_plan que retorne el plan anual de SST con el porcentaje de cumplimiento global y el desglose por sector, para alimentar el indicador de seguimiento del tablero ejecutivo del gerente. | 5 |
+| 63 | TS13 | Endpoint para Registro y Consulta de Inspecciones por Operario | Como desarrollador, quiero implementar los endpoints POST /api/v1/inspecciones y GET /api/v1/inspecciones/mine/{operarioId} para registrar inspecciones y consultar reportes por operario. | 8 |
+| 64 | TS14 | Endpoint para Gestión de Catálogo de Peligros | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/peligros para administrar el catálogo de tipos de peligro utilizados en inspecciones y evaluaciones de riesgo. | 5 |
+| 65 | TS15 | Endpoint para Gestión de Sedes Operativas | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/sedes para registrar, listar, actualizar y eliminar las sedes físicas de la planta industrial. | 5 |
+| 66 | TS16 | Endpoint para Gestión de Áreas y Activos Industriales | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/areas con filtro GET /active y /api/v1/activos con filtro GET /by-area/{areaId} para gestionar áreas y activos. | 8 |
+| 63 | TS17 | Endpoint para Autenticación y Generación de Token JWT | Como desarrollador, quiero implementar los endpoints POST /api/v1/authentication/sign-in y sign-up para autenticar usuarios y generar tokens JWT con claims de rol. | 8 |
+| 64 | TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/users, /api/v1/roles, /api/v1/sessions y /api/v1/access-logs para administrar cuentas, roles y auditoría. | 8 |
+| 65 | TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/tickets, /api/v1/technicians, /api/v1/preventive-maintenances y /api/v1/assets para el dashboard del supervisor. | 8 |
+| 66 | TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/heat-map-zones y /api/v1/archived-reports para el dashboard de monitoreo del supervisor. | 5 |
+| 67 | US01 | Autenticación de Operario | Como usuario, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
+| 68 | US02 | Cierre de Sesión del Operario | Como usuario, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
+| 69 | US24 | Autenticación Segura de Supervisor | Como usuario, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
+| 70 | US36 | Autenticación Segura de Gerente o Administrador | Como usuario, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
