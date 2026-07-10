@@ -41,6 +41,7 @@ Aplicaciones Web
 | AV1 | 26/04/2026 | Todos los integrantes | Primera Version |
 | TB1 | 16/05/2026 | Todos los integrantes | Primera Version |
 | AV2 | 22/06/2026 | Todos los integrantes | Primera Version |
+| TB2 | 10/07/2026 | Todos los integrantes | Primera Version |
 
 
 </div>
@@ -280,51 +281,59 @@ El repositorio cuenta con 6 ramas activas: `main`, `develop`, `feature/reports`,
   </thead>
   <tbody>
     <tr>
-      <td>Participa activamente en la planificación y cumplimiento de objetivos del equipo, asumiendo responsabilidades de liderazgo o colaboración según las necesidades del sprint.</td>
+      <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
       <td>
         <strong>Aponte Pablo, Isabel Luisa</strong><br>
-        <em>AV1:</em> Participó activamente en la reunión de Sprint Planning 1, contribuyendo a la definición del Sprint Goal y a la distribución de tareas entre los integrantes. Asumió la responsabilidad del diseño visual de secciones del Landing Page, coordinando con sus compañeros para asegurar la coherencia estética del sitio. Su participación constante en los canales de comunicación del equipo facilitó la resolución de bloqueos durante el desarrollo.<br><br>
+        <em>AV1:</em> Participó en la planificación del Sprint 1 y colaboró en la redacción del Capítulo V, aportando en la organización de evidencias del Landing Page y en la documentación inicial del proyecto.<br>
+        <em>TB1:</em> Lideró el desarrollo y documentación del Bounded Context Reports & Compliance en el frontend, coordinando con el equipo la integración visual y funcional de los reportes.<br>
+        <em>AV2:</em> Lideró el desarrollo de los Web Services del BC Reports & Compliance en ASP.NET Core, documentando endpoints, evidencias de ejecución y despliegue en Render.<br>
+        <em>TB2:</em> Lideró la validación de reportes, indicadores, tendencias, alertas críticas y evidencias de servicios durante la integración final con el backend real. También apoyó la redacción del Capitulo 5, Sprint 4.<br><br>
         <strong>Laura Acosta, Victor Jhosef</strong><br>
-        <em>AV1:</em> Lideró la integración y consolidación de las secciones desarrolladas por los distintos integrantes del equipo, asegurando que el Landing Page funcionara de manera cohesionada como producto final. Coordinó el proceso de despliegue en GitHub Pages y Vercel, estableciendo los pasos del pipeline de publicación y comunicándolos al equipo para garantizar que todos comprendieran el flujo de entrega. Su rol de liderazgo técnico en la fase de integración fue clave para cumplir el objetivo del Sprint 1.<br><br>
+        <em>AV1:</em> Lideró la integración técnica del Landing Page y apoyó el despliegue inicial, coordinando la consolidación de las secciones desarrolladas por el equipo.<br>
+        <em>TB1:</em> Lideró el frontend de Risk Assessment y Mitigation, organizando la navegación entre módulos y la implementación de flujos de evaluación de riesgo y mitigación.<br>
+        <em>AV2:</em> Lideró el desarrollo backend de Risk Assessment y Mitigation, colaborando en la estructura técnica del proyecto y en la aplicación de patrones comunes para los endpoints.<br>
+        <em>TB2:</em> Lideró la integración frontend-backend y el despliegue final, configurando variables de entorno, conexión con Render, Firebase Hosting y validación de flujos protegidos con JWT.<br><br>
         <strong>Blancas Chávez, Carlos Franco</strong><br>
-        <em>AV1:</em> Asumió un rol de liderazgo en la implementación del Landing Page, tomando la iniciativa en la estructuración del navbar, la sección hero y las características del sistema. Coordinó con el resto del equipo la coherencia entre las secciones desarrolladas en paralelo, revisando y apoyando el trabajo de sus compañeros para mantener la consistencia visual y funcional del sitio. Su capacidad para organizar el trabajo colectivo fue determinante para completar el entregable dentro del plazo del Sprint.<br><br>
+        <em>AV1:</em> Lideró la implementación de secciones principales del Landing Page, como navbar, hero y características, coordinando su integración con el diseño general.<br>
+        <em>TB1:</em> Lideró el frontend de Site/Area & Industrial Asset e Inspection/Unsafe Condition, implementando interfaces para sedes, áreas, activos e inspecciones.<br>
+        <em>AV2:</em> Lideró el backend de Inspection y Organization Assets, configurando entidades, controladores y persistencia con Entity Framework Core y MySQL.<br>
+        <em>TB2:</em> Colaboró en la validación de sedes, áreas, activos industriales, inspecciones y condiciones inseguras integradas con el backend real.<br><br>
         <strong>Flores Eusebio, Angel Thyago</strong><br>
-        <em>AV1:</em> Contribuyó al equipo asumiendo la responsabilidad del diseño e implementación de las secciones "Cómo funciona" y "Segmentos" del Landing Page, trabajando de forma coordinada con los demás integrantes para respetar los lineamientos visuales acordados en las Style Guidelines. Participó en las reuniones de seguimiento del Sprint, reportando su avance y señalando dependencias con otras secciones para facilitar la integración. Su compromiso con los plazos establecidos contribuyó al cumplimiento del objetivo del Sprint 1.
+        <em>AV1:</em> Colaboró en el diseño e implementación de secciones del Landing Page, manteniendo coherencia con las Style Guidelines y apoyando la revisión del informe.<br>
+        <em>TB1:</em> Lideró el frontend de Account Generation & Authentication y Monitoring/Dashboard, implementando flujos de autenticación y visualización operativa.<br>
+        <em>AV2:</em> Lideró el backend de IAM y Monitoring Dashboard, implementando autenticación JWT, usuarios, roles, sesiones, access logs y endpoints de monitoreo.<br>
+        <em>TB2:</em> Lideró la estructuración del frontend para la integración final, apoyando IAM, autenticación JWT, rutas, stores, monitoreo y dashboard por rol.
       </td>
       <td>
-        Durante la AV1, el equipo de RiskGuard Solutions demostró capacidad para funcionar de manera efectiva como unidad de trabajo colaborativo. La distribución de responsabilidades durante el Sprint Planning, la comunicación continua a través de los canales del equipo y la integración coordinada de las secciones del Landing Page evidencian que los integrantes no solo cumplieron sus tareas individuales, sino que también apoyaron el trabajo colectivo para alcanzar el objetivo común del Sprint. La existencia de roles diferenciados —liderazgo técnico en integración y despliegue, liderazgo en implementación de secciones y colaboración en diseño— refleja un equipo que distribuye el liderazgo de forma situacional, creando un entorno inclusivo donde cada integrante aporta desde sus fortalezas. El cumplimiento del Sprint Goal dentro del plazo establecido valida que el equipo ha comenzado a desarrollar efectivamente la competencia de trabajo en equipo definida por el Student Outcome 5.
+        A lo largo de AV1, TB1, AV2 y TB2, el equipo demostró liderazgo compartido al distribuir responsabilidades según las fortalezas técnicas de cada integrante. En AV1 el liderazgo se concentró en la construcción y despliegue del Landing Page; en TB1 se organizó por bounded contexts del frontend; en AV2 se trasladó esa organización al backend con ASP.NET Core; y en TB2 se consolidó el trabajo mediante la integración frontend-backend y el despliegue final. Esta progresión evidencia que el equipo no dependió de un único líder, sino que cada integrante asumió liderazgo situacional en su área y colaboró con los demás para cumplir el objetivo común.
       </td>
     </tr>
     <tr>
-      <td>Crea un entorno colaborativo e inclusivo, contribuyendo activamente al logro de los objetivos del equipo mediante la implementación de los bounded contexts asignados durante el Sprint 2.</td>
+      <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
       <td>
         <strong>Aponte Pablo, Isabel Luisa</strong><br>
-        <em>TB1:</em> Implementó el frontend del Bounded Context Reports & Compliance, desarrollando las interfaces para la generación y visualización de reportes de cumplimiento normativo. Trabajó en la rama <code>feature/reports_cumplimiento</code>, colaborando con el equipo para integrar su módulo con los demás bounded contexts. Participó en las reuniones de seguimiento del Sprint 2, reportando avances y coordinando la integración de su frontend con el backend correspondiente.<br><br>
+        <em>AV1:</em> Colaboró en la organización del informe y en la recopilación de evidencias del Sprint 1, contribuyendo a que el equipo mantuviera una documentación coherente.<br>
+        <em>TB1:</em> Coordinó sus avances del BC Reports & Compliance con los demás bounded contexts, reportando dependencias y apoyando la integración de evidencias del Sprint 2.<br>
+        <em>AV2:</em> Documentó los endpoints del backend de Reports & Compliance y colaboró en la preparación de evidencias de Swagger, commits y despliegue.<br>
+        <em>TB2:</em> Apoyó la organización final del informe, anexos, evidencias de ejecución, servicios y despliegue, asegurando trazabilidad entre el trabajo técnico y la documentación.<br><br>
         <strong>Laura Acosta, Victor Jhosef</strong><br>
-        <em>TB1:</em> Lideró el desarrollo del frontend de los Bounded Contexts Risk Assessment (IPERC) y Mitigation, implementando las interfaces para la evaluación de riesgos y la gestión de medidas de mitigación y precaución. Trabajó en la rama <code>feature/assessment_mitigation</code>, asegurando la correcta navegación entre los módulos de riesgo. Coordinó con el equipo la integración de su frontend con el backend y participó activamente en las decisiones de arquitectura durante el Sprint 2.<br><br>
+        <em>AV1:</em> Coordinó tareas de integración y despliegue del Landing Page, comunicando al equipo los pasos necesarios para publicar la primera versión del producto.<br>
+        <em>TB1:</em> Planificó tareas del Sprint 2 relacionadas con Risk Assessment y Mitigation, manteniendo comunicación con los integrantes responsables de otros módulos.<br>
+        <em>AV2:</em> Colaboró en la integración del backend y en la definición de patrones técnicos compartidos para reducir inconsistencias entre bounded contexts.<br>
+        <em>TB2:</em> Coordinó el despliegue final y la validación técnica de la aplicación integrada, asegurando que los flujos principales funcionaran en producción.<br><br>
         <strong>Blancas Chávez, Carlos Franco</strong><br>
-        <em>TB1:</em> Desarrolló el frontend de los Bounded Contexts Site/Area & Industrial Asset e Inspection/Unsafe Condition, creando las interfaces para la gestión de sedes, áreas, activos industriales y la realización de inspecciones de condiciones inseguras. Trabajó en la rama <code>feature/inspection_headquarters</code>, colaborando estrechamente con el equipo para mantener la consistencia visual entre los distintos bounded contexts. Su contribución fue clave para cumplir con los objetivos del Sprint 2.<br><br>
+        <em>AV1:</em> Colaboró con el equipo en la implementación del Landing Page y en la revisión de coherencia visual de las secciones desarrolladas en paralelo.<br>
+        <em>TB1:</em> Planificó e implementó tareas de Site/Area & Industrial Asset e Inspection, manteniendo consistencia con la arquitectura frontend del proyecto.<br>
+        <em>AV2:</em> Colaboró en la integración de los servicios backend de inspecciones y activos, resolviendo ajustes de persistencia y estructura de datos.<br>
+        <em>TB2:</em> Validó operaciones reales de consulta, registro, edición y persistencia desde la interfaz para los módulos operativos del sistema.<br><br>
         <strong>Flores Eusebio, Angel Thyago</strong><br>
-        <em>TB1:</em> Implementó el frontend de los Bounded Contexts Monitoring/Dashboard y Account Generation & Authentication, desarrollando las interfaces del dashboard de monitoreo en tiempo real y el módulo de inicio de sesión y generación de cuentas de usuario. Trabajó en las ramas <code>feature/monitoring-dashboard</code> y <code>feature/user-authentication</code>, garantizando la seguridad y usabilidad del acceso al sistema. Participó activamente en la revisión cruzada de código con sus compañeros para asegurar la calidad del producto final.
+        <em>AV1:</em> Participó en la revisión general del informe y en la construcción de secciones visuales del Landing Page, respetando los acuerdos del equipo.<br>
+        <em>TB1:</em> Coordinó la implementación de autenticación y monitoreo, asegurando que sus módulos pudieran integrarse con los demás flujos del frontend.<br>
+        <em>AV2:</em> Documentó y desarrolló servicios de IAM y Monitoring Dashboard, colaborando en Swagger/OpenAPI y en la seguridad del sistema.<br>
+        <em>TB2:</em> Apoyó la estabilización del frontend integrado, corrigiendo rutas, estados, stores y manejo de errores para mejorar la experiencia por rol.
       </td>
       <td>
-        Durante la TB1 (Sprint 2), el equipo de RiskGuard demostró capacidad para organizarse en torno a la arquitectura de bounded contexts, asignando a cada integrante un frente de trabajo claramente delimitado pero interdependiente. La división del trabajo por bounded contexts —Reports & Compliance, Risk Assessment & Mitigation, Site/Area & Inspection, y Monitoring & Authentication— permitió que cada miembro trabajara de forma autónoma en su rama de Git, mientras que la comunicación constante y las reuniones de sincronización garantizaron la cohesión del producto final. El equipo cumplió con los objetivos del Sprint 2, evidenciando un entorno colaborativo e inclusivo donde cada integrante aportó desde su especialidad, reforzando la competencia de trabajo en equipo definida por el Student Outcome 5.
-      </td>
-    </tr>
-    <tr>
-      <td>Demuestra capacidad de liderazgo técnico y colaboración efectiva en el desarrollo del backend, implementando los Web Services de sus bounded contexts asignados con arquitectura DDD y coordinando la integración del equipo durante el Sprint 3.</td>
-      <td>
-        <strong>Aponte Pablo, Isabel Luisa</strong><br>
-        <em>AV2:</em> Desarrolló los Web Services del Bounded Context Reports & Compliance en ASP.NET Core, implementando los endpoints para Monthly Reports, Cumulative ST Indicators, Historical Incident Records, Annual OHS Plan, Predictive Indicators, Critical Alerts, Generated Reports, KPI Dashboard e Historical Trends. Trabajó en la rama <code>feature/reports</code>, aplicando la arquitectura DDD con Entity Framework Core y MySQL. Coordinó con el equipo la configuración inicial del proyecto backend y lideró el despliegue del Web Service en Render.<br><br>
-        <strong>Laura Acosta, Victor Jhosef</strong><br>
-        <em>AV2:</em> Implementó los Web Services de los Bounded Contexts Risk Assessment y Mitigation, desarrollando los endpoints para Risk Assessments, Risk Patterns, Daily Summaries, Pattern Alerts, Area Criticality Levels, Mitigations, Corrective Action Tickets, SLA Alerts, Measure Verifications y Ticket Histories. Trabajó en la rama <code>feature/assessment_mitigation</code>, aplicando el patrón CrudController genérico para estandarizar las operaciones CRUD. Colaboró con el equipo en la definición de la estructura de capas del proyecto backend.<br><br>
-        <strong>Blancas Chávez, Carlos Franco</strong><br>
-        <em>AV2:</em> Desarrolló los Web Services de los Bounded Contexts Inspection y Organization Assets, implementando los endpoints para Inspections, Dangers, Headquarters, Areas y Assets. Trabajó en la rama <code>feature/inspection_headquarters</code>, configurando Entity Framework Core con el proveedor MySQL para su bounded context. Participó en las reuniones de coordinación del Sprint 3, apoyando a sus compañeros en la resolución de conflictos de integración durante los merges a develop.<br><br>
-        <strong>Flores Eusebio, Angel Thyago</strong><br>
-        <em>AV2:</em> Implementó los Web Services de los Bounded Contexts IAM y Monitoring Dashboard, desarrollando el sistema de autenticación JWT con BCrypt para el hash de contraseñas, y los endpoints para Users, Roles, Sessions, Access Logs, Heat Map Zones, Dashboard Tickets, Dashboard Technicians, Dashboard Assets, Preventive Maintenances y Archived Reports. Trabajó en la rama <code>feature/user-authentication-monitoring-dashboard</code>, liderando la implementación del módulo de seguridad del sistema. Coordinó con el equipo la documentación de los endpoints mediante Swagger/OpenAPI.
-      </td>
-      <td>
-        Durante la AV2 (Sprint 3), el equipo de RiskGuard demostró madurez en su capacidad de trabajo colaborativo al abordar el desarrollo del backend con arquitectura DDD en ASP.NET Core. Cada integrante asumió la responsabilidad de implementar los Web Services de sus bounded contexts asignados, trabajando en ramas independientes y coordinando la integración a través de la rama develop. La adopción de patrones compartidos —como el CrudController genérico, Entity Framework Core con MySQL y autenticación JWT— evidencia que el equipo estableció estándares técnicos comunes que facilitaron la consistencia del código y la colaboración efectiva. El despliegue exitoso en Render y la documentación mediante Swagger demuestran que el equipo no solo cumplió con los objetivos técnicos del Sprint, sino que también consolidó un entorno de trabajo donde el liderazgo técnico se distribuye según la especialidad de cada integrante, cumpliendo plenamente con el Student Outcome 5.
+        El equipo mantuvo un entorno colaborativo e inclusivo durante todo el proyecto mediante reuniones de planificación, división de tareas por sprint, uso de ramas en GitHub, seguimiento en Trello y revisión constante de evidencias. Las metas evolucionaron desde una primera presencia digital en AV1, hacia un frontend modular en TB1, un backend real documentado en AV2 y una solución integrada y desplegada en TB2. La acumulación de acciones por integrante demuestra que el equipo planificó, comunicó avances, resolvió dependencias y cumplió objetivos incrementales hasta llegar a una versión funcional de RiskGuard con frontend, backend, documentación, validaciones y despliegues.
       </td>
     </tr>
   </tbody>
