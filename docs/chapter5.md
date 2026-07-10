@@ -3219,8 +3219,8 @@ El sprint priorizará los flujos críticos de los tres perfiles de usuario. El o
 | Sprint n – 3 Review Summary | Durante el Sprint 3 se implementaron los Web Services de RiskGuard con C# y ASP.NET Core, organizados mediante Domain-Driven Design y bounded contexts. Se desarrollaron endpoints REST para autenticación y generación de cuentas, sedes, áreas, activos industriales, inspecciones, evaluación y mitigación de riesgos, técnicos, monitoreo y reportes. Asimismo, se incorporaron persistencia en MySQL, autenticación JWT y documentación con Swagger. Los servicios fueron integrados en la rama principal, desplegados en Render y validados individualmente mediante solicitudes HTTP; sin embargo, el frontend todavía no consume de forma completa el backend real. |
 | Sprint n – 3 Retrospective Summary | El equipo logró distribuir el desarrollo del backend por bounded context y consolidar los módulos mediante ramas feature y pull requests. Como principal oportunidad de mejora se identificó que algunos contratos, nombres de campos y estructuras de respuesta no coinciden completamente con los modelos utilizados por el frontend. Para este sprint se acordó validar primero cada contrato con Swagger, integrar módulo por módulo, mantener una configuración centralizada de la URL base y del token JWT, y realizar pruebas de extremo a extremo antes de considerar terminada cada funcionalidad. |
 | Sprint Goal | Our focus is on integrating the RiskGuard frontend with the real ASP.NET Core backend across the prioritized bounded contexts. We believe it delivers a functional end-to-end product that replaces mock data with persistent information, secure JWT authentication and role-based access for operators, supervisors and managers. This will be confirmed when users can complete the main business flows from the deployed web application, the frontend can successfully execute the required CRUD operations through the REST API, data changes persist in MySQL, and loading, validation and error states are handled consistently without relying on json-server. |
-| Sprint n Velocity | 134 SP |
-| Sum of Story Points | 134 SP |
+| Sprint n Velocity | 69 SP |
+| Sum of Story Points | 69 SP |
 
 #### 5.2.4.2. Aspect Leaders and Collaborators.
 
@@ -3243,6 +3243,11 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 4 del p
 El trabajo se gestionó sobre los repositorios oficiales del proyecto: [upc-web-applications/Frontend](https://github.com/upc-web-applications/Frontend) y [upc-web-applications/Backend](https://github.com/upc-web-applications/Backend). Las tareas se organizaron como Technical Stories porque el alcance del sprint estuvo orientado principalmente a integración, configuración, corrección de contratos y validación técnica de los flujos de negocio.
 
 **Tablero Trello:** https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd580aa20c0312D01B0/riskguard
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Trello1.png" width="750"/>
+</p>
+
 
 | User Story ID | Título | Task ID | Descripción | Estimación (hrs) | Asignado a | Status |
 |---|---|---|---|---|---|---|
