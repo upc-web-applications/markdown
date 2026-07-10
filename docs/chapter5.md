@@ -3579,6 +3579,26 @@ En esta seccion se presentan las evidencias de despliegue del Sprint 4. El objet
 | Frontend | Vue 3 + PrimeVue 4 (deploy Firebase)|
 | Backend  | ASP.NET Core / C# (deploy Render) |
 
+**Primera vista de los despliegues**
+
+<h5 align="center">Landing Page</h5>
+
+<p align="center">
+  <img src="images/vista-landing-page-riskguard" width="750"/>
+</p>
+
+<h5 align="center">Frontend</h5>
+
+<p align="center">
+  <img src="images/vista-frontend-riskguard" width="750"/>
+</p>
+
+<h5 align="center">Backend</h5>
+
+<p align="center">
+  <img src="images/vista-backend-riskguard" width="750"/>
+</p>
+
 
 
 
