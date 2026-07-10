@@ -3518,6 +3518,325 @@
 </table>
 
 
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS21</b></td>
+<td>Estructuración del Frontend para integración real</td>
+<td>Como desarrollador, quiero organizar rutas, stores, servicios API, variables de entorno y configuración base del frontend, para reemplazar json-server por el backend real de forma progresiva.</td>
+<td>
+<ol>
+<li>La aplicación debe contar con una estructura centralizada para consumir servicios REST reales.</li>
+<li>Las rutas, stores y variables de entorno deben permitir cambiar entre entorno local y producción sin modificar la lógica de negocio.</li>
+</ol>
+<b>Escenario 1:</b> Configuración base disponible<br/>
+<ul>
+<li><b>Given</b> que el frontend se prepara para integrarse con el backend real,</li>
+<li><b>When</b> se revisan rutas, stores y servicios API,</li>
+<li><b>Then</b> la estructura permite reemplazar progresivamente el consumo de json-server.</li>
+</ul>
+<b>Escenario 2:</b> Configuración por entorno<br/>
+<ul>
+<li><b>Given</b> que la aplicación se ejecuta en producción,</li>
+<li><b>When</b> el frontend necesita consumir la API,</li>
+<li><b>Then</b> utiliza la URL definida en las variables de entorno correspondientes.</li>
+</ul>
+</td>
+<td align="center"><b>EP05</b></td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS22</b></td>
+<td>Integración base con Backend API</td>
+<td>Como desarrollador, quiero configurar el cliente HTTP, rutas de endpoints y stores del frontend para consumir la API real del backend en los bounded contexts priorizados.</td>
+<td>
+<ol>
+<li>El frontend debe consumir endpoints reales del backend mediante un cliente HTTP centralizado.</li>
+<li>Las respuestas del backend deben ser procesadas correctamente por los stores y componentes visuales.</li>
+</ol>
+<b>Escenario 1:</b> Consumo de API real<br/>
+<ul>
+<li><b>Given</b> que el backend se encuentra desplegado,</li>
+<li><b>When</b> el usuario accede a un módulo integrado,</li>
+<li><b>Then</b> el frontend obtiene la información desde los endpoints REST reales.</li>
+</ul>
+<b>Escenario 2:</b> Operaciones CRUD<br/>
+<ul>
+<li><b>Given</b> que el usuario ejecuta una operación de consulta o registro,</li>
+<li><b>When</b> el frontend envía la solicitud al backend,</li>
+<li><b>Then</b> el sistema responde con datos persistentes y actualiza la interfaz.</li>
+</ul>
+</td>
+<td align="center"><b>EP05</b></td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS23</b></td>
+<td>Autenticación JWT y control de sesión</td>
+<td>Como desarrollador, quiero integrar el inicio de sesión real con JWT, persistencia de sesión, acceso por rol e interceptor 401, para proteger los flujos de operario, supervisor y gerente.</td>
+<td>
+<ol>
+<li>El sistema debe autenticar usuarios mediante el endpoint real y almacenar el token JWT de forma controlada.</li>
+<li>Las solicitudes a endpoints protegidos deben incluir la cabecera Authorization Bearer.</li>
+</ol>
+<b>Escenario 1:</b> Inicio de sesión con JWT<br/>
+<ul>
+<li><b>Given</b> que el usuario ingresa credenciales válidas,</li>
+<li><b>When</b> el frontend consume el endpoint de autenticación,</li>
+<li><b>Then</b> recibe un token JWT y redirige al usuario según su rol.</li>
+</ul>
+<b>Escenario 2:</b> Sesión expirada o no autorizada<br/>
+<ul>
+<li><b>Given</b> que el backend responde con HTTP 401,</li>
+<li><b>When</b> el interceptor detecta la respuesta,</li>
+<li><b>Then</b> limpia la sesión y redirige al usuario al inicio de sesión.</li>
+</ul>
+</td>
+<td align="center"><b>EP01</b></td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS24</b></td>
+<td>Alineación de contratos Backend-Frontend</td>
+<td>Como desarrollador, quiero ajustar casing JSON, nombres de campos, respuestas, datos semilla y endpoints inconsistentes, para asegurar compatibilidad entre frontend y backend.</td>
+<td>
+<ol>
+<li>Los modelos del frontend deben coincidir con las estructuras de respuesta del backend.</li>
+<li>Los endpoints faltantes o inconsistentes deben corregirse antes de la validación final.</li>
+</ol>
+<b>Escenario 1:</b> Respuesta compatible<br/>
+<ul>
+<li><b>Given</b> que un componente necesita mostrar información del backend,</li>
+<li><b>When</b> recibe la respuesta JSON,</li>
+<li><b>Then</b> los campos son interpretados correctamente por el modelo del frontend.</li>
+</ul>
+<b>Escenario 2:</b> Endpoint inconsistente<br/>
+<ul>
+<li><b>Given</b> que se detecta una ruta o respuesta incompatible,</li>
+<li><b>When</b> el equipo ajusta el contrato,</li>
+<li><b>Then</b> la operación puede ejecutarse desde la interfaz sin errores de mapeo.</li>
+</ul>
+</td>
+<td align="center"><b>EP05</b></td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS25</b></td>
+<td>Integración de Reportes y Cumplimiento</td>
+<td>Como desarrollador, quiero conectar KPI dashboard, tendencias históricas, reportes generados, alertas críticas y plan anual SST con endpoints reales, para habilitar el flujo de gerencia con datos persistentes.</td>
+<td>
+<ol>
+<li>Los dashboards y reportes ejecutivos deben obtener información desde los servicios reales del backend.</li>
+<li>Los indicadores, tablas y gráficas deben actualizarse con datos persistentes.</li>
+</ol>
+<b>Escenario 1:</b> Consulta de indicadores ejecutivos<br/>
+<ul>
+<li><b>Given</b> que el gerente accede al dashboard ejecutivo,</li>
+<li><b>When</b> el frontend consume los endpoints de reportes,</li>
+<li><b>Then</b> se muestran KPIs, tendencias y alertas con datos reales.</li>
+</ul>
+<b>Escenario 2:</b> Validación de reportes<br/>
+<ul>
+<li><b>Given</b> que existen reportes e indicadores registrados,</li>
+<li><b>When</b> el usuario consulta o exporta información,</li>
+<li><b>Then</b> el sistema mantiene consistencia entre tablas, gráficas y reportes generados.</li>
+</ul>
+</td>
+<td align="center"><b>EP04</b></td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS26</b></td>
+<td>Integración de Sedes, Áreas, Activos e Inspecciones</td>
+<td>Como desarrollador, quiero validar endpoints reales de sedes, áreas, activos industriales e inspecciones, para asegurar registro, consulta, edición y persistencia correcta desde la interfaz.</td>
+<td>
+<ol>
+<li>Los módulos de configuración e inspecciones deben consumir endpoints reales del backend.</li>
+<li>Los registros creados o modificados desde el frontend deben persistir correctamente.</li>
+</ol>
+<b>Escenario 1:</b> Gestión de configuración de planta<br/>
+<ul>
+<li><b>Given</b> que el supervisor administra sedes, áreas o activos,</li>
+<li><b>When</b> registra o edita información desde la interfaz,</li>
+<li><b>Then</b> los cambios se guardan en el backend y se reflejan al consultar nuevamente.</li>
+</ul>
+<b>Escenario 2:</b> Registro de inspección<br/>
+<ul>
+<li><b>Given</b> que el operario registra una inspección,</li>
+<li><b>When</b> envía el formulario,</li>
+<li><b>Then</b> el backend almacena el reporte y el frontend muestra el seguimiento correspondiente.</li>
+</ul>
+</td>
+<td align="center"><b>EP05</b></td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS27</b></td>
+<td>Integración de Monitoreo, Riesgos y Mitigación</td>
+<td>Como desarrollador, quiero conectar tickets, técnicos, mapa de calor, mantenimiento preventivo, alertas, SLA y verificaciones con endpoints reales, para estabilizar los flujos del supervisor.</td>
+<td>
+<ol>
+<li>Los flujos de monitoreo y mitigación deben consultar y actualizar datos mediante el backend real.</li>
+<li>Las operaciones protegidas deben respetar autorización, estados y restricciones de negocio.</li>
+</ol>
+<b>Escenario 1:</b> Consulta de tickets y riesgos<br/>
+<ul>
+<li><b>Given</b> que el supervisor ingresa al módulo de monitoreo,</li>
+<li><b>When</b> el frontend consume tickets, mapa de calor y alertas,</li>
+<li><b>Then</b> se muestra información real y actualizada para priorizar acciones.</li>
+</ul>
+<b>Escenario 2:</b> Gestión de mitigación<br/>
+<ul>
+<li><b>Given</b> que el supervisor asigna o verifica una medida correctiva,</li>
+<li><b>When</b> confirma la operación,</li>
+<li><b>Then</b> el backend actualiza el estado del ticket, SLA o verificación correspondiente.</li>
+</ul>
+</td>
+<td align="center"><b>EP03</b></td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<table align="center">
+<thead>
+<tr>
+<th>Epic / Story ID</th>
+<th>Título</th>
+<th>Descripción</th>
+<th>Criterios de Aceptación</th>
+<th>Relacionado con (Epic ID)</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="top">
+<td align="center"><b>TS28</b></td>
+<td>Despliegue y validación final</td>
+<td>Como desarrollador, quiero actualizar entornos de producción, configurar hosting, validar flujos end-to-end y registrar incidencias corregidas, para consolidar la versión final integrada en main.</td>
+<td>
+<ol>
+<li>El frontend desplegado debe consumir el backend real publicado en Render.</li>
+<li>Los flujos principales de operario, supervisor y gerente deben validarse de extremo a extremo antes de integrar la versión final.</li>
+</ol>
+<b>Escenario 1:</b> Configuración de producción<br/>
+<ul>
+<li><b>Given</b> que la aplicación se prepara para despliegue,</li>
+<li><b>When</b> se actualizan variables de entorno, hosting y workflow,</li>
+<li><b>Then</b> el frontend queda disponible en Firebase y conectado al backend real.</li>
+</ul>
+<b>Escenario 2:</b> Validación end-to-end<br/>
+<ul>
+<li><b>Given</b> que la versión integrada está desplegada,</li>
+<li><b>When</b> se prueban los flujos principales por rol,</li>
+<li><b>Then</b> las incidencias detectadas se registran, corrigen y validan antes de consolidar en main.</li>
+</ul>
+</td>
+<td align="center"><b>EP05</b></td>
+</tr>
+</tbody>
+</table>
+
+
 
 ## 3.2. Impact Mapping
 
@@ -3612,11 +3931,19 @@ Cada uno de estos impactos se traduce en entregables concretos, tales como formu
 | 64 | TS14 | Endpoint para Gestión de Catálogo de Peligros | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/peligros para administrar el catálogo de tipos de peligro utilizados en inspecciones y evaluaciones de riesgo. | 5 |
 | 65 | TS15 | Endpoint para Gestión de Sedes Operativas | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/sedes para registrar, listar, actualizar y eliminar las sedes físicas de la planta industrial. | 5 |
 | 66 | TS16 | Endpoint para Gestión de Áreas y Activos Industriales | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/areas con filtro GET /active y /api/v1/activos con filtro GET /by-area/{areaId} para gestionar áreas y activos. | 8 |
-| 63 | TS17 | Endpoint para Autenticación y Generación de Token JWT | Como desarrollador, quiero implementar los endpoints POST /api/v1/authentication/sign-in y sign-up para autenticar usuarios y generar tokens JWT con claims de rol. | 8 |
-| 64 | TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/users, /api/v1/roles, /api/v1/sessions y /api/v1/access-logs para administrar cuentas, roles y auditoría. | 8 |
-| 65 | TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/tickets, /api/v1/technicians, /api/v1/preventive-maintenances y /api/v1/assets para el dashboard del supervisor. | 8 |
-| 66 | TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/heat-map-zones y /api/v1/archived-reports para el dashboard de monitoreo del supervisor. | 5 |
-| 67 | US01 | Autenticación de Operario | Como usuario, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
-| 68 | US02 | Cierre de Sesión del Operario | Como usuario, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
-| 69 | US24 | Autenticación Segura de Supervisor | Como usuario, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
-| 70 | US36 | Autenticación Segura de Gerente o Administrador | Como usuario, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
+| 67 | TS17 | Endpoint para Autenticación y Generación de Token JWT | Como desarrollador, quiero implementar los endpoints POST /api/v1/authentication/sign-in y sign-up para autenticar usuarios y generar tokens JWT con claims de rol. | 8 |
+| 68 | TS18 | Endpoint para Gestión de Usuarios, Roles y Sesiones | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/users, /api/v1/roles, /api/v1/sessions y /api/v1/access-logs para administrar cuentas, roles y auditoría. | 8 |
+| 69 | TS19 | Endpoint para Gestión de Tickets, Técnicos y Mantenimiento Preventivo | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/tickets, /api/v1/technicians, /api/v1/preventive-maintenances y /api/v1/assets para el dashboard del supervisor. | 8 |
+| 70 | TS20 | Endpoint para Gestión de Zonas del Mapa de Calor y Reportes Archivados | Como desarrollador, quiero implementar los endpoints CRUD /api/v1/heat-map-zones y /api/v1/archived-reports para el dashboard de monitoreo del supervisor. | 5 |
+| 71 | TS21 | Estructuracion del Frontend para integracion real | Como desarrollador, quiero organizar rutas, stores, servicios API, variables de entorno y configuracion base del frontend, para reemplazar json-server por el backend real de forma progresiva. | 9 |
+| 72 | TS22 | Integracion base con Backend API | Como desarrollador, quiero configurar el cliente HTTP, rutas de endpoints y stores del frontend para consumir la API real del backend en los bounded contexts priorizados. | 8 |
+| 73 | TS23 | Autenticacion JWT y control de sesion | Como desarrollador, quiero integrar el inicio de sesion real con JWT, persistencia de sesion, acceso por rol e interceptor 401, para proteger los flujos de operario, supervisor y gerente. | 9 |
+| 74 | TS24 | Alineacion de contratos Backend-Frontend | Como desarrollador, quiero ajustar casing JSON, nombres de campos, respuestas, datos semilla y endpoints inc6nsistentes, para asegurar compatibilidad entre frontend y backend. | 9 |
+| 75 | TS25 | Integracion de Reportes y Cumplimiento | Como desarrollador, quiero conectar KPI dashboard, tendencias historicas, reportes generados, alertas criticas y plan anual SST con endpoints reales, para habilitar el flujo de gerencia con datos persistentes. | 8 |
+| 76 | TS26 | Integracion de Sedes, Areas, Activos e Inspecciones | Como desarrollador, quiero validar endpoints reales de sedes, areas, activos industriales e inspecciones, para asegurar registro, consulta, edicion y persistencia correcta desde la interfaz. | 8 |
+| 77 | TS27 | Integracion de Monitoreo, Riesgos y Mitigacion | Como desarrollador, quiero conectar tickets, tecnicos, mapa de calor, mantenimiento preventivo, alertas, SLA y verificaciones con endpoints reales, para estabilizar los flujos del supervisor. | 9 |
+| 78 | TS28 | Despliegue y validacion final | Como desarrollador, quiero actualizar entornos de produccion, configurar hosting, validar flujos end-to-end y registrar incidencias corregidas, para consolidar la version final integrada en `main`. | 9 |
+| 79 | US01 | Autenticación de Operario | Como usuario, quiero iniciar sesión con mis credenciales asignadas para acceder a las funciones correspondientes a mi rol. | 3 |
+| 80 | US02 | Cierre de Sesión del Operario | Como usuario, quiero cerrar sesión de forma segura para proteger mi cuenta en dispositivos compartidos. | 2 |
+| 81 | US24 | Autenticación Segura de Supervisor | Como usuario, quiero iniciar sesión con mis credenciales preconfiguradas para acceder a las funciones de mi rol. | 3 |
+| 82 | US36 | Autenticación Segura de Gerente o Administrador | Como usuario, quiero iniciar sesión con mis credenciales para acceder al dashboard ejecutivo. | 3 |
