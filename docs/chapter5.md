@@ -3495,6 +3495,69 @@ En esta seccion se presentan los commits realizados durante el Sprint 4, los cua
 </table>
 
 #### 5.2.4.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 4 se ejecutaron y validaron los principales flujos de RiskGuard integrados con los Web Services reales del backend. La evidencia presentada muestra la aplicacion consumiendo los endpoints desplegados, utilizando autenticacion con JWT, gestionando datos persistentes y reemplazando progresivamente el uso de informacion simulada por operaciones conectadas a la API.
+
+La revision se centro en comprobar que los perfiles de usuario pudieran navegar por la aplicacion y completar sus recorridos principales. Para ello se validaron los modulos de generacion de cuentas e inicio de sesion, configuracion de conexion con el backend, gestion de tickets, monitoreo de riesgos, reportes predictivos y administracion de sesion. Con estas pruebas se confirmo que el frontend y el backend trabajan de forma integrada en los bounded contexts priorizados para el Sprint.
+
+| **Flujo validado** | **Modulo / Bounded Context** | **Resultado obtenido** |
+|---|---|---|
+| Creacion de cuenta e inicio de sesion | IAM / Account Generation and Authentication BC | El usuario puede registrar una cuenta, autenticarse y acceder a la aplicacion mediante los servicios reales del backend. |
+| Configuracion de conexion con la API | Frontend Structure and Configuration | La aplicacion utiliza la URL del backend desplegado y centraliza la configuracion de servicios, autenticacion y manejo de errores. |
+| Gestion de tickets | Inspection / Unsafe Condition BC | El supervisor puede visualizar tickets registrados y consultar su informacion desde la interfaz conectada a la API. |
+| Monitoreo de riesgos | Monitoring / Dashboard BC | La aplicacion muestra riesgos monitoreados y estados asociados usando informacion obtenida desde el backend. |
+| Reportes predictivos | Reports / Compliance BC | El gerente puede consultar indicadores y reportes predictivos generados a partir de datos reales del sistema. |
+
+
+
+<h5 align="center">Account generation connected to the backend</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-094102.png" alt="Account generation form connected to the backend" width="750"/>
+</p>
+
+En esta evidencia se observa el formulario de creacion de cuenta utilizado para registrar usuarios desde la aplicacion web. Este flujo valida la conexion del frontend con los servicios de autenticacion y generacion de cuentas implementados en el backend.
+
+<h5 align="center">Backend service configuration</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-094433.png" alt="Backend service configuration in RiskGuard" width="750"/>
+</p>
+
+La pantalla de configuracion muestra que la aplicacion trabaja con una URL base del backend real, permitiendo reemplazar el consumo de json-server por solicitudes HTTP dirigidas a los Web Services desplegados.
+
+<h5 align="center">Ticket management integrated with the API</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-094920.png" alt="Ticket management view integrated with API" width="750"/>
+</p>
+
+Esta vista evidencia la consulta de tickets desde la interfaz de RiskGuard. El resultado permite verificar que la informacion del modulo de inspecciones y condiciones inseguras puede ser recuperada y presentada correctamente en el frontend.
+
+<h5 align="center">Risk monitoring execution</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-094959.png" alt="Risk monitoring view in RiskGuard" width="750"/>
+</p>
+
+La evidencia de monitoreo presenta los riesgos registrados y sus estados. Con ello se valida la visualizacion de informacion operativa obtenida desde el backend, manteniendo el seguimiento de riesgos dentro del flujo del supervisor.
+
+<h5 align="center">Predictive reports execution</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-095122.png" alt="Predictive report generated in RiskGuard" width="750"/>
+</p>
+
+En esta captura se muestra la generacion de un reporte predictivo para el perfil gerente. El flujo confirma que el modulo de reportes puede presentar indicadores y resultados procesados a partir de la informacion integrada con los servicios del backend.
+
+<h5 align="center">Authenticated user session</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-095156.png" alt="Authenticated user menu and session options" width="750"/>
+</p>
+
+La evidencia final muestra la sesion de usuario activa y las opciones disponibles desde el menu de perfil. Esto permite validar el manejo de sesion, la visualizacion de datos del usuario autenticado.
+
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review.
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
