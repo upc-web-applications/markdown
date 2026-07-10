@@ -52,7 +52,7 @@ https://trello.com/invite/b/6a33807f046587a11bd72763/ATTId192c77528e7fa368154cbd
 
 ### Entrevista de validacion - Operaria de produccion
 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDzCVuI3MO7Qq7Q2wM__nhIAXxVlF9JemhOtM5P4NV_WjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e158_upc_edu_pe/IQDzCVuI3MO7Qq7Q2wM__nhIAXxVlF9JemhOtM5P4NV_WjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=zEbI2b
 
 ### Entrevista de validacion - Supervisor de seguridad
 
