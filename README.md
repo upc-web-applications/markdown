@@ -83,9 +83,6 @@ Durante la elaboración de la AV1, los integrantes del equipo contribuyeron en l
 
 AV1
 
-
-AV1
-
 ![Contri](docs/images/all.png "contri1")
 
 
@@ -105,11 +102,11 @@ AV2
 ![Captura de pantalla 2026 06 22 000011](docs/images/av2-evidence-2.png)
 
 
-AV2
+TB2
 
-![Captura de pantalla 2026 06 21 235946](docs/images/av2-evidence-1.png)
+![Docs R0](docs/images/DocsR0.png)
 
-![Captura de pantalla 2026 06 22 000011](docs/images/av2-evidence-2.png)
+![Docs R1](docs/images/DocsR1.png)
 
 
 ## Repositorio del Landing Page
