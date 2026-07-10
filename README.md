@@ -75,10 +75,13 @@ Durante la elaboración de la AV1, los integrantes del equipo contribuyeron en l
 
 | Integrante | Secciones principales del informe |
 |---|---|
-| Aponte Pablo, Isabel Luisa | Integración del proyecto · Capítulo V (Sprint 1) · Deployment Evidence · Sprint 2: BC Reports & Compliance · Team Collaboration Insights, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review, Development Evidence for Sprint Review · Sprint 3: Backend BC Reports & Compliance (KPI Dashboard, Historical Trends, Generated Reports, Critical Alerts, Annual OHS Plan, Monthly Reports, Cumulative ST Indicators, Predictive Indicators) · Configuración inicial del proyecto ASP.NET Core · Despliegue en Render · Services Documentation Evidence |
-| Laura Acosta, Victor Jhosef | Capítulo IV (Style Guidelines, Information Architecture) · Diseño Landing Page · Sprint 2: BC Risk Assessment (IPERC) & BC Mitigation · Sprint Backlog 2 · Student Outcome, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC Risk Assessment & BC Mitigation (Risk Assessments, Risk Patterns, Daily Summaries, Pattern Alerts, Area Criticality Levels, Mitigations, Corrective Action Tickets, SLA Alerts, Measure Verifications, Ticket Histories, Hazards, Technicians) |
-| Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page · Sprint 2: BC Site / Area & Industrial Asset · BC Inspection / Unsafe Condition, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC Inspection & BC Organization Assets (Inspections, Dangers, Headquarters, Areas, Assets) · Configuración EF Core y MySQL del proyecto inspection |
-| Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe · Sprint 2: BC Account Generation & Authentication · BC Monitoring / Dashboard, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC IAM & BC Monitoring Dashboard (Authentication JWT, Users, Roles, Sessions, Access Logs, Heat Map Zones, Dashboard Tickets, Dashboard Technicians, Dashboard Assets, Preventive Maintenances, Archived Reports) |
+| Aponte Pablo, Isabel Luisa | Integración del proyecto · Capítulo V (Sprint 1) · Deployment Evidence · Sprint 2: BC Reports & Compliance · Team Collaboration Insights, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review, Development Evidence for Sprint Review · Sprint 3: Backend BC Reports & Compliance (KPI Dashboard, Historical Trends, Generated Reports, Critical Alerts, Annual OHS Plan, Monthly Reports, Cumulative ST Indicators, Predictive Indicators) · Configuración inicial del proyecto ASP.NET Core · Despliegue en Render · Services Documentation Evidence · Sprint 4: Services Documentation Evidence, Execution Evidence, Software Deployment Evidence, Team Collaboration Insights, conclusiones, recomendaciones y anexos |
+| Laura Acosta, Victor Jhosef | Capítulo IV (Style Guidelines, Information Architecture) · Diseño Landing Page · Sprint 2: BC Risk Assessment (IPERC) & BC Mitigation · Sprint Backlog 2 · Student Outcome, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC Risk Assessment & BC Mitigation (Risk Assessments, Risk Patterns, Daily Summaries, Pattern Alerts, Area Criticality Levels, Mitigations, Corrective Action Tickets, SLA Alerts, Measure Verifications, Ticket Histories, Hazards, Technicians) · Sprint 4: integración frontend-backend, despliegue final, configuración de entornos, Firebase Hosting, Render y validación técnica |
+| Blancas Chávez, Carlos Franco | Capítulos I y II · Análisis competitivo · Implementación Landing Page · Sprint 2: BC Site / Area & Industrial Asset · BC Inspection / Unsafe Condition, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC Inspection & BC Organization Assets (Inspections, Dangers, Headquarters, Areas, Assets) · Configuración EF Core y MySQL del proyecto inspection · Sprint 4: validación de sedes, áreas, activos industriales, inspecciones y condiciones inseguras integradas con el backend real |
+| Flores Eusebio, Angel Thyago | Perfiles de integrantes · Secciones de diseño UX · Revisión general del informe · Sprint 2: BC Account Generation & Authentication · BC Monitoring / Dashboard, Software Deployment Evidence for Sprint Review, Execution Evidence for Sprint Review · Sprint 3: Backend BC IAM & BC Monitoring Dashboard (Authentication JWT, Users, Roles, Sessions, Access Logs, Heat Map Zones, Dashboard Tickets, Dashboard Technicians, Dashboard Assets, Preventive Maintenances, Archived Reports) · Sprint 4: estructuración del frontend, integración IAM, autenticación JWT, monitoreo, dashboard y soporte a la integración por rol |
+
+
+AV1
 
 
 AV1
@@ -100,6 +103,14 @@ AV2
 ![Captura de pantalla 2026 06 21 235946](docs/images/av2-evidence-1.png)
 
 ![Captura de pantalla 2026 06 22 000011](docs/images/av2-evidence-2.png)
+
+
+AV2
+
+![Captura de pantalla 2026 06 21 235946](docs/images/av2-evidence-1.png)
+
+![Captura de pantalla 2026 06 22 000011](docs/images/av2-evidence-2.png)
+
 
 ## Repositorio del Landing Page
 
@@ -263,6 +274,15 @@ El repositorio cuenta con 6 ramas activas: `main`, `develop`, `feature/reports`,
     - 5.2.3.6. Services Documentation Evidence for Sprint Review  
     - 5.2.3.7. Software Deployment Evidence for Sprint Review  
     - 5.2.3.8. Team Collaboration Insights during Sprint
+  - 5.2.4. Sprint 4
+    - 5.2.4.1. Sprint Planning 4
+    - 5.2.4.2. Aspect Leaders and Collaborators
+    - 5.2.4.3. Sprint Backlog 4
+    - 5.2.4.4. Development Evidence for Sprint Review
+    - 5.2.4.5. Execution Evidence for Sprint Review
+    - 5.2.4.6. Services Documentation Evidence for Sprint Review
+    - 5.2.4.7. Software Deployment Evidence for Sprint Review
+    - 5.2.4.8. Team Collaboration Insights during Sprint
 
 - 5.3. Validation Interviews  
   - 5.3.1. Diseño de Entrevistas  
