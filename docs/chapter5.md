@@ -3789,8 +3789,6 @@ Con esta documentacion, el equipo deja registrada la correspondencia entre los e
 
 **Evidencia visual de documentacion y prueba de servicios**
 
-**Evidencia visual de documentacion y prueba de servicios**
-
 <h5 align="center">Authentication service response with JWT token</h5>
 
 <p align="center">
@@ -3834,48 +3832,148 @@ La captura evidencia la documentacion OpenAPI del backend desplegado en producci
 
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
-En esta seccion se presentan las evidencias de despliegue del Sprint 4. El objetivo fue validar que la aplicacion web RiskGuard funcione en sus totalidad con respecto al despliegue del frontend y backend.
+En esta seccion se presentan las evidencias de despliegue correspondientes al Sprint 4. El objetivo principal fue validar que la plataforma RiskGuard funcione de manera integrada en un entorno publico, considerando la Landing Page, el frontend desplegado en Firebase Hosting y el backend real desplegado en Render.
 
-**Servicios desplegados:**
+Durante este Sprint se dejo de depender de servicios simulados para la ejecucion principal de la aplicacion. La version desplegada del frontend fue configurada para consumir el backend real mediante la variable de entorno `VITE_RISKGUARD_API_URL`, apuntando a `https://riskguard-platform.onrender.com/api/v1`. Asimismo, el backend fue publicado como Web Service en Render, exponiendo Swagger UI para documentar y probar los endpoints REST protegidos con JWT.
+
+**Servicios desplegados**
 
 | Servicio | URL |
 |---|---|
 | Landing Page | https://riskguard-landingpage-cfmp1bpia-carlosblancas969s-projects.vercel.app |
-| Frontend (Firebase) | https://riskguard-a146d.web.app/ |
+| Frontend (Firebase Hosting) | https://riskguard-a146d.web.app/ |
 | Backend Real (Render) | https://riskguard-platform.onrender.com/swagger/index.html |
 
-**Stack tecnológico:**
+**Stack tecnologico**
 
-| Componente | Tecnología |
+| Componente | Tecnologia |
 |---|---|
-| Landing Page | React (deploy Vercel)|
-| Frontend | Vue 3 + PrimeVue 4 (deploy Firebase)|
-| Backend  | ASP.NET Core / C# (deploy Render) |
+| Landing Page | React + Vercel |
+| Frontend | Vue 3 + Vite + PrimeVue 4 + Firebase Hosting |
+| Backend | ASP.NET Core / C# / .NET 9 + Render |
+| API Documentation | OpenAPI / Swagger UI |
+| Autenticacion | JWT Bearer |
+| Persistencia | MySQL |
+
+**Artefactos de despliegue revisados**
+
+| Repositorio | Archivo | Evidencia |
+|---|---|---|
+| Frontend | firebase.json | Configura Firebase Hosting con sitio `riskguard-a146d`, directorio publico `dist` y rewrite hacia `index.html` para soportar la navegacion SPA. |
+| Frontend | .firebaserc | Vincula el proyecto local con el proyecto Firebase `riskguard-a146d`. |
+| Frontend | .github/workflows/firebase-hosting.yml | Automatiza el despliegue a Firebase Hosting cuando se realizan cambios en la rama `main`. |
+| Frontend | .env.production | Define `VITE_RISKGUARD_API_URL` con la URL del backend real desplegado en Render. |
+| Backend |   Dockerfile | Construye y publica el servicio ASP.NET Core usando .NET 9, expone el puerto `8080` y ejecuta `RiskGuard-Platform.dll` en ambiente Production. |
+| Backend |  Program.cs | Configura Swagger, CORS, autenticacion JWT, autorizacion y mapeo de controladores REST. |
+
+**Procedimiento de despliegue realizado**
+
+**Landing Page - Vercel**
+
+1. Se verifico que la version final de la Landing Page estuviera disponible en el repositorio correspondiente.
+2. Se conecto el proyecto con Vercel desde GitHub.
+3. Se configuro la rama de despliegue y se ejecuto el build automatico.
+4. Se valido que la URL publica cargue correctamente y permita acceder a la propuesta comercial de RiskGuard.
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-114340.png" alt="RiskGuard frontend deployed on Firebase Hosting" width="750"/>
+</p>
+
+**Frontend - Firebase Hosting**
+
+1. Se preparo la aplicacion Vue 3 para produccion mediante el comando `npm run build`.
+2. Se configuro Firebase Hosting con el directorio publico `dist`.
+3. Se habilito el comportamiento de Single Page Application mediante el rewrite de todas las rutas hacia `index.html`.
+
+<h5 align="center">Firebase Hosting configuration for Vue SPA</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-112800.png" alt="Firebase Hosting configuration with dist directory and SPA rewrite" width="750"/>
+</p>
+
+La captura evidencia la configuracion del archivo firebase.json. En este archivo se define el sitio `riskguard-a146d`, el directorio publico `dist` generado por el build de Vite y el rewrite de todas las rutas hacia /index.html, necesario para que la aplicacion Vue 3 funcione correctamente como Single Page Application en Firebase Hosting.
+
+4. Se configuro el proyecto Firebase `riskguard-a146d` en `.firebaserc`.
+
+<h5 align="center">Firebase project configuration</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-112821.png" alt="Firebase project configured in .firebaserc" width="750"/>
+</p>
+
+La evidencia muestra el archivo `.firebaserc`, donde se vincula el proyecto local del frontend con el proyecto Firebase `riskguard-a146d`. Esta configuracion permite que los comandos de despliegue se ejecuten directamente sobre el hosting correcto.
+
+5. Se actualizo `.env.production` para que el frontend consuma el backend real en Render:
+   
+VITE_RISKGUARD_API_URL="https://riskguard-platform.onrender.com/api/v1
+
+<h5 align="center">Production environment API configuration</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-112845.png" alt="Production environment variables for RiskGuard frontend" width="750"/>
+</p>
+
+La captura evidencia la configuracion del archivo .env.production. En este archivo se define la variable VITE_RISKGUARD_API_URL con la URL del backend real desplegado en Render, ademas de las rutas de endpoints utilizadas por los modulos de dashboard, reportes, indicadores, alertas y tendencias.
+
+6. Se publico la aplicacion en Firebase Hosting y se valido el acceso desde la URL de produccion.
+7. Se dejo configurado el workflow `firebase-hosting.yml` para automatizar futuros despliegues desde la rama `main`.
+
+<h5 align="center">GitHub Actions workflow for Firebase Hosting deployment</h5>
+
+<p align="center">
+  <img src="https://cdn.postimage.me/2026/07/10/Captura-de-pantalla-2026-07-10-113052.png" alt="GitHub Actions workflow for Firebase Hosting deployment" width="750"/>
+</p>
+
+La evidencia muestra el archivo .github/workflows/firebase-hosting.yml, encargado de automatizar el despliegue del frontend. El workflow se ejecuta cuando se realizan cambios en la rama main, instala dependencias con npm ci, compila la aplicacion con `npm run build` y publica el resultado en Firebase Hosting mediante `FirebaseExtended/action-hosting-deploy`, usando como destino el proyecto `riskguard-a146d`.
+
+
+**Backend - Render**
+
+1. Se preparo el backend ASP.NET Core con soporte para Swagger, CORS, JWT Bearer y controladores REST.
+2. Se agrego un `Dockerfile` para construir el proyecto en Render usando .NET 9.
+3. El contenedor publica la aplicacion con `dotnet publish`, expone el puerto `8080` y ejecuta el servicio en ambiente `Production`.
+4. Se creo el Web Service en Render conectando el repositorio del backend.
+5. Se valido la disponibilidad publica del backend mediante Swagger UI.
+6. Se probaron endpoints protegidos usando el token JWT generado por el servicio de autenticacion.
+
+**Validaciones posteriores al despliegue**
+
+| Validacion | Resultado |
+|---|---|
+| Acceso a Landing Page | La pagina carga correctamente desde Vercel. |
+| Acceso a Frontend | La aplicacion Vue 3 carga desde Firebase Hosting. |
+| Conexion Frontend - Backend | El frontend consume `https://riskguard-platform.onrender.com/api/v1` mediante variables de entorno. |
+| Acceso a Swagger | El backend expone la documentacion en `https://riskguard-platform.onrender.com/swagger/index.html`. |
+| Autenticacion JWT | El backend retorna token JWT y permite consumir endpoints protegidos. |
+| Rutas SPA | Firebase redirige rutas internas hacia `index.html`, evitando errores al refrescar paginas internas. |
 
 **Primera vista de los despliegues**
 
-<h5 align="center">Landing Page</h5>
+<h5 align="center">Landing Page deployed on Vercel</h5>
 
 <p align="center">
-  <img src="images/vista-landing-page-riskguard.png" width="750"/>
+  <img src="images/vista-landing-page-riskguard.png" alt="RiskGuard Landing Page deployed on Vercel" width="750"/>
 </p>
 
-<h5 align="center">Frontend</h5>
+La evidencia muestra la Landing Page de RiskGuard desplegada publicamente en Vercel. Este despliegue permite presentar la propuesta de valor del producto, sus beneficios y el acceso hacia la aplicacion web.
+
+<h5 align="center">Frontend deployed on Firebase Hosting</h5>
 
 <p align="center">
-  <img src="images/vista-frontend-riskguard.png" width="750"/>
+  <img src="images/vista-frontend-riskguard.png" alt="RiskGuard frontend deployed on Firebase Hosting" width="750"/>
 </p>
 
-<h5 align="center">Backend</h5>
+La captura evidencia el frontend de RiskGuard desplegado en Firebase Hosting. Esta version corresponde a la aplicacion Vue 3 integrada con el backend real, permitiendo iniciar sesion y navegar por los modulos principales segun el rol del usuario.
+
+<h5 align="center">Backend deployed on Render with Swagger UI</h5>
 
 <p align="center">
-  <img src="images/vista-backend-riskguard.png" width="750"/>
+  <img src="images/vista-backend-riskguard.png" alt="RiskGuard backend deployed on Render with Swagger UI" width="750"/>
 </p>
 
+La evidencia muestra el backend real desplegado en Render y documentado mediante Swagger UI. Desde esta interfaz se pueden revisar y probar los endpoints REST disponibles, incluyendo autenticacion, inspecciones, tickets correctivos, reportes, monitoreo y evaluacion de riesgos.
 
-
-
-
+Con estas evidencias se confirma que el Sprint 4 alcanzo una version desplegada e integrada de RiskGuard, donde el frontend consume los Web Services reales del backend y los usuarios pueden ejecutar los principales flujos de negocio desde un entorno publico.
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint.
 
